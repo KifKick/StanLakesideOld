@@ -57,7 +57,7 @@ ctrlShow [2304,false];
 		} else {
 			_control lbAdd (_vehName);
 		};
-	}
+	};
 	_baseprice = _baseprice /10;
 	//_control lbSetPicture [(lbSize _control)-1,(_vehicleInfo select 2)];
 	_control lbSetData [(lbSize _control)-1,_className];
