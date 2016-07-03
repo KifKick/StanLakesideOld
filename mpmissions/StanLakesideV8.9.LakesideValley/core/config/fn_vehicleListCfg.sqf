@@ -954,15 +954,12 @@ switch (_shop) do
 			["ivory_wrx_marked",200000],
 			["ivory_wrx_unmarked",200000],
 			["ivory_wrx_slicktop",200000],
-			
 			["ivory_m3_marked",200000],
 			["ivory_m3_unmarked",200000],
 			["ivory_m3_slicktop",200000],
-
 			["ivory_isf_marked",200000],
 			["ivory_isf_unmarked",200000],			
 		    ["ivory_isf_slicktop",200000],
-			
 			["cnp_Defender",200000],
 			["CNP_c4_picasso_F",200000],
 			["cnp_seat_altea_pol",200000],
@@ -973,7 +970,6 @@ switch (_shop) do
 			["CNP_mercedes_sprinter_GOIT_F",200000],
 			["CNP_mercedes_sprinter_UIP_F",200000],
 			["Navara_Policia",200000],
-			
 			["A3L_CVPI_HWY_LB",200000],
 			["A3L_CVPI_HWY_LB_Blue",200000],
 			["A3L_CVPI_Sheriff_LB",200000],
@@ -985,68 +981,36 @@ switch (_shop) do
 			["A3L_CVPI_HWY_Slick_Blue",200000],
 			["cg_CVPIFPBPD",200000],
 			["cg_CVPISH",200000],
-
-			["cg_evoblack",70000],
 			["shounka_nemo_pompier",70000],
 			["bv_the_crowner_cop_patrol",70000],
-			["bv_e60_m5_cop_interceptor",70000],
-			["bv_e60_m5_cop_patrol",70000],
 			["bv_caressa_gt_cop_patrol",70000],
-			["bv_458_cop_patrol",70000],
-			["bv_shelly_cop_patrol",70000],
-			
+			["bv_458_cop_patrol",70000],		
 			//DOC
-			["A3L_CVPIFPBDOC",5000],
 			["A3L_TaurusCO2",5000],
 			["cg_evocor1",70000],
 			["A3L_SuburbanDOC",5000],
 			["charger_cor_skinned",90000],
-
 			//PD
-			["cg_cvpifpbpd",5000],
-			["cg_cvpifpblbpd",5000],
 			["cg_TaurusPD2",5000],
 			["cg_TaurusPD1",5000],
 			["DAR_TahoePoliceSlick",5000],
 			["DAR_ExplorerPolice",5000],
 			["cg_evopol1",70000],
-			["charger_pd",90000],
 			["charger_pd_skinned",90000],
-
 			//SO
 			["bv_the_crowner_uc",5000],
 			["burnes_foxhound_w",50000],
-			["cg_CVPISH",5000],
-			["cg_ss2",5000],
 			["cg_TaurusSS1",5000],
 			["cg_TaurusSS2",5000],
 			["A3L_SuburbanCSO",5000],
 			["DAR_ExplorerSheriff",5000],
 			["cg_evoss1",70000],
 			["charger_sh",90000],
-			["charger_sh_skinned",90000],
-			["Mrshounka_a3_dodge15_pd",90000],
-			["shounka_a3_suburbangign",90000],
-			["Mrshounka_mustang_pd",90000],
-			["Mrshounka_raptor_pd",90000],
-			["A3L_CVPIFPBHP",50000],
-			["A3L_CVPIFPBLBHP",50000],
-			["A3L_CVPIFPBSM",50000],
-			["A3L_CVPIFPBFG",50000],
-			["A3L_CVPIFPBLBFG",50000],
-			["A3L_CVPIFPBLBCSO",50000],
-			["A3L_TaurusFPBCSO",50000],
-			["A3L_CVPIFPBLBCSO",50000],
 			["A3L_TaurusFPBLBCSO",50000],
-			["AM_Holden_SO",150000],
-
-			//ST
-			["cg_cvpitrooper",5000],
 			["cg_taurustrooperf",5000],
 			["cg_trooperevo",5000],
 			["charger_st",90000],
 			["charger_trp_skinned",90000],
-			
 			//SERT
 			["cg_suburban_sert_pol",40000],
 			["cg_evoSERT1",70000],
@@ -1057,16 +1021,12 @@ switch (_shop) do
 			["DAR_SWATPolice",110000],
 			["A3L_GMC_Van_Swat",15000],
 			["AM_Escalade_SERT",15000],
-			
-			
-			
 			//Misc
 			["A3L_TaurusUC",30000],
 			["A3L_TaurusUCBlue",30000],
 			["A3L_TaurusUCGrey",30000],
 			["A3L_TaurusUCRed",30000],
 			["A3L_TaurusUCWhite",30000],
-			["A3L_CVPIUC",20000],
 			["A3L_CVPIUC",20000],
 			["A3L_CVPIUCBlack",20000],
 			["A3L_CVPIUCBlue",20000],
