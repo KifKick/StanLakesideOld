@@ -38,16 +38,17 @@ if(visibleMap) then {
 	} foreach _medmark;
 
 	{
-		if (_players < 30) exitWith {};
-		_marker = createMarkerLocal [format["%1_dead_marker",_x],visiblePosition _x];
-		if(side _x == west) then {
+		if (_players < 29) {
+			_marker = createMarkerLocal [format["%1_dead_marker",_x],visiblePosition _x];
+			if(side _x == west) then {
 			_marker setMarkerColorLocal "ColorBlue";
 			_marker setMarkerTypeLocal "loc_Hospital";
 			_marker setMarkerTextLocal format["%1 | Priorytet urazu: %2",(_x getVariable["name","Nieznany gracz"]), (_x getvariable "severity")];
-		} else {
+			} else {
 			_marker setMarkerColorLocal "ColorRed";
 			_marker setMarkerTypeLocal "loc_Hospital";
 			_marker setMarkerTextLocal format["Ranny | Priorytet urazu: %1", (_x getvariable "severity")];
+			};
 		};
 		_markers pushBack [_marker,_x];
 	} foreach _units;
