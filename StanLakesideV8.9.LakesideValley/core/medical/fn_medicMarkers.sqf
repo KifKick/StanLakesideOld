@@ -38,7 +38,7 @@ if(visibleMap) then {
 	} foreach _medmark;
 
 	{
-		if (_players < 29) {
+		if (_players < 29) then {
 			_marker = createMarkerLocal [format["%1_dead_marker",_x],visiblePosition _x];
 			if(side _x == west) then {
 			_marker setMarkerColorLocal "ColorBlue";
