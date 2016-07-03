@@ -42,11 +42,24 @@ ctrlShow [2304,false];
 {
 	_className = _x select 0;
 	_basePrice = _x select 1;
+	if(count _x == 3) {
+		if(_x select 2 == nil) then {
+			_vehicleInfo = [_className] call life_fnc_fetchVehInfo;
+			_control lbAdd (_vehicleInfo select 3);
+		} else {
+			_control lbAdd (_x select 2);
+		};
+	} else {
+		_vehName = [_x select 2] call life_fnc_vehicleNameCfg;
+		if(_vehName == nil) {
+			_vehicleInfo = [_className] call life_fnc_fetchVehInfo;
+			_control lbAdd (_vehicleInfo select 3);
+		} else {
+			_control lbAdd (_vehName);
+		};
+	}
 	_baseprice = _baseprice /10;
-	
-	_vehicleInfo = [_className] call life_fnc_fetchVehInfo;
-	_control lbAdd (_vehicleInfo select 3);
-	_control lbSetPicture [(lbSize _control)-1,(_vehicleInfo select 2)];
+	//_control lbSetPicture [(lbSize _control)-1,(_vehicleInfo select 2)];
 	_control lbSetData [(lbSize _control)-1,_className];
 	_control lbSetValue [(lbSize _control)-1,_ForEachIndex];
 } foreach _vehicleList;
