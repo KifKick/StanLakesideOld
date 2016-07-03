@@ -158,4 +158,6 @@ switch (_var) do
 	case "license_civ_donator1": {"Donator 1"};
 	case "license_civ_donator2": {"Donator 2"};
 	case "license_civ_donator3": {"Donator 3"};
+	case "license_civ_IAD": {"Internal Affairs Departament"};
+	
 };
