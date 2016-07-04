@@ -177,6 +177,7 @@ switch(_shop) do
 					["SMG_02_F",nil,3000],
 					["SMG_01_F",nil,3000],
 					["hgun_PDW2000_F",nil,3000],
+					["RH_sbr9",nil,3000],
 					["30Rnd_9x21_Mag",nil,240],
 					["30Rnd_45ACP_Mag_SMG_01",nil,240],
 					["hlc_smg_mp5a2",nil,3000],
