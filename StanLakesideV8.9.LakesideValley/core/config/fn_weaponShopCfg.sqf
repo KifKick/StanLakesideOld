@@ -91,9 +91,6 @@ switch(_shop) do
 					["Podstawowe wyposazenie Policji",								
 						[
 							["cg_atf_bandage_i","Bandaz",1],
-							["cg_ATF_first_aid_kit_i","Apteczka",1],
-							["cg_antibiotics_i","Antybiotyki",1],
-							["CG_ATF_Drug_Bottle_01_i","Valium",1],
 							["CG_Pro_Item_i","GoPro",350],
 							["CG_ATF_Handcuffs_i","Kajdanki",10],
 							["cg_torch","Latarka",250], 
