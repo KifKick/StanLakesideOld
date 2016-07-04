@@ -142,9 +142,6 @@ switch (_filter) do
 			["CG_sert_H1",nil,5],
 			["H_HelmetSpecO_blk","Dowodca SERT",15],
 			["BH_StormCom_helmet_blk","Komendant Glowny",15],
-			["TRYK_H_ghillie_over","SNIPER SERT BRONS",15],
-			["TRYK_H_ghillie_over_green","SNIPER SERT GREEN",15],
-			["Balaclava_negro","Kominiarka SERT",15],
 			["H_HelmetSpecB","SERT Helmet S",5],
 			["TRYK_H_PASGT_OD","SERT Helmet OD",5],
 			["casco_cnp_protec","Prewenecja",5],
@@ -175,6 +172,7 @@ switch (_filter) do
 			["G_Bandanna_blk",nil,5],
 			["A3L_Balaclava",nil,6],
 			["TRYK_H_PASGT_BLK",nil,6],
+			["TRYK_kio_balaclava_ESS",nil,6],
 			["TRYK_SPGEAR_Glasses","Negotiator Glasses",6],
 			["Mask_M40","Gas Mask",5]
 		];
