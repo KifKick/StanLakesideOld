@@ -91,7 +91,7 @@ switch (_filter) do
 			["CG_SERT6",nil,15],
 			["CG_SERT7",nil,15],
 			["A3L_EC_SERTK","SERT V2",50],
-			["BH_StormCom_blk_comsuit","Dowdca SERT",15],
+			["BH_StormCom_blk_comsuit","Dowodca SERT",15],
 			["TCG_SWAT","Komendant",15],
 			["TRYK_U_B_BLK","Pilot Coveralls",15],
 			["RF_ASU_2",nil,15],
@@ -140,14 +140,14 @@ switch (_filter) do
 			["CG_sert_H3",nil,5],
 			["CG_sert_H2",nil,5],
 			["CG_sert_H1",nil,5],
-			["H_HelmetSpecO_blk","Dowdca SERT",15],
+			["H_HelmetSpecO_blk","Dowodca SERT",15],
 			["BH_StormCom_helmet_blk","Komendant Glowny",15],
 			["TRYK_H_ghillie_over","SNIPER SERT BRONS",15],
 			["TRYK_H_ghillie_over_green","SNIPER SERT GREEN",15],
 			["Balaclava_negro","Kominiarka SERT",15],
 			["H_HelmetSpecB","SERT Helmet S",5],
 			["TRYK_H_PASGT_OD","SERT Helmet OD",5],
-			["casco_cnp_protec","Prewnecja",5],
+			["casco_cnp_protec","Prewenecja",5],
 			["LSMS_cap_blk",nil,5],
 			["LSMS_cap_blue",nil,5]
 		];
@@ -175,7 +175,6 @@ switch (_filter) do
 			["G_Bandanna_blk",nil,5],
 			["A3L_Balaclava",nil,6],
 			["TRYK_H_PASGT_BLK",nil,6],
-			["TRYK_kio_balaclava_ESS",nil,6],
 			["TRYK_SPGEAR_Glasses","Negotiator Glasses",6],
 			["Mask_M40","Gas Mask",5]
 		];
@@ -186,7 +185,6 @@ switch (_filter) do
 		_ret =
 		[
 			["V_RebreatherB","Rebreather",20],
-
 			["DOC_Vest_Tac_Fix",nil,20],
 			["DOC_Vest_Threat_Fix",nil,20],
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
@@ -194,7 +192,7 @@ switch (_filter) do
 			["jamie_blue","Kamizelka do Munduru",20],
 			["kenny_vest_police","Kamizelka do MunduruV2",20],
 			["jamie_reflective","Kamizelka widoczna Zolta",20],
-			["kenny_vest_traffic","Kamizelka Drogowka :)",20],
+			["kenny_vest_traffic","Kamizelka Drogowka)",20],
 			["jamie_police2_4","Kamizelka na Akcje",20],
 			["jamie_black2","Kamizelka Czarna Akcje",20],
 			["kenny_vest_Sheriff","Sheriff Kamizelka",20],
@@ -202,7 +200,7 @@ switch (_filter) do
 			["cg_policevest1_fix","Police Vest 2",20],
 			["kenny_vest_detective","Detektywi",20],
 			["SCommand_Vest_Fix",nil,20],
-			["A3L_deptjvest1","Kamizelka WydzialuSprawiedliwosci",20],
+			["A3L_deptjvest1","Kamizelka Wydzialu Sprawiedliwosci",20],
 			["cg_policevest1_fix","Police Vest 2",20],
 			["cg_policevest2_fix","Police Vest",20],
 			["FBI_BLK_VEST","FBI BLACK",20],
@@ -246,7 +244,7 @@ switch (_filter) do
 			["usms_vests_usms2_Fix",nil,15],
 			["usms_vests_usms4_Fix",nil,15],
 			["TCG_sertvest1","UniV2 SERT",15],
-			["TRYK_V_tacv1LC_P2_BK","Dowdca SERT",15],
+			["TRYK_V_tacv1LC_P2_BK","Dowodca SERT",15],
 			["REB_VEST_PINK","Kamizelka Komendata",15],
 			["TRYK_V_tacv1MLC_BK","Kamizelka KomendataV2",15],
 			["TRYK_V_Bulletproof","Ride Along Vest",15]
