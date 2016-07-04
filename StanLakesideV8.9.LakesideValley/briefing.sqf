@@ -20,19 +20,19 @@ player createDiarySubject ["Mandaty","Mandaty"];
 		[
 			"Aktualizacje Serwera",
 				"
-					4 lipca 2016
+					4 lipca 2016 <br/> <br/>
 					
-					Dodano:
-					Briefing na mapie
+					Dodano: <br/>
+					Briefing na mapie <br/> <br/>
 					
-					Zmieniono:
-					Nerf broni oraz wyposazenia Policji
-					Wylaczono deszcz oraz zmiany pogody
-					Zwiekszono wirtualny ekwipunek Policji oraz EMT
-					Dodano parametry do niektorych obiektow na mapie
+					Zmieniono: <br/>
+					Nerf broni oraz wyposazenia Policji<br/>
+					Wylaczono deszcz oraz zmiany pogody <br/>
+					Zwiekszono wirtualny ekwipunek Policji oraz EMT <br/>
+					Dodano parametry do niektorych obiektow na mapie <br/> <br/>
 					
-					Usunieto:
-					Lawki z mapy - zostala tylko jedna przed bankiem
+					Usunieto: <br/>
+					Lawki z mapy - zostala tylko jedna przed bankiem <br/>
 					
 				"
 		]
@@ -42,19 +42,19 @@ player createDiarySubject ["Mandaty","Mandaty"];
 		[
 			"Mandaty", 
 				"
-					 Wyciaganie broni w miejscu publicznym - $25,000 + konfiskata
-					 Lekkomyslna jazda - $10,000 + odholowanie
-					 Agresywna jazda - $8,000
-					 Przekraczanie predkosci - $5,000
-					 Zaklocanie spokoju - $8,000
-					 Nieustapienie pierwszenstwa pojazdom uprzywilejowanym - $15,000
-					 Niezatrzymanie sie przy znaku stop - $5,000
-					 Prowadzenie pojazdu bez prawa jazdy - $25,000 + odholowanie
-					 Nieustapienie pierwszenstwa - $4,500
-					 Przejazd na czerwonym swietle - $4,500
-					 Jazda bez odpowiednich swiatel - $6,000
-					 Przebywanie w miejscu przestepstwa - $5,000
-					 Ukrywanie tozsamosci - $2,500 + prace spoleczne + przeszukanie
+					 Wyciaganie broni w miejscu publicznym - $25,000 + konfiskata <br/>
+					 Lekkomyslna jazda - $10,000 + odholowanie <br/>
+					 Agresywna jazda - $8,000 <br/>
+					 Przekraczanie predkosci - $5,000 <br/>
+					 Zaklocanie spokoju - $8,000 <br/>
+					 Nieustapienie pierwszenstwa pojazdom uprzywilejowanym - $15,000 <br/>
+					 Niezatrzymanie sie przy znaku stop - $5,000 <br/>
+					 Prowadzenie pojazdu bez prawa jazdy - $25,000 + odholowanie <br/>
+					 Nieustapienie pierwszenstwa - $4,500 <br/>
+					 Przejazd na czerwonym swietle - $4,500 <br/>
+					 Jazda bez odpowiednich swiatel - $6,000 <br/>
+					 Przebywanie w miejscu przestepstwa - $5,000 <br/>
+					 Ukrywanie tozsamosci - $2,500 + prace spoleczne + przeszukanie <br/>
 				"
 		]
 	];
