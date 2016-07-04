@@ -283,6 +283,10 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		{
 			life_maxWeight = life_maxWeightT;
 		};
+		//Medycy i policjanci moga przenosic wiecej barierek
+		if(side player == west || side player == independent) then {
+			life_maxWeight = life_maxWeight + 20;
+		};
 	};
 };
 
