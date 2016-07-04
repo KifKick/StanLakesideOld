@@ -134,9 +134,7 @@ switch(_shop) do
 			if(__GETC__(life_coplevel) > 0) then {
 				_ret pushBack [
 					["RH_m9",nil,240],
-					["RH_15Rnd_9x19_M9",nil,5],
-					["RH_g17",nil,240],
-					["RH_17Rnd_9x19_g17",nil,5]
+					["RH_15Rnd_9x19_M9",nil,5]
 				];
 			};
 			if(__GETC__(life_coplevel) > 1) then {
@@ -151,8 +149,6 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 2) then {
 				_temp =  [
-					["RH_barska_rds","Barska Red Dot",25],
-					["RH_cmore","C-more Red Dot",25],
 					["RH_uspm",nil,240],
 					["RH_16Rnd_40cal_usp",nil,5],
 					["RH_SFM952V",nil,10]
