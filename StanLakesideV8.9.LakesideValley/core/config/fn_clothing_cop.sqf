@@ -17,7 +17,7 @@ ctrlSetText[3103,"Cop Shop"];
 _ret = [];
 switch (_filter) do
 {
-	case 0:
+	case 0: //Mundury
 	{
 		_ret =
 		[
@@ -104,7 +104,7 @@ switch (_filter) do
 		];
 	};
 
-	case 1:
+	case 1: //Czapki
 	{
 		_ret =
 		[
@@ -150,7 +150,7 @@ switch (_filter) do
 		];
 	};
 
-	case 2:
+	case 2: //Okulary
 	{
 		_ret =
 		[
@@ -178,7 +178,7 @@ switch (_filter) do
 		];
 	};
 
-	case 3:
+	case 3: //Kamizelki
 	{
 		_ret =
 		[
@@ -249,7 +249,7 @@ switch (_filter) do
 		];
 	};
 
-	case 4:
+	case 4: //Plecaki
 	{
 		_ret =
 		[
