@@ -5,7 +5,7 @@
 	Description:
 	Blah
 */
-private["_shop","_sideCheck","_spawnPoints","_shopFlag","_disableBuy"];
+private["_shop","_sideCheck","_spawnPoints","_shopFlag","_disableBuy","_vehName"];
 _shop = (_this select 3) param [0,"",[""]];
 _sideCheck = (_this select 3) param [1,sideUnknown,[civilian]];
 _spawnPoints = (_this select 3) param [2,"",["",[]]];
