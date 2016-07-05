@@ -260,7 +260,7 @@ switch (_code) do
 				if(_locked == 2) then {
 					_handled = true;
 					[] spawn fnc_doorkick;
-					["Wykopales drzwi pojazdu..", false] spawn domsg; 
+					["Wykopujesz drzwi pojazdu...", false] spawn domsg; 
 				};
 			};
 		};
