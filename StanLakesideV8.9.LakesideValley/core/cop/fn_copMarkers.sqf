@@ -10,7 +10,7 @@ _markers = [];
 _cops = [];
 
 uiSleep 0.25;
-if(visibleMap) AND ("ItemGPS" in assignedItems player) then {
+if(visibleMap AND "ItemGPS" in assignedItems player) then {
 	{if(side _x == west || side _x == independent) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
 	//Create markers
 	{
