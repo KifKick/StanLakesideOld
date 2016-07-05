@@ -11,7 +11,7 @@ _filter = param [0,0,[0]];
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Cop Shop"];
+ctrlSetText[3103,"Mundury Policji"];
 
 
 _ret = [];
@@ -21,30 +21,31 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["jamie_police1","Cadet",50],
-			["jamie_police2","Police Officer I",50],
-			["jamie_police2_2","Police Officer II",50],
-			["jamie_police2_5","Police Officer III",50],
-			["jamie_police2_3","Sergeant I",50],
-			["jamie_police2_4","Sergeant II",50],
-			["jamie_police3","Lieutenant I",50],
-			["jamie_police3_1","Commander",50],
-			["RR_Clothing_Police_RM_Chief_obj","Chief Of Police",50],
-			["RR_Clothing_Police_RM_Dep_Chief_obj","Chief Of Police",50],
+			["U_007_BIS_Marshall","Cadet",50],
+			["LVPD_rang1","Police Officer I/II",50],
+			["LVPD_rang2","Police Officer III",50],
+			["LVPD_rang3","Sergeant I/II",50],
+			["LVPD_rang4","Lieutenant",50],
+			["LVPD_rang6","Lieutenant CB",50],
+			["LVPD_rang5","Captain",50],
+			["LVPD_rang7","Captain CB",50],
+			["LVPD_rang11","Deputy Chief Of Police",50],
+			["LVPD_rang12","Chief Of Police",50],
 			["jamie_tou","Policja Special",50],
 			["jamie_police4_1","Detective I",50],
 			["jamie_police4_2","Detective II",50],
 			["jamie_police4_3","Detective III",50],
 			["U_B_Wetsuit","Pianka",50],
-			["doc_uniform_co",nil,15],
-			["doc_uniform_sco",nil,15],
-			["doc_uniform_sgt",nil,15],
-			["doc_uniform_cmd",nil,15],
+			["A3L_EC_COFC","DOC Guard",15],
+			["A3L_EC_CCPL","DOC Corporal",15],
+			["A3L_EC_CSGT","DOC Sergeant",15],
+			["A3L_EC_CLT","DOC Lieutenant",15],
+			["A3L_EC_CCPT","DOC Captain",15],
 			["crt_uniform",nil,15],
 			["herpFTO1",nil,15],
-			["CG_SO1",nil,15],
-			["CG_SO2",nil,15],
-			["CG_SO3",nil,15],
+			//["CG_SO1",nil,15],
+			//["CG_SO2",nil,15],
+			//["CG_SO3",nil,15],
 			["Sheriff_rang12","Sheriff Command",50],
 			["Sheriff_rang11","Undersheriff",50],
 			["Sheriff_rang10","Assistant Sheriff",50],
@@ -91,7 +92,8 @@ switch (_filter) do
 			["CG_SERT6",nil,15],
 			["CG_SERT7",nil,15],
 			["A3L_EC_SERTK","SERT V2",50],
-			["BH_StormCom_blk_comsuit","Dowdca SERT",15],
+			["BH_StormCom_blk_comsuit","Dowodca SERT",15],
+			["RR_SWAT_UNIFORM_obj","Kombinezon SWAT",15],
 			["TCG_SWAT","Komendant",15],
 			["TRYK_U_B_BLK","Pilot Coveralls",15],
 			["RF_ASU_2",nil,15],
@@ -140,14 +142,11 @@ switch (_filter) do
 			["CG_sert_H3",nil,5],
 			["CG_sert_H2",nil,5],
 			["CG_sert_H1",nil,5],
-			["H_HelmetSpecO_blk","Dowdca SERT",15],
+			["H_HelmetSpecO_blk","Dowodca SERT",15],
 			["BH_StormCom_helmet_blk","Komendant Glowny",15],
-			["TRYK_H_ghillie_over","SNIPER SERT BRONS",15],
-			["TRYK_H_ghillie_over_green","SNIPER SERT GREEN",15],
-			["Balaclava_negro","Kominiarka SERT",15],
-			["H_HelmetSpecB","SERT Helmet S",5],
+			["H_HelmetSpecB","Helm SWAT",5],
 			["TRYK_H_PASGT_OD","SERT Helmet OD",5],
-			["casco_cnp_protec","Prewnecja",5],
+			["casco_cnp_protec","Prewenecja",5],
 			["LSMS_cap_blk",nil,5],
 			["LSMS_cap_blue",nil,5]
 		];
@@ -186,7 +185,6 @@ switch (_filter) do
 		_ret =
 		[
 			["V_RebreatherB","Rebreather",20],
-
 			["DOC_Vest_Tac_Fix",nil,20],
 			["DOC_Vest_Threat_Fix",nil,20],
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
@@ -194,7 +192,7 @@ switch (_filter) do
 			["jamie_blue","Kamizelka do Munduru",20],
 			["kenny_vest_police","Kamizelka do MunduruV2",20],
 			["jamie_reflective","Kamizelka widoczna Zolta",20],
-			["kenny_vest_traffic","Kamizelka Drogowka :)",20],
+			["kenny_vest_traffic","Kamizelka Drogowka)",20],
 			["jamie_police2_4","Kamizelka na Akcje",20],
 			["jamie_black2","Kamizelka Czarna Akcje",20],
 			["kenny_vest_Sheriff","Sheriff Kamizelka",20],
@@ -202,7 +200,7 @@ switch (_filter) do
 			["cg_policevest1_fix","Police Vest 2",20],
 			["kenny_vest_detective","Detektywi",20],
 			["SCommand_Vest_Fix",nil,20],
-			["A3L_deptjvest1","Kamizelka WydzialuSprawiedliwosci",20],
+			["A3L_deptjvest1","Kamizelka Wydzialu Sprawiedliwosci",20],
 			["cg_policevest1_fix","Police Vest 2",20],
 			["cg_policevest2_fix","Police Vest",20],
 			["FBI_BLK_VEST","FBI BLACK",20],
@@ -210,16 +208,16 @@ switch (_filter) do
 			["A3L_fbivest1","FBI MalaKamizelka",20],
 			["HighThreatVestPolice1_Fix",nil,15],
 			["HighThreatVestPolice2_Fix",nil,15],
-			["TCG_troopervest1_Fix","Trooper Black Vest",20],
+			/*["TCG_troopervest1_Fix","Trooper Black Vest",20],
 			["A3L_EC_HWP_VEST","Highway Patrol",20],
 			["TCG_troopervest2_Fix","Trooper Blue Vest",20],
 			["HighThreatVestTrooper1_Fix",nil,15],
 			["HighThreatVestTrooper2_Fix",nil,15],
 			["highthreatvestblack_Fix","Sheriff Black High Threat",20],
-			["highthreatvesttan_Fix","Sheriff Tan High Threat",20],
+			["highthreatvesttan_Fix","Sheriff Tan High Threat",20], */
 			["DTU_Vest","Detektyw/FBI dlugaV1",20],
 			["DTU_Vest2","Detektyw/FBI dlugaV2",20],
-			["k_black_so_fix","Black SO Vest",15],
+			/*["k_black_so_fix","Black SO Vest",15],
 			["k_white_so_fix","White SO Vest",15],
 			["k_white2_so_fix","Off White SO Vest",15],
 			["k_green_so_fix","Green SO Vest",15],
@@ -230,7 +228,7 @@ switch (_filter) do
 			["k_lime_so_fix","Lime SO Vest",15],
 			["k_orange_so_fix","Orange SO Vest",15],
 			["k_red_so_fix","Red SO Vest",15],
-			["k_yellow_so_fix","Yellow SO Vest",15],
+			["k_yellow_so_fix","Yellow SO Vest",15], */
 			["A3L_EC_PATROL_VEST","Sheriff Krotka",15],
 			["TRYK_V_PlateCarrier_POLICE","Sheriff Swat Vest",15],
 			["police_belt_Without_pistol","Pas policyjny z palka",15],
@@ -245,8 +243,11 @@ switch (_filter) do
 			["usms_vests_usms1_Fix",nil,15],
 			["usms_vests_usms2_Fix",nil,15],
 			["usms_vests_usms4_Fix",nil,15],
+			["TCG_swatvest2","SWAT PO",15],
+			["TCG_swatvest3","SWAT SGT",15],
+			["TCG_swatvest1","SWAT CO",15],
 			["TCG_sertvest1","UniV2 SERT",15],
-			["TRYK_V_tacv1LC_P2_BK","Dowdca SERT",15],
+			["TRYK_V_tacv1LC_P2_BK","Dowodca SERT",15],
 			["REB_VEST_PINK","Kamizelka Komendata",15],
 			["TRYK_V_tacv1MLC_BK","Kamizelka KomendataV2",15],
 			["TRYK_V_Bulletproof","Ride Along Vest",15]
@@ -259,6 +260,7 @@ switch (_filter) do
 		[
 			["AM_PoliceBelt","Police Utility Belt",80],
 			["B_CNP_Drone_bolsa_F",nil,300],
+			["TRYK_B_Belt_Blk",nil,300],
 			["TRYK_B_Belt_AOR2",nil,300],
 			["TRYK_B_Belt_CYT",nil,300],
 			["TRYK_B_Belt_GR",nil,300]

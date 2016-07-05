@@ -303,7 +303,11 @@ switch (_filter) do
 			["A3PL_Citizen_mcFishers_Uniform","Unfirom Pracownika MC",500],
 			["neweden_cattaco","Kotek Pizza",500],
 			["RR_Clothing_twitch_obj","Twich",500],
-			["A3L_Bikini_Girl","Bikini",4000]	
+			["A3L_Bikini_Girl","Bikini",4000],
+			["B_FEM_NATO",nil,500],
+			["B_FEM_NATO_long",nil,500],
+			["B_FEM_NATO_Collar",nil,500],
+			["B_FEM_NATO_Rolled",nil,500]
 		];
 		if(__GETC__(life_adminlevel) > 0) then {
 			_ret pushBack ["U_C_Scientist",nil,5];
