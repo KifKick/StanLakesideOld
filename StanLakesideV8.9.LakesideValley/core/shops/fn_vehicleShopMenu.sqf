@@ -43,7 +43,7 @@ ctrlShow [2304,false];
 	_className = _x select 0;
 	_basePrice = _x select 1;
 	if(count _x == 3) then {
-		if(_x select 2 == nil) then {
+		if(isNil {_x select 2}) then {
 			_vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 			_control lbAdd (_vehicleInfo select 3);
 		} else {
@@ -52,7 +52,7 @@ ctrlShow [2304,false];
 	} else {
 		_vehName = nil;
 		_vehName = [_x select 2] call life_fnc_vehicleNameCfg;
-		if(_vehName == nil) then {
+		if(isNil {_vehName}) then {
 			_vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 			_control lbAdd (_vehicleInfo select 3);
 		} else {
