@@ -50,6 +50,7 @@ ctrlShow [2304,false];
 			_control lbAdd (_x select 2);
 		};
 	} else {
+		_vehName = nil;
 		_vehName = [_x select 2] call life_fnc_vehicleNameCfg;
 		if(_vehName == nil) then {
 			_vehicleInfo = [_className] call life_fnc_fetchVehInfo;
