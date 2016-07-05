@@ -64,6 +64,8 @@ switch(_shop) do
 							["CL_extinguisher",nil,350],
 							["CL_ExtinguisherMagazine",nil,35],
 							["30Rnd_test_mag_Tracer",nil,35],
+							["A3L_chainsaw","Pila Mechaniczna",35],
+							["A3L_fuel","Paliwo do Pily",5],
 							["ItemGPS",nil,25],
 							["tf_microdagr",nil,5],
 							["tf_anprc152",nil,10],
