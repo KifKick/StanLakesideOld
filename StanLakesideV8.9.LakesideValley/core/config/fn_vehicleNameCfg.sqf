@@ -88,7 +88,7 @@ _vehicles =
 	["A3L_jailBus","[CO] Wiezniarka"],
 	["A3L_ChargerUC","Charger Czarny (uc)"],
 	["A3L_ChargerUCWhite","Czarger Bialy (uc)"],
-	["cg_brinks_bank_noir",95000]
+	["cg_brinks_bank_noir","Brinks"]
 ];
 {
 	if(_x select 0 == _className) exitWith {_return = _x select 1};
