@@ -87,7 +87,7 @@ _vehicles =
 	["A3L_Suburban_UM_Black","Suburban Opancerzony (uc)"],
 	["A3L_jailBus","[CO] Wiezniarka"],
 	["A3L_ChargerUC","Charger Czarny (uc)"],
-	["A3L_ChargerUCWhite","Czarger Bialy (uc)"],
+	["A3L_ChargerUCWhite","Charger Bialy (uc)"],
 	["cg_brinks_bank_noir","Brinks"]
 ];
 {
