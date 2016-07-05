@@ -10,8 +10,8 @@ _markers = [];
 _cops = [];
 
 uiSleep 0.25;
-if(visibleMap) then {
-	{if(side _x == west || side _x == independent) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
+if(visibleMap) AND ("ItemGPS" in assignedItems player) then {
+	{if(side _x == west || side _x == independent) AND  then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
 	//Create markers
 	{
 		if ("ItemGPS" in assignedItems _x) then {
@@ -20,9 +20,6 @@ if(visibleMap) then {
 				_marker setMarkerColorLocal "ColorBlue";
 			} else {
 				_marker setMarkerColorLocal "ColorGreen";
-			};
-			if(_x getVariable["dead",FALSE]) then {
-				_marker setMarkerColorLocal "ColorRed";
 			};
 			_marker setMarkerTypeLocal "Mil_dot";
 			_marker setMarkerTextLocal format["%1", _x getVariable["realname",name _x]];
