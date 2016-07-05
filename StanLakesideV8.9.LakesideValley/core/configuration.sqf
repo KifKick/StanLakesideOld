@@ -409,7 +409,6 @@ life_licenses =
 	["license_civ_donator1","civ"],
 	["license_civ_donator2","civ"],
 	["license_civ_donator3","civ"],
-	["license_civ_IAD","civ"],
 	["license_civ_rifle","civ"]
 ];
 

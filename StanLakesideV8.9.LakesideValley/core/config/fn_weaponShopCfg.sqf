@@ -251,6 +251,20 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 7) then {
 				_temp =  [
+<<<<<<< HEAD
+=======
+					["SMG_01_F",nil,500],
+					["30Rnd_45ACP_Mag_SMG_01",nil,5],
+					["hgun_PDW2000_F",nil,3000],
+				    ["SMG_02_F",nil,500],
+				    ["30Rnd_9x21_Mag",nil,5],
+					["RH_sbr9_des",nil,3000],
+					["RH_32Rnd_9mm_M822",nil,5],
+					["chakFNP90_50rnd_skin1",nil,3000],
+		  			["chakFNP90_57x28_B_skin1",nil,5],
+					["RH_Deaglem",nil,100],
+					["RH_7Rnd_50_AE",nil,5],
+>>>>>>> refs/remotes/origin/master
 					["RH_kimber",nil,100],
 					["RH_7Rnd_45cal_m1911",nil,5],
 					["RH_M4A1",nil,5000],
