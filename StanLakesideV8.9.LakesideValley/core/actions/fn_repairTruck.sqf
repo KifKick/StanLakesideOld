@@ -16,7 +16,9 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 	if(karma_level > 0) then {
 		_cp = karma_level / 100;
 	};
-
+	if(_cp > 0.5) then {
+		_cp = 0.5;
+	};
 	if("ToolKit" in (items player)) then
 	{
 		life_action_inUse = true;
