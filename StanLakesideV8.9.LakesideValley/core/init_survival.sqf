@@ -36,6 +36,8 @@ CHBN_adjustBrightness = 275;
 
 player addEventHandler ["Put", {[3] call SOCK_fnc_updatePartial}];
 player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
+player addMPEventHandler ["MPKilled", {diag_log format ["%2 zabil %1",name (_this select 0),name (_this select 1)];}];
+player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_this select 0),name (_this select 1)];}];
 	
 
 [] spawn
@@ -282,6 +284,10 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		if(backpack player == "") then 
 		{
 			life_maxWeight = life_maxWeightT;
+		};
+		//Medycy i policjanci moga przenosic wiecej barierek
+		if(side player == west || side player == independent) then {
+			life_maxWeight = life_maxWeight + 20;
 		};
 	};
 };

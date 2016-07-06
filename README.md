@@ -1,3 +1,2 @@
 # StanLakeside
-fajne misje do fajnego serwera
-tak
+Podglad misji serwera stanlakeside.pl
