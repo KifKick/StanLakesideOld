@@ -32,4 +32,6 @@ player addItem "tf_anprc152";
 player assignItem "tf_anprc152";
 player addItem "ItemGPS";
 player assignItem "ItemGPS";
+player addItem "Mattaust_Keys";
+player assignItem "Mattaust_Keys";
 [] call life_fnc_saveGear;
