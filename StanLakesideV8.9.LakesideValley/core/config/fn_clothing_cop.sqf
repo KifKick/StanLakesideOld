@@ -100,6 +100,7 @@ switch (_filter) do
 			["RF_WING_3",nil,15],
 			["ranger_uni","Ranger",15],
 			["A3L_Police_Uniform","Sheriff & Command",15],
+			["A3L_SStie","Stroj IAD",15],
 			["LS_Marshal_Jacket",nil,15],
 			["LS_Marshal_Jacket3",nil,15],
 			["KAEL_SUITS_BR_Judge",nil,15]
@@ -212,9 +213,9 @@ switch (_filter) do
 			["A3L_EC_HWP_VEST","Highway Patrol",20],
 			["TCG_troopervest2_Fix","Trooper Blue Vest",20],
 			["HighThreatVestTrooper1_Fix",nil,15],
-			["HighThreatVestTrooper2_Fix",nil,15],
+			["HighThreatVestTrooper2_Fix",nil,15], */
 			["highthreatvestblack_Fix","Sheriff Black High Threat",20],
-			["highthreatvesttan_Fix","Sheriff Tan High Threat",20], */
+			["highthreatvesttan_Fix","Sheriff Tan High Threat",20],
 			["DTU_Vest","Detektyw/FBI dlugaV1",20],
 			["DTU_Vest2","Detektyw/FBI dlugaV2",20],
 			/*["k_black_so_fix","Black SO Vest",15],
@@ -240,7 +241,7 @@ switch (_filter) do
 			["kaelvest_sert3_Fix",nil,15],
 			["kaelvest_sert2_Fix",nil,15],
 			["kaelvest_sert1_Fix",nil,15],
-			["usms_vests_usms1_Fix",nil,15],
+			["usms_vests_usms1_Fix","Kamizelka IAD",15],
 			["usms_vests_usms2_Fix",nil,15],
 			["usms_vests_usms4_Fix",nil,15],
 			["TCG_swatvest2","SWAT PO",15],
