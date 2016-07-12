@@ -33,6 +33,7 @@ switch (_filter) do
 			["LVPD_rang7","Captain CB",50],
 			["LVPD_rang11","Deputy Chief Of Police",50],
 			["LVPD_rang12","Chief Of Police",50],
+			["LVPD_rang17","Detective I",50],
 			["LVPD_rang16","Detective II",50],
 			["LVPD_rang14","Detective III",50],
 			["jamie_tou","Policja Special",50],
