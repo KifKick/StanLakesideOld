@@ -18858,7 +18858,7 @@ class Mission
 			b=22;
 			angle=-0.87125498;
 			rectangular=1;
-			activationBy="ERROR";
+			activationBy="resistance";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -18875,7 +18875,7 @@ class Mission
 			b=22;
 			angle=-0.87125498;
 			rectangular=1;
-			activationBy="ERROR";
+			activationBy="resistance";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
