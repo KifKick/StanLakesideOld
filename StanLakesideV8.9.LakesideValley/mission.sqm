@@ -19125,7 +19125,7 @@ class Mission
 		items=4;
 		class Item0
 		{
-			position[]={9742.8584,10.52,9777.6396};
+			position[]={9742.9219,10.52,9777.9883};
 			a=3;
 			b=22;
 			angle=-0.87125498;
@@ -19142,7 +19142,7 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={9735.7295,10.52,9777.4746};
+			position[]={9735.8301,10.52,9777.5518};
 			a=3;
 			b=22;
 			angle=-0.87125498;
@@ -19159,12 +19159,12 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={9735.8213,10.52,9777.5674};
+			position[]={9735.834,10.52,9777.5293};
 			a=3;
 			b=22;
 			angle=-0.87125498;
 			rectangular=1;
-			activationBy="ERROR";
+			activationBy="GUER";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
@@ -19176,17 +19176,17 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={9735.8213,10.52,9777.5674};
+			position[]={9742.9209,10.52,9777.9873};
 			a=3;
 			b=22;
 			angle=-0.87125498;
 			rectangular=1;
-			activationBy="ERROR";
+			activationBy="GUER";
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="policegate3 animate [""Door_1_rot"", 1]";
-			expDesactiv="policegate3 animate [""Door_1_rot"", 0]";
+			expActiv="policegate2 animate [""Door_1_rot"", 1]";
+			expDesactiv="policegate2 animate [""Door_1_rot"", 0]";
 			class Effects
 			{
 			};
