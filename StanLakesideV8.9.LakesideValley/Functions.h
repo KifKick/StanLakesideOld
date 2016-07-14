@@ -188,6 +188,7 @@ class Life_Client_Core
 		class vehicleColorCfg {};
 		class vehicleColorStr {};
 		class vehicleListCfg {};
+		class vehicleNameCfg {};
 		class licenseType {};
 		class eatFood {};
 		class varHandle {};
@@ -208,7 +209,6 @@ class Life_Client_Core
 		class clothing_reb {};
 		class clothing_dive {};
 		class clothing_kart {};
-		class clothing_iad {};
 	};
 	
 	class Special

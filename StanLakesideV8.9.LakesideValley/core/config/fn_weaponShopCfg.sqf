@@ -55,19 +55,20 @@ switch(_shop) do
 							["cg_torch",nil,250], 
 							["cg_torchbattery",nil,250], 
 							["acc_flashlight","Extinguisher Flashlight",10],
-							["cg_atf_bandage_i",nil,1],
-							["cg_ATF_first_aid_kit_i",nil,1],
-							["cg_bloodbag_i",nil,1],
-							["cg_antibiotics_i",nil,1],
-							["CG_ATF_Drug_Bottle_01_i","Valium",1],
 							["A3L_Extinguisher",nil,35],
 							["CL_extinguisher",nil,350],
 							["CL_ExtinguisherMagazine",nil,35],
 							["30Rnd_test_mag_Tracer",nil,35],
+							["A3L_chainsaw","Pila Mechaniczna",35],
+							["chainsawfuel","Paliwo do Pily",5],
 							["ItemGPS",nil,25],
 							["tf_microdagr",nil,5],
 							["tf_anprc152",nil,10],
 							["Binocular",nil,120],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",1000],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",1000],
+							["cg_hatchet","Siekiera",500],
+							["sharp_swing","Ammunicja do siekiery",10],
 							["ToolKit",nil,2500],
 							["ItemCompass",nil,50],
 							["ItemWatch",nil,10],
@@ -91,9 +92,6 @@ switch(_shop) do
 					["Podstawowe wyposazenie Policji",								
 						[
 							["cg_atf_bandage_i","Bandaz",1],
-							["cg_ATF_first_aid_kit_i","Apteczka",1],
-							["cg_antibiotics_i","Antybiotyki",1],
-							["CG_ATF_Drug_Bottle_01_i","Valium",1],
 							["CG_Pro_Item_i","GoPro",350],
 							["CG_ATF_Handcuffs_i","Kajdanki",10],
 							["cg_torch","Latarka",250], 
@@ -136,14 +134,16 @@ switch(_shop) do
 					["RH_m9",nil,240],
 					["RH_15Rnd_9x19_M9",nil,5],
 					["RH_g17",nil,240],
-					["RH_17Rnd_9x19_g17",nil,5]
+					["RH_17Rnd_9x19_g17",nil,5],
+					["RH_X300",nil,5]
 				];
 			};
 			if(__GETC__(life_coplevel) > 1) then {
 				_temp = [
 					["RH_fnp45",nil,240],
 					["RH_15Rnd_45cal_fnp",nil,5],
-					["RH_X300",nil,5]
+					["RH_p226",nil,3000],
+					["RH_15Rnd_9x19_SIG",nil,240]
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -151,8 +151,6 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 2) then {
 				_temp =  [
-					["RH_barska_rds","Barska Red Dot",25],
-					["RH_cmore","C-more Red Dot",25],
 					["RH_uspm",nil,240],
 					["RH_16Rnd_40cal_usp",nil,5],
 					["RH_SFM952V",nil,10]
@@ -163,24 +161,18 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 4) then {
 				_temp =  [
-					["RH_p226",nil,3000],
-					["RH_15Rnd_9x19_SIG",nil,240],
 					["hgun_Pistol_heavy_01_F",nil,3000],
 					["11Rnd_45ACP_Mag",nil,240],
 					["RH_usp",nil,3000],
 					["RH_12Rnd_45cal_usp",nil,240],
-					["RH_fhusp",nil,3000],
-					["RH_uspm",nil,240],
-					["RH_16Rnd_40cal_usp",nil,240],
 					["RH_kimber_nw",nil,240],
 					["RH_7Rnd_45cal_m1911",nil,240],
-					["RH_fnp45",nil,240],
-					["RH_15Rnd_45cal_fnp",nil,240],
 					["RH_fn57",nil,240],
 					["RH_20Rnd_57x28_FN",nil,240],
 					["SMG_02_F",nil,3000],
 					["SMG_01_F",nil,3000],
 					["hgun_PDW2000_F",nil,3000],
+					["RH_sbr9",nil,3000],
 					["30Rnd_9x21_Mag",nil,240],
 					["30Rnd_45ACP_Mag_SMG_01",nil,240],
 					["hlc_smg_mp5a2",nil,3000],
@@ -222,21 +214,17 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 5) then {
 				_temp =  [
-					["RH_bullb",nil,240],
-					["RH_6Rnd_454_Mag",nil,240],
 					["hgun_Pistol_heavy_02_F",nil,240],
 					["6Rnd_45ACP_Cylinder",nil,240],
 					["RH_mateba",nil,240],
 					["RH_6Rnd_44_Mag",nil,240],
 					["RH_mp412",nil,240],
-					["RH_6Rnd_357_Mag",nil,240],
 					["RH_python",nil,240],
 					["RH_6Rnd_357_Mag",nil,240],
 					["RH_bull",nil,240],
 					["RH_6Rnd_454_Mag",nil,240],
 					["RH_ttracker",nil,240],
 					["RH_6Rnd_45ACP_Mag",nil,240],
-					["RH_deagle",nil,240],
 					["RH_Deaglem",nil,240],
 					["RH_demz",nil,240],
 					["RH_Deflash",nil,240],
@@ -245,8 +233,7 @@ switch(_shop) do
 					["hgun_007_SW_M10_special",nil,240],
 					["hgun_007_SW_M10_gold",nil,240],
 					["prpl_benelli_14_pgs_rail","Shotgun na gumowe kule",2200],
-					["prpl_6Rnd_12Gauge_Slug","Gumowe kule",20],
-					["6Rnd_45ACP_Cylinder",nil,5]
+					["prpl_6Rnd_12Gauge_Slug","Gumowe kule",20]
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -263,47 +250,31 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 7) then {
 				_temp =  [
-					["HandGrenade_Stone","Flashbang",300],
-					["SmokeShellYellow","Gaz lzawiacy",300],
-					["SMG_01_F",nil,500],
-					["30Rnd_45ACP_Mag_SMG_01",nil,5],
-					["hgun_PDW2000_F",nil,3000],
-				    ["SMG_02_F",nil,500],
-				    ["30Rnd_9x21_Mag",nil,5],
-					["RH_sbr9_des",nil,3000],
-					["RH_32Rnd_9mm_M822",nil,5],
-					["chakFNP90_50rnd_skin1",nil,3000],
-		  			["chakFNP90_57x28_B_skin1",nil,5],
-					["RH_Deaglem",nil,100],
-					["RH_7Rnd_50_AE",nil,5],
 					["RH_kimber",nil,100],
 					["RH_7Rnd_45cal_m1911",nil,5],
-					["RH_6Rnd_357_Mag",nil,20],
-					["RH_20Rnd_762x51_M80A1",nil,20],
+					["RH_M4A1",nil,5000],
+					["RH_M4A6",nil,5000],
+					["RH_M16A2",nil,5000],
 					["RH_M16A3",nil,5000],
-					["RH_30Rnd_556x45_M855A1",nil,500],
+					["RH_M16A4",nil,5000],
+					["RH_M16A6",nil,5000],
+					["RH_mk12mod1",nil,5000],
+					["RH_30Rnd_556x45_Mk262",nil,500],
 					["hlc_rifle_bcmjack",nil,5220],
 					["hlc_30rnd_556x45_EPR",nil,520],
 					["muzzle_snds_M",nil,4],
-					["hlc_smg_mp5a4",nil,3100],
-					["hlc_30Rnd_9x19_GD_MP5",nil,25],
 					["hlc_rifle_honeybadger",nil,25],
-					["RH_6Rnd_357_Mag",nil,25],
-					["RH_M4_ris_m",nil,5500],
-					["RH_30Rnd_556x45_M855A1",nil,205],
-					["RH_barska_rds","Barska Red Dot",25],
-					["RH_cmore","C-more Red Dot",25],
 					["RH_compM2",nil,25],
 					["RH_compM2l",nil,25],
 					["RH_demz",nil,1500],
 				    ["RH_M6X",nil,1500],
-					["RH_6Rnd_357_Mag",nil,20]
+					["RH_leu_mk4",nil,500]
 				];
 				{
 					(_ret select 0) pushBack _x;
 				} foreach _temp;	
 			};
-			["Sklep z bronia palna Policji", _ret select 0];
+			["Uzbrojenie Policji", _ret select 0];
 		};
 		
         case "rebel_low":
@@ -640,30 +611,22 @@ switch(_shop) do
 							["KPFS_HKP7",nil,500],
                             ["KPFS_Mauser_Hsc",nil,600],
                             ["kpfs_8Rnd_765x17_PP",nil,50],
-
                             ["KPFS_Walther_M9",nil,700],
                             ["kpfs_6Rnd_635x15",nil,1250],
-
                             ["KPFS_P99",nil,800],
                             ["KPFS_15rnd_9x19_P99",nil,50],
-
                             ["RH_g17",nil,900],
                             ["RH_g19",nil,900],
                             ["RH_g19t",nil,900],
                             ["RH_17Rnd_9x19_g17",nil,50],
-
                             ["RH_m9",nil,900],
                             ["RH_15Rnd_9x19_M9",nil,50],
-
                             ["RH_sw659",nil,1200],
                             ["RH_14Rnd_9x19_sw",nil,50],
-
                             ["RH_gsh18",nil,1500],
                             ["RH_18Rnd_9x19_gsh",nil,50],
-
                             ["SMG_01_F",nil,55000],
                             ["30Rnd_45ACP_Mag_SMG_01",nil,500],
-
 							["RH_g18",nil,25000],
                             ["RH_33Rnd_9x19_g18",nil,1250],
 							["chakFNP90_50rnd_skin1",nil,89500],
@@ -709,7 +672,6 @@ switch(_shop) do
 							["optic_Yorris",nil,2500],
 					        ["RH_gsh18",nil,10500],
 				            ["RH_18Rnd_9x19_gsh",nil,600],
-
                             ["RH_kimber",nil,9000],
                             ["RH_7Rnd_45cal_m1911",nil,750],
 							["ej_Thompson",nil,155500],
@@ -742,7 +704,6 @@ switch(_shop) do
 							["hlc_25Rnd_9x19mm_JHP_AUG",nil,750],
 							["hgun_PDW2000_F",nil,89750],
 							["30Rnd_9x21_Mag",nil,750],
-							
 							["hlc_rifle_augpara",nil,89500],
 			                ["hlc_25Rnd_9x19mm_JHP_AUG",nil,900],
 							["optic_Aco",nil,2500],
@@ -766,7 +727,6 @@ switch(_shop) do
 							["RH_reflex",nil,5000],
 							["RH_zpoint",nil,5000],
 			                ["RH_M6X",nil,4500],
-							
 							["chakFNP90_50rnd_skin2",nil,89500],
 							["chakFNP90_57x28_B_skin1",nil,2250],
 							["A3L_AK47sgold",nil,125000],

@@ -98,7 +98,7 @@ switch (_item) do
 	case "raw chicken": {2.5};
 	case "raw sheep meat": {2};
 	case "raw rabbit": {2.5};
-	case "cigarette": {10};
+	case "cigarette": {1};
 	case "RoadConeStripB": {5};
 	case "RoadConeB": {2};
 	case "RoadConeStrip": {5};
