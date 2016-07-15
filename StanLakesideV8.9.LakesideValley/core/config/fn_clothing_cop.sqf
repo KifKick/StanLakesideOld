@@ -280,7 +280,7 @@ switch (_filter) do
 			["kif_aiad_vest_donald","AIAD Vest D. Donaldowski",15],
 			["kif_swat_vest","Police SWAT Vest",15],
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],
-			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
+			["kif_swat_vest3","Police SWAT Sergeant Vest",15]
 		];
 	};
 
