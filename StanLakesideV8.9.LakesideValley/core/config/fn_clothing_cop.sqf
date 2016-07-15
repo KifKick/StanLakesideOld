@@ -271,6 +271,7 @@ switch (_filter) do
 			["kif_dtu_vest_galaretka","DTU Vest K. Galaretka",15],
 			["kif_dtu_vest_kali","DTU Vest K. Alcatraz",15],
 			["kif_dtu_vest_marian","DTU Vest M. Minkovsky",15],
+			["kif_dtu_vest_hess","DTU Vest R. Hess",15],
 			["kif_dtu_vest_richard","DTU Vest Richard Hess",15],
 			["kif_dtu_vest_rudolf","DTU Vest Rudolf Hess",15],
 			["kif_aiad_vest_teddy","AIAD Vest T. Messerschmit",15],
