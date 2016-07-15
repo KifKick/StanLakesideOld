@@ -252,7 +252,7 @@ switch(_shop) do
 				_temp =  [
 					["RH_kimber",nil,100],
 					["RH_7Rnd_45cal_m1911",nil,5],
-					["RH_M4A1",nil,5000],
+					["RH_M4_ris_m",nil,5000],
 					["RH_M4A6",nil,5000],
 					["RH_M16A2",nil,5000],
 					["RH_M16A3",nil,5000],
@@ -260,6 +260,8 @@ switch(_shop) do
 					["RH_M16A6",nil,5000],
 					["RH_mk12mod1",nil,5000],
 					["RH_30Rnd_556x45_Mk262",nil,500],
+					["RH_68x43_B_FMJ",nil,500],
+					["RH_556x45_B_Mk262",nil,500],
 					["hlc_rifle_bcmjack",nil,5220],
 					["hlc_30rnd_556x45_EPR",nil,520],
 					["muzzle_snds_M",nil,4],
