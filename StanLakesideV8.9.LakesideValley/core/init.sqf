@@ -199,6 +199,7 @@ if!(getRemoteSensorsDisabled)then
 };
 
 ASAGNDJSN = true;
+setTerrainGrid = 50;
 
 
 [] spawn {
