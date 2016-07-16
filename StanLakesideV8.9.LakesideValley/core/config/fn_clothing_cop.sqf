@@ -224,8 +224,8 @@ switch (_filter) do
 			["HighThreatVestTrooper2_Fix",nil,15], */
 			["highthreatvestblack_Fix","Sheriff Black High Threat",20],
 			["highthreatvesttan_Fix","Sheriff Tan High Threat",20],
-			["DTU_Vest","Detektyw/FBI dlugaV1",20],
-			["DTU_Vest2","Detektyw/FBI dlugaV2",20],
+			/*["DTU_Vest","Detektyw/FBI dlugaV1",20],
+			["DTU_Vest2","Detektyw/FBI dlugaV2",20],*/
 			/*["k_black_so_fix","Black SO Vest",15],
 			["k_white_so_fix","White SO Vest",15],
 			["k_white2_so_fix","Off White SO Vest",15],
@@ -249,17 +249,38 @@ switch (_filter) do
 			["kaelvest_sert3_Fix",nil,15],
 			["kaelvest_sert2_Fix",nil,15],
 			["kaelvest_sert1_Fix",nil,15],
-			["usms_vests_usms1_Fix","Kamizelka IAD",15],
+			/*["usms_vests_usms1_Fix","Kamizelka IAD",15],
 			["usms_vests_usms2_Fix",nil,15],
-			["usms_vests_usms4_Fix",nil,15],
-			["TCG_swatvest2","SWAT PO",15],
+			["usms_vests_usms4_Fix",nil,15],*/
+			/*["TCG_swatvest2","SWAT PO",15],
 			["TCG_swatvest3","SWAT SGT",15],
-			["TCG_swatvest1","SWAT CO",15],
+			["TCG_swatvest1","SWAT CO",15],*/
 			["TCG_sertvest1","UniV2 SERT",15],
 			["TRYK_V_tacv1LC_P2_BK","Dowodca SERT",15],
 			["REB_VEST_PINK","Kamizelka Komendata",15],
 			["TRYK_V_tacv1MLC_BK","Kamizelka KomendataV2",15],
-			["TRYK_V_Bulletproof","Ride Along Vest",15]
+			["TRYK_V_Bulletproof","Ride Along Vest",15],
+			["kif_berau_vest","LSPD Command Berau",15],
+			["kif_berau_iza_vest","LSPD Command Berau Iza Elric",15],
+			["kif_berau_derek_vest","LSPD Command Berau D. Shepard",15],
+			["kif_sheriff_commander_dorian","Sheriff Commander Vest D. Lych",15],
+			["kif_dtu_vest_lspd", "DTU Vest LSPD", "15"],
+			["kif_dtu_vest_white","DTU Vest White",15],
+			["kif_dtu_vest_yellow","DTU Vest Yellow",15],
+			["kif_dtu_vest_brouver","DTU Vest B. White",15],
+			["kif_dtu_vest_galaretka","DTU Vest K. Galaretka",15],
+			["kif_dtu_vest_kali","DTU Vest K. Alcatraz",15],
+			["kif_dtu_vest_marian","DTU Vest M. Minkovsky",15],
+			["kif_dtu_vest_hess","DTU Vest R. Hess",15],
+			["kif_dtu_vest_richard","DTU Vest Richard Hess",15],
+			["kif_dtu_vest_rudolf","DTU Vest Rudolf Hess",15],
+			["kif_aiad_vest_teddy","AIAD Vest T. Messerschmit",15],
+			["kif_aiad_vest_michal","AIAD Vest M. Kaminski",15],
+			["kif_aiad_vest_alexey","AIAD Vest A. Abidi",15],
+			["kif_aiad_vest_donald","AIAD Vest D. Donaldowski",15],
+			["kif_swat_vest","Police SWAT Vest",15],
+			["kif_swat_vest2","Police SWAT Corporal Vest",15],
+			["kif_swat_vest3","Police SWAT Sergeant Vest",15]
 		];
 	};
 
