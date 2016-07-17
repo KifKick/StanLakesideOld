@@ -29,6 +29,30 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
+switch (true) do
+{
+	case((__GETC__(life_medicLevel)) = 1):
+	{
+		life_paychek = 1000;
+	};
+	case((__GETC__(life_medicLevel)) = 2):
+	{
+		life_paychek = 1500;
+	};
+	case((__GETC__(life_medicLevel)) = 3):
+	{
+		life_paychek = 2000;
+	};
+	case((__GETC__(life_medicLevel)) = 4):
+	{
+		life_paychek = 2500;
+	};
+	case((__GETC__(life_medicLevel)) = 5):
+	{
+		life_paychek = 3000;
+	};
+};
+
 if(life_karma > 999) then {
 	karma_level = life_karma / 400;
 	karma_level = floor (karma_level);
