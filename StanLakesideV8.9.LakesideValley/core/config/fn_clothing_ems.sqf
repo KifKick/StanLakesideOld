@@ -144,7 +144,7 @@ switch (_filter) do
 			["RR_EMS_Vests_SearchRescue","Kamizelka Poszukiwawcza",5],
 			["TRYK_V_Bulletproof","Kamizelka na Akcje",2],
 			["U_C_FireFighter","Kamizelka z butla",2],
-			["V_RebreatherB",nil,5]
+			["V_RebreatherB",nil,5],
 			["kif_fire_vest_jeff","Fire Chief Vest J. Favignano",5],
 			["kif_fire_vest_odlamkowy","Fire Assistant Chief M. Odlamkowy",5],
 			["kif_fire_vest_deputy","Fire Chief Deputy Vest",5],
