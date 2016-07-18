@@ -26,7 +26,7 @@ CHBN_adjustBrightness = 275;
 [] spawn {
 	while{true} do
 	{
-			if (!player call TFAR_fnc_isTeamSpeakPluginEnabled) then
+			if (!(player call TFAR_fnc_isTeamSpeakPluginEnabled)) then
 			{
 				"plugincheck" cutText ["Wlacz plugin TaskForceRadio!", "BLACK", 1, true];
 				uiSleep 2;
