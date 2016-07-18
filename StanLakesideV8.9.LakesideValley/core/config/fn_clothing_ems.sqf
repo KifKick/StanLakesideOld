@@ -48,7 +48,15 @@ switch (_filter) do
 			["RF_EMSWING_4", nil, 2],
 			["A3L_EMT2","Fire Suit",50],
 			["V_Firefighter", nil, 2],
-			["U_B_Wetsuit","Wet Suit",50]
+			["U_B_Wetsuit","Wet Suit",50],
+			["kif_emt_clothes_shirt_james", nil, 2],
+			["kif_emt_clothes_shirt_trynkiewicz", nil, 2],
+			["kif_emt_clothes_shirt_paramedicfd", nil, 2],
+			["kif_emt_clothes_shirt_officialfd", nil, 2],
+			["kif_emt_clothes_shirt_fd", nil, 2],
+			["kif_emt_clothes_shirt_chieffd_jeff", nil, 2],
+			["kif_emt_clothes_shirt_battalionfd", nil, 2],
+			["kif_emt_clothes_shirt_assistant_marian", nil, 2]
 		];
 	};
 
@@ -137,6 +145,30 @@ switch (_filter) do
 			["TRYK_V_Bulletproof","Kamizelka na Akcje",2],
 			["U_C_FireFighter","Kamizelka z butla",2],
 			["V_RebreatherB",nil,5]
+			["kif_fire_vest_jeff","Fire Chief Vest J. Favignano",5],
+			["kif_fire_vest_odlamkowy","Fire Assistant Chief M. Odlamkowy",5],
+			["kif_fire_vest_deputy","Fire Chief Deputy Vest",5],
+			["kif_traffic_controller_vest","Traffic Controller Vest",5],
+			["kif_emt_supervisior_vest","Supervisior Vest",5],
+			["kif_fire_rescue_paramedic_vest","Fire Rescue Paramedic Vest",5],
+			["kif_fire_chief_vest","Fire Chief Vest",5],
+			["kif_air_ambulance_vest","Air Ambulance Paramedic Vest",5],
+			["NewEden_Clothing_FDParamedic","FD Paramedic",5],
+			["NewEden_Clothing_EMSEMT","EMS EMT",5],
+			["kif_air_ambulance_vest", nil, 2],
+			["kif_fire_chief_vest", nil, 2],
+			["kif_fire_rescue_paramedic_vest", nil, 2],
+			["kif_emt_supervisior_vest", nil, 2],
+			["kif_traffic_controller_vest", nil, 2],
+			["kif_fire_vest_deputy", nil, 2],
+			["kif_fire_vest_jeff", nil, 2],
+			["kif_fire_vest_odlamkowy", nil, 2],
+			["kif_ems_vest_corvus", nil, 2],
+			["kif_ems_vest_james", nil, 2],
+			["kif_ems_vest_trynkiewicz", nil, 2],
+			["kif_fema_vest_james", nil, 2],
+			["kif_fema_vest_jeff", nil, 2],
+			["kif_fema_vest_trynkiewicz", nil, 2]
 		];
 	};
 
