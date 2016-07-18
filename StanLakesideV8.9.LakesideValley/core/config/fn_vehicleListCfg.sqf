@@ -16,6 +16,7 @@ switch (_shop) do
 	{
 		_return = 
 		[
+			["shounka_transam_noir",200000],
 			["IVORY_PRIUS",125000],
 			["ivory_supra",450000],
 			["ivory_supra_tuned",1300000],
