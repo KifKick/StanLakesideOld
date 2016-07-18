@@ -260,9 +260,9 @@ switch (_filter) do
 			["REB_VEST_PINK","Kamizelka Komendata",15],
 			["TRYK_V_tacv1MLC_BK","Kamizelka KomendataV2",15],
 			["TRYK_V_Bulletproof","Ride Along Vest",15],
-			["kif_bureau_vest","LSPD Command Berau",15],
-			["kif_bureau_iza_vest","LSPD Command Berau Iza Elric",15],
-			["kif_bureau_derek_vest","LSPD Command Berau D. Shepard",15],
+			["kif_bureau_vest","LSPD Command Bureau",15],
+			["kif_bureau_iza_vest","LSPD Command Bureau Iza Elric",15],
+			["kif_bureau_derek_vest","LSPD Command Bureau D. Shepard",15],
 			["kif_sheriff_commander_dorian","Sheriff Commander Vest Dorian Lych",15],
 			["kif_sheriff_commander_lych","Sheriff Commander Vest D. Lych",15],
 			["kif_dtu_vest_lspd", "DTU Vest LSPD", "15"],
@@ -285,9 +285,9 @@ switch (_filter) do
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],
 			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
 			["kif_prosecutor_vest_moje","Prosecutor Vest Moje Zerusinski",20],
-			["kif_sheriff_vest","Sheriff Kamizelka",20],
 			["kif_police_vest","Kamizelka do Munduru",20],
-			["kif_traffic_vest","Kamizelka Drogowka)",20]
+			["kif_sheriff_vest","Sheriff Kamizelka",20],
+			["kif_traffic_vest","Kamizelka Drogowka",20]
 			
 		];
 	};
