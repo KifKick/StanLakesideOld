@@ -199,15 +199,15 @@ switch (_filter) do
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
 			["crt_vest_Fix",nil,20],
 			["jamie_blue","Kamizelka do Munduru",20],
-			["kenny_vest_police","Kamizelka do MunduruV2",20],
+			/*["kenny_vest_police","Kamizelka do MunduruV2",20],*/
 			["jamie_reflective","Kamizelka widoczna Zolta",20],
-			["kenny_vest_traffic","Kamizelka Drogowka)",20],
+			/*["kenny_vest_traffic","Kamizelka Drogowka)",20],*/
 			["jamie_police2_4","Kamizelka na Akcje",20],
 			["jamie_black2","Kamizelka Czarna Akcje",20],
-			["kenny_vest_Sheriff","Sheriff Kamizelka",20],
+			/*["kenny_vest_Sheriff","Sheriff Kamizelka",20],*/
 			["cg_policevest1_fix","Police Vest 2",20],
 			["cg_policevest1_fix","Police Vest 2",20],
-			["kenny_vest_detective","Detektywi",20],
+			["kif_detective_vest","Detektywi",20],
 			["SCommand_Vest_Fix",nil,20],
 			["A3L_deptjvest1","Kamizelka Wydzialu Sprawiedliwosci",20],
 			["cg_policevest1_fix","Police Vest 2",20],
@@ -260,10 +260,11 @@ switch (_filter) do
 			["REB_VEST_PINK","Kamizelka Komendata",15],
 			["TRYK_V_tacv1MLC_BK","Kamizelka KomendataV2",15],
 			["TRYK_V_Bulletproof","Ride Along Vest",15],
-			["kif_berau_vest","LSPD Command Berau",15],
-			["kif_berau_iza_vest","LSPD Command Berau Iza Elric",15],
-			["kif_berau_derek_vest","LSPD Command Berau D. Shepard",15],
-			["kif_sheriff_commander_dorian","Sheriff Commander Vest D. Lych",15],
+			["kif_bureau_vest","LSPD Command Bureau",15],
+			["kif_bureau_iza_vest","LSPD Command Bureau Iza Elric",15],
+			["kif_bureau_derek_vest","LSPD Command Bureau D. Shepard",15],
+			["kif_sheriff_commander_dorian","Sheriff Commander Vest Dorian Lych",15],
+			["kif_sheriff_commander_lych","Sheriff Commander Vest D. Lych",15],
 			["kif_dtu_vest_lspd", "DTU Vest LSPD", "15"],
 			["kif_dtu_vest_white","DTU Vest White",15],
 			["kif_dtu_vest_yellow","DTU Vest Yellow",15],
@@ -274,13 +275,20 @@ switch (_filter) do
 			["kif_dtu_vest_hess","DTU Vest R. Hess",15],
 			["kif_dtu_vest_richard","DTU Vest Richard Hess",15],
 			["kif_dtu_vest_rudolf","DTU Vest Rudolf Hess",15],
+			["kif_dtu_vest_jurgen_l","DTU Vest J. Stroop",15],
 			["kif_aiad_vest_teddy","AIAD Vest T. Messerschmit",15],
 			["kif_aiad_vest_michal","AIAD Vest M. Kaminski",15],
 			["kif_aiad_vest_alexey","AIAD Vest A. Abidi",15],
 			["kif_aiad_vest_donald","AIAD Vest D. Donaldowski",15],
 			["kif_swat_vest","Police SWAT Vest",15],
+			["kif_swat_vest_hugh","Police SWAT Vest H. Shaw",15],
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],
-			["kif_swat_vest3","Police SWAT Sergeant Vest",15]
+			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
+			["kif_prosecutor_vest_moje","Prosecutor Vest Moje Zerusinski",20],
+			["kif_police_vest","Kamizelka do Munduru",20],
+			["kif_sheriff_vest","Sheriff Kamizelka",20],
+			["kif_traffic_vest","Kamizelka Drogowka",20]
+			
 		];
 	};
 
