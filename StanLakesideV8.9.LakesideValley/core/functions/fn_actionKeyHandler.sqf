@@ -99,12 +99,8 @@ if(!dialog && playerSide == independent && _curTarget isKindOf "Man") exitwith {
 
 if((_curTarget getVariable["dead",FALSE]) && playerSide != independent && !dialog && _curTarget isKindOf "Man") exitwith {
 	if(side _curTarget == independent || side _curTarget == west || side _curTarget == civilian || side _curTarget == east) then {
-		if(_curTarget getVariable["stwierdzamZgon690",FALSE]) {
-			["Zgon zostal stwierdzony, biedny czlek tak mlodo umarl."]spawn domsg;
-		} else {
-			if( life_inv_medkit > 0 ) then { 
-				[_curTarget] call life_fnc_CPRPlayer;
-			};
+		if( life_inv_medkit > 0 ) then { 
+			[_curTarget] call life_fnc_CPRPlayer;
 		};
 	};
 };

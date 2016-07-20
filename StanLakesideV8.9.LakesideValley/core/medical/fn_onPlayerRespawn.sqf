@@ -14,7 +14,6 @@ _unit setVariable["Escorting", nil, true];
 _unit setVariable["transporting", nil, true]; //Again why the fuck am I setting this? Can anyone tell me?
 _unit setVariable["steam64id",(getPlayerUID player), true]; //Reset the UID.
 _unit setVariable["realname",profileName, true]; //Reset the players name.
-player setVariable["stwierdzamZgon690", false, true];
 
 _unit addRating 9999999999999999; //Set our rating to a high value, this is for a ARMA engine thing.
 player playMoveNow "amovppnemstpsraswrfldnon";

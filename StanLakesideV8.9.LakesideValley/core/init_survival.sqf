@@ -796,10 +796,6 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 		_Btn11 ctrlSetText format["%1",_thisInjury];
 		_Btn11 buttonSetAction "[user,10,damageAmount11] spawn fnc_fixProblem;";
 		if( damageAmount11 != 0) then { _Btn11 ctrlEnable true; } else { _Btn11 ctrlEnable false; ctrlShow[115,false]; };
-		
-		_Btn12 = _display displayCtrl 27;
-		if(playerSide == independent) then {_Btn12 ctrlEnable true;} else {_Btn12 ctrlEnable false;};
-		_Btn12 buttonSetAction "user setVariable [""stwierdzamZgon690"", true, true];";
 
 	};
 
