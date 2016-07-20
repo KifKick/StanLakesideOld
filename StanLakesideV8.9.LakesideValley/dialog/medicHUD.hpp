@@ -512,7 +512,7 @@ class medicHUD
 			w = 0.55; 
 			h = 0.05;
 		};
-		class diseaseText1: RscButtonMedicSystem 
+		class zgonButton: RscButtonMedicSystem 
 		{
 			idc = 27;
 			text = "Stwierdz zgon!";
