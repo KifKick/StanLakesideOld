@@ -33,7 +33,7 @@ class Life_Charge_Menu {
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 1336;
-			text = "File Charges";
+			text = "Dodaj do listy poszukiwanych";
 			
 			x = 0.1;
 			y = 0.2;
@@ -64,7 +64,7 @@ class Life_Charge_Menu {
 
 		class Scublord : Life_RscButtonMenu {
 			idc = -1;
-			text = "Charge";
+			text = "Dodaj";
 			colorBackground[] = {0,0.2235294117647059,0.3725490196078431,1};
 			onButtonClick = "[] spawn life_fnc_initCustomCharge;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
@@ -107,7 +107,7 @@ class Life_customCharge_ui
 		class Title : Life_RscTitle {
 			colorBackground[] = {0, 0, 0, 0};
 			idc = 2651;
-			text = "Custom Crime";
+			text = "Dodaj do listy poszukiwanych";
 			x = 0.3;
 			y = 0.2;
 			w = 0.6;
@@ -118,7 +118,7 @@ class Life_customCharge_ui
 		{
 			idc = 7331;
 			
-			text = "Type the bounty value";
+			text = "Wartosc nagrody";
 			sizeEx = 0.030;
 			x = 0.40; y = 0.30;
 			w = 0.25; h = 0.03;
@@ -128,7 +128,7 @@ class Life_customCharge_ui
 		{
 			idc = 7332;
 			
-			text = "Type the charge";
+			text = "Przestepstwo";
 			sizeEx = 0.030;
 			x = 0.40; y = 0.34;
 			w = 0.25; h = 0.03;
@@ -136,7 +136,7 @@ class Life_customCharge_ui
 
 		class MoneyEdit: Life_RscButtonMenu {
 			idc = -1;
-			text = "Charge";
+			text = "Dodaj";
 			colorBackground[] = {0,0.2235294117647059,0.3725490196078431,1};
 			onButtonClick = "life_charged = true;";
 			x = 0.45;
