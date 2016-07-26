@@ -794,7 +794,7 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 		if( damageAmount11 != 0) then { _Btn11 ctrlEnable true; } else { _Btn11 ctrlEnable false; ctrlShow[115,false]; };
 		
 		_Btn12 = _display displayCtrl 27;
-		if(playerSide == independent && !(user getVariable ["stwierdzamZgon690", FALSE])) then {_Btn12 ctrlEnable true;} else {_Btn12 ctrlEnable false;};
+		if(playerSide == independent && !(user getVariable ["stwierdzamZgon690", FALSE]) && _curTarget getVariable["dead",FALSE]) then {_Btn12 ctrlEnable true;} else {_Btn12 ctrlEnable false;};
 		_Btn12 buttonSetAction "user setVariable [""stwierdzamZgon690"", true, true];";
 
 	};
