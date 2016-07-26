@@ -228,7 +228,7 @@ switch (playerSide) do
 	};
 	case independent: {
 		cash_in_bank = 12000;
-		life_paycheck = 1000;
+		life_paycheck = 200;
 	};
 	case east:
 	{
