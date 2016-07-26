@@ -219,16 +219,16 @@ switch (playerSide) do
 	case west: 
 	{
 		cash_in_bank = 12000; //Starting Bank Money
-		life_paycheck = 1000; //Paycheck Amount
+		life_paycheck = 500; //Paycheck Amount
 	};
 	case civilian: 
 	{
 		cash_in_bank = 12000; //Starting Bank Money
-		life_paycheck = 200; //Paycheck Amount
+		life_paycheck = 50; //Paycheck Amount
 	};
 	case independent: {
 		cash_in_bank = 12000;
-		life_paycheck = 2000;
+		life_paycheck = 1000;
 	};
 	case east:
 	{
