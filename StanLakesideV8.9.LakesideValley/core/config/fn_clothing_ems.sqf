@@ -49,14 +49,14 @@ switch (_filter) do
 			["A3L_EMT2","Fire Suit",50],
 			["V_Firefighter", nil, 2],
 			["U_B_Wetsuit","Wet Suit",50],
-			["kif_emt_clothes_shirt_james", nil, 2],
-			["kif_emt_clothes_shirt_trynkiewicz", nil, 2],
-			["kif_emt_clothes_shirt_paramedicfd", nil, 2],
-			["kif_emt_clothes_shirt_officialfd", nil, 2],
-			["kif_emt_clothes_shirt_fd", nil, 2],
-			["kif_emt_clothes_shirt_chieffd_jeff", nil, 2],
-			["kif_emt_clothes_shirt_battalionfd", nil, 2],
-			["kif_emt_clothes_shirt_assistant_marian", nil, 2]
+			["kif_emt_clothes_shirt_james_obj", nil, 2],
+			["kif_emt_clothes_shirt_trynkiewicz_obj", nil, 2],
+			["kif_emt_clothes_shirt_paramedicfd_obj", nil, 2],
+			["kif_emt_clothes_shirt_officialfd_obj", nil, 2],
+			["kif_emt_clothes_shirt_fd_obj", nil, 2],
+			["kif_emt_clothes_shirt_chieffd_jeff_obj", nil, 2],
+			["kif_emt_clothes_shirt_battalionfd_obj", nil, 2],
+			["kif_emt_clothes_shirt_assistant_marian_obj", nil, 2]
 		];
 	};
 

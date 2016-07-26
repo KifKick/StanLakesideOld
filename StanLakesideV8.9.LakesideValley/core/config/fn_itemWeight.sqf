@@ -57,9 +57,9 @@ switch (_item) do
 	case "money": {0};
 	case "pickaxe": {2};
 	case "copperore": {4};
-	case "ironore": {5};
+	case "ironore": {4};
 	case "copper_r": {3};
-	case "iron_r": {5};
+	case "iron_r": {3};
 	case "sand": {3};
 	case "salt": {3};
 	case "salt_r": {1};
