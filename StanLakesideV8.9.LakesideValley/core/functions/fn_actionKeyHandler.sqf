@@ -35,7 +35,7 @@ if(_isWater) then {
 };
 
 _spikeStrips = (nearestObjects[getPos player,["CG_Spikes_Extended"],3]) select 0;
-if(!isNil "_spikeStrips") {
+if(!isNil "_spikeStrips") then {
 	if !(_spikeStrips isEqualTo [] && !spikeAntiSpam) then {
 			[] spawn {
 				spikeAntiSpam = true;
