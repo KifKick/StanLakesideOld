@@ -22,7 +22,7 @@ switch (_shop) do
 			["ivory_supra_tuned",1300000],
 			["ivory_isf",250000],
 			["ivory_m3",1350000],
-			["ivory_m3_gts",280000],
+			["ivory_m3_gts",2250000],
 			["ivory_gt500",800000],
 			["shounka_f430_spider_bleufonce",3500000],
 			["ivory_wrx",2250000],
