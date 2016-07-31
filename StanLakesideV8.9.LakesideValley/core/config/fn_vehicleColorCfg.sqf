@@ -145,6 +145,16 @@ switch (_vehicle) do
 			[_path + "st_supervisor.paa","cop"]
 		];
 	};
+	case "ivory_m3_marked_gts": {
+		_path = "\ivory_m3\data\";
+		_ret =
+		[
+			[_path + "so_patrol.paa","cop"],
+			[_path + "so_supervisor.paa","cop"],
+			[_path + "st_patrol.paa","cop"],
+			[_path + "st_supervisor.paa","cop"]
+		];
+	};
 	case "ivory_m3_slicktop": {
 		_path = "\ivory_m3\data\";
 		_ret =
