@@ -61,6 +61,8 @@ switch(_shop) do
 							["30Rnd_test_mag_Tracer",nil,35],
 							["A3L_chainsaw","Pila Mechaniczna",35],
 							["chainsawfuel","Paliwo do Pily",5],
+							["A3L_JackHammer","Jack Hammer",35],
+							["jackhammerfuel","Paliwo do Jack Hammer'a",5],
 							["ItemGPS",nil,25],
 							["tf_microdagr",nil,5],
 							["tf_anprc152",nil,10],
