@@ -139,7 +139,7 @@ switch (_shop) do
 			["kif_vehicles_helicopter_orca_ems",45000],
 			["kif_vehicles_helicopter_taru_ems",45000],
 			["A3L_EC635_SAR",45000],
-			["SC_412",120000],
+			["SC_412",120000]
 		];
 	};
 	
