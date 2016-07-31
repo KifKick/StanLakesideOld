@@ -113,7 +113,7 @@ switch (_shop) do
 			["sfp_wheelchair",92500],
 			["sfp_wheelchair_mark2",92500],
 			["bv_the_crowner_cop_emt",50000],
-			["A3L_Charger_EMS_Fast",50000],
+			//["A3L_Charger_EMS_Fast",50000],
 			["A3L_ExplorerEMS_S",50000],
 			["A3L_ExplorerEMS_P",50000],
 			["cnp_Defender",50000],
