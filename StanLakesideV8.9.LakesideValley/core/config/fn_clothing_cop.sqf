@@ -266,6 +266,8 @@ switch (_filter) do
 			["kif_sheriff_commander_dorian_vest","Sheriff Commander Vest Dorian Lych",15],
 			["kif_sheriff_commander_lych_vest","Sheriff Commander Vest D. Lych",15],
 			["kif_lspd_police_department_vest", "LSPD Police Department", "15"],
+			["kif_lspd_police_department_sgt_kraksa_vest", "LSPD Police Department Sgt. P. Kraksa Vest", "15"],
+			["kif_lspd_police_department_sgt_white_vest", "LSPD Police Department Sgt. G. White Vest", "15"],
 			["kif_supervisor_vest_lspd", "Supervisor Vest LSPD", "15"],
 			["kif_supervisor_vest_richard", "Supervisor LSPD Vest Richard Hess", "15"],
 			["kif_supervisor_sheriff_vest", "Supervisor Sheriff Vest", "15"],
