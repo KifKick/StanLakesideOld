@@ -149,6 +149,17 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "ivory_m3_marked_gts" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Sheriff Patrol";};
+			case 1:  {_color = "Sheriff Supervisor";};
+			case 2:  {_color = "StateTrooper Patrol";};
+			case 3:  {_color = "StateTrooper Supervisor";};
+		};
+	};
+	
 	case "ivory_m3_slicktop" :
 	{
 		switch (_index) do

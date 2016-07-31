@@ -55,21 +55,22 @@ switch(_shop) do
 							["cg_torch",nil,250], 
 							["cg_torchbattery",nil,250], 
 							["acc_flashlight","Extinguisher Flashlight",10],
-							["cg_atf_bandage_i",nil,1],
-							["cg_ATF_first_aid_kit_i",nil,1],
-							["cg_bloodbag_i",nil,1],
-							["cg_antibiotics_i",nil,1],
-							["CG_ATF_Drug_Bottle_01_i","Valium",1],
 							["A3L_Extinguisher",nil,35],
 							["CL_extinguisher",nil,350],
 							["CL_ExtinguisherMagazine",nil,35],
 							["30Rnd_test_mag_Tracer",nil,35],
 							["A3L_chainsaw","Pila Mechaniczna",35],
-							["A3L_fuel","Paliwo do Pily",5],
+							["chainsawfuel","Paliwo do Pily",5],
+							["A3L_JackHammer","Jack Hammer",35],
+							["jackhammerfuel","Paliwo do Jack Hammer'a",5],
 							["ItemGPS",nil,25],
 							["tf_microdagr",nil,5],
 							["tf_anprc152",nil,10],
 							["Binocular",nil,120],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",1000],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",1000],
+							["cg_hatchet","Siekiera",500],
+							["sharp_swing","Ammunicja do siekiery",10],
 							["ToolKit",nil,2500],
 							["ItemCompass",nil,50],
 							["ItemWatch",nil,10],
@@ -253,7 +254,7 @@ switch(_shop) do
 				_temp =  [
 					["RH_kimber",nil,100],
 					["RH_7Rnd_45cal_m1911",nil,5],
-					["RH_M4A1",nil,5000],
+					["RH_M4_ris_m",nil,5000],
 					["RH_M4A6",nil,5000],
 					["RH_M16A2",nil,5000],
 					["RH_M16A3",nil,5000],
@@ -261,6 +262,7 @@ switch(_shop) do
 					["RH_M16A6",nil,5000],
 					["RH_mk12mod1",nil,5000],
 					["RH_30Rnd_556x45_Mk262",nil,500],
+					["RH_30Rnd_68x43_FMJ",nil,500],
 					["hlc_rifle_bcmjack",nil,5220],
 					["hlc_30rnd_556x45_EPR",nil,520],
 					["muzzle_snds_M",nil,4],
@@ -289,7 +291,16 @@ switch(_shop) do
 				{
 					["Pistolety Rebelii",
 						[
-							["RH_fn57",nil,25500],
+						
+							["RH_M6X",nil,2500],
+							["RH_X2",nil,2500],
+							["RH_X300",nil,2500],
+							["RH_A26",nil,2500],
+							["RH_pmIR",nil,2500],
+							["RH_docter",nil,2500],
+							["optic_MRD",nil,2500],
+							["optic_Yorris",nil,2500]
+							/*["RH_fn57",nil,25500],
 							["RH_20Rnd_57x28_FN",nil,600],
 					        ["RH_vp70",nil,10500],
 				            ["RH_18Rnd_9x19_VP",nil,600],
@@ -320,16 +331,8 @@ switch(_shop) do
 							["RH_suppr9",nil,20500],
 							["RH_pmsd",nil,20500],
 							["RH_vp70stock",nil,2500],
-							["RH_M6X",nil,2500],
-							["RH_X2",nil,2500],
-							["RH_X300",nil,2500],
-							["RH_A26",nil,2500],
-							["RH_pmIR",nil,2500],
-							["RH_docter",nil,2500],
-							["optic_MRD",nil,2500],
-							["optic_Yorris",nil,2500],
 					        ["RH_gsh18",nil,10500],
-				            ["RH_18Rnd_9x19_gsh",nil,600]
+				            ["RH_18Rnd_9x19_gsh",nil,600]*/
 						]
 					];
 				};
@@ -347,7 +350,7 @@ switch(_shop) do
 				{
 					["Bronie Dlugie Rebelii",
 						[
-							["SMG_01_F",nil,127500],
+							/*["SMG_01_F",nil,127500],
 			                ["30Rnd_45ACP_Mag_SMG_01",nil,750],
 							["SMG_02_F",nil,127500],
 							["RH_sbr9_wdl",nil,127500],
@@ -390,7 +393,7 @@ switch(_shop) do
 							["RH_muzi",nil,58000],
 							["RH_30Rnd_9x19_UZI",nil,750],
 							["RH_deagle",nil,97500],
-							["RH_7Rnd_50_AE",nil,750],
+							["RH_7Rnd_50_AE",nil,750],*/
 							["RH_compm4s",nil,5000],
 							["RH_compM2_tan",nil,5000],
 							["RH_eotexps3_tan",nil,5000],

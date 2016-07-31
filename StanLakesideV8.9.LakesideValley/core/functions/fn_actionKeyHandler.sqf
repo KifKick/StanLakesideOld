@@ -35,17 +35,18 @@ if(_isWater) then {
 };
 
 _spikeStrips = (nearestObjects[getPos player,["CG_Spikes_Extended"],3]) select 0;
-if !(_spikeStrips isEqualTo [] && !spikeAntiSpam) then {
-		[] spawn {
-			spikeAntiSpam = true;
-			sleep 1;
-			spikeAntispam = false;
-		};	
-		deletevehicle _spikeStrips;
-		["Podniosles kolczatke!", false] spawn domsg; 
-		player additem "CG_Spikes_Collapsed";
+if(!isNil "_spikeStrips") then {
+	if !(_spikeStrips isEqualTo [] && !spikeAntiSpam) then {
+			[] spawn {
+				spikeAntiSpam = true;
+				sleep 1;
+				spikeAntispam = false;
+			};	
+			deletevehicle _spikeStrips;
+			["Podniosles kolczatke!", false] spawn domsg; 
+			player additem "CG_Spikes_Collapsed";
+	};
 };
-
 
 
 
@@ -99,8 +100,12 @@ if(!dialog && playerSide == independent && _curTarget isKindOf "Man") exitwith {
 
 if((_curTarget getVariable["dead",FALSE]) && playerSide != independent && !dialog && _curTarget isKindOf "Man") exitwith {
 	if(side _curTarget == independent || side _curTarget == west || side _curTarget == civilian || side _curTarget == east) then {
-		if( life_inv_medkit > 0 ) then { 
-			[_curTarget] call life_fnc_CPRPlayer;
+		if(_curTarget getVariable["stwierdzamZgon690",FALSE]) then {
+			["Zgon zostal stwierdzony, biedny czlek tak mlodo umarl."]spawn domsg;
+		} else {
+			if( life_inv_medkit > 0 ) then { 
+				[_curTarget] call life_fnc_CPRPlayer;
+			};
 		};
 	};
 };

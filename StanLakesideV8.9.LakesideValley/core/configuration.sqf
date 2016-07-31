@@ -162,10 +162,10 @@ __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for civs and cops? (Medics ex
 
 //Revive constant variables.
 __CONST__(life_revive_cops,FALSE); //Set to false if you don't want cops to be able to revive downed players.
-__CONST__(life_revive_fee,500); //Fee for players to pay when revived.
+__CONST__(life_revive_fee,2500); //Fee for players to pay when revived.
 
 //House Limit
-__CONST__(life_houseLimit,3); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
+__CONST__(life_houseLimit,2); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
 //Gang related stuff?
 __CONST__(life_gangPrice,75000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
@@ -219,16 +219,16 @@ switch (playerSide) do
 	case west: 
 	{
 		cash_in_bank = 12000; //Starting Bank Money
-		life_paycheck = 1000; //Paycheck Amount
+		life_paycheck = 200; //Paycheck Amount
 	};
 	case civilian: 
 	{
 		cash_in_bank = 12000; //Starting Bank Money
-		life_paycheck = 400; //Paycheck Amount
+		life_paycheck = 50; //Paycheck Amount
 	};
 	case independent: {
 		cash_in_bank = 12000;
-		life_paycheck = 1000;
+		life_paycheck = 200;
 	};
 	case east:
 	{
@@ -470,10 +470,10 @@ sell_array =
 	["peach",1],
 	["diamond",35],
 	["diamondc",135],
-	["iron_r",250],
-	["copper_r",141],
+	["iron_r",320],
+	["copper_r",210],
 	["salt_r",165],
-	["glass",145],
+	["glass",130],
 	["fuelF",50],
 	["wheat",20],
 	["sunflower",50],
@@ -498,7 +498,7 @@ sell_array =
 	["raw sheep meat",50],
 	["raw rabbit",70],
 	["spikeStrip",12],
-	["cement",255],
+	["cement",360],
 	["goldbar",9500], 
 	//Deo Additions
 	["zoobeer",1], 

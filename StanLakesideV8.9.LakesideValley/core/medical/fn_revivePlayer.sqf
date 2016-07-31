@@ -68,7 +68,8 @@ if((player getVariable["restrained",false])) exitWith {life_action_inUse = false
 
 if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_ActionCancel", false] spawn domsg; life_action_inUse = false;};
 
-[player,"defib"] spawn life_fnc_nearestSound;	
+[player,"defib"] spawn life_fnc_nearestSound;
+_target setVariable["stwierdzamZgon690", false, true];
 
 ["bank","add",(call life_revive_fee)] call life_fnc_handleCash; 
 life_action_inUse = false;

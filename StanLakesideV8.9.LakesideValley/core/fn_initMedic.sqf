@@ -29,6 +29,30 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
+switch (true) do
+{
+	case(((__GETC__(life_medicLevel)) == 1)):
+	{
+		life_paycheck = 200;
+	};
+	case(((__GETC__(life_medicLevel)) == 2)):
+	{
+		life_paycheck = 300;
+	};
+	case(((__GETC__(life_medicLevel)) == 3)):
+	{
+		life_paycheck = 400;
+	};
+	case(((__GETC__(life_medicLevel)) == 4)):
+	{
+		life_paycheck = 500;
+	};
+	case(((__GETC__(life_medicLevel)) == 5)):
+	{
+		life_paycheck = 600;
+	};
+};
+
 if(life_karma > 999) then {
 	karma_level = life_karma / 400;
 	karma_level = floor (karma_level);
@@ -42,4 +66,4 @@ if(karma_level > 80) then {
 [format["Masz %1 poziom reputacji!",karma_level], false] spawn domsg;
 
 uiSleep 2;
-["EMS FREQ: 33.1 / CO FREQ: 33.2 / SO FREQ: 33.3 to 33.9", false] spawn domsg;
+["EMS FREQ: 33.1 / CO FREQ: 33.2 / POLICE FREQ: 33.3 / EMS D: 33.5", false] spawn domsg;

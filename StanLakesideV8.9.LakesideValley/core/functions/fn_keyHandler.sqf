@@ -400,7 +400,7 @@ switch (_code) do
 			[] spawn life_fnc_AntiSpam2;
 		};
 
-		if(_shift && !isNull cursorTarget && playerSide == west && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 3 && !(cursorTarget getVariable ["Escorting", false]) && !(cursorTarget getVariable ["restrained", false]) && vehicle player == player) then
+		if(_shift && !isNull cursorTarget && (playerSide == west || playerSide == independent) && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 3 && !(cursorTarget getVariable ["Escorting", false]) && !(cursorTarget getVariable ["restrained", false]) && vehicle player == player) then
 		{
 			if( "CG_ATF_Handcuffs_i" in magazines player ) then {
 				[] spawn life_fnc_AntiSpam2;
@@ -409,7 +409,7 @@ switch (_code) do
 
 			};
 		};
-		if(_ctrlKey && !isNull cursorTarget && playerSide == west && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 3 && !(cursorTarget getVariable ["Escorting", false]) && !(cursorTarget getVariable ["restrained", false]) && vehicle player == player) then
+		if(_ctrlKey && !isNull cursorTarget && (playerSide == west || playerSide == independent) && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 3 && !(cursorTarget getVariable ["Escorting", false]) && !(cursorTarget getVariable ["restrained", false]) && vehicle player == player) then
 		{
 			if( "CG_ATF_Handcuffs_i" in magazines player ) then {
 				[] spawn life_fnc_AntiSpam2;

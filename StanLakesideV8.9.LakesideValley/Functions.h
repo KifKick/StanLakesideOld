@@ -188,6 +188,7 @@ class Life_Client_Core
 		class vehicleColorCfg {};
 		class vehicleColorStr {};
 		class vehicleListCfg {};
+		class vehicleNameCfg {};
 		class licenseType {};
 		class eatFood {};
 		class varHandle {};
