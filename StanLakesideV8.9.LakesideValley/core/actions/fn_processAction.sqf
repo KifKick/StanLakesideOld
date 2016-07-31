@@ -57,14 +57,14 @@ _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _cP = 0.01;
 
 if (life_karma < 0 && _type in ["heroin","marijuana","meth","MDMA","coke"]) then {
-	_cP = 0.4;	
+	_cP = 0.2;	
 };
 _progress progressSetPosition _cp;
 life_is_processing = true;
 
 if(_hasLicense) then
 {
-	_delay = (1/150)*_weight;
+	_delay = (1/275)*_weight;
 	while{true} do
 	{
 		uiSleep _delay;
@@ -85,7 +85,7 @@ if(_hasLicense) then
 else
 {
 	if(cash_in_hand < _cost) exitWith {[format[localize "STR_Process_License",[_cost] call life_fnc_numberText], false] spawn domsg; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	_delay = (1/75)*_weight;
+	_delay = (1/275)*_weight;
 	while{true} do
 	{
 		uiSleep _delay;
