@@ -1124,6 +1124,8 @@ switch (_shop) do
 			["IVORY_R30000SPYDER",30000],
 			["IVORY_REV",30000],	
 			["ivory_lfa",30000],
+			["ivory_m3_gts",30000],
+			["ivory_m3",30000],
 			["A30000L_BMW30000Sport30000",30000],
 			["bv_e30000_m30000_30000tone30000",30000],
 			["bv_e30000_m30000_skin_camo_urban",30000],
