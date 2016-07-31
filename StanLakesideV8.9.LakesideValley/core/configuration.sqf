@@ -219,16 +219,16 @@ switch (playerSide) do
 	case west: 
 	{
 		cash_in_bank = 12000; //Starting Bank Money
-		life_paycheck = 1000; //Paycheck Amount
+		life_paycheck = 200; //Paycheck Amount
 	};
 	case civilian: 
 	{
 		cash_in_bank = 12000; //Starting Bank Money
-		life_paycheck = 200; //Paycheck Amount
+		life_paycheck = 50; //Paycheck Amount
 	};
 	case independent: {
 		cash_in_bank = 12000;
-		life_paycheck = 2000;
+		life_paycheck = 200;
 	};
 	case east:
 	{
@@ -470,10 +470,10 @@ sell_array =
 	["peach",1],
 	["diamond",35],
 	["diamondc",135],
-	["iron_r",250],
-	["copper_r",141],
+	["iron_r",320],
+	["copper_r",210],
 	["salt_r",165],
-	["glass",145],
+	["glass",130],
 	["fuelF",50],
 	["wheat",20],
 	["sunflower",50],
@@ -498,7 +498,7 @@ sell_array =
 	["raw sheep meat",50],
 	["raw rabbit",70],
 	["spikeStrip",12],
-	["cement",255],
+	["cement",360],
 	["goldbar",9500], 
 	//Deo Additions
 	["zoobeer",1], 

@@ -11,6 +11,7 @@
 
 player setVariable["tf_receivingDistanceMultiplicator", 10];
 player setVariable["tf_sendingDistanceMultiplicator", 10];
+player setVariable["stwierdzamZgon690", false, true];
 deadPlayer = false;
 candy = 0;
 scarylevel = 0;

@@ -101,27 +101,27 @@ switch (_className) do
 	case "Jonzie_Box_Truck": {300};
 	case "Jonzie_Tanker_Truck": {300};
 
-	case "cg_renault_magnum_truck_f_noir": {350};
-	case "cg_renault_magnum_truck_f_violet": {350};
-	case "cg_renault_magnum_truck_f_rose": {350};
-	case "cg_renault_magnum_truck_f_orange": {350};
-	case "cg_renault_magnum_truck_f_grise": {350};
-	case "cg_renault_magnum_truck_f_vert": {350};
-	case "cg_renault_magnum_truck_f_bleufonce": {350};
-	case "cg_renault_magnum_truck_f_white": {350};
-	case "cg_renault_magnum_truck_f_jaune": {350};
-	case "cg_renault_magnum_truck_f_rouge": {350};
+	case "cg_renault_magnum_truck_f_noir": {500};
+	case "cg_renault_magnum_truck_f_violet": {500};
+	case "cg_renault_magnum_truck_f_rose": {500};
+	case "cg_renault_magnum_truck_f_orange": {500};
+	case "cg_renault_magnum_truck_f_grise": {500};
+	case "cg_renault_magnum_truck_f_vert": {500};
+	case "cg_renault_magnum_truck_f_bleufonce": {500};
+	case "cg_renault_magnum_truck_f_white": {500};
+	case "cg_renault_magnum_truck_f_jaune": {500};
+	case "cg_renault_magnum_truck_f_rouge": {500};
 
 
 
-	case "shounka_ivceco_bleufonce": {450};
-	case "shounka_ivceco_grise": {450};
-	case "shounka_ivceco_jaune": {450};
-	case "shounka_ivceco_noir": {450};
-	case "shounka_ivceco_orange": {450};
-	case "shounka_ivceco_rose": {450};
-	case "shounka_ivceco_rouge": {450};
-	case "shounka_ivceco_violet": {450};
+	case "shounka_ivceco_bleufonce": {550};
+	case "shounka_ivceco_grise": {550};
+	case "shounka_ivceco_jaune": {550};
+	case "shounka_ivceco_noir": {550};
+	case "shounka_ivceco_orange": {550};
+	case "shounka_ivceco_rose": {550};
+	case "shounka_ivceco_rouge": {550};
+	case "shounka_ivceco_violet": {550};
 	case "C_MSSprinter_01_F": {190};
 	case "C_MSSprinter_02_F": {300};
 
@@ -276,6 +276,7 @@ switch (_className) do
 	case "IVORY_WRX_COP_SLICKTOP": {25};
 	case "IVORY_WRX_COP_UNMARKED": {25};
 	case "IVORY_WRX_MED_EMS": {25};
+	case "shounka_transam_noir": {25};
 	
 	
 	case "A3L_EvoXFPBLBSO": {65};

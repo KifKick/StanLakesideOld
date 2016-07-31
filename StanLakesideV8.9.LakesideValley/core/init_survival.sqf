@@ -1,4 +1,3 @@
-
 SUPER_fnc_RotSub = compile preprocessFile "Meteor_script\functions\RotSubmunition.sqf";
 SUPER_fnc_meteor_normal = compile preprocessFile "Meteor_script\flight.sqf";
 SUPER_fnc_meteor_submeteor = compile preprocessFile "Meteor_script\flight2.sqf";
@@ -23,6 +22,18 @@ CHBN_adjustBrightness = 275;
 	};
 };
 
+[] spawn {
+	while{true} do
+	{
+			if (!(player call TFAR_fnc_isTeamSpeakPluginEnabled)) then
+			{
+				"plugincheck" cutText ["Wlacz plugin TaskForceRadio!", "BLACK", 1, true];
+				uiSleep 2;
+				"plugincheck" cutFadeOut 2;
+			};
+	};
+};
+
 [] spawn  {
 	while{true} do
 	{
@@ -38,7 +49,6 @@ player addEventHandler ["Put", {[3] call SOCK_fnc_updatePartial}];
 player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 player addMPEventHandler ["MPKilled", {diag_log format ["%2 zabil %1",name (_this select 0),name (_this select 1)];}];
 player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_this select 0),name (_this select 1)];}];
-	
 
 [] spawn
 {
@@ -83,7 +93,6 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 		};
 	};
 };
-
 
 [] spawn
 {
@@ -783,6 +792,10 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 		_Btn11 ctrlSetText format["%1",_thisInjury];
 		_Btn11 buttonSetAction "[user,10,damageAmount11] spawn fnc_fixProblem;";
 		if( damageAmount11 != 0) then { _Btn11 ctrlEnable true; } else { _Btn11 ctrlEnable false; ctrlShow[115,false]; };
+		
+		_Btn12 = _display displayCtrl 27;
+		if(playerSide == independent && !(user getVariable ["stwierdzamZgon690", FALSE]) && user getVariable["dead",FALSE]) then {_Btn12 ctrlEnable true;} else {_Btn12 ctrlEnable false;};
+		_Btn12 buttonSetAction "user setVariable [""stwierdzamZgon690"", true, true];";
 
 	};
 
