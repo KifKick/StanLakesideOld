@@ -20,9 +20,9 @@ switch (_shop) do
 			["IVORY_PRIUS",125000],
 			["ivory_supra",450000],
 			["ivory_supra_tuned",1300000],
-			["ivory_isf",250000],
+			["ivory_isf",1200000],
 			["ivory_m3",1350000],
-			["ivory_m3_gts",280000],
+			["ivory_m3_gts",1850000],
 			["ivory_gt500",800000],
 			["shounka_f430_spider_bleufonce",3500000],
 			["ivory_wrx",2250000],
@@ -113,7 +113,7 @@ switch (_shop) do
 			["sfp_wheelchair",92500],
 			["sfp_wheelchair_mark2",92500],
 			["bv_the_crowner_cop_emt",50000],
-			["A3L_Charger_EMS_Fast",50000],
+			//["A3L_Charger_EMS_Fast",50000],
 			["A3L_ExplorerEMS_S",50000],
 			["A3L_ExplorerEMS_P",50000],
 			["cnp_Defender",50000],
@@ -139,7 +139,7 @@ switch (_shop) do
 			["kif_vehicles_helicopter_orca_ems",45000],
 			["kif_vehicles_helicopter_taru_ems",45000],
 			["A3L_EC635_SAR",45000],
-			["SC_412",120000],
+			["SC_412",120000]
 		];
 	};
 	
@@ -1754,7 +1754,7 @@ switch (_shop) do
 			["B_Heli_Light_01_F",45000],
 			["C_Heli_Light_01_civil_F",45000],
 			/*["EC_135_F",45000],*/
-			["kif_vehicles_helicopter_mh9_police",85000]
+			["kif_vehicles_helicopter_mh9_police",85000],
 			["melb_h6m",85000]
 		];
 	};
