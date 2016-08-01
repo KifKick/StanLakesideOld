@@ -1754,11 +1754,11 @@ switch (_shop) do
 			["ivory_b206_news",400000],
 			["C_Plane_Civil_01_F",1500000],
 			["CUP_C_DC3_CIV",800000],
-			["CUP_C_C47_CIV",1000000],			
-			["GNT_C185",1000000],
-			["IVORY_CRJ200_1",1000000],
-			["IVORY_ERJ135_1",1000000],
-			["IVORY_YAK42D_1",1000000]
+			["CUP_C_C47_CIV",10000000],			
+			["GNT_C185",10000000],
+			["IVORY_CRJ200_1",10000000],
+			["IVORY_ERJ135_1",10000000],
+			["IVORY_YAK42D_1",10000000]
 		];
 	};
 	case "cop_air":
