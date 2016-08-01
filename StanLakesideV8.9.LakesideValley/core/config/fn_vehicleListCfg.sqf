@@ -803,11 +803,11 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["Skateboard_girl",50],
-			["Skateboard_boobs",50],
-			["A3L_OldBike",100],
-			["A3L_Bicycle",500],
-			["TT650_civ",10000],
+			["Skateboard_girl",500],
+			["Skateboard_boobs",500],
+			["A3L_OldBike",1000],
+			["A3L_Bicycle",5000],
+			["TT650_civ",100000],
 			["tcg_hrly",25000],
 			["tcg_hrly_white",25000],	
 			["tcg_hrly_red",25000],
@@ -841,7 +841,7 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["Jonzie_Transit",50000],
+			["Jonzie_Transit",90000],
 			["C_Van_01_fuel_F",70000],
 			["C_Van_01_box_F",90000],
 			["C_Van_01_transport_F",75000],
@@ -908,10 +908,10 @@ switch (_shop) do
 			["cg_renault_magnum_truck_f_white",559000],
 			["cg_renault_magnum_truck_f_jaune",559000],
 			
-			["Jonzie_Flat_Bed",300000],
-			["Jonzie_Log_Truck",350000],
-			["Jonzie_Box_Truck",600000],
-			["Jonzie_Tanker_Truck",700000],
+			["Jonzie_Flat_Bed",659000],
+			["Jonzie_Log_Truck",709000],
+			["Jonzie_Box_Truck",1000000],
+			["Jonzie_Tanker_Truck",1200000],
 
 
 
@@ -964,7 +964,7 @@ switch (_shop) do
 			["B_G_Offroad_01_F",165000],
 			["shounka_monsteur_bleufonce",3500000],
 			["GeK_Mercedes_ML63_Rebelle",2500000],
-			["C_Offroad_02_unarmed_F",750000]
+			["C_Offroad_02_unarmed_F",7500000]
 		];
 
 		if(license_civ_rebel) then
