@@ -53,22 +53,7 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["Jonzie_Quattroporte",150000],
-			["Jonzie_30CSL",30000],
-			["Jonzie_Viper",45000],
-			["Jonzie_Datsun_Z432",50000],
-			["Jonzie_STI",73000],
-			["Jonzie_Escalade",40000],
-			["Jonzie_Datsun_510",20000],
-			["Jonzie_Ceed",7500],
-			["Jonzie_Raptor",40000],
-			["Jonzie_Galant",5000],
-			["Jonzie_Corolla",3500],
-			["Jonzie_Mini_Cooper",1000],
-			["Jonzie_Mini_Cooper_R_spec",5000],
-			["Jonzie_XB",30000],
-			["Jonzie_VE",30000],
-			["Jonzie_Ute",30000]
+			
 		];
 	};	
 	case "kart_shop":
@@ -646,7 +631,20 @@ switch (_shop) do
 			["ivory_tractor",50000],
 			["ivory_tractor2",50000],
 			["Jonzie_Tow_Truck",120000],
-			
+			["Jonzie_Quattroporte",150000],
+			["Jonzie_30CSL",30000],
+			["Jonzie_Viper",45000],
+			["Jonzie_Datsun_Z432",50000],
+			["Jonzie_STI",73000],
+			["Jonzie_Escalade",40000],
+			["Jonzie_Datsun_510",20000],
+			["Jonzie_Ceed",7500],
+			["Jonzie_Raptor",40000],
+			["Jonzie_Galant",5000],
+			["Jonzie_Corolla",3500],
+			["Jonzie_XB",30000],
+			["Jonzie_VE",30000],
+			["Jonzie_Ute",30000],
 			["critgamin_smart_civ",18000],
 			["critgamin_smart_bleu",18000],
 			["critgamin_smart_noir",18000],
@@ -805,6 +803,11 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["Skateboard_girl",50],
+			["Skateboard_boobs",50],
+			["A3L_OldBike",100],
+			["A3L_Bicycle",500],
+			["TT650_civ",10000],
 			["tcg_hrly",25000],
 			["tcg_hrly_white",25000],	
 			["tcg_hrly_red",25000],
@@ -838,11 +841,13 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["Jonzie_Transit",50000],
 			["C_Van_01_fuel_F",70000],
 			["C_Van_01_box_F",90000],
 			["C_Van_01_transport_F",75000],
 			["C_MSSprinter_01_F",575000],
 			["C_MSSprinter_02_F",175000],
+			
 
 
 			["shounka_nemo_bleufonce",75000],
@@ -877,6 +882,7 @@ switch (_shop) do
 
 
 			["A3L_Bus",130000],
+			["A3L_SchoolBus",130000],
 
 			["cg_daf_xf_euro6_noir",359000],
 			["cg_daf_xf_euro6_violet",359000],
@@ -901,6 +907,11 @@ switch (_shop) do
 			["cg_renault_magnum_truck_f_vert",559000],
 			["cg_renault_magnum_truck_f_white",559000],
 			["cg_renault_magnum_truck_f_jaune",559000],
+			
+			["Jonzie_Flat_Bed",300000],
+			["Jonzie_Log_Truck",350000],
+			["Jonzie_Box_Truck",600000],
+			["Jonzie_Tanker_Truck",700000],
 
 
 
@@ -939,7 +950,8 @@ switch (_shop) do
 			["wirk_h3_limo",4130000],
 			["shounka_buggy_bleufonce",4130000],
 			["bv_monster_2tone1",3150000],
-			["A3L_Towtruck",40000]
+			["A3L_Towtruck",40000],
+			["C_Offroad_01_repair_F",40000]
 		];
 	};
 	case "reb_car":
@@ -951,7 +963,8 @@ switch (_shop) do
 			["B_Heli_Light_01_F",700000],
 			["B_G_Offroad_01_F",165000],
 			["shounka_monsteur_bleufonce",3500000],
-			["GeK_Mercedes_ML63_Rebelle",2500000]
+			["GeK_Mercedes_ML63_Rebelle",2500000],
+			["C_Offroad_02_unarmed_F",750000]
 		];
 
 		if(license_civ_rebel) then
@@ -1720,7 +1733,7 @@ switch (_shop) do
 	{
 		_return =
 		[
-			
+			["C_Quicksilver_MX_01_F",50000],
 			["Sab_af_An2",300000],
 			["Sab_tk_An2",300000],
 			["Sab_ca_An2",300000],
@@ -1739,6 +1752,7 @@ switch (_shop) do
 			["B_Heli_Light_01_F",350000],
 			["ivory_b206",350000],
 			["ivory_b206_news",400000],
+			["C_Plane_Civil_01_F",750000],
 			["CUP_C_DC3_CIV",800000],
 			["CUP_C_C47_CIV",1000000],			
 			["GNT_C185",1000000],
@@ -1780,10 +1794,13 @@ switch (_shop) do
 			["C_Rubberboat",20000],
 			["CUP_B_Zodiac_USMC",40000],
 			["C_Boat_Civil_01_F",125000],
+			["C_Boat_Transport_02_F",150000],
 			["CUP_C_Fishing_Boat_Chernarus",150000],
 			["A3L_Ship",400000],
 			["A3L_Jetski",50000],
-			["A3L_Jetski_yellow",50000]
+			["A3L_Jetski_yellow",50000],
+			["C_Scooter_Transport_01_F",75000],
+			["A3L_SpeedYacht",800000]
 		];
 	};
 	case "cop_ship":
