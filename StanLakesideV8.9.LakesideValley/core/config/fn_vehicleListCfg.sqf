@@ -77,11 +77,8 @@ switch (_shop) do
 			["cg_evoems1",20000],
 			["cg_evoems2",20000],
 			["cg_evoems3",20000],
-			["Urbanized_LP700_EMS",20000],
-			["Urbanized_67Mustang_EMS",20000],
 			/*["kif_Taurus_ems1",20000],*/
 			["kif_Taurus_ems2",20000],
-			/*["A3L_Charger_EMS_Fast_new",20000],*/
 			["A3L_CVPILBFD",20000],
 			["A3L_CVPILBEMSLT",20000],
 			["A3L_CVPILBEMSCPT",20000],
@@ -98,7 +95,6 @@ switch (_shop) do
 			["sfp_wheelchair",92500],
 			["sfp_wheelchair_mark2",92500],
 			["bv_the_crowner_cop_emt",50000],
-			//["A3L_Charger_EMS_Fast",50000],
 			["A3L_ExplorerEMS_S",50000],
 			["A3L_ExplorerEMS_P",50000],
 			["cnp_Defender",50000],
