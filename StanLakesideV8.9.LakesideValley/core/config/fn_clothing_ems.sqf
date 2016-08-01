@@ -149,7 +149,7 @@ switch (_filter) do
 			["kif_fire_vest_odlamkowy","Fire Assistant Chief M. Odlamkowy",5],
 			["kif_fire_vest_deputy","Fire Chief Deputy Vest",5],
 			["kif_traffic_controller_vest","Traffic Controller Vest",5],
-			["kif_emt_supervisior_vest","Supervisior Vest",5],
+			["kif_emt_supervisor_vest","Supervisor Vest",5],
 			["kif_fire_rescue_paramedic_vest","Fire Rescue Paramedic Vest",5],
 			["kif_fire_chief_vest","Fire Chief Vest",5],
 			["kif_air_ambulance_vest","Air Ambulance Paramedic Vest",5],
