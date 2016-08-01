@@ -34,7 +34,7 @@ switch (_className) do
 	case "AM_Holden_RWhite": {45};
 	case "AM_Holden_RBlack": {45};
 
-	case "cg_rv_camper": {190};
+	//case "cg_rv_camper": {190}; 
 
 	case "critgamin_vangmcc_civ": {100};
 	case "critgamin_vangmcc_civ_noir": {100};
