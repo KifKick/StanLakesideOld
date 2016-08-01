@@ -7,7 +7,7 @@ While{!isNull _this} do
     1 fadeSound 1;     /* fades the sound back to normal */
 
     waitUntil{(nearestObject [getPos player, "SmokeShellYellow"]) distance player < 12};
-    if (!(goggles player IN ["Mask_M40", "Mask_M40_OD", "Mask_M50"]) || side player == civilian || side player == east) then
+    if (!(goggles player IN ["Mask_M40", "Mask_M40_OD", "Mask_M50"])) then
     {
         "dynamicBlur" ppEffectEnable true; /* enables ppeffect */
         "dynamicBlur" ppEffectAdjust [12]; /* intensity of blur */

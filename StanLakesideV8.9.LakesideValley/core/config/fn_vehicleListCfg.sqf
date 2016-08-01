@@ -1733,7 +1733,7 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["C_Quicksilver_MX_01_F",50000],
+			["C_Quicksilver_MX_01_F",600000],
 			["Sab_af_An2",300000],
 			["Sab_tk_An2",300000],
 			["Sab_ca_An2",300000],
@@ -1752,7 +1752,7 @@ switch (_shop) do
 			["B_Heli_Light_01_F",350000],
 			["ivory_b206",350000],
 			["ivory_b206_news",400000],
-			["C_Plane_Civil_01_F",750000],
+			["C_Plane_Civil_01_F",1500000],
 			["CUP_C_DC3_CIV",800000],
 			["CUP_C_C47_CIV",1000000],			
 			["GNT_C185",1000000],
