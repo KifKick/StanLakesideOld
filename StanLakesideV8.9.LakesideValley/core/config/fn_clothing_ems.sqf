@@ -189,15 +189,17 @@ switch (_filter) do
 			["koilmedicyellow",nil,5500],
 
 	*/
-			["cg_invisbp","Invisi-Backpack 2.0",5],
-			["tf_anprc155_coyote","DLugie Radio Camo",5],
-			["tf_anprc155","Dlugie Radio",5],
+			["cg_invisbp","Invisi-Backpack 2.0",50],
+			["tf_anprc155_coyote","DLugie Radio Camo",50],
+			["tf_anprc155","Dlugie Radio",50],
+			["TRYK_B_Medbag",nil,50],
 			["TRYK_B_Medbag_BK",nil,50],
-			["B_Bolsa_camp_cruz",nil,5500],
-			["koilmedicwhite",nil,5500],
-			["koilmedicred",nil,5500],
-			["koilmedicblue",nil,5500],
-			["koilmedicyellow",nil,5500]
+			["TRYK_B_Medbag_OD",nil,50],
+			["B_Bolsa_camp_cruz",nil,50],
+			["koilmedicwhite",nil,50],
+			["koilmedicred",nil,50],
+			["koilmedicblue",nil,50],
+			["koilmedicyellow",nil,50]
 		];
 	};
 };
