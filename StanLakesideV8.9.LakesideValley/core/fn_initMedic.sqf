@@ -33,23 +33,23 @@ switch (true) do
 {
 	case(((__GETC__(life_medicLevel)) == 1)):
 	{
-		life_paycheck = 200;
+		life_paycheck = 250;
 	};
 	case(((__GETC__(life_medicLevel)) == 2)):
 	{
-		life_paycheck = 300;
+		life_paycheck = 500;
 	};
 	case(((__GETC__(life_medicLevel)) == 3)):
 	{
-		life_paycheck = 400;
+		life_paycheck = 750;
 	};
 	case(((__GETC__(life_medicLevel)) == 4)):
 	{
-		life_paycheck = 500;
+		life_paycheck = 1000;
 	};
 	case(((__GETC__(life_medicLevel)) == 5)):
 	{
-		life_paycheck = 600;
+		life_paycheck = 1250;
 	};
 };
 
