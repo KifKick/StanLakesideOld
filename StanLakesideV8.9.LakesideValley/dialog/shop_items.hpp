@@ -82,7 +82,7 @@ class shops_menu {
 		{
 			idc = -1;
 			text = "$STR_VS_BuyItem";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0, 0, 0, 0};
 			onButtonClick = "[] spawn life_fnc_virt_buy;";
 			
 			x = 0.392761 * safezoneW + safezoneX;
@@ -113,7 +113,7 @@ class shops_menu {
 		{
 			idc = -1;
 			text = "$STR_VS_SellItem";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0, 0, 0, 0};
 			onButtonClick = "[] call life_fnc_virt_sell";
 			
 			x = 0.531979 * safezoneW + safezoneX;
