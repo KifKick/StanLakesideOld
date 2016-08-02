@@ -76,7 +76,7 @@ switch (_shop) do
 			/*["A3L_Subaru_EMS",20000],*/
 			["cg_evoems1",20000],
 			["cg_evoems2",20000],
-			["cg_evoems3",20000],
+			//["cg_evoems3",20000],
 			/*["kif_Taurus_ems1",20000],*/
 			["kif_Taurus_ems2",20000],
 			["A3L_CVPILBFD",20000],
