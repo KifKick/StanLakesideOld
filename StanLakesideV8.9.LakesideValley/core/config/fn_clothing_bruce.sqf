@@ -64,6 +64,39 @@ switch (_filter) do
 			["TRYK_SUITS_BR_F","TRYK Brown Suit",1350],
 
 			["A3L_Suit_Uniform","Suit",1350],
+			["vvv_traje_ejecutivo_1",nil,2000],
+			["vvv_character_funcionario_1",nil,1350],
+			["vvv_character_funcionario_2",nil,1350],
+			["vvv_character_messi",nil,500],
+			["vvv_character_sport",nil,500],
+			["vvv_character_sport_2",nil,500],
+			["vvv_character_sport_3",nil,500],
+			["vvv_character_sport_4",nil,500],
+			["vvv_character_sport_5",nil,500],
+			["vvv_character_sport_6",nil,500],
+			["vvv_character_sport_7",nil,500],
+			["vvv_character_sport_8",nil,500],
+			["vvv_character_sport_9",nil,500],
+			["vvv_character_sport_10",nil,500],
+			["vvv_character_sport_11",nil,500],
+			["vvv_character_sport_12",nil,500],
+			["vvv_character_sport_13",nil,500],
+			["vvv_character_motox_02",nil,750],
+			["vvv_character_motox_02_2",nil,750],
+			["vvv_character_motox_02_3",nil,750],
+			["vvv_character_motox_02_4",nil,750],
+			["vvv_character_motox_02_5",nil,750],
+			["vvv_character_motox_02_6",nil,750],
+			["vvv_character_motox_02_7",nil,750],
+			["vvv_character_motox_02_8",nil,750],
+			["vvv_character_rock1",nil,1000],
+			["vvv_character_rock2",nil,1000],
+			["vvv_character_rock3",nil,1000],
+			["vvv_character_rock4",nil,1000],
+			["vvv_traje_jackoy",nil,1000],
+			["vvv_character_wandelina",nil,1000],
+			["vvv_character_jennifer",nil,1000],
+			
 
 			["OrangePlaid_uni","A3L Plaid (Orange)",35],
 			["OrGnGy_uni","A3L Polo (OR-GN-GY)",35],
@@ -311,6 +344,9 @@ switch (_filter) do
 		];
 		if(__GETC__(life_adminlevel) > 0) then {
 			_ret pushBack ["U_C_Scientist",nil,5];
+			_ret pushBack ["vvv_character_agante_47",nil,5];
+			_ret pushBack ["vvv_traje_robot_1",nil,5];
+			_ret pushBack ["vvv_traje_romano",nil,5];
 		};
 		_ret;
 	};

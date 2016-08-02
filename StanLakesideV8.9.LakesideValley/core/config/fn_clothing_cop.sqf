@@ -99,6 +99,9 @@ switch (_filter) do
 			["CG_SERT5",nil,15],
 			["CG_SERT6",nil,15],
 			["CG_SERT7",nil,15],
+			["vvv_character_swat",nil,15],
+			["vvv_character_swat_2",nil,15],
+			["vvv_character_swat_3",nil,15],
 			["A3L_EC_SERTK","SERT V2",50],
 			["BH_StormCom_blk_comsuit","Dowodca SERT",15],
 			["RR_SWAT_UNIFORM_obj","Kombinezon SWAT",15],
@@ -109,6 +112,7 @@ switch (_filter) do
 			["ranger_uni","Ranger",15],
 			["A3L_Police_Uniform","Sheriff & Command",15],
 			["A3L_SStie","Stroj IAD",15],
+			["vvv_mujer_policia",nil,15]
 			["LS_Marshal_Jacket",nil,15],
 			["LS_Marshal_Jacket3",nil,15],
 			["KAEL_SUITS_BR_Judge",nil,15]
