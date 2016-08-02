@@ -124,7 +124,6 @@ switch (_shop) do
 	case "donator1": {
 		_return =
 		[
-			["C_Offroad_02_unarmed_F",1500000],
 			["cg_peugeot_207_rc_noir",20000],
 			["cg_peugeot_207_rc_violet",20000],
 			["ivory_m3_gts",450000],
@@ -145,7 +144,6 @@ switch (_shop) do
 	case "donator2": {
 		_return =
 		[
-			["C_Offroad_02_unarmed_F",1500000],
 			["cg_peugeot_207_rc_noir",20000],
 			["cg_peugeot_207_rc_violet",20000],
 			["ivory_m3_gts",450000],
@@ -172,7 +170,6 @@ switch (_shop) do
 	case "donator3": {
 		_return =
 		[
-			["C_Offroad_02_unarmed_F",1500000],
 			["cg_peugeot_207_rc_noir",20000],
 			["cg_peugeot_207_rc_violet",20000],
 			["ivory_m3_gts",450000],
@@ -799,6 +796,10 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["Skateboard_girl",500],
+			["Skateboard_boobs",500],
+			["A3L_OldBike",1000],
+			["A3L_Bicycle",5000],
 			["TT650_civ",100000],
 			["tcg_hrly",25000],
 			["tcg_hrly_white",25000],	
@@ -955,7 +956,8 @@ switch (_shop) do
 			["B_Heli_Light_01_F",700000],
 			["B_G_Offroad_01_F",165000],
 			["shounka_monsteur_bleufonce",3500000],
-			["GeK_Mercedes_ML63_Rebelle",2500000]
+			["GeK_Mercedes_ML63_Rebelle",2500000],
+			["C_Offroad_02_unarmed_F",7500000]
 		];
 
 		if(license_civ_rebel) then
