@@ -87,7 +87,7 @@ class Life_key_management {
 		class GiveKey : Life_RscButtonSilent {
 			idc = 2703;
 			text = "$STR_Keys_GiveKey";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			colorBackground[] = {0, 0, 0, 0};
 			onButtonClick = "[] call life_fnc_keyGive";
 			x = 0.410416 * safezoneW + safezoneX;
 			y = 0.393519 * safezoneH + safezoneY;
