@@ -81,14 +81,14 @@ switch (_filter) do
 			["vvv_character_sport_11",nil,500],
 			["vvv_character_sport_12",nil,500],
 			["vvv_character_sport_13",nil,500],
-			["vvv_character_motox_02",nil,750],
-			["vvv_character_motox_02_2",nil,750],
-			["vvv_character_motox_02_3",nil,750],
-			["vvv_character_motox_02_4",nil,750],
-			["vvv_character_motox_02_5",nil,750],
-			["vvv_character_motox_02_6",nil,750],
-			["vvv_character_motox_02_7",nil,750],
-			["vvv_character_motox_02_8",nil,750],
+			["vvv_traje_motox_02",nil,750],
+			["vvv_traje_motox_02_2",nil,750],
+			["vvv_traje_motox_02_3",nil,750],
+			["vvv_traje_motox_02_4",nil,750],
+			["vvv_traje_motox_02_5",nil,750],
+			["vvv_traje_motox_02_6",nil,750],
+			["vvv_traje_motox_02_7",nil,750],
+			["vvv_traje_motox_02_8",nil,750],
 			["vvv_character_rock1",nil,1000],
 			["vvv_character_rock2",nil,1000],
 			["vvv_character_rock3",nil,1000],
@@ -344,7 +344,7 @@ switch (_filter) do
 		];
 		if(__GETC__(life_adminlevel) > 0) then {
 			_ret pushBack ["U_C_Scientist",nil,5];
-			_ret pushBack ["vvv_character_agante_47",nil,5];
+			_ret pushBack ["vvv_character_agente_47",nil,5];
 			_ret pushBack ["vvv_traje_robot_1",nil,5];
 			_ret pushBack ["vvv_traje_romano",nil,5];
 		};
