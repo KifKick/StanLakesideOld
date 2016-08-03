@@ -1129,8 +1129,6 @@ switch (_shop) do
 			["DAR_TahoePoliceDet",50000],
 			["DAR_ExplorerPoliceStealth",50000],
 			["A3L_Suburban_UM_Black",50000],
-			["A3L_ChargerUC",50000],
-			["A3L_ChargerUCWhite",50000],
 			["cg_audi_rs4_pol_noir",40000],
 			["cg_brinks_bank_noir",40000],
 			["ivory_wrx_marked",200000],
