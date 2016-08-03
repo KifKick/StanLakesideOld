@@ -112,7 +112,7 @@ switch (_filter) do
 			["ranger_uni","Ranger",15],
 			["A3L_Police_Uniform","Sheriff & Command",15],
 			["A3L_SStie","Stroj IAD",15],
-			["vvv_mujer_policia",nil,15]
+			["vvv_mujer_policia",nil,15],
 			["LS_Marshal_Jacket",nil,15],
 			["LS_Marshal_Jacket3",nil,15],
 			["KAEL_SUITS_BR_Judge",nil,15]
