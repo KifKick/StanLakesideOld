@@ -5,6 +5,9 @@
 	Description:
 	Doesn't matter, will be revised later.
 */
+_medics = (resistance countSide playableUnits);
+
+if(_medics > 10) exitWith {["Jest duzo medykow! Zglos sie do jakiegos!", false] spawn domsg;};
 
 if(cash_in_hand < 10) exitWith {[format[localize "STR_NOTF_HS_NoCash",10], false] spawn domsg;};
 [localize "STR_NOTF_HS_Healing", false] spawn domsg;
