@@ -705,7 +705,6 @@ switch (_shop) do
 			["critgamin_vangmcc_civ_rose",18000],
 			["critgamin_vangmcc_civ_grise",18000],
 			["critgamin_vangmcc_civ_violet",18000],
-			["critgamin_vangmcc_civ_orange",18000],
 
 			["cg_mercedes_sprint_van_noir",25000],
 			["cg_mercedes_sprint_van_violet",25000],
@@ -1649,7 +1648,6 @@ switch (_shop) do
 			["critgamin_vangmcc_civ_rose",30000],
 			["critgamin_vangmcc_civ_grise",30000],
 			["critgamin_vangmcc_civ_violet",30000],
-			["critgamin_vangmcc_civ_orange",30000],
 
 			["cg_mercedes_sprint_van_noir",30000],
 			["cg_mercedes_sprint_van_violet",30000],
