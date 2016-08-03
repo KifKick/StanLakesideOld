@@ -64,8 +64,8 @@ switch (_item) do
 	case "salt": {3};
 	case "salt_r": {1};
 	case "glass": {1};
-	case "diamond": {2};
-	case "diamondc": {1};
+	case "diamond": {4};
+	case "diamondc": {2};
 	case "spikeStrip": {5};
 	case "rock": {6};
 	case "cement": {5};
