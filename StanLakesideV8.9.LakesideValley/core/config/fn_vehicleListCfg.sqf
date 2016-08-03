@@ -863,7 +863,7 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["Jonzie_Transit",90000],
+			//["Jonzie_Transit",90000],
 			["C_Van_01_fuel_F",70000],
 			["C_Van_01_box_F",90000],
 			["C_Van_01_transport_F",75000],
@@ -904,7 +904,7 @@ switch (_shop) do
 
 
 			["A3L_Bus",130000],
-			["A3L_SchoolBus",130000],
+			//["A3L_SchoolBus",130000],
 
 			["cg_daf_xf_euro6_noir",359000],
 			["cg_daf_xf_euro6_violet",359000],
@@ -930,10 +930,10 @@ switch (_shop) do
 			["cg_renault_magnum_truck_f_white",559000],
 			["cg_renault_magnum_truck_f_jaune",559000],
 			
-			["Jonzie_Flat_Bed",659000],
+			//["Jonzie_Flat_Bed",659000],
 			["Jonzie_Log_Truck",709000],
 			["Jonzie_Box_Truck",1000000],
-			["Jonzie_Tanker_Truck",1200000],
+			//["Jonzie_Tanker_Truck",1200000],
 			["Jonzie_Tow_Truck",500000],
 
 
