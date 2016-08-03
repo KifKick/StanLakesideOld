@@ -39,10 +39,12 @@ if (life_inv_hackingtool > 0 && !hacking && cgbankvault animationPhase "d_l_Anim
 		if ( _num == 300 || _num == 240 || _num == 180 || _num == 120 || _num == 60 ) then {
 
 
-			playSound3D ["cg_sndimg\sounds\starthack.ogg", player, false, getPosASL player, 1, 1, 225];
+			playSound3D ["cg_sndimg\sounds\starthack.ogg", player, false, getPosASL player, 1, 1, 300];
+			playSound3D ["cg_sndimg\sounds\Rob_Alarm.ogg", player, false, getPosASL player, 1.5, 1, 300];
 
 			[1,format["911: BANK JEST RABOWANY!",_storename]] remoteExecCall ["life_fnc_broadcast", west];
 			[1,format["911: BANK JEST RABOWANY!",_storename]] remoteExecCall ["life_fnc_broadcast", independent];
+			[1,format["LAKESIDE NEWS: BANK JEST RABOWANY!",_storename]] remoteExecCall ["life_fnc_broadcast", civilian];
 		};
 		if(deadPlayer) exitwith {
 		};
