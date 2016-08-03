@@ -95,7 +95,7 @@ switch (_shop) do
 			["cg_evoems1",20000],
 			["cg_evoems2",20000],
 			["EvoXEMS",100000],
-			["charger_ems",100000],
+			//["charger_ems",100000],
 			/*["kif_Taurus_ems1",20000],*/
 			["kif_Taurus_ems2",20000],
 			["A3L_CVPILBFD",20000],
