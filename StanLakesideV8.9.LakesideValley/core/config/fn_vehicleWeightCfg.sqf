@@ -284,6 +284,7 @@ switch (_className) do
 	case "A3L_GrandCaravanUCBlack": {25};
 	
 	case "A3L_Bus": {30};
+	case "C_Offroad_01_repair_F": {50};
 	
 	case "A3L_TaurusFPBLBPD": {65};
 	case "A3L_TaurusFPBLBCSO": {65};
