@@ -528,5 +528,14 @@ switch (_className) do
 	case "ivory_m3_marked_gts": {35};
 	case "ivory_m3_unmarked_green": {35};
 	case "kif_vehicles_helicopter_mh9_police": {35};
+	
+	
+	case "vvv_camionbasura": {150};
+	case "nopixel_garbagetruck": {150};
+	case "vvv_man_obras_nergo": {150};
+	case "New_Holland_TC590_civ": {300};
+	case "vvv_Ponsse_Buffalo_Forwarder_civ": {300};
+	case "vvv_dumper": {600};
+	case "vvv_steyrmulti_civ": {100};
 	default {35};
 };
