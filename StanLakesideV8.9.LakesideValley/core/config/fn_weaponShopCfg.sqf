@@ -865,7 +865,7 @@ switch(_shop) do
 					["Chemlight_blue",nil,120],
 					["ItemMap",nil,6],
 					["Binocular",nil,110],
-					["ToolKit",nil,1500],
+					//["ToolKit",nil,1500],
 					["ItemCompass",nil,50],
 					["ItemWatch",nil,10],
 					["nonlethal_swing", "Slepa amunicja", 10],
