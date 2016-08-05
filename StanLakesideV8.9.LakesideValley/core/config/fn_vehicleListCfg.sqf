@@ -1193,7 +1193,7 @@ switch (_shop) do
 			["ivory_isf",30000],
 			["ivory_m3",30000],
 			["ivory_m3_gts",30000],
-			["ivory_gt500",3000000],
+			["ivory_gt500",30000],
 			["shounka_f430_spider_bleufonce",30000],
 			["ivory_wrx",30000],
 			["ivory_lp560",30000],
