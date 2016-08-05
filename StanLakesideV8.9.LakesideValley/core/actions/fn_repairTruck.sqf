@@ -79,7 +79,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 				player disableAI "anim"; 
 			};
 			if (player distance _veh > 4) exitwith {life_interrupted = true};
-			_cP = _cP + 0.01;
+			_cP = _cP + 0.008;
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 			if(_cP >= 1 || deadPlayer || player != vehicle player || life_interrupted) exitWith {};
@@ -90,7 +90,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 		5 cutText ["","PLAIN"];
 		if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_ActionCancel", false] spawn domsg; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {[localize "STR_NOTF_RepairingInVehicle", false] spawn domsg;};
-		_veh setDamage 0;
+		_veh setDamage 0.4;
 		[localize "STR_NOTF_RepairedVehicle", false] spawn domsg;
 	};
 };
