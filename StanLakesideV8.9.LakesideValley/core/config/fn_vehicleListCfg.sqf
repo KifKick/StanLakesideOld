@@ -904,6 +904,30 @@ switch (_shop) do
 
 			["A3L_Bus",130000],
 			//["A3L_SchoolBus",130000],
+			
+			["pop_bus_p_violet",250000],
+			["pop_bus_p_rose",250000],
+			["pop_bus_p_rouge",250000],
+			["pop_bus_p_noir",250000],
+			["pop_bus_p_ orange",250000],
+			["pop_bus_p_grise",250000],
+			["pop_bus_p_jaune",250000],
+			["pop_bus_p_p",250000],
+			
+			["POP_bus_tour_violeta",450000],
+			["POP_bus_tour_verde",450000],
+			["POP_bus_tour_rosado",450000],
+			["POP_bus_tour_rojo",450000],
+			["POP_bus_tour_oscuro",450000],
+			["POP_bus_tour_negro",450000],
+			["POP_bus_tour_naranja",450000],
+			["POP_bus_tour_gris",450000],
+			["POP_bus_tour_blanco",450000],
+			["POP_bus_tour_azul",450000],
+			["POP_bus_tour_marino",450000],
+			["POP_bus_tour_lima",450000],
+			
+			["Orel_Agora",220000],
 
 			["cg_daf_xf_euro6_noir",359000],
 			["cg_daf_xf_euro6_violet",359000],
@@ -979,6 +1003,9 @@ switch (_shop) do
 			["A3L_Towtruck_red",40000],
 			["A3L_Towtruck_yellow",40000],
 			["C_Offroad_01_repair_F",40000],
+			
+			["Orel_Master",320000],
+			["Orel_Rangoo",220000],
 			
 			["vvv_camionbasura",750000],
 			["nopixel_garbagetruck",750000],
