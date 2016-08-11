@@ -35,7 +35,7 @@ if(_complete) exitWith {};
 life_bro = 0;
 uiSleep 1;
 life_bro = 5400;
-player setUnitRecoilCoefficient 1.8;
+player setUnitRecoilCoefficient 2.2;
 while{life_bro > 0} do {
 	life_bro = life_bro - 1;
 	uiSleep 1;

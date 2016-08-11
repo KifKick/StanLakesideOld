@@ -280,6 +280,9 @@ switch (_filter) do
 			["kif_lspd_police_department_sgt_kraksa_vest", "LSPD Police Department Sgt. P. Kraksa Vest", "15"],
 			["kif_lspd_police_department_sgt_white_vest", "LSPD Police Department Sgt. G. White Vest", "15"],
 			["kif_lspd_police_department_sgt_czajka_vest", "LSPD Police Department Sgt. A. Czajka Vest", "15"],
+			["kif_lspd_police_department_squad1_vest", "LSPD Police Department Squad 1", "15"],
+			["kif_lspd_police_department_squad2_vest", "LSPD Police Department Squad 2", "15"],
+			["kif_lspd_police_department_squad3_vest", "LSPD Police Department Squad 3", "15"],
 			["kif_supervisor_vest_lspd", "Supervisor Vest LSPD", "15"],
 			["kif_supervisor_vest_richard", "Supervisor LSPD Vest Richard Hess", "15"],
 			["kif_supervisor_sheriff_vest", "Supervisor Sheriff Vest", "15"],
@@ -307,6 +310,9 @@ switch (_filter) do
 			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
 			["kif_prosecutor_vest_moje","Prosecutor Vest Moje Zerusinski",20],
 			["kif_police_vest","Kamizelka do Munduru",20],
+			["kif_police_squad1_vest","Kamizelka do Munduru Squad 1",20],
+			["kif_police_squad2_vest","Kamizelka do Munduru Squad 2",20],
+			["kif_police_squad3_vest","Kamizelka do Munduru Squad 3",20],
 			["kif_sheriff_vest","Sheriff Kamizelka",20],
 			["kif_traffic_vest","Kamizelka Drogowka",20]
 			

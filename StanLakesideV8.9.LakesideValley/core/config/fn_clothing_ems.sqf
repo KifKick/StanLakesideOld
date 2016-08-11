@@ -56,7 +56,9 @@ switch (_filter) do
 			["kif_emt_clothes_shirt_fd_obj", nil, 2],
 			["kif_emt_clothes_shirt_chieffd_jeff_obj", nil, 2],
 			["kif_emt_clothes_shirt_battalionfd_obj", nil, 2],
-			["kif_emt_clothes_shirt_assistant_marian_obj", nil, 2]
+			["kif_emt_clothes_shirt_assistant_marian_obj", nil, 2],
+			["kif_emt_clothes_shirt_emt_pd_obj", nil, 2],
+			["kif_emt_clothes_shirt_emt_pd_ams_obj", nil, 2]
 		];
 	};
 
@@ -166,9 +168,10 @@ switch (_filter) do
 			["kif_ems_vest_corvus", nil, 2],
 			["kif_ems_vest_james", nil, 2],
 			["kif_ems_vest_trynkiewicz", nil, 2],
-			["kif_fema_vest_james", nil, 2],
-			["kif_fema_vest_jeff", nil, 2],
-			["kif_fema_vest_trynkiewicz", nil, 2]
+			["kif_ehs_vest", nil, 2],
+			["kif_p_g_vest", nil, 2],
+			["kif_rr_vest", nil, 2],
+			["kif_ams_vest", nil, 2]
 		];
 	};
 
