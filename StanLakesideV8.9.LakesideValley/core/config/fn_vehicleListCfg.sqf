@@ -46,25 +46,7 @@ switch (_shop) do
 			["bv_458_skin_camo_urban",3700000],
 			["bv_shelly_bf_skin",4150000],
 			["Jonzie_Mini_Cooper",150000],
-			["ivory_c",1260000],
-			["vvv_SeatLeon_2014_ARRUABARRENA",2000000],
-			["vvv_SeatLeon_2014_BAUS",2000000],
-			["vvv_SeatLeon_2014_BRICHE_BLUE",2000000],
-			["vvv_SeatLeon_2014_CARBONELL",2000000],
-			["vvv_SeatLeon_2014_COMINI",2000000],
-			["vvv_SeatLeon_2014_DEDIEGO",2000000],
-			["vvv_SeatLeon_2014_FOGLIO",2000000],
-			["vvv_SeatLeon_2014_font",2000000],
-			["vvv_SeatLeon_2014_GIAO",2000000],
-			["vvv_SeatLeon_2014_grise",2000000],
-			["vvv_SeatLeon_2014_HERNANDEZ",2000000],
-			["vvv_SeatLeon_2014_MOURGUES",2000000],
-			["vvv_SeatLeon_2014_ORIOLA",2000000],
-			["vvv_SeatLeon_2014_RUEDA",2000000],
-			["vvv_SeatLeon_2014_SCHMARL",2000000],
-			["vvv_SeatLeon_2014_VEGLIA",2000000],
-			["vvv_SeatLeon_2014_VINYES",2000000],
-			["vvv_SeatLeon_2014_WEBER",2000000]
+			["ivory_c",1260000]
 		];
 	};
 	case "showroom_car":
@@ -119,7 +101,6 @@ switch (_shop) do
 			["cnp_Defender",50000],
 			["CNP_mercedes_sprinter_GOIT_F",70000],
 			/*["cg_merc_atego_firetruck_reg",25000],*/
-			["vvv_fire_truck",50000],
 			["A3PL_Engine",50000],
 			["A3PL_Ladder",50000],
 			["A3PL_Rescue",50000]
@@ -1007,13 +988,8 @@ switch (_shop) do
 			["Orel_Master",320000],
 			["Orel_Rangoo",220000],
 			
-			["vvv_camionbasura",750000],
 			["nopixel_garbagetruck",750000],
-			["vvv_man_obras_nergo",850000],
-			["New_Holland_TC590_civ",1500000],
-			["vvv_steyrmulti_civ",1200000],
-			["vvv_Ponsse_Buffalo_Forwarder_civ",1200000],
-			["vvv_dumper",2000000]
+			["New_Holland_TC590_civ",1500000]
 		];
 	};
 	case "reb_car":
