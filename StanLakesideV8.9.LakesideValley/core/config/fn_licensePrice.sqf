@@ -38,9 +38,9 @@ case "coke": {1500};
 	case "cement": {650};
 	case "mair": {1500};
 	case "home": {7500};
-	case "donator1": {2000};
-	case "donator2": {2000};
-	case "donator3": {2000};
+	//case "donator1": {2000};
+	//case "donator2": {2000};
+	//case "donator3": {2000};
 	
 	case "rifle": {300};
 };

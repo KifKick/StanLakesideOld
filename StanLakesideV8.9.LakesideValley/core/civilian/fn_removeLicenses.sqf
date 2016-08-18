@@ -25,9 +25,9 @@ switch (_state) do
 	case 1:
 	{
 		license_civ_gun = false;
-		license_civ_donator1 = false;
-        license_civ_donator2 = false;
-        license_civ_donator3 = false;
+		//license_civ_donator1 = false;
+        //license_civ_donator2 = false;
+        //license_civ_donator3 = false;
 	};
 	
 	//Remove motor vehicle licenses

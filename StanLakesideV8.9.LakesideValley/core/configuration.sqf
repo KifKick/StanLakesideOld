@@ -406,9 +406,9 @@ life_licenses =
 	["license_civ_cement","civ"],
 	["license_med_air","med"],
 	["license_civ_home","civ"],
-	["license_civ_donator1","civ"],
+	/*["license_civ_donator1","civ"],
 	["license_civ_donator2","civ"],
-	["license_civ_donator3","civ"],
+	["license_civ_donator3","civ"],*/
 	["license_civ_rifle","civ"]
 ];
 
