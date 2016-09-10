@@ -155,9 +155,9 @@ switch (_var) do
 	case "license_civ_MDMA": {(localize "STR_License_MDMA")};
 	case "license_civ_meth": {(localize "STR_License_Meth")};
 	case "license_civ_rifle": {"Pozwolenie na bron dluga"};
-	case "license_civ_donator1": {"Donator 1"};
+	/*case "license_civ_donator1": {"Donator 1"};
 	case "license_civ_donator2": {"Donator 2"};
-	case "license_civ_donator3": {"Donator 3"};
+	case "license_civ_donator3": {"Donator 3"};*/
 	case "license_civ_IAD": {"Internal Affairs Departament"};
 	
 };
