@@ -7,8 +7,8 @@ onLoadIntro = "SL Ladownie...";
 respawn = BASE;
 respawndelay = 1;
 disabledAI = 1;
-disableChannels[]={0,1,2,3,4,5};
 enableDebugConsole = 1;
+disableChannels[]={0,6,4,5,2};
 respawnDialog = 0;
 allowFunctionsLog = 0;
 

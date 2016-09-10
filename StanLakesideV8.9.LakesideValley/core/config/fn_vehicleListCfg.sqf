@@ -73,6 +73,7 @@ switch (_shop) do
 		[
 			/*["ivory_wrx_ems",95500],*/
 			["ivory_m3_ems",95500],
+			["ivory_m3_emsRR",95500],
 			/*["A3L_Subaru_EMS",20000],*/
 			["cg_evoems1",20000],
 			["cg_evoems2",20000],
