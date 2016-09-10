@@ -39,6 +39,30 @@ switch(_shop) do
 				};
 			};
         };
+		case "oskp":
+        {
+			switch(true) do
+			{
+				case (!license_civ_oskp): {"Sprzet wydaje tylko i wylacznie pracownikom firmy O.S.K.P"};
+				default
+				{
+					["Narzedzia O.S.K.P",
+						[
+							["A3L_Shovel",nil,50],
+			                ["A3L_ChainSaw",nil,100],
+							["cl_bigredkey",nil,100],
+							["A3L_JackHammer",nil,100],
+							["A3L_Spanner",nil,50],
+							["A3L_Hammer",nil,50],
+							["cl_pepperspray",nil,50]
+							["ToolKit",nil,50],
+							["nonlethal_swing", "Slepa amunicja", 10],
+							["sharp_swing","Ostra amunicja",10]
+						]
+					];
+				};
+			};
+        };
         case "med_basic":
         {
 			switch (true) do
