@@ -6,8 +6,8 @@ if(has_job) exitwith { ["You already have a job! Press Shift + 4 to quit!", fals
 if(!license_civ_truck) exitwith { ["You need a truck license for this job!", false] spawn domsg;};
 
 has_job = true;
-switch(_this select 3) do {
-	case "truck": {
+/*switch(_this select 3) do {
+	//case "truck": {
 			 _towtrucks = nearestObjects [player, ["Jonzie_Log_Truck","Jonzie_Superliner","Jonzie_Flatbed_Roadtrain","Jonzie_Flatbed"], 20]; 
 	  		 if(count _towtrucks > 0) exitWith { ["Please wait til trucks move before spawning another..", false] spawn domsg; };
 			vehspawned = createVehicle ["Jonzie_Log_Truck", position player, [], 0, "NONE"];
@@ -62,7 +62,7 @@ switch(_this select 3) do {
 };
 [vehspawned] spawn life_fnc_clearVehicleAmmo;
 ["You get paid extra for staying inside your vehicle..", false] spawn domsg;
-
+*/
 
 _fkit = 20;
 

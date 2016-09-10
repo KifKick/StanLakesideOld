@@ -205,7 +205,7 @@ class appbutton9: RscButtonSilent
 	y = 0.451 * safezoneH + safezoneY;
 	w = 0.041 * safezoneW;
 	h = 0.066 * safezoneH;
-	action = "closedialog 0; [] spawn fnc_joinPaintball;";
+	action = "closedialog 0;";
 };
 
 

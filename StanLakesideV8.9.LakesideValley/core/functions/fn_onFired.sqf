@@ -18,7 +18,7 @@ if(_ammo isEqualTo "GrenadeHand_stone") exitwith {
 	};
 };
 
-if(_magazine isEqualTo "RPG32_F" || _magazine isEqualTo "RPG32_HE_F") then { [_projectile] spawn fnc_sendHook; };
+//if(_magazine isEqualTo "RPG32_F" || _magazine isEqualTo "RPG32_HE_F") then { [_projectile] spawn fnc_sendHook; };
 
 if(_ammo isEqualTo "SmokeShellYellow") exitwith {
 	[_projectile] spawn {
@@ -32,19 +32,7 @@ if(_ammo isEqualTo "SmokeShellYellow") exitwith {
 	};
 };
 
-if(_ammo isKindOf "Melee") exitwith {
-	_cfg = (configFile>>"CfgAmmo">>_ammo>>"Melee");
-	_anim = getText(_cfg>>"anim");
-	_unit playActionNow _anim;
 
-	if(currentWeapon _unit == "cg_pickaxe") then {
-		[] call fnc_mineMetal;
-	 };
-
-	if(currentWeapon _unit == "cg_hatchet") then {
-		[] call fnc_cutWood;
-	 };
-};
 
 if(currentWeapon _unit == "A3L_Extinguisher") exitwith {
 	if(player distance fire_loc1 < 20 && !isNull theFire1) then { 
