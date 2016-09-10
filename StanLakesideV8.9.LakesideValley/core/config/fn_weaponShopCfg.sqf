@@ -374,7 +374,7 @@ switch(_shop) do
 				{
 					["Bronie Dlugie Rebelii",
 						[
-							/*["SMG_01_F",nil,127500],
+							["SMG_01_F",nil,127500],
 			                ["30Rnd_45ACP_Mag_SMG_01",nil,750],
 							["SMG_02_F",nil,127500],
 							["RH_sbr9_wdl",nil,127500],
@@ -417,7 +417,7 @@ switch(_shop) do
 							["RH_muzi",nil,58000],
 							["RH_30Rnd_9x19_UZI",nil,750],
 							["RH_deagle",nil,97500],
-							["RH_7Rnd_50_AE",nil,750],*/
+							["RH_7Rnd_50_AE",nil,750],
 							["RH_compm4s",nil,5000],
 							["RH_compM2_tan",nil,5000],
 							["RH_eotexps3_tan",nil,5000],
