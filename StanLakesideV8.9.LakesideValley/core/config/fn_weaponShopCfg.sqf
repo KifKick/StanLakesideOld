@@ -324,7 +324,7 @@ switch(_shop) do
 							["RH_docter",nil,2500],
 							["optic_MRD",nil,2500],
 							["optic_Yorris",nil,2500]
-							/*["RH_fn57",nil,25500],
+							["RH_fn57",nil,25500],
 							["RH_20Rnd_57x28_FN",nil,600],
 					        ["RH_vp70",nil,10500],
 				            ["RH_18Rnd_9x19_VP",nil,600],
@@ -356,7 +356,7 @@ switch(_shop) do
 							["RH_pmsd",nil,20500],
 							["RH_vp70stock",nil,2500],
 					        ["RH_gsh18",nil,10500],
-				            ["RH_18Rnd_9x19_gsh",nil,600]*/
+				            ["RH_18Rnd_9x19_gsh",nil,600]
 						]
 					];
 				};

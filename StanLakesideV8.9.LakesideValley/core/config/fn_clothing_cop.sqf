@@ -295,9 +295,9 @@ switch (_filter) do
 			["kif_dtu_vest_rudolf","DTU Vest Rudolf Hess",15],
 			["kif_dtu_vest_jurgen","DTU Vest J. Stroop",15],
 			["kif_aiad_vest","AIAD Vest",15],
-			/*["kif_aiad_vest_teddy","AIAD Vest T. Messerschmit",15],*/
+			["kif_aiad_vest_teddy","AIAD Vest T. Messerschmit",15],
 			["kif_aiad_vest_michal","AIAD Vest M. Kaminski",15],
-			["kif_aiad_vest_alexey","AIAD Vest A. Abidi",15],
+		/*["kif_aiad_vest_alexey","AIAD Vest A. Abidi",15],*/
 			["kif_aiad_vest_donald","AIAD Vest D. Donaldowski",15],
 			["kif_aiad_vest_shadd","AIAD Vest S. Wallace",15],
 			["kif_swat_vest","Police SWAT Vest",15],
