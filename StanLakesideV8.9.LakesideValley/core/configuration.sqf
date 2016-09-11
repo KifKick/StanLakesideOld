@@ -381,10 +381,9 @@ life_inv_items =
 //Licenses [license var, civ/cop]
 life_licenses =
 [
-	["license_civ_MDMA","civ"],
-	["license_civ_meth","civ"],
-	["license_civ_coke","civ"],
-	["license_civ_oskp","civ"],
+["license_civ_MDMA","civ"],
+["license_civ_meth","civ"],
+["license_civ_coke","civ"],
 	["license_cop_air","cop"],
 	["license_cop_swat","cop"],
 	["license_cop_cg","cop"],
