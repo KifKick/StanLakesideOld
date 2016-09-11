@@ -381,9 +381,10 @@ life_inv_items =
 //Licenses [license var, civ/cop]
 life_licenses =
 [
-["license_civ_MDMA","civ"],
-["license_civ_meth","civ"],
-["license_civ_coke","civ"],
+	["license_civ_MDMA","civ"],
+	["license_civ_meth","civ"],
+	["license_civ_coke","civ"],
+	["license_civ_oskp","civ"],
 	["license_cop_air","cop"],
 	["license_cop_swat","cop"],
 	["license_cop_cg","cop"],
@@ -409,7 +410,9 @@ life_licenses =
 	/*["license_civ_donator1","civ"],
 	["license_civ_donator2","civ"],
 	["license_civ_donator3","civ"],*/
-	["license_civ_rifle","civ"]
+	["license_civ_rifle","civ"],
+	["license_cop_prokurator","cop"],
+	["license_civ_oskp","civ"]
 ];
 
 //Setup License Variables
