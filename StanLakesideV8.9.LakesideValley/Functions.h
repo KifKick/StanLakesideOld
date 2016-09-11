@@ -144,6 +144,7 @@ class Life_Client_Core
 		class robStore {}; 
 		class surrender {};
 		class carSalesman {};
+		class loggedOut {};
 		//class robBank {};
 	};	
 

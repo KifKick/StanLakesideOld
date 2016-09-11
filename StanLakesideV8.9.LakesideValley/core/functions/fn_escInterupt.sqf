@@ -49,6 +49,7 @@ while {true} do
 	waitUntil{!isNull (findDisplay 49)};
 	_abortButton = (findDisplay 49) displayCtrl 104;
 	_abortButton buttonSetAction "[player] remoteExec [""TON_fnc_cleanupRequest"",2]";
+	_abortButton ctrlSetEventHandler ["ButtonClick","[] spawn life_fnc_loggedOut; (findDisplay 49) closeDisplay 2; true"];
 	_respawnButton = (findDisplay 49) displayCtrl 1010;
 	_fieldManual = (findDisplay 49) displayCtrl 122;
 	
