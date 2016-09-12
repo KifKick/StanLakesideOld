@@ -38,20 +38,30 @@ switch (_filter) do
 		];
 	};
 	
-	//Backpacks
+	case 1:
+	{
+		[
+		];
+	}
+
 	case 2:
 	{
 		[
-			["cg_invisbp",nil,1000]
 		];
 	}
 	
-	//Vests
 	case 3:
 	{
 		[
-			["NewEden_EMS_Vests_Kzimierza",nil,500],
-			["NewEden_EMS_Vests_Prokurator",nil,500]
+			["NewEden_EMS_Vests_Prokurator",nil,500],
+			["NewEden_EMS_Vests_Kzimierza",nil,500]
 		];
 	};
+	case 4:
+	{
+		[
+			["cg_invisbp",nil,1000],
+			["B_Carryall_khk",nil,500]
+		];
+	}
 };
