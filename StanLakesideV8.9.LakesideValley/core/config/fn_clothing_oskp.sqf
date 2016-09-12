@@ -51,9 +51,6 @@ switch (_filter) do
 			["TRYK_shirts_TAN_PAD_BK",nil,500],
 			["TRYK_shirts_OD_PAD_BK",nil,500],
 			["TRYK_shirts_PAD_BK",nil,500]
-*/
-
-
 		];
 	};
 	
@@ -87,8 +84,8 @@ switch (_filter) do
 			["jamie_security",nil,1000],
 			["kenny_vest_security",nil,1000],
 			["kif_emt_traffic_controller_vest",nil,250],
-			["NewEden_EMS_Vests_Brygadier",nil,1000]
-			["NewEden_EMS_Vests_Laweta",nil,1000]
+			["NewEden_EMS_Vests_Brygadier",nil,1000],
+			["NewEden_EMS_Vests_Laweta",nil,1000],
 			["NewEden_EMS_Vests_Mechanik",nil,1000]
 		];
 	};
