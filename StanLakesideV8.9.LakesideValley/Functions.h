@@ -144,7 +144,6 @@ class Life_Client_Core
 		class robStore {}; 
 		class surrender {};
 		class carSalesman {};
-		class loggedOut {};
 		//class robBank {};
 	};	
 
@@ -318,6 +317,7 @@ class Life_Client_Core
 		class airSiren {}; 
 		class medactAirSiren {};
 		class medairSiren {}; 
+		class loggedOut {};
 	};
 	
 	class Network
