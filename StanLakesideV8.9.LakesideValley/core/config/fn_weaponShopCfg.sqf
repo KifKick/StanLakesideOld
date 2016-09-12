@@ -39,6 +39,30 @@ switch(_shop) do
 				};
 			};
         };
+		case "oskp":
+        {
+			switch(true) do
+			{
+				case (!license_civ_oskp): {"Sprzet wydaje tylko i wylacznie pracownikom firmy O.S.K.P"};
+				default
+				{
+					["Narzedzia O.S.K.P",
+						[
+							["A3L_Shovel",nil,50],
+			                ["A3L_ChainSaw",nil,100],
+							["cl_bigredkey",nil,100],
+							["A3L_JackHammer",nil,100],
+							["A3L_Spanner",nil,50],
+							["A3L_Hammer",nil,50],
+							["cl_pepperspray",nil,50],
+							["ToolKit",nil,50],
+							["nonlethal_swing", "Slepa amunicja", 10],
+							["sharp_swing","Ostra amunicja",10]
+						]
+					];
+				};
+			};
+        };
         case "med_basic":
         {
 			switch (true) do
@@ -300,7 +324,7 @@ switch(_shop) do
 							["RH_docter",nil,2500],
 							["optic_MRD",nil,2500],
 							["optic_Yorris",nil,2500]
-							["RH_fn57",nil,25500],
+							/*["RH_fn57",nil,25500],
 							["RH_20Rnd_57x28_FN",nil,600],
 					        ["RH_vp70",nil,10500],
 				            ["RH_18Rnd_9x19_VP",nil,600],
@@ -332,7 +356,7 @@ switch(_shop) do
 							["RH_pmsd",nil,20500],
 							["RH_vp70stock",nil,2500],
 					        ["RH_gsh18",nil,10500],
-				            ["RH_18Rnd_9x19_gsh",nil,600]
+				            ["RH_18Rnd_9x19_gsh",nil,600]*/
 						]
 					];
 				};
@@ -350,7 +374,7 @@ switch(_shop) do
 				{
 					["Bronie Dlugie Rebelii",
 						[
-							["SMG_01_F",nil,127500],
+							/*["SMG_01_F",nil,127500],
 			                ["30Rnd_45ACP_Mag_SMG_01",nil,750],
 							["SMG_02_F",nil,127500],
 							["RH_sbr9_wdl",nil,127500],
@@ -393,7 +417,7 @@ switch(_shop) do
 							["RH_muzi",nil,58000],
 							["RH_30Rnd_9x19_UZI",nil,750],
 							["RH_deagle",nil,97500],
-							["RH_7Rnd_50_AE",nil,750],
+							["RH_7Rnd_50_AE",nil,750],*/
 							["RH_compm4s",nil,5000],
 							["RH_compM2_tan",nil,5000],
 							["RH_eotexps3_tan",nil,5000],
