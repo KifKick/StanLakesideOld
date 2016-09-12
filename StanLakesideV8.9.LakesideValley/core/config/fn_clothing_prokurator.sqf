@@ -50,8 +50,8 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["NewEden_EMS_Vests_Prokurator",nil,500],
-			["NewEden_EMS_Vests_Kzimierza",nil,500]
+			["NewEden_EMS_Vests_Kzimierza",nil,500],
+			["NewEden_EMS_Vests_Prokurator",nil,500]
 		];
 	};
 };
