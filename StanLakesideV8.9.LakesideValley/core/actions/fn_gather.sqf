@@ -57,7 +57,7 @@ if(!isNil "_this" && {count _this != 0}) then {
 };
 if(_exit) exitWith {life_spam_my_dick = 0;};
 _diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_diff == 0) exitWith {["Twoj ekwipunek jest pelen!", false] spawn domsg; life_action_gathering = false; life_spam_my_dick = 0;};
+if(_diff == 0) exitWith {["Twoj ekwipunek jest pelen!", false] spawn domsg; life_action_gathering = false; life_spam_my_dick = 0; playsound "endbeep";};
 if(!_toasters) then {
 	for "_i" from 0 to 2 do
 	{
