@@ -2035,8 +2035,32 @@ fnc_hackDoor = {
 
 		disableUserInput false;
 	};
+	
+	fnc_give_ID =
+	{
+		if(count target_houses > 0) then {
+			[] call fnc_del_houses;
+		};
+		target_licenses = _this select 0;
+		target_houses = _this select 1;
+		_n = 0;
+		if(count target_houses > 0) then {
 
+			{
+				_pos = call compile format["%1",_x select 0];
+				_house = nearestBuilding _pos;
+				_houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
+				_marker = createMarkerLocal [format["house_%1",_n],_pos];
+				_marker setMarkerTextLocal _houseName;
+				_marker setMarkerColorLocal "ColorRed";
+				_marker setMarkerTypeLocal "loc_Lighthouse";
+				_n = _n + 1;
+			} foreach target_houses;
 
+			["Domy obywatela zostaly zaznaczone na mapie!", false] spawn domsg;
+
+		};
+		life_gather_info = true;
 
 
 fnc_virt_dupe = {
