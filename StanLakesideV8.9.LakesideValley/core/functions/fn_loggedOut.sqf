@@ -1,4 +1,4 @@
-#include "..\..\script_macros.hpp" 
+
 
 disableSerialization;
  player allowDamage false;
@@ -35,7 +35,7 @@ _name = name player;
 
 [
      format[
-     "<t size='1.3' color='#00C10D'>Thanks For Playing!</t><br/>Good Bye %1 ! <br/><t size='1.1'>Data Synced And Gear Saved.</t>",_name],
+      "<t size='1.3' color='#00C10D'>Dzieki za gre:</t><br/> %1 ! <br/><t size='1.1'>Przedmioty zostaly zapisane.</t>",_name],
      0,
      0.2,
      10,
