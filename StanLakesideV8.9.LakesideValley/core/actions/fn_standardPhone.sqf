@@ -7,5 +7,6 @@ if(life_battery > 99) exitWith { ["STORE CLERK: Already charged.", false] spawn 
 uiSleep 3;
 ["Set",100] call fnc_battery;
 ["cash","take",25] call life_fnc_handleCash;
+[] call SOCK_fnc_updateRequest;
 playSound3D ["cg_sndimg\sounds\phoneSMS.ogg", player, false, getPosASL player, 1, 1, 25];
 ["Charged, Thank You - Come Again!", false] spawn domsg;

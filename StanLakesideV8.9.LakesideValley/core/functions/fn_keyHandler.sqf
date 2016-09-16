@@ -649,11 +649,13 @@ switch (_code) do
 						_veh setVariable["parkingTicket2",false,true];
 						["Otrzymales $1500 mandatu za nieprawidlowe parkowanie!", false] spawn domsg;
 						["bank","take", 1500] call life_fnc_handleCash;
+						[] call SOCK_fnc_updateRequest;
 					};
 					if(_veh getVariable ["parkingTicket", false]) then {
 						_veh setVariable["parkingTicket",false,true];
 						["Otrzymales $500 mandatu za nieprawidlowe parkowanie!", false] spawn domsg;
 						["bank","take", 500] call life_fnc_handleCash;
+						[] call SOCK_fnc_updateRequest;
 					};
 
 					if(_locked == 2) then {

@@ -18,7 +18,8 @@ if(_val > cash_in_bank) exitWith {[localize "STR_ATM_NotEnough", false] spawn do
 _tax = round(_val / 15);
 if((_val + _tax) > cash_in_bank) exitWith {[format[localize "STR_ATM_SentMoneyFail",_val,_tax], false] spawn domsg;};
 
-["bank","take",(_val + _tax)] call life_fnc_handleCash; 
+["bank","take",(_val + _tax)] call life_fnc_handleCash;
+[] call SOCK_fnc_updateRequest; 
 
 [_val,profileName,name _unit] remoteExecCall ["clientWireTransfer",_unit];
 [] call life_fnc_atmMenu;

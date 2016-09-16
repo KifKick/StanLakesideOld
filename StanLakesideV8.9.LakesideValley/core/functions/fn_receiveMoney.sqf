@@ -15,3 +15,4 @@ if(_unit isEqualTo _from) exitWith {}; //Bad boy, trying to exploit his way to r
 
 [format[localize "STR_NOTF_GivenMoney",_from getVariable["realname",name _from],[_val] call life_fnc_numberText], false] spawn doquickmsg;
 ["cash","add",_val] call life_fnc_handleCash;
+[] call SOCK_fnc_updateRequest;

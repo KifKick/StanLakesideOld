@@ -71,7 +71,8 @@ if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_Act
 [player,"defib"] spawn life_fnc_nearestSound;
 _target setVariable["stwierdzamZgon690", false, true];
 
-["bank","add",(call life_revive_fee)] call life_fnc_handleCash; 
+["bank","add",(call life_revive_fee)] call life_fnc_handleCash;
+[] call SOCK_fnc_updateRequest; 
 life_action_inUse = false;
 _target setVariable["Revive",TRUE,TRUE];
 

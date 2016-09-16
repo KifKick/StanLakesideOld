@@ -26,6 +26,7 @@ if(isNil "_unit") exitWith {ctrlShow[2001,true]; ["Wybrany gracz nie jest w zasi
 [format["You gave $%1 to %2",[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname",name _unit]], false] spawn doquickmsg;
 
 ["cash","take",(parseNumber(_amount))] call life_fnc_handleCash;
+[] call SOCK_fnc_updateRequest;
 [_unit,(parseNumber(_amount)),player,name _unit] remoteExecCall ["life_fnc_receiveMoney",_unit];
 [] call life_fnc_p_updateMenu;
 

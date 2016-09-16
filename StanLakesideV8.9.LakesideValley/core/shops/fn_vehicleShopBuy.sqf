@@ -43,7 +43,8 @@ if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
 
 
 if(_spawnPoint isEqualTo "") exitWith {[localize "STR_Shop_Veh_Block", false] spawn domsg;};
-["cash","take",_basePrice] call life_fnc_handleCash; 
+["cash","take",_basePrice] call life_fnc_handleCash;
+[] call SOCK_fnc_updateRequest; 
 [format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText], false] spawn domsg;
 [player,"buycarniggah"] spawn life_fnc_nearestSound;
 _obj = ObjNull;

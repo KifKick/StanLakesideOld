@@ -33,9 +33,11 @@ if(_status == "CPR" && shooting_death) then { hint "Ktos Cie ustabilizowal!."; m
 
 	//Take fee for services.
 	if(cash_in_bank > (call life_revive_fee)) then {
-		["bank","take",call life_revive_fee] call life_fnc_handleCash; 
+		["bank","take",call life_revive_fee] call life_fnc_handleCash;
+		[] call SOCK_fnc_updateRequest;
 	} else {
 		["bank","set",0] call life_fnc_handleCash;
+		[] call SOCK_fnc_updateRequest;
 	};
 	player setVariable["Revive",nil,TRUE];
 	player setVariable["name",nil,TRUE];

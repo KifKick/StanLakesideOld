@@ -30,6 +30,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 		if(vest player == "v_press_f" && (getpos player) distance newsspot > 100) then
 		{
 			["bank","add", 1000] call life_fnc_handleCash;
+			[] call SOCK_fnc_updateRequest;
 			["You just got paid an extra $1000", false] spawn domsg; 
 			NewsSpot = getpos player;
 			["Add",10] call fnc_karma;
@@ -38,6 +39,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 		if(vest player == "v_press_f" && _curWep == "Tv_Camera" && (getpos player) distance newsspot > 100) then
 		{
 			["bank","add", 1000] call life_fnc_handleCash;
+			[] call SOCK_fnc_updateRequest;
 			["You just got paid an extra $1000", false] spawn domsg; 
 			NewsSpot = getpos player;
 			["Add",15] call fnc_karma;
@@ -45,6 +47,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 		if(vest player == "v_press_f" && _curWep == "Tv_Camera" && (getpos player) distance newsspot < 100) then
 		{
 			["bank","add", 250] call life_fnc_handleCash;
+			[] call SOCK_fnc_updateRequest;
 			["You just got paid an extra $250", false] spawn domsg; 
 			NewsSpot = getpos player;
 			["Add",5] call fnc_karma;
@@ -52,6 +55,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 		if(vest player == "v_press_f" && (getpos player) distance newsspot < 100) then
 		{
 			["bank","add", 250] call life_fnc_handleCash;
+			[] call SOCK_fnc_updateRequest;
 			["You just got paid an extra $250", false] spawn domsg; 
 			NewsSpot = getpos player;
 			["Add",2] call fnc_karma;
@@ -60,6 +64,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 		if(vest player == "v_press_f" && (getpos player) distance newsspot > 100) then
 		{
 			["bank","add", 150] call life_fnc_handleCash;
+			[] call SOCK_fnc_updateRequest;
 			["You just got paid an extra $150", false] spawn domsg; 
 			NewsSpot = getpos player;
 			["Add",5] call fnc_karma;

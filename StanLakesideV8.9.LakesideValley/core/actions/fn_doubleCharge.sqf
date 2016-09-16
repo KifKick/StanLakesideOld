@@ -14,8 +14,10 @@ if(life_karma > 100) then {
 		["Otrzymales 10% znizki za dobra reputacje!", false] spawn domsg;
 	_price = round(_price * 0.9);
 	["cash","take",_price] call life_fnc_handleCash;
+	[] call SOCK_fnc_updateRequest;
 } else {
-	["cash","take",_price] call life_fnc_handleCash;	
+	["cash","take",_price] call life_fnc_handleCash;
+	[] call SOCK_fnc_updateRequest;	
 };
 
 

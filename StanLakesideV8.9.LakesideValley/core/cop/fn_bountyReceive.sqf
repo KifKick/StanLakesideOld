@@ -19,3 +19,4 @@ if(_val == _total) then
 };
 
 ["bank","add", _val] call life_fnc_handleCash; 
+[] call SOCK_fnc_updateRequest;

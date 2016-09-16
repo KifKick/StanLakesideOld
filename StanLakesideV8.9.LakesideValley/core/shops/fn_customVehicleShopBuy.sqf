@@ -43,9 +43,11 @@ _spawnPoint = "";
 
 if(_spawnPoint isEqualTo "") exitWith {[localize "STR_Shop_Veh_Block", false] spawn domsg};
 ["cash","take",_price] call life_fnc_handleCash;
+[] call SOCK_fnc_updateRequest;
 if!(isNil "_salesman") then {
 	_salesmanCut = _price * (1/9);
 	["cash","bank",_salesmanCut] remoteExecCall ["life_fnc_handleCash",_salesman];
+	[] call SOCK_fnc_updateRequest;
 	[format["You received $%1 for assisting %2 in their purchase of a %3.",_salesmanCut,profileName,getText(configFile >> "CfgVehicles" >> _className >> "displayName")], false] remoteExec ["domsg",_salesman];
 };
 [format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_price] call life_fnc_numberText], false] spawn domsg;

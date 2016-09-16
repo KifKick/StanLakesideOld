@@ -22,5 +22,6 @@ if(_value > cash_in_hand) exitWith {[localize "STR_ATM_NotEnoughCash", false] sp
 
 ["cash","take",_value] call life_fnc_handleCash;
 ["bank","add", _value] call life_fnc_handleCash;
+[] call SOCK_fnc_updateRequest;
 [format[localize "STR_ATM_DepositMSG",[_value] call life_fnc_numberText], false] spawn domsg;
 [] call life_fnc_atmMenu;

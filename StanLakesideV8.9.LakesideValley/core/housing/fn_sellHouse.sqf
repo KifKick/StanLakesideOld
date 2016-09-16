@@ -33,7 +33,8 @@ if(_action) then {
 	deleteMarkerLocal format["house_%1",_house getVariable "uid"];
 	_house setVariable["uid",nil,true];
 	
-	["bank","add",(round((_houseCfg select 0)/2))] call life_fnc_handleCash; 
+	["bank","add",(round((_houseCfg select 0)/2))] call life_fnc_handleCash;
+	[] call SOCK_fnc_updateRequest;
 	_index = life_vehicles find _house;
 	if(_index != -1) then {
 		life_vehicles set[_index,-1];

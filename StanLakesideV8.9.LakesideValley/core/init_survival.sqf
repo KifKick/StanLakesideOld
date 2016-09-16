@@ -113,6 +113,7 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 					["Otrzymales $1000 mandatu za przekraczanie predkosci w miescie", false] spawn domsg;
 					if(cash_in_bank > 1000) then {
 						["bank","take",1000] call life_fnc_handleCash;
+						[] call SOCK_fnc_updateRequest;
 					};
 				};
 
@@ -143,7 +144,8 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 				if(_vel > 199) then {
 					["Otrzymales mandat w wysokosci $10000 oraz odebrano Ci prawo jazdy za zapierdalanie po miescie", false] spawn domsg;
 					if(cash_in_bank > 10000) then {
-						["bank","take", 10000] call life_fnc_handleCash
+						["bank","take", 10000] call life_fnc_handleCash;
+						[] call SOCK_fnc_updateRequest;
 					};
 					player setVariable["defect_vehicle",true,true];
 
@@ -180,6 +182,7 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 					["Otrzymales $1000 mandatu za przekraczanie predkosci", false] spawn domsg;
 					if(cash_in_bank > 1000) then {
 						["bank","take", 1000] call life_fnc_handleCash;
+						[] call SOCK_fnc_updateRequest;
 					};
 
 					"colorCorrections" ppEffectEnable true;
@@ -205,6 +208,7 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 					["Otrzymales $2500 mandatu za nadmierna predkosc.", false] spawn domsg;
 					if(cash_in_bank > 2500) then {
 						["bank","take", 2500] call life_fnc_handleCash;
+						[] call SOCK_fnc_updateRequest;
 					};
 
 					"colorCorrections" ppEffectEnable true;
@@ -229,7 +233,8 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 				if(_vel > 225) then {
 					["Otrzymales $1000 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem.", false] spawn domsg;
 					if(cash_in_bank > 5000) then {
-						["bank","take", 5000] call life_fnc_handleCash
+						["bank","take", 5000] call life_fnc_handleCash;
+						[] call SOCK_fnc_updateRequest;
 					};
 					player setVariable["defect_vehicle",true,true];
 

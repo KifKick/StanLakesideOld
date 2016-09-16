@@ -27,6 +27,7 @@ if(_item) then {
 	if(cash_in_hand < _price) exitWith { ["PRACOWNIK PIZZERII: Ta pizza kosztuje $750!", false] spawn domsg; _complete = true; };
 
 	["cash","take",_price] call life_fnc_handleCash;
+	[] call SOCK_fnc_updateRequest;
 
 	
 };

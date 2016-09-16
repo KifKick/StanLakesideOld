@@ -12,7 +12,8 @@ if(isNull _robber) exitWith {}; //No one to return it to?
 if(cash_in_hand > 0) then
 {
 	[cash_in_hand] remoteExecCall ["life_fnc_robReceive",_robber];
-	["cash","set",0] call life_fnc_handleCash; 	
+	["cash","set",0] call life_fnc_handleCash;
+	[] call SOCK_fnc_updateRequest;
 }
 	else
 {

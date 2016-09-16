@@ -24,7 +24,8 @@ _robber = false;
 
 if(!life_use_atm) then 
 {
-	["cash","set",0] call life_fnc_handleCash; 
+	["cash","set",0] call life_fnc_handleCash;
+	[] call SOCK_fnc_updateRequest;
 	_robber = true;
 };
 

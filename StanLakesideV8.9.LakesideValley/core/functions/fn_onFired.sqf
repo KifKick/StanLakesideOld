@@ -41,6 +41,7 @@ if(currentWeapon _unit == "A3L_Extinguisher") exitwith {
 			["cleaned"] remoteExec ["fnc_deletefire", -2];
 			["Otrzymales $15500 za ugaszenie pozaru!", false] spawn domsg; 
 			["cash","add", 15500] call life_fnc_handleCash;
+			[] call SOCK_fnc_updateRequest;
 		};
 	};			
 };

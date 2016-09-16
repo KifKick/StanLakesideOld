@@ -65,10 +65,11 @@ if (!(_robber getVariable["dead",FALSE]) && {currentWeapon _robber != "" && curr
 	};
 	if(!_success) exitWith { deleteMarker myStoreMarker; life_canrob = true; };
 	life_canrob = true;
-	["cash","add",_funds] call life_fnc_handleCash; 
+	["cash","add",_funds] call life_fnc_handleCash;
 	hint format["Ukradles $%1",_funds];
 	_reason = "211";
 	[_robber,_robber,_reason] spawn life_fnc_createEvidence;
+	[] call SOCK_fnc_updateRequest;
 	[1,format["WIADOMOSCI LAKESIDE: Sklep zostal obrabowany na $%2!", _shop, [_funds] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast", civilian];
 	_funds = 0;
 	life_use_atm = false;
