@@ -3045,18 +3045,18 @@ class Mission
 				class Item134
 				{
 					position[]={8720.1621,10.995734,7234.2451};
-					azimut=76.564484;
+					azimut=76.564499;
 					offsetY=0.75;
 					special="NONE";
 					id=189;
 					side="CIV";
-					vehicle="C_man_w_worker_F";
+					vehicle="C_Marshal_F";
 					skill=0.60000002;
-					init="removeallWeapons this;  this enableSimulation false; this allowDamage false;  this addAction[""Ciuchy Robocze i Uniformy O.S.K.P"",life_fnc_clothingMenu,""oskp"",0,false,false,"""",' license_civ_oskp && playerSide == civilian'];  this addAction[""Narzedzia O.S.K.P"",life_fnc_weaponShopMenu,""oskp"",0,false,false,"""",' license_civ_oskp && playerSide == civilian'];";
+					init="removeallWeapons this;  this enableSimulation false; this allowDamage false;  this addAction[""Narzedzia O.S.K.P"",life_fnc_weaponShopMenu,""oskp"",0,false,false,"""",' license_civ_oskp && playerSide == civilian'];  this addAction[""Magazyn O.S.K.P"",life_fnc_clothingMenu,""oskp""]; this addAction[""Market"",life_fnc_virt_menu,""market""];";
 				};
 				class Item135
 				{
-					position[]={8787.8242,10.46,6709.0249};
+					position[]={8787.7881,10.46,6711.1221};
 					azimut=829.40002;
 					offsetY=0.27000001;
 					special="NONE";
@@ -3065,7 +3065,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="LakesideProkShop";
-					init="removeallWeapons this;  this enableSimulation false; this allowDamage false;  this addAction[""Sklep Prokuratorski"",life_fnc_clothingMenu,""prokurator"",0,false,false,"""",' license_cop_prokurator && playerSide == west'];";
+					init="removeallWeapons this;  this enableSimulation false; this allowDamage false;   this addAction[""Wyposazenie"",life_fnc_clothingMenu,""prokurator""]; this addAction [""Zaopatrzenie"",life_fnc_virt_menu,""cop"", 1.5, true, true, """",' playerSide isEqualTo west ']; this addAction[""Market"",life_fnc_virt_menu,""market""];";
 					description="S";
 				};
 			};
@@ -30355,7 +30355,7 @@ class Mission
 		};
 		class Item2416
 		{
-			position[]={8787.4434,10.46,6706.7417};
+			position[]={8787.4072,10.46,6708.8389};
 			azimut=98.7994;
 			id=2710;
 			side="EMPTY";
@@ -30366,7 +30366,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=429;
+		items=430;
 		class Item0
 		{
 			position[]={639.40424,438.49207,9827.9219};
@@ -33628,6 +33628,14 @@ class Mission
 			name="car_g_r_2_1";
 			type="Empty";
 			angle=-258.12766;
+		};
+		class Item429
+		{
+			position[]={8800.4766,17.860159,6723.9697};
+			name="Prok1";
+			text="Prokuratura";
+			type="A3L_PD_Icon";
+			colorName="ColorWEST";
 		};
 	};
 	class Sensors

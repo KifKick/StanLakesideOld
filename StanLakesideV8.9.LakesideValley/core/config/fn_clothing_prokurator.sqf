@@ -18,6 +18,7 @@ switch (_filter) do
 	case 0:
 	{
 		[
+/*
 			["KAEL_SUITS_BR_F35",nil,1],
 			["KAEL_SUITS_BR_F34",nil,1],
 			["KAEL_SUITS_BR_F33",nil,1],
@@ -34,34 +35,30 @@ switch (_filter) do
 			["KAEL_SUITS_BR_F22",nil,1],
 			["KAEL_SUITS_BR_F21",nil,1],
 			["KAEL_SUITS_BR_Judge",nil,1],
-			["KAEL_SUITS_BR_F3",nil,1]
+			["KAEL_SUITS_BR_F3",nil,1],
+*/
+
+
 		];
 	};
 	
-	case 1:
-	{
-		[
-		];
-	}
-
+	//Backpacks
 	case 2:
 	{
 		[
+			["cg_invisbp",nil,1000],
+
 		];
+			//Backpacks
 	}
 	
+	//Vests
 	case 3:
 	{
 		[
 			["NewEden_EMS_Vests_Prokurator",nil,500],
-			["NewEden_EMS_Vests_Kzimierza",nil,500]
+			["NewEden_EMS_Vests_Kzimierza",nil,500],
+
 		];
 	};
-	case 4:
-	{
-		[
-			["cg_invisbp",nil,1000],
-			["B_Carryall_khk",nil,500]
-		];
-	}
 };

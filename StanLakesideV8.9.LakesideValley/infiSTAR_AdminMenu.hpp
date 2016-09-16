@@ -157,13 +157,54 @@ x=0.1 * safezoneW + safezoneX;
 y=0.038 * safezoneH + safezoneY;
 w=0.658333 * safezoneW;
 h=(0.143 * safezoneH)*3;
-autocomplete="scripting";
 font="EtelkaMonospacePro";
 colorText[]={0.95,0.95,0.95,1};
 style=16;
 sizeEx="0.65 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 show=1;
-}
+};
+class RscEdit_infiSTAR_ss:RscEdit_infiSTAR {
+x=0;
+y=(safeZoneY + 0.01)+1;
+w=1;
+h=0.05;
+idc=1380;
+font="EtelkaMonospacePro";
+colorText[]={0.95,0.95,0.95,1};
+sizeEx="0.65 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+show=1;
+autocomplete="scripting";
+};
+class infiSTAR_EDITBOX
+{
+idd=-1341;
+movingenable=true;
+class controls
+{
+class RscEditMultiSTAR:RscEdit_infiSTAR_multi
+{
+idc=1336;
+x=0.25;
+y=0.25;
+w=0.5;
+h=0.5;
+};
+};
+};
+class infiSTAR_EDITBOX2
+{
+idd=-1341;
+movingenable=true;
+class controls
+{
+class RscEditMultiSTAR:RscEdit_infiSTAR_multi{autocomplete="scripting";};
+class RscEditSingle1STAR:RscEdit_infiSTAR_ss{idc=1380;};
+class RscEditSingle2STAR:RscEdit_infiSTAR_ss{idc=1381;};
+class RscEditSingle3STAR:RscEdit_infiSTAR_ss{idc=1382;};
+class RscEditSingle4STAR:RscEdit_infiSTAR_ss{idc=1383;};
+class infi_LIST1384:RscListBox_infiSTAR{idc=1384;x=-0.25;y=0.2;w=0.25;h=0.9;sizeEx=0.027;};
+};
+};
 class infiSTAR_CHAT
 {
 idd=-1340;
@@ -171,7 +212,7 @@ movingenable=false;
 onKeyDown="call fnc_chat_onKeyDown;";
 class controls
 {
-class RscListbox_1500: RscListBox_infiSTAR
+class RscListbox_1500:RscListBox_infiSTAR
 {
 idc = 1500;
 x = 0.133846 * safezoneW + safezoneX;
@@ -181,7 +222,7 @@ h = 0.792133 * safezoneH;
 onLoad="uiNamespace setVariable ['chat_playerlist', _this select 0];call fnc_fill_chat_playerlist;(_this select 0) lbSetCurSel 0;";
 onLBSelChanged="call fnc_chat_onLBSelChanged;";
 };
-class RscListbox_1501: RscListBox_infiSTAR
+class RscListbox_1501:RscListBox_infiSTAR
 {
 idc = 1501;
 x = 0.298873 * safezoneW + safezoneX;
@@ -191,29 +232,38 @@ h = 0.71512 * safezoneH;
 sizeEx=0.03;
 onLoad="uiNamespace setVariable ['chat_msgbox', _this select 0];call fnc_fill_chat_history;";
 };
-class RscEdit_1401: RscEdit_infiSTAR_multi
+class RscEdit_1401:RscEdit_infiSTAR_multi
 {
 idc = 1401;
 x = 0.298873 * safezoneW + safezoneX;
 y = 0.808052 * safezoneH + safezoneY;
 w = 0.505396 * safezoneW;
 h = 0.0770129 * safezoneH;
-autocomplete="";
 onLoad="uiNamespace setVariable ['chat_inputfield', _this select 0];";
 };
-class RscButton_1600: RscButton_infiSTAR
+class RscButton_1600:RscButton_infiSTAR
 {
 idc = 1600;
-text = "send";
+text = "close";
 x = 0.752698 * safezoneW + safezoneX;
+y = 0.885064 * safezoneH + safezoneY;
+w = 0.051571 * safezoneW;
+h = 0.0330055 * safezoneH;
+action = "(findDisplay -1340) closeDisplay 0;";
+};
+class RscButton_1601:RscButton_infiSTAR
+{
+idc = 1601;
+text = "send";
+x = (0.752698 * safezoneW + safezoneX)-((0.051571 * safezoneW)*1.1);
 y = 0.885064 * safezoneH + safezoneY;
 w = 0.051571 * safezoneW;
 h = 0.0330055 * safezoneH;
 action = "call fnc_chat_send;";
 };
-class RscButton_1601: RscButton_infiSTAR
+class RscButton_1602:RscButton_infiSTAR
 {
-idc = 1601;
+idc = 1602;
 text = "refresh list";
 x = 0.133846 * safezoneW + safezoneX;
 y = 0.885064 * safezoneH + safezoneY;
@@ -221,14 +271,15 @@ w = 0.051571 * safezoneW;
 h = 0.0330055 * safezoneH;
 action = "call fnc_fill_chat_playerlist;";
 };
-class RscText_1000: RscText_infiSTAR
+class RscText_1000:RscText_infiSTAR
 {
 idc = 1000;
 x = 0.133846 * safezoneW + safezoneX;
 y = 0.0599262 * safezoneH + safezoneY;
 w = 0.670423 * safezoneW;
 h = 0.0330055 * safezoneH;
-colorBackground[] = {0,0,0,0.4};
+colorText[]={1,1,1,0.9};
+colorBackground[]={0,0,0,0.6};
 text = "Chatpartner";
 onLoad="uiNamespace setVariable ['chat_text1', _this select 0];";
 };
@@ -258,7 +309,7 @@ infi_BTN37,
 infi_BTN38,
 infi_HTML_1
 };
-class infi_LIST1500: RscListBox_infiSTAR
+class infi_LIST1500:RscListBox_infiSTAR
 {
 idc=1500;
 x=4.99852e-005 * safezoneW + safezoneX;
@@ -266,7 +317,7 @@ y=0.0617197 * safezoneH + safezoneY;
 w=0.189063 * safezoneW;
 h=0.938333 * safezoneH;
 };
-class infi_LIST1501: RscListBox_infiSTAR
+class infi_LIST1501:RscListBox_infiSTAR
 {
 idc=1501;
 x=0.188975 * safezoneW + safezoneX;
@@ -274,21 +325,21 @@ y=0.0617197 * safezoneH + safezoneY;
 w=0.344271 * safezoneW;
 h=0.945999 * safezoneH;
 };
-class infi_EDIT1: RscEdit_infiSTAR
+class infi_EDIT1:RscEdit_infiSTAR
 {
 idc=100;
-text="Search";
+text="";
 x=0.1964 * safezoneW + safezoneX;
 y=0.125933 * safezoneH + safezoneY;
 w=0.326563 * safezoneW;
 h=0.044 * safezoneH;
 };
-class infi_EDIT2: RscEdit_infiSTAR_multi
+class infi_EDIT2:RscEdit_infiSTAR_multi
 {
 idc=103;
 show=0;
 };
-class infi_TXT2: RscText_infiSTAR
+class infi_TXT2:RscText_infiSTAR
 {
 idc=2;
 text="infiSTAR.de";
@@ -299,7 +350,7 @@ h=0.0341667 * safezoneH;
 colorText[]={1,1,1,0.9};
 colorBackground[]={0.56,0.04,0.04,1};
 };
-class infi_HTML_1: RscHTML_infiSTAR
+class infi_HTML_1:RscHTML_infiSTAR
 {
 idc=1;
 x=0.535 * safezoneW + safezoneX;
@@ -309,7 +360,7 @@ h=0.35 * safezoneH;
 onLoad="uiNamespace setVariable ['RscHTML_infiSTAR_Admin', _this select 0]";
 onUnload="uiNamespace setVariable ['RscHTML_infiSTAR_Admin', displayNull]";
 };
-class infi_BTN10: RscButton_infiSTAR
+class infi_BTN10:RscButton_infiSTAR
 {
 idc=10;
 text="Alphabet";
@@ -319,7 +370,7 @@ w=0.06 * safezoneW;
 h=0.02 * safezoneH;
 action="SortRangePlease=nil;SortAlphaPlease=true;SortGroupsPlease=nil;[] call fnc_fill_infiSTAR_Player;[] call fnc_setFocus;";
 };
-class infi_BTN11: RscButton_infiSTAR
+class infi_BTN11:RscButton_infiSTAR
 {
 idc=11;
 text="Groups";
@@ -329,7 +380,7 @@ w=0.06 * safezoneW;
 h=0.02 * safezoneH;
 action="SortAlphaPlease=nil;SortRangePlease=nil;SortGroupsPlease=true;[] call fnc_fill_infiSTAR_Player;[] call fnc_setFocus;";
 };
-class infi_BTN12: RscButton_infiSTAR
+class infi_BTN12:RscButton_infiSTAR
 {
 idc=12;
 text="Range";
@@ -339,7 +390,7 @@ w=0.06 * safezoneW;
 h=0.02 * safezoneH;
 action="SortAlphaPlease=nil;SortRangePlease=true;SortGroupsPlease=nil;[] call fnc_fill_infiSTAR_Player;[] call fnc_setFocus;";
 };
-class infi_BTN20: RscButton_infiSTAR
+class infi_BTN20:RscButton_infiSTAR
 {
 idc=20;
 default="true";
@@ -349,7 +400,7 @@ y=0.0379694 * safezoneH + safezoneY;
 w=0.0625001 * safezoneW;
 h=0.02 * safezoneH;
 };
-class infi_BTN21: RscButton_infiSTAR
+class infi_BTN21:RscButton_infiSTAR
 {
 idc=21;
 text="SpawnMenu";
@@ -358,7 +409,7 @@ y=0.0379694 * safezoneH + safezoneY;
 w=0.0625001 * safezoneW;
 h=0.02 * safezoneH;
 };
-class infi_BTN23: RscButton_infiSTAR
+class infi_BTN23:RscButton_infiSTAR
 {
 idc=23;
 text="AHLog";
@@ -367,7 +418,7 @@ y=0.0379694 * safezoneH + safezoneY;
 w=0.0625001 * safezoneW;
 h=0.02 * safezoneH;
 };
-class infi_BTN24: RscButton_infiSTAR
+class infi_BTN24:RscButton_infiSTAR
 {
 idc=24;
 text="AdminLog";
@@ -376,7 +427,7 @@ y=0.0379694 * safezoneH + safezoneY;
 w=0.0625001 * safezoneW;
 h=0.02 * safezoneH;
 };
-class infi_BTN25: RscButton_infiSTAR
+class infi_BTN25:RscButton_infiSTAR
 {
 idc=25;
 x=0.535 * safezoneW + safezoneX + (0.15 * safezoneW);
@@ -385,7 +436,7 @@ w=0.0625001 * safezoneW;
 h=0.02 * safezoneH;
 action="call fnc_btn_html";
 };
-class infi_BTN36: RscButton_infiSTAR
+class infi_BTN36:RscButton_infiSTAR
 {
 idc=36;
 text="Items";
@@ -394,7 +445,7 @@ y=0.0819514 * safezoneH + safezoneY;
 w=0.0916667 * safezoneW;
 h=0.0329999 * safezoneH;
 };
-class infi_BTN37: RscButton_infiSTAR
+class infi_BTN37:RscButton_infiSTAR
 {
 idc=37;
 text="Vehicles";
@@ -403,7 +454,7 @@ y=0.0819514 * safezoneH + safezoneY;
 w=0.0916667 * safezoneW;
 h=0.0329999 * safezoneH;
 };
-class infi_BTN38: RscButton_infiSTAR
+class infi_BTN38:RscButton_infiSTAR
 {
 idc=38;
 text="Trader";
