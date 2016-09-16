@@ -34,6 +34,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) isEqualTo 1) then
 {
 	["cash","add",round(_price)] call life_fnc_handleCash; 
 	[_item,false] call life_fnc_handleItem;
+	[] call SOCK_fnc_updateRequest;
 	[parseText format[localize "STR_Shop_Weapon_Sold",_itemInfo select 1,[_price] call life_fnc_numberText], false] spawn doquickmsg;
 	[nil,(uiNamespace getVariable["Weapon_Shop_Filter",0])] call life_fnc_weaponShopFilter; //Update the menu.
 }
@@ -57,12 +58,14 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) isEqualTo 1) then
 			_funds = _funds - _price;
 			grpPlayer setVariable["gang_bank",_funds,true];
 			[_item,true] spawn life_fnc_handleItem;
+			[] call SOCK_fnc_updateRequest;
 			[1,grpPlayer] remoteExecCall ["TON_fnc_updateGang",(call life_fnc_HCC)];
 		} else {
 			if(_price > cash_in_hand) exitWith {[localize "STR_NOTF_NotEnoughMoney", false] spawn domsg; buying_phys_item = false;};
 			[parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText], false] spawn doquickmsg;
 			["cash","take",_price] call life_fnc_handleCash;
 			[_item,true] spawn life_fnc_handleItem;
+			[] call SOCK_fnc_updateRequest;
 		};
 	} else {
 		if(_price > cash_in_hand) exitWith {[localize "STR_NOTF_NotEnoughMoney", false] spawn domsg; buying_phys_item = false;};
@@ -90,6 +93,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) isEqualTo 1) then
 			["cash","take",_price] call life_fnc_handleCash; 	
 
 		[_item,true] spawn life_fnc_handleItem;
+		[] call SOCK_fnc_updateRequest;
 	};
 };
 buying_phys_item = false;
