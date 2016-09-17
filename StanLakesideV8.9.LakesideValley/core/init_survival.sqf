@@ -1269,8 +1269,8 @@ fnc_startfire = {
 };
 
 fnc_police_fire = {
-	["WIADOMOSCI: Bank u grodzkiej pali sie!", false] spawn domsg; 
-	fire_loc1 = [8731,7232,0.1];
+	["WIADOMOSCI: OSKP pali sie!", false] spawn domsg; 
+	fire_loc1 = [8773,7209,0.1];
 	[] spawn fnc_startfire;
 };
 
@@ -1313,6 +1313,60 @@ fnc_morrison_fire = {
 fnc_prison_fire = {
 ["WIADOMOSCI: Wiezienie pali sie!", false] spawn domsg; 
 	fire_loc1 = [9646,10041,0.1];
+	[] spawn fnc_startfire;	
+};
+
+fnc_townhall_fire = {
+["WIADOMOSCI: Ratusz pali sie!", false] spawn domsg; 
+	fire_loc1 = [8802,6694,0.5];
+	[] spawn fnc_startfire;	
+};
+
+fnc_hotel_fire = {
+["WIADOMOSCI: Hotel przy zatoce pali sie!", false] spawn domsg; 
+	fire_loc1 = [8182,6078];
+	[] spawn fnc_startfire;	
+};
+
+fnc_waterems_fire = {
+["WIADOMOSCI: Przystan EMT pali sie!", false] spawn domsg; 
+	fire_loc1 = [8350,5834,4];
+	[] spawn fnc_startfire;	
+};
+
+fnc_house_fire = {
+["WIADOMOSCI: Blok mieszkalny pali sie!", false] spawn domsg; 
+	fire_loc1 = [8259,6283,8.5];
+	[] spawn fnc_startfire;	
+};
+
+fnc_marketplace_fire = {
+["WIADOMOSCI: Rynek w Bedford pali sie!", false] spawn domsg; 
+	fire_loc1 = [6567,3801,1];
+	[] spawn fnc_startfire;	
+};
+
+fnc_housetwo_fire = {
+["WIADOMOSCI: Dom w San Cristobal pali sie!", false] spawn domsg; 
+	fire_loc1 = [5030,1116,3.5];
+	[] spawn fnc_startfire;	
+};
+
+fnc_trees_fire = {
+["WIADOMOSCI: Las niedaleko kopalni diamentow pali sie!", false] spawn domsg; 
+	fire_loc1 = [3838,3005,63];
+	[] spawn fnc_startfire;	
+};
+
+fnc_springfieldcentrum_fire = {
+["WIADOMOSCI: Centrum Springfield pali sie!", false] spawn domsg; 
+	fire_loc1 = [8092,5273,29];
+	[] spawn fnc_startfire;	
+};
+
+fnc_jeffersonhill_fire = {
+["WIADOMOSCI: Wielki dom w Jefferson Hill pali sie!", false] spawn domsg; 
+	fire_loc1 = [2880,5562,392];
 	[] spawn fnc_startfire;	
 };
 
