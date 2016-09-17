@@ -335,7 +335,15 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 		if(_adjust == "Remove") then { life_battery = life_battery - _amount; };
 	};
 
-
+[] spawn //Rozladowywanie baterii overtime
+	{
+	while{true} do
+		{
+		_batloss = round (random 6);
+		uiSleep 350;
+		["Remove",_batloss] call fnc_battery;
+		};
+	};
 
 	fnc_battery_adjust =   
 	{
