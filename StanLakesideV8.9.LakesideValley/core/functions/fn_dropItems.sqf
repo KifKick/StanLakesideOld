@@ -61,6 +61,42 @@ _item_find =
 	{
 		"Land_DisinfectantSpray_F"
 	};
+	if(_item in ["life_inv_heroinu") exitWith
+	{
+		"Land_SatellitePhone_F"
+	};
+	if(_item in ["life_inv_heroinp") exitWith
+	{
+		"Land_SatellitePhone_F"
+	};
+	if(_item in ["life_inv_marijuana") exitWith
+	{
+		"Land_SatellitePhone_F"
+	};
+	if(_item in ["life_inv_emerald") exitWith
+	{
+		"Land_SatellitePhone_F"
+	};
+	if(_item in ["life_inv_cokeu") exitWith
+	{
+		"Land_SatellitePhone_F"
+	};
+	if(_item in ["life_inv_cokep") exitWith
+	{
+		"Land_SatellitePhone_F"
+	};
+	if(_item in ["life_inv_blastingcarge") exitWith
+	{
+		"Land_SatellitePhone_F"
+	};
+	if(_item in ["life_inv_hackingtool") exitWith
+	{
+		"Land_SatellitePhone_F"
+	};
+	if(_item in ["life_inv_cannabis") exitWith
+	{
+		"Land_SatellitePhone_F"
+	};
 	if(_item in ["life_inv_bandage"]) exitWith
 	{
 		"Land_Bandage_F"
