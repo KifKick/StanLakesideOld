@@ -61,39 +61,39 @@ _item_find =
 	{
 		"Land_DisinfectantSpray_F"
 	};
-	if(_item in ["life_inv_heroinu") exitWith
+	if(_item in ["life_inv_heroinu"]) exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
-	if(_item in ["life_inv_heroinp") exitWith
+	if(_item in ["life_inv_heroinp"]) exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
-	if(_item in ["life_inv_marijuana") exitWith
+	if(_item in ["life_inv_marijuana"]) exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
-	if(_item in ["life_inv_emerald") exitWith
+	if(_item in ["life_inv_emerald"]) exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
-	if(_item in ["life_inv_cokeu") exitWith
+	if(_item in ["life_inv_cokeu"]) exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
-	if(_item in ["life_inv_cokep") exitWith
+	if(_item in ["life_inv_cokep"]) exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
-	if(_item in ["life_inv_blastingcharge") exitWith
+	if(_item in ["life_inv_blastingcharge"]) exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
-	if(_item in ["life_inv_hackingtool") exitWith
+	if(_item in ["life_inv_hackingtool"]) exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
-	if(_item in ["life_inv_cannabis") exitWith
+	if(_item in ["life_inv_cannabis"]) exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
