@@ -2074,7 +2074,7 @@ fnc_hackDoor = {
 
 		};
 		life_gather_info = true;
-
+	};
 
 fnc_virt_dupe = {
 	private["_theveh","_unitveh","_myveh","_side","_radius","_nearestunits","_nearestunitofside","_unit"];

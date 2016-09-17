@@ -85,7 +85,7 @@ _item_find =
 	{
 		"Land_SatellitePhone_F"
 	};
-	if(_item in ["life_inv_blastingcarge") exitWith
+	if(_item in ["life_inv_blastingcharge") exitWith
 	{
 		"Land_SatellitePhone_F"
 	};
