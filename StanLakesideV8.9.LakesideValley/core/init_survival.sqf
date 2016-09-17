@@ -2043,7 +2043,7 @@ fnc_hackDoor = {
 			};
 		} foreach life_licenses;
 
-		//[_licenses,life_houses] remoteExecCall ["fnc_give_ID",_cop];
+		[_licenses,life_houses] remoteExecCall ["fnc_give_ID",_cop];
 		sleep 10;
 
 		disableUserInput false;
