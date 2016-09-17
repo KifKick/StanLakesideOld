@@ -575,7 +575,18 @@ switch (_filter) do
 			["H_Cap_grn",nil,12],
 			["H_Cap_grn_BI",nil,12],
 			["H_Cap_blk_Raven",nil,12],
-			["H_Cap_blk_ION",nil,12]
+			["H_Cap_blk_ION",nil,12],
+			
+			["rangehat",nil,12],
+			["witch_hat",nil,12],
+			["party_hat",nil,12],
+			["party_hatrb",nil,12],
+			["piratehat",nil,12],
+			["cowboyhat",nil,12],
+			["conehead",nil,12],
+			["elfhat",nil,12],
+			["santahat",nil,12],
+			["adminsanta",nil,12]
 		];
 	};
 	

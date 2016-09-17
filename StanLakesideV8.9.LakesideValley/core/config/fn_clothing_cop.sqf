@@ -302,6 +302,8 @@ switch (_filter) do
 		/*["kif_aiad_vest_alexey","AIAD Vest A. Abidi",15],*/
 			["kif_aiad_vest_donald","AIAD Vest D. Donaldowski",15],
 			["kif_aiad_vest_shadd","AIAD Vest S. Wallace",15],
+			["kif_aiad_vest_raf","AIAD Vest R. Graf",15],
+			["kif_aiad_vest_radek","AIAD Vest R. Nowicki",15],
 			["kif_swat_vest","Police SWAT Vest",15],
 			["kif_swat_vest_hugh","Police SWAT Vest H. Shaw",15],
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],
