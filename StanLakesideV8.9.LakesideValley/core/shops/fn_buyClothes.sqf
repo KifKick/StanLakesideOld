@@ -30,9 +30,17 @@ if (typeOf _curTarget IN ["critgamin_vangmcc_clothing","critgamin_vangmcc_fedex"
 if(life_karma > 100) then {
 	["Otrzymales 10% znizki za dobra reputacje!", false] spawn domsg;
 	_price = _price * 0.9;
+<<<<<<< HEAD
 	["cash","take",round(_price)] call life_fnc_handleCash; 	
 } else {
 	["cash","take",round(_price)] call life_fnc_handleCash; 	
+=======
+	["cash","take",round(_price)] call life_fnc_handleCash;
+	[6] call SOCK_fnc_updatePartial;
+} else {
+	["cash","take",round(_price)] call life_fnc_handleCash;
+	[6] call SOCK_fnc_updatePartial;
+>>>>>>> origin/master
 };
 
 life_clothesPurchased = true;

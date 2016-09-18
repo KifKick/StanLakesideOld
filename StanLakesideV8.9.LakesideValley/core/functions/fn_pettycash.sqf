@@ -11,4 +11,4 @@ _funds = 500 + round(random 3500);
 [_pettycash,true] remoteExecCall ["TON_fnc_hideThis",2];
 [format ["You picked up %1 in petty cash..",_funds], false] spawn domsg;
 ["cash","add",_funds] call life_fnc_handleCash;
-[] call SOCK_fnc_updateRequest;
+[6] call SOCK_fnc_updatePartial;

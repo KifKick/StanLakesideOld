@@ -13,7 +13,7 @@ if(cash_in_hand > 0) then
 {
 	[cash_in_hand] remoteExecCall ["life_fnc_robReceive",_robber];
 	["cash","set",0] call life_fnc_handleCash;
-	[] call SOCK_fnc_updateRequest;
+	[6] call SOCK_fnc_updatePartial;
 }
 	else
 {
