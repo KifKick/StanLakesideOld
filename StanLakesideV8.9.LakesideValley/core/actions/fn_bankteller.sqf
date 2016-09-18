@@ -27,7 +27,7 @@ while{_fkit > 0 && life_bankteller } do {
 		if(Uniform player == "KAEL_SUITS_BR_F12") then
 		{
 			["bank","add", 300] call life_fnc_handleCash;
-			[] call SOCK_fnc_updateRequest;
+			[6] call SOCK_fnc_updatePartial;
 			["Otrzymujesz premie w wysokosci $300", false] spawn domsg; 
 		};
 	};

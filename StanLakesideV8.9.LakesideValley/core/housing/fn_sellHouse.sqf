@@ -34,7 +34,7 @@ if(_action) then {
 	_house setVariable["uid",nil,true];
 	
 	["bank","add",(round((_houseCfg select 0)/2))] call life_fnc_handleCash;
-	[] call SOCK_fnc_updateRequest;
+	[6] call SOCK_fnc_updatePartial;
 	_index = life_vehicles find _house;
 	if(_index != -1) then {
 		life_vehicles set[_index,-1];

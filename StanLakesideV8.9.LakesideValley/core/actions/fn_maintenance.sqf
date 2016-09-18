@@ -41,13 +41,13 @@ while{_fkit > 0 && maintenance_on} do {
 		if (player distance oilrig1 < 100 || player distance oilrig2 < 100 || player distance oilrig3 < 100 ) then
 		{
 			["bank","add", 1630] call life_fnc_handleCash;
-			[] call SOCK_fnc_updateRequest;
+			[6] call SOCK_fnc_updatePartial;
 			["You just got paid an extra $1630 for maintaining the Oil Lines.", false] spawn domsg;
 		};
 		if (player distance wheat1 < 100 ) then
 		{
 			["bank","add", 920] call life_fnc_handleCash;
-			[] call SOCK_fnc_updateRequest;
+			[6] call SOCK_fnc_updatePartial;
 			["You just got paid an extra $920 for maintaining the Fred's Farm.", false] spawn domsg;
 		};
 		if (player distance wheat1 > 200 && farm ) exitwith

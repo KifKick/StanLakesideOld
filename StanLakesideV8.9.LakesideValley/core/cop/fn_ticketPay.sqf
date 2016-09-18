@@ -16,7 +16,7 @@ if(cash_in_hand < life_ticket_val) exitWith
 	};
 	hint format[localize "STR_Cop_Ticket_Paid",[life_ticket_val] call life_fnc_numberText];
 	["bank","take",life_ticket_val] call life_fnc_handleCash;
-	[] call SOCK_fnc_updateRequest;
+	[6] call SOCK_fnc_updatePartial;
 	life_ticket_paid = true;
 	[getPlayerUID player] remoteExec ["life_fnc_wantedRemove",2];	
 	closeDialog 0;
@@ -26,7 +26,7 @@ if(cash_in_hand < life_ticket_val) exitWith
 
 hint format[localize "STR_Cop_Ticket_Paid",[life_ticket_val] call life_fnc_numberText];
 ["cash","take",life_ticket_val] call life_fnc_handleCash;
-[] call SOCK_fnc_updateRequest; 
+[6] call SOCK_fnc_updatePartial;
 life_ticket_paid = true;
 [getPlayerUID player] remoteExec ["life_fnc_wantedRemove",2];
 closeDialog 0;

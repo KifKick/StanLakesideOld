@@ -56,7 +56,7 @@ if(_timer < 1) exitWith { _success = true; }; //Kraken Cleanup - If the count-do
 };
 if(!_success) exitWith { }; //Kraken Cleanup -If success is false, kill it! They've already got their message
 ["cash","add",_funds] call life_fnc_handleCash;
-[] call SOCK_fnc_updateRequest;
+[6] call SOCK_fnc_updatePartial;
 _reason = "211";
 [_robber,_robber,_reason] spawn life_fnc_createEvidence;
 hint format["You have stolen $%1",_funds]; //Give them a nice message

@@ -15,7 +15,7 @@ life_show_actions = false;
 ["Add","Food",100] spawn fnc_sustain;
 ["Add","Drink",100] spawn fnc_sustain;
 ["cash","set",0] call life_fnc_handleCash;  //Make sure we don't get our cash back.
-[] call SOCK_fnc_updateRequest;
+[6] call SOCK_fnc_updatePartial;
 life_carryWeight = 0;
 player playMove "amovpercmstpsnonwnondnon";
 player allowdamage true;
