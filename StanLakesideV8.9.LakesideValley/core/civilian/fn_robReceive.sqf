@@ -9,3 +9,5 @@ _cash = round(_cash);
 ["cash","add",_cash] call life_fnc_handleCash; 
 [] call SOCK_fnc_updateRequest;
 [format[localize "STR_Civ_Robbed",[_cash] call life_fnc_numberText], false] spawn domsg;
+money_log = format [localize "STR_DL_ML_Robbed",profileName,(getPlayerUID player),[_cash] call life_fnc_numberText,_victim,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+publicVariableServer "money_log";

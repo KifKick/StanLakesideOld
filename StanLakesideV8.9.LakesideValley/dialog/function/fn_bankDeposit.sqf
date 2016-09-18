@@ -22,6 +22,8 @@ if(_value > cash_in_hand) exitWith {[localize "STR_ATM_NotEnoughCash", false] sp
 
 ["cash","take",_value] call life_fnc_handleCash;
 ["bank","add", _value] call life_fnc_handleCash;
-[] call SOCK_fnc_updateRequest;
 [format[localize "STR_ATM_DepositMSG",[_value] call life_fnc_numberText], false] spawn domsg;
 [] call life_fnc_atmMenu;
+[6] call SOCK_fnc_updatePartial;
+money_log = format [localize "STR_DL_ML_depositedBank",profileName,(getPlayerUID player),_value,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+publicVariableServer "money_log";
