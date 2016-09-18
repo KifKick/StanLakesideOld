@@ -3065,7 +3065,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="LakesideProkShop";
-					init="removeallWeapons this;  this enableSimulation false; this allowDamage false;   this addAction[""Wyposazenie"",life_fnc_clothingMenu,""prokurator""]; this addAction [""Zaopatrzenie"",life_fnc_virt_menu,""cop"", 1.5, true, true, """",' playerSide isEqualTo west ']; this addAction[""Market"",life_fnc_virt_menu,""market""];";
+					init="removeallWeapons this;  this enableSimulation false; this allowDamage false;   this addAction[""Wyposazenie"",life_fnc_clothingMenu,""prokurator""]; this addAction [""Zaopatrzenie"",life_fnc_virt_menu,""cop"", 1.5, true, true, """",' playerSide isEqualTo west ']; this addAction[""Market"",life_fnc_virt_menu,""market""]; this addAction[""<t color='#ADFF2F'>Bankomat</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' isNull objectParent player && player distance _target < 4 '];";
 					description="S";
 				};
 			};
@@ -30361,12 +30361,12 @@ class Mission
 			side="EMPTY";
 			vehicle="A3L_Savepoint";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Garaz"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)]; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_r_2_1"";  }];  this addAction[""Schowaj pojazd do garazu"",life_fnc_storeVehicle,"""",0,false,false,"""",''];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Garaz"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)]; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_r_2_1"";  }];  this addAction[""Schowaj pojazd do garazu"",life_fnc_storeVehicle,"""",0,false,false,"""",''];  this enableSimulation false;  this allowDamage false; this addAction[""Salon samochodowy"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_1"",""cop"",""Lakeside Valley Law Enforcement""]];  this addAction[""Salon samochodowy z pojazdami cywilnymi"",life_fnc_vehicleShopMenu,[""cop_car_civ"",west,""cop_car_1"",""cop"",""Lakeside Valley Law Enforcement""]]; this addAction[""Garaz"",  {   [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",(call life_fnc_HCC)];   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_10""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Schowaj pojazd do garazu"",life_fnc_storeVehicle,"""",0,false,false,"""",'']; this setVariable[""realname"",""Cop Vehicle Store""];";
 		};
 	};
 	class Markers
 	{
-		items=430;
+		items=431;
 		class Item0
 		{
 			position[]={639.40424,438.49207,9827.9219};
@@ -33636,6 +33636,13 @@ class Mission
 			text="Prokuratura";
 			type="A3L_PD_Icon";
 			colorName="ColorWEST";
+		};
+		class Item430
+		{
+			position[]={8800.1787,10.46,6746.5752};
+			name="cop_car_10";
+			type="Empty";
+			angle=-258.12799;
 		};
 	};
 	class Sensors

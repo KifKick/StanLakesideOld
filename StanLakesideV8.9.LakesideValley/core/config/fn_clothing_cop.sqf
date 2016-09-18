@@ -99,7 +99,6 @@ switch (_filter) do
 			["CG_SERT5",nil,15],
 			["CG_SERT6",nil,15],
 			["CG_SERT7",nil,15],
-			["A3L_EC_SERTK",nil,15],
 			["A3L_EC_SERTK","SERT V2",50],
 			["BH_StormCom_blk_comsuit","Dowodca SERT",15],
 			["RR_SWAT_UNIFORM_obj","Kombinezon SWAT",15],
@@ -111,7 +110,8 @@ switch (_filter) do
 			["A3L_Police_Uniform","Sheriff & Command",15],
 			["A3L_SStie","Stroj IAD",15],
 			["LS_Marshal_Jacket",nil,15],
-			["LS_Marshal_Jacket3",nil,15]
+			["LS_Marshal_Jacket3",nil,15],
+			["KAEL_SUITS_BR_Judge",nil,15]
 		];
 	};
 
@@ -151,8 +151,6 @@ switch (_filter) do
 			["CG_sert_H3",nil,5],
 			["CG_sert_H2",nil,5],
 			["CG_sert_H1",nil,5],
-			["policia_geo_boina_roja",nil,5],
-			["policia_geo_boina_negra",nil,5],
 			["H_HelmetSpecO_blk","Dowodca SERT",15],
 			["BH_StormCom_helmet_blk","Komendant Glowny",15],
 			["H_HelmetSpecB","Helm SWAT",5],
@@ -302,8 +300,6 @@ switch (_filter) do
 		/*["kif_aiad_vest_alexey","AIAD Vest A. Abidi",15],*/
 			["kif_aiad_vest_donald","AIAD Vest D. Donaldowski",15],
 			["kif_aiad_vest_shadd","AIAD Vest S. Wallace",15],
-			["kif_aiad_vest_raf","AIAD Vest R. Graf",15],
-			["kif_aiad_vest_radek","AIAD Vest R. Nowicki",15],
 			["kif_swat_vest","Police SWAT Vest",15],
 			["kif_swat_vest_hugh","Police SWAT Vest H. Shaw",15],
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],

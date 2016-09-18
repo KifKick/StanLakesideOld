@@ -19,6 +19,7 @@ switch (_mode) do
 			case "MDMA": {_var = "license_civ_MDMA"};  // in the upper field
 			case "meth": {_var = "license_civ_meth"};  // in the upper field
 			case "oskp": {_var = "license_civ_oskp"};
+			case "prokurator": {_var = "license_cop_prokurator"};
 			case "driver": {_var = "license_civ_driver"}; //Drivers License cost
 			case "boat": {_var = "license_civ_boat"}; //Boating license cost
 			case "pilot": {_var = "license_civ_air"}; //Pilot/air license cost

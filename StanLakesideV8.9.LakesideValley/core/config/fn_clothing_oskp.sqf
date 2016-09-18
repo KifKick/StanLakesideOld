@@ -14,19 +14,11 @@ ctrlSetText[3103,"Ciuchy Robocze i Uniformy O.S.K.P"];
 
 switch (_filter) do
 {
-	//Uniforms
 	case 0:
 	{
 		[
-/*
 			["RR_Clothing_mechanicblue_obj",nil,500],
 			["RR_Clothing_mechanicgrey_obj",nil,500],
-
-
-
-			//TRYK
-
-
 			["TRYK_U_B_wh_blk_Rollup_CombatUniform",nil,500],
 			["TRYK_shirts_TAN_PAD_YEL",nil,500],
 			["TRYK_shirts_OD_PAD_YEL",nil,500],	
@@ -51,13 +43,9 @@ switch (_filter) do
 			["TRYK_shirts_TAN_PAD_BK",nil,500],
 			["TRYK_shirts_OD_PAD_BK",nil,500],
 			["TRYK_shirts_PAD_BK",nil,500]
-*/
-
-
 		];
 	};
-	
-	//Hats
+
 	case 1:
 	{
 		[
@@ -70,7 +58,6 @@ switch (_filter) do
 		];
 	};
 	
-	//Glasses
 	case 2:
 	{
 		[
@@ -80,25 +67,23 @@ switch (_filter) do
 		];
 	};
 	
-	//Vest
 	case 3:
 	{
 		[
 			["jamie_security",nil,1000],
 			["kenny_vest_security",nil,1000],
 			["kif_emt_traffic_controller_vest",nil,250],
-			["NewEden_EMS_Vests_Brygadier",nil,1000]
-			["NewEden_EMS_Vests_Laweta",nil,1000]
+			["NewEden_EMS_Vests_Brygadier",nil,1000],
+			["NewEden_EMS_Vests_Laweta",nil,1000],
 			["NewEden_EMS_Vests_Mechanik",nil,1000]
 		];
 	};
-	
-	//Backpacks
+
 	case 4:
 	{
 		[
 			["cg_invisbp",nil,1000],
-			["AM_PoliceBeltv2",nil,1500]
+			["AM_OSKPBelt",nil,1500],
 			["B_AssaultPack_cbr",nil,250],
 			["B_AssaultPack_rgr",nil,250],
 			["B_AssaultPack_khk",nil,250],
@@ -109,7 +94,6 @@ switch (_filter) do
 			["B_FieldPack_oli",nil,450],
 			["B_FieldPack_cbr",nil,450],
 			["B_FieldPack_khk",nil,450],
-
 			["TRYK_B_Alicepack",nil,450],
 			["TRYK_B_Coyotebackpack_BLK",nil,450],
 			["TRYK_B_Coyotebackpack",nil,450],
@@ -118,7 +102,6 @@ switch (_filter) do
 			["TRYK_B_tube_blk",nil,450],
 			["TRYK_B_tube_cyt",nil,450],
 			["TRYK_B_tube_od",nil,450],
-
 			["B_Carryall_oli",nil,500],
 			["B_Carryall_khk",nil,500],
 			["policia_belt","Pas Czarny",2],
@@ -127,8 +110,6 @@ switch (_filter) do
 			["A3L_Pinkciv","Rozowy Plecak",2],
 			["A3L_Jungleciv","Moro Plecak",2],
 			["A3L_Browngreyciv","Moro brown plecak",2],
-
-			//koil added bps
 			["kaelmonty",nil,550],	
 			["kaelmonty2",nil,550],
 			["kaelmario",nil,550],	
@@ -179,8 +160,6 @@ switch (_filter) do
 			["koilbp_16",nil,550],	
 			["koilbp_17",nil,550],	
 			["koilbp_18",nil,550]
-			//koil addedd
-
 		];
 	};
 };

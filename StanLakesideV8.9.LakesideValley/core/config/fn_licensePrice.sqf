@@ -29,7 +29,7 @@ switch (_type) do
 	case "marijuana": {1150}; //Marijuana processing license cost
 	case "medmarijuana": {150}; //Medical Marijuana processing license cost
 	case "gang": {1000}; //Gang license cost
-	case "rebel": {50000}; //Rebel license cost
+	case "rebel": {5000}; //Rebel license cost
 	case "truck": {5000}; //Truck license cost
 	case "diamond": {3500};
 	case "salt": {1200};

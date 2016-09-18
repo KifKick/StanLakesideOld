@@ -626,7 +626,6 @@ switch (_shop) do
 			["A3L_GMC_Van_Dew",15000],
 			["A3L_GMC_Van_Scoobydoo",15000],
 			["A3L_GMC_Van_Shark",15000],
-			["A3L_GMC_Van_Pokemon",15000],
 			["A3L_GMC_Van_SWAGGY",15000],
 			["A3L_GMC_Van_HGE",15000],
 			["A3L_GMC_Van_Wifi",15000],
