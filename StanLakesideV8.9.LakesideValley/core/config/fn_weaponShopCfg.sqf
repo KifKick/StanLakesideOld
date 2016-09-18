@@ -274,8 +274,7 @@ switch(_shop) do
 					["RH_compM2l",nil,25],
 					["RH_demz",nil,1500],
 				    ["RH_M6X",nil,1500],
-					["RH_leu_mk4",nil,500],
-					["TRYK_balaclava_BLACK_NV",nil,150]
+					["RH_leu_mk4",nil,500]
 				];
 				{
 					(_ret select 0) pushBack _x;
