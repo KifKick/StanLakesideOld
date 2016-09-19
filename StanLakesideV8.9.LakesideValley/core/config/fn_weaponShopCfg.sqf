@@ -268,7 +268,6 @@ switch(_shop) do
 			if(__GETC__(life_coplevel) > 6) then {
 				_temp =  [
                     ["HandGrenade_Stone","Flashbang",300],
-				    ["SmokeShellYellow","Gaz lzawiacy",300],
 					["hlc_rifle_Bushmaster300",nil,5000],
 					["29rnd_300BLK_STANAG",nil,50],
 					["hlc_muzzle_300blk_KAC",nil,50]
