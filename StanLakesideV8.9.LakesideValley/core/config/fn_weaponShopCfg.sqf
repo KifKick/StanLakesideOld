@@ -877,6 +877,7 @@ switch(_shop) do
 					["CG_battery_i","Bateria",5],
 					["CG_ATF_Pizza_Box_i","Pizza Na Wynos",1000],
 					["CG_ATF_Donut_Box_i","Donuty Na Wynos",1000],
+					["ToolKit",nil,2500],
 					["cg_torch","Latarka",550], 
 					["cl_axe","Topor",550], 
 					["cl_bin_shield","Tarcza Bin Lida",550], 
