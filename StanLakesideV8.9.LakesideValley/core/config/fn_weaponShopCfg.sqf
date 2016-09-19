@@ -268,6 +268,10 @@ switch(_shop) do
 			if(__GETC__(life_coplevel) > 6) then {
 				_temp =  [
                     ["HandGrenade_Stone","Flashbang",300],
+				    ["SmokeShellYellow","Gaz lzawiacy",300],
+					["hlc_rifle_Bushmaster300",nil,5000],
+					["29rnd_300BLK_STANAG",nil,50],
+					["hlc_muzzle_300blk_KAC",nil,50]
 				    ["SmokeShellYellow","Gaz lzawiacy",300]				
 				];
 				{
@@ -324,7 +328,7 @@ switch(_shop) do
 							["RH_docter",nil,2500],
 							["optic_MRD",nil,2500],
 							["optic_Yorris",nil,2500]
-							/*["RH_fn57",nil,25500],
+							["RH_fn57",nil,25500],
 							["RH_20Rnd_57x28_FN",nil,600],
 					        ["RH_vp70",nil,10500],
 				            ["RH_18Rnd_9x19_VP",nil,600],
@@ -356,7 +360,7 @@ switch(_shop) do
 							["RH_pmsd",nil,20500],
 							["RH_vp70stock",nil,2500],
 					        ["RH_gsh18",nil,10500],
-				            ["RH_18Rnd_9x19_gsh",nil,600]*/
+				            ["RH_18Rnd_9x19_gsh",nil,600]
 						]
 					];
 				};
@@ -374,7 +378,7 @@ switch(_shop) do
 				{
 					["Bronie Dlugie Rebelii",
 						[
-							/*["SMG_01_F",nil,127500],
+							["SMG_01_F",nil,127500],
 			                ["30Rnd_45ACP_Mag_SMG_01",nil,750],
 							["SMG_02_F",nil,127500],
 							["RH_sbr9_wdl",nil,127500],
@@ -417,7 +421,7 @@ switch(_shop) do
 							["RH_muzi",nil,58000],
 							["RH_30Rnd_9x19_UZI",nil,750],
 							["RH_deagle",nil,97500],
-							["RH_7Rnd_50_AE",nil,750],*/
+							["RH_7Rnd_50_AE",nil,750],
 							["RH_compm4s",nil,5000],
 							["RH_compM2_tan",nil,5000],
 							["RH_eotexps3_tan",nil,5000],
