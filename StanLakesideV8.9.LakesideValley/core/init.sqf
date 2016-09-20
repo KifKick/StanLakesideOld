@@ -36,6 +36,7 @@ waitUntil {!isNull player && player == player}; //Wait till the player is ready
 waitUntil {(!isNil {clientGangLeader})};
 
 A3L_Fnc_Request = player;
+publicVariableServer "A3L_Fnc_Request";
 waitUntil {(!isNil {A3L_fnc_dreDeta8})};
 
 ["Czekam az serwer bedzie gotowy..", false] spawn domsg;
