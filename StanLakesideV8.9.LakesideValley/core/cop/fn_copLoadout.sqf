@@ -13,8 +13,7 @@ waitUntil {scriptDone _handle};
 //Load player with default cop gear.
 player addUniform "A3L_Sheriff_Uniform";
 // Add shortrange radio
-player addItem "tf_anprc152"; 
-player assignItem "tf_anprc152";
+player linkItem "tf_anprc152";
 player addBackpack "AM_PoliceBelt";
 player addWeapon "cl3_taserM26_Yellow";
 player addMagazine "cl3_taserm26mag_mpx";
@@ -39,14 +38,9 @@ player addItem "Radar_Gun";
 player addItem "ToolKit";
 
 /* ITEMS */
-player addItem "ItemMap";
-player assignItem "ItemMap";
-player addItem "ItemCompass";
-player assignItem "ItemCompass";
-player addItem "tf_anprc152";
-player assignItem "tf_anprc152";
-player addItem "ItemGPS";
-player assignItem "ItemGPS";
-player addItem "Mattaust_Keys";
-player assignItem "Mattaust_Keys";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "tf_anprc152";
+player linkItem "ItemGPS";
+player linkItem "Mattaust_Keys";
 [] call life_fnc_saveGear;

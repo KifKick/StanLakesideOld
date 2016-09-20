@@ -127,8 +127,7 @@ if(_bool) then
 								} 
 									else 
 								{
-									player addItem _item; 
-									player assignItem _item;
+									player linkItem _item;
 								};
 							};
 						};
@@ -435,8 +434,7 @@ if(_bool) then
 							}
 								else
 							{
-								player addItem _item;
-								player assignItem _item;
+								player linkItem _item;
 							};
 						};
 					};
@@ -455,8 +453,7 @@ if(_bool) then
 							}
 								else
 							{
-								player addItem _item;
-								player assignItem _item;
+								player linkItem _item;
 							};
 						};
 					};
