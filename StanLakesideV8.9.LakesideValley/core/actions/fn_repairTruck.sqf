@@ -37,7 +37,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 				player disableAI "anim"; 
 			};
 			if (player distance _veh > 4) exitwith {life_interrupted = true};
-			_cP = _cP + 0.035;
+			_cP = _cP + 0.022;
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 			if(_cP >= 1 || deadPlayer || player != vehicle player || life_interrupted) exitWith {};
