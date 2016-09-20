@@ -36,6 +36,6 @@ if(!isNil {_val}) then
 	[format[localize "STR_NOTF_PickedMoney",[_val] call life_fnc_numberText], false] spawn domsg;
 	["cash","add",_val] call life_fnc_handleCash;
 	life_action_delay = time;
-	money_log = format [localize "STR_DL_ML_pickedUpMoney",profileName,(getPlayerUID player),[_value] call life_fnc_numberText,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
-	publicVariableServer "money_log"
+	serwerLog = format [localize "STR_DL_ML_pickedUpMoney",profileName,(getPlayerUID player),[_value] call life_fnc_numberText,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+	publicVariable "serwerLog"
 };
