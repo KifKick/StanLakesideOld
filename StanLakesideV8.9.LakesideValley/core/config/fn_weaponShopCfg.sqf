@@ -326,7 +326,7 @@ switch(_shop) do
 							["RH_pmIR",nil,2500],
 							["RH_docter",nil,2500],
 							["optic_MRD",nil,2500],
-							["optic_Yorris",nil,2500]
+							["optic_Yorris",nil,2500],
 							["RH_fn57",nil,25500],
 							["RH_20Rnd_57x28_FN",nil,600],
 					        ["RH_vp70",nil,10500],
