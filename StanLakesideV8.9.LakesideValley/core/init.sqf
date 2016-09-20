@@ -36,7 +36,11 @@ waitUntil {!isNull player && player == player}; //Wait till the player is ready
 waitUntil {(!isNil {clientGangLeader})};
 
 A3L_Fnc_Request = player;
+<<<<<<< HEAD
 publicVariableServer "A3L_Fnc_Request";
+=======
+PublicvariableServer "A3L_Fnc_Request";
+>>>>>>> parent of 2ad09e3... Logi???
 waitUntil {(!isNil {A3L_fnc_dreDeta8})};
 
 ["Czekam az serwer bedzie gotowy..", false] spawn domsg;

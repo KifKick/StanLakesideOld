@@ -35,7 +35,7 @@ with missionnamespace do {
 	} else {
 		life_fnc_MP_packet = [0,_params,_functionName,_target,_isPersistent,_isCall,profileName,getPlayerUID player];
 	};
-	publicVariableServer "life_fnc_MP_packet";
+	publicvariableserver "life_fnc_MP_packet";
 
 	//--- Local execution
 	if !(ismultiplayer) then {

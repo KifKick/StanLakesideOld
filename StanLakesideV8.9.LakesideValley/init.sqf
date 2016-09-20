@@ -13,8 +13,6 @@ if(isServer) then {
 	_obj = [8546.45,6796.53,8] nearestObject 1005977; 
 	_obj enableSimulationGlobal false;
 	_obj hideObjectGlobal true;
-	serwer_log = compile preprocessFileLineNumbers "logs\logtorpt.sqf";
-	"serwerLog" addPublicVariableEventHandler {_id = (_this select 1) spawn serwer_log};
 };
 
 if(!isDedicated && {!hasInterface}) then
