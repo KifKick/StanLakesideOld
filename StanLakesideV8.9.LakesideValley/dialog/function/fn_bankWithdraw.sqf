@@ -12,7 +12,6 @@ if(_val < 100 && cash_in_bank > 20000000) exitWith {[localize "STR_ATM_WithdrawM
 
 ["cash","add",_val] call life_fnc_handleCash;
 ["bank","take",_val] call life_fnc_handleCash;
-[] call SOCK_fnc_updateRequest;
 
 if (isPlayer _unit && uniform _unit isEqualTo "KAEL_SUITS_BR_F12" && (_unit getVariable "ATM_MAN")) then {
 	cheap_buffs = true;
@@ -22,3 +21,6 @@ if (isPlayer _unit && uniform _unit isEqualTo "KAEL_SUITS_BR_F12" && (_unit getV
 
 [format [localize "STR_ATM_WithdrawSuccess",[_val] call life_fnc_numberText], false] spawn doquickmsg;
 [] call life_fnc_atmMenu;
+[6] call SOCK_fnc_updatePartial;
+money_log = format [localize "STR_DL_ML_withdrewBank",profileName,(getPlayerUID player),_value,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
+publicVariableServer "money_log";
