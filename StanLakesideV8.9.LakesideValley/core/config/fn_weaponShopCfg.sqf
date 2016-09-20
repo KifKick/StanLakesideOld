@@ -407,10 +407,14 @@ switch(_shop) do
 							["hlc_25Rnd_9x19mm_JHP_AUG",nil,750],
 							["hgun_PDW2000_F",nil,117500],
 							["30Rnd_9x21_Mag",nil,750],
+							["RH_sbr9_des",nil,225000],
+							["RH_32Rnd_9mm_M822",nil,750],
 							["ej_Thompson",nil,255500],
 							["ej_ThompsonTactical",nil,260500],
 							["ej_ThompsonTactical2",nil,260500],
 							["Thompsonjhpplus_mag",nil,750],
+							["hlc_rifle_aks74u",nil,275000],
+							["hlc_30Rnd_545x39_B_AK",nil,750],
 							["RH_g18",nil,48000],
 							["RH_33Rnd_9x19_g18",nil,750],
 							["RH_vz61",nil,58000],
@@ -433,7 +437,7 @@ switch(_shop) do
 			};
         };
 		
-		case "donator":
+		/*case "donator":
         {
 			switch(true) do
 			{
@@ -772,7 +776,7 @@ switch(_shop) do
                     ];
                 };
 			};
-        };
+        };*/
         case "gun":
         {
 			switch(true) do
@@ -877,7 +881,7 @@ switch(_shop) do
 					["CG_battery_i","Bateria",5],
 					["CG_ATF_Pizza_Box_i","Pizza Na Wynos",1000],
 					["CG_ATF_Donut_Box_i","Donuty Na Wynos",1000],
-					["ToolKit",nil,2500],
+					["ToolKit",nil,11250],
 					["cg_torch","Latarka",550], 
 					["cl_axe","Topor",550], 
 					["cl_bin_shield","Tarcza Bin Lida",550], 
@@ -893,7 +897,6 @@ switch(_shop) do
 					["Chemlight_blue",nil,120],
 					["ItemMap",nil,6],
 					["Binocular",nil,110],
-					//["ToolKit",nil,1500],
 					["ItemCompass",nil,50],
 					["ItemWatch",nil,10],
 					["nonlethal_swing", "Slepa amunicja", 10],
