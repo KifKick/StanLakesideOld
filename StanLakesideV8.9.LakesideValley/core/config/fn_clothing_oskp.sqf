@@ -83,7 +83,6 @@ switch (_filter) do
 	{
 		[
 			["cg_invisbp",nil,1000],
-			["AM_OSKPBelt",nil,1500],
 			["B_AssaultPack_cbr",nil,250],
 			["B_AssaultPack_rgr",nil,250],
 			["B_AssaultPack_khk",nil,250],
