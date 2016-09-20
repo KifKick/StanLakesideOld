@@ -909,7 +909,9 @@ switch(_shop) do
 					["CG_CROSS","Krzyz",500],
 					["A3L_Sign2","Znak Legalizacji Marihuany",1000],
 					["A3L_Sign","Znak Jebac Policje",1000],
-					["Tv_Camera","Kamera Telewizyjna",2520]
+					["Press_Cam_F","Kamera Telewizyjna",3500],
+					["Tape_F","Dysk twardy do kamery",250],
+					["Press_Mic_AAN_F","Mikrofon",2000]
 				]
 			];
         };
