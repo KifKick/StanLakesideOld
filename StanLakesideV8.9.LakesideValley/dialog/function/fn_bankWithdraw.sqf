@@ -22,5 +22,8 @@ if (isPlayer _unit && uniform _unit isEqualTo "KAEL_SUITS_BR_F12" && (_unit getV
 [format [localize "STR_ATM_WithdrawSuccess",[_val] call life_fnc_numberText], false] spawn doquickmsg;
 [] call life_fnc_atmMenu;
 [6] call SOCK_fnc_updatePartial;
-money_log = format [localize "STR_DL_ML_withdrewBank",profileName,(getPlayerUID player),_value,[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
-publicVariableServer "money_log";
+_playerID = getPlayerUID player;
+_playerName = name player;
+_type = 4;
+_amount = _val;
+[[_playerID,_playerName,"","",_type,_amount],"TON_fnc_moneyLog",false] call life_fnc_MP;

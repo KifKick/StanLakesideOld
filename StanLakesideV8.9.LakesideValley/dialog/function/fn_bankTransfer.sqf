@@ -24,5 +24,10 @@ if((_val + _tax) > cash_in_bank) exitWith {[format[localize "STR_ATM_SentMoneyFa
 [] call life_fnc_atmMenu;
 [format[localize "STR_ATM_SentMoneySuccess",[_val] call life_fnc_numberText,_unit getVariable["realname",name _unit],[_tax] call life_fnc_numberText], false] spawn domsg;
 [6] call SOCK_fnc_updatePartial;
-money_log = format [localize "STR_DL_ML_transferredBank",profileName,(getPlayerUID player),_value,_unit getVariable ["realname",name _unit],[BANK] call life_fnc_numberText,[CASH] call life_fnc_numberText];
-publicVariableServer "money_log";
+_playerID = getPlayerUID player;
+_playerName = name player;
+_toPlayerID = getPlayerUID _unit;
+_toPlayerName = name _unit;
+_type = 1;
+_amount = _val;
+[[_playerID,_playerName,_toPlayerID,_toPlayerName,_type,_amount],"TON_fnc_moneyLog",false] call life_fnc_MP;

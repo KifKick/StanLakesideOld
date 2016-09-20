@@ -29,5 +29,12 @@ if(isNil "_unit") exitWith {ctrlShow[2001,true]; ["Wybrany gracz nie jest w zasi
 [6] call SOCK_fnc_updatePartial;
 [_unit,(parseNumber(_amount)),player,name _unit] remoteExecCall ["life_fnc_receiveMoney",_unit];
 [] call life_fnc_p_updateMenu;
+_playerID = getPlayerUID player;
+_playerName = name player;
+_toPlayerID = getPlayerUID _unit;
+_toPlayerName = name _unit;
+_type = 2;
+_amount = _amount;
+[[_playerID,_playerName,_toPlayerID,_toPlayerName,_type,_amount],"TON_fnc_moneyLog",false] call life_fnc_MP;
 
 ctrlShow[2001,true];
