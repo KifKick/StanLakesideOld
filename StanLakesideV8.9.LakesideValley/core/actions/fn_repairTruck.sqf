@@ -13,12 +13,6 @@ if(player getVariable ["restrained",false] || player getVariable ["tied",false])
 if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") OR (_veh isKindOf "Motorbike") OR (_veh isKindOf "Motorcycle") OR (_veh isKindOf "Air") OR (_veh isKindOf "A3L_Tahoe_Base")) then
 {
 	_cP = 0;
-	if(karma_level > 0) then {
-		_cp = karma_level / 100;
-	};
-	if(_cp > 0.5) then {
-		_cp = 0.5;
-	};
 	if("ToolKit" in (items player)) then
 	{
 		life_action_inUse = true;
@@ -43,11 +37,11 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 				player disableAI "anim"; 
 			};
 			if (player distance _veh > 4) exitwith {life_interrupted = true};
-			_cP = _cP + 0.05;
+			_cP = _cP + 0.01;
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 			if(_cP >= 1 || deadPlayer || player != vehicle player || life_interrupted) exitWith {};
-			if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Nie mozesz naprawiac pojazdu gdy masz rece za plecami", false] spawn domsg};
+			if(player getVariable ["restrained",false] || player getVariable ["tied",false]) exitWith {["Nie mozesz naprawiac pojazdu gdy masz rece za plecami!", false] spawn domsg};
 		};
 		player switchmove "";
 		life_action_inUse = false;
@@ -55,6 +49,9 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 		if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_ActionCancel", false] spawn domsg; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {[localize "STR_NOTF_RepairingInVehicle", false] spawn domsg;};
 		_veh setDamage 0;
+		if (!license_civ_oskp) then {
+		player removeItem "ToolKit";
+		};
 		[localize "STR_NOTF_RepairedVehicle", false] spawn domsg;
 	} else {
 		life_action_inUse = true;
