@@ -8,7 +8,7 @@
 private["_vendor","_type","_itemInfo","_oldItem","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_cops"];
 _vendor = param [0,ObjNull,[ObjNull]];
 _type = param [3,"",[""]];
-_cops = west countSide playableUnits
+_cops = west countSide playableUnits;
 //Error check
 if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 
