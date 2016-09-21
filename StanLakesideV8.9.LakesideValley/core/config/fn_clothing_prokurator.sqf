@@ -5,7 +5,7 @@
 	Description:
 	Master configuration file for Prokurator shop.
 */
-private["_filter"];
+/*private["_filter"];
 _filter = param [0,0,[0]];
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
@@ -65,4 +65,4 @@ switch (_filter) do
 			["B_Carryall_khk",nil,500]
 		];
 	}
-};
+};*/

@@ -411,7 +411,7 @@ life_licenses =
 	["license_civ_donator2","civ"],
 	["license_civ_donator3","civ"],*/
 	["license_civ_rifle","civ"],
-	["license_cop_prokurator","cop"]
+	//["license_cop_prokurator","cop"]
 ];
 
 //Setup License Variables
