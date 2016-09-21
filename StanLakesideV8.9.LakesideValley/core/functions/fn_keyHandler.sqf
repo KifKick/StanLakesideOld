@@ -40,7 +40,7 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 switch (_code) do
 {
 	
-	case 57:
+	/*case 57:
 	{
 		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
 		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
@@ -51,7 +51,7 @@ switch (_code) do
 			_handled = true;
 		};
 		};
-	};
+	}; */
 
 
 	case 68:
@@ -60,7 +60,7 @@ switch (_code) do
 		[] call life_fnc_helpMenu;
 	};
 
-	//Shift+O = Disable / Enable Dispatch.
+	/*//Shift+O = Disable / Enable Dispatch.
 	case 24:
 	{
 		if(!_shift && !_alt && !_ctrlKey) then
@@ -75,7 +75,7 @@ switch (_code) do
 				};
 			};
 		};
-	};
+	};*/
 
 	//Shift+P = Faded Sound
 	case 25:
@@ -93,14 +93,14 @@ switch (_code) do
 		};
 	};
 	
-	//EMP Konsole - O
+	/*//EMP Konsole - O
     case 24:
     {
         if (!_shift && !_alt && _ctrlKey && (playerSide == west) && (vehicle player != player && (typeOf vehicle player) in ["melb_h6m"])) then
         {
             [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
         };
-    };
+    };*/
 
 	//Siren - F9
     case 67:
