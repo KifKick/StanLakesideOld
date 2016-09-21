@@ -48,6 +48,10 @@ _cost = round(_cost * _oldVal);
 //Some more checks
 if(_oldVal == 0) exitWith {};
 
+if (_cops < 2 && _type in ["heroin","marijuana","meth","MDMA","coke"]) exitWith {
+	["Mozesz przetwarzac dopiero od 2 policjantow na serwerze!", false] spawn domsg;
+};
+
 //Setup our progress bar.
 disableSerialization;
 5 cutRsc ["life_progress","PLAIN"];
@@ -61,9 +65,7 @@ if (life_karma < 0 && _type in ["heroin","marijuana","meth","MDMA","coke"]) then
 	_cP = 0.2;	
 };
 
-if (_cops < 2 && _type in ["heroin","marijuana","meth","MDMA","coke"]) exitWith {
-	["Mozesz przetwarzac dopiero od 2 policjantow na serwerze!", false] spawn domsg;
-};
+
 
 _progress progressSetPosition _cp;
 life_is_processing = true;
