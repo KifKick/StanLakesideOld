@@ -122,6 +122,9 @@ switch (_vehicle) do
 			[_path + "so_patrol.paa","cop"],
 			[_path + "so_supervisor.paa","cop"],
 			[_path + "st_patrol.paa","cop"],
+			[_path + "sert.paa","cop"],
+			[_path + "sert_patrol.paa","cop"],
+			[_path + "sert_supervisor.paa","cop"],
 			[_path + "st_supervisor.paa","cop"]
 		];
 	};
@@ -172,9 +175,6 @@ switch (_vehicle) do
 			[_path + "so_patrol.paa","cop"],
 			[_path + "so_supervisor.paa","cop"],
 			[_path + "st_patrol.paa","cop"],
-			[_path + "sert.paa","cop"],
-			[_path + "sert_patrol.paa","cop"],
-			[_path + "sert_supervisor.paa","cop"],
 			[_path + "st_supervisor.paa","cop"]
 		];
 	};
