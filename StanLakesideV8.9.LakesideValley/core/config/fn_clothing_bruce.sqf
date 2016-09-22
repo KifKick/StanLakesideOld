@@ -643,7 +643,11 @@ switch (_filter) do
 			["G_Lady_Dark",nil,15],
 			["G_Lady_Blue",nil,15],
 			["G_Lowprofile",nil,3],
-			["G_Combat",nil,5]
+			["G_Combat",nil,5],
+			["TRYK_Shemagh_mesh",nil,5],
+			["TRYK_Shemagh_G",nil,5],
+			["TRYK_Shemagh",nil,5],
+			["TRYK_Shemagh_WH",nil,5]
 		];
 	};
 	
