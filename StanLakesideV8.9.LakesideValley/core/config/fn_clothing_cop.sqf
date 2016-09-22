@@ -196,7 +196,21 @@ switch (_filter) do
 			["TRYK_H_PASGT_BLK",nil,6],
 			["TRYK_kio_balaclava_ESS",nil,6],
 			["TRYK_SPGEAR_Glasses","Negotiator Glasses",6],
-			["Mask_M40","Gas Mask",5]
+			["Mask_M40","Gas Mask",5],
+			["TRYK_Shemagh_EAR_G",nil,5],
+			["TRYK_Shemagh_EAR_TAN",nil,5],
+			["TRYK_Shemagh_EAR_WH",nil,5],
+			["TRYK_Shemagh_shade_MH",nil,5],
+			["TRYK_Shemagh_shade_G",nil,5],
+			["TRYK_Shemagh_shade_WH",nil,5],
+			["TRYK_TAC_SET_MESH_2",nil,5],
+			["TRYK_TAC_SET_OD_2",nil,5],
+			["TRYK_TAC_SET_TAN_2",nil,5],
+			["TRYK_TAC_SET_WH_2",nil,5],
+			["TRYK_TAC_SET_MESH",nil,5],
+			["TRYK_TAC_SET_OD",nil,5],
+			["TRYK_TAC_SET_TAN",nil,5],
+			["TRYK_TAC_SET_WH",nil,5]
 		];
 	};
 
