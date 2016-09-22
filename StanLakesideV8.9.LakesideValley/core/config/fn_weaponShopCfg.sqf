@@ -274,6 +274,7 @@ switch(_shop) do
 					["hlc_rifle_Bushmaster300",nil,5000],
 					["29rnd_300BLK_STANAG",nil,50],
 					["hlc_muzzle_300blk_KAC",nil,50],
+					["B_UavTerminal",nil,50],
 				    ["SmokeShellYellow","Gaz lzawiacy",300]				
 				];
 				{
