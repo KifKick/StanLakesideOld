@@ -226,6 +226,7 @@ switch(_shop) do
 					["RH_eotech553mag",nil,240],
 					["RH_eotexps3",nil,240],
 					["RH_eothhs1",nil,240],
+					["optic_Hamr",nil,240],
 					["RH_t1",nil,240],
 					["RH_reflex",nil,240],
 					["RH_barska_rds",nil,240],
@@ -259,7 +260,9 @@ switch(_shop) do
 					["hgun_007_SW_M10_special",nil,240],
 					["hgun_007_SW_M10_gold",nil,240],
 					["prpl_benelli_14_pgs_rail","Shotgun na gumowe kule",2200],
-					["prpl_6Rnd_12Gauge_Slug","Gumowe kule",20]
+					["prpl_6Rnd_12Gauge_Slug","Gumowe kule",20],
+					["benelli","Shotgun na ostra amunicje",2200],
+					["8Rnd_12Gauge_Pellets","Gumowe kule",20]
 				];
 				{
 					(_ret select 0) pushBack _x;
