@@ -123,6 +123,9 @@ switch (_vehicle) do
 			case 1:  {_color = "Sheriff Supervisor";};
 			case 2:  {_color = "StateTrooper Patrol";};
 			case 3:  {_color = "StateTrooper Supervisor";};
+			case 4:  {_color = "Sert";};
+			case 5:  {_color = "Sert Patrol";};
+			case 6:  {_color = "Sert Supervisor";};
 		};
 	};
 
