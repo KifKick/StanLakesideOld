@@ -262,7 +262,7 @@ switch(_shop) do
 					["prpl_benelli_14_pgs_rail","Shotgun na gumowe kule",2200],
 					["prpl_6Rnd_12Gauge_Slug","Gumowe kule",20],
 					["benelli","Shotgun na ostra amunicje",2200],
-					["8Rnd_12Gauge_Pellets","Gumowe kule",20]
+					["8Rnd_12Gauge_Pellets","Ostre ammo",20]
 				];
 				{
 					(_ret select 0) pushBack _x;
