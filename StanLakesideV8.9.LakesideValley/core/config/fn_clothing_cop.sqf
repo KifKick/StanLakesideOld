@@ -157,7 +157,12 @@ switch (_filter) do
 			["TRYK_H_PASGT_OD","SERT Helmet OD",5],
 			["casco_cnp_protec","Prewenecja",5],
 			["LSMS_cap_blk",nil,5],
-			["LSMS_cap_blue",nil,5]
+			["LSMS_cap_blue",nil,5],
+			["policia_uip_cap",nil,250],
+			["policia_cnp_gorra",nil,500],
+			["policia_geo_boina_azul",nil,500],
+			["policia_geo_boina_negra",nil,500],
+			["policia_geo_boina_roja",nil,500]
 		];
 	};
 
