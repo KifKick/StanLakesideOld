@@ -1902,7 +1902,9 @@ switch (_shop) do
 			["A3L_Towtruck_orange",30000],
 			["A3L_Towtruck_red",30000],
 			["A3L_Towtruck_yellow",30000],
-			["C_Offroad_01_repair_F",30000]
+			["C_Offroad_01_repair_F",30000],
+			["I_C_Offroad_02_unarmed_F",30000],
+			["I_C_Offroad_02_unarmed_olive_F",30000]
 			
 		];
 	};
