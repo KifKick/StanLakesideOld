@@ -500,7 +500,7 @@ sell_array =
 	["raw sheep meat",50],
 	["raw rabbit",70],
 	["spikeStrip",12],
-	["cement",290],
+	["cement",320],
 	["goldbar",9500], 
 	//Deo Additions
 	["zoobeer",1], 
