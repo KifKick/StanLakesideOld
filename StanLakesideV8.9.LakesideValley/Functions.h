@@ -12,18 +12,6 @@ class Socket_Reciever
 		class updatePartial {};
 	};
 };
-class KBWFiles
-{
-	tag = "KBW";
-	class KBW
-	{
-		file = "KBW";
-		class openDuelUI {};
-		class duelRequest {};
-		class duelRequested {};
-		class initRace {};
-	};
-};
 class Life_Client_Core
 {
 	tag = "life";
