@@ -12,7 +12,7 @@ class Socket_Reciever
 		class updatePartial {};
 	};
 };
-class KBWFiles
+/*class KBWFiles
 {
 	tag = "KBW";
 	class KBW
@@ -23,7 +23,7 @@ class KBWFiles
 		class duelRequested {};
 		class initRace {};
 	};
-};
+};*/
 class Life_Client_Core
 {
 	tag = "life";
