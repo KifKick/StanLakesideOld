@@ -8,4 +8,3 @@ before_script:
 script:
 - python3 sqf_validator.py
 - python3 config_style_checker.py
-	
