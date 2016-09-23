@@ -1,3 +1,4 @@
+https://travis-ci.org/Katekarin/StanLakeside.svg?branch=master
 # StanLakeside
 Podglad misji serwera stanlakeside.pl
 
