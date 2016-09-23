@@ -1,4 +1,6 @@
-https://travis-ci.org/Katekarin/StanLakeside.svg?branch=master
+<p align="center">
+    <a href="https://travis-ci.org/Katekarin/StanLakeside">
+        <img src="https://travis-ci.org/Katekarin/StanLakeside.svg?branch=master" alt="Build Status">
 # StanLakeside
 Podglad misji serwera stanlakeside.pl
 
