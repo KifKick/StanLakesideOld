@@ -49,11 +49,6 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["policia_uip_cap",nil,250],
-			["policia_cnp_gorra",nil,500],
-			["policia_geo_boina_azul",nil,500],
-			["policia_geo_boina_negra",nil,500],
-			["policia_geo_boina_roja",nil,500],
 			["a3l_hardhat",nil,500]
 		];
 	};

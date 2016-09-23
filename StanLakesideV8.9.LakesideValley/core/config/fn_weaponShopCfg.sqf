@@ -262,7 +262,8 @@ switch(_shop) do
 					["prpl_benelli_14_pgs_rail","Shotgun na gumowe kule",2200],
 					["prpl_6Rnd_12Gauge_Slug","Gumowe kule",20],
 					["benelli","Shotgun na ostra amunicje",2200],
-					["8Rnd_12Gauge_Pellets","Ostre ammo",20]
+					["8Rnd_12Gauge_Pellets","Ostre ammo",20],
+					["SmokeShellYellow","Gaz lzawiacy",300]
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -274,8 +275,7 @@ switch(_shop) do
 					["hlc_rifle_Bushmaster300",nil,5000],
 					["29rnd_300BLK_STANAG",nil,50],
 					["hlc_muzzle_300blk_KAC",nil,50],
-					["B_UavTerminal",nil,50],
-				    ["SmokeShellYellow","Gaz lzawiacy",300]				
+					["B_UavTerminal",nil,50]				
 				];
 				{
 					(_ret select 0) pushBack _x;

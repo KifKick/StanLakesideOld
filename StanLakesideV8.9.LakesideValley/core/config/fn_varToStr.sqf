@@ -14,7 +14,7 @@ if(_var isEqualTo "") exitWith {""};
 switch (_var) do
 {
 	//Virtual Inventory Items 
-	case "life_inv_emerald": {"Pierscionki ze szmaragdem"};
+	case "life_inv_emerald": {"Klejnoty"};
 	case "life_inv_sapphire": {"Szafirowa bizuteria"};
 	case "life_inv_ruby": {"Rubinowy naszyjnik"};
 	case "life_inv_nos": {"Nitro do samochodu"};

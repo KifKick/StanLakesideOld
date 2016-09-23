@@ -13,9 +13,11 @@ if ( _release == 1 || life_bail_paid ) then {
 	if (isNil "A3L_Fnc_OldUniform") then 
 	{
 		player addUniform "A3LShirt";
+		license_civ_rebel = false;
 	} else
 	{
 		player addUniform A3L_Fnc_OldUniform;
+		license_civ_rebel = false;
 	};
 	life_breakouton = 1;
 	[getPlayerUID player] remoteExec ["life_fnc_wantedRemove",2];
