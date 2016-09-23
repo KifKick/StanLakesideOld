@@ -1,10 +1,22 @@
+branches:
+  only:
+   - master
+   - release
 language: python
 python:
 - '3.4'
 before_script:
-# Credits to ACE3 for these validators
-- wget https://www.dropbox.com/s/wzj5js0kc2xlanc/sqf_validator.py
-- wget https://www.dropbox.com/s/jza43yuxswvx2hz/config_style_checker.py
+- if [ -n "${GH_TOKEN}" ] && [ "${TRAVIS_BRANCH}" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" == "false" ]; then
+    pip install pygithub;
+    pip install pygithub3;
+  fi
 script:
-- python3 sqf_validator.py
-- python3 config_style_checker.py
+- python3 tools/sqf_validator.py
+- python3 tools/config_style_checker.py
+- if [ -n "${GH_TOKEN}" ] && [ "${TRAVIS_BRANCH}" == "master" ] && [ "${TRAVIS_PULL_REQUEST}" == "false" ]; then
+    python3 tools/deploy.py;
+  fi
+notifications:
+  email:
+    on_success: never
+    on_failure: change
