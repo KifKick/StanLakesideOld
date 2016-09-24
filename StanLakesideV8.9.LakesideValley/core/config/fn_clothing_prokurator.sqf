@@ -5,7 +5,7 @@
 	Description:
 	Master configuration file for Prokurator shop.
 */
-/*private["_filter"];
+private["_filter"];
 _filter = param [0,0,[0]];
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
@@ -14,7 +14,6 @@ ctrlSetText[3103,"Sklep Prokuratorski"];
 
 switch (_filter) do
 {
-	//Uniforms
 	case 0:
 	{
 		[
@@ -43,7 +42,7 @@ switch (_filter) do
 		[
 		];
 	}
-
+	
 	case 2:
 	{
 		[
@@ -54,15 +53,15 @@ switch (_filter) do
 	{
 		[
 			["NewEden_EMS_Vests_Prokurator",nil,500],
-			["NewEden_EMS_Vests_Kzimierza",nil,500]
+			["NewEden_EMS_Vests_Kzimierza",nil,450]
 		];
 	};
 	
 	case 4:
 	{
 		[
-			["cg_invisbp",nil,1000],
-			["B_Carryall_khk",nil,500]
+			["cg_invisbp",nil,25],
+			["B_Carryall_khk",nil,25]
 		];
 	}
-};*/
+};

@@ -292,7 +292,7 @@ switch (_filter) do
 			["kif_dtu_vest_brouver","DTU Vest B. White",15],
 			["kif_dtu_vest_galaretka","DTU Vest K. Galaretka",15],
 			["kif_dtu_vest_kali","DTU Vest K. Alcatraz",15],
-			["kif_dtu_vest_marian","DTU Vest M. Minkovsky",15],
+			/*["kif_dtu_vest_marian","DTU Vest M. Minkovsky",15],*/
 			["kif_dtu_vest_hess","DTU Vest R. Hess",15],
 			["kif_dtu_vest_richard","DTU Vest Richard Hess",15],
 			["kif_dtu_vest_rudolf","DTU Vest Rudolf Hess",15],
@@ -313,7 +313,8 @@ switch (_filter) do
 			["kif_police_squad2_vest","Kamizelka do Munduru Squad 2",20],
 			["kif_police_squad3_vest","Kamizelka do Munduru Squad 3",20],
 			["kif_sheriff_vest","Sheriff Kamizelka",20],
-			["kif_traffic_vest","Kamizelka Drogowka",20]
+			["kif_traffic_vest","Kamizelka Drogowka",20],
+			["kif_sheriff_traffic_vest","Kamizelka Sheriff Drogowka",20]
 			
 		];
 	};

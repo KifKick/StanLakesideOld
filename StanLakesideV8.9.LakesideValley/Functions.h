@@ -210,7 +210,7 @@ class Life_Client_Core
 		class clothing_dive {};
 		class clothing_kart {};
 		class clothing_oskp {};
-		//class clothing_prokurator {};
+		class clothing_prokurator {};
 	};
 	
 	class Special
