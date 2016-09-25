@@ -170,8 +170,6 @@ switch(_shop) do
 		
 		case "cop_weaponShop": 
 		{
-			switch(true) do
-			{
 			_ret = [];
 			if(__GETC__(life_coplevel) > 0) then {
 				_ret pushBack [
@@ -321,13 +319,12 @@ switch(_shop) do
 				    ["RH_M6X",nil,1500],
 					["RH_leu_mk4",nil,500]
 				];
-				};
 				{
 					(_ret select 0) pushBack _x;
 				} foreach _temp;	
+				};
 			
 			["Uzbrojenie Policji", _ret select 0];
-			};
 		};
 		
         case "rebel_low":
