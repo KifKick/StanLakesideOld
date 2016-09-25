@@ -137,7 +137,6 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["SERTvest2","Invisi-Vest 2.0",5],
 			["RR_EMS_Vests_Command","Ordynator Vest",5],
 			["RR_EMS_Vests_EMT","EMT VEST",5],
 			["RR_EMS_Vests_Paramedic","Paremedic Vest",5],
