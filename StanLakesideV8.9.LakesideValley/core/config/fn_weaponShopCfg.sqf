@@ -55,7 +55,7 @@ switch(_shop) do
 							["A3L_Spanner",nil,50],
 							["A3L_Hammer",nil,50],
 							["cl_pepperspray",nil,50],
-							["ToolKit",nil,50],
+							["ToolKit",nil,5000],
 							["nonlethal_swing", "Slepa amunicja", 10],
 							["sharp_swing","Ostra amunicja",10]
 						]
@@ -112,7 +112,7 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (playerSide != west): {"You are not a cop!"};
+				case (license_cop_prokurator): {"Sprzet tylko dla Policji"};
 				default
 				{
 					["Podstawowe wyposazenie Policji",								
@@ -152,8 +152,29 @@ switch(_shop) do
 			};
         };
 		
+		case "cop_aiad":
+        {
+			switch(true) do
+			{
+				case (!license_cop_aiad): {"Sprzet tylko dla AIAD"};
+				default
+				{
+					["Sklep AIAD",								
+						[
+							["B_UavTerminal",nil,50]	
+						]
+					];
+				};
+			};
+        };
+		
 		case "cop_weaponShop": 
 		{
+			switch(true) do
+			{
+			case (license_cop_prokurator): {"Sprzet tylko dla Policji"};
+			default
+			{
 			_ret = [];
 			if(__GETC__(life_coplevel) > 0) then {
 				_ret pushBack [
@@ -179,7 +200,9 @@ switch(_shop) do
 				_temp =  [
 					["RH_uspm",nil,240],
 					["RH_16Rnd_40cal_usp",nil,5],
-					["RH_SFM952V",nil,10]
+					["RH_SFM952V",nil,10],
+					["RH_M4_ris_m",nil,5000],
+					["RH_30Rnd_556x45_Mk262",nil,500]
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -274,8 +297,7 @@ switch(_shop) do
                     ["HandGrenade_Stone","Flashbang",300],
 					["hlc_rifle_Bushmaster300",nil,5000],
 					["29rnd_300BLK_STANAG",nil,50],
-					["hlc_muzzle_300blk_KAC",nil,50],
-					["B_UavTerminal",nil,50]				
+					["hlc_muzzle_300blk_KAC",nil,50]			
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -285,14 +307,12 @@ switch(_shop) do
 				_temp =  [
 					["RH_kimber",nil,100],
 					["RH_7Rnd_45cal_m1911",nil,5],
-					["RH_M4_ris_m",nil,5000],
 					["RH_M4A6",nil,5000],
 					["RH_M16A2",nil,5000],
 					["RH_M16A3",nil,5000],
 					["RH_M16A4",nil,5000],
 					["RH_M16A6",nil,5000],
 					["RH_mk12mod1",nil,5000],
-					["RH_30Rnd_556x45_Mk262",nil,500],
 					["RH_30Rnd_68x43_FMJ",nil,500],
 					["hlc_rifle_bcmjack",nil,5220],
 					["hlc_30rnd_556x45_EPR",nil,520],
@@ -304,11 +324,13 @@ switch(_shop) do
 				    ["RH_M6X",nil,1500],
 					["RH_leu_mk4",nil,500]
 				];
+				};
 				{
 					(_ret select 0) pushBack _x;
 				} foreach _temp;	
 			};
 			["Uzbrojenie Policji", _ret select 0];
+			};
 		};
 		
         case "rebel_low":
