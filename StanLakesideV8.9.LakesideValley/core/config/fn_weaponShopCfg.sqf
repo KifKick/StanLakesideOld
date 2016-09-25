@@ -172,9 +172,6 @@ switch(_shop) do
 		{
 			switch(true) do
 			{
-			case (license_cop_prokurator): {"Sprzet tylko dla Policji"};
-			default
-			{
 			_ret = [];
 			if(__GETC__(life_coplevel) > 0) then {
 				_ret pushBack [
@@ -328,7 +325,7 @@ switch(_shop) do
 				{
 					(_ret select 0) pushBack _x;
 				} foreach _temp;	
-			};
+			
 			["Uzbrojenie Policji", _ret select 0];
 			};
 		};
