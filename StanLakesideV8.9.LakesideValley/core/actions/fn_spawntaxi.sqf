@@ -21,7 +21,7 @@ while{_fkit > 0 && life_taxi} do {
 		{
 		if(driver (vehicle player) == player && typeOf (vehicle player) == "CG_Taxi") then {
 			["bank","add", 350] call life_fnc_handleCash;
-			[] call SOCK_fnc_updateRequest;
+			[2] call SOCK_fnc_updatePartial;
 			["Otrzymujesz premie w wysokosci $350", false] spawn domsg; 
 		};	
 	};

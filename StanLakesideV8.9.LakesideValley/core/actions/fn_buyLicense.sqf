@@ -22,8 +22,6 @@ if(karma_level > 0) then {
 };
 
 ["cash","take",_price] call life_fnc_handleCash;
-[] call SOCK_fnc_updateRequest;
-
 [format[localize "STR_NOTF_B_1", _license select 1,[_price] call life_fnc_numberText], false] spawn domsg;
 missionNamespace setVariable[(_license select 0),true];
-[2] call SOCK_fnc_updatePartial;
+[8] call SOCK_fnc_updatePartial;

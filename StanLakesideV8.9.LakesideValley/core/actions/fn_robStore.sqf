@@ -69,7 +69,7 @@ if (!(_robber getVariable["dead",FALSE]) && {currentWeapon _robber != "" && curr
 	hint format["Ukradles $%1",_funds];
 	_reason = "211";
 	[_robber,_robber,_reason] spawn life_fnc_createEvidence;
-	[] call SOCK_fnc_updateRequest;
+	[2] call SOCK_fnc_updatePartial;
 	[1,format["WIADOMOSCI LAKESIDE: Sklep zostal obrabowany na $%2!", _shop, [_funds] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast", civilian];
 	_funds = 0;
 	life_use_atm = false;

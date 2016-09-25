@@ -8,7 +8,7 @@ disableSerialization;
  [LIFE_ID_PlayerTags,"onEachFrame"] spawn BIS_fnc_removeStackedEventHandler;
  1 fadeSound 0;
  1 fadeSpeech 0;
- [] call SOCK_fnc_updateRequest;
+ [8] call SOCK_fnc_updatePartial;
  _ui = uiNamespace getVariable ["Life_HUD_nameTags",displayNull];
  _outroCam = "camera" camCreate (player modelToWorldVisual [-5,0,1.85]);
  _outroCam cameraEffect ["internal","back"];

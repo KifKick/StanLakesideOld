@@ -49,11 +49,11 @@ if(_success) then {
 	["The Police have seized the Rebel Weapon Shipment and Cash!", false] remoteExec ["domsg",-2]; 
 	["The Rebel Store is shut down for the next 30 minutes!", false] remoteExec ["domsg",-2]; 
 	["cash","add",25000] remoteExecCall ["life_fnc_handlecash",west];
-	[] call SOCK_fnc_updateRequest;
+	[2] call SOCK_fnc_updatePartial;
 	["finishRebel", player] remoteExec ["TON_fnc_finishRebel",2];	
 } else {
 	["An attempt at capturing a rebel shipment has failed!", false] remoteExec ["domsg",-2]; 
 	["All Civilians have earned $4000", false] remoteExec ["domsg",-2]; 
 	["cash","add",4000] remoteExecCall ["life_fnc_handlecash",civilian];
-	[] call SOCK_fnc_updateRequest;
+	[2] call SOCK_fnc_updatePartial;
 };

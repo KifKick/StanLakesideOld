@@ -109,7 +109,7 @@ while {_totalprobation > 0} do {
 	   	if(deadPlayer) exitwith {
 	  	 	waituntil{!deadPlayer};
 	  	 	["bank","take", 200] call life_fnc_handleCash;
-			[] call SOCK_fnc_updateRequest;
+			[2] call SOCK_fnc_updatePartial;
 		    ["Otrzymales $200 kary za nie podnoszenie smieci!", false] spawn domsg;
 	  	 	[getPlayerUID player,profileName,"901A"] remoteExec ["life_fnc_wantedAdd",2];
 	  	 	_endnow = 1;
@@ -119,19 +119,19 @@ while {_totalprobation > 0} do {
 	   		player action ["Eject", vehicle player];
 	   		["Do not enter a vehicle while on probation.", false] spawn domsg;
 	   		["bank","take", 200] call life_fnc_handleCash;
-			[] call SOCK_fnc_updateRequest;
+			[2] call SOCK_fnc_updatePartial;
 		    ["Otrzymales $200 kary za nie podnoszenie smieci!", false] spawn domsg;
 	   	};
 	   	if(_fuck == 1) exitwith {
 		   	_fine = _fine + 1;
 		   	["bank","take", 200] call life_fnc_handleCash;
-			[] call SOCK_fnc_updateRequest;
+			[2] call SOCK_fnc_updatePartial;
 		   	["Otrzymales $200 kary za nie podnoszenie smieci!", false] spawn domsg;
 			if(_fine == 3) then {
 				["Zostales dodany do listy poszukiwanych oraz otrzymales kare w wysokosci $1500 za nie podnoszenie smieci", false] spawn domsg;
 				[getPlayerUID player,profileName,"901A"] remoteExec ["life_fnc_wantedAdd",2];
 				["bank","take", 1500] call life_fnc_handleCash;
-				[] call SOCK_fnc_updateRequest;
+				[2] call SOCK_fnc_updatePartial;
 			 	_totalprobation = 0;
 			};
 		};

@@ -12,7 +12,7 @@ _search = nearestObjects[getPos air_sp, ["Air"],5];
 if(count _search == 0) exitWith {hint localize "STR_Service_Chopper_NoAir"};
 if(cash_in_hand < 100) exitWith {hint localize "STR_Serive_Chopper_NotEnough"};
 ["cash","take",100] call life_fnc_handleCash;
-[] call SOCK_fnc_updateRequest; 
+[2] call SOCK_fnc_updatePartial;
 life_action_inUse = true;
 _title = localize "STR_Service_Chopper_Servicing";
 5 cutRsc ["life_progress","PLAIN"];
