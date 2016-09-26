@@ -157,7 +157,7 @@ _Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_testIntox;";
 _Btn10 ctrlSetText localize "STR_pInAct_Arrest";
 _Btn10 buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_arrestMenu;";
 
-_Btn11 ctrlSetText "Probation";
+_Btn11 ctrlSetText "Spoleczne";
 _Btn11 buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_parole;";
 
 _Btn12 ctrlSetText localize "STR_pInAct_Strip";
