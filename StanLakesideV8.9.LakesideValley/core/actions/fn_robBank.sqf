@@ -1,6 +1,7 @@
 /*
 Bank Grodzkiej
 */
+/*
 private["_robber","_shop","_timer","_funds","_dist","_success"];
 _shop = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _robber = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
@@ -68,3 +69,4 @@ life_use_atm = true;
 sleep 5600;//Cooldown between the robberies
 _action = _shop addAction["Rob Store",life_fnc_robBank];//Adding action for the robbery
 };
+*/

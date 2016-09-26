@@ -1,2 +1,9 @@
 StanLakesideV8.9.LakesideValley/core/init_survival.sqf.old
 *.pbo
+StanLakeside.iml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/compiler.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/copyright/profiles_settings.xml
