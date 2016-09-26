@@ -39,12 +39,12 @@ if(life_inv_turtle > 0) then {[false,"turtle",life_inv_turtle] call life_fnc_han
 [0,format["%1 zostal przeszukany.",name player, _cop]] remoteExecCall ["life_fnc_broadcast", -2]; 
 
 if(turtle_fuck == 2) then {
-	[0,format["%1 was found with %2 turtles in their possession.",name player, totalturtles]] remoteExecCall ["life_fnc_broadcast", -2]; 
+	[0,format["Znaleziono %2 zolwi przy %1",name player, totalturtles]] remoteExecCall ["life_fnc_broadcast", -2]; 
 };
 if(drug_fuck == 2) then {
-	[0,format["%1 was found with %2 drugs in their possession.",name player, totaldrugs]] remoteExecCall ["life_fnc_broadcast", -2]; 
+	[0,format["Znaleziono %2 narkotykow w posiadaniu %1",name player, totaldrugs]] remoteExecCall ["life_fnc_broadcast", -2]; 
 } else {
-	[0,format["%1 was found with no illegal drugs.",name player]] remoteExecCall ["life_fnc_broadcast", -2]; 
+	[0,format["Nie znaleziono nielegalnych substancji przy %1",name player]] remoteExecCall ["life_fnc_broadcast", -2]; 
 };
 
 
@@ -62,7 +62,7 @@ if(drug_fuck == 2) then {
 
 
 
-[localize "Przeszukiwanie zakonczone... wszystkie nielegalne przedimoty odebrane.", false] spawn domsg;
+["Przeszukiwanie zakonczone... wszystkie nielegalne przedmioty zostaly odebrane.", false] spawn domsg;
 [5] call SOCK_fnc_updatePartial;
 
 };
