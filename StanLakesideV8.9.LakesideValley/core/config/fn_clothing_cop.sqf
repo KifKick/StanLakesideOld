@@ -289,6 +289,7 @@ switch (_filter) do
 			["kif_lspd_police_department_sgt_basta_vest", "LSPD Police Department Sgt. A. Basta Vest", "15"],
 			["kif_supervisor_vest_lspd", "Supervisor Vest LSPD", "15"],
 			["kif_supervisor_vest_richard", "Supervisor LSPD Vest Richard Hess", "15"],
+			["kif_supervisor_sheriff_vest", "Supervisor Sheriff Vest", "15"],
 			["kif_supervisor_sheriff_vest_mike", "Supervisor Sheriff Vest M. Williams", "15"],
 			["kif_supervisor_sheriff_vest_dorian", "Supervisor Sheriff Vest Dorian", "15"],
 			["kif_supervisor_sheriff_vest_dorian", "Supervisor Sheriff Vest Dorian", "15"],
