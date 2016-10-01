@@ -111,6 +111,9 @@ switch (_filter) do
 			["A3L_SStie","Stroj IAD",15],
 			["LS_Marshal_Jacket",nil,15],
 			["LS_Marshal_Jacket3",nil,15],
+			["aiad_inspector",nil,15],
+			["aiad_assistant",nil,15],
+			["aiad_division",nil,15],
 			["KAEL_SUITS_BR_Judge",nil,15]
 		];
 	};
@@ -275,6 +278,9 @@ switch (_filter) do
 			["kif_bureau_tomasz_vest","LSPD Command Bureau Tomasz Schmidt",15],
 			["kif_sheriff_commander_dorian_vest","Sheriff Commander Vest Dorian Lych",15],
 			["kif_sheriff_commander_lych_vest","Sheriff Commander Vest D. Lych",15],
+			["kif_sheriff_lakeside_vest_dorian","Sheriff Lakeside Vest Dorian Lych",15],
+			["kif_sheriff_lakeside_vest_mike","Sheriff Lakeisde Vest Mike Williams",15],
+			["kif_sheriff_lakeside_vest","Sheriff Lakeside Vest",15],
 			["kif_lspd_police_department_vest", "LSPD Police Department", "15"],
 			/*["lspd_police_department_lt_namikaze_vest", "LSPD Police Department Lt. M. Namikaze Vest", "15"],*/
 			["kif_lspd_police_department_sgt_kraksa_vest", "LSPD Police Department Sgt. P. Kraksa Vest", "15"],
@@ -283,7 +289,8 @@ switch (_filter) do
 			["kif_lspd_police_department_sgt_basta_vest", "LSPD Police Department Sgt. A. Basta Vest", "15"],
 			["kif_supervisor_vest_lspd", "Supervisor Vest LSPD", "15"],
 			["kif_supervisor_vest_richard", "Supervisor LSPD Vest Richard Hess", "15"],
-			["kif_supervisor_sheriff_vest", "Supervisor Sheriff Vest", "15"],
+			["kif_supervisor_sheriff_vest_mike", "Supervisor Sheriff Vest M. Williams", "15"],
+			["kif_supervisor_sheriff_vest_dorian", "Supervisor Sheriff Vest Dorian", "15"],
 			["kif_supervisor_sheriff_vest_dorian", "Supervisor Sheriff Vest Dorian", "15"],
 			["kif_dtu_vest_lspd", "DTU Vest LSPD", "15"],
 			["kif_dtu_vest_brouver","DTU Vest B. White",15],
@@ -300,7 +307,6 @@ switch (_filter) do
 			["kif_aiad_vest_donald","AIAD Vest D. Donaldowski",15],
 			["kif_aiad_vest_shadd","AIAD Vest S. Wallace",15],
 			["kif_aiad_vest_raf","AIAD Vest R. Graf",15],
-			["kif_aiad_vest_radek","AIAD Vest R. Nowicki",15],
 			["kif_swat_vest","Police SWAT Vest",15],
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],
 			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
