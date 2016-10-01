@@ -111,9 +111,9 @@ switch (_filter) do
 			["A3L_SStie","Stroj IAD",15],
 			["LS_Marshal_Jacket",nil,15],
 			["LS_Marshal_Jacket3",nil,15],
-			["aiad_inspector",nil,15],
-			["aiad_assistant",nil,15],
-			["aiad_division",nil,15],
+			["kif_aiad_inspector_obj",nil,15],
+			["kif_aiad_assistant_obj",nil,15],
+			["kif_aiad_divison_obj",nil,15],
 			["KAEL_SUITS_BR_Judge",nil,15]
 		];
 	};
