@@ -137,7 +137,7 @@ godMode = false;
 //arrays for masked items
 GoggleList = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","A3L_Balaclava","Payday_Cagoule","Masque_Chirurgical","Masque_Solitaire","TRYK_kio_balaclava_ESS","Mask_M40","G_Bandanna_blk","G_Bandanna_oli","G_Bandanna_sport","G_Bandanna_shades","G_Bandanna_beast","G_Bandanna_aviator","G_Balaclava_TI_tna_F","G_Balaclava_TI_blk_F"];		
 HatList = ["A3L_gangster_hat","kio_vfv_mask","cg_dinomask","cg_dinomask_p","cg_dinomask_r","cg_horsehead","cg_horsehead_2",
-"cg_horsehead_blk","cg_horsehead_pnk","Masque_Alien1","Masque_Anonymous","Masque_Chains","Payday_GeneralO","Casque_Moto",
+"cg_horsehead_blk","cg_horsehead_pnk","Masque_Alien1","Masque_Anonymous","Masque_Chains","Casque_Moto",
 "Masque_Clinton","Masque_speedRunner","Masque_Unic","Masque_Aubrey","Masque_Bonnie","Masque_Bush","Masque_Mempo","Masque_Lincoln",
 "Masque_Wolfv2","Masque_archNemesis","Masque_Arnold","Masque_Chuck","Masque_Clover","Masque_Fish","Masque_Hockey","Masque_Metalhead",
 "Masque_Religieuse","Masque_Smiley","Masque_Santa","Masque_Momie","Masque_Optimiste","Masque_forceAlpha","Masque_GdG","Masque_Gombo",
