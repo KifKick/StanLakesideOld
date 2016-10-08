@@ -118,6 +118,11 @@ switch(_shop) do
 					["Podstawowe wyposazenie Policji",								
 						[
 							["cg_atf_bandage_i","Bandaz",1],
+							["CG_battery_i","Bateria",5],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",250],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",250],
+							["nonlethal_swing", "Slepa amunicja",1],
+							["sharp_swing","Ostra amunicja",1],
 							["CG_Pro_Item_i","GoPro",350],
 							["CG_ATF_Handcuffs_i","Kajdanki",10],
 							["cg_torch","Latarka",250], 
@@ -143,7 +148,6 @@ switch(_shop) do
 							["Chemlight_green",nil,20],
 							["Chemlight_blue",nil,20],
 							["Binocular",nil,15],
-							["Rangefinder","Dalmierz SERT",500],
 							["ItemGPS",nil,10],  
 							["tf_anprc152",nil,10]
 						]
@@ -161,12 +165,199 @@ switch(_shop) do
 				{
 					["Sklep AIAD",								
 						[
-							["B_UavTerminal",nil,50]	
+							["B_UavTerminal",nil,50]
 						]
 					];
 				};
 			};
         };
+		
+				case "cop_special": 
+		{
+			_ret = [];
+			if(__GETC__(life_coplevel) > 0) then {
+				_ret pushBack [
+				
+				];
+			};
+			if(__GETC__(life_coplevel) > 1) then {
+				_temp = [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;
+			};
+			if(__GETC__(life_coplevel) > 2) then {
+				_temp =  [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+			};
+			if(__GETC__(life_coplevel) > 4) then {
+				_temp =  [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+			};
+			if(__GETC__(life_coplevel) > 5) then {
+				_temp =  [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+			};
+			if(__GETC__(life_coplevel) > 6) then {
+				_temp =  [
+				["RH_Hk416",nil,2000],
+				["RH_Hk416s",nil,2000],
+				["RH_30Rnd_556x45_M855A1",nil,50],
+				["KPFS_G36A4",nil,3500],
+				["KPFS_30Rnd_556x45_G36",nil,50],
+				["franchi",nil,2500],
+				["6Rnd_12Gauge_Pellets",nil,50],
+				["cl3_crossbow",nil,5000],
+				["4Rnd_crossbow_mag",nil,50],
+				["AG_MP9_sidearm",nil,1000],
+				["30Rnd_45ACP_Mag_SMG_01",nil,50],
+				["sab_mauser96_handgun",nil,850],
+				["sab_wwiplanes_6rnd_mauser_mag",nil,5],
+				["hlc_smg_mp5k",nil,1000],
+				["hlc_30Rnd_9x19_B_MP5",nil,50],
+				["Rangefinder","Dalmierz SERT",500]
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+			};
+			if(__GETC__(life_coplevel) > 7) then {
+				_temp =  [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+				};
+			
+			["Zbrojownia SERT", _ret select 0];
+		};
+		
+		case "cop_dtu": 
+		{
+			_ret = [];
+			if(__GETC__(life_coplevel) > 0) then {
+				_ret pushBack [
+				
+				];
+			};
+			if(__GETC__(life_coplevel) > 1) then {
+				_temp = [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;
+			};
+			if(__GETC__(life_coplevel) > 2) then {
+				_temp =  [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+			};
+			if(__GETC__(life_coplevel) > 4) then {
+				_temp =  [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+			};
+			if(__GETC__(life_coplevel) > 5) then {
+				_temp =  [
+							["30Rnd_45ACP_Mag_SMG_01",nil,25],
+							["SMG_02_F",nil,1250],
+							["RH_sbr9_wdl",nil,1250],
+							["RH_sbr9_tg",nil,1250],
+							["RH_sbr9_des",nil,1250],
+							["RH_32Rnd_9mm_M822",nil,25],
+							["AG_MP9_sand_peq",nil,1250],
+							["AG_MP9_wcam_peq",nil,1250],
+							["AG_MP9_digi_peq",nil,1250],
+							["AG_MP9_wcam",nil,1250],
+							["AG_MP9_digi",nil,1250],
+							["AG_MP9_sand",nil,1250],
+							["AG_MP9_folded_wcam",nil,1250],
+							["AG_MP9_folded_digi",nil,1250],
+							["AG_MP9_folded_sand",nil,1250],
+							["30Rnd_45ACP_Mag_SMG_01",nil,25],
+							["30Rnd_9x21_Mag",nil,25],
+							["optic_Aco",nil,500],
+							["optic_ACO_grn_smg",nil,500],
+							["chakFNP90_50rnd_skin1",nil,1500],
+							["chakFNP90_57x28_B_skin1",nil,2250],
+							["hlc_rifle_augpara",nil,1500],
+							["hlc_rifle_auga2para",nil,1500],
+							["hlc_rifle_augpara_t",nil,1500],
+							["hlc_rifle_auga2para_t",nil,1500],
+							["hlc_25Rnd_9x19mm_M882_AUG",nil,25],
+							["hlc_25Rnd_9x19mm_JHP_AUG",nil,25],
+							["hgun_PDW2000_F",nil,1125],
+							["30Rnd_9x21_Mag",nil,25],
+							["RH_sbr9_des",nil,1600],
+							["RH_32Rnd_9mm_M822",nil,25],
+							["ej_Thompson",nil,1700],
+							["ej_ThompsonTactical",nil,1700],
+							["ej_ThompsonTactical2",nil,1700],
+							["Thompsonjhpplus_mag",nil,25],
+							["hlc_rifle_aks74u",nil,2250],
+							["hlc_30Rnd_545x39_B_AK",nil,25],
+							["RH_g18",nil,1000],
+							["RH_33Rnd_9x19_g18",nil,25],
+							["RH_vz61",nil,500],
+							["RH_20Rnd_32cal_vz61",nil,25],
+							["RH_tec9",nil,500],
+							["RH_32Rnd_9x19_tec",nil,25],
+							["RH_muzi",nil,500],
+							["RH_30Rnd_9x19_UZI",nil,25],
+							["RH_deagle",nil,9250],
+							["RH_7Rnd_50_AE",nil,25],
+							["RH_compm4s",nil,450],
+							["RH_compM2_tan",nil,450],
+							["RH_eotexps3_tan",nil,450],
+							["RH_t1_tan",nil,450],
+							["RH_reflex",nil,450],
+			                ["RH_M6X",nil,500]
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+			};
+			if(__GETC__(life_coplevel) > 6) then {
+				_temp =  [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+			};
+			if(__GETC__(life_coplevel) > 7) then {
+				_temp =  [
+				
+				];
+				{
+					(_ret select 0) pushBack _x;
+				} foreach _temp;	
+				};
+			
+			["Uzbrojenie DTU", _ret select 0];
+		};
 		
 		case "cop_weaponShop": 
 		{

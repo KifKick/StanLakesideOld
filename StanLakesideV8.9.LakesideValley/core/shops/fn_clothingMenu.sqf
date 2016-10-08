@@ -12,7 +12,7 @@ disableSerialization;
 
 //Cop / Civ Pre Check
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {[localize "STR_Shop_NotaReb", false] spawn domsg; closeDialog 0;};
-if((_this select 3) in ["cop","brucecop"] && playerSide != west) exitWith {[localize "STR_Shop_NotaCop", false] spawn domsg; closeDialog 0;};
+if((_this select 3) in ["cop","brucecop","specialforces"] && playerSide != west) exitWith {[localize "STR_Shop_NotaCop", false] spawn domsg; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { [localize "STR_Shop_NotaDive", false] spawn domsg; closeDialog 0;};
 if((_this select 3) == "ems" && playerSide != independent) exitWith {["You are not a EMS!", false] spawn domsg; closeDialog 0;};
 if((_this select 3) == "oskp" && !license_civ_oskp) exitWith {["Wypierdalaj za brame, bo Cie odholuje chamie!", false] spawn domsg; closeDialog 0;};

@@ -204,6 +204,7 @@ class Life_Client_Core
 		
 		//Clothing Store Configs
 		class clothing_cop {};
+		class clothing_specialforces {};
 		class clothing_ems {};
 		class clothing_bruce {};
 		class clothing_reb {};
