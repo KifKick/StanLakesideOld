@@ -114,6 +114,19 @@ switch (_filter) do
 			["kif_aiad_inspector_obj",nil,15],
 			["kif_aiad_assistant_obj",nil,15],
 			["kif_aiad_divison_obj",nil,15],
+			["police_kevuni1",nil,15],
+			["police_kevuni2",nil,15],
+			["police_kevuni3",nil,15],
+			["police_kevuni4",nil,15],
+			["police_kevuni5",nil,15],
+			["police_kevuni6",nil,15],
+			["police_kevuni7",nil,15],
+			["police_kevuni8",nil,15],
+			["police_kevuni9",nil,15],
+			["police_kevuni10",nil,15],
+			["police_kevuni11",nil,15],
+			["police_kevuni12",nil,15],
+			["police_kevuni13",nil,15],
 			["KAEL_SUITS_BR_Judge",nil,15]
 		];
 	};
