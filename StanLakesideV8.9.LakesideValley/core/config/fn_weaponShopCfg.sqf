@@ -254,7 +254,7 @@ switch(_shop) do
 				["sab_wwiplanes_6rnd_mauser_mag",nil,5],
 				["hlc_smg_mp5k",nil,1000],
 				["hlc_30Rnd_9x19_B_MP5",nil,50],
-				["RH_leu_mk4",nil,500]
+				["RH_leu_mk4",nil,500],
 				["Rangefinder","Dalmierz SERT",500]
 				];
 				{
