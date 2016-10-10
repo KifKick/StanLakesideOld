@@ -156,20 +156,45 @@ switch(_shop) do
 			};
         };
 		
-		case "cop_aiad":
+	case "cop_aiad":
         {
-			switch(true) do
+		switch(true) do
+		{
+			case (!license_cop_aiad): {"Sprzet tylko dla AIAD"};
+			default
 			{
-				case (!license_cop_aiad): {"Sprzet tylko dla AIAD"};
-				default
-				{
-					["Sklep AIAD",								
-						[
-							["B_UavTerminal",nil,50]
-						]
-					];
-				};
+				["Zbrojownia i Sklep AIAD",								
+					[
+						["B_UavTerminal",nil,50],
+						["SG553",nil,1500],
+						["SG553_CQB",nil,1500],
+						["30Rnd_556x45_Stanag",nil,50],
+						["SMG_02_F",nil,750],
+						["30Rnd_9x21_Mag_SMG_02",nil,25],
+						["hlc_rifle_auga3_b",nil,2000],
+						["hlc_30Rnd_556x45_B_AUG",nil,50],
+						["RH_M16A4",nil,5000],
+						["RH_30Rnd_556x45_M855A1",nil,125],
+						["hlc_smg_mp5a2",nil,650],
+						["hlc_30Rnd_9x19_B_MP5",nil,15],
+						["optic_MRCO",nil,500],
+						["optic_ACO_grn",nil,250],
+						["optic_Hamr",nil,500],
+						["RH_compm4s",nil,500],
+						["RH_python",nil,1000],
+						["RH_6Rnd_357_Mag",nil,50],
+						["hlc_smg_mp5k",nil,750],
+						["hlc_30Rnd_9x19_B_MP5",nil,25],
+						["A3L_TaurusGold",nil,850],
+						["A3L_TaurusMag",nil,25],
+						["RH_Deagles",nil,1550],
+						["RH_7Rnd_50_AE",nil,100],
+						["KPFS_P38",nil,250],
+						["KPFS_8Rnd_9x19_PARA",nil,10]
+					]
+				];
 			};
+		};
         };
 		
 				case "cop_special": 
@@ -229,6 +254,7 @@ switch(_shop) do
 				["sab_wwiplanes_6rnd_mauser_mag",nil,5],
 				["hlc_smg_mp5k",nil,1000],
 				["hlc_30Rnd_9x19_B_MP5",nil,50],
+				["RH_leu_mk4",nil,500],
 				["Rangefinder","Dalmierz SERT",500]
 				];
 				{
