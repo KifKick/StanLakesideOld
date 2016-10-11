@@ -255,6 +255,10 @@ switch(_shop) do
 				["hlc_smg_mp5k",nil,1000],
 				["hlc_30Rnd_9x19_B_MP5",nil,50],
 				["RH_leu_mk4",nil,500],
+				["optic_MRCO",nil,500],
+				["optic_ACO_grn",nil,250],
+				["optic_Hamr",nil,500],
+				["RH_compm4s",nil,500],
 				["Rangefinder","Dalmierz SERT",500]
 				];
 				{
@@ -1069,19 +1073,16 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
-				case (!license_civ_rifle): {"You don't have a Rifle license!"};
+				case (playerSide != civilian && playerSide != east): {"Przyjdź po Cywilnemu to może coś Ci sprzedam!"};
 				default
 				{
 					["Sklep mysliwski",
 						[
-							["A3L_CZ550",nil,137500],
-							["A3L_CZ550mag",nil,500],
-							["A3L_CZ550Scope",nil,12500],
-							["arifle_SDAR_F","Turtle ONLY-SDAR",1000],
-							["cl3_crossbow","Kusza",55000],
-							["4Rnd_crossbow_mag","Magazynek do kuszy",1000],
-							["20Rnd_556x45_UW_mag","Underwater magazine",120]
+							["A3L_CZ550",nil,175500],
+							["A3L_CZ550mag",nil,750],
+							["A3L_CZ550Scope",nil,15500],
+							["arifle_SDAR_F","Turtle ONLY-SDAR",5000],
+							["20Rnd_556x45_UW_mag","Underwater magazine",50]
 						]
 					];
 				};

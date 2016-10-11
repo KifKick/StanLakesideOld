@@ -7,7 +7,7 @@ if(im_hunting) exitwith {};
 ["Poluj na zwierzeta! Uzyj klawisza Windows aby zebrac mieso ze zwierzyny!",false] spawn domsg;
 im_hunting = true;
 private["_animal","_tempPos"];
-_chances = 35 + (floor random 15);
+_chances = 65 + (floor random 135);
 huntarray = ["Sheep_random_F","Cock_random_F","Hen_random_F","Goat_random_F"];
 if(player distance (getmarkerpos "hunting_area") > 300) exitwith { ["Za bardzo oddaliles sie od obszaru polowan!",false] spawn domsg; };
 _grp = createGroup civilian;  
