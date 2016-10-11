@@ -28,7 +28,8 @@ switch (_mode) do
 			case "oil": {_var = "license_civ_oil"}; //Oil processing license cost
 			case "cair": {_var = "license_cop_air"}; //Cop Pilot License cost
 			case "swat": {_var = "license_cop_swat"}; //Swat License cost
-			case "aiad": {_var = "license_cop_aiad"}; //Swat License cost
+			case "dtu": {_var = "license_cop_dtu"}; //dtu License cost
+			case "aiad": {_var = "license_cop_aiad"}; //aiad License cost
 			case "cg": {_var = "license_cop_cg"}; //Coast guard license cost
 			case "heroin": {_var = "license_civ_heroin"}; //Heroin processing license cost
 			case "marijuana": {_var = "license_civ_marijuana"}; //Marijuana processing license cost
@@ -71,6 +72,7 @@ switch (_mode) do
 			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost
 			case "license_cop_swat": {_var = "swat"}; //Swat License cost
 			case "license_cop_aiad": {_var = "aiad"}; //aiad License cost
+			case "license_cop_dtu": {_var = "dtu"}; //dtu License cost
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
 			case "license_civ_heroin": {_var = "heroin"}; //Heroin processing license cost
 			case "license_civ_marijuana": {_var = "marijuana"}; //Marijuana processing license cost
