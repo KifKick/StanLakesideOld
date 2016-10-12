@@ -27,6 +27,7 @@ switch (_mode) do
 			case "dive": {_var = "license_civ_dive"}; //Diving license cost
 			case "oil": {_var = "license_civ_oil"}; //Oil processing license cost
 			case "cair": {_var = "license_cop_air"}; //Cop Pilot License cost
+			case "swat": {_var = "license_cop_swat"}; //swat License cost
 			case "sert": {_var = "license_cop_sert"}; //sert License cost
 			case "dtu": {_var = "license_cop_dtu"}; //dtu License cost
 			case "aiad": {_var = "license_cop_aiad"}; //aiad License cost
@@ -70,6 +71,7 @@ switch (_mode) do
 			case "license_civ_dive": {_var = "dive"}; //Diving license cost
 			case "license_civ_oil": {_var = "oil"}; //Oil processing license cost
 			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost
+			case "license_cop_swat": {_var = "swat"}; //swat License cost
 			case "license_cop_sert": {_var = "sert"}; //sert License cost
 			case "license_cop_aiad": {_var = "aiad"}; //aiad License cost
 			case "license_cop_dtu": {_var = "dtu"}; //dtu License cost
