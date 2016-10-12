@@ -246,7 +246,7 @@ switch(_shop) do
 				["RH_30Rnd_556x45_Mk318",nil,50],
 				["hlc_rifle_Bushmaster300",nil,5000],
 				["29rnd_300BLK_STANAG",nil,50],
-				["hlc_muzzle_300blk_KAC",nil,50]
+				["hlc_muzzle_300blk_KAC",nil,50],
 				["KPFS_G36A4",nil,3500],
 				["KPFS_30Rnd_556x45_G36",nil,50],
 				["franchi",nil,2500],
