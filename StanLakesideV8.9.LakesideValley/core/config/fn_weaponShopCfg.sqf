@@ -197,91 +197,47 @@ switch(_shop) do
 			};
         };
 		
-				case "cop_special": 
-		{
-			_ret = [];
-			if(__GETC__(life_coplevel) > 0) then {
-				_ret pushBack [
-				
-				];
-			};
-			if(__GETC__(life_coplevel) > 1) then {
-				_temp = [
-				
-				];
+		case "cop_special":
+        {
+			switch(true) do
+			{
+				case (!license_cop_sert): {"Zbrojownia SERT"};
+				default
 				{
-					(_ret select 0) pushBack _x;
-				} foreach _temp;
-			};
-			if(__GETC__(life_coplevel) > 2) then {
-				_temp =  [
-				
-				];
-				{
-					(_ret select 0) pushBack _x;
-				} foreach _temp;	
-			};
-			if(__GETC__(life_coplevel) > 4) then {
-				_temp =  [
-				
-				];
-				{
-					(_ret select 0) pushBack _x;
-				} foreach _temp;	
-			};
-			if(__GETC__(life_coplevel) > 5) then {
-				_temp =  [
-				
-				];
-				{
-					(_ret select 0) pushBack _x;
-				} foreach _temp;	
-			};
-			if(__GETC__(life_coplevel) > 6) then {
-				_temp =  [
-				["RH_Hk416",nil,2000],
-				["RH_Hk416s",nil,2000],
-				["RH_qdss_nt4",nil,50],
-				["RH_30Rnd_556x45_M855A1",nil,50],
-				["RH_30Rnd_556x45_Mk318",nil,50],
-				["hlc_rifle_Bushmaster300",nil,5000],
-				["29rnd_300BLK_STANAG",nil,50],
-				["hlc_muzzle_300blk_KAC",nil,50],
-				["KPFS_G36A4",nil,3500],
-				["KPFS_30Rnd_556x45_G36",nil,50],
-				["franchi",nil,2500],
-				["6Rnd_12Gauge_Pellets",nil,50],
-				["cl3_crossbow",nil,5000],
-				["4Rnd_crossbow_mag",nil,50],
-				["AG_MP9_sidearm",nil,1000],
-				["30Rnd_45ACP_Mag_SMG_01",nil,50],
-				["sab_mauser96_handgun",nil,850],
-				["sab_wwiplanes_6rnd_mauser_mag",nil,5],
-				["hlc_smg_mp5k",nil,1000],
-				["hlc_30Rnd_9x19_B_MP5",nil,50],
-				["RH_leu_mk4",nil,500],
-				["optic_MRCO",nil,500],
-				["optic_ACO_grn",nil,250],
-				["optic_Hamr",nil,500],
-				["RH_ta31rmr",nil,50],
-				["RH_compm4s",nil,500],
-				["Rangefinder","Dalmierz SERT",500]
-				];
-				{
-					(_ret select 0) pushBack _x;
-				} foreach _temp;	
-			};
-			if(__GETC__(life_coplevel) > 7) then {
-				_temp =  [
-				
-				];
-				{
-					(_ret select 0) pushBack _x;
-				} foreach _temp;	
+					["Zbrojownia SERT",								
+						[
+							["RH_Hk416",nil,2000],
+							["RH_Hk416s",nil,2000],
+							["RH_qdss_nt4",nil,50],
+							["RH_30Rnd_556x45_M855A1",nil,50],
+							["RH_30Rnd_556x45_Mk318",nil,50],
+							["hlc_rifle_Bushmaster300",nil,5000],
+							["29rnd_300BLK_STANAG",nil,50],
+							["hlc_muzzle_300blk_KAC",nil,50],
+							["KPFS_G36A4",nil,3500],
+							["KPFS_30Rnd_556x45_G36",nil,50],
+							["franchi",nil,2500],
+							["6Rnd_12Gauge_Pellets",nil,50],
+							["cl3_crossbow",nil,5000],
+							["4Rnd_crossbow_mag",nil,50],
+							["AG_MP9_sidearm",nil,1000],
+							["30Rnd_45ACP_Mag_SMG_01",nil,50],
+							["sab_mauser96_handgun",nil,850],
+							["sab_wwiplanes_6rnd_mauser_mag",nil,5],
+							["hlc_smg_mp5k",nil,1000],
+							["hlc_30Rnd_9x19_B_MP5",nil,50],
+							["RH_leu_mk4",nil,500],
+							["optic_MRCO",nil,500],
+							["optic_ACO_grn",nil,250],
+							["optic_Hamr",nil,500],
+							["RH_ta31rmr",nil,50],
+							["RH_compm4s",nil,500],
+							["Rangefinder","Dalmierz SERT",500]
+						]
+					];
 				};
-			
-			["Zbrojownia SERT", _ret select 0];
-		};
+			};
+        };
 		
 		case "cop_dtu":
         {
