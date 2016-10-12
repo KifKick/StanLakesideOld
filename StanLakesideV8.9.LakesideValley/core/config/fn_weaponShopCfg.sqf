@@ -200,7 +200,7 @@ switch(_shop) do
 				case "cop_special": 
 		{
 			_ret = [];
-			/*if(__GETC__(life_coplevel) > 0) then {
+			if(__GETC__(life_coplevel) > 0) then {
 				_ret pushBack [
 				
 				];
@@ -236,7 +236,7 @@ switch(_shop) do
 				{
 					(_ret select 0) pushBack _x;
 				} foreach _temp;	
-			};*/
+			};
 			if(__GETC__(life_coplevel) > 6) then {
 				_temp =  [
 				["RH_Hk416",nil,2000],
@@ -493,6 +493,9 @@ switch(_shop) do
 					["RH_demz",nil,240],
 					["RH_Deflash",nil,240],
 					["RH_7Rnd_50_AE",nil,240],
+					["hgun_007_SW_M10",nil,240],
+					["hgun_007_SW_M10_special",nil,240],
+					["hgun_007_SW_M10_gold",nil,240],
 					["prpl_benelli_14_pgs_rail","Shotgun na gumowe kule",2200],
 					["prpl_6Rnd_12Gauge_Slug","Gumowe kule",20],
 					["SmokeShellYellow","Gaz lzawiacy",300]
