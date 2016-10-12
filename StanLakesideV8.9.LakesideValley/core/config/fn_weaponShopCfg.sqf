@@ -241,7 +241,12 @@ switch(_shop) do
 				_temp =  [
 				["RH_Hk416",nil,2000],
 				["RH_Hk416s",nil,2000],
+				["RH_qdss_nt4",nil,50],
 				["RH_30Rnd_556x45_M855A1",nil,50],
+				["RH_30Rnd_556x45_Mk318",nil,50],
+				["hlc_rifle_Bushmaster300",nil,5000],
+				["29rnd_300BLK_STANAG",nil,50],
+				["hlc_muzzle_300blk_KAC",nil,50],
 				["KPFS_G36A4",nil,3500],
 				["KPFS_30Rnd_556x45_G36",nil,50],
 				["franchi",nil,2500],
@@ -258,6 +263,7 @@ switch(_shop) do
 				["optic_MRCO",nil,500],
 				["optic_ACO_grn",nil,250],
 				["optic_Hamr",nil,500],
+				["RH_ta31rmr",nil,50],
 				["RH_compm4s",nil,500],
 				["Rangefinder","Dalmierz SERT",500]
 				];
@@ -380,7 +386,7 @@ switch(_shop) do
 							["RH_eotexps3_tan",nil,10],
 							["RH_t1_tan",nil,10],
 							["RH_reflex",nil,10],
-			                		["RH_M6X",nil,4500]
+			                		["RH_M6X",nil,10]
 						]
 					];
 				};
@@ -464,6 +470,7 @@ switch(_shop) do
 					["RH_eotexps3",nil,240],
 					["RH_eothhs1",nil,240],
 					["optic_Hamr",nil,240],
+					["RH_ta31rmr",nil,50],
 					["RH_t1",nil,240],
 					["RH_reflex",nil,240],
 					["RH_barska_rds",nil,240],
@@ -506,7 +513,7 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 6) then {
 				_temp =  [
-                    ["HandGrenade_Stone","Flashbang",300],
+                    			["HandGrenade_Stone","Flashbang",300],
 					["hlc_rifle_Bushmaster300",nil,5000],
 					["29rnd_300BLK_STANAG",nil,50],
 					["hlc_muzzle_300blk_KAC",nil,50]			
@@ -533,7 +540,7 @@ switch(_shop) do
 					["RH_compM2",nil,25],
 					["RH_compM2l",nil,25],
 					["RH_demz",nil,1500],
-				    ["RH_M6X",nil,1500],
+				    	["RH_M6X",nil,1500],
 					["RH_leu_mk4",nil,500]
 				];
 				{
