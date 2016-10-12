@@ -97,6 +97,7 @@ switch (_filter) do
 			["kif_swat_vest","Police SWAT Vest",15],
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],
 			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
+			["kif_sert_vest","Police SERT Vest",15],
 			["kif_sert_vest_moro","Police Sert MORO Vest",15]
 		];
 	};

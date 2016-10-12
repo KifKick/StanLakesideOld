@@ -1057,6 +1057,8 @@ switch (_shop) do
 			["cg_mercedes_sprinter_pol_base_reg",50000],
 			["ivory_isf_pd",250000],
 			["ivory_m3_pd",250000],
+			["ivory_m3_pd_60",250000],
+			["ivory_m3_pd_61",250000],
 			["ivory_wrx_pd",250000],
 			["A3L_TahoeFPBLBPD",250000],
 				//Edward
@@ -1065,6 +1067,7 @@ switch (_shop) do
 			["charger_pd_skinned",250000],
 			["bv_caressa_gt_cop_patrol",250000],
 			["bv_458_cop_patrol",250000],
+			["ivory_wrx_sert_66",250000],
 				//David
 			["A3L_GMC_Van_Swat",100000],
 			["cg_h2_sert",100000],
