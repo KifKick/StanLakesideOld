@@ -3,7 +3,7 @@ Podglad misji serwera stanlakeside.pl
 
 Misja stworzona przez **Tonic**, edytowana przez **A3L** oraz **CG**
 
-Dalsza edycja: **Katekarin** oraz **KifKick**
+Dalsza edycja: **Katekarin**, **Kruk** oraz **KifKick**
 
 <p align="center">
     <a href="https://travis-ci.org/Katekarin/StanLakeside">
