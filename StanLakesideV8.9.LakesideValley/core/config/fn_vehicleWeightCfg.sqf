@@ -36,94 +36,94 @@ switch (_className) do
 
 	//case "cg_rv_camper": {190}; 
 
-	case "critgamin_vangmcc_civ": {100};
-	case "critgamin_vangmcc_civ_noir": {100};
-	case "critgamin_vangmcc_civ_bleufonce": {100};
-	case "critgamin_vangmcc_civ_bleu": {100};
-	case "critgamin_vangmcc_civ_vert": {100};
-	case "critgamin_vangmcc_civ_rouge": {100};
-	case "critgamin_vangmcc_civ_jaune": {100};
-	case "critgamin_vangmcc_civ_rose": {100};
-	case "critgamin_vangmcc_civ_grise": {100};
-	case "critgamin_vangmcc_civ_violet": {100};
-	case "critgamin_vangmcc_civ_orange": {100};
+	case "critgamin_vangmcc_civ": {115};
+	case "critgamin_vangmcc_civ_noir": {115};
+	case "critgamin_vangmcc_civ_bleufonce": {115};
+	case "critgamin_vangmcc_civ_bleu": {115};
+	case "critgamin_vangmcc_civ_vert": {115};
+	case "critgamin_vangmcc_civ_rouge": {115};
+	case "critgamin_vangmcc_civ_jaune": {115};
+	case "critgamin_vangmcc_civ_rose": {115};
+	case "critgamin_vangmcc_civ_grise": {115};
+	case "critgamin_vangmcc_civ_violet": {115};
+	case "critgamin_vangmcc_civ_orange": {115};
 
-	case "cg_raptor_truck_noir": {200};
-	case "cg_raptor_truck_violet": {200};
-	case "cg_raptor_truck_rose": {200};
-	case "cg_raptor_truck_orange": {200};
-	case "cg_raptor_truck_grise": {200};
-	case "cg_raptor_truck_vert": {200};
-	case "cg_raptor_truck_bleufonce": {200};
-	case "cg_raptor_truck_bleu": {200};
-	case "cg_raptor_truck_white": {200};
-	case "cg_raptor_truck_jaune": {200};
-	case "cg_raptor_truck_rogue": {200};
+	case "cg_raptor_truck_noir": {100};
+	case "cg_raptor_truck_violet": {100};
+	case "cg_raptor_truck_rose": {100};
+	case "cg_raptor_truck_orange": {100};
+	case "cg_raptor_truck_grise": {100};
+	case "cg_raptor_truck_vert": {100};
+	case "cg_raptor_truck_bleufonce": {100};
+	case "cg_raptor_truck_bleu": {100};
+	case "cg_raptor_truck_white": {100};
+	case "cg_raptor_truck_jaune": {100};
+	case "cg_raptor_truck_rogue": {100};
 
-	case "cg_bowler_offroad_noir": {150};
-	case "cg_bowler_offroad_violet": {150};
-	case "cg_bowler_offroad_rose": {150};
-	case "cg_bowler_offroad_orange": {150};
-	case "cg_bowler_offroad_grise": {150};
-	case "cg_bowler_offroad_vert": {150};
-	case "cg_bowler_offroad_bleufonce": {150};
-	case "cg_bowler_offroad_bleu": {150};
-	case "cg_bowler_offroad_white": {150};
-	case "cg_bowler_offroad_jaune": {150};
-	case "cg_bowler_offroad_rogue": {150};
-
-
-	case "shounka_avalanche_bleufonce": {200};
-	case "shounka_avalanche_grise": {200};
-	case "shounka_avalanche_jaune": {200};
-	case "shounka_avalanche_noir": {200};
-	case "shounka_avalanche_orange": {200};
-	case "shounka_avalanche_rose": {200};
-	case "shounka_avalanche_rouge": {200};
-	case "shounka_avalanche_violet": {200};
+	case "cg_bowler_offroad_noir": {100};
+	case "cg_bowler_offroad_violet": {100};
+	case "cg_bowler_offroad_rose": {100};
+	case "cg_bowler_offroad_orange": {100};
+	case "cg_bowler_offroad_grise": {100};
+	case "cg_bowler_offroad_vert": {100};
+	case "cg_bowler_offroad_bleufonce": {100};
+	case "cg_bowler_offroad_bleu": {100};
+	case "cg_bowler_offroad_white": {100};
+	case "cg_bowler_offroad_jaune": {100};
+	case "cg_bowler_offroad_rogue": {100};
 
 
-	case "cg_daf_xf_euro6_noir": {300};
-	case "cg_daf_xf_euro6_violet": {300};
-	case "cg_daf_xf_euro6_rose": {300};
-	case "cg_daf_xf_euro6_orange": {300};
-	case "cg_daf_xf_euro6_grise": {300};
-	case "cg_daf_xf_euro6_vert": {300};
-	case "cg_daf_xf_euro6_bleufonce": {300};
-	case "cg_daf_xf_euro6_bleu": {300};
-	case "cg_daf_xf_euro6_white": {300};
-	case "cg_daf_xf_euro6_jaune": {300};
-	case "cg_daf_xf_euro6_rouge": {300};
+	case "shounka_avalanche_bleufonce": {110};
+	case "shounka_avalanche_grise": {110};
+	case "shounka_avalanche_jaune": {110};
+	case "shounka_avalanche_noir": {110};
+	case "shounka_avalanche_orange": {110};
+	case "shounka_avalanche_rose": {110};
+	case "shounka_avalanche_rouge": {110};
+	case "shounka_avalanche_violet": {110};
+
+
+	case "cg_daf_xf_euro6_noir": {400};
+	case "cg_daf_xf_euro6_violet": {400};
+	case "cg_daf_xf_euro6_rose": {400};
+	case "cg_daf_xf_euro6_orange": {400};
+	case "cg_daf_xf_euro6_grise": {400};
+	case "cg_daf_xf_euro6_vert": {400};
+	case "cg_daf_xf_euro6_bleufonce": {400};
+	case "cg_daf_xf_euro6_bleu": {400};
+	case "cg_daf_xf_euro6_white": {400};
+	case "cg_daf_xf_euro6_jaune": {400};
+	case "cg_daf_xf_euro6_rouge": {400};
 	
-	case "Jonzie_Transit": {150};
-	case "Jonzie_Flat_Bed": {200};
-	case "Jonzie_Log_Truck": {200};
+	case "Jonzie_Transit": {140};
+	case "Jonzie_Flat_Bed": {250};
+	case "Jonzie_Log_Truck": {250};
 	case "Jonzie_Box_Truck": {300};
 	case "Jonzie_Tanker_Truck": {300};
 
-	case "cg_renault_magnum_truck_f_noir": {500};
-	case "cg_renault_magnum_truck_f_violet": {500};
-	case "cg_renault_magnum_truck_f_rose": {500};
-	case "cg_renault_magnum_truck_f_orange": {500};
-	case "cg_renault_magnum_truck_f_grise": {500};
-	case "cg_renault_magnum_truck_f_vert": {500};
-	case "cg_renault_magnum_truck_f_bleufonce": {500};
-	case "cg_renault_magnum_truck_f_white": {500};
-	case "cg_renault_magnum_truck_f_jaune": {500};
-	case "cg_renault_magnum_truck_f_rouge": {500};
+	case "cg_renault_magnum_truck_f_noir": {400};
+	case "cg_renault_magnum_truck_f_violet": {400};
+	case "cg_renault_magnum_truck_f_rose": {400};
+	case "cg_renault_magnum_truck_f_orange": {400};
+	case "cg_renault_magnum_truck_f_grise": {400};
+	case "cg_renault_magnum_truck_f_vert": {400};
+	case "cg_renault_magnum_truck_f_bleufonce": {400};
+	case "cg_renault_magnum_truck_f_white": {400};
+	case "cg_renault_magnum_truck_f_jaune": {400};
+	case "cg_renault_magnum_truck_f_rouge": {400};
 
 
 
-	case "shounka_ivceco_bleufonce": {550};
-	case "shounka_ivceco_grise": {550};
-	case "shounka_ivceco_jaune": {550};
-	case "shounka_ivceco_noir": {550};
-	case "shounka_ivceco_orange": {550};
-	case "shounka_ivceco_rose": {550};
-	case "shounka_ivceco_rouge": {550};
-	case "shounka_ivceco_violet": {550};
-	case "C_MSSprinter_01_F": {190};
-	case "C_MSSprinter_02_F": {300};
+	case "shounka_ivceco_bleufonce": {450};
+	case "shounka_ivceco_grise": {450};
+	case "shounka_ivceco_jaune": {450};
+	case "shounka_ivceco_noir": {450};
+	case "shounka_ivceco_orange": {450};
+	case "shounka_ivceco_rose": {450};
+	case "shounka_ivceco_rouge": {450};
+	case "shounka_ivceco_violet": {450};
+	case "C_MSSprinter_01_F": {180};
+	case "C_MSSprinter_02_F": {230};
 
 
 
@@ -439,14 +439,14 @@ switch (_className) do
 	case "I_G_Van_01_transport_F": {100};
 	case "C_Van_01_box_F": {120};
 
-	case "shounka_nemo_bleufonce": {140};
-	case "shounka_nemo_grise": {140};
-	case "shounka_nemo_jaune": {140};
-	case "shounka_nemo_noir": {140};
-	case "shounka_nemo_orange": {140};
-	case "shounka_nemo_rose": {140};
-	case "shounka_nemo_rouge": {140};
-	case "shounka_nemo_violet": {140};
+	case "shounka_nemo_bleufonce": {110};
+	case "shounka_nemo_grise": {110};
+	case "shounka_nemo_jaune": {110};
+	case "shounka_nemo_noir": {110};
+	case "shounka_nemo_orange": {110};
+	case "shounka_nemo_rose": {110};
+	case "shounka_nemo_rouge": {110};
+	case "shounka_nemo_violet": {110};
 
 	case "C_Boat_Civil_01_F": {85};
 	case "C_Boat_Civil_01_police_F": {85};
