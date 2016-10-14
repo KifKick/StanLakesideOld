@@ -188,7 +188,7 @@ switch (_filter) do
 			["TRYK_U_B_BLOD_T",nil,550],
 			["TRYK_U_B_BLKBLK_R_CombatUniform",nil,550],
 			["TRYK_U_B_PCUHsW3",nil,550],
-			["TRYK_U_B_PCUHsW3nh",nil,550],
+			["TRYK_U_B_PCUHsW3nh",nil,550]
 */
 
 
@@ -316,10 +316,10 @@ switch (_filter) do
 			//Belts
 			["TRYK_B_Belt_AOR2",nil,300],
 			["TRYK_B_Belt_CYT",nil,300],
-			["TRYK_B_Belt_GR",nil,300]
+			["TRYK_B_Belt_GR",nil,300],
 
 			["A3L_Jungleciv","Moro Plecak",2],
-			["A3L_Browngreyciv","Moro brown plecak",2],
+			["A3L_Browngreyciv","Moro brown plecak",2]
 
 		];
 	};

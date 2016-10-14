@@ -23,7 +23,7 @@ switch (_shop) do
 			["ivory_isf",1300000],
 			["ivory_m3",18950000],
 			["ivory_m3_gts",2650000],
-			["ivory_gt500",800000],
+			["ivory_gt500",1800000],
 			["shounka_f430_spider_bleufonce",3500000],
 			["ivory_wrx",2850000],
 			["ivory_lp560",3130000],
@@ -989,7 +989,7 @@ switch (_shop) do
 			["Orel_Master",320000],
 			["Orel_Rangoo",220000],
 			
-			["nopixel_garbagetruck",750000],
+			["nopixel_garbagetruck",750000]
 		];
 	};
 	case "reb_car":
@@ -1000,7 +1000,7 @@ switch (_shop) do
 			["I_G_Van_01_fuel_F",140000],
 			["B_Heli_Light_01_F",2600000],
 			["B_G_Offroad_01_F",265000],
-			["shounka_monsteur_bleufonce",3500000],
+			["shounka_monsteur_bleufonce",3500000]
 		];
 
 		if(license_civ_rebel) then

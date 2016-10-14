@@ -558,7 +558,7 @@ switch (_filter) do
 			["k_cut_8",nil,200],
 			["k_cut_9",nil,200],
 			["k_cut_10",nil,200],
-			["k_cut_11",nil,200],
+			["k_cut_11",nil,200]
 
 		];
 	};
