@@ -17,7 +17,7 @@ if(jail_money_init && _hours > 1) then {
 	_lossMoney = _hours - 1;
 	_lossTotal = cash_in_bank;
 	_lossTotal = _lossTotal * 0.9;
-	["You have been docked 10% of your funds for a 10 year sentence.", false] spawn domsg; 
+	["Za Twoj wyrok odcieto Ci 10% wyroku.", false] spawn domsg; 
 };
 
 life_is_arrested = true;
@@ -28,39 +28,37 @@ removeAllWeapons player;
 	
 if(life_bail_amount < 12751) then {
 	_lowsecjaillocations = [
-	[9295.08,9300.44,0.5143909],
-	[9291.98,9304.81,0.5143909],
-	[9281.43,9302.13,0.6143909],
-	[9283.14,9298.38,0.6143909],
-	[9289.01,9310.3,0.5143909]
+	[9181.509,9292.639,0.034],
+	[9179.006,9295.492,0.034],
+	[9176.78,9298,0.034],
+	[9174.438,9300.687,0.034],
+	[9172.291,9306.136,0.034]
 	];
 	_randomer = floor random (count _lowsecjaillocations);
 	_jailpos = _lowsecjaillocations select _randomer;
 	player setPos _jailpos;
-	["You have been sent to County Jail.", false] spawn domsg;
+	["Zostales wyslany do wiezienia.", false] spawn domsg;
 } else {
 	_jaillocations = [
-	[9631.38,10079.4,0.00143909],
-	[9632.74,10082.7,0.00143909],
-	[9634.19,10085.7,0.00143909],
-	[9635.92,10089.3,0.00143909],
-	[9637.38,10092.5,0.00143909],
-	[9638.73,10095.5,0.00143909],
-	[9640.38,10098.7,0.00143909],
-	[9641.92,10102.1,0.00143909],
-	[9614.22,10087.1,0.00143909],
-	[9616.13,10089.7,0.00143909],
-	[9617.63,10093.1,0.00144005],
-	[9619.44,10096.3,0.00143909],
-	[9620.98,10099.4,0.00144005],
-	[9622.66,10102.4,0.00143909],
-	[9624.31,10105.4,0.00143909],
-	[9625.79,10108.9,0.00143909]
+	[9181.509,9292.639,3.197],
+	[9179.006,9295.492,3.197],
+	[9176.78,9298,3.197],
+	[9174.438,9300.687,3.197],
+	[9172.291,9306.136,3.197],
+	[9167.649,9308.791,3.197],
+	[9165.442,9311.649,3.197],
+	[9194.919,9304.903,3.197],
+	[9192.57,9304.903,3.197],
+	[9190.273,9304.903,3.197],
+	[9188.011,9304.903,3.197],
+	[9185.773,9304.903,3.197],
+	[9183.379,9304.903,3.197],
+	[9178.718,9304.903,3.197]
 	];
 	_randomer = floor random (count _jaillocations);
 	_jailpos = _jaillocations select _randomer;
 	player setPos _jailpos;
-	[format["Your bail is set at: %1", life_bail_amount], false] spawn domsg;
+	[format["Twoja kaucja wynosi: %1", life_bail_amount], false] spawn domsg;
 };
 
 uiSleep 2;
