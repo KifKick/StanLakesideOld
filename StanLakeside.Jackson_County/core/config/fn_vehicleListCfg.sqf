@@ -1,4 +1,4 @@
-<<<<<<< HEAD:StanLakeside.Jackson_County/core/config/fn_vehicleListCfg.sqf
+
 #include <macro.h>
 /*
 	File:
@@ -4036,4 +4036,4 @@ switch (_shop) do
 };
 
 _return;
->>>>>>> origin/beta:StanLakesideV8.9.LakesideValley/core/config/fn_vehicleListCfg.sqf
+
