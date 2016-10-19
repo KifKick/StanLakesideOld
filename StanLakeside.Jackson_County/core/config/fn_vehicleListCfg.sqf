@@ -17,7 +17,6 @@ switch (_shop) do
 		_return = 
 		[
 			["ivory_supra",1750000],
-			["ivory_wrx_topsecret",1750000],
 			["ivory_isf",1300000],
 			["ivory_m3",18950000],
 			/*["ivory_m3_gts",2650000],*/
