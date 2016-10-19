@@ -1,5 +1,5 @@
-
-CHBN_adjustBrightness = 275;
+[] execVM "A3L_Stuff\inithud.sqf";
+cutRsc ["a3lhud", "PLAIN"];
 
 [] spawn  {
 	while{true} do
