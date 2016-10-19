@@ -25,7 +25,7 @@ hud_fnc_loop =
 	if(phone_s_2) exitwith {};
 	_ui = call hud_fnc_ui_check;
 
-	_fps = _ui displayCtrl 23515;
+	/*_fps = _ui displayCtrl 23515;
     _fps ctrlSetText format["FPS: %1", round diag_fps];
 
 	_statusbar = _ui displayCtrl 23520;
@@ -188,7 +188,7 @@ hud_fnc_loop =
 			_message = "";
 			_mydrink ctrlSetStructuredText parseText format["%1",_message];
 		};
-		_mydrink ctrlCommit 0;
+		_mydrink ctrlCommit 0; */
 
 
 

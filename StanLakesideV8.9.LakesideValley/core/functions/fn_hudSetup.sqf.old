@@ -5,6 +5,7 @@ cg hud setup
 disableSerialization;
 if(phone_s_2) exitwith {};
 
+
 2 cutRsc ["playerHUD","PLAIN"];
 
 [] call life_fnc_hudUpdate;
@@ -17,3 +18,4 @@ while{update_running} do {
 	[] spawn hud_fnc_loop;
 	sleep 1;
 };
+
