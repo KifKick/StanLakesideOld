@@ -16,10 +16,7 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["shounka_transam_noir",130000],
-			["IVORY_PRIUS",125000],
 			["ivory_supra",1750000],
-			["ivory_supra_tuned",2800000],
 			["ivory_isf",1300000],
 			["ivory_m3",18950000],
 			["ivory_m3_gts",2650000],
@@ -28,7 +25,6 @@ switch (_shop) do
 			["ivory_wrx",2850000],
 			["ivory_lp560",3130000],
 			["IVORY_R8",830000],
-			["IVORY_R8SPYDER",730000],
 			["IVORY_REV",1690000],	
 			["ivory_lfa",4390000],
 			["A3L_BMW135Sport1",2150000],
@@ -127,7 +123,7 @@ switch (_shop) do
 		];
 	};
 	
-	case "donator1": {
+	/*case "donator1": {
 		_return =
 		[
 			["C_Offroad_02_unarmed_F",1500000],
@@ -204,7 +200,7 @@ switch (_shop) do
 			["GeK_S60_blue",500000],
 			["cg_renault_magnum_truck_f_noir",359000]
 		];
-	};
+	};*/
 	
 	case "exo_car":
 	{
@@ -545,7 +541,6 @@ switch (_shop) do
 			["ADM_1964_Impala",150000],
 			["ADM_1969_Camaro",300000],
 			["ADM_1969_Charger",450000],
-			["ADM_FORD_F100",500000],
 			["A3L_Camaro",195000]
 		];
 	};

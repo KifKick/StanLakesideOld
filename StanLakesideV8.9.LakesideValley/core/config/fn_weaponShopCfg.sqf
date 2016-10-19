@@ -49,7 +49,7 @@ switch(_shop) do
 					["Narzedzia O.S.K.P",
 						[
 							["A3L_Shovel",nil,50],
-			                		["A3L_ChainSaw",nil,100],
+			                ["A3L_ChainSaw",nil,100],
 							["cl_bigredkey",nil,100],
 							["A3L_JackHammer",nil,100],
 							["A3L_Spanner",nil,50],
@@ -117,39 +117,39 @@ switch(_shop) do
 				{
 					["Podstawowe wyposazenie Policji",								
 						[
-							["cg_atf_bandage_i","Bandaz",1],
-							["CG_battery_i","Bateria",5],
-							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",250],
-							["CG_ATF_Donut_Box_i","Donuty Na Wynos",250],
+							["cg_atf_bandage_i","Bandaz",10],
+							["CG_battery_i","Bateria",30],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",2500],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",2500],
 							["nonlethal_swing", "Slepa amunicja",1],
 							["sharp_swing","Ostra amunicja",1],
-							["CG_Pro_Item_i","GoPro",350],
-							["CG_ATF_Handcuffs_i","Kajdanki",10],
+							["CG_Pro_Item_i","GoPro",550],
+							["CG_ATF_Handcuffs_i","Kajdanki",50],
 							["cg_torch","Latarka",250], 
 							["CG_Spikes_Collapsed","Kolczatka",250], 
 							["cg_torchbattery",nil,250], 
-							["gign_shield","Tarcza",10],
-							["CG_BATON","Tonfa",10],
-							["CG_TELBAT","Palka teleskopowa",10],
-							["Mattaust_Keys","Klucze do Komendy",10],
+							["gign_shield","Tarcza",2500],
+							["CG_BATON","Tonfa",100],
+							["CG_TELBAT","Palka teleskopowa",100],
+							["Mattaust_Keys","Klucze do Komendy",1],
 							["acc_flashlight","ACC Flashlight",10],
 							["RH_M6X","RH Flashlight",10],
 							["A3L_M4Flashlight","M4A3 Flashlight",10],
-							["cl3_fingerprintscanner","Skaner odciskow palcow",1],
-							["cl_plastic_shield","Tarcza plastikowa",1],
-							["cl3_taserM26_Yellow","Paralizator",1],
-							["cl3_taserm26mag_mpx","Kartridz do Paralizatora",1],
-							["Radar_Gun","Suszarka",25],								
-							["ToolKit",nil,850], 
+							["cl3_fingerprintscanner","Skaner odciskow palcow",1000],
+							["cl_plastic_shield","Tarcza plastikowa",750],
+							["cl3_taserM26_Yellow","Paralizator",500],
+							["cl3_taserm26mag_mpx","Kartridz do Paralizatora",50],
+							["Radar_Gun","Suszarka",250],								
+							["ToolKit",nil,2500], 
 							["ItemCompass",nil,50],  
 							["ItemWatch",nil,10],                                          
 							["Chemlight_red",nil,20],
 							["Chemlight_yellow",nil,20],
 							["Chemlight_green",nil,20],
 							["Chemlight_blue",nil,20],
-							["Binocular",nil,15],
-							["ItemGPS",nil,10],  
-							["tf_anprc152",nil,10]
+							["Binocular",nil,100],
+							["ItemGPS",nil,100],  
+							["tf_anprc152",nil,100]
 						]
 					];
 				};
@@ -165,21 +165,12 @@ switch(_shop) do
 				{
 					["Zbrojownia i Sklep AIAD",								
 						[
-							["B_UavTerminal",nil,50],
-							["SG553",nil,1500],
-							["SG553_CQB",nil,1500],
-							["30Rnd_556x45_Stanag",nil,50],
-							["SMG_02_F",nil,750],
-							["30Rnd_9x21_Mag_SMG_02",nil,25],
-							["hlc_rifle_auga3_b",nil,2000],
-							["hlc_30Rnd_556x45_B_AUG",nil,50],
-							["RH_M16A4",nil,5000],
-							["RH_30Rnd_556x45_M855A1",nil,125],
-							["hlc_smg_mp5a2",nil,650],
-							["hlc_30Rnd_9x19_B_MP5",nil,15],
-							["optic_MRCO",nil,500],
+							["B_UavTerminal",nil,5000],
+							["SMG_02_F",nil,7500],
+							["30Rnd_9x21_Mag_SMG_02",nil,150],
+							["hlc_smg_mp5a2",nil,6500],
+							["hlc_30Rnd_9x19_B_MP5",nil,150],
 							["optic_ACO_grn",nil,250],
-							["optic_Hamr",nil,500],
 							["RH_compm4s",nil,500],
 							["RH_python",nil,1000],
 							["RH_6Rnd_357_Mag",nil,50],
@@ -206,28 +197,14 @@ switch(_shop) do
 				{
 					["Zbrojownia SERT",								
 						[
-							["RH_Hk416",nil,2000],
-							["RH_Hk416s",nil,2000],
-							["RH_qdss_nt4",nil,50],
-							["RH_30Rnd_556x45_M855A1",nil,50],
-							["RH_30Rnd_556x45_Mk318",nil,50],
-							["hlc_rifle_Bushmaster300",nil,5000],
-							["29rnd_300BLK_STANAG",nil,50],
-							["hlc_muzzle_300blk_KAC",nil,50],
 							["KPFS_G36A4",nil,3500],
 							["KPFS_30Rnd_556x45_G36",nil,50],
-							["franchi",nil,2500],
-							["6Rnd_12Gauge_Pellets",nil,50],
-							["cl3_crossbow",nil,5000],
-							["4Rnd_crossbow_mag",nil,50],
 							["AG_MP9_sidearm",nil,1000],
 							["30Rnd_45ACP_Mag_SMG_01",nil,50],
-							["sab_mauser96_handgun",nil,850],
-							["sab_wwiplanes_6rnd_mauser_mag",nil,5],
 							["hlc_smg_mp5k",nil,1000],
 							["hlc_30Rnd_9x19_B_MP5",nil,50],
-							["RH_leu_mk4",nil,500],
-							["optic_MRCO",nil,500],
+							["RH_M4_ris_m",nil,5000],
+							["RH_30Rnd_556x45_Mk262",nil,500],
 							["optic_ACO_grn",nil,250],
 							["optic_Hamr",nil,500],
 							["RH_ta31rmr",nil,50],
@@ -258,8 +235,8 @@ switch(_shop) do
 							["optic_Yorris",nil,10],
 							["RH_fn57",nil,10],
 							["RH_20Rnd_57x28_FN",nil,10],
-					        	["RH_vp70",nil,10],
-				           		["RH_18Rnd_9x19_VP",nil,10],
+					        ["RH_vp70",nil,10],
+				           	["RH_18Rnd_9x19_VP",nil,10],
 							["RH_usp",nil,10],
 							["RH_12Rnd_45cal_usp",nil,10],
 							["RH_aacusp",nil,10],
@@ -287,8 +264,8 @@ switch(_shop) do
 							["RH_suppr9",nil,10],
 							["RH_pmsd",nil,10],
 							["RH_vp70stock",nil,10],
-					        	["RH_gsh18",nil,10],
-				           		["RH_18Rnd_9x19_gsh",nil,10],
+					        ["RH_gsh18",nil,10],
+				           	["RH_18Rnd_9x19_gsh",nil,10],
 							["SMG_01_F",nil,10],
 							["30Rnd_45ACP_Mag_SMG_01",nil,10],
 							["SMG_02_F",nil,10],
@@ -342,7 +319,7 @@ switch(_shop) do
 							["RH_eotexps3_tan",nil,10],
 							["RH_t1_tan",nil,10],
 							["RH_reflex",nil,10],
-			                		["RH_M6X",nil,10]
+			                ["RH_M6X",nil,10]
 						]
 					];
 				};
@@ -376,9 +353,7 @@ switch(_shop) do
 				_temp =  [
 					["RH_uspm",nil,240],
 					["RH_16Rnd_40cal_usp",nil,5],
-					["RH_SFM952V",nil,10],
-					["RH_M4_ris_m",nil,5000],
-					["RH_30Rnd_556x45_Mk262",nil,500]
+					["RH_SFM952V",nil,10]
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -394,20 +369,6 @@ switch(_shop) do
 					["RH_7Rnd_45cal_m1911",nil,240],
 					["RH_fn57",nil,240],
 					["RH_20Rnd_57x28_FN",nil,240],
-					["SMG_02_F",nil,3000],
-					["SMG_01_F",nil,3000],
-					["hgun_PDW2000_F",nil,3000],
-					["RH_sbr9",nil,3000],
-					["30Rnd_9x21_Mag",nil,240],
-					["30Rnd_45ACP_Mag_SMG_01",nil,240],
-					["hlc_smg_mp5a2",nil,3000],
-					["hlc_smg_mp5a4",nil,3000],
-					["hlc_smg_mp510",nil,3000],
-					["hlc_30Rnd_10mm_B_MP5",nil,240],
-					["hlc_30Rnd_10mm_JHP_MP5",nil,240],
-					["hlc_30Rnd_9x19_B_MP5",nil,240],
-					["hlc_30Rnd_9x19_GD_MP5",nil,240],
-					["hlc_30Rnd_9x19_SD_MP5",nil,240],
 					["RH_osprey",nil,3000],
 					["RH_M6X",nil,240],
 					["RH_X2",nil,240],
@@ -444,6 +405,20 @@ switch(_shop) do
 					["hgun_Pistol_heavy_02_F",nil,240],
 					["6Rnd_45ACP_Cylinder",nil,240],
 					["RH_mateba",nil,240],
+					["SMG_02_F",nil,3000],
+					["SMG_01_F",nil,3000],
+					["hgun_PDW2000_F",nil,3000],
+					["RH_sbr9",nil,3000],
+					["30Rnd_9x21_Mag",nil,240],
+					["30Rnd_45ACP_Mag_SMG_01",nil,240],
+					["hlc_smg_mp5a2",nil,3000],
+					["hlc_smg_mp5a4",nil,3000],
+					["hlc_smg_mp510",nil,3000],
+					["hlc_30Rnd_10mm_B_MP5",nil,240],
+					["hlc_30Rnd_10mm_JHP_MP5",nil,240],
+					["hlc_30Rnd_9x19_B_MP5",nil,240],
+					["hlc_30Rnd_9x19_GD_MP5",nil,240],
+					["hlc_30Rnd_9x19_SD_MP5",nil,240],
 					["RH_6Rnd_44_Mag",nil,240],
 					["RH_mp412",nil,240],
 					["RH_python",nil,240],
@@ -452,16 +427,11 @@ switch(_shop) do
 					["RH_6Rnd_454_Mag",nil,240],
 					["RH_ttracker",nil,240],
 					["RH_6Rnd_45ACP_Mag",nil,240],
-					["RH_Deaglem",nil,240],
-					["RH_demz",nil,240],
-					["RH_Deflash",nil,240],
-					["RH_7Rnd_50_AE",nil,240],
 					["hgun_007_SW_M10",nil,240],
 					["hgun_007_SW_M10_special",nil,240],
 					["hgun_007_SW_M10_gold",nil,240],
 					["prpl_benelli_14_pgs_rail","Shotgun na gumowe kule",2200],
-					["prpl_6Rnd_12Gauge_Slug","Gumowe kule",20],
-					["SmokeShellYellow","Gaz lzawiacy",300]
+					["prpl_6Rnd_12Gauge_Slug","Gumowe kule",20]
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -469,10 +439,8 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 6) then {
 				_temp =  [
-                    			["HandGrenade_Stone","Flashbang",300],
-					["hlc_rifle_Bushmaster300",nil,5000],
-					["29rnd_300BLK_STANAG",nil,50],
-					["hlc_muzzle_300blk_KAC",nil,50]			
+                    ["HandGrenade_Stone","Flashbang",300],
+					["SmokeShellYellow","Gaz lzawiacy",300]					
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -482,6 +450,10 @@ switch(_shop) do
 				_temp =  [
 					["RH_kimber",nil,100],
 					["RH_7Rnd_45cal_m1911",nil,5],
+					["RH_Deaglem",nil,240],
+					["RH_demz",nil,240],
+					["RH_Deflash",nil,240],
+					["RH_7Rnd_50_AE",nil,240],
 					["RH_M4A6",nil,5000],
 					["RH_M16A2",nil,5000],
 					["RH_M16A3",nil,5000],
@@ -496,7 +468,7 @@ switch(_shop) do
 					["RH_compM2",nil,25],
 					["RH_compM2l",nil,25],
 					["RH_demz",nil,1500],
-				    	["RH_M6X",nil,1500],
+				    ["RH_M6X",nil,1500],
 					["RH_leu_mk4",nil,500]
 				];
 				{
@@ -511,8 +483,8 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (rebelshipment getVariable["notCaptured",FALSE]): {"Supplies have been taken by Police..!"};
-				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
+				case (rebelshipment getVariable["notCaptured",FALSE]): {"Dostawa broni zostala zabrana przez Policje!"};
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
 				case (!license_civ_rebel): {"Najpierw pokaz mi ze masz jaja!"};
 				default
 				{
@@ -529,8 +501,8 @@ switch(_shop) do
 							["optic_Yorris",nil,2500],
 							["RH_fn57",nil,25500],
 							["RH_20Rnd_57x28_FN",nil,600],
-					        	["RH_vp70",nil,10500],
-				            		["RH_18Rnd_9x19_VP",nil,600],
+					        ["RH_vp70",nil,10500],
+				            ["RH_18Rnd_9x19_VP",nil,600],
 							["RH_usp",nil,25500],
 							["RH_12Rnd_45cal_usp",nil,600],
 							["RH_aacusp",nil,20500],
@@ -558,7 +530,7 @@ switch(_shop) do
 							["RH_suppr9",nil,20500],
 							["RH_pmsd",nil,20500],
 							["RH_vp70stock",nil,2500],
-					     		["RH_gsh18",nil,10500],
+					     	["RH_gsh18",nil,10500],
 							["RH_18Rnd_9x19_gsh",nil,600]
 						]
 					];
@@ -578,7 +550,7 @@ switch(_shop) do
 					["Bronie Dlugie Rebelii",
 						[
 							["SMG_01_F",nil,127500],
-			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
+			                ["30Rnd_45ACP_Mag_SMG_01",nil,750],
 							["SMG_02_F",nil,127500],
 							["RH_sbr9_wdl",nil,127500],
 							["RH_sbr9_tg",nil,127500],
@@ -599,22 +571,10 @@ switch(_shop) do
 							["optic_ACO_grn_smg",nil,2500],
 							["chakFNP90_50rnd_skin1",nil,160500],
 							["chakFNP90_57x28_B_skin1",nil,2250],
-							["hlc_rifle_augpara",nil,160500],
-							["hlc_rifle_auga2para",nil,160500],
-							["hlc_rifle_augpara_t",nil,160500],
-							["hlc_rifle_auga2para_t",nil,160500],
-							["hlc_25Rnd_9x19mm_M882_AUG",nil,750],
-							["hlc_25Rnd_9x19mm_JHP_AUG",nil,750],
 							["hgun_PDW2000_F",nil,117500],
 							["30Rnd_9x21_Mag",nil,750],
 							["RH_sbr9_des",nil,225000],
 							["RH_32Rnd_9mm_M822",nil,750],
-							["ej_Thompson",nil,255500],
-							["ej_ThompsonTactical",nil,260500],
-							["ej_ThompsonTactical2",nil,260500],
-							["Thompsonjhpplus_mag",nil,750],
-							["hlc_rifle_aks74u",nil,275000],
-							["hlc_30Rnd_545x39_B_AK",nil,750],
 							["RH_g18",nil,48000],
 							["RH_33Rnd_9x19_g18",nil,750],
 							["RH_vz61",nil,58000],
@@ -630,7 +590,7 @@ switch(_shop) do
 							["RH_eotexps3_tan",nil,5000],
 							["RH_t1_tan",nil,5000],
 							["RH_reflex",nil,5000],
-			               			["RH_M6X",nil,4500]
+			               	["RH_M6X",nil,4500]
 						]
 					];
 				};
