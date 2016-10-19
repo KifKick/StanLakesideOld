@@ -21,7 +21,6 @@ if(_zone == "HH_1") exitWith {[] spawn life_fnc_hh};
 if(life_spam_my_dick == 1) exitWith {};
 if(vehicle player != player) exitWith {};
 life_spam_my_dick = 1;
-if(_cops < 2) exitWith { hint "Za malo policji aby zbierac (2+)"; }; 
 
 //Get the resource that will be gathered from the zone name...
 if(!isNil "_this" && {count _this != 0}) then {
@@ -52,8 +51,13 @@ if(!isNil "_this" && {count _this != 0}) then {
 		case (_zone in ["meth_1"]): {_gather = "methu"; _val = 1;};
 		case (_zone in ["MDMA_zone_1"]): {_gather = "MDMAu"; _val = 1;};
 		case (_zone in ["SHANK_1"]): {_gather = "shank"; _val = 1;};
+		case (_zone in ["apple_1"]): {_gather = "apple"; _val = 2;};
+		case (_zone in ["peach_1"]): {_gather = "peach"; _val = 2;};
 		default {""};
 	};
+};
+if (_cops < 2 && _zone in ["coke_zone_1_1","coke_zone_1_2","coke_zone_1","meth_1","MDMA_zone_1","SHANK_1"]) exitWith {
+	["Mozesz zbierac dopiero od 2 policjantow na serwerze!", false] spawn domsg;
 };
 if(_exit) exitWith {life_spam_my_dick = 0;};
 _diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
