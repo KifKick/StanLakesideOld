@@ -197,7 +197,7 @@ class appbutton8: RscButtonSilent
 	h = 0.066 * safezoneH;
 	action = "closedialog 0; [] spawn life_fnc_animMenu;";
 };
-class appbutton9: RscButtonSilent
+/*class appbutton9: RscButtonSilent
 {
 	idc = 85708;
 	text = "";
@@ -206,10 +206,10 @@ class appbutton9: RscButtonSilent
 	w = 0.041 * safezoneW;
 	h = 0.066 * safezoneH;
 	action = "closedialog 0;";
-};
+};*/
 
 
-class appbutton10: RscButtonSilent
+/*class appbutton10: RscButtonSilent
 {
 	idc = 85709;
 	text = "";
@@ -229,7 +229,7 @@ class appbutton11: RscButtonSilent
 	w = 0.041 * safezoneW;
 	h = 0.066 * safezoneH;
 	action = "closedialog 0; [] spawn life_fnc_race2;";
-};
+};*/
 
 
 
@@ -454,7 +454,7 @@ class app9: RscPicture
 	h = 0.066 * safezoneH;
 };
 
-class app10: RscPicture
+/*class app10: RscPicture
 {
 	idc = 85462;
 	text = "";
@@ -471,7 +471,7 @@ class app11: RscPicture
 	y = 0.520 * safezoneH + safezoneY;
 	w = 0.041 * safezoneW;
 	h = 0.066 * safezoneH;
-};
+};*/
 
 
 

@@ -218,21 +218,21 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		cash_in_bank = 12000; //Starting Bank Money
+		cash_in_bank = 10000; //Starting Bank Money
 		life_paycheck = 200; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		cash_in_bank = 12000; //Starting Bank Money
+		cash_in_bank = 10000; //Starting Bank Money
 		life_paycheck = 50; //Paycheck Amount
 	};
 	case independent: {
-		cash_in_bank = 12000;
+		cash_in_bank = 10000;
 		life_paycheck = 200;
 	};
 	case east:
 	{
-		cash_in_bank = 12000; //Starting Bank Money
+		cash_in_bank = 10000; //Starting Bank Money
 		life_paycheck = 400; //Paycheck Amount
 	};
 };
@@ -411,6 +411,9 @@ life_licenses =
 	["license_civ_donator2","civ"],
 	["license_civ_donator3","civ"],*/
 	["license_civ_rifle","civ"],
+	["license_cop_aiad","cop"],
+	["license_cop_dtu","cop"],
+	["license_cop_sert","cop"],
 	["license_cop_prokurator","cop"]
 ];
 

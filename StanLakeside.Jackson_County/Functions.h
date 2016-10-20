@@ -83,8 +83,8 @@ class Life_Client_Core
 		class lawyerSignup {};
 		class shank {};
 		class rope {};
-		class race {};
-		class race2 {};		
+		/*class race {};
+		class race2 {};	*/	
 		class takeashit {};
 		class middlefinger {};
 		class punchSystem {};

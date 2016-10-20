@@ -42,3 +42,10 @@
 #include "selectTestDrive.hpp"
 #include "truckColorSelectorUI.hpp"
 #include "emp_menu.hpp"
+
+#include "slot_machine.hpp"
+#include "blackjack.hpp"
+#include "openboard.hpp"
+#include "pickup.hpp"
+
+#include "infiSTAR_AdminMenu.hpp"
