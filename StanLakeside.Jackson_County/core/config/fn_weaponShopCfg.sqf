@@ -274,8 +274,8 @@ switch(_shop) do
 							["RH_sbr9_des",nil,10],
 							["RH_32Rnd_9mm_M822",nil,10],
 							["AG_MP9_sand_peq",nil,10],
-							["AG_MP9_wcam_peq",nil,10],
-							["AG_MP9_digi_peq",nil,10],
+							
+							
 							["AG_MP9_wcam",nil,10],
 							["AG_MP9_digi",nil,10],
 							["AG_MP9_sand",nil,10],
@@ -286,23 +286,23 @@ switch(_shop) do
 							["30Rnd_9x21_Mag",nil,10],
 							["optic_Aco",nil,10],
 							["optic_ACO_grn_smg",nil,10],
-							["chakFNP90_50rnd_skin1",nil,10],
-							["chakFNP90_57x28_B_skin1",nil,10],
-							["hlc_rifle_augpara",nil,10],
-							["hlc_rifle_auga2para",nil,10],
-							["hlc_rifle_augpara_t",nil,10],
-							["hlc_rifle_auga2para_t",nil,10],
-							["hlc_25Rnd_9x19mm_M882_AUG",nil,10],
-							["hlc_25Rnd_9x19mm_JHP_AUG",nil,10],
+							
+							
+							
+							
+							
+							
+							
+							
 							["hgun_PDW2000_F",nil,10],
 							["30Rnd_9x21_Mag",nil,10],
 							["RH_sbr9_des",nil,10],
 							["RH_32Rnd_9mm_M822",nil,10],
-							["ej_Thompson",nil,10],
-							["ej_ThompsonTactical",nil,10],
-							["ej_ThompsonTactical2",nil,10],
-							["Thompsonjhpplus_mag",nil,10],
-							["hlc_rifle_aks74u",nil,10],
+							
+							
+							
+							
+							
 							["hlc_30Rnd_545x39_B_AK",nil,10],
 							["RH_g18",nil,10],
 							["RH_33Rnd_9x19_g18",nil,10],
@@ -461,10 +461,10 @@ switch(_shop) do
 					["RH_M16A6",nil,5000],
 					["RH_mk12mod1",nil,5000],
 					["RH_30Rnd_68x43_FMJ",nil,500],
-					["hlc_rifle_bcmjack",nil,5220],
+
 					["hlc_30rnd_556x45_EPR",nil,520],
 					["muzzle_snds_M",nil,4],
-					["hlc_rifle_honeybadger",nil,25],
+
 					["RH_compM2",nil,25],
 					["RH_compM2l",nil,25],
 					["RH_demz",nil,1500],
