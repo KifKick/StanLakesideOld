@@ -99,8 +99,8 @@ _Btn14 buttonSetAction "closeDialog 0; [player,""#(argb,8,8,3)color(0.95,0.6,0.1
 _Btn15 ctrlSetText "Off White";
 _Btn15 buttonSetAction "closeDialog 0; [player,""#(argb,8,8,3)color(0.81,0.91,0.91,1.0,CO)""] spawn life_fnc_sprayCarFinish;";
 
-_Btn16 ctrlSetText "Gray";
-_Btn16 buttonSetAction "closeDialog 0; [player,""#(argb,8,8,3)color(0.71,0.71,0.71,1.0,CO)""] spawn life_fnc_sprayCarFinish;";
+_Btn16 ctrlSetText "Black";
+_Btn16 buttonSetAction "closeDialog 0; [player,""#(argb,8,8,3)color(0,0,0,1.0,CO)""] spawn life_fnc_sprayCarFinish;";
 
 _Btn17 ctrlSetText "Dark Gray";
 _Btn17 buttonSetAction "closeDialog 0; [player,""#(argb,8,8,3)color(0.31,0.31,0.31,1.0,CO)""] spawn life_fnc_sprayCarFinish;";
