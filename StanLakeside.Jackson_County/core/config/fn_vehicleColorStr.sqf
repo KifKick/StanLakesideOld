@@ -312,6 +312,160 @@ switch (_vehicle) do
 			case 20: {_color = "Orange";};
 		};
 	};
+	case "ivory_r34" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_rs4" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_190e" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_e36" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_elise" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_evox" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_f1" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_gti" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_mp4" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_suburban" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
+	case "ivory_veyron" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Black";};
+			case 1: {_color = "Gold";};
+			case 2: {_color = "Gray";};
+			case 3: {_color = "Green";};
+			case 4: {_color = "Pink";};
+			case 5: {_color = "Purple";};
+			case 6: {_color = "Red";};
+			case 7: {_color = "White";};
+		};
+	};
 	case "ivory_lfa" :
 	{
 		switch (_index) do
