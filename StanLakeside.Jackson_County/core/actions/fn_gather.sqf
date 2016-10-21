@@ -57,7 +57,7 @@ if(!isNil "_this" && {count _this != 0}) then {
 	};
 };
 if (_cops < 2 && _zone in ["coke_zone_1_1","coke_zone_1_2","coke_zone_1","meth_1","MDMA_zone_1","SHANK_1"]) exitWith {
-	["Mozesz zbierac dopiero od 2 policjantow na serwerze!", false] spawn domsg;
+	["Mozesz zbierac dopiero od 2 policjantow na serwerze!", false] spawn domsg; life_action_gathering = false; life_spam_my_dick = 0; playsound "endbeep";
 };
 if(_exit) exitWith {life_spam_my_dick = 0;};
 _diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
