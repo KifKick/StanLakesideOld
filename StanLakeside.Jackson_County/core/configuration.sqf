@@ -474,7 +474,7 @@ sell_array =
 	["redgull",1],
 	["peach",1],
 	["diamond",35],
-	["diamondc",340],
+	["diamondc",290],
 	["iron_r",230],
 	["copper_r",190],
 	["salt_r",165],
@@ -503,7 +503,7 @@ sell_array =
 	["raw sheep meat",50],
 	["raw rabbit",70],
 	["spikeStrip",12],
-	["cement",320],
+	["cement",270],
 	["goldbar",9500], 
 	//Deo Additions
 	["zoobeer",1], 
