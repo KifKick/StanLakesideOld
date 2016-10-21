@@ -18,7 +18,7 @@ switch (_filter) do
 	case 0:
 	{
 		[
-/*
+
 			["I_FEM_AAF_long","Female Long",5000],
 			["B_FEM_AAF_Rolled","Female Rolled",5000],
 			["B_FEM_NATO_Rolled","Female Rolled 3",5000],
@@ -189,7 +189,7 @@ switch (_filter) do
 			["TRYK_U_B_BLKBLK_R_CombatUniform",nil,550],
 			["TRYK_U_B_PCUHsW3",nil,550],
 			["TRYK_U_B_PCUHsW3nh",nil,550]
-*/
+
 
 
 		];
