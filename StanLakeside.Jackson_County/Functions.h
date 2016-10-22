@@ -212,6 +212,7 @@ class Life_Client_Core
 		class clothing_kart {};
 		class clothing_oskp {};
 		class clothing_prokurator {};
+		class clothing_rebcop {};
 	};
 	
 	class Special
