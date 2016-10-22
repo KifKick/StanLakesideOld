@@ -119,8 +119,8 @@ switch(_shop) do
 						[
 							["cg_atf_bandage_i","Bandaz",10],
 							["CG_battery_i","Bateria",30],
-							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",2500],
-							["CG_ATF_Donut_Box_i","Donuty Na Wynos",2500],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",200],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",200],
 							["nonlethal_swing", "Slepa amunicja",1],
 							["sharp_swing","Ostra amunicja",1],
 							["CG_Pro_Item_i","GoPro",550],
@@ -140,7 +140,7 @@ switch(_shop) do
 							["cl3_taserM26_Yellow","Paralizator",500],
 							["cl3_taserm26mag_mpx","Kartridz do Paralizatora",50],
 							["Radar_Gun","Suszarka",250],								
-							["ToolKit",nil,2500], 
+							["ToolKit",nil,200], 
 							["ItemCompass",nil,50],  
 							["ItemWatch",nil,10],                                          
 							["Chemlight_red",nil,20],
@@ -197,18 +197,24 @@ switch(_shop) do
 				{
 					["Zbrojownia SERT",								
 						[
-							["KPFS_G36A4",nil,3500],
-							["KPFS_30Rnd_556x45_G36",nil,50],
-							["AG_MP9_sidearm",nil,1000],
-							["30Rnd_45ACP_Mag_SMG_01",nil,50],
-							["hlc_smg_mp5k",nil,1000],
-							["hlc_30Rnd_9x19_B_MP5",nil,50],
-							["RH_M4_ris_m",nil,5000],
-							["RH_30Rnd_556x45_Mk262",nil,500],
-							["optic_ACO_grn",nil,250],
+							["KPFS_G36A4",nil,500],
+							["KPFS_30Rnd_556x45_G36",nil,500],
+							["RH_Hk416c",nil,500],
+							["RH_Hk416s",nil,500],
+							["RH_Hk416",nil,500],
+							["RH_M4_ris_m",nil,500],
+							["RH_30Rnd_556x45_Mk318","Mk318 30Rnd",50],
+							["RH_60Rnd_556x45_Mk318","Mk318 60Rnd",50],
+							["RH_qdss_nt4",nil,500],
+							["AG_MP9_sidearm",nil,500],
+							["30Rnd_45ACP_Mag_SMG_01",nil,500],
+							["hlc_smg_mp5k",nil,500],
+							["hlc_30Rnd_9x19_B_MP5",nil,500],
+							["optic_ACO_grn",nil,500],
 							["optic_Hamr",nil,500],
-							["RH_ta31rmr",nil,50],
+							["RH_ta31rmr",nil,500],
 							["RH_compm4s",nil,500],
+							["RH_gemtech9",Tłumik Glock,500],
 							["Rangefinder","Dalmierz SERT",500]
 						]
 					];
@@ -235,8 +241,8 @@ switch(_shop) do
 							["optic_Yorris",nil,10],
 							["RH_fn57",nil,10],
 							["RH_20Rnd_57x28_FN",nil,10],
-					        ["RH_vp70",nil,10],
-				           	["RH_18Rnd_9x19_VP",nil,10],
+					        	["RH_vp70",nil,10],
+				           		["RH_18Rnd_9x19_VP",nil,10],
 							["RH_usp",nil,10],
 							["RH_12Rnd_45cal_usp",nil,10],
 							["RH_aacusp",nil,10],
@@ -264,8 +270,8 @@ switch(_shop) do
 							["RH_suppr9",nil,10],
 							["RH_pmsd",nil,10],
 							["RH_vp70stock",nil,10],
-					        ["RH_gsh18",nil,10],
-				           	["RH_18Rnd_9x19_gsh",nil,10],
+					        	["RH_gsh18",nil,10],
+				           		["RH_18Rnd_9x19_gsh",nil,10],
 							["SMG_01_F",nil,10],
 							["30Rnd_45ACP_Mag_SMG_01",nil,10],
 							["SMG_02_F",nil,10],
@@ -319,7 +325,7 @@ switch(_shop) do
 							["RH_eotexps3_tan",nil,10],
 							["RH_t1_tan",nil,10],
 							["RH_reflex",nil,10],
-			                ["RH_M6X",nil,10]
+			                		["RH_M6X",nil,10]
 						]
 					];
 				};
@@ -468,7 +474,7 @@ switch(_shop) do
 					["RH_compM2",nil,25],
 					["RH_compM2l",nil,25],
 					["RH_demz",nil,1500],
-				    ["RH_M6X",nil,1500],
+				    	["RH_M6X",nil,1500],
 					["RH_leu_mk4",nil,500]
 				];
 				{
@@ -501,8 +507,8 @@ switch(_shop) do
 							["optic_Yorris",nil,2500],
 							["RH_fn57",nil,25500],
 							["RH_20Rnd_57x28_FN",nil,600],
-					        ["RH_vp70",nil,10500],
-				            ["RH_18Rnd_9x19_VP",nil,600],
+					        	["RH_vp70",nil,10500],
+				            		["RH_18Rnd_9x19_VP",nil,600],
 							["RH_usp",nil,25500],
 							["RH_12Rnd_45cal_usp",nil,600],
 							["RH_aacusp",nil,20500],
@@ -530,7 +536,7 @@ switch(_shop) do
 							["RH_suppr9",nil,20500],
 							["RH_pmsd",nil,20500],
 							["RH_vp70stock",nil,2500],
-					     	["RH_gsh18",nil,10500],
+					     		["RH_gsh18",nil,10500],
 							["RH_18Rnd_9x19_gsh",nil,600]
 						]
 					];
@@ -550,7 +556,7 @@ switch(_shop) do
 					["Bronie Dlugie Rebelii",
 						[
 							["SMG_01_F",nil,127500],
-			                ["30Rnd_45ACP_Mag_SMG_01",nil,750],
+			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
 							["SMG_02_F",nil,127500],
 							["RH_sbr9_wdl",nil,127500],
 							["RH_sbr9_tg",nil,127500],
@@ -590,7 +596,7 @@ switch(_shop) do
 							["RH_eotexps3_tan",nil,5000],
 							["RH_t1_tan",nil,5000],
 							["RH_reflex",nil,5000],
-			               	["RH_M6X",nil,4500]
+			               			["RH_M6X",nil,4500]
 						]
 					];
 				};
