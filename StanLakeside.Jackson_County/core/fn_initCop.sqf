@@ -39,6 +39,7 @@ if(life_is_arrested) then
 } else {
 	jail_money_init = true;
 	[] call life_fnc_spawnMenu;
+	[] execVM "core\welcomecop.sqf";
 	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 };
