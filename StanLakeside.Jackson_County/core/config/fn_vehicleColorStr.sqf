@@ -76,6 +76,186 @@ switch (_vehicle) do
 			case 11: {_color = "Yas Marina Blue";};
 		};
 	};
+	case "ivory_veyron" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_suburban" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_mp4" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_gti" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_f1" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_evox" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_elise" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_e36" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_190e" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_rs4" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
 	case "ivory_isf" :
 	{
 		switch (_index) do
