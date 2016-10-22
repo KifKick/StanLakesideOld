@@ -312,7 +312,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 	
@@ -327,7 +327,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 
@@ -342,7 +342,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 
@@ -357,7 +357,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 
@@ -372,7 +372,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 
@@ -387,7 +387,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 
@@ -402,7 +402,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 	
@@ -417,7 +417,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 
@@ -432,7 +432,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 	
@@ -447,7 +447,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 	
@@ -462,7 +462,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(1,0.411765,0.705882,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(0.501961,0,0.501961,1.0,CO)","civ"],
 			["#(argb,8,8,3)color(1,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"]
 		];
 	};
 	

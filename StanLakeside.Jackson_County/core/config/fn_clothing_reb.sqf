@@ -50,7 +50,7 @@ switch (_filter) do
 			["TRYK_U_B_ARO1_CombatUniform","DigiTan Full",40000],
 			["TRYK_U_B_NATO_OCP_R_CombatUniform","DigiGreen Full",40000],
 			["TRYK_U_B_MARPAT_Wood","MARPAT Full",40000],
-			["TRYK_U_B_NATO_OCP_R_CombatUniform","OCP Full",40000]
+			["TRYK_U_B_NATO_OCP_R_CombatUniform","OCP Full",40000],
 
 			["TRYK_SUITS_BLK_F","TRYK Black Suit",1350],
 			["TRYK_SUITS_BR_F","TRYK Brown Suit",1350],
