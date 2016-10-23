@@ -26,7 +26,7 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 	[format[localize "STR_Shop_Virt_SellItem",_amount,_name,[_price] call life_fnc_numberText], false] spawn domsg;
 	["cash","add",_price] call life_fnc_handleCash;
 	[] call life_fnc_virt_update;
-	
+	[6] call SOCK_fnc_updatePartial;
 };
 
 if(life_shop_type == "heroin") then

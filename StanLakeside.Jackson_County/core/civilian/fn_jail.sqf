@@ -57,5 +57,6 @@ removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
 
 [player,_bad] remoteExecCall ["life_fnc_jailSys",2];
+[2] call SOCK_fnc_updatePartial;
 [5] call SOCK_fnc_updatePartial;
 call life_fnc_saveGear;
