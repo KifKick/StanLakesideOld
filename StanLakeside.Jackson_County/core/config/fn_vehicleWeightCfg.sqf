@@ -518,6 +518,8 @@ switch (_className) do
 	case "kif_cvpi_sheriff_lb_19": {35};
 	case "kif_cvpi_sheriff_slick_20": {35};
 	case "kif_cvpi_sheriff_lb_21": {35};
+	case "kev_cvpi_correction_lb_91": {50};
+	case "kev_cvpi_correction_lb_92": {50};
 	case "kif_taurus_so_lb": {35};
 	case "kif_taurus_so_pb": {35};
 	case "kif_taurus_so_lb_23": {35};
