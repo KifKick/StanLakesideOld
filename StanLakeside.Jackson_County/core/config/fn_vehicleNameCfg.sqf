@@ -45,6 +45,8 @@ _vehicles =
 	["DAR_TahoePoliceSlick","[PD][A] Chevrolet Tahoe Slicktop"],
 	["DAR_ExplorerPolice","[PD][A] Ford Explorer"],
 	["cg_mercedes_sprinter_pol_base_reg","[PD][A] Mercedes Sprinter"],
+	["kev_cvpi_correction_lb_91","[CO][A] Ford Victoria 91"],
+	["kev_cvpi_correction_lb_92","[CO][A] Ford Victoria 92"], 
 		//Edward
 	["cg_evopol1","[PD][E] Mitsubishi Evo"],
 	["charger_pd_skinned","[PD][E] Charger"],
