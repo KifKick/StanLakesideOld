@@ -46,7 +46,16 @@ switch (_shop) do
 			["bv_458_skin_camo_urban",3700000],
 			["bv_shelly_bf_skin",4150000],
 			["Jonzie_Mini_Cooper",150000],
-			["ivory_c",2260000]
+			["ivory_c",2260000],
+			["shounka_rs6_violet",110000],
+			["shounka_rs6_jaune",110000],
+			["shounka_rs6_rouge",110000],
+			["shounka_rs6_rose",110000],
+			["shounka_rs6_orange",110000],
+			["shounka_rs6_violet",110000],
+			["shounka_rs6_grise",110000],
+			["shounka_rs6_bleufonce",110000],
+			["shounka_rs6_noir",110000]
 		];
 	};
 	case "showroom_car":
