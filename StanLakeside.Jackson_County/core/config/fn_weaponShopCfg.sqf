@@ -214,7 +214,7 @@ switch(_shop) do
 							["optic_Hamr",nil,500],
 							["RH_ta31rmr",nil,500],
 							["RH_compm4s",nil,500],
-							["RH_gemtech9",Tłumik Glock,500],
+							["RH_gemtech9","Tlumik Glock",500],
 							["Rangefinder","Dalmierz SERT",500]
 						]
 					];
