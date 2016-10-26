@@ -1044,6 +1044,7 @@ switch (_shop) do
 			["kif_cvpi_pd_slick_15",100000],
 			["kev_cvpi_correction_lb_91",100000],
 			["kev_cvpi_correction_lb_92",100000],
+			["kev_taurus_co_lb_90",100000],
 			["kif_cvpi_pd_lb_16",100000],
 			["kif_cvpi_traffic_slick",100000],
 			["kif_cvpi_traffic_lb",100000],
