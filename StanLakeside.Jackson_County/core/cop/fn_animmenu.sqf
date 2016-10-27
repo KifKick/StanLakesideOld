@@ -1,7 +1,7 @@
 /*
 Lakeside Help Menu
 */
-if( !allowanims ) exitwith { ["Odczekaj kilka sekund zanim wykonasz kolejna animacje!", false] spawn doquickmsg;  };
+
 
 if(vehicle player != player) exitwith {};
 
@@ -58,50 +58,50 @@ _Btn19 = _display displayCtrl Btn19;
 _Btn20 = _display displayCtrl Btn20;
 _Btn21 = _display displayCtrl Btn21;
 
-_Btn1 ctrlSetText "Poddaj sie";
-_Btn1 buttonSetAction "[] spawn life_fnc_surrender; closeDialog 0;";
+_Btn1  ctrlSetText "Udawaj niezywego";
+_Btn1 buttonSetAction "[] spawn fnc_playdead; closeDialog 0;";
 
 _Btn2 ctrlSetText "Karate";
 _Btn2 buttonSetAction "player playmove ""AmovPercMstpSnonWnonDnon_exerciseKata"";  closeDialog 0;";
 
 _Btn3 ctrlSetText "Pompki";
-_Btn3 buttonSetAction "player playmove ""AmovPercMstpSnonWnonDnon_exercisePushup"";  closeDialog 0;";
+_Btn3 buttonSetAction "player playmove ""cl3_pushups"";  closeDialog 0;";
 
-_Btn4 ctrlSetText "Przysiady";
-_Btn4 buttonSetAction "player playmove ""AmovPercMstpSnonWnonDnon_exercisekneeBendA"";  closeDialog 0;";
+_Btn4 ctrlSetText "Stan na rekach";
+_Btn4 buttonSetAction "player playmove ""cl3_hand_stand"";  closeDialog 0;";
 
-_Btn5 ctrlSetText "Naprzod";
-_Btn5 buttonSetAction "player playaction ""CRPTHSForwardStandLowered""; closeDialog 0;";
+_Btn5 ctrlSetText "Obraz sie";
+_Btn5 buttonSetAction "player playmove ""cl3_bouncer""; closeDialog 0;";
 
-_Btn6 ctrlSetText "Stac";
-_Btn6 buttonSetAction "player playaction ""CRPTHSStopStandLowered""; closeDialog 0;";
+_Btn6 ctrlSetText "Blaganie";
+_Btn6 buttonSetAction "player playmove ""cl3_bow_pray""; closeDialog 0;";
 
-_Btn7 ctrlSetText "Kryj";
-_Btn7 buttonSetAction "player playaction ""CRPTHSCoverStandLowered""; closeDialog 0;";
+_Btn7 ctrlSetText "Klaskanie";
+_Btn7 buttonSetAction "player playmove ""cl3_clapping""; closeDialog 0;";
 
-_Btn8 ctrlSetText "Przegrupowac";
-_Btn8 buttonSetAction "player playaction ""CRPTHSRegroupStandLowered""; closeDialog 0;";
+_Btn8 ctrlSetText "Taniec 1";
+_Btn8 buttonSetAction "player playmove ""cl3_nightclubdance""; closeDialog 0;";
 
-_Btn9 ctrlSetText "Atakuj";
-_Btn9 buttonSetAction "player playaction ""CRPTHSEngageStandLowered""; closeDialog 0;";
+_Btn9 ctrlSetText "Taniec 2";
+_Btn9 buttonSetAction "player playmove ""cl3_dubstepdance""; closeDialog 0;";
 
-_Btn10 ctrlSetText "Wskaz";
-_Btn10 buttonSetAction "player playaction ""CRPTHSPointStandLowered""; closeDialog 0;";
+_Btn10 ctrlSetText "Taniec 3";
+_Btn10 buttonSetAction "player playmove ""cl3_crazydrunkdance""; closeDialog 0;";
 
-_Btn11 ctrlSetText "Stop";
-_Btn11 buttonSetAction "player playaction ""CRPTHSHoldStandLowered""; closeDialog 0;";
+_Btn11 ctrlSetText "Taniec 4";
+_Btn11 buttonSetAction "player playmove ""cl3_dubstepPop""; closeDialog 0;";
 
-_Btn12 ctrlSetText "Ostrzezenie";
-_Btn12 buttonSetAction "player playaction ""CRPTHSWarningStandLowered""; closeDialog 0;";
+_Btn12 ctrlSetText "Taniec 5";
+_Btn12 buttonSetAction "player playmove ""cl3_DuoIvan""; closeDialog 0;";
 
-_Btn13 ctrlSetText "Rzuc";
-_Btn13 buttonSetAction "player playmove ""AmovPercMrunSnonWnonDf_AmovPercMstpSnonWnonDnon_gthEnd"";  closeDialog 0;";
+_Btn13 ctrlSetText "Taniec 6";
+_Btn13 buttonSetAction "player playmove ""cl3_DuoStephan"";  closeDialog 0;";
 
-_Btn14 ctrlSetText "Srodkowy palec";
-_Btn14 buttonSetAction "player playActionNow ""gesturefinger""; closeDialog 0;";
+_Btn14 ctrlSetText "Taniec 7";
+_Btn14 buttonSetAction "player playmove ""cl3_hiphopdance""; closeDialog 0;";
 
-_Btn15 ctrlSetText "Udawaj niezywego";
-_Btn15 buttonSetAction "[] spawn fnc_playdead; closeDialog 0;";
+_Btn15 ctrlSetText "Taniec 8";
+_Btn15 buttonSetAction "player playmove ""cl3_robotdance""; closeDialog 0;";
 
 fnc_playdead = {
 	[player,"DeadState"] remoteExecCall ["life_fnc_animsync"];
@@ -110,5 +110,3 @@ fnc_playdead = {
 };
 
 uisleep 15;
-
-allowanims = true;

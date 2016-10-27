@@ -20,9 +20,9 @@ life_action_inUse = true;
 	if( side player != independent) then {
 		player removeMagazine "cg_atf_bandage_i";
 		_curTarget setdamage 0.2;
-		["Set",0.2] remoteExecCall ["fnc_doHealth",_curTarget];
+		["Add",0.2] remoteExecCall ["fnc_doHealth",_curTarget];
 	} else {
-		["Set",0] remoteExecCall ["fnc_doHealth",_curTarget];
+		["Add",0.2] remoteExecCall ["fnc_doHealth",_curTarget];
 	};
 
 

@@ -178,8 +178,6 @@ switch(_shop) do
 							["hlc_30Rnd_9x19_B_MP5",nil,25],
 							["A3L_TaurusGold",nil,850],
 							["A3L_TaurusMag",nil,25],
-							["RH_Deagles",nil,1550],
-							["RH_7Rnd_50_AE",nil,100],
 							["KPFS_P38",nil,250],
 							["KPFS_8Rnd_9x19_PARA",nil,10]
 						]
@@ -981,15 +979,14 @@ switch(_shop) do
         {
 			switch(true) do
 			{
+				case (playerSide != civilian && playerSide != east): {"Przyjdź po Cywilnemu to może coś Ci sprzedam!"};
 				default
 				{
 					["Sklep mysliwski",
 						[
 							["A3L_CZ550",nil,175500],
-							["A3L_CZ550mag",nil,50],
+							["A3L_CZ550mag",nil,750],
 							["A3L_CZ550Scope",nil,15500],
-							["cl3_crossbow",nil,50000],
-							["4Rnd_crossbow_mag",nil,100],
 							["arifle_SDAR_F","Turtle ONLY-SDAR",5000],
 							["20Rnd_556x45_UW_mag","Underwater magazine",50]
 						]
@@ -1020,13 +1017,13 @@ switch(_shop) do
 			["Sklep Wielobranzowy",
 				[
 					["cg_atf_bandage_i","Bandaz",25],
-					["ItemGPS",nil,1000],  
+					["ItemGPS",nil,500],  
 					["CG_Pro_Item_i","GoPro",350],
 					["CG_tabletd","Tablet",50],
 					["CG_battery_i","Bateria",5],
-					["CG_ATF_Pizza_Box_i","Pizza Na Wynos",1000],
-					["CG_ATF_Donut_Box_i","Donuty Na Wynos",1000],
-					["ToolKit",nil,11250],
+					["CG_ATF_Pizza_Box_i","Pizza Na Wynos",500],
+					["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
+					["ToolKit",nil,2250],
 					["cg_torch","Latarka",550], 
 					["cl_axe","Topor",550], 
 					["cl_bin_shield","Tarcza Bin Lida",550], 

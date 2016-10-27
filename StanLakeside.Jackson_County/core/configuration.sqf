@@ -123,7 +123,7 @@ life_rope = 1;
 koil_life = 1;
 life_stretcher = 1;
 hacking = false;
-life_poop = 15;
+life_poop = 20;
 life_std = 0;
 life_maxweightdone = 0;
 life_eattotal = 0;
@@ -503,7 +503,7 @@ sell_array =
 	["raw sheep meat",50],
 	["raw rabbit",70],
 	["spikeStrip",12],
-	["cement",240],
+	["cement",190],
 	["goldbar",9500], 
 	//Deo Additions
 	["zoobeer",1], 

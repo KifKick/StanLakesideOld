@@ -5,7 +5,7 @@
 {
 	while {true} do
 	{
-		sleep 30;
+		sleep 60;
 		("A3LHUD" call BIS_fnc_rscLayer) cutText ["","PLAIN"]; //remove
 		("A3LHUD" call BIS_fnc_rscLayer) cutRsc ["a3lhud","PLAIN"]; //show
 	};
@@ -17,14 +17,14 @@
 		uiSleep 45;
 		[] call fnc_water;
 		if (life_eattotal > 9) then {
-			life_eattotal = life_eattotal - 1;
+			life_eattotal = life_eattotal - 3;
 		};
 
 
 		uiSleep 45;
 		[] call fnc_food;
 		if (life_eattotal > 9) then {
-			life_eattotal = life_eattotal - 1;
+			life_eattotal = life_eattotal - 3;
 		};
 	};
 };
@@ -34,18 +34,16 @@
 [] spawn  {
 	while{true} do
 	{
-		uisleep 300;
+		uisleep 180;
 		[8] call SOCK_fnc_updatePartial;
 		[] call fnc_overtime_stats;
-		uisleep 300;
+		uisleep 180;
 		[] call fnc_overtime_stats;
 	};
 };
 
 player addEventHandler ["Put", {[3] call SOCK_fnc_updatePartial}];
 player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
-player addMPEventHandler ["MPKilled", {diag_log format ["%2 zabil %1",name (_this select 0),name (_this select 1)];}];
-player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_this select 0),name (_this select 1)];}];
 
 [] spawn
 {
@@ -626,14 +624,14 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 		_myInjuries = _user getVariable "playerInjuries";
 
 		if(_arrayCount < 10) then {
-			if(_amount == 1) then { if("CG_ATF_Bandage_i" in magazines player) then { ["Applying Bandage",_user,_myInjuries,_arrayCount,"CG_ATF_Bandage_i",0.05] spawn fnc_healTime; } else { hint "You dont have the required item!"; }; };
-			if(_amount == 2) then { if("CG_ATF_First_Aid_Kit_i" in magazines player) then { ["Applying First Aid",_user,_myInjuries,_arrayCount,"CG_ATF_First_Aid_Kit_i",0.1] spawn fnc_healTime; } else { hint "You dont have the required items!"; }; };
-			if(_amount == 3) then { if("CG_ATF_First_Aid_Kit_i" in magazines player) then { ["Applying First Aid",_user,_myInjuries,_arrayCount,"CG_ATF_First_Aid_Kit_i",0.1] spawn fnc_healTime; } else { hint "You dont have the required item!"; }; };
-			if(_amount == 4) then { if("CG_bloodbag_i" in magazines player) then { ["Applying Blood Bag",_user,_myInjuries,_arrayCount,"CG_bloodbag_i",0.15] spawn fnc_healTime; } else { hint "You dont have the required item!"; }; };
+			if(_amount == 1) then { if("CG_ATF_Bandage_i" in magazines player) then { ["Zakladam bandaz",_user,_myInjuries,_arrayCount,"CG_ATF_Bandage_i",0.05] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu"; }; };
+			if(_amount == 2) then { if("CG_ATF_First_Aid_Kit_i" in magazines player) then { ["Uzywam apteczki",_user,_myInjuries,_arrayCount,"CG_ATF_First_Aid_Kit_i",0.1] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
+			if(_amount == 3) then { if("CG_ATF_First_Aid_Kit_i" in magazines player) then { ["Uzywam apteczki",_user,_myInjuries,_arrayCount,"CG_ATF_First_Aid_Kit_i",0.1] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
+			if(_amount == 4) then { if("CG_bloodbag_i" in magazines player) then { ["Przeprowadzam transfuzje",_user,_myInjuries,_arrayCount,"CG_bloodbag_i",0.15] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
 		};
 
 		if(_arrayCount == 10) then {
-			if(_amount > 0) then { if("CG_antibiotics_i" in magazines player) then { ["Applying Blood Bag",_user,_myInjuries,_arrayCount,"CG_antibiotics_i",0.2] spawn fnc_healTime; } else { hint "You dont have the required item!"; }; };
+			if(_amount > 0) then { if("CG_antibiotics_i" in magazines player) then { ["Przeprowadzam transfuzje",_user,_myInjuries,_arrayCount,"CG_antibiotics_i",0.2] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
 		};
 		//failsafe
 		sleep 3;
@@ -793,15 +791,15 @@ player addMPEventHandler ["MPHit", {diag_log format ["%2 postrzelil %1",name (_t
 			_myInjuries set [_currentHitNumber, _injuryLevel];
 
 			if(_currentHitLocation == "Body") then {
-				_chance = round (random 50);
-				if(_chance < 3) then {
+				_chance = round (random 20);
+				if(_chance < 7) then {
 					_organDamage = round (random 4);
 					_myInjuries set [9, _organDamage];
 				};
 			};
 
-			_chance = round (random 1000);
-			if(_chance < 2) then {
+			_chance = round (random 30);
+			if(_chance < 5) then {
 				_disease = round (random 4);
 				_myInjuries set [10, _disease];
 			};
@@ -1013,7 +1011,7 @@ fnc_dispatch = {
 					if(!([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio)) then {
 						[] call fnc_checkphone;
 						[] call fnc_resetCall;
-						hint "Your radio has been replaced with a phone!";
+						hint "Twoje radio zostalo zastapione telefonem";
 					};
 				};
 
@@ -1025,7 +1023,7 @@ fnc_dispatch = {
 						_curfreqlr = [(call TFAR_fnc_activeLrRadio), _channel] call TFAR_fnc_GetChannelFrequency;
 						_curfreqlr = parseNumber _curfreqlr;
 						if( _curfreqlr > 33 && _curfreqlr < 34 ) then {
-							["33.1 - 33.9 are blocked frequencies.", false] spawn domsg;
+							["33.1 - 33.9 to kodowane czestotliwosci.", false] spawn domsg;
 							[(call TFAR_fnc_activeLrRadio), _channel, "40"] call TFAR_fnc_SetChannelFrequency;
 						};
 					};
@@ -1039,7 +1037,7 @@ fnc_dispatch = {
 					_curfreqsr = parseNumber _curfreqsr;
 					if(!isNil "_curfreqsr") then {
 						if( _curfreqsr > 33 && _curfreqsr < 34 ) then {
-							["33.1 - 33.9 are blocked frequencies.", false] spawn domsg;
+							["33.1 - 33.9 to kodowane czestotliwosci.", false] spawn domsg;
 							[(call TFAR_fnc_activeSwRadio), _channel, "40"] call TFAR_fnc_SetChannelFrequency;
 						};
 					};
@@ -1118,8 +1116,8 @@ fnc_airkit =
 			{
 				if(life_intox <= 0.02) then {life_intox = 0.00;} else {life_intox = life_intox - 0.02;};
 				switch(true) do {
-					case (life_intox == 0.00): {["You are completely sober.", false] spawn domsg;};
-					case (life_intox == 0.08): {["You can now legally drive.", false] spawn domsg;};
+					case (life_intox == 0.00): {["Jestes trzezwy.", false] spawn domsg;};
+					case (life_intox == 0.08): {["Mozesz juz prowadzic pojazd.", false] spawn domsg;};
 				};
 			};
 		};
@@ -1133,25 +1131,25 @@ fnc_airkit =
             "dynamicBlur" ppEffectCommit 1;
 			uiSleep 5;
 			if(life_intox > 0.15) then {
-				_chance = round (random 100);
+				_chance = round (random 50);
    			 	if(_chance < 5) then {
    				  		[] spawn KK_fnc_forceRagdoll;
    				};
 			};
 			if(life_intox > 0.25) then {
-				_chance = round (random 100);
+				_chance = round (random 50);
    			 	if(_chance < 7) then {
    				  		[] spawn KK_fnc_forceRagdoll;
    				};
 			};
 			if(life_intox > 0.35) then {
-				_chance = round (random 100);
+				_chance = round (random 50);
    			 	if(_chance < 8) then {
    				  		[] spawn KK_fnc_forceRagdoll;
    				};
 			};
 			if(life_intox > 0.45) then {
-				_chance = round (random 100);
+				_chance = round (random 50);
    			 	if(_chance < 11 && _chance > 4) then {
    				  		[] spawn KK_fnc_forceRagdoll;
    				};
@@ -1280,7 +1278,7 @@ fnc_startfire = {
 };
 
 fnc_police_fire = {
-	["WIADOMOSCI: OSKP pali sie!", false] spawn domsg;
+	["WIADOMOSCI: Komenda pali sie!", false] spawn domsg;
 	fire_loc1 = [8773,7209,0.1];
 	[] spawn fnc_startfire;
 };
@@ -2172,7 +2170,7 @@ fnc_item_CG = {
 	_item = lbData [_idc, _selectedIndex];
 
 	if (_item == "CG_Spikes_Collapsed") then { [true] spawn fnc_spikeStrip_cg; [_item] spawn fnc_removeitem; closeDialog 0; };
-	if (_item == "CG_battery_i") then { life_battery = 200; [_item] spawn fnc_removeitem; playSound3D ["cg_sndimg\sounds\phoneSMS.ogg", player, false, getPosASL player, 1, 1, 25]; closeDialog 0; };
+	if (_item == "CG_battery_i") then { life_battery = 80; [_item] spawn fnc_removeitem; playSound3D ["cg_sndimg\sounds\phoneSMS.ogg", player, false, getPosASL player, 1, 1, 25]; closeDialog 0; };
 	if (_item == "CG_ATF_Pizza_Box_i") then { [true] spawn life_fnc_pizza; [_item] spawn fnc_removeitem; closeDialog 0; };
 	if (_item == "CG_ATF_Donut_Box_i") then { [true] spawn life_fnc_bronutsbrah; [_item] spawn fnc_removeitem; closeDialog 0; };
 	if (_item == "CG_ATF_Handcuffs_i") then { ["You can restrain with these...", false] spawn domsg; closeDialog 0; };

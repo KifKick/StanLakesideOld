@@ -22,6 +22,7 @@ switch (true) do
 			{
 
 				playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
+				player playmovenow "CL3_anim_drink";
 
 			};
 			["Add","Drink",50] spawn fnc_sustain;
@@ -93,7 +94,7 @@ switch (true) do
 			{
 
 				playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
-
+				player playmovenow "CL3_anim_drink";
 			};
 
 
@@ -126,6 +127,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Wypiles lekkie piwo", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.01;
 			[] spawn fnc_intox;
 		};
@@ -139,6 +141,7 @@ switch (true) do
 		{
 		playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Wypiles mocne piwo", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.02;
 			[] spawn fnc_intox;
 		};
@@ -152,6 +155,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Wypiles kielona wodki", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.05;
 			[] spawn fnc_intox;
 		};
@@ -167,6 +171,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Wypiles troche whisky", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.05;
 			[] spawn fnc_intox;
 		};
@@ -179,6 +184,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Wypiles Jager Bomb", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.05;
 			[] spawn fnc_intox;
 		};
@@ -192,6 +198,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Wypiles shota Absinthe", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.08;
 			[] spawn fnc_intox;
 		};
@@ -203,6 +210,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Napiles sie szklanki czerwonego wina", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.02;
 			[] spawn fnc_intox;
 		};
@@ -215,6 +223,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Napiles sie szklanki bialego wina.", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.02;
 			[] spawn fnc_intox;
 		};
@@ -227,6 +236,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Napiles sie butelki ruskiej wodki!", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.04;
 			[] spawn fnc_intox;
 		};
@@ -239,6 +249,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Wypiles Sex on The Beach!", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.03;
 			[] spawn fnc_intox;
 		};
@@ -251,6 +262,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Strzeliles sobie Tequili!", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.06;
 			[] spawn fnc_intox;
 		};
@@ -262,6 +274,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Wypiles whisky z cola", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.04;
 			[] spawn fnc_intox;
 		};
@@ -275,6 +288,7 @@ switch (true) do
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
 			["Wypiles rum! Arr!", false] spawn domsg;
+			player playmovenow "CL3_anim_drink";
 			life_intox = life_intox + 0.06;
 			[] spawn fnc_intox;
 		};
@@ -335,6 +349,7 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			playSound3D ["cg_sndimg\sounds\eat.ogg", player, false, getPosASL player, 6, 1, 45];
+			player playmovenow "CL3_anim_eat";
 			[] spawn life_fnc_useBEC;
 		};
 	};
@@ -463,7 +478,7 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45];
-
+			player playmovenow "CL3_anim_drink";
 			["Add","Drink",30] spawn fnc_sustain;
 			player setFatigue 0;
 			[] spawn
@@ -496,7 +511,8 @@ switch (true) do
 	{
 		life_eattotal = life_eattotal + 10;
 		playSound3D ["cg_sndimg\sounds\eat.ogg", player, false, getPosASL player, 6, 1, 45];
-		life_poop = life_poop + 5;
+		player playmovenow "CL3_anim_eat";
+		life_poop = life_poop + 10;
 		[_item] call life_fnc_eatFood;
 		if(life_eattotal > 90) then {
 			player playMove "AmovPercMstpSnonWnonDnon_Scared2";

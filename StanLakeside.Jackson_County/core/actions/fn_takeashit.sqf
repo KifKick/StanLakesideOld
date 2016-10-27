@@ -21,7 +21,7 @@ if(_currentuniform != "") then {
 	["Zesrales sie w gacie Ty idioto.. zanim zrobisz gowno sciagnij spodnie!", false] spawn domsg;
 	life_dirt = 100;
 	life_poop = 50;
-	player setfatigue 1;	
+	player setfatigue 1;
 };
 
 life_action_inUse = false;
