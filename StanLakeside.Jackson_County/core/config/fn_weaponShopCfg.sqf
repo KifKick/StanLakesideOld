@@ -981,14 +981,15 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (playerSide != civilian && playerSide != east): {"Przyjdź po Cywilnemu to może coś Ci sprzedam!"};
 				default
 				{
 					["Sklep mysliwski",
 						[
 							["A3L_CZ550",nil,175500],
-							["A3L_CZ550mag",nil,750],
+							["A3L_CZ550mag",nil,50],
 							["A3L_CZ550Scope",nil,15500],
+							["cl3_crossbow",nil,50000],
+							["4Rnd_crossbow_mag",nil,100],
 							["arifle_SDAR_F","Turtle ONLY-SDAR",5000],
 							["20Rnd_556x45_UW_mag","Underwater magazine",50]
 						]
