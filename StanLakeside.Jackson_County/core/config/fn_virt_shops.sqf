@@ -26,7 +26,7 @@ switch (_shop) do
 	case "iron": {["Hutnik",["iron_r","copper_r"]]};
 	case "diamond": {["Jubiler",["weddingring","diamond","diamondc"]]};
 	case "salt": {["Handlarz sola",["salt_r"]]};
-	case "cop": {["Przedmioty policyjne",["medkit","panicbutton","cigarette","bandage","fuelF","defusekit","BarGate","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
+	case "cop": {["Przedmioty policyjne",["medkit","panicbutton","bandage","fuelF","defusekit","BarGate","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "donuts": {["Dunkin Donuts",["donuts","coffee","water","redgull"]]};
 	case "cement": {["Handalrz cementem",["cement"]]};
 	case "gold": {["Zlotnik",["goldbar"]]};

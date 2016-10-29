@@ -146,6 +146,24 @@ class Life_Client_Core
 		class carSalesman {};
 		//class robBank {};
 	};	
+	
+	class Market
+		{
+			file = "core\market";
+			class openMarketView {};
+			class refreshMarketView {};
+			class marketShortView {};
+			class marketBuy {};
+			class marketSell {};
+			class marketGetBuyPrice {};
+			class marketGetSellPrice {};
+			class marketConfiguration {};
+			class marketReset {};
+			class marketChange {};
+			class marketGetRow {};
+			class marketGetPriceRow {};
+			class marketSetPriceRow {};
+		};
 
 	class Housing
 	{
@@ -322,6 +340,8 @@ class Life_Client_Core
 		class medactAirSiren {};
 		class medairSiren {}; 
 		class loggedOut {};
+		// Market System
+		class randomRound {};
 	};
 	
 	class Network

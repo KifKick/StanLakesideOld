@@ -24,6 +24,10 @@ _staminatext = parseText format[""];
 _ammotext = parseText format[""];
 _amountmagtext = parseText format[""];
 _weaponname = parseText format[""];
+_scarytext = parseText format[""];
+_amountcandy = candy;
+_playerscary = scarylevel;
+_scarycolor = "#00FF4C";
 _hudinfo = weaponState player; // ["arifle_MX_ACO_pointer_F","arifle_MX_ACO_pointer_F","Single","30Rnd_65x39_caseless_mag",30]
 _curweapon = _hudinfo select 0;
 _curmagazine = _hudinfo select 4;
@@ -260,10 +264,46 @@ if (_playerstamina < 0.10) then {
                 _staminacolor = "#590000";
                 _staminatext = parseText format["Jestem zmeczony"];
 };};};};};};};
+
+ if (_playerscary == 0) then {
+                _scarycolor = "#00FF4C";
+                _scarytext = parseText format["Nie boje sie"];
+        } else {
+        if (_playerscary < 0.2) then {
+                _scarycolor = "#7BFF00";
+                _scarytext = parseText format["Troche przestraszony"];
+        } else {
+        if (_playerscary < 0.4) then {
+                _scarycolor = "#EAFF00";
+                _scarytext = parseText format["Przestraszony"];
+        } else {
+        if (_playerscary < 0.6) then {
+                _scarycolor = "#FF8400";
+                _scarytext = parseText format["Przerazony"];
+        } else {
+        if (_playerscary < 0.8) then {
+                _scarycolor = "#FF4000";
+                _scarytext = parseText format["Serce mi wali"];
+        } else {
+        if (_playerscary < 1) then {
+                _scarycolor = "#FF0000";
+                _scarytext = parseText format["Serce mi wali bardzo mocno"];
+        } else {
+        if (_playerscary == 1) then {
+                _scarycolor = "#590000";
+                _scarytext = parseText format["Placze ze strachu"];
+};};};};};};};
+
+_candyconvtext = parsetext format [""];
+if (_amountcandy == 0) then {
+_candyconvtext = parseText format ["Brak cukierkow!"];
+} else {
+_candyconvtext = parseText format ["%1 cukierkow!", _amountcandy];
+};
  
  
-_playerstatustext = parseText format ["<t font='EtelkaNarrowMediumPro' size='0.8' align='right'><t color='%1'>%2</t> | <t color='%3'>%4</t> | <t color='%5'>%6</t> | <t color='%7'>%8</t></t>", _healthcolor, _healthtext, _staminacolor, _staminatext, _hungercolor, _hungertext, _thirstcolor, _thirsttext];
-_playernametext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFFFF' size='1' align='right'>%1 | </t> <t color='#FFFFFF' size='1' align='right'>LVL: %2 |</t> <t color='#FFFFFF' size='1' align='right'> TEL: %3 | <t color='#FFFFFF' size='1' align='right'>%4", _nameofplayer, _reputation, _battery, _servertime];
+_playerstatustext = parseText format ["<t font='EtelkaNarrowMediumPro' size='0.8' align='right'><t color='%1'>%2</t> | <t color='%3'>%4</t> | <t color='%5'>%6</t> | <t color='%7'>%8 | <t color='%9'>%10</t></t>", _healthcolor, _healthtext, _staminacolor, _staminatext, _hungercolor, _hungertext, _thirstcolor, _thirsttext, _scarycolor, _scarytext];
+_playernametext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFFFF' size='1' align='right'>%1 | </t> <t color='#FFFFFF' size='1' align='right'>LVL: %2 |</t> <t color='#FFFFFF' size='1' align='right'> TEL: %3 | %5 | <t color='#FFFFFF' size='1' align='right'>%4", _nameofplayer, _reputation, _battery, _servertime, _candyconvtext];
 // _zeroinghudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#949494' size='1' align='left'>%1</t>", _zeroingtext];
 _ammohudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='%1' size='0.9' align='left'>%2</t>",_ammocolor, _ammotext];
 _maghudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='%1' size='0.8' align='left'>%2</t>", _magcolor, _amountmagtext];

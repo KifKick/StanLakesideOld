@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2540;
+		nextID=2549;
 	};
 	class MarkerIDProvider
 	{
-		nextID=45;
+		nextID=46;
 	};
 	class Camera
 	{
-		pos[]={8179.3281,24.978167,6498.3091};
-		dir[]={0.70652056,-0.10340339,0.7001918};
-		up[]={0.073480465,0.99463022,0.072821498};
-		aside[]={0.70396966,-1.1876255e-006,-0.71033239};
+		pos[]={8550.6045,35.091892,6883.4336};
+		dir[]={-0.89379585,-0.33180627,0.3017365};
+		up[]={-0.31437868,0.94334674,0.10613113};
+		aside[]={0.31985676,-2.5203917e-008,0.94747186};
 	};
 };
 binarizationWanted=0;
@@ -697,7 +697,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2099;
+		items=2101;
 		class Item0
 		{
 			dataType="Object";
@@ -17350,7 +17350,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8614.2861,20.9,6802.3848};
+				position[]={8614.2852,20.9,6802.3853};
 			};
 			name="zeus";
 			id=919;
@@ -21831,7 +21831,7 @@ class Mission
 			position[]={6597.7837,44.550049,4563.9492};
 			name="cop_spawn_6";
 			type="Empty";
-			angle=352.52295;
+			angle=352.52292;
 			id=1247;
 			atlOffset=-10.439953;
 		};
@@ -21921,7 +21921,6 @@ class Mission
 			};
 			id=1252;
 			type="Land_Atm_02_F";
-			atlOffset=0.019645691;
 		};
 		class Item1244
 		{
@@ -26804,7 +26803,6 @@ class Mission
 					};
 					id=1528;
 					type="C_man_polo_2_F";
-					atlOffset=0.050003052;
 				};
 				class Item3
 				{
@@ -26913,6 +26911,7 @@ class Mission
 						angles[]={0,5.3166361,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -26921,7 +26920,6 @@ class Mission
 					};
 					id=1533;
 					type="C_man_polo_2_F";
-					atlOffset=0.30002594;
 				};
 				class Item8
 				{
@@ -26941,7 +26939,6 @@ class Mission
 					};
 					id=1534;
 					type="C_man_p_beggar_F_afro";
-					atlOffset=0.050003052;
 				};
 				class Item9
 				{
@@ -26990,6 +26987,7 @@ class Mission
 						angles[]={0,5.3371835,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -26997,7 +26995,6 @@ class Mission
 					};
 					id=1537;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=0.30002594;
 				};
 				class Item12
 				{
@@ -27666,7 +27663,6 @@ class Mission
 					};
 					id=1564;
 					type="A3L_Civ20";
-					atlOffset=0.050003052;
 				};
 				class Item38
 				{
@@ -27922,6 +27918,7 @@ class Mission
 						angles[]={0,5.2205367,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -27929,7 +27926,6 @@ class Mission
 					};
 					id=1577;
 					type="C_man_polo_2_F";
-					atlOffset=0.30002594;
 				};
 				class Item51
 				{
@@ -29328,19 +29324,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8646.4355,20.901438,6924.8164};
-						angles[]={0,0.31435108,0};
+						position[]={8631.9092,20.901438,6926.9785};
+						angles[]={0,3.3189006,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init=" removeAllWeapons this; this allowDamage false; this addAction[""Diler narkotykowy"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Przepytaj dilera"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse '];";
+						init=" removeAllWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Diler narkotykowy"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Przepytaj dilera"",life_fnc_questionDealer,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 5 && playerSide == west && !life_action_inUse '];";
 						name="Dealer_3_1_1_1";
 					};
 					id=1622;
 					type="C_man_p_shorts_1_F_afro";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item95
 				{
@@ -34635,7 +34654,6 @@ class Mission
 			type="ALR_ChopShop";
 			colorName="ColorOrange";
 			id=1929;
-			atlOffset=0.050003052;
 		};
 		class Item1676
 		{
@@ -42505,6 +42523,72 @@ class Mission
 			type="Empty";
 			id=2539;
 			atlOffset=10.336715;
+		};
+		class Item2099
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8534.2676,26.020437,6895.083};
+						angles[]={0,2.703918,0};
+					};
+					side="Civilian";
+					flags=3;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addUniform ""A3L_SECRET""; this addAction [""Sklep Halloween"", {[] spawn fnc_hallowmenu}];";
+					};
+					id=2547;
+					type="A3PL_Citizen_mcFishers";
+					atlOffset=5.1189995;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2546;
+			atlOffset=5.1189995;
+		};
+		class Item2100
+		{
+			dataType="Marker";
+			position[]={8533.8652,-1.6257713e-005,6894.3481};
+			name="marker_45";
+			text="Sklep Halloween";
+			type="ALR_Clothes";
+			colorName="ColorOrange";
+			id=2548;
+			atlOffset=-20.900017;
 		};
 	};
 	class Connections

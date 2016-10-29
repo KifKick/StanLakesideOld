@@ -93,6 +93,14 @@ switch (_code) do
 		};
 	};
 	
+	case 11:
+	{
+	    if(_shift && !_alt && !_ctrlKey) then
+	    {
+	        [] spawn life_fnc_openMarketView;
+	    };
+	};
+	
 	/*//EMP Konsole - O
     case 24:
     {

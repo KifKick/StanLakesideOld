@@ -5,6 +5,7 @@
 
 // Run Some Client Stuff
 [] execVM "A3L_Stuff\bank.sqf";
+[] execVM "A3L_Stuff\halloween.sqf";
 
 
 
