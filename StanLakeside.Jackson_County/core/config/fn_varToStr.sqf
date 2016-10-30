@@ -106,6 +106,7 @@ switch (_var) do
 	case "life_inv_rawsheepmeat": {(localize "STR_Item_rawsheepmeat")};
 	case "life_inv_rawrabbit": {(localize "STR_Item_rawrabbit")};
 	case "life_inv_uraniumu": {"Ruda Uranu"};
+	case "life_inv_uraniumup": {"Oczyszczony Uran"};
 	case "life_inv_uraniump": {"Czysty Uran"};
 	//Additions
 	case "life_inv_zoobeer": {"Piwo"}; 

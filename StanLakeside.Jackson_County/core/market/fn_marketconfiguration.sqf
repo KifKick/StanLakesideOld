@@ -130,7 +130,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["uraniump", 1500, 1100, 1900, 2, 2,
+	["uraniump", 1300, 1100, 1900, 2, 2,
 		[ 
 			["marijuana",1], 
 			["emerald",1],
