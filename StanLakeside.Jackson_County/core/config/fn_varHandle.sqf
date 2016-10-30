@@ -166,6 +166,8 @@ switch (_mode) do
 			case "life_inv_methp": {"methp"}; // in the case 1 field 
 			case "life_inv_cokeu": {"cokeu"};
 			case "life_inv_cokep": {"cokep"}; // in the case 1 field 
+			case "life_inv_uraniumu": {"uraniumu"};
+			case "life_inv_uraniump": {"uraniump"};
 			case "life_inv_oilu": {"oilu"};
 			case "life_inv_oilp": {"oilp"};
 			case "life_inv_heroinu": {"heroinu"};

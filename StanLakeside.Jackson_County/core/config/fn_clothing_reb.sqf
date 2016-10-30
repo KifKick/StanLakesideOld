@@ -22,6 +22,7 @@ switch (_filter) do
 			["I_FEM_AAF_long","Female Long",5000],
 			["B_FEM_AAF_Rolled","Female Rolled",5000],
 			["B_FEM_NATO_Rolled","Female Rolled 3",5000],
+			["U_C_DDE","Kombinezon HazMat / Uran",5000],
 
 
 			["U_I_pilotCoveralls",nil,5000],
@@ -249,6 +250,7 @@ switch (_filter) do
 			["G_Balaclava_blk",nil,137],
 			["G_Balaclava_combat",nil,137],
 			["G_Balaclava_lowprofile",nil,137],
+			["Mask_M40","Maska przeciwgazowa, uran",500],
 			["A3L_Balaclava",nil,137]
 		];
 	};

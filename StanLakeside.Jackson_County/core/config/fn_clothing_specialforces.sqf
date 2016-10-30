@@ -32,6 +32,7 @@ switch (_filter) do
 			["CG_SERT6",nil,15],
 			["CG_SERT7",nil,15],
 			["A3L_EC_SERTK","SERT V2",50],
+			["U_C_DDE","Kombinezon HazMat / Uran",50],
 			["RR_SWAT_UNIFORM_obj","Kombinezon SWAT",15],
 			["TCG_SWAT","Komendant",15],
 			["TRYK_U_B_BLK","Pilot Coveralls",15],

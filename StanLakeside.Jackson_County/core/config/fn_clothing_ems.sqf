@@ -48,6 +48,7 @@ switch (_filter) do
 			["RF_EMSWING_4", nil, 2],
 			["A3L_EMT2","Fire Suit",50],
 			["V_Firefighter", nil, 2],
+			["U_C_DDE","Stroj HazMat",2],
 			["U_B_Wetsuit","Wet Suit",50],
 			["kif_emt_clothes_shirt_james_obj", nil, 2],
 			["kif_emt_clothes_shirt_trynkiewicz_obj", nil, 2],
