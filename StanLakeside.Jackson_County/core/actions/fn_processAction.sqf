@@ -27,8 +27,7 @@ _itemInfo = switch (_type) do
 	case "meth": {["methu","methp",50,"Packaging Meth"];};
 	case "MDMA": {["MDMAu","MDMAp",50,"Pill Pressing MDMA"];};
 	case "coke": {["cokeu","cokep",50,"Packaging Cocaine"];};
-	case "uran": {["uraniumu","uraniumup",100,"Oczyszczam Uran"];};
-	case "uranp": {["uraniumup","uraniump",100,"Uszlachetniam Uran"];};
+	case "uran": {["uraniumu","uraniump",100,"Uszlachetniam Uran"];};
 	default {[];};
 };
 
@@ -50,7 +49,7 @@ _cost = round(_cost * _oldVal);
 //Some more checks
 if(_oldVal == 0) exitWith {};
 
-if (_cops < 2 && _type in ["heroin","marijuana","meth","MDMA","coke","uran","uranp"]) exitWith {
+if (_cops < 2 && _type in ["heroin","marijuana","meth","MDMA","coke","uran"]) exitWith {
 	["Mozesz przetwarzac dopiero od 2 policjantow na serwerze!", false] spawn domsg;
 };
 
