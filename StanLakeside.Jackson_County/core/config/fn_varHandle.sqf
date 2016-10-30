@@ -80,6 +80,8 @@ switch (_mode) do
 			case "lockpick": {"life_inv_lockpick"};
 			case "redgull": {"life_inv_redgull"};
 			case "peach": {"life_inv_peach"};
+			case "uraniumu": {"life_inv_uraniumu"};
+			case "uraniump": {"life_inv_uraniump"};
 			case "goldbar": {"life_inv_goldbar"};
 			case "blastingcharge": {"life_inv_blastingcharge"};
 			case "hackingtool": {"life_inv_hackingtool"};

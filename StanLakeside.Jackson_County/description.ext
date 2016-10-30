@@ -526,7 +526,13 @@ class CfgSounds
 		name = "vomit";
 		sound[] = {"\sounds\vomit.ogg", 1, 1};
 		titles[] = {};
-	};	
+	};
+	class rad
+	{
+		name = "rad";
+		sound[] = {"\sounds\rad.ogg", 0.5, 1};
+		titles[] = {};
+	};
 };
 
 

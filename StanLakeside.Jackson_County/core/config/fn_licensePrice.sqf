@@ -39,6 +39,7 @@ switch (_type) do
 	case "cocaine": {20000};
 	case "sand": {2150};
 	case "iron": {3950};
+	case "uran": {7300};
 	case "copper": {2800};
 	case "cement": {2450};
 	case "mair": {1500};

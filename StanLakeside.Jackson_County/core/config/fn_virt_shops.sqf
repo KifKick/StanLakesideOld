@@ -32,6 +32,7 @@ switch (_shop) do
 	case "gold": {["Zlotnik",["goldbar"]]};
 	case "ems": {["Przedmioty EMS",["airkit","panicbutton","condom","bec","water","rabbit","apple","redgull","tbacon","peach","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "butcher": {["Rzeznik",["Raw Meat"]]};
+	case "uranium": {["Naukowiec", ["uraniump"]]};
 };
 
 

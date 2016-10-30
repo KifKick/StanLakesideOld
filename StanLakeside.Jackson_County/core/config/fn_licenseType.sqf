@@ -47,6 +47,7 @@ switch (_mode) do
 			case "cement": {_var = "license_civ_cement"};
 			case "mair": {_var = "license_med_air"};
 			case "home": {_var = "license_civ_home"};
+			case "uran": {_var = "license_civ_uran"};
 			//case "donator1": {_var = "license_civ_donator1"};
 			//case "donator2": {_var = "license_civ_donator2"};
 			//case "donator3": {_var = "license_civ_donator3"};

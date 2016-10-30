@@ -340,6 +340,7 @@ class Life_Client_Core
 		class medactAirSiren {};
 		class medairSiren {}; 
 		class loggedOut {};
+		class radArea {};
 		// Market System
 		class randomRound {};
 	};

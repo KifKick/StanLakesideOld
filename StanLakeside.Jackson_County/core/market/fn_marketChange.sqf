@@ -45,7 +45,8 @@ switch(true) do
 	};
 	case (_rand <= 36): //Increase 6% drug price
 	{
-		[[0,"News: Interpol has excavated an international drug gang"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		//[[0,"News: Interpol has excavated an international drug gang"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[1,"Wiadomosci: Interpol rozbil miedzynarodowoy kartel narkotykowy!"] remoteExecCall ["life_fnc_broadcast", -2];
 		
 		//Erhöhe Marktpreis mit marketSell
 		["marijuana", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
@@ -59,7 +60,8 @@ switch(true) do
 	};
 	case (_rand <= 44): //8% increase in oil prices
 	{
-		[[0,"News: Oil tanker sunk!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		//[[0,"News: Oil tanker sunk!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[1,"Wiadomosci: Zatonela platforma olejna!"] remoteExecCall ["life_fnc_broadcast", -2];
 		
 		["oilp", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
@@ -67,7 +69,8 @@ switch(true) do
 	};
 	case (_rand <= 54): //Increase 10% Price + iron + glass cement price price
 	{
-		[[0,"News: China builds world-China Center!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		//[[0,"News: China builds world-China Center!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[1,"Wiadomosci: Chiny buduja miedzynarodowe lotnisko!"] remoteExecCall ["life_fnc_broadcast", -2];
 		
 		["cement", [20,40] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		["iron_r", [20,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
@@ -77,29 +80,30 @@ switch(true) do
 	};
 	case (_rand <= 60): //4% Gold price drops
 	{
-		[[0,"News: Investors lose confidence in gold!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		//[[0,"News: Investors lose confidence in gold!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[1,"Wiadomosci: Krach na rynku jubilerskim!"] remoteExecCall ["life_fnc_broadcast", -2];
 		
-		["gold", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["diamondc", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["emerald", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
 		
 		diag_log "+Market+ Event goldm";
 	};
 	case (_rand <= 68): //8% copper / silver increases
 	{
-		[[0,"News: Electronics industry requires precious metals!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		//[[0,"Wiadomosci: Elektronicy potrzebuja metalu dla kabelkow!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[1,"Wiadomosci: Elektronicy potrzebuja metalu dla kabelkow!"] remoteExecCall ["life_fnc_broadcast", -2];
 		
-		["gold", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["silver", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["silverr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["copper_r", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["iron_r", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy;
 		diag_log "+Market+ Event copperp";
 	};
 	case (_rand <= 74): //6% gold price increases
 	{
-		[[0,"News: Investors lose confidence in dollars!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		//[[0,"News: Investors lose confidence in dollars!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[1,"Wiadomosci: Duzo kobiet szuka sobie teraz bizuterii!"] remoteExecCall ["life_fnc_broadcast", -2];
 		
-		["gold", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
-		["goldr", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["diamondc", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
+		["emerald", [15,30] call life_fnc_randomRound, true] call life_fnc_marketBuy; 
 		
 		diag_log "+Market+ Event goldp";
 	};
@@ -109,20 +113,18 @@ switch(true) do
 		
 		//Erhöhe Marktpreis mit marketSell
 		["marijuana", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["cocaine", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["cocainep", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["heroinu", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["heroinp", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
-		["froglsd", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["mdmap", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell; 
+		["methp", [15,30] call life_fnc_randomRound, true] call life_fnc_marketSell;
 		
 		diag_log "+Market+ Event drugm";
 	};
 	case (_rand <= 90): //10% higher turtles
 	{
-		[[0,"News: China discovers turtles as a new medicine! Animal rights activists are concerned!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		//[[0,"News: China discovers turtles as a new medicine! Animal rights activists are concerned!"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[1,"Wiadomosci: Klejnoty sa teraz bardzo cenne!"] remoteExecCall ["life_fnc_broadcast", -2];
 		
 		//Erhöhe Marktpreis mit marketSell
-		["turtle", [4,10] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
+		["emerald", [4,10] call life_fnc_randomRound, true] call life_fnc_marketBuy; 	
 		
 		diag_log "+Market+ Event turtlep";
 	};

@@ -7,7 +7,7 @@
 */
 closeDialog 0;
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone","_cops"];
-_resourceZones = ["coke_zone_1_1","coke_zone_1_2","coke_zone_1","meth_1","MDMA_zone_1","SHANK_1","HH_1","peach_1","apple_1"];
+_resourceZones = ["coke_zone_1_1","coke_zone_1_2","coke_zone_1","meth_1","MDMA_zone_1","SHANK_1","HH_1","peach_1","apple_1","uran_1"];
 _zone = "";
 _gather = "";
 _val = 1;
@@ -53,10 +53,11 @@ if(!isNil "_this" && {count _this != 0}) then {
 		case (_zone in ["SHANK_1"]): {_gather = "shank"; _val = 1;};
 		case (_zone in ["apple_1"]): {_gather = "apple"; _val = 2;};
 		case (_zone in ["peach_1"]): {_gather = "peach"; _val = 2;};
+		case (_zone in ["uran_1"]): {_gather = "uraniumu"; _val = 1;};
 		default {""};
 	};
 };
-if (_cops < 2 && _zone in ["coke_zone_1_1","coke_zone_1_2","coke_zone_1","meth_1","MDMA_zone_1","SHANK_1"]) exitWith {
+if (_cops < 2 && _zone in ["coke_zone_1_1","coke_zone_1_2","coke_zone_1","meth_1","MDMA_zone_1","SHANK_1","uran_1"]) exitWith {
 	["Mozesz zbierac dopiero od 2 policjantow na serwerze!", false] spawn domsg; life_action_gathering = false; life_spam_my_dick = 0; playsound "endbeep";
 };
 if(_exit) exitWith {life_spam_my_dick = 0;};

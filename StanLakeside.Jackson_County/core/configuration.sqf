@@ -302,6 +302,8 @@ life_inv_items =
 	"life_inv_lockpick",
 	"life_inv_redgull",
 	"life_inv_peach",
+	"life_inv_uraniumu",
+	"life_inv_uraniump",
 	"life_inv_diamond",
 	"life_inv_diamondr",
 	"life_inv_spikeStrip",
@@ -407,6 +409,7 @@ life_licenses =
 	["license_civ_cement","civ"],
 	["license_med_air","med"],
 	["license_civ_home","civ"],
+	["license_civ_uran","civ"],
 	/*["license_civ_donator1","civ"],
 	["license_civ_donator2","civ"],
 	["license_civ_donator3","civ"],*/
@@ -422,7 +425,7 @@ life_licenses =
 
 //life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",120],["heroinp",250],["cokeu",150],["cokep",350],["cannabis",250],["opium",250],["marijuana",300],["turtle",500],["hackingtool",1000],["blastingcharge",1000],["boltcutter",350],["methu",40],["methp",400],["cokeu",40],["cokep",500],["MDMAu",30],["emerald",1220],["sapphire",1520],["ruby",720],["MDMAp",360]];
+life_illegal_items = [["heroinu",120],["heroinp",250],["cokeu",150],["cokep",350],["cannabis",250],["opium",250],["marijuana",300],["turtle",500],["hackingtool",1000],["blastingcharge",1000],["boltcutter",350],["methu",40],["methp",400],["cokeu",40],["cokep",500],["MDMAu",30],["emerald",1220],["sapphire",1520],["ruby",720],["MDMAp",360],["uraniumu",1000],["uraniump",1300]];
 
 
 /*
@@ -476,6 +479,8 @@ sell_array =
 	["diamond",35],
 	["diamondc",290],
 	["iron_r",230],
+	["uraniumu",700],
+	["uraniump",1200],
 	["copper_r",190],
 	["salt_r",165],
 	["glass",130],

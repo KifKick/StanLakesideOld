@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2549;
+		nextID=2573;
 	};
 	class MarkerIDProvider
 	{
-		nextID=46;
+		nextID=61;
 	};
 	class Camera
 	{
-		pos[]={8550.6045,35.091892,6883.4336};
-		dir[]={-0.89379585,-0.33180627,0.3017365};
-		up[]={-0.31437868,0.94334674,0.10613113};
-		aside[]={0.31985676,-2.5203917e-008,0.94747186};
+		pos[]={1268.8783,435.99045,6625.0166};
+		dir[]={-0.73441339,-0.49949598,0.45954978};
+		up[]={-0.42344013,0.86630917,0.2649608};
+		aside[]={0.53045946,5.561742e-008,0.84773719};
 	};
 };
 binarizationWanted=0;
@@ -697,7 +697,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2101;
+		items=2112;
 		class Item0
 		{
 			dataType="Object";
@@ -21831,7 +21831,7 @@ class Mission
 			position[]={6597.7837,44.550049,4563.9492};
 			name="cop_spawn_6";
 			type="Empty";
-			angle=352.52292;
+			angle=352.52289;
 			id=1247;
 			atlOffset=-10.439953;
 		};
@@ -29154,8 +29154,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6110.2764,152.92117,5049.9609};
-						angles[]={0,4.0939612,6.2822089};
+						position[]={6110.2759,152.92117,5049.9609};
+						angles[]={0,4.0939665,6.282208};
 					};
 					side="Civilian";
 					flags=4;
@@ -29167,6 +29167,29 @@ class Mission
 					id=1614;
 					type="C_man_polo_2_F_afro";
 					atlOffset=1.5258789e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item87
 				{
@@ -42589,6 +42612,203 @@ class Mission
 			colorName="ColorOrange";
 			id=2548;
 			atlOffset=-20.900017;
+		};
+		class Item2101
+		{
+			dataType="Trigger";
+			position[]={10040.793,94.43,3359.4519};
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="[""Wkroczyles na radioaktywna strefe!"",20,""red""] call A3L_Fnc_Msg; player setVariable [""exitRad"",false]; player call life_fnc_radArea;";
+				onDeactivation="[""Opusciles radioaktywna strefe!"",20,""red""] call A3L_Fnc_Msg; player setVariable [""exitRad"",true];";
+				sizeA=100;
+				sizeB=100;
+				repeatable=1;
+				activationBy="ANY";
+			};
+			id=2549;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item2102
+		{
+			dataType="Marker";
+			position[]={10039.924,4.3077755e+018,3360.7561};
+			name="marker_46";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			fillName="DiagGrid";
+			a=100;
+			b=100;
+			id=2550;
+			atlOffset=4.3077755e+018;
+		};
+		class Item2103
+		{
+			dataType="Marker";
+			position[]={10024.386,4.3077755e+018,3355.0171};
+			name="uran_1";
+			text="STREFA RADIACJI - WYDOBYCIE URANU!";
+			type="plp_mark_as_checkpoint";
+			colorName="ColorRed";
+			id=2557;
+			atlOffset=4.3077755e+018;
+		};
+		class Item2104
+		{
+			dataType="Trigger";
+			position[]={7072.3491,73.039108,10017.023};
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="[""Wkroczyles na radioaktywna strefe!"",20,""red""] call A3L_Fnc_Msg; player setVariable [""exitRad"",false]; player call life_fnc_radArea;";
+				onDeactivation="[""Opusciles radioaktywna strefe!"",20,""red""] call A3L_Fnc_Msg; player setVariable [""exitRad"",true];";
+				sizeA=70;
+				sizeB=70;
+				repeatable=1;
+				activationBy="ANY";
+			};
+			id=2560;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item2105
+		{
+			dataType="Marker";
+			position[]={7072.606,-5.7351229e-015,10016.757};
+			name="marker_47";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			fillName="DiagGrid";
+			a=70;
+			b=70;
+			id=2561;
+			atlOffset=-73.039108;
+		};
+		class Item2106
+		{
+			dataType="Marker";
+			position[]={7067.7559,-5.8669619e-015,10015.981};
+			name="marker_60";
+			text="STREFA RADIACJI - Przetwarzanie uranu";
+			type="plp_mark_as_checkpoint";
+			colorName="ColorRed";
+			id=2566;
+			atlOffset=-73.039108;
+		};
+		class Item2107
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7066.4722,73.61937,10016.398};
+				angles[]={0,1.0682288,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""Oczysc Uran"",life_fnc_processAction,""uran"",0,false,false,"""",' life_inv_uraniumu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_uran""] call life_fnc_varToStr,[([""uran""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""uran"",0,false,false,"""",' !license_civ_uran && playerSide == civilian '];";
+			};
+			id=2567;
+			type="Land_InfoStand_V2_F";
+		};
+		class Item2108
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={1030.2314,293.09454,6680.8984};
+						angles[]={0,1.5442324,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this allowDamage false; this enableSimulation false; this addAction[""Handlarz cementem"",life_fnc_virt_menu,""uranium""]; this addUniform ""U_OI_Scientist"";";
+					};
+					id=2569;
+					type="cg_iamstupid";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2568;
+		};
+		class Item2109
+		{
+			dataType="Trigger";
+			position[]={1057.9943,288.82806,6697.8896};
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="[""Wkroczyles na radioaktywna strefe!"",20,""red""] call A3L_Fnc_Msg; player setVariable [""exitRad"",false]; player call life_fnc_radArea;";
+				onDeactivation="[""Opusciles radioaktywna strefe!"",20,""red""] call A3L_Fnc_Msg; player setVariable [""exitRad"",true];";
+				sizeA=70;
+				sizeB=70;
+				repeatable=1;
+				activationBy="ANY";
+			};
+			id=2570;
+			type="EmptyDetectorAreaR50";
+			atlOffset=-0.10400391;
+		};
+		class Item2110
+		{
+			dataType="Marker";
+			position[]={1057.4968,0,6697.8643};
+			name="marker_61";
+			text="STREFA RADIACJI - Skup Uranu";
+			type="plp_mark_as_checkpoint";
+			colorName="ColorRed";
+			id=2571;
+			atlOffset=-289.05865;
+		};
+		class Item2111
+		{
+			dataType="Marker";
+			position[]={1058.0743,215.76538,6697.8286};
+			name="marker_48";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			fillName="DiagGrid";
+			a=70;
+			b=70;
+			id=2572;
+			atlOffset=-73.143127;
 		};
 	};
 	class Connections

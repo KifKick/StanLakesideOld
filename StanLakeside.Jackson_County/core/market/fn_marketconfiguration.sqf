@@ -10,7 +10,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, Default, Min, Max, changes in action, [Sales multiplied by 1, Purchase multiplied by -1]
 	//["gold", 1500, 450, 2300, 8, 5],
 	
-	["oilp", 440, 220, 650, 4, 2,
+	["oilp", 440, 220, 650, 2, 1,
 		[
 			["diamondc",1],
 			["iron_r",1],
@@ -22,7 +22,7 @@ life_market_resources = [
 	]
 	,
 	
-	["iron_r", 330, 170, 550, 4, 4,  
+	["iron_r", 330, 170, 550, 2, 2,  
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -33,7 +33,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamondc", 390, 180, 560, 4, 2, 
+	["diamondc", 390, 180, 560, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -44,7 +44,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["copper_r", 290, 145, 420, 4, 4,
+	["copper_r", 290, 145, 420, 2, 2,
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -55,7 +55,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["salt_r", 265, 120, 410, 4, 3,
+	["salt_r", 265, 120, 410, 2, 1.5,
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -66,7 +66,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["glass", 230, 110, 350, 4, 3,
+	["glass", 230, 110, 350, 2, 1.5,
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -77,7 +77,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cement", 290, 145, 410, 4, 3,
+	["cement", 290, 145, 410, 2, 1.5,
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -90,40 +90,53 @@ life_market_resources = [
 	
 /////////////////////////
 	
-	["emerald", 650, 440,850, 4, 4,  
+	["emerald", 650, 440,850, 2, 2,  
 		[ 
 			["marijuana",1], 
 			["mdmap",1],
 			["heroinp",1],
-			["methp",1]
+			["methp",1],
+			["uraniump",1]
 		] 
 	],
 
-	["marijuana", 530, 320, 770, 4, 4,   
+	["marijuana", 530, 320, 770, 2, 2,   
 		[ 
 			["emerald",1], 
 			["mdmap",1],
 			["heroinp",1],
-			["methp",1]
+			["methp",1],
+			["uraniump",1]
 		] 
 	],
 	
-    ["mdmap", 560, 340, 720, 4, 4,   
+    ["mdmap", 560, 340, 720, 2, 2,   
 		[ 
 			["marijuana",1], 
 			["emerald",1],
 			["heroinp",1],
-			["methp",1]
+			["methp",1],
+			["uraniump",1]
 		] 
 	],
 
-	["methp", 700, 500, 900, 4, 4,   
+	["methp", 700, 500, 900, 2, 2,   
+		[ 
+			["marijuana",1], 
+			["emerald",1],
+			["mdmap",1],
+			["methp",1],
+			["uraniump",1]
+		] 
+	],
+	
+	["uraniump", 1500, 1100, 1900, 2, 2,
 		[ 
 			["marijuana",1], 
 			["emerald",1],
 			["mdmap",1],
 			["methp",1]
-		] 
+		]
 	]
 ];
 publicVariable "life_market_resources";
