@@ -21,7 +21,7 @@ switch (_side) do
 			["cop_spawn_2","Morrison","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
 			["cop_spawn_3","Mokotow","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
 			["cop_spawn_5","DoC","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["prok_spawn_1","Prokuratura","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["cop_spawn_9","Prokuratura","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 	};
 
@@ -54,8 +54,8 @@ switch (_side) do
 		if(license_civ_rebel /*&& !(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE])*/ ) then {
 
 			_return = [
-				["reb_spawn_1","Rebel 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_2","Rebel 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				//["reb_spawn_1","Rebel 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["reb_spawn_2","Rebel","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Los D","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["ld_spawn_1","LD Air","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["ld_spawn_2","LD Hos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -109,8 +109,8 @@ switch (_side) do
 		if(license_civ_rebel /*&& !(rebelshipment getVariable["progress",FALSE]) && !(rebelshipment getVariable["notCaptured",FALSE]) */) then {
 
 			_return = [
-				["reb_spawn_1","Rebel 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_2","Rebel 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				//["reb_spawn_1","Rebel 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["reb_spawn_2","Rebel","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Los D","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["ld_spawn_1","LD Air","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["ld_spawn_2","LD Hos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
