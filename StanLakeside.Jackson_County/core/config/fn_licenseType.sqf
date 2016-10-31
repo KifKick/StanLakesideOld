@@ -48,6 +48,7 @@ switch (_mode) do
 			case "mair": {_var = "license_med_air"};
 			case "home": {_var = "license_civ_home"};
 			case "uran": {_var = "license_civ_uran"};
+			case "uranp": {_var = "license_civ_uranp"};
 			//case "donator1": {_var = "license_civ_donator1"};
 			//case "donator2": {_var = "license_civ_donator2"};
 			//case "donator3": {_var = "license_civ_donator3"};
@@ -92,6 +93,8 @@ switch (_mode) do
 			case "license_civ_cement": {_var = "cement"};
 			case "license_med_air": {_var = "mair"};
 			case "license_civ_home": {_var = "home"};
+			case "license_civ_uran": {_var = "uran"};
+			case "license_civ_uranp": {_var = "uranp"};
 			//case "license_civ_donator1": {_var = "donator1"};
 			//case "license_civ_donator2": {_var = "donator2"};
 			//case "license_civ_donator3": {_var = "donator3"};

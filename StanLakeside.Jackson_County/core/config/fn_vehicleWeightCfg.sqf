@@ -123,7 +123,18 @@ switch (_className) do
 	case "shounka_ivceco_rouge": {450};
 	case "shounka_ivceco_violet": {450};
 	case "C_MSSprinter_01_F": {180};
+	case "C_MSSprinter_Rojo_F": {180};
+	case "C_MSSprinter_Azul_F": {180};
+	case "C_MSSprinter_Verde_F": {180};
+	case "C_MSSprinter_Blanco_F": {180};
+	case "C_MSSprinter_Negro_F": {180};
+
 	case "C_MSSprinter_02_F": {230};
+	case "C_MSSprinter2_Rojo_F": {230};
+	case "C_MSSprinter2_Azul_F": {230};
+	case "C_MSSprinter2_Verde_F": {230};
+	case "C_MSSprinter2_Blanco_F": {230};
+	case "C_MSSprinter2_Negro_F": {230};
 
 
 

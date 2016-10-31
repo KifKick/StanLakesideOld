@@ -858,8 +858,18 @@ switch (_shop) do
 			["C_Van_01_fuel_F",70000],
 			["C_Van_01_box_F",90000],
 			["C_Van_01_transport_F",75000],
-			["C_MSSprinter_01_F",125000],
-			["C_MSSprinter_02_F",255000],
+			
+			["C_MSSprinter_Rojo_F",125000],
+			["C_MSSprinter_Azul_F",125000],
+			["C_MSSprinter_Verde_F",125000],
+			["C_MSSprinter_Blanco_F",125000],
+			["C_MSSprinter_Negro_F",125000],
+			
+			["C_MSSprinter2_Rojo_F",125000],
+			["C_MSSprinter2_Azul_F",125000],
+			["C_MSSprinter2_Verde_F",125000],
+			["C_MSSprinter2_Blanco_F",125000],
+			["C_MSSprinter2_Negro_F",255000],
 			
 
 

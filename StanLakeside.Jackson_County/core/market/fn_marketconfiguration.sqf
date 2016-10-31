@@ -77,7 +77,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["cement", 290, 145, 410, 2, 1.5,
+	["cement", 245, 145, 410, 2, 1.5,
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -130,7 +130,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["uraniump", 1500, 1100, 1900, 2, 2,
+	["uraniump", 1250, 1100, 1900, 2, 2,
 		[ 
 			["marijuana",1], 
 			["emerald",1],

@@ -81,6 +81,7 @@ switch (_mode) do
 			case "redgull": {"life_inv_redgull"};
 			case "peach": {"life_inv_peach"};
 			case "uraniumu": {"life_inv_uraniumu"};
+			case "uraniumo": {"life_inv_uraniumo"};
 			case "uraniump": {"life_inv_uraniump"};
 			case "goldbar": {"life_inv_goldbar"};
 			case "blastingcharge": {"life_inv_blastingcharge"};

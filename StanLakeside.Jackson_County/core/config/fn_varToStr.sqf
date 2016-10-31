@@ -106,6 +106,7 @@ switch (_var) do
 	case "life_inv_rawsheepmeat": {(localize "STR_Item_rawsheepmeat")};
 	case "life_inv_rawrabbit": {(localize "STR_Item_rawrabbit")};
 	case "life_inv_uraniumu": {"Ruda Uranu"};
+	case "life_inv_uraniumo": {"Oczyszczony Uran"};
 	case "life_inv_uraniump": {"Czysty Uran"};
 	//Additions
 	case "life_inv_zoobeer": {"Piwo"}; 
@@ -158,6 +159,7 @@ switch (_var) do
 	case "license_civ_meth": {(localize "STR_License_Meth")};
 	case "license_civ_rifle": {"Pozwolenie na bron dluga"};
 	case "license_civ_uran": {"Szkolenie z oczyszczania uranu"};
+	case "license_civ_uranp": {"Szkolenie z przetwarzania uranu"};
 	/*case "license_civ_donator1": {"Donator 1"};
 	case "license_civ_donator2": {"Donator 2"};
 	case "license_civ_donator3": {"Donator 3"};*/

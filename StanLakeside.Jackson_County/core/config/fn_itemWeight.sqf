@@ -40,8 +40,9 @@ switch (_item) do
 	case "marijuana": {2};
 	case "apple": {0.5};
 	case "peach": {0.5};
-	case "uraniumu": {5};
-	case "uraniump": {3};
+	case "uraniumu": {7};
+	case "uraniumo": {6};
+	case "uraniump": {5};
 	case "water": {0.5};
 	case "rabbit": {1};
 	case "salema": {2};
