@@ -119,7 +119,8 @@ _vehicles =
 	["cg_audi_rs4_pol_noir","Audi RS4"],
 	["cg_brinks_bank_noir","Brinks"],
 	["cnp_Iveco_GOIT","47-Mobile Command Unit"],
-	["Navara_Policia","38-Navara SERT"]
+	["Navara_Policia","38-Navara SERT"],
+	["A3_Air_F_Heli_Light_02","PO-30-ORCA-SERT"]
 ];
 {
 	if(_x select 0 == _className) exitWith {_return = _x select 1};
