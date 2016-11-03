@@ -1,7 +1,6 @@
 /*
 	File: fn_virt_shops.sqf
-	
-	
+		
 	Description:
 	Config for virtual shops.
 */
