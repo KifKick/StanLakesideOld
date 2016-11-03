@@ -1902,7 +1902,8 @@ switch (_shop) do
 			["C_Heli_Light_01_civil_F",45000],
 			/*["EC_135_F",45000],*/
 			["kif_vehicles_helicopter_mh9_police",85000],
-			["melb_h6m",85000]
+			["melb_h6m",85000],
+			["A3_Air_F_Heli_Light_02",100000]
 		];
 	};
 	case "cop_airhq":
