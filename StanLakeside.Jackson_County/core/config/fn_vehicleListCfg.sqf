@@ -1091,7 +1091,7 @@ switch (_shop) do
 			["DAR_ExplorerSheriff",150000],
 			["ivory_rs4_unmarked",200000],
 			["ivory_evox_unmarked",200000],
-			["ivory_m3_marked_gts",200000],
+			["ivory_m3_marked_gts",200000]
 		];
 	};
 	case "cop_car_civ":
