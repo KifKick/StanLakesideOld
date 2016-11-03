@@ -21,7 +21,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			
+			["U_007_BIS_Marshall","Cadet",10],
 			["police_kevuni1",nil,15],
 			["police_kevuni2",nil,15],
 			["police_kevuni3",nil,15],
@@ -117,7 +117,6 @@ switch (_filter) do
 			["A3L_SStie","Stroj IAD",15],
 			["LS_Marshal_Jacket",nil,15],
 			["LS_Marshal_Jacket3",nil,15],
-			["U_007_BIS_Marshall","Cadet",50],
 			["LVPD_rang1","Police Officer I",50],
 			["LVPD_rang2","Police Officer II",50],
 			["LVPD_rang13","Police Officer III",15],
