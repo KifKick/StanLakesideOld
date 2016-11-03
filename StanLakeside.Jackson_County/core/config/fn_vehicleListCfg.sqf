@@ -1098,6 +1098,7 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["cg_brinks_bank_noir",250000],
 			["shounka_transam_noir",30000],
 			["IVORY_PRIUS",30000],
 			["ivory_supra",30000],
