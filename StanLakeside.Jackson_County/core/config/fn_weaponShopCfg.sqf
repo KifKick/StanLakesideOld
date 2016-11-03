@@ -117,39 +117,40 @@ switch(_shop) do
 				{
 					["Podstawowe wyposazenie Policji",								
 						[
+							["ItemCompass",nil,50],  
+							["ItemWatch",nil,10],                                          
+							["Mattaust_Keys","Klucze do Komendy",1],
+							["ItemGPS",nil,100],  
+							["tf_anprc152",nil,100],
+							["ToolKit",nil,200], 
+							["CG_ATF_Handcuffs_i","Kajdanki",50],
+							["CG_Pro_Item_i","GoPro",550],
+							["CG_Spikes_Collapsed","Kolczatka",100], 
+							["cl3_taserM26_Yellow","Paralizator",100],
+							["cl3_taserm26mag_mpx","Kartridz do Paralizatora",50],
+							["CG_BATON","Tonfa",100],
+							["CG_TELBAT","Palka teleskopowa",100],
 							["cg_atf_bandage_i","Bandaz",10],
 							["CG_battery_i","Bateria",30],
 							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",200],
 							["CG_ATF_Donut_Box_i","Donuty Na Wynos",200],
-							["nonlethal_swing", "Slepa amunicja",1],
-							["sharp_swing","Ostra amunicja",1],
-							["CG_Pro_Item_i","GoPro",550],
-							["CG_ATF_Handcuffs_i","Kajdanki",50],
 							["cg_torch","Latarka",250], 
-							["CG_Spikes_Collapsed","Kolczatka",250], 
 							["cg_torchbattery",nil,250], 
 							["gign_shield","Tarcza",2500],
-							["CG_BATON","Tonfa",100],
-							["CG_TELBAT","Palka teleskopowa",100],
-							["Mattaust_Keys","Klucze do Komendy",1],
-							["acc_flashlight","ACC Flashlight",10],
-							["RH_M6X","RH Flashlight",10],
-							["A3L_M4Flashlight","M4A3 Flashlight",10],
-							["cl3_fingerprintscanner","Skaner odciskow palcow",1000],
 							["cl_plastic_shield","Tarcza plastikowa",750],
-							["cl3_taserM26_Yellow","Paralizator",500],
-							["cl3_taserm26mag_mpx","Kartridz do Paralizatora",50],
+							["cl3_fingerprintscanner","Skaner odciskow palcow",1000],
 							["Radar_Gun","Suszarka",250],								
-							["ToolKit",nil,200], 
-							["ItemCompass",nil,50],  
-							["ItemWatch",nil,10],                                          
-							["Chemlight_red",nil,20],
+							["nonlethal_swing", "Slepa amunicja",1],
+							["sharp_swing","Ostra amunicja",1],
+							["Binocular",nil,100]
+							/*["Chemlight_red",nil,20],
 							["Chemlight_yellow",nil,20],
 							["Chemlight_green",nil,20],
 							["Chemlight_blue",nil,20],
-							["Binocular",nil,100],
-							["ItemGPS",nil,100],  
-							["tf_anprc152",nil,100]
+							["acc_flashlight","ACC Flashlight",10],
+							["RH_M6X","RH Flashlight",10],
+							["A3L_M4Flashlight","M4A3 Flashlight",10]*/
+							
 						]
 					];
 				};
@@ -278,8 +279,6 @@ switch(_shop) do
 							["RH_sbr9_des",nil,10],
 							["RH_32Rnd_9mm_M822",nil,10],
 							["AG_MP9_sand_peq",nil,10],
-							
-							
 							["AG_MP9_wcam",nil,10],
 							["AG_MP9_digi",nil,10],
 							["AG_MP9_sand",nil,10],
@@ -290,23 +289,10 @@ switch(_shop) do
 							["30Rnd_9x21_Mag",nil,10],
 							["optic_Aco",nil,10],
 							["optic_ACO_grn_smg",nil,10],
-							
-							
-							
-							
-							
-							
-							
-							
 							["hgun_PDW2000_F",nil,10],
 							["30Rnd_9x21_Mag",nil,10],
 							["RH_sbr9_des",nil,10],
 							["RH_32Rnd_9mm_M822",nil,10],
-							
-							
-							
-							
-							
 							["hlc_30Rnd_545x39_B_AK",nil,10],
 							["RH_g18",nil,10],
 							["RH_33Rnd_9x19_g18",nil,10],
@@ -443,8 +429,8 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 6) then {
 				_temp =  [
-                    ["HandGrenade_Stone","Flashbang",300],
-					["SmokeShellYellow","Gaz lzawiacy",300]					
+                    ["HandGrenade_Stone","Flashbang",100],
+					["SmokeShellYellow","Gaz lzawiacy",100]					
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -454,25 +440,22 @@ switch(_shop) do
 				_temp =  [
 					["RH_kimber",nil,100],
 					["RH_7Rnd_45cal_m1911",nil,5],
-					["RH_Deaglem",nil,240],
-					["RH_demz",nil,240],
-					["RH_Deflash",nil,240],
-					["RH_7Rnd_50_AE",nil,240],
-					["RH_M4A6",nil,5000],
-					["RH_M16A2",nil,5000],
-					["RH_M16A3",nil,5000],
-					["RH_M16A4",nil,5000],
-					["RH_M16A6",nil,5000],
-					["RH_mk12mod1",nil,5000],
+					["RH_Deaglem",nil,200],
+					["RH_demz",nil,200],
+					["RH_Deflash",nil,200],
+					["RH_7Rnd_50_AE",nil,50],
+					["RH_M4A6",nil,1000],
+					["RH_M16A2",nil,1000],
+					["RH_M16A3",nil,1000],
+					["RH_M16A4",nil,1000],
+					["RH_M16A6",nil,1000],
+					["RH_mk12mod1",nil,1000],
 					["RH_30Rnd_68x43_FMJ",nil,500],
-
 					["hlc_30rnd_556x45_EPR",nil,520],
 					["muzzle_snds_M",nil,4],
-
 					["RH_compM2",nil,25],
 					["RH_compM2l",nil,25],
-					["RH_demz",nil,1500],
-				    	["RH_M6X",nil,1500],
+					["RH_M6X",nil,1500],
 					["RH_leu_mk4",nil,500]
 				];
 				{
