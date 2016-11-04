@@ -542,6 +542,7 @@ switch (_className) do
 	case "ivory_m3_marked_gts": {35};
 	case "ivory_m3_unmarked_green": {35};
 	case "kif_vehicles_helicopter_mh9_police": {35};
+	case "O_Heli_Light_02_unarmed_F": {70};
 	
 	
 	case "vvv_camionbasura": {150};
