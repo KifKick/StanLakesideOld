@@ -269,6 +269,8 @@ switch (_filter) do
 			["A3L_EC_PATROL_VEST","Sheriff Krotka",15],
 			["kev_hess_security_heavy_vest","nil",20],
 			["kev_hess_security_short_vest","nil",20],
+			["DOC_Vest_Threat","Correction Kamizelka Dluga",15],
+			["DOC_Vest_Threat_Tan","Correction Kamizelak Konwoj",15],
 			["kif_sheriff_traffic_vest","Sheriff Drogowka",20]
 			/*["DOC_Vest_Threat_Fix",nil,20],
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
