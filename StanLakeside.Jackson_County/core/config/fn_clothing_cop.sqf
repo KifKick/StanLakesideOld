@@ -331,6 +331,8 @@ switch (_filter) do
 			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
 			["kif_sert_vest_moro","Police Sert MORO Vest",15],
 			["kif_sert_vest","Police SERT Vest",15],
+			["kev_hess_security_heavy_vest","nil",20],
+			["kev_hess_security_short_vest","nil",20],
 			["kif_sheriff_vest","Sheriff Kamizelka",20],
 			["kif_traffic_vest","Kamizelka Drogowka",20]*/
 			
