@@ -593,6 +593,7 @@ switch (_filter) do
 			["kaelmonty2",nil,550],
 			["kaelmario",nil,550],	
 			["kaelsuits",nil,550],	
+			["kevnvidia",nil,550],
 			["koiladc",nil,550],
 			["koilbatman_1",nil,550],	
 			["koilbender_1",nil,550],	
