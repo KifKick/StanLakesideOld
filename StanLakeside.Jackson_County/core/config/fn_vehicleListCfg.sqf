@@ -1098,6 +1098,7 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["cg_brinks_bank_noir",250000],
 			["shounka_transam_noir",30000],
 			["IVORY_PRIUS",30000],
 			["ivory_supra",30000],
@@ -1903,7 +1904,7 @@ switch (_shop) do
 			["C_Heli_Light_01_civil_F",45000],
 			["kif_vehicles_helicopter_mh9_police",85000],
 			["melb_h6m",85000],
-			["A3_Air_F_Heli_Light_02",100000]
+			["O_Heli_Light_02_unarmed_F",100000]
 
 		];
 	};
