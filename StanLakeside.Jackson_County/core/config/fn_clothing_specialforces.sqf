@@ -88,6 +88,8 @@ switch (_filter) do
 			["kaelvest_sert4_Fix",nil,15],
 			["kaelvest_sert3_Fix",nil,15],
 			["kaelvest_sert2_Fix",nil,15],
+			["SERT_VEST_GREEN",nil,15],
+			["SERT_FULL_VESTGRN",nil,15],
 			["SERTvest1",nil,15],
 			["TRYK_V_Sheriff_BA_TB3",nil,15],
 			["TRYK_V_tacv1L_BK",nil,15],
