@@ -93,6 +93,7 @@ switch (_filter) do
 			["kif_clothing_CivShirtVolcom",nil,500],
 			["kif_clothing_CivShirtVolcomLogo",nil,500],
 			["kif_clothing_CivShirtVolcomMonster",nil,500],
+			["kev_clothing_CivShirtNvidia",nil,500],
 			
 
 			["OrangePlaid_uni","A3L Plaid (Orange)",35],
