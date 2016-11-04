@@ -39,25 +39,34 @@ switch(_shop) do
 				};
 			};
         };
-		case "oskp":
+		case "hess":
         {
 			switch(true) do
 			{
-				case (!license_civ_oskp): {"Sprzet wydaje tylko i wylacznie pracownikom firmy O.S.K.P"};
+				case (!license_civ_hess): {"Co ty tutaj robisz, Jak sie tu dostales? ALARM!"};
 				default
 				{
-					["Narzedzia O.S.K.P",
+					["Uzbrojenie Hess Seciurities",
 						[
+							["RH_g17",nil,800],
+							["RH_17Rnd_9x19_g17",nil,25],
+							["RH_p226s",nil,800],
+							["RH_15Rnd_9x19_SIG",nil,25],
+							["RH_g19",nil,800],
+							["RH_17Rnd_9x19_g17",nil,25],
+							["RH_m9",nil,800],
+							["RH_15Rnd_9x19_M9",nil,25],
+							["RH_fn57",nil,800],
+							["RH_20Rnd_57x28_FN",nil,25],
+							["KPFS_P1",nil,800],
+							["KPFS_8Rnd_9x19_PARA",nil,25],
+							["A3L_Glock17",nil,800],
+							["A3L_Glock17mag",nil,25],
 							["A3L_Shovel",nil,50],
-			                ["A3L_ChainSaw",nil,100],
-							["cl_bigredkey",nil,100],
-							["A3L_JackHammer",nil,100],
-							["A3L_Spanner",nil,50],
-							["A3L_Hammer",nil,50],
-							["cl_pepperspray",nil,50],
-							["ToolKit",nil,5000],
-							["nonlethal_swing", "Slepa amunicja", 10],
-							["sharp_swing","Ostra amunicja",10]
+							["RH_X300",nil,15],
+							["ToolKit",nil,800],
+							["nonlethal_swing", "Slepa amunicja",1],
+							["sharp_swing","Ostra amunicja",1]
 						]
 					];
 				};
@@ -197,9 +206,7 @@ switch(_shop) do
 					["Zbrojownia SERT",								
 						[
 							["KPFS_G36A4",nil,500],
-							["KPFS_30Rnd_556x45_G36",nil,50],
-							["RH_M27IAR",nil,500],
-							["RH_60Rnd_556x45_Mk318",nil,50],
+							["KPFS_30Rnd_556x45_G36",nil,500],
 							["RH_Hk416c",nil,500],
 							["RH_Hk416s",nil,500],
 							["RH_Hk416",nil,500],
@@ -208,9 +215,9 @@ switch(_shop) do
 							["RH_60Rnd_556x45_Mk318","Mk318 60Rnd",50],
 							["RH_qdss_nt4",nil,500],
 							["AG_MP9_sidearm",nil,500],
-							["30Rnd_45ACP_Mag_SMG_01",nil,50],
+							["30Rnd_45ACP_Mag_SMG_01",nil,500],
 							["hlc_smg_mp5k",nil,500],
-							["hlc_30Rnd_9x19_B_MP5",nil,50],
+							["hlc_30Rnd_9x19_B_MP5",nil,500],
 							["optic_ACO_grn",nil,500],
 							["optic_Hamr",nil,500],
 							["RH_ta31rmr",nil,500],

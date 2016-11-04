@@ -14,7 +14,7 @@ switch (_type) do
 	case "MDMA": {25000};
 	case "meth": {20000};
 	case "coke": {25000};
-	case "oskp": {2000};
+	case "hess": {2000};
 	case "prokurator": {2000};
 	case "driver": {500}; //Drivers License cost
 	case "boat": {5000}; //Boating license cost
