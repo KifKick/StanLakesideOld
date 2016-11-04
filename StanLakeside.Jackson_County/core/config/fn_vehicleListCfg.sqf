@@ -1076,7 +1076,7 @@ switch (_shop) do
 			["ivory_isf_unmarked",200000],
 			//SERT
 			["charger_sert",250000],
-			["Navara_Policia",200000]
+			["Navara_Policia",200000],
 			["cg_evoSERT1",250000],
 			["DAR_SWATPolice",100000],
 			["A3L_TaurusUC",50000],

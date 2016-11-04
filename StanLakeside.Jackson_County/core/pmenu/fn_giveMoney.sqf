@@ -35,6 +35,6 @@ _toPlayerID = getPlayerUID _unit;
 _toPlayerName = name _unit;
 _type = 2;
 _amount = _amount;
-[[_playerID,_playerName,_toPlayerID,_toPlayerName,_type,_amount],"TON_fnc_moneyLog",false] call life_fnc_MP;
+[_playerID,_playerName,_toPlayerID,_toPlayerName,_type,_amount] remoteExecCall ["TON_fnc_moneyLog", (call life_fnc_HCC)];
 
 ctrlShow[2001,true];

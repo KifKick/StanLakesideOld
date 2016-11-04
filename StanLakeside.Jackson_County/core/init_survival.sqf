@@ -1422,7 +1422,7 @@ fnc_CurrentCallMenu = {
 	lbClear _list;
 	{
 		_userID = _x getvariable "PhoneID";
-		if( _userID == _myID && _x != player) then {
+		if( _userID == _myID ) then {
 			_side = switch(side _x) do {case west: {"Cop"}; case east : {"Mafia"}; case civilian : {"Civ"}; case independent : {"Medic"}; default {"Unknown"}; };
 			_list lbAdd format["%1 - %2", name _x,_side];
 			_list lbSetdata [(lbSize _list)-1,str(_x)];
