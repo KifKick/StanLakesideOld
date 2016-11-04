@@ -24,6 +24,7 @@ switch (_filter) do
 			["herpSERT1",nil,15],
 			["herpSERT2",nil,15],
 			["herpSERT3",nil,15],
+			["A3L_EC_SERT",nil,15],
 			["CG_SERT1",nil,15],
 			["CG_SERT2",nil,15],
 			["CG_SERT3",nil,15],
@@ -46,6 +47,7 @@ switch (_filter) do
 		[
 			["jamie_blackhelmet","Czarny Helm Swat!",5],
 			["TRYK_H_PASGT_BLK","SERT Standard Helmet",5],
+			["TRYK_H_PASGT_OD",nil,5],
 			["CG_sert_H7",nil,5],
 			["CG_sert_H6",nil,5],
 			["CG_sert_H5",nil,5],
