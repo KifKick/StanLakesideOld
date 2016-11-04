@@ -267,6 +267,8 @@ switch (_filter) do
 			["kif_supervisor_sheriff_vest_dorian", "SO Supervisor D.Lych", "15"],
 			["kif_supervisor_sheriff_vest_mike", "SO Supervisor M. Williams", "15"],
 			["A3L_EC_PATROL_VEST","Sheriff Krotka",15],
+			["kev_hess_security_heavy_vest","nil",20],
+			["kev_hess_security_short_vest","nil",20],
 			["kif_sheriff_traffic_vest","Sheriff Drogowka",20]
 			/*["DOC_Vest_Threat_Fix",nil,20],
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
