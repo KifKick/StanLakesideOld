@@ -46,6 +46,13 @@ if(_spawnPoint isEqualTo "") exitWith {[localize "STR_Shop_Veh_Block", false] sp
 ["cash","take",_basePrice] call life_fnc_handleCash; 
 [format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText], false] spawn domsg;
 [player,"buycarniggah"] spawn life_fnc_nearestSound;
+_playerID = getPlayerUID player;
+_playerName = name player;
+_vehicleClass = _className;
+_vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
+_type = 0;
+_amount = _basePrice;
+[_playerID,_playerName,_vehicleClass,_vehicleName,_type,_amount] remoteExecCall ["TON_fnc_vehicleLog", (call life_fnc_HCC)];
 _obj = ObjNull;
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {

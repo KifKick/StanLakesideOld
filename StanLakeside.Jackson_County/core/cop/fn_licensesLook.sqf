@@ -67,6 +67,12 @@ if(!skip_all) then {
 	{
 		_civ addgoggles OldGoggles;
 	};
+	_playerID = getPlayerUID player;
+	_playerName = name player;
+	_byPlayerID = getPlayerUID _civ;
+	_byPlayerName = name _civ;
+	_type = 4;
+	[_playerID,_playerName,_byPlayerID,_byPlayerName,_type,""] remoteExecCall ["TON_fnc_copLog", (call life_fnc_HCC)];
 } else {
 
 	["Nie udalo mi sie sprawdzic dowodu!", false] spawn domsg;

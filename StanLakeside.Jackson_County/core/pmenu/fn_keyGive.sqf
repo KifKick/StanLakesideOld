@@ -32,4 +32,10 @@ if(_index isEqualTo -1) then
 };
 
 [format["Dales kluczyki %1 do swojego %2",_unit getVariable["realname",name _unit],typeOf _vehicle], false] spawn domsg;
+_playerID = getPlayerUID player;
+_playerName = name player;
+_toPlayerID = getPlayerUID _unit;
+_toPlayerName = name _unit;
+_type = 2;
+[_playerID,_playerName,_toPlayerID,_toPlayerName,_type,""] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 [_vehicle,_unit,profileName] remoteExecCall ["clientGetKey",_unit];

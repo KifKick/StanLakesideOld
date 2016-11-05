@@ -66,6 +66,9 @@ if(_fuck != _you) then {
 		[format["%1 jest ciezko ranny!", _you], false] spawn domsg; 
 		[player,"pain2"] spawn life_fnc_nearestSound;
 		shooting_death = false;
+		_playerID = getPlayerUID player;
+		_type = 1;
+		[_playerID,_you,"","",_type,"", ""] remoteExecCall ["TON_fnc_deathLog", (call life_fnc_HCC)];
 	} else {
 		[format["%1 downed %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg; 
 		life_kcCamera  = "CAMERA" camCreate (getPosATL _killer); 
@@ -84,6 +87,9 @@ if(_fuck != _you) then {
 	shooting_death = false;
 	[format["%1 wykrwawia sie!", _fuck], false] spawn domsg; 
 	[player,"pain2"] spawn life_fnc_nearestSound;
+	_playerID = getPlayerUID player;
+	_type = 1;
+	[_playerID,_you,"","",_type,"", ""] remoteExecCall ["TON_fnc_deathLog", (call life_fnc_HCC)];
 };
 
 if(_playerkill) then { 
@@ -92,6 +98,10 @@ if(_playerkill) then {
 	life_kcCamera cameraEffect ["TERMINATE","BACK"];
 
 	camDestroy life_kcCamera;
+	_playerID = getPlayerUID player;
+	_toPlayerID = getPlayerUID _killer;
+	_type = 0;
+	[_playerID,_you,_byPlayerID,_fuck,_type,_killweapon, _killdistance] remoteExecCall ["TON_fnc_deathLog", (call life_fnc_HCC)];
 };
 
 //Setup our camera view

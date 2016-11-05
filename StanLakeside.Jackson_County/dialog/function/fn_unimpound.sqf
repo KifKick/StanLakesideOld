@@ -32,5 +32,9 @@ if(typeName life_garage_sp isEqualTo "ARRAY") then {
 };
 
 [localize "STR_Garage_SpawningVeh", false] spawn domsg;
+_playerName = name player;
+_vehicleName = getText(configFile >> "CfgVehicles" >> _vehicle >> "displayName");
+_type = 2;
+[_pid,_playerName,_vid,_vehicleName,_type,_price] remoteExecCall ["TON_fnc_vehicleLog", (call life_fnc_HCC)];
 
 ["bank","take",_price] call life_fnc_handleCash;

@@ -40,5 +40,11 @@ uiSleep 1;
 	_unit setVariable["tied", true, true];
 	[player] remoteExecCall ["life_fnc_tieing", _unit];
 	life_rope = 1;
+	_playerID = getPlayerUID player;
+	_playerName = name player;
+	_toPlayerID = getPlayerUID _unit;
+	_toPlayerName = name _unit;
+	_type = 0;
+	[_playerID,_playerName,_toPlayerID,_toPlayerName,_type,""] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 
 life_action_inUse = false;

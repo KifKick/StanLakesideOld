@@ -41,6 +41,10 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
                 [_this select 0,_this select 1] call life_fnc_marketSell;
             };
     };
+	_playerID = getPlayerUID player;
+	_playerName = name player;
+	_type = 3;
+	[_playerID,_playerName,_name,_amount,_type,_price] remoteExecCall ["TON_fnc_buysellLog", (call life_fnc_HCC)];
     [] call life_fnc_virt_update;
 };
  

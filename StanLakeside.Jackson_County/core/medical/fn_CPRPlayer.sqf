@@ -91,6 +91,12 @@ if(_chance < 200) then {
 	if(_target getVariable["Revive",FALSE]) then { ["Ozywiles ta osobe!", false] spawn domsg; } else { ["Ustabilizowales stan tej osoby!", false] spawn domsg; };
 	_target setVariable["stwierdzamZgon690", false, true];
 	_pid = _target getVariable["steam64ID",""];
+	_playerID = getPlayerUID player;
+	_playerName = name player;
+	_toPlayerID = getPlayerUID _target;
+	_toPlayerName = name _target;
+	_type = 3;
+	[_playerID,_playerName,_toPlayerID,_toPlayerName,_type,""] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 	if(_targetName == "Unknown" || _targetName == "" || _pid == "") then {
 		hideBody _target;
 		deleteVehicle _target;

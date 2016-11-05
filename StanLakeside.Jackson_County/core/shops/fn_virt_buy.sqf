@@ -53,6 +53,7 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 		if((_price * _amount) > cash_in_hand) exitWith {[localize "STR_NOTF_NotEnoughMoney", false] spawn domsg; [false,_type,_amount] call life_fnc_handleInv; };
 		[format[localize "STR_Shop_Virt_BoughtItem",_amount,_name,[(_price * _amount)] call life_fnc_numberText], false] spawn doquickmsg;
 		__SUB__(cash_in_hand,(_price * _amount));
+		
 if(_marketprice != -1) then 
 		{ 
 			//##94
@@ -63,6 +64,11 @@ if(_marketprice != -1) then
 			};			
 		};		
 	};
+	_playerID = getPlayerUID player;
+	_playerName = name player;
+	_type = 2;
+	_finalprice = _price * _amount;
+	[_playerID,_playerName,_name,_amount,_type,_finalprice] remoteExecCall ["TON_fnc_buysellLog", (call life_fnc_HCC)];
 	[] call life_fnc_virt_update;
 };
 

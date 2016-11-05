@@ -35,6 +35,10 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) isEqualTo 1) then
 	["cash","add",round(_price)] call life_fnc_handleCash; 
 	[_item,false] call life_fnc_handleItem;
 	[parseText format[localize "STR_Shop_Weapon_Sold",_itemInfo select 1,[_price] call life_fnc_numberText], false] spawn doquickmsg;
+	_playerID = getPlayerUID player;
+	_playerName = name player;
+	_type = 1;
+	[_playerID,_playerName,_item,"",_type,_price] remoteExecCall ["TON_fnc_buysellLog", (call life_fnc_HCC)];
 	[nil,(uiNamespace getVariable["Weapon_Shop_Filter",0])] call life_fnc_weaponShopFilter; //Update the menu.
 }
 	else
@@ -88,8 +92,11 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) isEqualTo 1) then
 
 
 			["cash","take",_price] call life_fnc_handleCash; 	
-
-		[_item,true] spawn life_fnc_handleItem;
+			_playerID = getPlayerUID player;
+			_playerName = name player;
+			_type = 0;
+			[_playerID,_playerName,_item,"",_type,_price] remoteExecCall ["TON_fnc_buysellLog", (call life_fnc_HCC)];
+			[_item,true] spawn life_fnc_handleItem;
 	};
 };
 buying_phys_item = false;
