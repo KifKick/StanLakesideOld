@@ -4,7 +4,7 @@
 
 
 	Description:
-	Master config file for SERT clothing store.
+	Master config file for sert clothing store.
 */
 private["_filter","_ret"];
 _filter = param [0,0,[0]];
@@ -24,6 +24,7 @@ switch (_filter) do
 			["herpSERT1",nil,15],
 			["herpSERT2",nil,15],
 			["herpSERT3",nil,15],
+			["A3L_EC_SERT",nil,15],
 			["CG_SERT1",nil,15],
 			["CG_SERT2",nil,15],
 			["CG_SERT3",nil,15],
@@ -33,9 +34,9 @@ switch (_filter) do
 			["CG_SERT7",nil,15],
 			["A3L_EC_SERTK","SERT V2",50],
 			["U_C_DDE","Kombinezon HazMat / Uran",50],
-			["BH_StormCom_blk_comsuit","Dowodca SERT",15],
 			["RR_SWAT_UNIFORM_obj","Kombinezon SWAT",15],
 			["TCG_SWAT","Komendant",15],
+			["TRYK_U_B_BLK","Pilot Coveralls",15],
 			["LS_Marshal_Jacket3",nil,15]
 		];
 	};
@@ -46,6 +47,7 @@ switch (_filter) do
 		[
 			["jamie_blackhelmet","Czarny Helm Swat!",5],
 			["TRYK_H_PASGT_BLK","SERT Standard Helmet",5],
+			["TRYK_H_PASGT_OD",nil,5],
 			["CG_sert_H7",nil,5],
 			["CG_sert_H6",nil,5],
 			["CG_sert_H5",nil,5],
@@ -88,6 +90,8 @@ switch (_filter) do
 			["kaelvest_sert4_Fix",nil,15],
 			["kaelvest_sert3_Fix",nil,15],
 			["kaelvest_sert2_Fix",nil,15],
+			["SERT_VEST_GREEN",nil,15],
+			["SERT_FULL_VESTGRN",nil,15],
 			["SERTvest1",nil,15],
 			["TRYK_V_Sheriff_BA_TB3",nil,15],
 			["TRYK_V_tacv1L_BK",nil,15],
@@ -98,6 +102,7 @@ switch (_filter) do
 			["kif_swat_vest","Police SWAT Vest",15],
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],
 			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
+			["kif_sert_vest","Police SERT Vest",15],
 			["kif_sert_vest_moro","Police Sert MORO Vest",15]
 		];
 	};
