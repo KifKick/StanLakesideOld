@@ -141,7 +141,7 @@ switch (_filter) do
 		[
 			
 			["Campaign_Hat_Light",nil,5],
-			[""Police_capo_badge","Czapka FBI",5],
+			["Police_capo_badge","Czapka FBI",5],
 			["Campaign_Hat_Tan",nil,5],
 			["Campaign_Hat_Washedout",nil,5],
 			["Campaign_Hat_Dark",nil,5],
