@@ -152,14 +152,7 @@ switch(_shop) do
 							["nonlethal_swing", "Slepa amunicja",1],
 							["sharp_swing","Ostra amunicja",1],
 							["Binocular",nil,100]
-							/*["Chemlight_red",nil,20],
-							["Chemlight_yellow",nil,20],
-							["Chemlight_green",nil,20],
-							["Chemlight_blue",nil,20],
-							["acc_flashlight","ACC Flashlight",10],
-							["RH_M6X","RH Flashlight",10],
-							["A3L_M4Flashlight","M4A3 Flashlight",10]*/
-							
+														
 						]
 					];
 				};
@@ -210,9 +203,10 @@ switch(_shop) do
 							["RH_Hk416c",nil,500],
 							["RH_Hk416s",nil,500],
 							["RH_Hk416",nil,500],
-							["RH_M4_ris_m",nil,500],
 							["RH_30Rnd_556x45_Mk318","Mk318 30Rnd",50],
 							["RH_60Rnd_556x45_Mk318","Mk318 60Rnd",50],
+							["RH_M4_ris_m",nil,500],
+							["A3L_M4Flashlight","M4A3 Flashlight",10],
 							["RH_qdss_nt4",nil,500],
 							["AG_MP9_sidearm",nil,500],
 							["30Rnd_45ACP_Mag_SMG_01",nil,500],
@@ -223,7 +217,10 @@ switch(_shop) do
 							["RH_ta31rmr",nil,500],
 							["RH_compm4s",nil,500],
 							["RH_gemtech9","Tlumik Glock",500],
-							["Rangefinder","Dalmierz SERT",500]
+							["Rangefinder","Dalmierz SERT",500],
+							["acc_flashlight","ACC Flashlight",10],
+							["RH_M6X","RH Flashlight",10]
+							
 						]
 					];
 				};
