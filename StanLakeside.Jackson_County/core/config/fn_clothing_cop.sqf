@@ -22,6 +22,8 @@ switch (_filter) do
 		_ret =
 		[
 			["U_007_BIS_Marshall","Cadet",10],
+			["A3L_EC_FBI","FBI Combat",10],
+			["FBI_rang10","FBI Uniform",10],
 			["police_kevuni1",nil,15],
 			["police_kevuni2",nil,15],
 			["police_kevuni3",nil,15],
@@ -139,6 +141,7 @@ switch (_filter) do
 		[
 			
 			["Campaign_Hat_Light",nil,5],
+			[""Police_capo_badge","Czapka FBI",5],
 			["Campaign_Hat_Tan",nil,5],
 			["Campaign_Hat_Washedout",nil,5],
 			["Campaign_Hat_Dark",nil,5],
@@ -237,6 +240,7 @@ switch (_filter) do
 		_ret =
 		[
 			["V_RebreatherB","Aparat oddechowy",20],
+			["A3L_fbivest1","Kamizelka FBI",20],
 			["jamie_blue","Kamizelka Cadet",20],
 			["kif_police_vest","Kamizelka do Munduru",20],
 			["cg_policevest1_fix","Kamizelka Policyjna",20],
