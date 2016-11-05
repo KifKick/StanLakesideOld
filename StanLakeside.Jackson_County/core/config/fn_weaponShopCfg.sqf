@@ -205,6 +205,8 @@ switch(_shop) do
 							["RH_Hk416",nil,500],
 							["RH_30Rnd_556x45_Mk318","Mk318 30Rnd",50],
 							["RH_60Rnd_556x45_Mk318","Mk318 60Rnd",50],
+							["RH_M27IAR",nil,500],
+							["RH_60Rnd_556x45_Mk318",nil,50],
 							["RH_M4_ris_m",nil,500],
 							["A3L_M4Flashlight","M4A3 Flashlight",10],
 							["RH_qdss_nt4",nil,500],
