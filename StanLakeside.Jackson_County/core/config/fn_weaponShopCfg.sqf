@@ -929,42 +929,39 @@ switch(_shop) do
 				{
 					["Bronie Palne Goodmana",
 						[
-							["KPFS_HKP7",nil,1250],
-							["KPFS_8Rnd_9x19_PARA",nil,120],
+							["RH_m9",nil,7435],
+							["RH_15Rnd_9x19_M9",nil,100],
 
-							["KPFS_Mauser_Hsc",nil,1450],
-							["kpfs_8Rnd_765x17_PP",nil,120],
+							["RH_gsh18",nil,8620],
+							["RH_18Rnd_9x19_gsh",nil,100],
 
-							["KPFS_Walther_M9",nil,1550],
-							["kpfs_6Rnd_635x15",nil,120],
+							["RH_cz75",nil,6260],
+							["RH_16Rnd_9x19_CZ",nil,100],
 
-							["KPFS_P99",nil,1600],
-							["KPFS_15rnd_9x19_P99",nil,125],
+							["RH_p226",nil,6125],
+							["RH_15Rnd_9x19_SIG",nil,100],
 
-							["RH_g17",nil,1750],
-							["RH_g19",nil,1850],
-							["RH_g19t",nil,1850],
-							["RH_17Rnd_9x19_g17",nil,120],
+							["RH_g17",nil,6500],
+							["RH_g19",nil,6500],
+							["RH_17Rnd_9x19_g17",nil,100],
 
-							["RH_m9",nil,1800],
-							["RH_15Rnd_9x19_M9",nil,120],
+							["RH_sw659",nil,5500],
+							["RH_14Rnd_9x19_sw",nil,100],
 
-							["RH_sw659",nil,1950],
-							["RH_14Rnd_9x19_sw",nil,150],
-							["RH_mp412",nil,19950],
-							["RH_6Rnd_357_Mag",nil,550],
+							["RH_vp70",nil,7000],
+							["RH_18Rnd_9x19_VP",nil,100],
 
-							["hgun_Rook40_F",nil,3350],
-							["16Rnd_9x21_Mag",nil,125],
-							["RH_mk2",nil,4350],
-							["RH_10Rnd_22LR_mk2",nil,225],
-							
-							["hgun_P07_F",nil,3350],
-							["16Rnd_9x21_Mag",nil,125],
-							["RH_gsh18",nil,5150],
-							["RH_18Rnd_9x19_gsh",nil,195],
-							["RH_kimber",nil,30500],
-							["RH_7Rnd_45cal_m1911",nil,275]                                            
+							["RH_mak",nil,2100],
+							["RH_8Rnd_9x18_Mak",nil,100],
+
+							["KPFS_Mauser_Hsc",nil,2100],
+							["kpfs_8Rnd_765x17_PP",nil,100],
+
+							["KPFS_P1",nil,2100],
+							["KPFS_P38",nil,2100],
+							["KPFS_P38k",nil,2100],
+							["KPFS_P5",nil,2100],
+							["KPFS_8Rnd_9x19_PARA",nil,100]                                                 
 						]
 					];
 				};
