@@ -81,6 +81,7 @@ switch (_shop) do
 		_return = 
 		[
 			/*["ivory_wrx_ems",95500],*/
+			["rs4_fd",10000],
 			["ivory_m3_ems",95500],
 			["ivory_m3_emsRR",95500],
 			["ivory_suburban_ems",95500],
@@ -88,7 +89,7 @@ switch (_shop) do
 			["cg_evoems1",20000],
 			["cg_evoems2",20000],
 			["EvoXEMS",100000],
-			//["charger_ems",100000],
+			["charger_ems",100000],
 			/*["kif_Taurus_ems1",20000],*/
 			["kif_Taurus_ems2",20000],
 			["A3L_CVPILBFD",20000],
