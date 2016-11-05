@@ -34,7 +34,10 @@ switch (_filter) do
 			["H_Orel_Kepi",nil,50],
 			["H_Cap_usblack",nil,50],
 			["policia_cnp_gorra",nil,50],
-			["policia_uip_cap",nil,50]
+			["policia_uip_cap",nil,50],
+			["H_Cap_tan",nil,50],
+			["H_Cap_usblack",nil,50],
+			["H_Beret_Colonel",nil,50]
 		];
 	};
 	
