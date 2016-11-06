@@ -988,8 +988,57 @@ switch(_shop) do
 				{
 					["Hideout Armament",
 						[
-							["A3L_Glock17",nil,1260],
-							["A3L_Glock17mag",nil,50]                                          
+							["RH_m9",nil,5435],
+							["RH_15Rnd_9x19_M9",nil,100],
+
+							["RH_gsh18",nil,6620],
+							["RH_18Rnd_9x19_gsh",nil,100],
+
+							["RH_p226",nil,5125],
+							["RH_15Rnd_9x19_SIG",nil,100],
+
+							["RH_g17",nil,4500],
+							["RH_g19",nil,4500],
+							["RH_17Rnd_9x19_g17",nil,100],
+
+							["RH_vp70",nil,5000],
+							["RH_18Rnd_9x19_VP",nil,100],
+
+							["SMG_01_F",nil,66000],
+			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
+							
+							["SMG_02_F",nil,66000],
+							["hgun_PDW2000_F",nil,66000],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_sbr9_wdl",nil,71000],
+							["RH_sbr9_tg",nil,71000],
+							["RH_sbr9_des",nil,71000],
+							["RH_32Rnd_9mm_M822",nil,750],
+
+							["AG_MP9_sand_peq",nil,55500],
+							["AG_MP9_wcam_peq",nil,55500],
+							["AG_MP9_digi_peq",nil,55500],
+							["AG_MP9_wcam",nil,55500],
+							["AG_MP9_digi",nil,55500],
+							["AG_MP9_sand",nil,55500],
+							["AG_MP9_folded_wcam",nil,48000],
+							["AG_MP9_folded_digi",nil,48000],
+							["AG_MP9_folded_sand",nil,48000],
+							["30Rnd_45ACP_Mag_SMG_01",nil,750],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["chakFNP90_50rnd_skin1",nil,85500],
+							["chakFNP90_57x28_B_skin1",nil,1050],
+
+							["RH_g18",nil,19000],
+							["RH_33Rnd_9x19_g18",nil,750],
+
+							["RH_vz61",nil,19000],
+							["RH_20Rnd_32cal_vz61",nil,750],
+
+							["RH_tec9",nil,21000],
+							["RH_32Rnd_9x19_tec",nil,750]                                        
 						]
 					];
 				};
