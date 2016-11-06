@@ -176,8 +176,8 @@ switch (_var) do
 	case "license_civ_uranp": {"Szkolenie z przetwarzania uranu"};
 	
 	//civ gangs
-	case "license_civ_gang": {"Licencja gangu"};
-	case "license_civ_gang2": {"Licencja starszego gangu"};
+	case "license_civ_gang": {"Członek gangu"};
+	case "license_civ_gang2": {"Członek gangu +"};
 	
 	//civ firmy
 	case "license_civ_hess": {"Hess Company"};
