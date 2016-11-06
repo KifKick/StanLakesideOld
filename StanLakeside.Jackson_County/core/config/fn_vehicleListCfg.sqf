@@ -1905,7 +1905,9 @@ switch (_shop) do
 			["C_Heli_Light_01_civil_F",45000],
 			["kif_vehicles_helicopter_mh9_police",85000],
 			["melb_h6m",85000],
-			["O_Heli_Light_02_unarmed_F",100000]
+			["O_Heli_Light_02_unarmed_F",100000],
+			["kev_vehicles_helicopter_orca_sert",100000],
+			["kev_vehicles_helicopter_orca_freddy",100000]
 
 		];
 	};
