@@ -46,7 +46,6 @@ switch (_filter) do
 		[
 			["TRYK_Spset_PHC2_Glasses",nil,100],
 			["TRYK_SpsetG_Glasses",nil,100],
-			["Mask_M40",nil,450],
 			["G_Aviator",nil,25],
 			["G_Tactical_Black",nil,25],
 			["TRYK_TAC_EARMUFF_Gs",nil,25]
@@ -56,8 +55,7 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["kev_hess_security_short_vest",nil,300],
-			["kev_hess_security_heavy_vest",nil,300]
+			["kev_hess_security_short_vest",nil,300]
 		];
 	};
 
