@@ -1082,6 +1082,7 @@ switch (_shop) do
 			["DAR_SWATPolice",100000],
 			["A3L_TaurusUC",50000],
 			["ivory_wrx_marked",200000],
+			["max_dodge_black",200000],
 			//SO
 			["kif_cvpi_sheriff_lb_19",10000],
 			["kif_cvpi_sheriff_slick_20",10000],
