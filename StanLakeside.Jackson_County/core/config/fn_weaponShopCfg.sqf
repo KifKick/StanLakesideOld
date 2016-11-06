@@ -30,7 +30,7 @@ switch(_shop) do
 				default {
 					["Sklep BezSensu EMS",
 						[
-							["ToolKit",nil,2500],
+							["ToolKit",nil,400],
 							["ItemCompass",nil,50],
 							["tf_anprc152",nil,10],
 							["ItemWatch",nil,10]
@@ -64,7 +64,7 @@ switch(_shop) do
 							["A3L_Glock17mag",nil,25],
 							["A3L_Shovel",nil,50],
 							["RH_X300",nil,15],
-							["ToolKit",nil,800],
+							["ToolKit",nil,2000],
 							["nonlethal_swing", "Slepa amunicja",1],
 							["sharp_swing","Ostra amunicja",1]
 						]
@@ -104,7 +104,7 @@ switch(_shop) do
 							["CG_ATF_Donut_Box_i","Donuty Na Wynos",1000],
 							["cg_hatchet","Siekiera",500],
 							["sharp_swing","Ammunicja do siekiery",10],
-							["ToolKit",nil,2500],
+							["ToolKit",nil,400],
 							["ItemCompass",nil,50],
 							["ItemWatch",nil,10],
 							["Chemlight_red",nil,20],
