@@ -395,7 +395,6 @@ life_licenses =
 	["license_civ_air","civ"],
 	["license_civ_heroin","civ"],
 	["license_civ_marijuana","civ"],
-	["license_civ_gang","civ"],
 	["license_civ_boat","civ"],
 	["license_civ_oil","civ"],
 	["license_civ_dive","civ"],
