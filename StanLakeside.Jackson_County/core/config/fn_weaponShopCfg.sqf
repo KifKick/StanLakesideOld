@@ -26,7 +26,7 @@ switch(_shop) do
         {
 			switch (true) do
 			{
-				case (playerSide != independent): {"You are not an EMS"};
+				case (playerSide != independent): {"Nie jestes medykiem!"};
 				default {
 					["Sklep BezSensu EMS",
 						[
@@ -76,7 +76,7 @@ switch(_shop) do
         {
 			switch (true) do
 			{
-				case (playerSide != independent): {"You are not an EMS"};
+				case (playerSide != independent): {"Nie jestes medykiem!"};
 				default {
 					["Podstawe wyposazenie EMS",
 						[
@@ -913,9 +913,9 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (life_karma < 0): {"You need positive reputation to use this store!"};
-				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
-				case (!license_civ_gun): {"You don't have a Firearms license!"};
+				case (life_karma < 0): {"Potrzebujesz pozytywnej reputacji aby tu coś kupic!"};
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
+				case (!license_civ_gun): {"Nie masz licencji na bron!"};
 				default
 				{
 					["Bronie Palne Goodmana",
@@ -983,11 +983,11 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
 				case (!license_civ_gang): {"Nie jestes w gangu!"};
 				default
 				{
-					["Hideout Armament",
+					["Sklep gangu",
 						[
 							["RH_m9",nil,5435],
 							["RH_15Rnd_9x19_M9",nil,100],
@@ -1050,11 +1050,11 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
-				case (!license_civ_gang2): {"Nie jestes w gangu!"};
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
+				case (!license_civ_gang2): {"Nie masz tutaj wstepu!"};
 				default
 				{
-					["Hideout Armament",
+					["Sklep gangu +",
 						[
 							["RH_m9",nil,3435],
 							["RH_15Rnd_9x19_M9",nil,100],
