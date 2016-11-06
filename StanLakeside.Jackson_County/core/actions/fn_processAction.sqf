@@ -27,8 +27,8 @@ _itemInfo = switch (_type) do
 	case "meth": {["methu","methp",65,"Packaging Meth"];};
 	case "MDMA": {["MDMAu","MDMAp",75,"Pill Pressing MDMA"];};
 	case "coke": {["cokeu","cokep",73,"Packaging Cocaine"];};
-	case "uran": {["uraniumu","uraniumo",100,"Oczyszczam Uran"];};
-	case "uranp": {["uraniumo","uraniump",100,"Uszlachetniam Uran"];};
+	case "uran": {["uraniumu","uraniumo",115,"Oczyszczam Uran"];};
+	case "uranp": {["uraniumo","uraniump",115,"Uszlachetniam Uran"];};
 	default {[];};
 };
 
@@ -74,7 +74,7 @@ life_is_processing = true;
 
 if(_hasLicense) then
 {
-	_delay = (1/180)*_weight;
+	_delay = (1/450)*_weight;
 	while{true} do
 	{
 		uiSleep _delay;
@@ -95,7 +95,7 @@ if(_hasLicense) then
 else
 {
 	if(cash_in_hand < _cost) exitWith {[format[localize "STR_Process_License",[_cost] call life_fnc_numberText], false] spawn domsg; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	_delay = (1/135)*_weight;
+	_delay = (1/400)*_weight;
 	while{true} do
 	{
 		uiSleep _delay;

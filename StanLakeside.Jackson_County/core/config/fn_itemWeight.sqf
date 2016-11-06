@@ -40,7 +40,7 @@ switch (_item) do
 	case "marijuana": {2};
 	case "apple": {0.5};
 	case "peach": {0.5};
-	case "uraniumu": {7};
+	case "uraniumu": {8};
 	case "uraniumo": {6};
 	case "uraniump": {5};
 	case "water": {0.5};
@@ -61,15 +61,15 @@ switch (_item) do
 	case "money": {0};
 	case "pickaxe": {2};
 	case "copperore": {5};
-	case "ironore": {5};
+	case "ironore": {6};
 	case "copper_r": {3};
-	case "iron_r": {3};
+	case "iron_r": {5};
 	case "sand": {4};
 	case "salt": {3};
 	case "salt_r": {1};
 	case "glass": {2};
-	case "diamond": {4};
-	case "diamondc": {2};
+	case "diamond": {5};
+	case "diamondc": {4};
 	case "spikeStrip": {5};
 	case "rock": {4};
 	case "cement": {3};
