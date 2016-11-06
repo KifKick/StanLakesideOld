@@ -412,6 +412,8 @@ life_licenses =
 	["license_civ_home","civ"],
 	["license_civ_uran","civ"],
 	["license_civ_uranp","civ"],
+	["license_civ_gang","civ"],
+	["license_civ_gang2","civ"],
 	/*["license_civ_donator1","civ"],
 	["license_civ_donator2","civ"],
 	["license_civ_donator3","civ"],*/

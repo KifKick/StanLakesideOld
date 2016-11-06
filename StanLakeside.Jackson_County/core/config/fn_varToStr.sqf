@@ -133,36 +133,57 @@ switch (_var) do
 	case "life_inv_raxsrum": {"Rum Gordona Robersona"};
 	
 	//License Block
-	case "license_civ_driver": {(localize "STR_License_Driver")};
-	case "license_civ_air": {(localize "STR_License_Pilot")};
-	case "license_civ_heroin": {(localize "STR_License_Heroin")};
-	case "license_civ_oil": {(localize "STR_License_Oil")};
-	case "license_civ_dive": {(localize "STR_License_Diving")};
-	case "license_civ_boat": {(localize "STR_License_Boat")};
-	case "license_civ_gun": {(localize "STR_License_Firearm")};
+	
+	//cops
 	case "license_cop_air": {(localize "STR_License_Pilot")};
 	case "license_cop_swat": {(localize "STR_License_Swat")};
 	case "license_cop_cg": {(localize "STR_License_CG")};
-	case "license_civ_rebel": {(localize "STR_License_Rebel")};
+	case "license_cop_prokurator": {"Prokuratura"};
+	case "license_cop_aiad": {"Odznaka SERT"};
+	case "license_cop_sert": {"Odznaka SERT"};
+	case "license_cop_dtu": {"Odznaka DTU"};
+	
+	//meds
+	case "license_med_air": {(localize "STR_License_Pilot")};
+	
+	//civ
+	case "license_civ_driver": {(localize "STR_License_Driver")};
+	case "license_civ_air": {(localize "STR_License_Pilot")};
+	case "license_civ_home": {(localize "STR_License_Home")};
 	case "license_civ_truck": {(localize "STR_License_Truck")};
+	case "license_civ_dive": {(localize "STR_License_Diving")};
+	case "license_civ_boat": {(localize "STR_License_Boat")};
+	
+	//civ legals
+	case "license_civ_oil": {(localize "STR_License_Oil")};
+	case "license_civ_gun": {(localize "STR_License_Firearm")};
 	case "license_civ_diamond": {(localize "STR_License_Diamond")};
 	case "license_civ_copper": {(localize "STR_License_Copper")};
 	case "license_civ_iron": {(localize "STR_License_Iron")};
 	case "license_civ_sand": {(localize "STR_License_Sand")};
 	case "license_civ_salt": {(localize "STR_License_Salt")};
+	case "license_civ_cement": {(localize "STR_License_Cement")};
+	
+	//civ illegals
+	case "license_civ_heroin": {(localize "STR_License_Heroin")};
+	case "license_civ_rebel": {(localize "STR_License_Rebel")};
 	case "license_civ_coke": {(localize "STR_License_Cocaine")};
 	case "license_civ_marijuana": {(localize "STR_License_Marijuana")};
-	case "license_civ_cement": {(localize "STR_License_Cement")};
-	case "license_med_air": {(localize "STR_License_Pilot")};
-	case "license_civ_home": {(localize "STR_License_Home")};
 	case "license_civ_MDMA": {(localize "STR_License_MDMA")};
 	case "license_civ_meth": {(localize "STR_License_Meth")};
 	case "license_civ_rifle": {"Pozwolenie na bron dluga"};
 	case "license_civ_uran": {"Szkolenie z oczyszczania uranu"};
 	case "license_civ_uranp": {"Szkolenie z przetwarzania uranu"};
+	
+	//civ gangs
+	case "license_civ_gang": {"Licencja gangu"};
+	case "license_civ_gang2": {"Licencja starszego gangu"};
+	
+	//civ firmy
+	case "license_civ_hess": {"Hess Company"};
+	
+	//civ donator
 	/*case "license_civ_donator1": {"Donator 1"};
 	case "license_civ_donator2": {"Donator 2"};
 	case "license_civ_donator3": {"Donator 3"};*/
-	case "license_civ_hess": {"Hess Company"};
-	case "license_cop_prokurator": {"Prokuratura"};
 };
