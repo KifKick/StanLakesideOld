@@ -90,12 +90,13 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) isEqualTo 1) then
 			 	mobile_payment remoteExec ["fnc_totalmobile",_unit];
 			};
 
-
+			if (_price > 250) then {
 			["cash","take",_price] call life_fnc_handleCash; 	
 			_playerID = getPlayerUID player;
 			_playerName = name player;
 			_type = 0;
 			[_playerID,_playerName,_item,"",_type,_price] remoteExecCall ["TON_fnc_buysellLog", (call life_fnc_HCC)];
+			};
 			[_item,true] spawn life_fnc_handleItem;
 	};
 };
