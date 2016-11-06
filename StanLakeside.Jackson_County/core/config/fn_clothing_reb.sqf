@@ -38,20 +38,20 @@ switch (_filter) do
 			//TRYK
 
 
-			["TRYK_B_USMC_R_ROLL","Green Top, MARPAT Pants",25000],
-			["TRYK_U_B_NATO_OCP_BLK_R_CombatUniform","Black Top, ACU Pants",25000],
-			["TRYK_U_B_AOR2_GRY_CombatUniform","Grey Top, DigiGreen Pants",25000],	
-			["TRYK_U_B_ARO1_CBR_CombatUniform","Desert Camo",25000],
-			["TRYK_U_B_Snow_CombatUniform","Snow Camo",25000],
+			["TRYK_B_USMC_R_ROLL","Green Top, MARPAT Pants",2500],
+			["TRYK_U_B_NATO_OCP_BLK_R_CombatUniform","Black Top, ACU Pants",2500],
+			["TRYK_U_B_AOR2_GRY_CombatUniform","Grey Top, DigiGreen Pants",2500],	
+			["TRYK_U_B_ARO1_CBR_CombatUniform","Desert Camo",2500],
+			["TRYK_U_B_Snow_CombatUniform","Snow Camo",2500],
 
-			["TRYK_U_B_AOR2_OD_CombatUniform","Green Top, DigiGreen Pants",30000],
-			["TRYK_U_B_AOR2_BLK_CombatUniform","Black Top, DigiGreen Pants",30000],
-			["TRYK_DMARPAT_T","Brown Top, DigiTan Pants",25000],
-			["TRYK_U_B_ARO1_BLK_CombatUniform","Black Top, DigiTan Pants",25000],
-			["TRYK_U_B_ARO1_CombatUniform","DigiTan Full",40000],
-			["TRYK_U_B_NATO_OCP_R_CombatUniform","DigiGreen Full",40000],
-			["TRYK_U_B_MARPAT_Wood","MARPAT Full",40000],
-			["TRYK_U_B_NATO_OCP_R_CombatUniform","OCP Full",40000],
+			["TRYK_U_B_AOR2_OD_CombatUniform","Green Top, DigiGreen Pants",3000],
+			["TRYK_U_B_AOR2_BLK_CombatUniform","Black Top, DigiGreen Pants",3000],
+			["TRYK_DMARPAT_T","Brown Top, DigiTan Pants",2500],
+			["TRYK_U_B_ARO1_BLK_CombatUniform","Black Top, DigiTan Pants",2500],
+			["TRYK_U_B_ARO1_CombatUniform","DigiTan Full",4000],
+			["TRYK_U_B_NATO_OCP_R_CombatUniform","DigiGreen Full",4000],
+			["TRYK_U_B_MARPAT_Wood","MARPAT Full",4000],
+			["TRYK_U_B_NATO_OCP_R_CombatUniform","OCP Full",4000],
 
 			["TRYK_SUITS_BLK_F","TRYK Black Suit",1350],
 			["TRYK_SUITS_BR_F","TRYK Brown Suit",1350],
