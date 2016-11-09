@@ -4,6 +4,7 @@ Podglad misji serwera stanlakeside.pl
 Misja stworzona przez **Tonic**, edytowana przez **A3L** oraz **CG**
 
 Dalsza edycja: **KifKick** oraz **Kevin**, a także społeczeństwo [StanLakeside.pl](http://stanlakeside.pl)
+
 Serdeczne podziękowana za dopisanie swojej "cegiełki" (kodu) dla:  **Katekarin**, **Kruk**
 
 <p align="center">
