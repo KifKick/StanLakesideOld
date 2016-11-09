@@ -99,6 +99,8 @@ switch (_filter) do
 			["TRYK_V_PlateCarrier_blk_L",nil,15],
 			["TCG_sertvest1","UniV2 SERT",15],
 			["TRYK_V_tacv1LC_P2_BK","Dowodca SERT",15],
+			["kif_sert_olive_vest","SERT Olive Vest",15],
+			["kif_sert_olive2_vest","SERT Olive 2 Vest",15],
 			["kif_swat_vest","Police SWAT Vest",15],
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],
 			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
