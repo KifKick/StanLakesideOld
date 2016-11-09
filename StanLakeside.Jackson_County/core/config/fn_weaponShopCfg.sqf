@@ -198,8 +198,6 @@ switch(_shop) do
 				{
 					["Zbrojownia SERT",								
 						[
-							["KPFS_G36A4",nil,500],
-							["KPFS_30Rnd_556x45_G36",nil,500],
 							["RH_Hk416c",nil,500],
 							["RH_Hk416s",nil,500],
 							["RH_Hk416",nil,500],

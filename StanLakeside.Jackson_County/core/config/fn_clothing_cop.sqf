@@ -22,8 +22,6 @@ switch (_filter) do
 		_ret =
 		[
 			["U_007_BIS_Marshall","Cadet",10],
-			["A3L_EC_FBI","FBI Combat",10],
-			["FBI_rang10","FBI Uniform",10],
 			["police_kevuni1",nil,15],
 			["police_kevuni2",nil,15],
 			["police_kevuni3",nil,15],
@@ -62,7 +60,11 @@ switch (_filter) do
 			["TRYK_U_B_PCUGs_BLK_DTU","Kurtka DTU",15],
  			["TRYK_U_B_Denim_T_DTU","Bluza DTU",15],
 			["U_007_US_Police_officer","High Police Uniform",50],
-			["KAEL_SUITS_BR_Judge",nil,15]
+			["KAEL_SUITS_BR_Judge",nil,15],
+			["LS_Marshal_Jacket",nil,15]
+			
+			
+			
 			/*["A3L_EC_COFC","DOC Guard",15],
 			["A3L_EC_CCPL","DOC Corporal",15],
 			["A3L_EC_CSGT","DOC Sergeant",15],
@@ -141,7 +143,6 @@ switch (_filter) do
 		[
 			
 			["Campaign_Hat_Light",nil,5],
-			["Police_capo_badge","Czapka FBI",5],
 			["Campaign_Hat_Tan",nil,5],
 			["Campaign_Hat_Washedout",nil,5],
 			["Campaign_Hat_Dark",nil,5],
@@ -240,7 +241,6 @@ switch (_filter) do
 		_ret =
 		[
 			["V_RebreatherB","Aparat oddechowy",20],
-			["A3L_fbivest1","Kamizelka FBI",20],
 			["jamie_blue","Kamizelka Cadet",20],
 			["kif_police_vest","Kamizelka do Munduru",20],
 			["cg_policevest1_fix","Kamizelka Policyjna",20],
@@ -251,7 +251,6 @@ switch (_filter) do
 			["kif_bureau_kevin_vest","LSPD CB K.McCallister",15],
 			["kif_lspd_police_department_vest", "LSPD High", "15"],
 			["kif_lspd_police_department_sgt_katsu_vest", "LSPD N. Katsu", "15"],
-			["kif_lspd_police_department_sgt_basta_vest", "LSPD A. Basta ", "15"],
 			["kif_supervisor_vest_lspd", "Supervisor LSPD", "15"],
 			["kif_dtu_vest_lspd", "DTU LSPD", "15"],
 			["kif_dtu_vest_brouver","DTU B.White",15],
@@ -276,7 +275,11 @@ switch (_filter) do
 			["kev_hess_security_short_vest","nil",20],
 			["DOC_Vest_Threat","Correction Kamizelka Dluga",15],
 			["DOC_Vest_Threat_Tan","Correction Kamizelak Konwoj",15],
+			["kif_sheriff_vest","Sheriff Kamizelka",20],
 			["kif_sheriff_traffic_vest","Sheriff Drogowka",20]
+			
+			
+			
 			/*["DOC_Vest_Threat_Fix",nil,20],
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
 			["crt_vest_Fix",nil,20],

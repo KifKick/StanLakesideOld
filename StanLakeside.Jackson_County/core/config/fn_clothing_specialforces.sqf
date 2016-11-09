@@ -37,7 +37,8 @@ switch (_filter) do
 			["RR_SWAT_UNIFORM_obj","Kombinezon SWAT",15],
 			["TCG_SWAT","Komendant",15],
 			["TRYK_U_B_BLK","Pilot Coveralls",15],
-			["LS_Marshal_Jacket3",nil,15]
+			["LS_Marshal_Jacket3",nil,15],
+			["TRYK_U_B_OD_OD_CombatUniform",nil,15]
 		];
 	};
 
