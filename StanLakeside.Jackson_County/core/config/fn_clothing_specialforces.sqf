@@ -60,7 +60,10 @@ switch (_filter) do
 			["TRYK_H_PASGT_OD","SERT Helmet OD",5],
 			["policia_geo_boina_azul",nil,500],
 			["policia_geo_boina_negra",nil,500],
-			["policia_geo_boina_roja",nil,500]
+			["policia_geo_boina_roja",nil,500],
+			["BHD_Protec_helmet",nil,500],
+			["BHD_Protec_helmet2",nil,500],
+			["BHD_Protec_helmet3",nil,500]
 		];
 	};
 
