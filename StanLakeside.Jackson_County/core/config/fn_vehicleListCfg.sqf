@@ -1116,6 +1116,8 @@ switch (_shop) do
 			["Navara_Policia",200000],
 			["cg_evoSERT1",250000],
 			["DAR_SWATPolice",100000],
+			["BMWX5Sert_077",100000],
+ +			["BMWX5Sert_078",100000],
 			["MustangSert_801",150000],	
 			["TahoePD_03",125000],
 			["A3L_TaurusUC",50000],
