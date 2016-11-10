@@ -13,8 +13,8 @@ _return = nil;
 
 _vehicles =
 [
-	//PD
-		//Adam
+		//PD
+	//Adam
 	["kmc_cvpi_lspd_lb_1","001-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_2","002-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_3","003-CVPI LB LSPD"],
@@ -31,8 +31,6 @@ _vehicles =
 	["kmc_cvpi_lspd_lb_14","014-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_15","015-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_16","016-CVPI LB LSPD"],
-	["kmc_wrx_pd_17","017","017-Suubaru WRX LB LSPD"],
-	["kmc_wrx_pd_18","018","018-Suubaru WRX LB LSPD"],
 	["kmc_charger_PD_022","022-Dodge Charger LB LSPD"],
 	["kmc_charger_PD_024","024-Dodge Charger LB LSPD"],
 	["ivory_m3_pd_60","060-BMW M3 LB LSPD"],
@@ -43,8 +41,12 @@ _vehicles =
 	["BMWX5Sert_077","077-BMW X5 SERT"],
 	["BMWX5Sert_078","078-BMW X5 SERT"],	
 	["MustangSert_801","801-Ford Mustang SERT"],	
+	["kmc_MustangSO_200","200-Ford Mustang SO"],	
 	["TahoePD_03","800-Chevrolet Tahoe SERT"],
 	["TahoeCB_01","111-Chevrolet Tahoe CB"],
+	["TahoeSO_205","205-Chevrolet Tahoe SO"],
+	["TahoeSO_250","250-Chevrolet Tahoe SO D.Lych"],
+	["TahoeSO_275","275-Chevrolet Tahoe SO M.Williams"],
 	["kif_cvpi_lspa_lb_1","1-LSPA-CVPI-LB"],
 	["kif_cvpi_lspa_lb_2","2-LSPA-CVPI-LB"],
 	["kif_cvpi_lspa_slick_3","3-LSPA-CVPI-PB"],
@@ -76,12 +78,21 @@ _vehicles =
 	["kev_cvpi_correction_lb_91","91-CVPI-CO-LB"],
 	["kev_cvpi_correction_lb_92","92-CVPI-CO-LB"],
 	["kev_taurus_co_lb_90","90-FPI-LB"],
-		//Edward
+	
+	//Edward
+	
 	["cg_evopol1","[PD][E] Mitsubishi Evo"],
 	["charger_pd_skinned","[PD][E] Charger"],
 	["bv_caressa_gt_cop_patrol","[PD][E] Porsche Caressa"],
 	["bv_458_cop_patrol","[PD][E] Ferrari 485"],
-		//David
+	["ivory_wrx_sert_66","66-Subaru WRX Sert"],
+	["kif_evo_pd_28","28-Mitshubishi EVO X"],
+	["ivory_wrx_slicktop","181-Mitshubishi EVO X"],
+	["kmc_wrx_pd_17","017-Subaru WRX"],
+	["kmc_wrx_pd_18","018-Subaru WRX"],
+	
+	//David
+	
 	["A3L_GMC_Van_Swat","[PD][D] GMC"],
 	["cg_h2_sert","[PD][D] Hummer H2"],
 	["cg_suburban_sert_pol","[PD][D] Suburban (podnosnik)"],
@@ -89,7 +100,9 @@ _vehicles =
 	["burnes_foxhound_w","[PD][D] Foxhound"],
 	["cg_evoSERT1","39-Evo SERT"],
 	["charger_sert","37-Charger SERT"],
-		//Pozostale
+	
+	//Pozostale
+	
 	["cg_ducati_pol_reg","Ducati 959"],
 	["cg_peugeot_508_pol_d","[PD] Peugot 508"],	
 	["charger_st","[ST][A] Charger"],
@@ -104,6 +117,10 @@ _vehicles =
 	["charger_cor_skinned","[CO][E] Charger"],
 	["A3L_jailBus","93-Jailbus-CO"],
 	//SO
+	["TahoeSO_205","205-Chevrolet Tahoe SO"],
+	["TahoeSO_250","250-Chevrolet Tahoe D.Lych"],
+	["TahoeSO_275","275-Chevrolet Tahoe M.Williams"],
+	["kmc_MustangSO_200","200-Ford Mustang SO"],
 	["kif_cvpi_sheriff_lb","[SO][A] SHERIFF-CVPI-LB"],
 	["kif_cvpi_sheriff_slick","[SO][A] SHERIFF-CVPI-PB"],
 	["kif_cvpi_sheriff_lb_19","19-SHERIFF-CVPI-LB"],
@@ -181,3 +198,4 @@ _return;
 	["Navara_Policia",200000],
 
 */
+
