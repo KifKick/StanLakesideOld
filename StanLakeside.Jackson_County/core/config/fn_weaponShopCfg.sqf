@@ -924,38 +924,38 @@ switch(_shop) do
 				{
 					["Bronie Palne Goodmana",
 						[
-							["RH_m9",nil,7435],
+							["RH_m9",nil,5435],
 							["RH_15Rnd_9x19_M9",nil,100],
 
-							["RH_gsh18",nil,8620],
+							["RH_gsh18",nil,6620],
 							["RH_18Rnd_9x19_gsh",nil,100],
 
-							["RH_cz75",nil,6260],
+							["RH_cz75",nil,4260],
 							["RH_16Rnd_9x19_CZ",nil,100],
 
-							["RH_p226",nil,6125],
+							["RH_p226",nil,4125],
 							["RH_15Rnd_9x19_SIG",nil,100],
 
-							["RH_g17",nil,6500],
-							["RH_g19",nil,6500],
+							["RH_g17",nil,4500],
+							["RH_g19",nil,4500],
 							["RH_17Rnd_9x19_g17",nil,100],
 
-							["RH_sw659",nil,5500],
+							["RH_sw659",nil,3500],
 							["RH_14Rnd_9x19_sw",nil,100],
 
-							["RH_vp70",nil,7000],
+							["RH_vp70",nil,5000],
 							["RH_18Rnd_9x19_VP",nil,100],
 
-							["RH_mak",nil,2100],
+							["RH_mak",nil,1100],
 							["RH_8Rnd_9x18_Mak",nil,100],
 
-							["KPFS_Mauser_Hsc",nil,2100],
+							["KPFS_Mauser_Hsc",nil,1100],
 							["kpfs_8Rnd_765x17_PP",nil,100],
 
-							["KPFS_P1",nil,2100],
-							["KPFS_P38",nil,2100],
-							["KPFS_P38k",nil,2100],
-							["KPFS_P5",nil,2100],
+							["KPFS_P1",nil,1100],
+							["KPFS_P38",nil,1100],
+							["KPFS_P38k",nil,1100],
+							["KPFS_P5",nil,1100],
 							["KPFS_8Rnd_9x19_PARA",nil,100]                                            
 						]
 					];
@@ -993,20 +993,20 @@ switch(_shop) do
 				{
 					["Sklep gangu",
 						[
-							["RH_m9",nil,5435],
+							["RH_m9",nil,3435],
 							["RH_15Rnd_9x19_M9",nil,100],
 
-							["RH_gsh18",nil,6620],
+							["RH_gsh18",nil,4220],
 							["RH_18Rnd_9x19_gsh",nil,100],
 
-							["RH_p226",nil,5125],
+							["RH_p226",nil,3125],
 							["RH_15Rnd_9x19_SIG",nil,100],
 
-							["RH_g17",nil,4500],
-							["RH_g19",nil,4500],
+							["RH_g17",nil,2500],
+							["RH_g19",nil,2500],
 							["RH_17Rnd_9x19_g17",nil,100],
 
-							["RH_vp70",nil,5000],
+							["RH_vp70",nil,3000],
 							["RH_18Rnd_9x19_VP",nil,100],
 
 							["SMG_01_F",nil,66000],
@@ -1060,20 +1060,20 @@ switch(_shop) do
 				{
 					["Sklep gangu +",
 						[
-							["RH_m9",nil,3435],
+							["RH_m9",nil,2435],
 							["RH_15Rnd_9x19_M9",nil,100],
 
-							["RH_gsh18",nil,4620],
+							["RH_gsh18",nil,3320],
 							["RH_18Rnd_9x19_gsh",nil,100],
 
-							["RH_p226",nil,3125],
+							["RH_p226",nil,2325],
 							["RH_15Rnd_9x19_SIG",nil,100],
 
-							["RH_g17",nil,2500],
-							["RH_g19",nil,2500],
+							["RH_g17",nil,1900],
+							["RH_g19",nil,1900],
 							["RH_17Rnd_9x19_g17",nil,100],
 
-							["RH_vp70",nil,3000],
+							["RH_vp70",nil,2300],
 							["RH_18Rnd_9x19_VP",nil,100],
 
 							["SMG_01_F",nil,58000],
