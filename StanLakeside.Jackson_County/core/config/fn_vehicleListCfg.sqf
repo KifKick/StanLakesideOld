@@ -1098,7 +1098,7 @@ switch (_shop) do
 			["kmc_charger_PD_026",200000],
 			["kmc_charger_PD_027",200000],
 			["kif_evo_pd_28",250000],
-			["ivory_wrx_slicktop",250000],
+			["ivory_evox_slicktop",250000],
 			["DAR_ExplorerPolice",200000],
 			["cg_ducati_pol_reg",50000],
 			//DOC
