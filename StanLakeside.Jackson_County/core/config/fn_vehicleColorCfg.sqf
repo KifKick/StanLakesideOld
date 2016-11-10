@@ -429,7 +429,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0,0,0.545098,1.0,CO)","civ","#(argb,8,8,3)color(0.501961,0.501961,0,1.0,CO)"],
 			["#(argb,8,8,3)color(0.411765,0.721569,0.819608,1.0,CO)","civ","#(argb,8,8,3)color(0.411765,0.721569,0.819608,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
 			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"],
-			["cg_donations\data\cg_wrx_russell.paa","civ"]
+			[_path + "camel9.paa","civ"]
 		];
 	};
 	case "ivory_gt500": {
