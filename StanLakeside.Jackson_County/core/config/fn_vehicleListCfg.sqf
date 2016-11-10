@@ -69,6 +69,7 @@ switch (_shop) do
 			["Mustang_09",1450000],
 			["Mustang_10",1450000],
 			["Mustang_11",1450000],
+			["Mustang_Flame",1450000],
 			["Tahoe_01",1000000],
 			["Tahoe_02",1000000],
 			["Tahoe_03",1000000],
@@ -1097,6 +1098,7 @@ switch (_shop) do
 			["kmc_charger_PD_026",200000],
 			["kmc_charger_PD_027",200000],
 			["kif_evo_pd_28",250000],
+			["ivory_wrx_slicktop",250000],
 			["DAR_ExplorerPolice",200000],
 			["cg_ducati_pol_reg",50000],
 			//DOC
@@ -1129,7 +1131,13 @@ switch (_shop) do
 			["DAR_ExplorerSheriff",150000],
 			["ivory_rs4_unmarked",200000],
 			["ivory_evox_unmarked",200000],
-			["ivory_m3_marked_gts",200000]
+			["ivory_m3_marked_gts",200000],
+			["TahoeSO_205",250000],
+			["TahoeSO_250",250000],
+			["TahoeSO_275",250000],
+			["kmc_MustangSO_200",225000]
+			
+			
 		];
 	};
 	case "cop_car_civ":
