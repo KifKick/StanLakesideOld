@@ -3,6 +3,7 @@ python:
 - '3.4'
 before_script:
 # Credits to ACE3 for these validators
+#test
 - wget https://www.dropbox.com/s/a3jchkwcrmkb59j/config_style_checker.py
 - wget https://www.dropbox.com/s/gm6gxo1iuayq37k/sqf_validator.py
 script:
