@@ -87,7 +87,7 @@ _vehicles =
 	["bv_458_cop_patrol","[PD][E] Ferrari 485"],
 	["ivory_wrx_sert_66","66-Subaru WRX Sert"],
 	["kif_evo_pd_28","28-Mitshubishi EVO X"],
-	["ivory_wrx_slicktop","181-Mitshubishi EVO X"],
+	["ivory_evox_slicktop","181-Mitshubishi EVO X"],
 	["kmc_wrx_pd_17","017-Subaru WRX"],
 	["kmc_wrx_pd_18","018-Subaru WRX"],
 	
