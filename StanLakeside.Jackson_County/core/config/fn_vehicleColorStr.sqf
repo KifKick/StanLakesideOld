@@ -420,6 +420,15 @@ switch (_vehicle) do
 			case 2:  {_color = "White";};
 		};
 	};
+	case "ivory_rs4_unmarked" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Black";};
+			case 1:  {_color = "Gray";};
+			case 2:  {_color = "White";};
+		};
+	};
 
 	case "ivory_wrx_med_ems" :
 	{
