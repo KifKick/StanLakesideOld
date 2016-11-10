@@ -46,16 +46,24 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Classic";};
-			case 1: {_color = "Kit Black";};
-			case 2: {_color = "Forest Green";};
-			case 3: {_color = "Candy Red";};
-			case 4: {_color = "Crispy Blue";};
-			case 5: {_color = "Deluxe Blue";};
-			case 6: {_color = "Icy White";};
-			case 7: {_color = "Special";};
-			case 8: {_color = "C9";};
-			case 9: {_color = "Nandoz";};
+			case 0:  {_color = "Alpine White";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite Black";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+			case 12: {_color = "Candy Red";};
+			case 13: {_color = "Crispy Blue";};
+			case 14: {_color = "Deluxe Blue";};
+			case 15: {_color = "Icy White";};
+			case 16: {_color = "Special";};
+			case 17: {_color = "C9";};
 		};
 	};
 	case "ivory_m3" :
@@ -74,6 +82,12 @@ switch (_vehicle) do
 			case 9:  {_color = "Silverstone";};
 			case 10: {_color = "Tanzanite Blue";};
 			case 11: {_color = "Yas Marina Blue";};
+			case 12: {_color = "Candy Red";};
+			case 13: {_color = "Crispy Blue";};
+			case 14: {_color = "Deluxe Blue";};
+			case 15: {_color = "Icy White";};
+			case 16: {_color = "Special";};
+			case 17: {_color = "C9";};
 		};
 	};
 	case "ivory_veyron" :
@@ -441,7 +455,7 @@ switch (_vehicle) do
 			case 20: {_color = "Classic";};
 			case 21: {_color = "Candy";};
 			case 22: {_color = "Orange";};
-			case 23: {_color = "Russell";};
+			case 23: {_color = "Camel 9";};
 		};
 	};
 	case "ivory_gt500" :

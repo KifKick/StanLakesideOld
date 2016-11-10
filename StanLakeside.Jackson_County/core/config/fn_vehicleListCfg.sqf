@@ -19,7 +19,7 @@ switch (_shop) do
 			["ivory_supra",1750000],
 			["ivory_isf",1300000],
 			["ivory_m3",2295000],
-			/*["ivory_m3_gts",2650000],*/
+			["ivory_m3_gts",2650000],
 			["ivory_gt500",1800000],
 			["ivory_wrx",2850000],
 			["ivory_lp560",3130000],
@@ -118,7 +118,7 @@ switch (_shop) do
 			["ivory_rs4_fd",10000],
 			["BMWX5EMS_01",10000],
 			["ivory_m3_ems",95500],
-			["ivory_m3_emsRR",95500],
+			["ivory_m3_ems2",95500],
 			["ivory_suburban_ems",95500],
 			/*["A3L_Subaru_EMS",20000],*/
 			["cg_evoems1",20000],
@@ -1133,7 +1133,6 @@ switch (_shop) do
 			["DAR_ExplorerSheriff",150000],
 			["ivory_rs4_unmarked",200000],
 			["ivory_evox_unmarked",200000],
-			["ivory_m3_marked_gts",200000],
 			["TahoeSO_205",250000],
 			["TahoeSO_250",250000],
 			["TahoeSO_275",250000],

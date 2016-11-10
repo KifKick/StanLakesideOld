@@ -46,16 +46,24 @@ switch (_vehicle) do
 		_path = "\ivory_m3\data\";
 		_ret =
 		[
-			["#(argb,8,8,3)color(1,0.501961,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.9,CA)","#(argb,8,8,3)color(0,0,0,0.9,CA)"],
-			["#(argb,8,8,3)color(0.141176,0.596078,0.160784,1.0,CO)","civ","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.9,CA)","#(argb,8,8,3)color(0,0,0,0.9,CA)"],
+			["#(argb,8,8,3)color(0.913725,0.933333,0.909804,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.760784,0.694118,0.278431,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.054902,0.0666667,0.0980392,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.0784314,0.0784314,0.0784314,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.301961,0.321569,0.345098,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.792157,0.792157,0.792157,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.890196,0.901961,0.882353,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.141176,0.0980392,0.0235294,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.666667,0.270588,0.196078,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.760784,0.788235,0.811765,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.00392157,0.0352941,0.113725,1.0,co)","civ"],
+			["#(argb,8,8,3)color(0.419608,0.584314,0.780392,1.0,co)","civ"],
 			[_path + "candyred.paa","civ","#(argb,8,8,3)color(0.564706,0.0666667,0.0313725,1.0,CO)"],
 			[_path + "crispyblue.paa","civ","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.9,CA)","#(argb,8,8,3)color(0,0,0,0.9,CA)"],
 			[_path + "deluxeblue.paa","civ","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
 			[_path + "icywhite.paa","civ","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
-			[_path + "special.paa","civ","ivory_m3\data\bmw_m3_e92_wheel_diffuse_00.paa"],
-			[_path + "c9.paa","civ"],
-			["cg_donations\data\cg_m3_fernandez.paa","civ","ivory_m3\data\bmw_m3_e92_wheel_diffuse_00.paa"]
+			[_path + "special.paa","civ"],
+			[_path + "c9.paa","civ"]
 		];
 	};
 	case "ivory_m3": {
@@ -73,7 +81,13 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.666667,0.270588,0.196078,1.0,co)","civ"],
 			["#(argb,8,8,3)color(0.760784,0.788235,0.811765,1.0,co)","civ"],
 			["#(argb,8,8,3)color(0.00392157,0.0352941,0.113725,1.0,co)","civ"],
-			["#(argb,8,8,3)color(0.419608,0.584314,0.780392,1.0,co)","civ"]
+			["#(argb,8,8,3)color(0.419608,0.584314,0.780392,1.0,co)","civ"],
+			[_path + "candyred.paa","civ","#(argb,8,8,3)color(0.564706,0.0666667,0.0313725,1.0,CO)"],
+			[_path + "crispyblue.paa","civ","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.9,CA)","#(argb,8,8,3)color(0,0,0,0.9,CA)"],
+			[_path + "deluxeblue.paa","civ","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
+			[_path + "icywhite.paa","civ","#(argb,8,8,3)color(0,0,0,1.0,CO)"],
+			[_path + "special.paa","civ"],
+			[_path + "c9.paa","civ"]
 		];
 	};
 	case "ivory_veyron": {
