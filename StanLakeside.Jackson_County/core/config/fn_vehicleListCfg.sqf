@@ -134,6 +134,7 @@ switch (_shop) do
 			["cg_ambulance_fire",20000],
 			["cg_ambulance_hazmat",20000],
 			["cg_ambulance_coroner",20000],
+			["cg_ambulance_esu",20000],
 			["A3L_GMC_Van_Coroner",20000],
 			["mercedes_sprinter_ambulancia_F",20000],
 			["cg_mercedes_sprinter_ems",20000],

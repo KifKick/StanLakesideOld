@@ -116,6 +116,13 @@ switch (_filter) do
 			["G_Spectacles",nil,2],
 			["G_Spectacles_Tinted",nil,2],
 			["G_Goggles_VR",nil,2],
+			
+			["EF_ACC1",nil,15],
+ 			["EF_ACC2",nil,15],
+ 			["EF_ACC3",nil,15],
+ 			["EF_AC1",nil,15],
+ 			["EF_AC2",nil,15],
+ 			["EF_AC3",nil,15],
 
 
 			["G_Shades_Black",nil,2],
