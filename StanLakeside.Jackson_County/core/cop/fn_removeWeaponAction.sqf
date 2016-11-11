@@ -7,7 +7,7 @@ private["_hgItems","_holder","_items","_pwItems","_safeItems","_swItems","_weps"
 
 0 cutText["Your weapons being removed.","PLAIN"];
 
-_safeItems = ["FirstAidKit"];
+_safeItems = ["FirstAidKit","cg_atf_bandage_i"];
 _weps = [];
 _all = [];
 
