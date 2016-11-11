@@ -80,7 +80,8 @@ switch (_filter) do
 			["G_Balaclava_TI_blk_F",nil,5],
 			["A3L_Balaclava",nil,6],
 			["TRYK_kio_balaclava_ESS",nil,6],
-			["Mask_M40","Gas Mask",5]
+			["Mask_M40","Gas Mask Black",5],
+			["Mask_M40_OD","Gas Mask Olive",5]
 		];
 	};
 
