@@ -572,7 +572,14 @@ switch (_filter) do
 			["TRYK_Beard4",nil,15],
 			["TRYK_Beard_BW4",nil,15],
 			["TRYK_Beard_Gr4",nil,15],
-
+			
+			["EF_ACC1",nil,15],
+			["EF_ACC2",nil,15],
+			["EF_ACC3",nil,15],
+			["EF_AC1",nil,15],
+			["EF_AC2",nil,15],
+			["EF_AC3",nil,15],
+			
 			["G_Shades_Black",nil,2],
 			["G_Shades_Blue",nil,2],
 			["G_Sport_Blackred",nil,2],
