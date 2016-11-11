@@ -131,7 +131,16 @@ switch (_filter) do
 			["G_Lady_Blue",nil,15],
 			["G_Lowprofile",nil,3],
 			["Mask_M40","Gas Mask",5],
-			["G_Combat",nil,5]
+			["G_Combat",nil,5],
+			// id naramienne
+			["TAC_PMC_ID_H2",nil,5],
+			["TAC_PMC_ID_H",nil,5],
+			["TAC_PMC_ID_B2",nil,5],
+			["TAC_PMC_ID_B",nil,5],
+			["TAC_PMC_ID_W2",nil,5],
+			["TAC_PMC_ID_W",nil,5]
+			
+			
 		];
 	};
 
