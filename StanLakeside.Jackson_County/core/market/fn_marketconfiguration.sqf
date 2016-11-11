@@ -33,7 +33,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["diamondc", 390, 180, 560, 2, 1, 
+	["diamondc", 475, 180, 560, 2, 1, 
 		[ 
 			["oilp",1],
 			["iron_r",1],
@@ -55,7 +55,7 @@ life_market_resources = [
 		] 
 	],
 	
-	["salt_r", 265, 120, 410, 2, 1.5,
+	/*["salt_r", 265, 120, 410, 2, 1.5,
 		[ 
 			["diamondc",1], 
 			["oilp",1],
@@ -64,7 +64,7 @@ life_market_resources = [
 			["cement",1],
 			["glass",1]
 		] 
-	],
+	],*/
 	
 	["glass", 230, 110, 350, 2, 1.5,
 		[ 
@@ -110,7 +110,7 @@ life_market_resources = [
 		] 
 	],
 	
-    ["mdmap", 560, 340, 720, 2, 2,   
+    ["MDMAp", 560, 340, 720, 2, 2,   
 		[ 
 			["marijuana",1], 
 			["emerald",1],

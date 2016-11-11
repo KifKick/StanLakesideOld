@@ -28,6 +28,19 @@ switch (_className) do
 	case "A3L_BMW135Purple": {45};
 	case "A3L_BMW135Red": {45};
 	case "bv_monster_2tone1": {200};
+	
+	case "red_ram_06_black": {110};
+	case "red_ram_06_aqua": {110};
+	case "red_ram_06_darkblue": {110};
+	case "red_ram_06_green": {110};
+	case "red_ram_06_red": {110};
+	case "red_ram_06_pink": {110};	
+	case "red_ram_06_yellow": {110};
+	case "red_ram_06_orange": {110};
+	case "red_ram_06_white": {110};
+	case "red_ram_06_purple": {110};
+	case "red_ram_06_darkgreen": {110};
+	case "red_ram_06_darkred": {110};
 
 	case "AM_Holden_RBlue": {45};
 	case "AM_Holden_RRed": {45};

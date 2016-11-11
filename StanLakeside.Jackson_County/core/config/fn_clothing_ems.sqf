@@ -123,6 +123,19 @@ switch (_filter) do
  			["EF_AC1",nil,15],
  			["EF_AC2",nil,15],
  			["EF_AC3",nil,15],
+			
+			["CL_Armbands_B",nil,15],
+ 			["CL_Armbands_BL",nil,15],
+ 			["CL_Armbands_BM",nil,15],
+ 			["CL_Armbands_O",nil,15],
+ 			["CL_Armbands_OL",nil,15],
+ 			["CL_Armbands_OM",nil,15],
+ 			["CL_Armbands_G",nil,15],
+ 			["CL_Armbands_GL",nil,15],
+ 			["CL_Armbands_GOM",nil,15],
+ 			["CL_Armbands_w",nil,15],
+ 			["CL_Armbands_wL",nil,15],
+ 			["CL_Armbands_WM",nil,15],
 
 
 			["G_Shades_Black",nil,2],
