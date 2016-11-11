@@ -5,7 +5,7 @@
 */
 private["_hgItems","_holder","_items","_pwItems","_safeItems","_swItems","_weps"];
 
-_safeItems = ["FirstAidKit","ItemRadio","ItemMap","ItemCompass","ItemGPS","ItemWatch","NVGoggles","Rangefinder","Binocular"];
+_safeItems = ["FirstAidKit","ItemRadio","ItemMap","ItemCompass","ItemGPS","ItemWatch","NVGoggles","Rangefinder","Binocular","cg_atf_bandage_i"];
 
 
 [player,"patdown1"] spawn life_fnc_nearestSound;	
