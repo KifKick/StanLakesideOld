@@ -20,7 +20,7 @@ switch (_filter) do
 		[
 			["TRYK_U_B_PCUHsW2",nil,550],
 			["TRYK_U_B_PCUHsW6",nil,550],
-			["TRYK_U_B_Denim_T_BK",nil,550],,
+			["TRYK_U_B_Denim_T_BK",nil,550],
 			["TRYK_U_B_Denim_T_BG_BK",nil,550],
 			["TRYK_U_B_RED_T_BR",nil,550],
 			["TRYK_U_B_RED_T_BG_BR",nil,550],
