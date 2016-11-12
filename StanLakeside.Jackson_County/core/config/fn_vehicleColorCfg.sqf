@@ -389,6 +389,15 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
 			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
 			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"]
+		];	
+	};
+	case "ivory_evox_unmarked": {
+		_path = "\ivory_wrx\data\";
+		_ret =
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
+			["#(argb,8,8,3)color(0.501961,0.501961,0.501961,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","cop","#(argb,8,8,3)color(0,0,0,1.0,CO)","#(argb,8,8,3)color(0,0,0,0.95,CA)"]
 		];
 	};	
 	case "ivory_isf_unmarked": {
