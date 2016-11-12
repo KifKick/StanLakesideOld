@@ -48,35 +48,35 @@ switch (true) do
 {
 	case(((__GETC__(life_coplevel)) == 1)):
 	{
-		life_paycheck = 1000;
+		life_paycheck = 100;
 	};
 	case(((__GETC__(life_coplevel)) == 2)):
 	{
-		life_paycheck = 1500;
+		life_paycheck = 100;
 	};
 	case(((__GETC__(life_coplevel)) == 3)):
 	{
-		life_paycheck = 2000;
+		life_paycheck = 100;
 	};
 	case(((__GETC__(life_coplevel)) == 4)):
 	{
-		life_paycheck = 2500;
+		life_paycheck = 100;
 	};
 	case(((__GETC__(life_coplevel)) == 5)):
 	{
-		life_paycheck = 3000;
+		life_paycheck = 100;
 	};
 	case(((__GETC__(life_coplevel)) == 6)):
 	{
-		life_paycheck = 3500;
+		life_paycheck = 100;
 	};
 	case(((__GETC__(life_coplevel)) == 7)):
 	{
-		life_paycheck = 4000;
+		life_paycheck = 100;
 	};
 	case(((__GETC__(life_coplevel)) == 8)):
 	{
-		life_paycheck = 4500;
+		life_paycheck = 100;
 	};
 };
 
