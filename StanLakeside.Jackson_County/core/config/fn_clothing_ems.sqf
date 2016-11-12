@@ -197,6 +197,7 @@ switch (_filter) do
 	case 4:
 	{
 		[
+			["AM_EMSBelt",nil,50],
 	/*		["TRYK_B_Medbag",nil,50],
 			["TRYK_B_Medbag_BK",nil,50],
 			["TRYK_B_Medbag_OD",nil,50],
