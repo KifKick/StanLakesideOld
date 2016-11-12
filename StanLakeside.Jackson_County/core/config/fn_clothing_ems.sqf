@@ -189,6 +189,7 @@ switch (_filter) do
 			["kif_ems_vest_corvus", nil, 2],
 			["kif_ems_vest_james", nil, 2],
 			["kif_emt_vest_assistant_chief", nil, 2],
+			["kif_ems_vest_stach", nil, 2],
 			["kif_emt_med", nil, 2]
 		];
 	};
