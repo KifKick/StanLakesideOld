@@ -41,6 +41,16 @@ switch (_className) do
 	case "red_ram_06_purple": {110};
 	case "red_ram_06_darkgreen": {110};
 	case "red_ram_06_darkred": {110};
+	
+	case "red_beetle_66_black": {55};
+	case "red_beetle_66_fontanagrey": {55};
+	case "red_beetle_66_pearlwhite": {55};
+	case "red_beetle_66_rubyred": {55};
+	case "red_beetle_66_seablue": {55};
+	case "red_beetle_66_vwblue": {55};	
+	case "red_beetle_66_yukonyellow": {55};
+	case "red_beetle_66_seasand": {55};
+	case "red_beetle_66_bahamablue": {55};
 
 	case "AM_Holden_RBlue": {45};
 	case "AM_Holden_RRed": {45};
