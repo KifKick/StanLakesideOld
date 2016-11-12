@@ -1043,7 +1043,17 @@ switch(_shop) do
 							["RH_20Rnd_32cal_vz61",nil,750],
 
 							["RH_tec9",nil,21000],
-							["RH_32Rnd_9x19_tec",nil,750]                                        
+							["RH_32Rnd_9x19_tec",nil,750],
+
+							["cg_atf_bandage_i","Bandaz",15],
+							["ToolKit",nil,1800],
+							["CG_Pro_Item_i","GoPro",250],
+							["CG_tabletd","Tablet",50],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",500],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
+							["Binocular",nil,110],
+							["ItemCompass",nil,50],
+							["ItemWatch",nil,10]
 						]
 					];
 				};
@@ -1110,7 +1120,17 @@ switch(_shop) do
 							["RH_20Rnd_32cal_vz61",nil,750],
 
 							["RH_tec9",nil,15500],
-							["RH_32Rnd_9x19_tec",nil,750]                                        
+							["RH_32Rnd_9x19_tec",nil,750],
+
+							["cg_atf_bandage_i","Bandaz",15],
+							["ToolKit",nil,1800],
+							["CG_Pro_Item_i","GoPro",250],
+							["CG_tabletd","Tablet",50],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",500],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
+							["Binocular",nil,110],
+							["ItemCompass",nil,50],
+							["ItemWatch",nil,10]                                   
 						]
 					];
 				};
