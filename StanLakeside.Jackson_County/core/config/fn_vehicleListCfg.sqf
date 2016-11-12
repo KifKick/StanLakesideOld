@@ -229,6 +229,7 @@ switch (_shop) do
 			["cg_evoems1",20000],
 			["cg_evoems2",20000],
 			["EvoXEMS",100000],
+			["MustangEMS_1",100000],
 			["charger_ems",100000],
 			/*["kif_Taurus_ems1",20000],*/
 			["kif_Taurus_ems2",20000],
@@ -1269,7 +1270,8 @@ switch (_shop) do
 			["TahoeSO_205",250000],
 			["TahoeSO_250",250000],
 			["TahoeSO_275",250000],
-			["kmc_MustangSO_200",225000]
+			["kmc_MustangSO_200",225000],
+			["MustangSO_1",225000]
 			
 			
 		];
