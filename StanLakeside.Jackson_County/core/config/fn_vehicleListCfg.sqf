@@ -1197,11 +1197,10 @@ switch (_shop) do
 		[
 		
 			//POLICE
-			//CB
 			["cnp_Iveco_GOIT",200000],
+			["TahoeCB_01",50000],
 			["AM_Escalade_SERT",50000],
 			["A3L_Suburban_UM_Black",50000],
-			["TahoeCB_01",50000],
 			["kmc_cvpi_lspd_lb_1",100000],
 			["kmc_cvpi_lspd_lb_2",100000],
 			["kmc_cvpi_lspd_lb_3",100000],
@@ -1241,11 +1240,12 @@ switch (_shop) do
 			["A3L_jailBus",50000],
 			//AIAD
 			["Taurus_400",100000],
+			["ivory_isf_unmarked",200000],
 			//DTU
 			["ivory_wrx_unmarked",200000],
 			["ivory_m3_unmarked",200000],
 			["ivory_rs4_unmarked",200000],
-			["ivory_isf_unmarked",200000],
+			["ivory_evox_unmarked",200000],
 			//SERT
 			["suburban_829_sert",300000],
 			["suburban_830_sert",300000],
