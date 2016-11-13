@@ -555,9 +555,6 @@ switch(_shop) do
 							["RH_sbr9_tg",nil,91000],
 							["RH_sbr9_des",nil,91000],
 							["RH_32Rnd_9mm_M822",nil,750],
-							["AG_MP9_sand_peq",nil,75500],
-							["AG_MP9_wcam_peq",nil,75500],
-							["AG_MP9_digi_peq",nil,75500],
 							["AG_MP9_wcam",nil,75500],
 							["AG_MP9_digi",nil,75500],
 							["AG_MP9_sand",nil,75500],
@@ -568,8 +565,6 @@ switch(_shop) do
 							["30Rnd_9x21_Mag",nil,750],
 							["optic_Aco",nil,2500],
 							["optic_ACO_grn_smg",nil,2500],
-							["chakFNP90_50rnd_skin1",nil,105500],
-							["chakFNP90_57x28_B_skin1",nil,2250],
 							["hgun_PDW2000_F",nil,86000],
 							["30Rnd_9x21_Mag",nil,750],
 							["RH_g18",nil,30000],
@@ -1022,9 +1017,6 @@ switch(_shop) do
 							["RH_sbr9_des",nil,71000],
 							["RH_32Rnd_9mm_M822",nil,750],
 
-							["AG_MP9_sand_peq",nil,55500],
-							["AG_MP9_wcam_peq",nil,55500],
-							["AG_MP9_digi_peq",nil,55500],
 							["AG_MP9_wcam",nil,55500],
 							["AG_MP9_digi",nil,55500],
 							["AG_MP9_sand",nil,55500],
@@ -1033,9 +1025,6 @@ switch(_shop) do
 							["AG_MP9_folded_sand",nil,48000],
 							["30Rnd_45ACP_Mag_SMG_01",nil,750],
 							["30Rnd_9x21_Mag",nil,750],
-
-							["chakFNP90_50rnd_skin1",nil,85500],
-							["chakFNP90_57x28_B_skin1",nil,1050],
 
 							["RH_g18",nil,19000],
 							["RH_33Rnd_9x19_g18",nil,750],
@@ -1090,7 +1079,7 @@ switch(_shop) do
 
 							["SMG_01_F",nil,58000],
 			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
-							
+
 							["SMG_02_F",nil,58000],
 							["hgun_PDW2000_F",nil,58000],
 							["30Rnd_9x21_Mag",nil,750],
@@ -1100,9 +1089,6 @@ switch(_shop) do
 							["RH_sbr9_des",nil,64000],
 							["RH_32Rnd_9mm_M822",nil,750],
 
-							["AG_MP9_sand_peq",nil,46500],
-							["AG_MP9_wcam_peq",nil,46500],
-							["AG_MP9_digi_peq",nil,46500],
 							["AG_MP9_wcam",nil,46500],
 							["AG_MP9_digi",nil,46500],
 							["AG_MP9_sand",nil,46500],
@@ -1111,9 +1097,6 @@ switch(_shop) do
 							["AG_MP9_folded_sand",nil,37000],
 							["30Rnd_45ACP_Mag_SMG_01",nil,750],
 							["30Rnd_9x21_Mag",nil,750],
-
-							["chakFNP90_50rnd_skin1",nil,75500],
-							["chakFNP90_57x28_B_skin1",nil,1050],
 
 							["RH_g18",nil,13500],
 							["RH_33Rnd_9x19_g18",nil,750],
