@@ -2165,7 +2165,7 @@
 			<Portuguese>A multa não pode ser maior que R$100.000!</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_TicketGive">
-			<Original>%1 dal mandat w wysokosci %3 w wysokosci $%2</Original>
+			<Original>%1 dal mandat %3 w wysokosci $%2</Original>
 			<English>%1 gave a ticket of $%2 to %3</English>
 			<German>%1 hat %3 einen Strafzettel über $%2 ausgestellt</German>
 			<French>%1 a mis une contravention de $%2 à %3</French>
