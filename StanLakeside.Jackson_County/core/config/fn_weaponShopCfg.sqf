@@ -1043,7 +1043,24 @@ switch(_shop) do
 							["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
 							["Binocular",nil,110],
 							["ItemCompass",nil,50],
-							["ItemWatch",nil,10]                                       
+							["ItemWatch",nil,10],
+
+							["RH_fn57",nil,20500],
+							["RH_20Rnd_57x28_FN",nil,400],
+							["RH_usp",nil,21500],
+							["RH_12Rnd_45cal_usp",nil,400],
+							["RH_aacusp",nil,17500],
+							["RH_fhusp",nil,2100],
+							["RH_uspm",nil,17500],
+							["RH_16Rnd_40cal_usp",nil,400],
+							["RH_matchsd",nil,17500],
+							["RH_m1911",nil,12500],
+							["RH_kimber",nil,12500],
+							["RH_7Rnd_45cal_m1911",nil,400],
+							["hgun_ACPC2_F",nil,12500],
+							["9Rnd_45ACP_Mag",nil,400],
+							["RH_fnp45t",nil,20500],
+							["RH_15Rnd_45cal_fnp",nil,400]
 						]
 					];
 				};
@@ -1115,7 +1132,24 @@ switch(_shop) do
 							["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
 							["Binocular",nil,110],
 							["ItemCompass",nil,50],
-							["ItemWatch",nil,10]                                       
+							["ItemWatch",nil,10],
+
+							["RH_fn57",nil,17500],
+							["RH_20Rnd_57x28_FN",nil,300],
+							["RH_usp",nil,18500],
+							["RH_12Rnd_45cal_usp",nil,300],
+							["RH_aacusp",nil,14500],
+							["RH_fhusp",nil,2100],
+							["RH_uspm",nil,14500],
+							["RH_16Rnd_40cal_usp",nil,300],
+							["RH_matchsd",nil,14500],
+							["RH_m1911",nil,9500],
+							["RH_kimber",nil,9500],
+							["RH_7Rnd_45cal_m1911",nil,300],
+							["hgun_ACPC2_F",nil,9500],
+							["9Rnd_45ACP_Mag",nil,300],
+							["RH_fnp45t",nil,17500],
+							["RH_15Rnd_45cal_fnp",nil,300]
 						]
 					];
 				};
