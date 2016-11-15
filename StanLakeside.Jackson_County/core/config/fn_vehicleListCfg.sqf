@@ -1234,6 +1234,8 @@ switch (_shop) do
 			["Taurus_502",100000],
 			["Taurus_503",100000],
 			["Taurus_504",100000],
+			["kmc_Mustang_510",200000],
+			["kmc_Mustang_511",200000],			
 			//DOC
 			["kev_taurus_co_lb_90",100000],
 			["kev_cvpi_correction_lb_91",100000],
