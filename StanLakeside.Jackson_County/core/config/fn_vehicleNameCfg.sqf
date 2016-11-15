@@ -83,6 +83,9 @@ _vehicles =
 	["Taurus_503","503-Ford Taurus LB"],
 	["Taurus_504","504-Ford Taurus LB"],
 	["Taurus_400","400-Ford Taurus LB AIAD"],
+	["kmc_mustang_510","510-Ford Mustang LB"],
+	["kmc_mustang_511","511-Ford Mustang LB"],
+	
 	//Edward
 	
 	["cg_evopol1","[PD][E] Mitsubishi Evo"],
