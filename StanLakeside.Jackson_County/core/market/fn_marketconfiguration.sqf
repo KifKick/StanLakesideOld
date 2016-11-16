@@ -92,11 +92,10 @@ life_market_resources = [
 	
 	["emerald", 650, 440,850, 2, 2,  
 		[ 
-			["marijuana",1],
+			["marijuana",1], 
+			["mdmap",1],
 			["heroinp",1],
-			["cokep",1],
 			["methp",1],
-			["MDMAp",1],
 			["uraniump",1]
 		] 
 	],
@@ -104,10 +103,9 @@ life_market_resources = [
 	["marijuana", 530, 320, 770, 2, 2,   
 		[ 
 			["emerald",1], 
+			["mdmap",1],
 			["heroinp",1],
-			["cokep",1],
 			["methp",1],
-			["MDMAp",1],
 			["uraniump",1]
 		] 
 	],
@@ -117,7 +115,6 @@ life_market_resources = [
 			["marijuana",1], 
 			["emerald",1],
 			["heroinp",1],
-			["cokep",1],
 			["methp",1],
 			["uraniump",1]
 		] 
@@ -127,9 +124,8 @@ life_market_resources = [
 		[ 
 			["marijuana",1], 
 			["emerald",1],
-			["heroinp",1],
-			["cokep",1],
-			["MDMAp",1],
+			["mdmap",1],
+			["methp",1],
 			["uraniump",1]
 		] 
 	],
@@ -138,20 +134,8 @@ life_market_resources = [
 		[ 
 			["marijuana",1], 
 			["emerald",1],
-			["heroinp",1],
-			["cokep",1],
-			["methp",1],
-			["MDMAp",1]
-		]
-	]
-	["cokep", 1250, 1100, 1900, 2, 2,
-		[ 
-			["marijuana",1], 
-			["emerald",1],
-			["heroinp",1],
-			["methp",1],
-			["MDMAp",1],
-			["uraniump",1]
+			["mdmap",1],
+			["methp",1]
 		]
 	]
 ];
