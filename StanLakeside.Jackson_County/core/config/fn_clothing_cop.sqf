@@ -277,7 +277,8 @@ switch (_filter) do
 			["DOC_Vest_Threat","Correction Kamizelka Dluga",15],
 			["DOC_Vest_Threat_Tan","Correction Kamizelak Konwoj",15],
 			["kif_sheriff_vest","Sheriff Kamizelka",20],
-			["kif_sheriff_traffic_vest","Sheriff Drogowka",20]
+			["kif_sheriff_traffic_vest","Sheriff Drogowka",20],
+			["kif_lspd_police_department_sgt_basta_vest",nil,20]
 			
 			
 			
