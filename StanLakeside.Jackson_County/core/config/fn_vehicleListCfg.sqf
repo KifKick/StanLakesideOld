@@ -1198,6 +1198,7 @@ switch (_shop) do
 		
 			//POLICE
 			//CB
+			["cg_mercedes_sprinter_pol_base",20000],
 			["cnp_Iveco_GOIT",200000],
 			["AM_Escalade_SERT",50000],
 			["A3L_Suburban_UM_Black",50000],
