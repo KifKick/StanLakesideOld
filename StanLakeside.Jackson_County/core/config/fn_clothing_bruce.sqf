@@ -227,6 +227,9 @@ switch (_filter) do
 			["B_FEM_NATO",nil,500],
 			["B_FEM_NATO_long",nil,500],
 			["B_FEM_NATO_Collar",nil,500],
+			["EF_HM_grove",nil,200],
+			["EF_HM_grove2",nil,200],
+			["TRYK_shirts_DENIM_RED2","Koszula Zielona",200],
 			["B_FEM_NATO_Rolled",nil,500]
 		];
 		if(__GETC__(life_adminlevel) > 0) then {
@@ -596,6 +599,9 @@ switch (_filter) do
 			["TRYK_Shemagh_mesh",nil,5],
 			["TRYK_Shemagh_G",nil,5],
 			["TRYK_Shemagh",nil,5],
+			["G_Bandanna_sport",nil,5],
+			["G_Bandanna_blk",nil,5],
+			["G_Spectacles_Tinted",nil,5],
 			["TRYK_Shemagh_WH",nil,5]
 		];
 	};
@@ -628,6 +634,7 @@ switch (_filter) do
 	{
 		[
 			["B_AssaultPack_cbr",nil,250],
+			["TAC_BP_KAR_B",nil,250],
 			["B_AssaultPack_rgr",nil,250],
 			["B_AssaultPack_khk",nil,250],
 			["B_AssaultPack_sgg",nil,250],
