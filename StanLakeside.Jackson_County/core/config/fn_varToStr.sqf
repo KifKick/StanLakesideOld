@@ -178,6 +178,7 @@ switch (_var) do
 	//civ gangs
 	case "license_civ_gang": {"Członek gangu"};
 	case "license_civ_gang2": {"Członek gangu +"};
+	case "license_civ_gangTGC": {"Członek gangu TGC"};
 	
 	//civ firmy
 	case "license_civ_hess": {"Hess Company"};
