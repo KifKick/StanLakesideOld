@@ -1270,6 +1270,7 @@ switch (_shop) do
 			["kif_taurus_so_pb_25",100000],
 			["kif_evo_so_29",250000],
 			["DAR_ExplorerSheriff",150000],
+			["ivory_m3_So_213",250000],			
 			["ivory_rs4_unmarked",200000],
 			["ivory_evox_unmarked",200000],
 			["TahoeSO_205",250000],
