@@ -318,7 +318,8 @@ switch (_filter) do
 			["TRYK_B_Belt_AOR2",nil,300],
 			["TRYK_B_Belt_CYT",nil,300],
 			["TRYK_B_Belt_GR",nil,300],
-			["TRYK_B_Belt_BLK_POL",nil,300],
+			["TRYK_B_Belt_BLK_POL","Czarny pas",300],
+			
 			["A3L_Jungleciv","Moro Plecak",2],
 			["A3L_Browngreyciv","Moro brown plecak",2]
 
