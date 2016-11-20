@@ -1276,7 +1276,9 @@ switch (_shop) do
 			["TahoeSO_250",250000],
 			["TahoeSO_275",250000],
 			["kmc_MustangSO_200",225000],
-			["MustangSO_1",225000]
+			["MustangSO_1",225000],
+			["LandRoverSO_215",275000]
+			
 			
 			
 		];
