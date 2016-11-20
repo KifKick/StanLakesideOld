@@ -85,6 +85,9 @@ _vehicles =
 	["Taurus_400","400-Ford Taurus LB AIAD"],
 	["kmc_mustang_510","510-Ford Mustang LB"],
 	["kmc_mustang_511","511-Ford Mustang LB"],
+	["TahoeAIAD","410-Chevrolet Tahoe AIAD"],
+	["LandRoverSO_215","215-Rang Rover SO"],
+	
 	
 	//Edward
 	
@@ -97,7 +100,7 @@ _vehicles =
 	["ivory_evox_slicktop","181-Mitshubishi EVO X"],
 	["kmc_wrx_pd_17","017-Subaru WRX"],
 	["kmc_wrx_pd_18","018-Subaru WRX"],
-	
+	["ivory_evox_Aiad","411-Mitshubishi Evo X AIAD"],
 	//David
 	
 	["A3L_GMC_Van_Swat","[PD][D] GMC"],
