@@ -86,6 +86,8 @@ _vehicles =
 	["kmc_mustang_510","510-Ford Mustang LB"],
 	["kmc_mustang_511","511-Ford Mustang LB"],
 	["TahoeAIAD","410-Chevrolet Tahoe AIAD"],
+	["LandRoverSO_215","215-Rang Rover SO"],
+	
 	
 	//Edward
 	
