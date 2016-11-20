@@ -101,6 +101,8 @@ _vehicles =
 	["kmc_wrx_pd_17","017-Subaru WRX"],
 	["kmc_wrx_pd_18","018-Subaru WRX"],
 	["ivory_evox_Aiad","411-Mitshubishi Evo X AIAD"],
+	["ivory_m3_So_213","213-BMW M3 GTS LB SO"],
+	
 	//David
 	
 	["A3L_GMC_Van_Swat","[PD][D] GMC"],
