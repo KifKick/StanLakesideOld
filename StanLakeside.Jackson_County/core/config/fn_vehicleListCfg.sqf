@@ -1244,6 +1244,8 @@ switch (_shop) do
 			["A3L_jailBus",50000],
 			//AIAD
 			["Taurus_400",100000],
+			["TahoeAIAD",200000],
+			["ivory_evox_Aiad",250000],
 			//DTU
 			["ivory_wrx_unmarked",200000],
 			["ivory_m3_unmarked",200000],
