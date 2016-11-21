@@ -15,6 +15,8 @@ _vehicles =
 [
 		//PD
 	//Adam
+	
+	["kmc_sprinter","170-Mercedes Sprinter PD"],
 	["kmc_cvpi_lspd_lb_1","001-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_2","002-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_3","003-CVPI LB LSPD"],
