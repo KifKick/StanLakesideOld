@@ -232,6 +232,7 @@ class Life_Client_Core
 		class clothing_prokurator {};
 		class clothing_rebcop {};
 		class clothing_gang{};
+		class clothing_feud{};
 	};
 	
 	class Special
