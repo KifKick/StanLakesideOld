@@ -15,14 +15,16 @@ _vehicles =
 [
 		//PD
 	//Adam
-	["kmc_cvpi_lspd_lb_1","001-CVPI LB LSPD"],
-	["kmc_cvpi_lspd_lb_2","002-CVPI LB LSPD"],
+	
+	["kmc_sprinter","170-Mercedes Sprinter PD"],
+	["kmc_cvpi_lspd_1","001-CVPI Slicktop LSPD"],
+	["kmc_cvpi_lspd_2","002-CVPI Slicktop LSPD"],
 	["kmc_cvpi_lspd_lb_3","003-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_4","004-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_5","005-CVPI LB LSPD"],
-	["kmc_cvpi_lspd_lb_6","006-CVPI LB LSPD"],
-	["kmc_cvpi_lspd_lb_7","007-CVPI LB LSPD"],
-	["kmc_cvpi_lspd_lb_8","008-CVPI LB LSPD"],
+	["kmc_cvpi_lspd_6","006-CVPI Slicktop LSPD"],
+	["kmc_cvpi_lspd_7","007-CVPI Slicktop LSPD"],
+	["kmc_cvpi_lspd_8","008-CVPI Slicktop LSPD"],
 	["kmc_cvpi_lspd_lb_9","009-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_10","010-CVPI LB LSPD"],
 	["kmc_cvpi_lspd_lb_11","011-CVPI LB LSPD"],
@@ -101,6 +103,8 @@ _vehicles =
 	["kmc_wrx_pd_17","017-Subaru WRX"],
 	["kmc_wrx_pd_18","018-Subaru WRX"],
 	["ivory_evox_Aiad","411-Mitshubishi Evo X AIAD"],
+	["ivory_m3_So_213","213-BMW M3 GTS LB SO"],
+	
 	//David
 	
 	["A3L_GMC_Van_Swat","[PD][D] GMC"],
