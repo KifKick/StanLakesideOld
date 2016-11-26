@@ -13,7 +13,7 @@ _ret = -1;
 	if( (_x select 0) == _shortname) then
 	{
 		_ret = _x select 1;
-		_ret = _ret * 2;
+		_ret = _ret * 4;
 	};
 }
 foreach life_market_prices;
