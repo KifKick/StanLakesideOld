@@ -38,7 +38,9 @@ switch (_filter) do
 			["TCG_SWAT","Komendant",15],
 			["TRYK_U_B_BLK","Pilot Coveralls",15],
 			["LS_Marshal_Jacket3",nil,15],
-			["TRYK_U_B_OD_OD_CombatUniform",nil,15]
+			["TRYK_U_B_OD_OD_CombatUniform",nil,15],
+			["TRYK_U_B_Snow_CombatUniform",nil,15],
+			["TRYK_U_B_Snowt",nil,15]
 		];
 	};
 
@@ -64,7 +66,9 @@ switch (_filter) do
 			["policia_geo_boina_roja",nil,500],
 			["BHD_Protec_helmet",nil,500],
 			["BHD_Protec_helmet2",nil,500],
-			["BHD_Protec_helmet3",nil,500]
+			["BHD_Protec_helmet3",nil,500],
+			["TRYK_H_WH",nil,500],
+			["TRYK_H_Helmet_Snow",nil,500]
 		];
 	};
 
@@ -110,7 +114,8 @@ switch (_filter) do
 			["kif_swat_vest2","Police SWAT Corporal Vest",15],
 			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
 			["kif_sert_vest","Police SERT Vest",15],
-			["kif_sert_vest_moro","Police Sert MORO Vest",15]
+			["kif_sert_vest_moro","Police Sert MORO Vest",15],
+			["TAC_ArmorVest_Winter","Police Sert MORO Vest",15]
 		];
 	};
 
