@@ -21,6 +21,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
+			["TRYK_U_B_PCUGs_BLK","Ciepla bluza",10],
 			["U_007_BIS_Marshall","Cadet",10],
 			["police_kevuni1",nil,15],
 			["police_kevuni2",nil,15],
