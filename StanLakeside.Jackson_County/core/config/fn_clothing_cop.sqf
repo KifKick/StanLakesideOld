@@ -61,8 +61,31 @@ switch (_filter) do
  			["TRYK_U_B_Denim_T_DTU","Bluza DTU",15],
 			["U_007_US_Police_officer","High Police Uniform",50],
 			["KAEL_SUITS_BR_Judge",nil,15],
-			["LS_Marshal_Jacket",nil,15]
-			
+			["LS_Marshal_Jacket",nil,15],
+			["LSPDKOM",nil,15],
+ 			["LSPDZKOM",nil,15],
+ 			["LSPDPO1Zima",nil,15],
+ 			["LSPDPO2Zima",nil,15],
+ 			["LSPDPO3Zima",nil,15],
+ 			["LSPDPO4Zima",nil,15],
+ 			["LSPDPO5Zima",nil,15],
+ 			["LSPDPO6Zima",nil,15],
+ 			["LSPDSGTZima",nil,15],
+ 			["LSPDSSGTZima",nil,15],
+ 			["LSPDMSGTZima",nil,15],
+ 			["SODLYCH",nil,15],
+ 			["SOUNDER",nil,15],
+ 			["SOCPT",nil,15],
+ 			["SOLT",nil,15],
+ 			["SOSGT",nil,15],
+ 			["SOSENIORDEPUTY",nil,15],
+ 			["SODEPUTY",nil,15],
+ 			["DTUCPT",nil,15],
+ 			["DTULT",nil,15],
+ 			["LSPDDTU4Zima",nil,15],
+ 			["LSPDDTU3Zima",nil,15],
+ 			["LSPDDTU2Zima",nil,15],
+ 			["LSPDDTU1Zima",nil,15]	
 			
 			
 			/*["A3L_EC_COFC","DOC Guard",15],
