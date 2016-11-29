@@ -259,11 +259,11 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["k_rebel_1",nil,3000],
-			["k_rebel_2",nil,3000],
-			["k_rebel_3",nil,3000],
-			["k_rebel_4",nil,3000],
-			["k_rebel_5",nil,3000],
+			["k_rebel_1",nil,5000],
+			["k_rebel_2",nil,5000],
+			["k_rebel_3",nil,5000],
+			["k_rebel_4",nil,5000],
+			["k_rebel_5",nil,5000],
 			["k_hrebel_1",nil,5000],
 			["k_hrebel_2",nil,5000],
 			["k_hrebel_3",nil,5000],
@@ -281,21 +281,21 @@ switch (_filter) do
 			["k_nhrebel_8",nil,5000],
 			["k_nhrebel_9",nil,5000],
 			["k_nhrebel_10",nil,5000],
-			["hk_rebel_1",nil,9000],
-			["hk_rebel_2",nil,9000],
-			["hk_rebel_5",nil,9000],
-			["hk_rebel_7",nil,9000],
-			["hk_rebel_9",nil,9000],
-			["hk_rebel_11",nil,9000], 
-			["hk_rebel_12",nil,9000],
-			["hk_rebel_13",nil,9000], 
-			["hk_rebel_14",nil,9000],
-			["hk_rebel_15",nil,9000],
-			["hk_rebel_16",nil,9000],
-			["hk_rebel_17",nil,9000],
-			["hk_rebel_18",nil,9000],
-			["hk_rebel_19",nil,9000],
-			["hk_rebel_20",nil,9000]
+			["hk_rebel_1",nil,5000],
+			["hk_rebel_2",nil,5000],
+			["hk_rebel_5",nil,5000],
+			["hk_rebel_7",nil,5000],
+			["hk_rebel_9",nil,5000],
+			["hk_rebel_11",nil,5000], 
+			["hk_rebel_12",nil,5000],
+			["hk_rebel_13",nil,5000], 
+			["hk_rebel_14",nil,5000],
+			["hk_rebel_15",nil,5000],
+			["hk_rebel_16",nil,5000],
+			["hk_rebel_17",nil,5000],
+			["hk_rebel_18",nil,5000],
+			["hk_rebel_19",nil,5000],
+			["hk_rebel_20",nil,5000]
 		];
 	};
 	
