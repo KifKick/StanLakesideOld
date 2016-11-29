@@ -2311,7 +2311,9 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			["CG_EMS_Boat",12500]
+			["CG_EMS_Boat",12500],
+			["B_Lifeboat",12500],
+			["A3PL_Patrol",12500]
 		];
 	};
 	case "civ_ship":
