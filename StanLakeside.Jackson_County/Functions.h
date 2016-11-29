@@ -232,6 +232,7 @@ class Life_Client_Core
 		class clothing_prokurator {};
 		class clothing_rebcop {};
 		class clothing_gang{};
+		class clothing_feud{};
 	};
 	
 	class Special
@@ -400,10 +401,6 @@ class Life_Client_Core
 		class vehicleWeight {};
 		class addVehicle2Chain {};
 		class animateJonzies {};
-		class vehSetPrice {};
-		class vehSetPriceAction {};
-		class vehBuyAction {};
-		class vehBuy {};
 	};
 	
 	class Cop
