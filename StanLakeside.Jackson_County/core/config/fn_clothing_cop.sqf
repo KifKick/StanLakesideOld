@@ -274,6 +274,7 @@ switch (_filter) do
 			["highthreatvesttan_Fix","Sheriff Tan High Threat",20],
 			["kif_sheriff_commander_dorian_vest","SO Commander D.Lych",15],	
 			["kif_sheriff_lakeside_vest","Sheriff Lakeside Vest",15],
+			["sheriff_ls_vest","SO Black Vest",15],
 			["kif_sheriff_lakeside_vest_dorian","SO Vest D.Lych",15],
 			["kif_supervisor_sheriff_vest", "Supervisor Sheriff", "15"],
 			["kif_supervisor_sheriff_vest_dorian", "SO Supervisor D.Lych", "15"],
