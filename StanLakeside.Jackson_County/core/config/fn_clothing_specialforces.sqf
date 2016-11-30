@@ -21,6 +21,8 @@ switch (_filter) do
 	{
 		_ret =
 		[
+			
+			["KombinezonPOL",nil,15],
 			["herpSERT1",nil,15],
 			["herpSERT2",nil,15],
 			["herpSERT3",nil,15],
@@ -102,6 +104,8 @@ switch (_filter) do
 			["TRYK_TAC_SET_OD",nil,5],
 			["TRYK_TAC_SET_TAN",nil,5],
 			["TRYK_TAC_SET_WH",nil,5],
+			["M04Mask",5],
+			["M04Mask1",5],
 			["Mask_M40","Gas Mask Black",5],
 			["Mask_M40_OD","Gas Mask Olive",5]
 		];
@@ -111,6 +115,8 @@ switch (_filter) do
 	{
 		_ret =
 		[
+			
+			["KamizelkaCBRN",nil,15],
 			["kaelvest_sert7_Fix",nil,15],
 			["kaelvest_sert6_Fix",nil,15],
 			["kaelvest_sert5_Fix",nil,15],
