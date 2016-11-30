@@ -194,7 +194,7 @@ switch (_filter) do
 		_ret =
 		[
 			["Mask_M40","Gas Mask",5],
-			["Mask_M40_OD","Gas Mask Olive",5]
+			["Mask_M40_OD","Gas Mask Olive",5],
 			["G_Diving",nil,50],
 			["G_Aviator",nil,7],
 			["G_Shades_Black",nil,2],
