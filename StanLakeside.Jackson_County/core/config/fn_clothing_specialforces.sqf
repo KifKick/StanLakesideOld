@@ -21,6 +21,8 @@ switch (_filter) do
 	{
 		_ret =
 		[
+			
+			["KombinezonPOL",nil,15],
 			["herpSERT1",nil,15],
 			["herpSERT2",nil,15],
 			["herpSERT3",nil,15],
@@ -36,7 +38,7 @@ switch (_filter) do
 			["U_C_DDE","Kombinezon HazMat / Uran",50],
 			["RR_SWAT_UNIFORM_obj","Kombinezon SWAT",15],
 			["TCG_SWAT","Komendant",15],
-			["TRYK_U_B_BLK","Pilot Coveralls",15],
+			["TRYK_U_B_BLK","Mundur Pilota",15],
 			["LS_Marshal_Jacket3",nil,15],
 			["TRYK_U_B_OD_OD_CombatUniform",nil,15],
 			["TRYK_U_B_Snow_CombatUniform",nil,15],
@@ -50,6 +52,7 @@ switch (_filter) do
 		[
 			["jamie_blackhelmet","Czarny Helm Swat!",5],
 			["TRYK_H_PASGT_BLK","SERT Standard Helmet",5],
+			["TCG_pdav_helmet","Helm Pilota",5],
 			["TRYK_H_PASGT_OD",nil,5],
 			["CG_sert_H7",nil,5],
 			["CG_sert_H6",nil,5],
@@ -85,6 +88,24 @@ switch (_filter) do
 			["A3L_Balaclava",nil,6],
 			["TRYK_kio_balaclava_WH",nil,6],
 			["TRYK_kio_balaclava_ESS",nil,6],
+			["TRYK_H_PASGT_BLK",nil,6],
+			["TRYK_SPGEAR_Glasses","Negotiator Glasses",6],
+			["TRYK_Shemagh_EAR_G",nil,5],
+			["TRYK_Shemagh_EAR_TAN",nil,5],
+			["TRYK_Shemagh_EAR_WH",nil,5],
+			["TRYK_Shemagh_shade_MH",nil,5],
+			["TRYK_Shemagh_shade_G",nil,5],
+			["TRYK_Shemagh_shade_WH",nil,5],
+			["TRYK_TAC_SET_MESH_2",nil,5],
+			["TRYK_TAC_SET_OD_2",nil,5],
+			["TRYK_TAC_SET_TAN_2",nil,5],
+			["TRYK_TAC_SET_WH_2",nil,5],
+			["TRYK_TAC_SET_MESH",nil,5],
+			["TRYK_TAC_SET_OD",nil,5],
+			["TRYK_TAC_SET_TAN",nil,5],
+			["TRYK_TAC_SET_WH",nil,5],
+			["M04Mask",5],
+			["M04Mask1",5],
 			["Mask_M40","Gas Mask Black",5],
 			["Mask_M40_OD","Gas Mask Olive",5]
 		];
@@ -94,6 +115,8 @@ switch (_filter) do
 	{
 		_ret =
 		[
+			
+			["KamizelkaCBRN",nil,15],
 			["kaelvest_sert7_Fix",nil,15],
 			["kaelvest_sert6_Fix",nil,15],
 			["kaelvest_sert5_Fix",nil,15],
