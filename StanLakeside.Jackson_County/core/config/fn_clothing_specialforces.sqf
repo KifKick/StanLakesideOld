@@ -50,7 +50,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["jamie_blackhelmet","Czarny Helm Swat!",5],
+			["jamie_blackhelmet","Czarny Helm Swat",5],
 			["TRYK_H_PASGT_BLK","SERT Standard Helmet",5],
 			["TCG_pdav_helmet","Helm Pilota",5],
 			["TRYK_H_PASGT_OD",nil,5],
@@ -104,8 +104,8 @@ switch (_filter) do
 			["TRYK_TAC_SET_OD",nil,5],
 			["TRYK_TAC_SET_TAN",nil,5],
 			["TRYK_TAC_SET_WH",nil,5],
-			["M04Mask",5],
-			["M04Mask1",5],
+			["M04Mask","Maska M04 z kapturem HazMat",5],
+			["M04Mask1","Maska M04 HazMat",5],
 			["Mask_M40","Gas Mask Black",5],
 			["Mask_M40_OD","Gas Mask Olive",5]
 		];
@@ -117,17 +117,8 @@ switch (_filter) do
 		[
 			
 			["KamizelkaCBRN",nil,15],
-			["kaelvest_sert7_Fix",nil,15],
-			["kaelvest_sert6_Fix",nil,15],
-			["kaelvest_sert5_Fix",nil,15],
-			["kaelvest_sert4_Fix",nil,15],
-			["kaelvest_sert3_Fix",nil,15],
-			["kaelvest_sert2_Fix",nil,15],
-			["SERT_VEST_GREEN",nil,15],
 			["SERT_FULL_VESTGRN",nil,15],
 			["SERTvest1",nil,15],
-			["TRYK_V_Sheriff_BA_TB3",nil,15],
-			["TRYK_V_tacv1L_BK",nil,15],
 			["TRYK_V_PlateCarrier_blk",nil,15],
 			["TRYK_V_PlateCarrier_blk_L",nil,15],
 			["TCG_sertvest1","UniV2 SERT",15],
