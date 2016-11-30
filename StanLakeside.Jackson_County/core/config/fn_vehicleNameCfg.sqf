@@ -115,6 +115,7 @@ _vehicles =
 	["cg_evoSERT1","39-Evo SERT"],
 	["charger_sert","37-Charger SERT"],
 	["HummerSERT_810","810-Hummer H1 SERT"],
+	["HummerSERT_850","850-Hummer H1 SERT Winter Edition"],
 	["LandRoverSERT_811","811-Range Rover SERT"],
 	["suburban_829_sert","829-Chevrolet Suburban SERT"],
 	["suburban_830_sert","829-Chevrolet Suburban SERT"],
