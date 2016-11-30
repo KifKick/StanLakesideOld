@@ -289,6 +289,7 @@ switch (_filter) do
 			["kif_aiad_vest_raf","AIAD R.Graf",15],
 			["kif_sheriff_commander_dorian_vest","SO Commander D.Lych",15],	
 			["kif_sheriff_lakeside_vest","Sheriff Lakeside Vest",15],
+			["sheriff_ls_vest","SO Black Vest",15],
 			["kif_sheriff_lakeside_vest_dorian","SO Vest D.Lych",15],
 			["kif_sheriff_lakeside_vest_mike","SO Vest M.Williams",15],
 			["kif_supervisor_sheriff_vest", "Supervisor Sheriff", "15"],
