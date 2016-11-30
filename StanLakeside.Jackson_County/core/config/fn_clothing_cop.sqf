@@ -246,6 +246,7 @@ switch (_filter) do
 		_ret =
 		[
 			["V_RebreatherB","Aparat oddechowy",20],
+			["kmc_police_lspa","Kamizelka Akademia",20],
 			["jamie_blue","Kamizelka Cadet",20],
 			["kif_police_vest","Kamizelka do Munduru",20],
 			["cg_policevest1_fix","Kamizelka Policyjna",20],
