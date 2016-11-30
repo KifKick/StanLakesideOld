@@ -118,7 +118,8 @@ _vehicles =
 	["HummerSERT_850","850-Hummer H1 SERT Winter Edition"],
 	["LandRoverSERT_811","811-Range Rover SERT"],
 	["suburban_829_sert","829-Chevrolet Suburban SERT"],
-	["suburban_830_sert","829-Chevrolet Suburban SERT"],
+	["suburban_830_sert","830-Chevrolet Suburban SERT"],
+	["suburban_831_sert","831-Chevrolet Suburban SERT Bialy"],
 	["taurus_899_sert","899-Ford Taurus SERT"],
 	
 	//Pozostale
