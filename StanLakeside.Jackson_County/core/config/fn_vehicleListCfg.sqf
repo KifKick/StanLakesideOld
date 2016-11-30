@@ -219,28 +219,28 @@ switch (_shop) do
 	{
 		_return = 
 		[
-			/*["ivory_wrx_ems",95500],*/
 			["ivory_rs4_fd",10000],
 			["BMWX5EMS_01",10000],
 			["ivory_m3_ems",95500],
 			["ivory_m3_ems2",95500],
 			["ivory_suburban_ems",95500],
-			/*["A3L_Subaru_EMS",20000],*/
 			["cg_evoems1",20000],
 			["cg_evoems2",20000],
 			["EvoXEMS",100000],
 			["MustangEMS_1",100000],
 			["charger_ems",100000],
-			/*["kif_Taurus_ems1",20000],*/
 			["kif_Taurus_ems2",20000],
 			["A3L_CVPILBFD",20000],
 			["A3L_CVPILBEMSLT",20000],
 			["A3L_CVPILBEMSCPT",20000],
-			["cg_ambulanceexpansion",20000],
+			//["cg_ambulanceexpansion",20000],
 			["cg_ambulance_fire",20000],
 			["cg_ambulance_hazmat",20000],
 			["cg_ambulance_coroner",20000],
-			["cg_ambulance_esu",20000],
+			["cg_ambulance_med",20000],
+			["cg_ambulance_ems",20000],
+			["red_taurus_10_p_ems",20000],
+			["TahoeEMS",20000],
 			["A3L_GMC_Van_Coroner",20000],
 			["mercedes_sprinter_ambulancia_F",20000],
 			["cg_mercedes_sprinter_ems",20000],
@@ -254,7 +254,6 @@ switch (_shop) do
 			["nopixel_guardacostas",20000],
 			["cnp_Defender",50000],
 			["CNP_mercedes_sprinter_GOIT_F",70000],
-			/*["cg_merc_atego_firetruck_reg",25000],*/
 			["A3PL_Engine",50000],
 			["A3PL_Ladder",50000],
 			["A3PL_Rescue",50000]
