@@ -206,6 +206,8 @@ switch(_shop) do
 							["RH_docter",nil,10],
 							["muzzle_snds_acp",nil,10],
 							["RH_gemtech9",nil,10],
+							["RH_cz75",nil,250],
+							["RH_16Rnd_9x19_CZ",nil,10],
 							["hgun_Pistol_heavy_01_F",nil,250],
 							["11Rnd_45ACP_Mag",nil,10],
 							["hgun_ACPC2_F",nil,250],
