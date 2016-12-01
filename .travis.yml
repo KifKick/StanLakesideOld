@@ -1,11 +1,11 @@
 language: python
 python:
-- '3.4'
-before_script:
-# Credits to ACE3 for these validators
-#test
-- wget https://www.dropbox.com/s/a3jchkwcrmkb59j/config_style_checker.py
-- wget https://www.dropbox.com/s/gm6gxo1iuayq37k/sqf_validator.py
+  - '3.5'
+install: true
 script:
-- python3 sqf_validator.py
-- python3 config_style_checker.py
+  - python3 travis/sqf_validator.py
+  - python3 travis/config_style_checker.py
+notifications:
+  email:
+    on_success: never
+    on_failure: change
