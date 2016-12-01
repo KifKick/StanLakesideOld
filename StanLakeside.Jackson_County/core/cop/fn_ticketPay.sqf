@@ -5,7 +5,7 @@
 	Description:
 	Pays the ticket.
 */
-if(isnil {life_ticket_val} OR isNil {life_ticket_cop}) exitWith
+if(isnil {life_ticket_val} || isNil {life_ticket_cop}) exitWith
 {
 	["Cos poszlo nie tak",false] spawn domsg;
 };
