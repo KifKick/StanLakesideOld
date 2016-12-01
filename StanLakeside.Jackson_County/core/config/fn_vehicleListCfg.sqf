@@ -1255,6 +1255,7 @@ switch (_shop) do
 			//SERT
 			["suburban_829_sert",300000],
 			["suburban_830_sert",300000],
+			["suburban_831_sert",300000],
 			["cg_evoSERT1",250000],
 			["DAR_SWATPolice",150000],
 			["HummerSERT_810",275000],
