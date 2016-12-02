@@ -49,5 +49,6 @@
 #include "blackjack.hpp"
 #include "openboard.hpp"
 #include "pickup.hpp"
+#include "veh_auction.hpp"
 
 #include "infiSTAR_AdminMenu.hpp"

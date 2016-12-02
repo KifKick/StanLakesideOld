@@ -1,7 +1,7 @@
 /*
 	File: fn_vInteractionMenu.sqf
-	
-	
+
+
 	Description:
 	Replaces the mass addactions for various vehicle actions
 */
@@ -73,17 +73,17 @@ if( damage _curTarget < 1 ) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable
 if(playerSide == west) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
 	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
-	
+
 	_Btn3 ctrlSetText localize "STR_vInAct_SearchVehicle";
 	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_vehInvSearch;";
-	
+
 	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
 	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
-	
+
 	_Btn5 ctrlSetText localize "STR_vInAct_Impound";
 	_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
-	
+
 	if(_curTarget isKindOf "Ship") then {
 		_Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
 		_Btn6 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
@@ -100,10 +100,10 @@ if(playerSide == west) then {
 			_Btn6 buttonSetAction "life_vInact_curTarget setPosASL [getPosASL life_vInact_curTarget select 0, getPosASL life_vInact_curTarget select 1, (getPosASL life_vInact_curTarget select 2) + 0.5]; closeDialog 0;";
 			if(count crew _curTarget == 0) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false;};
 		};
-	};	
+	};
 
 	//btn7 is called at bottom of script.
-	
+
 	_Btn7 ctrlSetText localize "STR_pInAct_TestIntox";
 	_Btn7 buttonSetAction "[life_the_driver] spawn life_fnc_testIntox;";
 
@@ -121,7 +121,7 @@ if(playerSide == west) then {
 
 
 	if(!command) then {
-		_Btn10 ctrlEnable false;	
+		_Btn10 ctrlEnable false;
 	};
 
 
@@ -135,10 +135,10 @@ if(playerSide == west) then {
 		_Btn9 ctrlEnable true;
 		_Btn11 ctrlEnable true;
 	} else {
-		_Btn7 ctrlEnable false;	
-		_Btn8 ctrlEnable false;	
+		_Btn7 ctrlEnable false;
+		_Btn8 ctrlEnable false;
 		_Btn9 ctrlEnable false;
-		_Btn11 ctrlEnable false;	
+		_Btn11 ctrlEnable false;
 	};
 
 
@@ -149,17 +149,17 @@ if(playerSide == west) then {
 	_Btn13 ctrlSetText "Park Ticket 1500";
 	_Btn13 buttonSetAction "life_vInact_curTarget setVariable[""parkingTicket2"",true,true]; closeDialog 0;";
 
-	
+
 	if(life_vInact_curTarget getVariable ["parkingTicket", false]) then {
-		_Btn12 ctrlEnable false;	
+		_Btn12 ctrlEnable false;
 	} else {
-		_Btn12 ctrlEnable true;	
+		_Btn12 ctrlEnable true;
 	};
 
 	if(life_vInact_curTarget getVariable ["parkingTicket2", false]) then {
-		_Btn13 ctrlEnable false;	
+		_Btn13 ctrlEnable false;
 	} else {
-		_Btn13 ctrlEnable true;	
+		_Btn13 ctrlEnable true;
 	};
 
 
@@ -197,7 +197,7 @@ if(playerSide == west) then {
 				if(count crew _curTarget == 0) then { _Btn2 ctrlEnable true;} else {_Btn2 ctrlEnable false;};
 			};
 		};
-		
+
 		_Btn3 ctrlSetText localize "STR_vInAct_PullOut";
 		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_emspulloutAction;";
 		if(count crew _curTarget == 0) then {_Btn3 ctrlEnable false;};
@@ -234,7 +234,7 @@ if(playerSide == west) then {
 	_Btn18 ctrlShow false;
 	}
 	else {
-	
+
 		if(_curTarget isKindOf "Ship") then {
 			_Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
 			_Btn2 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
@@ -247,10 +247,10 @@ if(playerSide == west) then {
 			} else {
 				_Btn2 ctrlSetText localize "STR_vInAct_Unflip";
 				_Btn2 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPosATL life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
-				if(count crew _curTarget == 0 && {locked _curTarget == 0}) then {_Btn2 ctrlEnable true;} else {_Btn2 ctrlEnable false};				
+				if(count crew _curTarget == 0 && {locked _curTarget == 0}) then {_Btn2 ctrlEnable true;} else {_Btn2 ctrlEnable false};
 			};
 		};
-		
+
 
 		_Btn3 ctrlSetText localize "STR_vInAct_PullOut";
 		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction;";
@@ -280,8 +280,16 @@ if(playerSide == west) then {
 			_Btn7 ctrlEnable false;
 		};
 
-	_Btn8 ctrlShow false;
-	_Btn9 ctrlShow false;
+	_Btn8 ctrlSetText "Ustal cene";
+	_Btn8 buttonSetAction "[] call life_fnc_vehSetPriceAction;";
+
+	_Btn9 ctrlSetText "Sprawdz cene";
+	_Btn9 buttonSetAction "[] call life_fnc_vehBuyAction;";
+
+	if(!(_curTarget getVariable["vehselling",false])) then {
+		_Btn9 ctrlEnable false;
+	};
+
 	_Btn10 ctrlShow false;
 	_Btn11 ctrlShow false;
 	_Btn12 ctrlShow false;
