@@ -10,7 +10,7 @@
 
 closeDialog 4250;
 _dbinfo = life_vehicle_imbuying getVariable ["dbInfo",[]];
-if(isnil {life_vehicle_imbuying} OR isNil {life_vehicle_price} OR isNil {life_vehicle_owner}) exitWith {
+if(isnil {life_vehicle_imbuying} || isNil {life_vehicle_price} || isNil {life_vehicle_owner}) exitWith {
 	["Cos poszlo nie tak", false] spawn domsg;
 	};
 if(cash_in_hand < life_vehicle_price) exitWith {
