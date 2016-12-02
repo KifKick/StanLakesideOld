@@ -21,7 +21,7 @@ _vehicle setVelocity [(_vel select 0) + (sin _dir * _speed), (_vel select 1) + (
 uiSleep 1;
 _playerID = getPlayerUID player;
 _playerName = name player;
-_toPlayerName = getText(configFile >> "CfgVehicles" >> _vehicle >> "displayName");
+_toPlayerName = getText(configFile >> "CfgVehicles" >> (typeOF _vehicle) >> "displayName");
 _type = 4;
 [_playerID,_playerName,"",_toPlayerName,_type,""] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 _vehicle allowdamage true;
