@@ -193,7 +193,7 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (!license_cop_sert): {"Zbrojownia SERT"};
+				case (!license_cop_sert): {"Zbrojownia tylko dla SERT"};
 				default
 				{
 					["Zbrojownia SERT",								
@@ -251,6 +251,40 @@ switch(_shop) do
 							["acc_flashlight","ACC Flashlight",10],
 							["RH_M6X","RH Flashlight",10]
 							
+						]
+					];
+				};
+			};
+        };
+		
+		case "cop_special_sniper":
+        {
+			switch(true) do
+			{
+				case (!license_cop_sniper): {"Zbrojownia tylko dla SERT"};
+				default
+				{
+					["Zbrojownia Snipera",								
+						[
+						
+							["KPFS_G22",nil,10],
+							["kpfs_5Rnd_86x70_G22",nil,10],
+							
+							["RH_Mk11",nil,10],
+							["RH_m110sd",nil,10],
+							["RH_20Rnd_762x51_M80A1",nil,10],
+							
+							["RH_Mk12mod1",nil,10],
+							["RH_spr_mbs",nil,10],
+							["RH_30Rnd_556x45_Mk318","Mk318 30Rnd",10],
+							["RH_60Rnd_556x45_Mk318","Mk318 60Rnd",10],
+							
+							["optic_NVS",nil,10],
+							["optic_DMS",nil,10],
+							["optic_LRPS",nil,10],
+							["RH_leu_mk4",nil,10],
+							["optic_AMS",nil,10],
+							["optic_KHS_blk",nil,10]
 						]
 					];
 				};
