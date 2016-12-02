@@ -16,4 +16,4 @@ _plate = _this select 3;
 
 _query = format["UPDATE vehicles SET pid='%1' WHERE plate='%2' AND classname='%3'",_buyerid, _plate, _classname];
 
-[_query,1] call DB_fnc_asyncCall;[_query,1] call DB_fnc_asyncCall;
+[_query,1] call DB_fnc_asyncCall;
