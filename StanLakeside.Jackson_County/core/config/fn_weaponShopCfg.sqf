@@ -275,6 +275,7 @@ switch(_shop) do
 							["RH_20Rnd_762x51_M80A1",nil,10],
 							
 							["kio_sr25_ec",nil,10],
+							["kio_sr25",nil,10],
 							["kio_muzzle_sr25S",nil,10],
 							["20rnd_762_magazine",nil,10],
 							
