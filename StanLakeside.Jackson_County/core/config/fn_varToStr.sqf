@@ -142,6 +142,7 @@ switch (_var) do
 	case "license_cop_aiad": {"Odznaka SERT"};
 	case "license_cop_sert": {"Odznaka SERT"};
 	case "license_cop_dtu": {"Odznaka DTU"};
+	case "license_cop_sniper": {"Odznaka Snipera"};
 	
 	//meds
 	case "license_med_air": {(localize "STR_License_Pilot")};
