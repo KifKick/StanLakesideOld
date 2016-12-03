@@ -384,7 +384,12 @@ switch(_shop) do
 							["RH_eotexps3_tan",nil,10],
 							["RH_t1_tan",nil,10],
 							["RH_reflex",nil,10],
-			                		["RH_M6X",nil,10]
+			                		["RH_M6X",nil,10],
+							["A3L_CZ550",nil,175500],
+							["A3L_CZ550mag",nil,750],
+							["A3L_CZ550Scope",nil,15500],
+							["arifle_SDAR_F","Turtle ONLY-SDAR",5000],
+							["20Rnd_556x45_UW_mag","Underwater magazine",50]
 						]
 					];
 				};
