@@ -80,4 +80,11 @@ _target setVariable["Revive",TRUE,TRUE];
 
 [format[localize "STR_Medic_RevivePayReceive",_targetName,[(call life_revive_fee)] call life_fnc_numberText], false] spawn domsg;
 
+_playerID = getPlayerUID player;
+_playerName = name player;
+_toPlayerID = getPlayerUID _target;
+_toPlayerName = name _target;
+_type = 9;
+[_playerID,_playerName,_toPlayerID,_toPlayerName,_type,""] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
+
 ["Add",1] call fnc_karma;
