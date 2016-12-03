@@ -5,7 +5,7 @@ Misja stworzona przez **Tonic**, edytowana przez **A3L** oraz **CG**
 
 Dalsza edycja: **KifKick** oraz **Katekarin**, a także społeczeństwo [StanLakeside.pl](http://stanlakeside.pl)
 
-Serdeczne podziękowana za dopisanie swojej "cegiełki" (kodu) dla:  **Katekarin**
+Serdeczne podziękowana za dopisanie swojej "cegiełki" (kodu) dla:  **Kruk**
 
 
 <p align="center">
