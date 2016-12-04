@@ -9,6 +9,7 @@
 
 _uid = getPlayerUID player;
 if (playerSide == sideLogic) then {
+	if!(_uid in [76561198253273755,76561198201987250,76561198041834190,76561198150573190,76561198072741002,76561197982469013,76561198061433788,76561197998091289]) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 };
 };
