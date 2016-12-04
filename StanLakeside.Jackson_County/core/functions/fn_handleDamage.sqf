@@ -54,12 +54,12 @@ if(!isNull _source) then {
 
 if(_selectionName == "") then {
 	_damage = _damage * 1.5;
-	["Remove",_damage,_source] spawn fnc_doHealth;
+	["Remove",_damage] spawn fnc_doHealth;
 } else {
 	if(!isNull _source && isPlayer _source && _source != _unit && _damage > 0.1) then {	
-		[_damage,_selectionName] spawn fnc_damageChance;
+		[_damage,_selectionName,_source] spawn fnc_damageChance;
 	} else {
-		if(_damage > 0.65) then { [_damage,_selectionName] spawn fnc_damageChance; };
+		if(_damage > 0.65) then { [_damage,_selectionName,_source] spawn fnc_damageChance; };
 	};
 };
 
