@@ -781,6 +781,9 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		_injuryArray = ["head","face_hub","neck","body","spine1","arms","leg","pelvis","hands"];
 		_currentHitLocation = _this select 1;
 		_source = _this select 2;
+
+		[3] spawn life_fnc_bleed;
+
 		if(_currentHitLocation IN _injuryArray) then {
 			_myInjuries = player getVariable "playerInjuries";
 			_currentHitNumber = _injuryArray find _currentHitLocation;
