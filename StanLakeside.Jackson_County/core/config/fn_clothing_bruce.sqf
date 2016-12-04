@@ -599,8 +599,6 @@ switch (_filter) do
 			["TRYK_Shemagh_mesh",nil,5],
 			["TRYK_Shemagh_G",nil,5],
 			["TRYK_Shemagh",nil,5],
-			["G_Bandanna_sport",nil,5],
-			["G_Bandanna_blk",nil,5],
 			["G_Spectacles_Tinted",nil,5],
 			["TRYK_Shemagh_WH",nil,5]
 		];
