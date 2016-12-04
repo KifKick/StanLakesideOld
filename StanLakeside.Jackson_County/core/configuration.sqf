@@ -420,6 +420,7 @@ life_licenses =
 	["license_civ_rifle","civ"],
 	["license_cop_aiad","cop"],
 	["license_cop_dtu","cop"],
+	["license_cop_sniper","cop"],
 	["license_cop_sert","cop"],
 	["license_cop_prokurator","cop"]
 ];
