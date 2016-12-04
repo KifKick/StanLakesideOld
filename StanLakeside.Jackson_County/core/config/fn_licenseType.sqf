@@ -30,6 +30,7 @@ switch (_mode) do
 			case "swat": {_var = "license_cop_swat"}; //swat License cost
 			case "sert": {_var = "license_cop_sert"}; //sert License cost
 			case "dtu": {_var = "license_cop_dtu"}; //dtu License cost
+			case "sniper": {_var = "license_cop_sniper"}; //sniper License cost			
 			case "aiad": {_var = "license_cop_aiad"}; //aiad License cost
 			case "cg": {_var = "license_cop_cg"}; //Coast guard license cost
 			case "heroin": {_var = "license_civ_heroin"}; //Heroin processing license cost
