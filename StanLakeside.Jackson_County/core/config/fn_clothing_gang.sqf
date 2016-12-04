@@ -208,7 +208,9 @@ switch (_filter) do
 			["G_Balaclava_combat",nil,137],
 			["G_Balaclava_lowprofile",nil,137],
 			["Mask_M40","Maska przeciwgazowa, uran",500],
-			["A3L_Balaclava",nil,137]
+			["A3L_Balaclava",nil,137],
+			["G_Bandanna_sport",nil,5],
+			["G_Bandanna_blk",nil,5]
 		];
 	};
 	
