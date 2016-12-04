@@ -19,10 +19,11 @@ life_action_inUse = true;
 
 	if( side player != independent) then {
 		player removeMagazine "cg_atf_bandage_i";
-		_curTarget setdamage 0.2;
 		["Add",0.2] remoteExecCall ["fnc_doHealth",_curTarget];
+		[] remoteExec [{bleedingEffect = bleedingEffect - 12; if(bleedingEffect < 0) then { bleedingEffect = 0};},_curTarget];
 	} else {
 		["Add",0.2] remoteExecCall ["fnc_doHealth",_curTarget];
+		[] remoteExec [{bleedingEffect = bleedingEffect - 16; if(bleedingEffect < 0) then { bleedingEffect = 0};},_curTarget];
 	};
 
 

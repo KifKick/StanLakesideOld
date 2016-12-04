@@ -19,17 +19,17 @@ if(deadplayer) exitwith {};
 deadPlayer = true;
 
 if(vehicle player == player) then {
-	[player,"DeadState"] remoteExecCall ["life_fnc_animsync"];
+	player playmove "deadstate";
 };
 
 if(vehicle player != player) then {
-	[player,"KIA_commander_MRAP_03"] remoteExecCall ["life_fnc_animsync"];	
+	player playmove "KIA_commander_MRAP_03";
 };
 
 player allowdamage false;
 player setVariable ["tf_unable_to_use_radio", true];
 im_dead = true;
-params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_length", 0, [0]]];
+params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_length", 0, [0]], ["_headshot", 0, [0]]];
 
 player setVariable ["tf_voiceVolume", 0, true];
 life_gear = [];
@@ -37,8 +37,8 @@ player setVariable["gear",life_gear,true];
 
 _length = 15 - _length;
 _length = round(_length);
-if(_length > 15) then { _length = 15; };
-if(_length < 8) then { _length = 8; };
+if(_length > 15) then { _length = 20; };
+if(_length < 8) then { _length = 5; };
 life_respawn_timer = _length;
 player setVariable["severity", _length, true];
 
@@ -70,7 +70,7 @@ if(_fuck != _you) then {
 		_type = 1;
 		[_playerID,_you,"","",_type,"", ""] remoteExecCall ["TON_fnc_deathLog", (call life_fnc_HCC)];
 	} else {
-		[format["%1 downed %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg; 
+		if(_headshot == 1) then { [format["%1 zabil strzalem w glowe %2 z dystansu %3 poslugujac sie %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 postrzelil %2 z dystansu %3 poslugujac sie %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
 		life_kcCamera  = "CAMERA" camCreate (getPosATL _killer); 
 		showCinemaBorder true;    
 		life_kcCamera cameraEffect ["EXTERNAL", "BACK"];  

@@ -427,7 +427,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 	{
 
 		if(deadPlayer) exitwith {};
-		params [["_adjust", "", [""]], ["_amount", 0, [0]], ["_source", objNull, [objNull]]];
+		params [["_adjust", "", [""]], ["_amount", 0, [0]], ["_source", objNull, [objNull]],["_headshot", 0, [0]]];
 
 		if(_adjust == "Add") then {
 			myHealth = myHealth - _amount;
@@ -454,16 +454,12 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 			if(Myhealth > 1.8) then { myHealth = 1.8; };
 			_damage = myHealth - 1;
 			_damage = _damage * 10;
-			[player,_source,_damage] spawn life_fnc_onPlayerKilled;
+			[player,_source,_damage,_headshot] spawn life_fnc_onPlayerKilled;
 		};
 
-		if((damage player) != 0.1 && myHealth > 0) then {
-			player setdamage 0.1;
+		if((damage player) != myHealth) then {
+			player setdamage myHealth;
 		};
-		if((damage player) != 0 && myHealth == 0) then {
-			player setdamage 0;
-		};
-	};
 
 	fnc_sustain =
 	{
@@ -780,8 +776,9 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 	};
 
 	fnc_damageChance = {
-		_injuryArray = ["head","neck","body","spine1","arms","leg","pelvis","face_hub","hands"];
+		_injuryArray = ["head","face_hub","neck","body","spine1","arms","leg","pelvis","hands"];
 		_currentHitLocation = _this select 1;
+		_source = _this select 2;
 		if(_currentHitLocation IN _injuryArray) then {
 			_myInjuries = player getVariable "playerInjuries";
 			_currentHitNumber = _injuryArray find _currentHitLocation;
@@ -791,17 +788,29 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 			_myInjuries set [_currentHitNumber, _injuryLevel];
 
 			if(_currentHitLocation == "Body") then {
-				_chance = round (random 20);
-				if(_chance < 7) then {
+				_chance = round (random 50);
+				if(_chance < 3) then {
 					_organDamage = round (random 4);
 					_myInjuries set [9, _organDamage];
 				};
 			};
 
-			_chance = round (random 30);
-			if(_chance < 5) then {
+			_chance = round (random 1000);
+			if(_chance < 2) then {
 				_disease = round (random 4);
 				_myInjuries set [10, _disease];
+			};
+
+			if(_currentHitLocation IN ["Head","face_hub","neck"] && _source != player) then {
+				["Remove",1,_source,1] spawn Fnc_DoHealth;
+			};
+
+			if(_currentHitLocation IN ["body","spine1"] && _source != player) then {
+				[21] spawn life_fnc_bleed;
+			};
+
+			if(_currentHitLocation IN ["leg","pelvis","hands"] && _source != player) then {
+				[10] spawn life_fnc_bleed;
 			};
 
 
