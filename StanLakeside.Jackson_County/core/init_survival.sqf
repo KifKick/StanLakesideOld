@@ -461,6 +461,8 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 			player setdamage myHealth;
 		};
 
+	};
+
 	fnc_sustain =
 	{
 		_adjust = param [0,"",[""]];
