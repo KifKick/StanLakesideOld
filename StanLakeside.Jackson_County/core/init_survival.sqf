@@ -457,7 +457,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 			[player,_source,_damage,_headshot] spawn life_fnc_onPlayerKilled;
 		};
 
-		if((damage player) != myHealth) then {
+		if((damage player) != myHealth AND myHealth < 0.95) then {
 			player setdamage myHealth;
 		};
 
