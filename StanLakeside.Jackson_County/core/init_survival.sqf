@@ -807,7 +807,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 			};
 
 			if(_currentHitLocation IN ["Head","face_hub","neck"] && _source != player) then {
-				["Remove",1,_source,1] spawn Fnc_DoHealth;
+				[31] spawn life_fnc_bleed;
 			};
 
 			if(_currentHitLocation IN ["body","spine1"] && _source != player) then {
