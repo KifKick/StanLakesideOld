@@ -29,7 +29,7 @@ if(vehicle player != player) then {
 player allowdamage false;
 player setVariable ["tf_unable_to_use_radio", true];
 im_dead = true;
-params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_length", 0, [0]], ["_headshot", 0, [0]]];
+params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_length", 0, [0]];
 
 player setVariable ["tf_voiceVolume", 0, true];
 life_gear = [];
@@ -63,21 +63,21 @@ _you = name _unit;
 
 if(_fuck != _you) then {
 	if(_fuck find "Error: " != -1) then {
-		[format["%1 jest ciezko ranny!", _you], false] spawn domsg; 
+		[format["%1 jest ciezko ranny!", _you], false] spawn domsg;
 		[player,"pain2"] spawn life_fnc_nearestSound;
 		shooting_death = false;
 		_playerID = getPlayerUID player;
 		_type = 1;
 		[_playerID,_you,"","",_type,"", ""] remoteExecCall ["TON_fnc_deathLog", (call life_fnc_HCC)];
 	} else {
-		if(_headshot == 1) then { [format["%1 zabil strzalem w glowe %2 z dystansu %3 poslugujac sie %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 postrzelil %2 z dystansu %3 poslugujac sie %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
-		life_kcCamera  = "CAMERA" camCreate (getPosATL _killer); 
-		showCinemaBorder true;    
-		life_kcCamera cameraEffect ["EXTERNAL", "BACK"];  
-		life_kcCamera camSetTarget _killer;    
-		life_kcCamera camSetRelPos [0,5,1];    
-		life_kcCamera camSetFOV .85;    
-		life_kcCamera camSetFocus [50,1];    
+		[format["%1 postrzelil %2 z dystansu %3 poslugujac sie %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;
+		life_kcCamera  = "CAMERA" camCreate (getPosATL _killer);
+		showCinemaBorder true;
+		life_kcCamera cameraEffect ["EXTERNAL", "BACK"];
+		life_kcCamera camSetTarget _killer;
+		life_kcCamera camSetRelPos [0,5,1];
+		life_kcCamera camSetFOV .85;
+		life_kcCamera camSetFocus [50,1];
 		life_kcCamera camCommit 0;
 		[player,"pain1"] spawn life_fnc_nearestSound;
 		_playerkill = true;
@@ -85,14 +85,14 @@ if(_fuck != _you) then {
 	};
 } else {
 	shooting_death = false;
-	[format["%1 wykrwawia sie!", _fuck], false] spawn domsg; 
+	[format["%1 wykrwawia sie!", _fuck], false] spawn domsg;
 	[player,"pain2"] spawn life_fnc_nearestSound;
 	_playerID = getPlayerUID player;
 	_type = 1;
 	[_playerID,_you,"","",_type,"", ""] remoteExecCall ["TON_fnc_deathLog", (call life_fnc_HCC)];
 };
 
-if(_playerkill) then { 
+if(_playerkill) then {
 	sleep 7;
 
 	life_kcCamera cameraEffect ["TERMINATE","BACK"];
@@ -128,7 +128,7 @@ _unit spawn
 	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(maxTime - time) <= 0 OR isNull _this};
 	_RespawnBtn ctrlEnable true;
 	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
-	if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; };			
+	if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; };
 };
 
 [] spawn life_fnc_deathScreen;
@@ -152,7 +152,7 @@ if(!isNull _killer && {_killer != _unit}) then {
 
 ["Add","Food",100] spawn fnc_sustain;
 ["Add","Drink",100] spawn fnc_sustain;
-player setdamage 0; 
+player setdamage 0;
 [player,life_sidechat,playerSide] remoteExecCall ["TON_fnc_managesc",2];
 
 

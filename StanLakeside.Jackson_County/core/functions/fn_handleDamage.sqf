@@ -14,8 +14,8 @@ if(!isNull _source) then {
 		    {
 				_speed = speed _vehicle;
 				[] spawn KK_fnc_forceRagdoll;
-				if(_speed < 70) then { _damage = 0.1; }; 
-				if(_speed < 25) then { _damage = 0; }; 
+				if(_speed < 70) then { _damage = 0.1; };
+				if(_speed < 25) then { _damage = 0; };
 				if(_speed > 69) then { _damage = _speed / 100; };
 		    };
 		};
@@ -43,20 +43,20 @@ if(!isNull _source) then {
 			if(side _source == west) then {
 				[_unit,_source] call life_fnc_tazed;
 			};
-			_damage = 0;	
+			_damage = 0;
 		};
 
 	} else {
 		_isWater = surfaceIsWater (getPosASL player);
-		if(_isWater) then { player setOxygenRemaining 1; _damage = 0.05; };		
+		if(_isWater) then { player setOxygenRemaining 1; _damage = 0.05; };
 	};
 };
 
 if(_selectionName == "") then {
 	_damage = _damage * 1.5;
-	["Remove",_damage] spawn fnc_doHealth;
+	["Remove",_damage,_source] spawn fnc_doHealth;
 } else {
-	if(!isNull _source && isPlayer _source && _source != _unit && _damage > 0.1) then {	
+	if(!isNull _source && isPlayer _source && _source != _unit && _damage > 0.1) then {
 		[_damage,_selectionName,_source] spawn fnc_damageChance;
 	} else {
 		if(_damage > 0.65) then { [_damage,_selectionName,_source] spawn fnc_damageChance; };
