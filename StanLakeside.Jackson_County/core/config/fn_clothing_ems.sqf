@@ -186,6 +186,7 @@ switch (_filter) do
 			["kif_emt_supervisor_vest", nil, 2],
 			["kif_emt_traffic_controller_vest", nil, 2],
 			["kif_fire_vest_deputy", nil, 2],
+			["dryg_fire_vest_deputy_sie", nil, 2],
 			["kif_ems_vest_corvus", nil, 2],
 			["kif_ems_vest_james", nil, 2],
 			["kif_emt_vest_assistant_chief", nil, 2],
