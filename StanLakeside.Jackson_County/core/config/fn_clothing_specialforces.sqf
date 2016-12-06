@@ -130,7 +130,8 @@ switch (_filter) do
 			["kif_swat_vest3","Police SWAT Sergeant Vest",15],
 			["kif_sert_vest","Police SERT Vest",15],
 			["kif_sert_vest_moro","Police Sert MORO Vest",15],
-			["TAC_ArmorVest_Winter","Police Sert MORO Vest",15]
+			["TAC_ArmorVest_Winter","Police Sert MORO Vest",15],
+			["dryg_sert_dzoka_vest","SERT Dzoka Vest",15]
 		];
 	};
 
