@@ -62,7 +62,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		};
 		if(vehicle player != player && !(player getVariable ["Escorting", false]) && !(player getVariable ["restrained", false]) && (vehicle player isKindOf "LandVehicle")) then
 		{
-			if(speed vehicle player > 90 && !life_seatbelt) then
+			if(speed vehicle player > 60 && speed vehicle player < 119 && !life_seatbelt) then
 			{
 				oldVehVelocity = velocity (vehicle player);
 				uiSleep 0.3;
@@ -73,6 +73,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 					player setVelocity [(oldVehVelocity select 0) * 0.4,(oldVehVelocity select 1) * 0.4,((oldVehVelocity select 2) * 0.4) + 5];
 					uiSleep 2;
 					player switchmove "";
+					oldVehVelocity = nil;
 				};
 			} else {
 				if(!life_seatwarn) then {
@@ -83,10 +84,45 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 					playSound "seatwarn";
 					life_seatwarn = true;
 				};
-				uiSleep 1;
+				uiSleep 2;
 			};
 		};
 	};
+};
+
+[] spawn 
+{ 
+ while {true} do 
+ { 
+   if(vehicle player != player && !(player getVariable ["Escorting", false]) && (vehicle player isKindOf "LandVehicle")) then 
+  { 
+      if(speed vehicle player > 120 && life_seatbelt) then 
+   { 
+	   
+	   oldSpeed = speed vehicle player; 
+	   uiSleep 0.3; 
+	   if(speed vehicle player < 1) then 
+	{ 
+		_injury = selectRandom ["head","neck","body","spine1","arms","leg","pelvis","face_hub","hands"];
+		["",_injury,""] spawn fnc_damageChance;
+		["Zostales bardzo ranny podczas wypadku! Musisz skorzystac z pomocy medycznej!",false] spawn domsg;
+		cutText ["*Ugh*, powinienem byl zwolnic..","PLAIN",1];
+		knockoutlenght = round (oldSpeed / 15);
+		while {knockoutlenght > 1} do {
+			playSound "grunt";
+			[3] spawn life_fnc_hudelements;
+			disableUserInput true;
+			uisleep 10;
+			disableUserInput false;
+			knockoutlenght = knockoutlenght - 1;
+		};
+
+
+    }; 
+ 
+   };  
+  }; 
+ }; 
 };
 
 [] spawn
@@ -802,15 +838,15 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 			};
 
 			if(_currentHitLocation IN ["Head","face_hub","neck"] && _source != player) then {
-				[18] spawn life_fnc_bleed;
-			};
-
-			if(_currentHitLocation IN ["body","spine1"] && _source != player) then {
 				[12] spawn life_fnc_bleed;
 			};
 
+			if(_currentHitLocation IN ["body","spine1"] && _source != player) then {
+				[8] spawn life_fnc_bleed;
+			};
+
 			if(_currentHitLocation IN ["leg","pelvis","hands"] && _source != player) then {
-				[6] spawn life_fnc_bleed;
+				[4] spawn life_fnc_bleed;
 			};
 
 			player setVariable ["playerInjuriesToUpdate",_myInjuries,false];
