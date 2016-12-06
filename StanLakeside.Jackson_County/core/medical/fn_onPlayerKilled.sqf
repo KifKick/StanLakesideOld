@@ -29,7 +29,7 @@ if(vehicle player != player) then {
 player allowdamage false;
 player setVariable ["tf_unable_to_use_radio", true];
 im_dead = true;
-params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_length", 0, [0]];
+params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_length", 0, [0]]];
 
 player setVariable ["tf_voiceVolume", 0, true];
 life_gear = [];
