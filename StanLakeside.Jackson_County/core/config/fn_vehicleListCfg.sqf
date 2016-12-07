@@ -1250,6 +1250,7 @@ switch (_shop) do
 			["TahoeAIAD",200000],
 			["ivory_evox_Aiad",250000],
 			//DTU
+			["TahoeDTU",200000],
 			["ivory_wrx_unmarked",200000],
 			["ivory_m3_unmarked",200000],
 			["ivory_rs4_unmarked",200000],
