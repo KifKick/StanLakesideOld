@@ -23,8 +23,7 @@ switch (_filter) do
 			["B_FEM_AAF_Rolled","Female Rolled",5000],
 			["B_FEM_NATO_Rolled","Female Rolled 3",5000],
 			["U_C_DDE","Kombinezon HazMat / Uran",5000],
-
-
+			["KombinezonCBRN","Kombinezon HazMat/Uran v.2",5000],
 			["U_I_pilotCoveralls",nil,5000],
 			["U_IG_Guerilla1_1",nil,5000],
 			["U_I_G_Story_Protagonist_F",nil,7500],
@@ -43,7 +42,6 @@ switch (_filter) do
 			["TRYK_U_B_AOR2_GRY_CombatUniform","Grey Top, DigiGreen Pants",2500],	
 			["TRYK_U_B_ARO1_CBR_CombatUniform","Desert Camo",2500],
 			["TRYK_U_B_Snow_CombatUniform","Snow Camo",2500],
-
 			["TRYK_U_B_AOR2_OD_CombatUniform","Green Top, DigiGreen Pants",3000],
 			["TRYK_U_B_AOR2_BLK_CombatUniform","Black Top, DigiGreen Pants",3000],
 			["TRYK_DMARPAT_T","Brown Top, DigiTan Pants",2500],
@@ -52,7 +50,6 @@ switch (_filter) do
 			["TRYK_U_B_NATO_OCP_R_CombatUniform","DigiGreen Full",4000],
 			["TRYK_U_B_MARPAT_Wood","MARPAT Full",4000],
 			["TRYK_U_B_NATO_OCP_R_CombatUniform","OCP Full",4000],
-
 			["TRYK_SUITS_BLK_F","TRYK Black Suit",1350],
 			["TRYK_SUITS_BR_F","TRYK Brown Suit",1350],
 			["TRYK_U_B_PCUHsW2",nil,550],
@@ -200,6 +197,7 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			
 			["TRYK_H_Booniehat_AOR2",nil,105],
 			["TRYK_H_Booniehat_MARPAT_WOOD",nil,105],
 			["TRYK_H_Booniehat_AOR1",nil,105],
@@ -251,6 +249,7 @@ switch (_filter) do
 			["G_Balaclava_combat",nil,137],
 			["G_Balaclava_lowprofile",nil,137],
 			["Mask_M40","Maska przeciwgazowa, uran",500],
+			["MaskaCBRN","Maska HazMat Uran",500],
 			["A3L_Balaclava",nil,137]
 		];
 	};
