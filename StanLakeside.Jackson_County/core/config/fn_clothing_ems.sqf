@@ -49,6 +49,7 @@ switch (_filter) do
 			["A3L_EMT2","Fire Suit",50],
 			["V_Firefighter", nil, 2],
 			["U_C_DDE","Stroj HazMat",2],
+			["KombinezonMed","Stroj HazMat v.2",2],			
 			["U_B_Wetsuit","Wet Suit",50],
 			["kif_emt_clothes_shirt_james_obj", nil, 2],
 			["kif_emt_clothes_shirt_trynkiewicz_obj", nil, 2],
@@ -77,6 +78,7 @@ switch (_filter) do
 			["H_Cap_marshal","Czapka Dowodcy",2],
 			["H_Orel_FireFighter_Gaz","Helm strazaka z maska",2],
 			["H_Orel_FireFighter","Helm strazaka bez maski",2],
+			["MaskaMed","Maska HazMat",2],
 			["H_CrewHelmetHeli_B", nil, 2]
 		];
 	};
