@@ -269,6 +269,7 @@ switch (_filter) do
 			["kif_dtu_vest_marian","DTU M.Minkovsky",15],
 			["kif_dtu_vest_hess","DTU Vest R. Hess",15],
 			["kif_dtu_vest_richard","DTU Richard Hess",15],
+			["dryg_dtu_vest_richard_conf","DTU Richard Hess Conf",15],
 			["kif_dtu_vest_rudolf","DTU Rudolf Hess",15],
 			["dryg_dtu_vest_rudolf_conf","DTU Rudolf Hess Conf",15],
 			["kev_dtu_vest_knox","DTU Alex Knox",15],
