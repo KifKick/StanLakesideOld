@@ -1,6 +1,6 @@
 /*
 	File: fn_keyHandler.sqf
-	
+
 	Description:
 	Main key handler for event 'keyDown'
 */
@@ -26,7 +26,7 @@ if(life_action_inUse) exitWith {
 if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	if(!life_action_inUse) then {
-		[] spawn 
+		[] spawn
 		{
 			private["_handle"];
 			_handle = [] spawn life_fnc_actionKeyHandler;
@@ -39,7 +39,7 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 
 switch (_code) do
 {
-	
+
 	/*case 57:
 	{
 		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
@@ -47,7 +47,7 @@ switch (_code) do
 		if((player distance (getMarkerPos "police_mark") > 200) && (player distance (getMarkerPos "police_mark3") > 200) && (player distance (getMarkerPos "police_mark1") > 200)) then {
 			jumpActionTime = time; //Update the time.
 			[player,true] spawn life_fnc_jumpFnc; //Local execution
-			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution 
+			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution
 			_handled = true;
 		};
 		};
@@ -67,10 +67,10 @@ switch (_code) do
 		{
 			if(!dialog) then {
 				if(!dispatch2) then {
-					["Przesylki wylaczone.", false] spawn doquickmsg; 
-					dispatch2 = true;	
+					["Przesylki wylaczone.", false] spawn doquickmsg;
+					dispatch2 = true;
 				} else {
-					["Przesylki wlaczone.", false] spawn doquickmsg; 
+					["Przesylki wlaczone.", false] spawn doquickmsg;
 					dispatch2 = false;
 				};
 			};
@@ -86,13 +86,13 @@ switch (_code) do
 	        _handled = true;
 	        [] spawn life_fnc_AntiSpam2;
 	    };
-		if(_alt && _ctrlKey && !_shift && playerSide isEqualTo west) then 
+		if(_alt && _ctrlKey && !_shift && playerSide isEqualTo west) then
 		{
 			createDialog "radioMenu";
 			_handled = true;
 		};
 	};
-	
+
 	case 11:
 	{
 	    if(_shift && !_alt && !_ctrlKey) then
@@ -100,7 +100,7 @@ switch (_code) do
 	        [] spawn life_fnc_openMarketView;
 	    };
 	};
-	
+
 	/*//EMP Konsole - O
     case 24:
     {
@@ -118,7 +118,7 @@ switch (_code) do
             [] call life_fnc_actAirSiren;
         };
     };
-	
+
 	//Siren - F9
     case 67:
     {
@@ -130,7 +130,7 @@ switch (_code) do
 	//Map Key
 	case _mapKey:
 	{
-		switch (playerSide) do 
+		switch (playerSide) do
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers}};
@@ -138,7 +138,7 @@ switch (_code) do
 	};
 
 
-	
+
 	//code 1 key shift+1
 	case 2:
 	{
@@ -151,7 +151,7 @@ switch (_code) do
 		if(_shift) then
 		{
 			if (vehicle player != player && side player == west) then {
-				["Kod 1", false] spawn doquickmsg; 
+				["Kod 1", false] spawn doquickmsg;
 					vehicle player animate ["ani_lightbar", 0];
 					vehicle player animate ["ani_siren", 0];
 					vehicle player animate ["ani_directional", 0];
@@ -174,7 +174,7 @@ switch (_code) do
 			} else {
 				_vehicle = cursortarget;
 				if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike") || (_vehicle isKindOf "A3L_Tahoe_Base")) then {
-					
+
 				} else {
 					[_vehicle] spawn fnc_medicUpdater;
 				};
@@ -195,17 +195,17 @@ switch (_code) do
 		{
 			if (vehicle player != player && side player == west) then {
 				[] spawn life_fnc_AntiSpam2;
-				["Kod 2", false] spawn doquickmsg; 
+				["Kod 2", false] spawn doquickmsg;
 				if( typeOf(vehicle player) IN ["ivory_isf_marked","ivory_isf_unmarked","ivory_isf_slicktop","ivory_m3_marked","ivory_m3_unmarked","ivory_m3_slicktop","ivory_wrx_marked","ivory_wrx_unmarked","ivory_wrx_slicktop"] ) then {
   				   vehicle player animate ["ani_siren", 0];
      		   	   vehicle player animate ["ani_lightbar", 1];
        			    vehicle player animate ["ani_directional", 1];
 			    } else {
 					vehicle player animate ["ani_lightbar", 0.1];
-					vehicle player animate ["ani_siren", 0]; 
+					vehicle player animate ["ani_siren", 0];
 					vehicle player setvariable ["lightbar",1,true];
 					vehicle player setVariable ["siren",0,true];
-				};			
+				};
 			};
 			if (isNull objectParent player && player distance cursortarget < 4) then {
 				[true] spawn life_fnc_trydriver;
@@ -222,7 +222,7 @@ switch (_code) do
 		{
 			if (vehicle player != player && side player == west) then {
 				[] spawn life_fnc_AntiSpam2;
-				["Kod 3", false] spawn doquickmsg; 
+				["Kod 3", false] spawn doquickmsg;
 				if( typeOf(vehicle player) IN ["ivory_isf_marked","ivory_isf_unmarked","ivory_isf_slicktop","ivory_m3_marked","ivory_m3_unmarked","ivory_m3_slicktop","ivory_wrx_marked","ivory_wrx_unmarked","ivory_wrx_slicktop"] ) then {
   				   vehicle player animate ["ani_siren", 1];
      		   	   vehicle player animate ["ani_lightbar", 1];
@@ -247,7 +247,7 @@ switch (_code) do
 
 	};
 
-	//code 4 
+	//code 4
 	case 5:
 	{
 		if(_shift && has_job) then
@@ -268,7 +268,7 @@ switch (_code) do
 				if(_locked == 2) then {
 					_handled = true;
 					[] spawn fnc_doorkick;
-					["Wykopales drzwi pojazdu..", false] spawn domsg; 
+					["Wykopales drzwi pojazdu..", false] spawn domsg;
 				};
 			};
 		};
@@ -283,7 +283,7 @@ switch (_code) do
 			player switchcamera cameraView;
 			[] spawn life_fnc_AntiSpam2;
 		};
-		
+
 		if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
 			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
 				player selectWeapon life_curWep_h;
@@ -298,7 +298,7 @@ switch (_code) do
 			if(isNil {_veh getVariable "sirenUC"}) then {_veh setVariable["sirenUC",false,true];};
 			if((_veh getVariable "sirenUC")) then
 			{
-			   ["Syreny wylaczone", false] spawn doquickmsg; 
+			   ["Syreny wylaczone", false] spawn doquickmsg;
 				_veh setVariable["sirenUC",false,true];
 				[] spawn life_fnc_AntiSpam2;
 			};
@@ -313,7 +313,7 @@ switch (_code) do
 			if(!(_veh getVariable "sirenUC")) then
 			{
 				 _veh setVariable["sirenUC",true,true];
-				 ["Syreny wlaczone - CTRL + H aby wylaczyc!", false] spawn doquickmsg; 
+				 ["Syreny wlaczone - CTRL + H aby wylaczyc!", false] spawn doquickmsg;
 				[_veh] remoteExec ["life_fnc_copSiren",-2];
 				[] spawn life_fnc_AntiSpam2;
 			};
@@ -327,7 +327,7 @@ switch (_code) do
 			if(isNil {_veh getVariable "sirenUC"}) then {_veh setVariable["sirenUC",false,true];};
 			if((_veh getVariable "sirenUC")) then
 			{
-			   ["Syreny wylaczone!", false] spawn doquickmsg; 
+			   ["Syreny wylaczone!", false] spawn doquickmsg;
 				_veh setVariable["sirenUC",false,true];
 				[] spawn life_fnc_AntiSpam2;
 			};
@@ -344,7 +344,7 @@ switch (_code) do
 				if(!(_veh getVariable "sirenUC")) then
 				{
 					 _veh setVariable["sirenUC",true,true];
-					["Syreny wlaczone - CTRL + H aby wylaczyc!", false] spawn doquickmsg; 
+					["Syreny wlaczone - CTRL + H aby wylaczyc!", false] spawn doquickmsg;
 					[_veh] remoteExec ["life_fnc_copSiren",-2];
 					[] spawn life_fnc_AntiSpam2;
 				};
@@ -356,7 +356,7 @@ switch (_code) do
 	case _interactionKey:
 	{
 		if(!life_action_inUse) then {
-			[] spawn 
+			[] spawn
 			{
 				private["_handle"];
 				[] spawn life_fnc_AntiSpam2;
@@ -366,28 +366,35 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	case 50:
-	{	
+	{
 		if((player getVariable ["tied", false])) then {
 			_handled = true;
-		};	
-	};	
+		};
+	};
 
 	case 36:
-	{	
+	{
 		if(!dialog) then {
 		_handled = true;
 		};
-	};	
+	};
 
 	case 83:
-	{	
+	{
 		if(!dialog) then {
 		_handled = true;
 		};
-	};	
+	};
 
+	case 8:
+	{
+	if (_shift) then {
+		call mod_cruiseControl;
+		["Dodano tempomat do akcji gracza. Nie przesadzaj, bo bedziesz miec za duzo akcji.", false] spawn domsg;
+	};
+};
 
 
 
@@ -429,7 +436,7 @@ switch (_code) do
 
 
 	};
-	
+
 	//Knockout
 	case 34:
 	{
@@ -464,7 +471,7 @@ switch (_code) do
 
 	//T Key (Trunk)
 	case 20:
-	{		
+	{
 		/*
 		if(vehicle player == player && _shift && !(player getVariable ["restrained", false]) && !(player getVariable ["tied", false])) then {
 			[] spawn life_fnc_punchsystem;
@@ -495,7 +502,7 @@ switch (_code) do
 		};
 	};
 	//L Key?
-	case 38: 
+	case 38:
 	{
 		if(!_alt && !_ctrlKey) then {  [] call life_fnc_radar; };
 	};
@@ -505,7 +512,7 @@ switch (_code) do
 	{
 		if((player getVariable ["tied", false])) then {
 			_handled = true;
-		};		
+		};
 		if((player getVariable ["restrained", false])) then {
 			_handled = true;
 		};
@@ -513,22 +520,22 @@ switch (_code) do
 
 	//Y Player Menu
 	case 21:
-	{	
+	{
 		_stop = false;
 		_radios = player call TFAR_fnc_radiosList;
 		if(count _radios > 0 && ([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio) ) then {
 			if(life_battery < 1) then {
 				if ( !_alt && !_ctrlKey ) then {
-					["Slaba bateria. CTRL+Y aby otworzyc menu ekwipunku | ALT+Y aby otworzyc menu z kluczykami | CTRL+8 aby zsynchronizowac", false] spawn doquickmsg; 
+					["Slaba bateria. CTRL+Y aby otworzyc menu ekwipunku | ALT+Y aby otworzyc menu z kluczykami | CTRL+8 aby zsynchronizowac", false] spawn doquickmsg;
 					_stop = true;
 					_handled = true;
 					[] spawn life_fnc_AntiSpam2;
 				};
-			};	
+			};
 		};
 		if(count _radios == 0) then {
 			if( !_alt && !_ctrlKey ) then {
-				["Nie masz telefonu. CTRL+Y aby otworzyc menu ekwipunku | ALT+Y aby otworzyc menu z kluczykami | CTRL+8 aby zsynchronizowac", false] spawn doquickmsg; 
+				["Nie masz telefonu. CTRL+Y aby otworzyc menu ekwipunku | ALT+Y aby otworzyc menu z kluczykami | CTRL+8 aby zsynchronizowac", false] spawn doquickmsg;
 				_stop = true;
 				_handled = true;
 				[] spawn life_fnc_AntiSpam2;
@@ -578,14 +585,14 @@ switch (_code) do
 				};
 			};
 		};
-		
+
 		if(_alt) then
 		{
 			(findDisplay 46) displayAddEventHandler ["MouseZchanged", "_this spawn life_fnc_enableActions"];
-			["addActions readded", false] spawn doquickmsg; 
+			["addActions readded", false] spawn doquickmsg;
 			_handled = true;
 		};
-		
+
 		if(_ctrlKey) then {
 			if (isNull objectParent player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed && !life_paintball) then
 			{
@@ -615,7 +622,7 @@ switch (_code) do
 			_handled = true;
 		};
 	};
-	
+
 	case 1:
 	{
 		[8] call SOCK_fnc_updatePartial;
@@ -631,7 +638,7 @@ switch (_code) do
 			} else {
 				_veh = vehicle player;
 			};
-			
+
 			if(_veh isKindOf "House_F" && playerSide == civilian) then {
 				if(_veh in life_vehicles && player distance _veh < 8) then {
 					_door = [_veh] call life_fnc_nearestDoor;
@@ -640,12 +647,12 @@ switch (_code) do
 					if(_locked == 0) then {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],1,true];
 						_veh animate [format["door_%1_rot",_door],0];
-						[localize "STR_House_Door_Lock", false] spawn doquickmsg; 
+						[localize "STR_House_Door_Lock", false] spawn doquickmsg;
 						[] spawn life_fnc_AntiSpam2;
 					} else {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],0,true];
 						_veh animate [format["door_%1_rot",_door],1];
-						[localize "STR_House_Door_Unlock", false] spawn doquickmsg; 
+						[localize "STR_House_Door_Unlock", false] spawn doquickmsg;
 						[] spawn life_fnc_AntiSpam2;
 					};
 				};
@@ -667,7 +674,7 @@ switch (_code) do
 					};
 
 					if(_locked == 2) then {
-						
+
 						if(local _veh) then {
 							_veh lock 0;
 							[] spawn life_fnc_AntiSpam2;
@@ -675,7 +682,7 @@ switch (_code) do
 							[_veh,0] remoteExecCall ["life_fnc_lockVehicle",_veh];
 							[] spawn life_fnc_AntiSpam2;
 						};
-						[localize "STR_MISC_VehUnlock", false] spawn doquickmsg; 
+						[localize "STR_MISC_VehUnlock", false] spawn doquickmsg;
 
 
 						//[_veh,"lockunlock"] spawn life_fnc_nearestSound;
@@ -688,9 +695,9 @@ switch (_code) do
 						} else {
 							[_veh,2] remoteExecCall ["life_fnc_lockVehicle",_veh];
 							[] spawn life_fnc_AntiSpam2;
-						};	
+						};
 
-						[localize "STR_MISC_VehLock", false] spawn doquickmsg; 
+						[localize "STR_MISC_VehLock", false] spawn doquickmsg;
 						//[player,"CarLocked"] spawn life_fnc_nearestSound;
 						playSound "CarLocked";
 					};

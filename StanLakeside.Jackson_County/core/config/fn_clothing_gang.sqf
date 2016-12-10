@@ -1,7 +1,7 @@
 /*
 	File: fn_clothing_reb.sqf
-	
-	
+
+
 	Description:
 	Master configuration file for Reb shop.
 */
@@ -150,10 +150,12 @@ switch (_filter) do
 			["TRYK_U_B_BLOD_T",nil,550],
 			["TRYK_U_B_BLKBLK_R_CombatUniform",nil,550],
 			["TRYK_U_B_PCUHsW3",nil,550],
+			["TGC_Winter_Suit",nil,550],
+			["TGC_Normal_Suit",nil,550],
 			["TRYK_U_B_PCUHsW3nh",nil,550]
 		];
 	};
-	
+
 	//Hats
 	case 1:
 	{
@@ -190,7 +192,7 @@ switch (_filter) do
 			["kio_skl_msk_fran",nil,500]
 		];
 	};
-	
+
 	//Glasses
 	case 2:
 	{
@@ -211,7 +213,7 @@ switch (_filter) do
 			["A3L_Balaclava",nil,137]
 		];
 	};
-	
+
 	//Vest
 	case 3:
 	{
@@ -230,7 +232,7 @@ switch (_filter) do
 			["k_hrebel_7",nil,5000],
 			["k_hrebel_8",nil,5000],
 			["k_hrebel_9",nil,5000],
-			["k_hrebel_10",nil,5000],	
+			["k_hrebel_10",nil,5000],
 			["k_nhrebel_3",nil,5000],
 			["k_nhrebel_5",nil,5000],
 			["k_nhrebel_6",nil,5000],
@@ -243,19 +245,20 @@ switch (_filter) do
 			["hk_rebel_5",nil,5000],
 			["hk_rebel_7",nil,5000],
 			["hk_rebel_9",nil,5000],
-			["hk_rebel_11",nil,5000], 
+			["hk_rebel_11",nil,5000],
 			["hk_rebel_12",nil,5000],
-			["hk_rebel_13",nil,5000], 
+			["hk_rebel_13",nil,5000],
 			["hk_rebel_14",nil,5000],
 			["hk_rebel_15",nil,5000],
 			["hk_rebel_16",nil,5000],
 			["hk_rebel_17",nil,5000],
 			["hk_rebel_18",nil,5000],
 			["hk_rebel_19",nil,5000],
+			["zielu_Vest",nil,5000],
 			["hk_rebel_20",nil,5000]
 		];
 	};
-	
+
 	//Backpacks
 	case 4:
 	{

@@ -99,10 +99,5 @@ if(isNull objectParent player) then {
 		player setVariable ["transporting", nil, true];
 		detach player;
 	};
-	_playerID = getPlayerUID _cop;
-	_playerName = name _cop;
-	_byPlayerID = getPlayerUID player;
-	_byPlayerName = name player;
-	_type = 1;
-	[_playerID,_playerName,_byPlayerID,_byPlayerName,_type,""] remoteExecCall ["TON_fnc_copLog", (call life_fnc_HCC)];
+
 };
