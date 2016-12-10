@@ -214,6 +214,7 @@ if!(getRemoteSensorsDisabled)then
 
 ASAGNDJSN = true;
 setTerrainGrid 50;
+call mod_cruiseControl;
 
 
 [] spawn {
