@@ -311,8 +311,8 @@ switch (_filter) do
 			["k_red_so_fix","Red SO Vest",15],
 			["k_yellow_so_fix","Yellow SO Vest",15],
 			["TRYK_V_PlateCarrier_POLICE","Sheriff Swat Vest",15],
-			["kev_hess_security_heavy_vest","nil",20],
-			["kev_hess_security_short_vest","nil",20]
+			["kev_hess_security_heavy_vest","HS Heavy",20],
+			["kev_hess_security_short_vest","HS Light",20]
 			
 			/*
 			["DOC_Vest_Threat_Fix",nil,20],
