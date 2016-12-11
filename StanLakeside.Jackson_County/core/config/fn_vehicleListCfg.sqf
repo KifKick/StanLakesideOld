@@ -20,7 +20,6 @@ switch (_shop) do
 			["ivory_isf",1300000],
 			["ivory_m3",2295000],
 			["ivory_m3_gts",2650000],
-			["ivory_m3_gts_drift",3000000],
 			["ivory_gt500",1800000],
 			["ivory_wrx",2850000],
 			["ivory_lp560",3130000],
