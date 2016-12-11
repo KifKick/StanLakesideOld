@@ -11,7 +11,7 @@ _filter = param [0,0,[0]];
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Umundurowanie SERT"];
+ctrlSetText[3103,"Umundurowanie Sniper'a SERT'u"];
 
 
 _ret = [];
