@@ -269,11 +269,12 @@ switch (_filter) do
 			["kif_dtu_vest_marian","DTU M.Minkovsky",15],
 			["kif_dtu_vest_hess","DTU Vest R. Hess",15],
 			["kif_dtu_vest_richard","DTU Richard Hess",15],
+			//["dryg_dtu_vest_richard_conf","DTU Richard Hess Conf",15],
 			["kif_dtu_vest_rudolf","DTU Rudolf Hess",15],
-			["dryg_dtu_vest_rudolf_conf","DTU Rudolf Hess Conf",15],
+			//["dryg_dtu_vest_rudolf_conf","DTU Rudolf Hess Conf",15],
 			["kev_dtu_vest_knox","DTU Alex Knox",15],
 			//["dryg_dtu_vest_easy","DTU Easy Smith",15],
-			//["dryg_dtu_vest_pola","DTU Pola Ścieżka",15],
+			//["dryg_dtu_vest_pola","DTU Pola Śnieżka",15],
 			["TRYK_V_Bulletproof","Plate Carrier",15],
 			["kif_aiad_vest","AIAD Vest",15],
 			["kif_aiad_vest_michal","AIAD M.Kaminski",15],
@@ -310,8 +311,8 @@ switch (_filter) do
 			["k_red_so_fix","Red SO Vest",15],
 			["k_yellow_so_fix","Yellow SO Vest",15],
 			["TRYK_V_PlateCarrier_POLICE","Sheriff Swat Vest",15],
-			["kev_hess_security_heavy_vest","nil",20],
-			["kev_hess_security_short_vest","nil",20]
+			["kev_hess_security_heavy_vest","HS Heavy",20],
+			["kev_hess_security_short_vest","HS Light",20]
 			
 			/*
 			["DOC_Vest_Threat_Fix",nil,20],
