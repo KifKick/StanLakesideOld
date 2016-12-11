@@ -70,7 +70,8 @@ showHUD[] = {
 	true,	// Tank direction indicator
 	false,	// Commanding menu [Hidden]
 	false,	// Group Bar [Hidden]
-	true	// HUD Weapon Cursors
+	true,	// HUD Weapon Cursors
+	true	// HUD Squad Radar & Ping
 };
 
 class CfgFunctions
