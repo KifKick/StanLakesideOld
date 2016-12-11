@@ -1203,6 +1203,7 @@ switch (_shop) do
 			["cnp_Iveco_GOIT",200000],
 			["AM_Escalade_SERT",50000],
 			["A3L_Suburban_UM_Black",50000],
+			["TahoeKing_000",1000],
 			["TahoeCB_01",50000],
 			["kmc_cvpi_lspd_1",100000],
 			["kmc_cvpi_lspd_2",100000],
@@ -1248,6 +1249,7 @@ switch (_shop) do
 			["TahoeAIAD",200000],
 			["ivory_evox_Aiad",250000],
 			//DTU
+			["TahoeDTU",200000],
 			["ivory_wrx_unmarked",200000],
 			["ivory_m3_unmarked",200000],
 			["ivory_rs4_unmarked",200000],
@@ -1291,6 +1293,7 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["ivory_m3_gts_drift",3000000],
 			["cg_brinks_bank_noir",250000],
 			["shounka_transam_noir",30000],
 			["IVORY_PRIUS",30000],
