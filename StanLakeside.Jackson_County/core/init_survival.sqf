@@ -808,7 +808,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 
 		_Btn12 = _display displayCtrl 27;
 		if(playerSide == independent && !(user getVariable ["stwierdzamZgon690", FALSE]) && user getVariable["dead",FALSE]) then {_Btn12 ctrlEnable true;} else {_Btn12 ctrlEnable false;};
-		_Btn12 buttonSetAction "user setVariable [""stwierdzamZgon690"", true, true];";
+		_Btn12 buttonSetAction "user setVariable [""stwierdzamZgon690"", true, true]; remoteExec [""life_fnc_revivewhendead"", unit];";
 
 	};
 

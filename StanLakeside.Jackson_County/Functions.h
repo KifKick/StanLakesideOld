@@ -55,6 +55,7 @@ class Life_Client_Core
 		class deathScreen {};
 		class medicLoadout {};
 		class bleed {};
+		class revivewhendead {};
 	};
 	
 	class Actions
