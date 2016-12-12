@@ -1343,7 +1343,7 @@ switch(_shop) do
 							["RH_vp70",nil,2300],
 							["RH_18Rnd_9x19_VP",nil,100],
 
-							["RH_M16a1",nil,115000],
+							["RH_M16a1",nil,155000],
 			                		["RH_20Rnd_556x45_Mk318",nil,550],
 
 							["SMG_01_F",nil,58000],
