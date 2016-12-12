@@ -227,6 +227,7 @@ switch (_shop) do
 			["ivory_m3_ems",95500],
 			["ivory_m3_ems2",95500],
 			["ivory_suburban_ems",95500],
+			["ivory_suburban_emsv2",95500],
 			["cg_evoems1",20000],
 			["cg_evoems2",20000],
 			["EvoXEMS",100000],
