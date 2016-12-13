@@ -196,6 +196,7 @@ switch (_vehicle) do
 			case 9:  {_color = "Silverstone";};
 			case 10: {_color = "Tanzanite Blue";};
 			case 11: {_color = "Yas Marina Blue";};
+			case 12: {_color = "Anonymous";};
 		};
 	};
 	case "ivory_elise" :
