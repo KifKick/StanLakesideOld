@@ -287,6 +287,15 @@ switch(_shop) do
 							["RH_30Rnd_556x45_Mk318","Mk318 30Rnd",10],
 							["RH_60Rnd_556x45_Mk318","Mk318 60Rnd",10],
 							
+							["R3F_FRF2",nil,10],
+							["R3F_ZEISS",nil,10],
+							["R3F_SILENCIEUX_FRF2",nil,10],
+							["R3F_FRF2_DES",nil,10],
+							["R3F_ZEISS_DES",nil,10],
+							["R3F_SILENCIEUX_FRF2_DES",nil,10],
+							["R3F_10Rnd_762x51_FRF2",nil,10],
+							
+							
 							["optic_NVS",nil,10],
 							["optic_DMS",nil,10],
 							["optic_LRPS",nil,10],
