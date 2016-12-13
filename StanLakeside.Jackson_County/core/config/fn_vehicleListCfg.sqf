@@ -196,7 +196,8 @@ switch (_shop) do
 			["shounka_rs6_bleufonce",1100000],
 			["shounka_rs6_noir",1100000],
 			["ivory_m3_gts_Hess_Company",2650000],
-			["ivory_wrx_hess",2850000]
+			["ivory_wrx_hess",2850000],
+			["ivory_evox_anon",2400000]
 		];
 	};
 	case "showroom_car":
@@ -226,6 +227,7 @@ switch (_shop) do
 			["ivory_m3_ems",95500],
 			["ivory_m3_ems2",95500],
 			["ivory_suburban_ems",95500],
+			["ivory_suburban_emsv2",95500],
 			["cg_evoems1",20000],
 			["cg_evoems2",20000],
 			["EvoXEMS",100000],
