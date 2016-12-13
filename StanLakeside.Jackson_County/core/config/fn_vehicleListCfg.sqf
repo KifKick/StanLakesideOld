@@ -266,6 +266,7 @@ switch (_shop) do
 		[
 			["ivory_b206_rescue",65000],
 			["IVORY_BELL512_RESCUE",85000],
+			["ARMSCor_A109_Civ",90000],
 			["ems_chopper",90000],
 			["ems_chopper2",90000],
 			["ems_orca",120000],
