@@ -45,6 +45,10 @@ if(life_dontsell isEqualTo 0) then {
 			_price = (__GETC__(life_garage_sell) select _price) select 1;
 		};
 
+		_name = profileName;
+		_type = 1;
+		[_pid,_name,_vid,typeOf _vid,_type,""] remoteExecCall ["TON_fnc_vehicleLog",(call life_fnc_HCC)];
+
 		[_vid,_pid,_price,player,life_garage_type] remoteExecCall ["TON_fnc_vehicleDelete",(call life_fnc_HCC)];
 
 		life_dontsell = 0;

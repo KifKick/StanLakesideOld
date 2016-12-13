@@ -20,6 +20,8 @@ switch (_type) do{
 	case 1: {_type = "Sprzedaz";};
 	case 2: {_type = "Wyciagniecie";};
 	case 3: {_type = "Schowanie";};
+	case 4: {_type = "UstalenieCeny";};
+	case 5: {_type = "KupnoAukcja";};
 };
 
 _query = format["INSERT INTO vehiclelog (playerId, playerName, vehicleClass, vehicleName, type, amount) VALUES('%1', '%2', '%3', '%4', '%5', '%6')",_playerID,_playerName,_vehicleClass,_vehicleName,_type,_amount];

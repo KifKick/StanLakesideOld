@@ -112,12 +112,12 @@ if(playerSide == west) then {
 	_Btn8 buttonSetAction "[life_the_driver] call life_fnc_ticketAction;";
 
 	//Pullout Driver Only
-	_Btn9 ctrlSetText "Pullout Driver";
+	_Btn9 ctrlSetText "Wyciagnij gracza";
 	_Btn9 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutDriverAction;";
 
 	//Check for vehicle defects
-	_Btn10 ctrlSetText "Destroy Vehicle";
-	_Btn10 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_checkdefect;";
+	_Btn10 ctrlSetText "Zniszcz pojazd";
+	_Btn10 buttonSetAction "[life_vInact_curTarget, profileName, getPlayerUID name] spawn life_fnc_checkdefect;";
 
 
 	if(!command) then {
@@ -125,7 +125,7 @@ if(playerSide == west) then {
 	};
 
 
-	_Btn11 ctrlSetText "Check Licence";
+	_Btn11 ctrlSetText "Sprawdz dowody";
 	_Btn11 buttonSetAction "[life_the_driver] spawn life_fnc_licensesLook; closeDialog 0;";
 
 
@@ -143,10 +143,10 @@ if(playerSide == west) then {
 
 
 
-	_Btn12 ctrlSetText "Park Ticket 500";
+	_Btn12 ctrlSetText "Mandat 500";
 	_Btn12 buttonSetAction "life_vInact_curTarget setVariable[""parkingTicket"",true,true]; closeDialog 0;";
 
-	_Btn13 ctrlSetText "Park Ticket 1500";
+	_Btn13 ctrlSetText "Mandat 1500";
 	_Btn13 buttonSetAction "life_vInact_curTarget setVariable[""parkingTicket2"",true,true]; closeDialog 0;";
 
 
@@ -163,13 +163,13 @@ if(playerSide == west) then {
 	};
 
 
-		_Btn14 ctrlSetText "Push Vehicle";
+		_Btn14 ctrlSetText "Pchnij pojazd";
 		_Btn14 buttonSetAction "[1] spawn life_fnc_pushVehicle; closeDialog 0;";
 
-		_Btn15 ctrlSetText "Double Push";
+		_Btn15 ctrlSetText "Pchnij pojazd x2";
 		_Btn15 buttonSetAction "[2] spawn life_fnc_pushVehicle; closeDialog 0;";
 
-		_Btn16 ctrlSetText "Triple Push";
+		_Btn16 ctrlSetText "Pchnij pojazd x3";
 		_Btn16 buttonSetAction "[3] spawn life_fnc_pushVehicle; closeDialog 0;";
 
 		if(!life_action_inuse) then {

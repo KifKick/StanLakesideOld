@@ -24,6 +24,7 @@ switch (_type) do{
 	case 5: {_type = "Bronie";};
 	case 6: {_type = "Strip";};
 	case 7: {_type = "Spoleczne";};
+	case 8: {_type = "Zniszczenie";};
 
 };
 

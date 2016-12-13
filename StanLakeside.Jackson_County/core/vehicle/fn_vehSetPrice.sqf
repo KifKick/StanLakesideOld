@@ -19,4 +19,5 @@ _vehicle setVariable ["vehselling", true, true]; //ustalamy zmienna na sprzedaz
 _vehicle setVariable ["vehprice", _val, true]; //ustalamy zmienna na cene
 _vehicle setVariable ["vehowner", player, true]; //ustalamy nazwe wlasciciela pojazdu
 [0, format ["KARAKANMOTO: %1 wystawil na sprzedaz %3 za $%2", profileName, [(parseNumber _val)] call life_fnc_numberText, _vehname]] remoteExecCall ["life_fnc_broadcast", -2]; //powiadomienie publiczne
+[getPlayerUID player, profileName, typeOf _vehicle, _vehname, 4, _val] remoteExecCall ["ton_fnc_vehicleLog", (call life_fnc_HCC)];
 closeDialog 0; //zamykamy dialog

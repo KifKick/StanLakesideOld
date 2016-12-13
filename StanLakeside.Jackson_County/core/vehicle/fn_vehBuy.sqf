@@ -32,7 +32,7 @@ _plate = _dbinfo select 1;
 [_classname,_buyerid,_sellerid,_plate] remoteExecCall ["TON_fnc_vehicleAuction",2];
 [format["Pomyslnie kupilem %1 za %2 od $%3", _vehname, [life_vehicle_price] call life_fnc_numberText, name life_vehicle_owner], false] spawn domsg;
 [1,format ["%1 kupil od Ciebie %2 za $%3",profileName, _vehname, [life_vehicle_price] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast", life_vehicle_owner];
-
+[_buyerid,_sellerid,_classname, _vehname, 5, life_vehicle_price] remoteExecCall ["TON_fnc_vehicleLog",(call life_fnc_HCC)];
 
 
 life_vehicle_imbuying = nil;
