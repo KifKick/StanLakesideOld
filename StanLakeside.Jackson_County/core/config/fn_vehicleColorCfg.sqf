@@ -198,7 +198,7 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.419608,0.584314,0.780392,1.0,co)","civ"]
 		];
 	};
-	case "ivory_evox_anon": {
+	case "ivory_evox": {
 		_path = "\ivory_evox\data\";
 		_ret =
 		[
