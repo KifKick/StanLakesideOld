@@ -1,7 +1,7 @@
 /*
 	File: fn_lockpick.sqf
-	
-	
+
+
 	Description:
 	Main functionality for lock-picking.
 */
@@ -39,7 +39,7 @@ player setVariable ["lockpicking",true,true];
 
 _towtrucks = nearestObjects [player, ["A3L_Towtruck"], 11];
 
-if(count _towtrucks == 0) then { 
+if(count _towtrucks == 0) then {
 	if(_isVehicle) then {
 			playSound3D ["cg_sndimg\sounds\caralarm.ogg", player, false, getPosASL player, 1, 1, 155];
 	};
@@ -48,7 +48,7 @@ if(count _towtrucks == 0) then {
 while {true} do
 {
 	if(animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon") then {
-		
+
 		player playMoveNow "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	};
 	uiSleep 0.26;
@@ -92,7 +92,12 @@ if(!_isVehicle) then {
 		["Pomyslnie udalo Ci sie otworzyc pojazd wytrychem!",20,"green"] spawn domsg;
 		playSound3D ["cg_sndimg\sounds\caralarm.ogg", player, false, getPosASL player, 1, 1.2, 355];
 		player setVariable ["lockpicking", nil, true];
-		if(count _towtrucks == 0) then { 
+		_playerID = getPlayerUID player;
+		_playerName = name player;
+		_type = 11;
+		_amount = typeOf _curTarget;
+		[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
+		if(count _towtrucks == 0) then {
 		_reason = "487";
 		if(side player == civilian || side player == east) then {
 			[player,player,_reason] spawn life_fnc_createEvidence;
@@ -102,5 +107,10 @@ if(!_isVehicle) then {
 		//[0,format[localize "STR_ISTR_Lock_FailedNOTF",profileName]] remoteExecCall ["life_fnc_broadcast", west];
 		["Nie udalo Ci sie otworzyc pojazdu wytrychem!",20,"red"] spawn domsg;
 		player setVariable ["lockpicking", nil, true];
+		_playerID = getPlayerUID player;
+		_playerName = name player;
+		_type = 10;
+		_amount = typeOf _curTarget;
+		[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 	};
 };
