@@ -53,6 +53,7 @@ switch (_mode) do
 			case "gang": {_var = "license_civ_gang"};
 			case "gang2": {_var = "license_civ_gang2"};
 			case "gangTGC": {_var = "license_civ_gangTGC"};
+			case "gangANON": {_var = "license_civ_gangANON"};
 			//case "donator1": {_var = "license_civ_donator1"};
 			//case "donator2": {_var = "license_civ_donator2"};
 			//case "donator3": {_var = "license_civ_donator3"};
@@ -102,6 +103,7 @@ switch (_mode) do
 			case "license_civ_gang": {_var = "gang"};
 			case "license_civ_gang2": {_var = "gang2"};
 			case "license_civ_gangTGC": {_var = "gangTGC"};
+			case "license_civ_gangANON": {_var = "gangANON"};
 			//case "license_civ_donator1": {_var = "donator1"};
 			//case "license_civ_donator2": {_var = "donator2"};
 			//case "license_civ_donator3": {_var = "donator3"};
