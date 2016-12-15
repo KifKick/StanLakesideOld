@@ -90,5 +90,7 @@ switch(_mode) do {
 };
 
 if(_query isEqualTo "") exitWith {};
+_count = count _query;
+if (_count > 8140) exitWith {};
 
 [_query,1] call DB_fnc_asyncCall;
