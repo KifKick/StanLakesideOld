@@ -25,9 +25,11 @@ switch (_type) do{
 	case 6: {_type = "Wyciagniecie";};
 	case 7: {_type = "Rozwiazanie";};
 	case 8: {_type = "WrzucenieDoPojazdu";};
-	case 9: {_type = "Revive";};
+	case 9: {_type = "Odrodzenie";};
 	case 10: {_type = "WytrychFail";};
     case 11: {_type = "WytrychPass";};
+	case 12: {_type = "PrzecinakFail";};
+    case 13: {_type = "PrzecinakPass";};
 };
 
 _query = format["INSERT INTO actionlog (playerId, playerName, onPlayerID, onPlayerName, type, amount) VALUES('%1', '%2', '%3', '%4', '%5', '%6')",_playerID,_playerName,_toPlayerID,_toPlayerName,_type, _amount];
