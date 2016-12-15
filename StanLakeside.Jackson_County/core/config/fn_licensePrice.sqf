@@ -48,6 +48,7 @@ switch (_type) do
 	case "gang": {50000};
 	case "gang2": {50000};
 	case "gangTGC": {50000};
+	case "gangANON": {50000};
 	//case "donator1": {2000};
 	//case "donator2": {2000};
 	//case "donator3": {2000};

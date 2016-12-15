@@ -198,6 +198,13 @@ switch (_vehicle) do
 			case 11: {_color = "Yas Marina Blue";};
 		};
 	};
+	case "ivory_evox" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Anonymous";};
+		};
+	};
 	case "ivory_elise" :
 	{
 		switch (_index) do
@@ -694,6 +701,13 @@ switch (_vehicle) do
 			case 12: {_color = "Waves Blue"};
 			case 13: {_color = "Rebel Digital"};
 			case 14: {_color = "EMS White"};
+		};
+	};
+	case "ARMSCor_A109_Med":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "EMS"};
 		};
 	};
 	case "C_Heli_Light_01_civil_F":

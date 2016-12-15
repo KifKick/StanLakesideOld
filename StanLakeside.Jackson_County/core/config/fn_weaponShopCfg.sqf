@@ -287,6 +287,15 @@ switch(_shop) do
 							["RH_30Rnd_556x45_Mk318","Mk318 30Rnd",10],
 							["RH_60Rnd_556x45_Mk318","Mk318 60Rnd",10],
 							
+							["R3F_FRF2",nil,10],
+							["R3F_ZEISS",nil,10],
+							["R3F_SILENCIEUX_FRF2",nil,10],
+							["R3F_FRF2_DES",nil,10],
+							["R3F_ZEISS_DES",nil,10],
+							["R3F_SILENCIEUX_FRF2_DES",nil,10],
+							["R3F_10Rnd_762x51_FRF2",nil,10],
+							
+							
 							["optic_NVS",nil,10],
 							["optic_DMS",nil,10],
 							["optic_LRPS",nil,10],
@@ -1036,7 +1045,6 @@ switch(_shop) do
 						[
 							["A3L_CZ550",nil,175500],
 							["A3L_CZ550mag",nil,750],
-							["A3L_CZ550Scope",nil,15500],
 							["arifle_SDAR_F","Turtle ONLY-SDAR",5000],
 							["20Rnd_556x45_UW_mag","Underwater magazine",50]
 						]
@@ -1250,8 +1258,101 @@ switch(_shop) do
 							["RH_vp70",nil,2300],
 							["RH_18Rnd_9x19_VP",nil,100],
 
-							["A3L_AK47",nil,115000],
+							["A3L_AK47",nil,155000],
 			                		["A3L_AK47Mag",nil,550],
+
+							["SMG_01_F",nil,58000],
+			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
+
+							["SMG_02_F",nil,58000],
+							["hgun_PDW2000_F",nil,58000],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_sbr9_wdl",nil,64000],
+							["RH_sbr9_tg",nil,64000],
+							["RH_sbr9_des",nil,64000],
+							["RH_32Rnd_9mm_M822",nil,750],
+
+							["AG_MP9_wcam",nil,46500],
+							["AG_MP9_digi",nil,46500],
+							["AG_MP9_sand",nil,46500],
+							["AG_MP9_folded_wcam",nil,37000],
+							["AG_MP9_folded_digi",nil,37000],
+							["AG_MP9_folded_sand",nil,37000],
+							["30Rnd_45ACP_Mag_SMG_01",nil,750],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_g18",nil,13500],
+							["RH_33Rnd_9x19_g18",nil,750],
+
+							["RH_vz61",nil,13500],
+							["RH_20Rnd_32cal_vz61",nil,750],
+
+							["RH_tec9",nil,15500],
+							["RH_32Rnd_9x19_tec",nil,750],
+
+							["cg_atf_bandage_i","Bandaz",15],
+							["ToolKit",nil,1800],
+							["CG_Pro_Item_i","GoPro",250],
+							["CG_tabletd","Tablet",50],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",500],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
+							["Binocular",nil,110],
+							["ItemCompass",nil,50],
+							["ItemWatch",nil,10],
+
+							["RH_fn57",nil,17500],
+							["RH_20Rnd_57x28_FN",nil,300],
+							["RH_usp",nil,18500],
+							["RH_12Rnd_45cal_usp",nil,300],
+							["RH_aacusp",nil,14500],
+							["RH_fhusp",nil,2100],
+							["RH_uspm",nil,14500],
+							["RH_16Rnd_40cal_usp",nil,300],
+							["RH_matchsd",nil,14500],
+							["RH_m1911",nil,9500],
+							["RH_kimber",nil,9500],
+							["RH_7Rnd_45cal_m1911",nil,300],
+							["hgun_ACPC2_F",nil,9500],
+							["9Rnd_45ACP_Mag",nil,300],
+							["RH_fnp45t",nil,17500],
+							["RH_15Rnd_45cal_fnp",nil,300]
+						
+						]
+					];
+				};
+			};
+        };
+	
+	case "gangANON":
+        {
+			switch(true) do
+			{
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
+				case (!license_civ_gangANON): {"Nie masz tutaj wstepu!"};
+				case (!license_civ_rebel): {"Musisz być w gangu Anonymous oraz posiadać szkolenie z broni długiej!"};
+				default
+				{
+					["Sklep gangu Anonymous",
+						[
+							["RH_m9",nil,2435],
+							["RH_15Rnd_9x19_M9",nil,100],
+
+							["RH_gsh18",nil,3320],
+							["RH_18Rnd_9x19_gsh",nil,100],
+
+							["RH_p226",nil,2325],
+							["RH_15Rnd_9x19_SIG",nil,100],
+
+							["RH_g17",nil,1900],
+							["RH_g19",nil,1900],
+							["RH_17Rnd_9x19_g17",nil,100],
+
+							["RH_vp70",nil,2300],
+							["RH_18Rnd_9x19_VP",nil,100],
+
+							["RH_M16a1",nil,155000],
+			                		["RH_20Rnd_556x45_Mk318",nil,550],
 
 							["SMG_01_F",nil,58000],
 			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],

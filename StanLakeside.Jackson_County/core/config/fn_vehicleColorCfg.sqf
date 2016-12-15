@@ -198,6 +198,20 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.419608,0.584314,0.780392,1.0,co)","civ"]
 		];
 	};
+	case "ivory_evox": {
+		_path = "\ivory_evox\data\";
+		_ret =
+		[
+			[_path + "body_anon_bialy.paa","civ"]
+		];
+	};
+	case "ARMSCor_A109_Med": {
+		_path = "\ARMSCor_A109_Med\data\";
+		_ret =
+		[
+			[_path + "a109_body_med.paa","med"]
+		];
+	};
 	case "ivory_elise": {
 		_path = "\ivory_elise\data\";
 		_ret =
