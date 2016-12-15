@@ -56,6 +56,7 @@ switch (_filter) do
 			["A3L_EC_SOSHERIFF","Sheriff",50],
 			["A3L_EC_DAI","Sheriff DA Investigator",50],
 			["A3L_Police_Uniform","Sheriff & Command",15],
+			["LS_Marshal_Jacket",nil,15],
 			["kif_aiad_inspector_obj",nil,15],
 			["kif_aiad_assistant_obj",nil,15],
 			["kif_aiad_divison_obj",nil,15],
@@ -70,7 +71,6 @@ switch (_filter) do
 			["KAEL_SUITS_BR_Judge",nil,15]
 						
 			/*["A3L_EC_COFC","DOC Guard",15],
-			["LS_Marshal_Jacket",nil,15],
 			["A3L_EC_CCPL","DOC Corporal",15],
 			["A3L_EC_CSGT","DOC Sergeant",15],
 			["A3L_EC_CLT","DOC Lieutenant",15],
@@ -268,9 +268,7 @@ switch (_filter) do
 			["kif_dtu_vest_marian","DTU M.Minkovsky",15],
 			["kif_dtu_vest_hess","DTU Vest R. Hess",15],
 			["kif_dtu_vest_richard","DTU Richard Hess",15],
-			//["dryg_dtu_vest_richard_conf","DTU Richard Hess Conf",15],
 			["kif_dtu_vest_rudolf","DTU Rudolf Hess",15],
-			//["dryg_dtu_vest_rudolf_conf","DTU Rudolf Hess Conf",15],
 			["kev_dtu_vest_knox","DTU Alex Knox",15],
 			//["dryg_dtu_vest_easy","DTU Easy Smith",15],
 			//["dryg_dtu_vest_pola","DTU Pola Śnieżka",15],
