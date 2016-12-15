@@ -313,8 +313,6 @@ switch (_filter) do
 			["kev_hess_security_short_vest","HS Light",20]
 			
 			/*
-			["dryg_dtu_vest_richard_conf","DTU Richard Hess Conf",15],
-			["dryg_dtu_vest_rudolf_conf","DTU Rudolf Hess Conf",15],
 			["DOC_Vest_Threat_Fix",nil,20],
 			["DOC_Vest_Threat_Tan_Fix",nil,20],
 			["crt_vest_Fix",nil,20],
