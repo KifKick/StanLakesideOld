@@ -1250,7 +1250,7 @@ switch(_shop) do
 							["RH_vp70",nil,2300],
 							["RH_18Rnd_9x19_VP",nil,100],
 
-							["A3L_AK47",nil,115000],
+							["A3L_AK47",nil,155000],
 			                		["A3L_AK47Mag",nil,550],
 
 							["SMG_01_F",nil,58000],
