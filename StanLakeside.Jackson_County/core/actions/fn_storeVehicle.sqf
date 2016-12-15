@@ -37,6 +37,7 @@ if(isNull _vehicle) exitWith {};
 _playerID = getPlayerUID player;
 _playerName = name player;
 _vehicleClass = typeOf _vehicle;
+_vehicleName = getText(configFile >> "CfgVehicles" >> _vehicleClass >> "displayName");
 _type = 3;
-[_playerID,_playerName,"",_vehicleClass,_type,""] remoteExecCall ["TON_fnc_vehicleLog", (call life_fnc_HCC)];
+[_playerID,_playerName,_vehicleClass,_vehicleName,_type,""] remoteExecCall ["TON_fnc_vehicleLog", (call life_fnc_HCC)];
 life_garage_store = true;
