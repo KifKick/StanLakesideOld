@@ -156,7 +156,7 @@ life_lastChopperFlagged = ["",0];
 life_server_isReady = true;
 publicVariable "life_server_isReady";
 // cruise control
-//[] execVM "\life_server\mods\mod_cruiseControl.sqf";
+[] execVM "\life_server\mods\mod_cruiseControl.sqf";
 
 pb_spieler = [];
 pb_spielstatus = 0;
