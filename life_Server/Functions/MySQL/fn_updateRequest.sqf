@@ -36,5 +36,6 @@ case civilian: {_query = format["UPDATE players SET name='%1', cash='%2', bankac
 case independent: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', med_licenses='%4' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid];};
 };
 
-
+_count = count _query;
+if (_count > 8140) exitWith {};
 _queryResult = [_query,1] call DB_fnc_asyncCall;
