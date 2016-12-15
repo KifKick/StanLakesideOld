@@ -44,6 +44,7 @@ if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
 
 if(_spawnPoint isEqualTo "") exitWith {[localize "STR_Shop_Veh_Block", false] spawn domsg;};
 ["cash","take",_basePrice] call life_fnc_handleCash; 
+[6] call SOCK_fnc_updatePartial;
 [format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText], false] spawn domsg;
 [player,"buycarniggah"] spawn life_fnc_nearestSound;
 _playerID = getPlayerUID player;
@@ -122,4 +123,5 @@ if(_mode) then {
 	[(getPlayerUID player),playerSide,_vehicle,_colorIndex] remoteExecCall ["TON_fnc_vehicleCreate",(call life_fnc_HCC)];
 };
 closeDialog 0; //Exit the menu.
+[6] call SOCK_fnc_updatePartial;
 true;
