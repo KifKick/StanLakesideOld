@@ -17,7 +17,6 @@ previewing_on = true;
 _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; 
 _basePrice = (_vehicleList select _vIndex) select 1;
-_baseprice = _baseprice / 10;
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)

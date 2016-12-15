@@ -16,7 +16,6 @@ _index = _this select 1;
 _className = _control lbData _index;
 _vIndex = _control lbValue _index;
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; _basePrice = (_vehicleList select _vIndex) select 1;
-_baseprice = _baseprice / 10;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
