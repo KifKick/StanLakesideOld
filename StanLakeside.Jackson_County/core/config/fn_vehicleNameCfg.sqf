@@ -1,7 +1,7 @@
 #include <macro.h>
 /*
 	File:
-	
+	Author: Kajetan "Kruk" Mruk
 	VEHICLES ARE 10% of WHAT THEY ARE IN HERE.
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
