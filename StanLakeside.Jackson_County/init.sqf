@@ -6,7 +6,6 @@ tf_civ_radio_code = tf_west_radio_code;
 ASAGNDJSN = true;
 enableSaving [false, false];
 
-[] execVM "briefing.sqf";
 [] execVM "KRON_Strings.sqf";
 
 
@@ -27,11 +26,11 @@ diag_log "Server FSM executed";
 
 StartProgess = true;
 
-if(isServer) then {
+/*if(isServer) then {
 	_obj = [8546.45,6796.53,8] nearestObject 1005977; 
 	_obj enableSimulationGlobal false;
 	_obj hideObjectGlobal true;
-};
+};*/
 
 if(!isDedicated && {!hasInterface}) then
 {
