@@ -11,7 +11,7 @@ _toPlayerID = _this select 2;
 _toPlayerName = _this select 3;
 _type = _this select 4;
 _amount = _this select 5;
-_classname = _this select 6;
+
 
 
 [6] call SOCK_fnc_updatePartial;
@@ -33,5 +33,5 @@ switch (_type) do{
    	case 13: {_type = "PrzecinakPass";};
 };
 
-_query = format["INSERT INTO actionlog (playerId, playerName, onPlayerID, onPlayerName, type, amount) VALUES('%1', '%2', '%3', '%4', '%5', '%6', '%7')",_playerID,_playerName,_toPlayerID,_toPlayerName,_type, _amount,_classname];
+_query = format["INSERT INTO actionlog (playerId, playerName, onPlayerID, onPlayerName, type, amount) VALUES('%1', '%2', '%3', '%4', '%5', '%6')",_playerID,_playerName,_toPlayerID,_toPlayerName,_type, _amount];
 [_query,1] call DB_fnc_asyncCall;
