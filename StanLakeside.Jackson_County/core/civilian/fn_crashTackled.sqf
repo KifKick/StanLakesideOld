@@ -17,9 +17,6 @@ if(_who isEqualTo "") exitWith {};
 
 player playMoveNow "Incapacitated";
 player setVariable ["tf_voiceVolume", 0, true];
-_obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
-_obj setPosATL (getPosATL player);
-player attachTo [_obj,[0,0,0]];
 [_obj] spawn {
 	params ["_obj"];
 	[3] call life_fnc_HudElements;

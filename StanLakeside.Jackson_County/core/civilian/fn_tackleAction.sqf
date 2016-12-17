@@ -31,10 +31,7 @@ if(_totald >= -90 && _totald < 1 || _totald <= 90 && _totald > -1 || _totald >= 
 
 	player attachTo [_target, [0, -0.4, 0.1] ]; 
 	detach player; 
-	_obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player); 
 	player switchmove "AmovPpneMstpSnonWnonDnon";
-	_obj setPosATL (getPosATL player);  
-	player attachTo [_obj,[0,-0.3,0.7]]; 
 	detach player;
 	[player,"knockhit"] spawn life_fnc_nearestSound;	
 	[_target,profileName] remoteExecCall ["life_fnc_crashTackled",_target];

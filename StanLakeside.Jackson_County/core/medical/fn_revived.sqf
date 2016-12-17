@@ -63,9 +63,6 @@ if(_status == "CPR" && shooting_death) then { hint "Ktos Cie ustabilizowal!."; m
 	disableUserInput true;
 	life_action_inUse = true;
 	[player,"AinjPpneMstpSnonWnonDnon"] remoteExecCall ["life_fnc_animSync"];
-	_obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
-	_obj setPosATL (getPosATL player);
-	player attachTo [_obj,[0,0,0]];
 	uiSleep 15;
 	player allowdamage true;
 	detach player;
