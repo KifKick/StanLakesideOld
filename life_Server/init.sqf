@@ -22,7 +22,7 @@ publicVariable "life_server_isReady";
 	while {true} do {
 		_cops = (west countSide playableUnits);
 		_meds = (independent countSide playableUnits);
- 		if(_cops > 9 || _meds > 3) then { 
+ 		if(_cops > 5 || _meds > 3) then { 
  			_chance = round (random 85);
 			if(_chance == 1) then {
 				remoteExec ["fnc_police_fire", -2];
@@ -164,8 +164,8 @@ pb_maxspieler = 10;
 execVM "\life_server\Functions\paintball\arena_paintball.sqf";
 
 if (isServer) then {
-	racemachine setVariable["start",false,true];
-	racemachine2 setVariable["start",false,true];
+	//racemachine setVariable["start",false,true];
+	//racemachine2 setVariable["start",false,true];
 	jobstand setvariable ["job1",false,true];
 	jobstand setvariable ["job2",false,true];
 	jobstand setvariable ["job3",false,true];

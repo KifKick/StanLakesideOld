@@ -403,7 +403,6 @@ class Life_Client_Core
 		class vInteractionMenu {};
 		class vehicleWeight {};
 		class addVehicle2Chain {};
-		class animateJonzies {};
 		class vehSetPriceAction {};
 		class vehSetPrice {};
 		class vehBuy {};
