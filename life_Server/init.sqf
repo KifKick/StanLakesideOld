@@ -164,8 +164,8 @@ pb_maxspieler = 10;
 execVM "\life_server\Functions\paintball\arena_paintball.sqf";
 
 if (isServer) then {
-	//racemachine setVariable["start",false,true];
-	//racemachine2 setVariable["start",false,true];
+	racemachine setVariable["start",false,true];
+	racemachine2 setVariable["start",false,true];
 	jobstand setvariable ["job1",false,true];
 	jobstand setvariable ["job2",false,true];
 	jobstand setvariable ["job3",false,true];
