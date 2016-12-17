@@ -95,8 +95,8 @@ if(!_isVehicle) then {
 		_playerID = getPlayerUID player;
 		_playerName = name player;
 		_type = 11;
-		_classname = typeOf _curTarget;
-		[_playerID,_playerName,"","",_type,"",_classname] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
+		_amount = typeOf _curTarget;
+		[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 		if(count _towtrucks == 0) then {
 		_reason = "487";
 		if(side player == civilian || side player == east) then {
@@ -110,7 +110,7 @@ if(!_isVehicle) then {
 		_playerID = getPlayerUID player;
 		_playerName = name player;
 		_type = 10;
-		_classname = typeOf _curTarget;
-		[_playerID,_playerName,"","",_type,"",_classname] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
+		_amount = typeOf _curTarget;
+		[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 	};
 };
