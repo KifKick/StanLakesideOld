@@ -255,7 +255,6 @@ switch (_filter) do
 			["hk_rebel_17",nil,5000],
 			["hk_rebel_18",nil,5000],
 			["hk_rebel_19",nil,5000],
-			["tgc_vest_1",nil,5000],
 			["hk_rebel_20",nil,5000]
 		];
 	};
