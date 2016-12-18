@@ -17,11 +17,11 @@ _vehicles =
 	//Adam
 	
 	["kmc_sprinter","170-Mercedes Sprinter PD"],
-	["kmc_cvpi_lspd_1","001-CVPI Slicktop LSPD"],
-	["kmc_cvpi_lspd_2","002-CVPI Slicktop LSPD"],
-	["kmc_cvpi_lspd_lb_3","003-CVPI LB LSPD"],
-	["kmc_cvpi_lspd_lb_4","004-CVPI LB LSPD"],
-	["kmc_cvpi_lspd_lb_5","005-CVPI LB LSPD"],
+	["kmc_cvpi_lspd_1","001-CVPI Slicktop LSPA"],
+	["kmc_cvpi_lspd_2","002-CVPI Slicktop LSPA"],
+	["kmc_cvpi_lspd_lb_3","003-CVPI LB LSPA"],
+	["kmc_cvpi_lspd_lb_4","004-CVPI LB LSPA"],
+	["kmc_cvpi_lspd_lb_5","005-CVPI LB LSPA"],
 	["kmc_cvpi_lspd_6","006-CVPI Slicktop LSPD"],
 	["kmc_cvpi_lspd_7","007-CVPI Slicktop LSPD"],
 	["kmc_cvpi_lspd_8","008-CVPI Slicktop LSPD"],
