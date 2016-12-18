@@ -1234,7 +1234,7 @@ switch (_shop) do
 			["ivory_m3_pd_61",25000],
 			["kif_evo_pd_28",25000],
 			["ivory_evox_slicktop",25000],
-			[TahoeSV_115",20000],
+			["TahoeSV_115",20000],
 			["cg_ducati_pol_reg",5000],
 			["Taurus_501",10000],
 			["Taurus_502",10000],
