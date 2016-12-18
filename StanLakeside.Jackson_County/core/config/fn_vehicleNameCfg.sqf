@@ -46,6 +46,7 @@ _vehicles =
 	["kmc_MustangSO_200","200-Ford Mustang SO"],	
 	["TahoePD_03","800-Chevrolet Tahoe SERT"],
 	["TahoeCB_01","111-Chevrolet Tahoe CB"],
+	["TahoeSV_115","115-Chevrolet Tahoe Supervisor"],
 	["TahoeSO_205","205-Chevrolet Tahoe SO"],
 	["TahoeSO_250","250-Chevrolet Tahoe SO D.Lych"],
 	["TahoeSO_275","275-Chevrolet Tahoe SO M.Williams"],
