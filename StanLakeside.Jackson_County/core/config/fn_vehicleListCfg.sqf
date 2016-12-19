@@ -1264,6 +1264,7 @@ switch (_shop) do
 			["cg_evoSERT1",25000],
 			["DAR_SWATPolice",15000],
 			["HummerSERT_810",27500],
+			["HummerSERT_815",10000],
 			["HummerSERT_850",27500],
 			["LandRoverSERT_811",25000],
 			["MustangSert_801",15000],	
