@@ -1225,7 +1225,7 @@ switch (_shop) do
 			["kmc_cvpi_lspd_lb_15",10000],
 			["kmc_cvpi_lspd_lb_16",10000],
 			["kmc_wrx_pd_17",25000],
-			["kmc_wrx_pd_18",250000],
+			["kmc_wrx_pd_18",25000],
 			["charger_lspd_022",20000],
 			["charger_lspd_024",20000],
 			["charger_lspd_026",20000],
