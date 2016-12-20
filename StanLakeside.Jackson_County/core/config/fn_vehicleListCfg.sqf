@@ -61,6 +61,20 @@ switch (_shop) do
 			["Mustang_11",145000],
 			["Mustang_Flame",145000],
 			
+			["Mustang_01V8",160000],
+			["Mustang_02V8",160000],
+			["Mustang_03V8",160000],
+			["Mustang_04V8",160000],
+			["Mustang_05V8",160000],
+			["Mustang_06V8",160000],
+			["Mustang_07V8",160000],
+			["Mustang_08V8",160000],
+			["Mustang_09V8",160000],
+			["Mustang_10V8",160000],
+			["Mustang_11V8",160000],
+			["Mustang_FlameV8",160000],
+			
+			
 			["LandRover_01",170000],
 			["LandRover_02",170000],
 			["LandRover_03",170000],
