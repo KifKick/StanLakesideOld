@@ -1272,6 +1272,7 @@ switch (_shop) do
 			["ivory_rs4_unmarked",20000],
 			["ivory_isf_unmarked",20000],
 			//SERT
+			["ivory_wrx_sert_66",25000],
 			["suburban_829_sert",30000],
 			["suburban_830_sert",30000],
 			["suburban_831_sert",30000],
