@@ -98,6 +98,12 @@ if(!dialog && playerSide == independent && _curTarget isKindOf "Man") exitwith {
 	};
 };
 
+if (typeOf _curTarget IN ["A3L_Wheat","A3L_Corn","A3L_Beans","A3L_Cannabis","A3L_Cotton","Ficus_Bush_1","A3L_Pumpkin","A3L_Sunflower","Oleander2"]) then {
+	// kwiatek
+	
+	[] call fnc_harvest;
+};
+
 if((_curTarget getVariable["dead",FALSE]) && playerSide != independent && !dialog && _curTarget isKindOf "Man") exitwith {
 	if(side _curTarget == independent || side _curTarget == west || side _curTarget == civilian || side _curTarget == east) then {
 		if(_curTarget getVariable["stwierdzamZgon690",FALSE]) then {

@@ -146,6 +146,7 @@ class Life_Client_Core
 		class robStore {}; 
 		class surrender {};
 		class carSalesman {};
+		class plant {};
 		//class robBank {};
 	};	
 	
@@ -346,6 +347,8 @@ class Life_Client_Core
 		class medairSiren {}; 
 		class loggedOut {};
 		class radArea {};
+		class zoneCreator {};
+
 		// Market System
 		class randomRound {};
 	};

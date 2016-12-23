@@ -125,7 +125,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
  }; 
 };
 
-[] spawn
+/*[] spawn
 {
 	if(side player != civilian) exitWith {};
 	while{true} do
@@ -314,7 +314,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 			uiSleep 5;
 		};
 	};
-};
+}; */
 
 [] spawn
 {
@@ -808,7 +808,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 
 		_Btn12 = _display displayCtrl 27;
 		if(playerSide == independent && !(user getVariable ["stwierdzamZgon690", FALSE]) && user getVariable["dead",FALSE]) then {_Btn12 ctrlEnable true;} else {_Btn12 ctrlEnable false;};
-		_Btn12 buttonSetAction "user setVariable [""stwierdzamZgon690"", true, true]; remoteExec [""life_fnc_revivewhendead"", unit];";
+		_Btn12 buttonSetAction "user setVariable [""stwierdzamZgon690"", true, true]; remoteExec [""life_fnc_revivewhendead"", unit]; [getPlayerUID player, profileName, getPlayerUID unit, name unit, 10, ''] remoteExecCall [""ton_fnc_actionlog"",(call life_fnc_hcc)];";
 
 	};
 
@@ -1111,7 +1111,7 @@ fnc_dispatch = {
 						player assignItem (_radios select 0);
 					};
 				} forEach _radios;
-				uiSleep 3;
+				uiSleep 6;
 			};
 		};
 	};
@@ -1138,7 +1138,7 @@ fnc_airkit =
 {
 	while {true} do
 	{
-		uiSleep 3;
+		uiSleep 6;
 		if(life_carryWeight > life_maxWeight && !isForcedWalk player) then {
 			player forceWalk true;
 			player setFatigue 1;
@@ -1155,7 +1155,7 @@ fnc_airkit =
 	fnc_intox =
 	{
 		[] spawn {
-			uiSleep 110;
+			uiSleep 150;
 			if(life_intox > 0) then
 			{
 				if(life_intox <= 0.02) then {life_intox = 0.00;} else {life_intox = life_intox - 0.02;};
@@ -1204,7 +1204,7 @@ fnc_airkit =
 		player setVariable["intoxicated",false,true];
 	};
 
-[] spawn
+/*[] spawn
 {
 	while{true} do
 	{
@@ -1225,7 +1225,7 @@ fnc_airkit =
 		};
 		uiSleep 1;
 	};
-};
+}; */
 
 
 fnc_testaids = {
@@ -1625,7 +1625,7 @@ fnc_callProgress = {
 			if( _total < 2 ) exitwith { [] call fnc_resetcall; };
 			if( deadPlayer && myCallOwner != player ) exitwith { ["Polaczenie rozlaczone (Jestes nieprzytomny)", false] spawn domsg; [] call fnc_hangup };
 			if( life_battery < 5 ) exitwith { ["Polaczenie rozlaczone (Slaba bateria)", false] spawn domsg; [] call fnc_hangup };
-			sleep 5;
+			sleep 10;
 		};
 	};
 };
@@ -2017,7 +2017,7 @@ fnc_castScript = {
 //_weapon = [player, "launch_RPG32_F", 6] call BIS_fnc_addWeapon;
 
 //USED TO OPEN NEAREST JAIL FENCING DOOR WITH HACKING TOOL / HACKDOOR
-fnc_hackDoor = {
+/*fnc_hackDoor = {
 	if(jailHacking) exitwith {};
 	jailHacking = true;
 	fencing = nearestObjects [player, ["zac_prison_fence_gate","Land_SatellitePhone_F"],11];
@@ -2063,7 +2063,7 @@ fnc_hackDoor = {
 	};
 	jailHacking = false;
 };
-
+*/
 
 
 	fnc_trytaxi = {
@@ -2164,7 +2164,7 @@ fnc_hackDoor = {
 		target_licenses = _this select 0;
 		target_houses = _this select 1;
 		_n = 0;
-		if(count target_houses > 0) then {
+		/*if(count target_houses > 0) then {
 
 			{
 				_pos = call compile format["%1",_x select 0];
@@ -2179,7 +2179,7 @@ fnc_hackDoor = {
 
 			["Domy obywatela zostaly zaznaczone na mapie!", false] spawn domsg;
 
-		};
+		};*/
 		life_gather_info = true;
 	};
 

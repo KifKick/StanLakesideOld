@@ -23,6 +23,6 @@ if((_vehicle isKindOf "Car") || !(_vehicle isKindOf "Air") || !(_vehicle isKindO
 		_owners = "No owners, impound it<br/>";
 	};
 	
-	hint parsetext format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>Vehicle Check:</t><br/> %1 ",_owners];
+	hint parsetext format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>Rejestracja:</t><br/> %1 ",_owners];
 
 };

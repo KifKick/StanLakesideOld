@@ -1,13 +1,13 @@
 /*
 	File: fn_initCiv.sqf
-	
-	
+
+
 	Description:
 	Initializes the civilian.
 */
 
 // TFR Variables API
-tf_no_auto_long_range_radio = true; 
+tf_no_auto_long_range_radio = true;
 
 TF_terrain_interception_coefficient = 1;
 
@@ -68,6 +68,7 @@ if(life_is_arrested) then
 if(side player == civilian) then {
 	[] spawn fnc_resetCallSpawn;
 	[] call fnc_checkphone;
+	[] call life_fnc_zoneCreator;
 };
 
 player setUnitRecoilCoefficient 2.8;

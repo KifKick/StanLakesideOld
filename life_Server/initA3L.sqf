@@ -3,6 +3,7 @@ A3L_fnc_Zep6EvEd = [];
 A3L_fnc_serverexec = [
 "\Core\Network\fn_sendFunctions.sqf",
 "\Core\Server\fn_buildings.sqf",
+"\Core\Farming\fn_server.sqf",
 "\Core\Server\fn_buildings2.sqf",
 "\Core\Network\fn_sounds.sqf"
 ];
@@ -59,9 +60,9 @@ A3L_fnc_Zep6EvEd = Nil;
 		jobstand setvariable ["job3",true,true];
 		jobstand setvariable ["job4",true,true];
 		jobstand setvariable ["job5",true,true];
-		jobstand setvariable ["job6",true,true];	
+		jobstand setvariable ["job6",true,true];
 		jobstand setvariable ["job7",true,true];
-		jobstand setvariable ["job8",true,true];	
+		jobstand setvariable ["job8",true,true];
 		uisleep 1800;
 	};
 };

@@ -117,7 +117,7 @@ if(playerSide == west) then {
 
 	//Check for vehicle defects
 	_Btn10 ctrlSetText "Zniszcz pojazd";
-	_Btn10 buttonSetAction "[life_vInact_curTarget, profileName, getPlayerUID name] spawn life_fnc_checkdefect;";
+	_Btn10 buttonSetAction "[life_vInact_curTarget, profileName, getPlayerUID player] spawn life_fnc_checkdefect;";
 
 
 	if(!command) then {

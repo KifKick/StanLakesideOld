@@ -415,6 +415,14 @@ switch (_code) do
 			[] spawn life_fnc_AntiSpam2;
 		};
 
+		if(_shift && cursorTarget isKindOf "LandVehicle") then {
+			_vehcheck = cursorTarget;
+			_info = _vehcheck getVariable ["dbinfo",[]];
+			if (isNil {_info}) exitWith {hint "Pojazd nie pochodzi z bazy danych"};
+			_plate = _info select 1;
+			hint parsetext format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>Numer rejestracyjny:</t><br/> %1 ",_plate];
+		};
+
 		if(_shift && !isNull cursorTarget && (playerSide == west || playerSide == independent) && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 3 && !(cursorTarget getVariable ["Escorting", false]) && !(cursorTarget getVariable ["restrained", false]) && vehicle player == player) then
 		{
 			if( "CG_ATF_Handcuffs_i" in magazines player ) then {

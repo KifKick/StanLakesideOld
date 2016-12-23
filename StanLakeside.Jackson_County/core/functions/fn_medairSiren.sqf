@@ -11,7 +11,7 @@ while {true} do {
 	if(isNull _pole) exitWith {};
 	if(playerSide == independent) then
 	{
-	[[5,"<t size='1.2'><t color='#FF0000'>Po¿ar!</t></t><br/><br/><t size='1'>Wszystkie jednoski, maja udac sie do remizy!</t>"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[5,"<t size='1.2'><t color='#FF0000'>Pozar!</t></t><br/><br/><t size='1'>Wszystkie jednoski, maja udac sie do remizy!</t>"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	};
 	_pole say3D "medAirSiren";
 	sleep 34;
