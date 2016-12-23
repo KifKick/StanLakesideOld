@@ -21,7 +21,7 @@ switch (_shop) do
 	case "gems": {["Handlarz klejnotow",["sapphire","ruby","emerald"]]};
 	case "oil": {["Handlarz ropy z USA",["oilp","pickaxe","fuelF"]]};
 	case "fishmarket": {["Market rybny",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
-	case "farmingmarket": {["Market rolniczy",["wheat seed", "sunflower seed","corn seed", "bean seed", "cotton seed", "olive seed", "opium seed" "cannabis seed", "pumpkin seed"]]};	
+	case "farmingmarket": {["Market rolniczy",["wheat seed", "sunflower seed","corn seed", "bean seed", "cotton seed", "olive seed", "opium seed", "cannabis seed", "pumpkin seed"]]};	
 	case "glass": {["Szklarz",["glass"]]};
 	case "iron": {["Hutnik",["iron_r","copper_r"]]};
 	case "diamond": {["Jubiler",["weddingring","diamond","diamondc"]]};
