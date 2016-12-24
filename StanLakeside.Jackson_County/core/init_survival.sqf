@@ -1043,6 +1043,8 @@ fnc_dispatch = {
 		};
 	};
 
+[] spawn {
+
 while{true} do
 {
 	waitUntil {vehicle player != player};
@@ -1065,6 +1067,7 @@ while{true} do
 		};
 	};
 	523423 cutfadeout 1; 
+};
 };
 
 [] spawn
