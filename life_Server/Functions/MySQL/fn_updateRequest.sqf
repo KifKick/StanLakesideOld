@@ -14,7 +14,7 @@ _bank = param [4,5000,[0]];
 _licenses = param [5,[],[[]]];
 
 
-if((_uid == "") OR (_name == "")) exitWith {};
+if((_uid isEqualTo "") OR (_name isEqualTo "")) exitWith {};
 
 
 _name = [_name] call DB_fnc_mresString;

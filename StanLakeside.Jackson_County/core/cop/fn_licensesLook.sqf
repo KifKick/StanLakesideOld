@@ -22,7 +22,7 @@ _id_faction = _ui displayCtrl 44447;
 
 skip_all = false;
 
-if(side player == west) then {
+if(side player isEqualTo west) then {
 	player remoteExec ["fnc_pull_ID",_civ];
 	life_gather_info = false;
 	["Zbieram informacje - Prosze czekac!", false] spawn domsg; 

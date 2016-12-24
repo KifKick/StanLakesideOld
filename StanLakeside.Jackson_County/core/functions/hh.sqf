@@ -11,7 +11,7 @@ fnc_turnObject = {
  
 [localize "Your body & mind is feeling weak.", false] spawn domsg;
 
-while { life_koil_hh == 1 } do {
+while { life_koil_hh isEqualTo 1 } do {
 	_myrandtimer = 60 + round(random 60); 
 	uiSleep _myrandtimer;
 	_mychance = 1 + round(random 99); 
@@ -22,30 +22,30 @@ while { life_koil_hh == 1 } do {
 	_angel1 = "A3L_Angel_Idle" createVehicleLocal (player modelToWorld [0,-10,0]);
 	[_angel1] call fnc_turnObject;
 
-	if(_mysound == 1) then {
+	if(_mysound isEqualTo 1) then {
 		[_angel,"hhthunder"] spawn life_fnc_nearestSound;
 	};
 
-	if(_mysound == 2) then {
+	if(_mysound isEqualTo 2) then {
 		[_angel,"hhscreams"] spawn life_fnc_nearestSound;
 	};
 
-	if(_mysound == 3) then {
+	if(_mysound isEqualTo 3) then {
 		[_angel,"hhicanseeyou"] spawn life_fnc_nearestSound;
 	};
-	if(_mysound == 4) then {
+	if(_mysound isEqualTo 4) then {
 		[_angel,"hhgrowl"] spawn life_fnc_nearestSound;
 	};
 
-	if(_mysound == 5) then {
+	if(_mysound isEqualTo 5) then {
 		[_angel,"hhecho"] spawn life_fnc_nearestSound;
 	};
 
-	if(_mysound == 6) then {
+	if(_mysound isEqualTo 6) then {
 		[_angel,"hhdie"] spawn life_fnc_nearestSound;
 	};
 
-	if(_mysound == 7) then {
+	if(_mysound isEqualTo 7) then {
 		[_angel,"hhclank"] spawn life_fnc_nearestSound;
 	};
 

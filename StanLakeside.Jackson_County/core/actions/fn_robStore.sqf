@@ -55,7 +55,7 @@ if (!(_robber getVariable["dead",FALSE]) && {currentWeapon _robber != "" && curr
 			uiSleep _factor;
 			_action = _shop addAction["Rob",life_fnc_robStore];
 		};
-		if (currentWeapon _robber == "" || currentWeapon player == "Binocular" || currentWeapon player == "Rangefinder") exitwith {
+		if (currentWeapon _robber isEqualTo "" || currentWeapon player isEqualTo "Binocular" || currentWeapon player isEqualTo "Rangefinder") exitwith {
 				life_canrob = true;
 			deleteMarker myStoreMarker;
 			hint "Juz sie Ciebie nie boje gnoju!";
@@ -75,6 +75,7 @@ if (!(_robber getVariable["dead",FALSE]) && {currentWeapon _robber != "" && curr
 	_playerName = name player;
 	_type = 5;
 	_amount = _funds;
+	["Remove",35] call fnc_karma;
 	[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 	[2] call SOCK_fnc_updatePartial;
 	[1,format["WIADOMOSCI LAKESIDE: Sklep zostal obrabowany na $%2!", _shop, [_funds] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast", civilian];

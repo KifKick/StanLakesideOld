@@ -8,7 +8,7 @@
 private["_mode","_value"];
 _mode = param [0,-1,[0]];
 _value = param [1,-1,[0]];
-if(_mode == -1 OR _value == -1) exitWith {};
+if(_mode isEqualTo -1 OR _value isEqualTo -1) exitWith {};
 disableSerialization;
 
 switch (_mode) do

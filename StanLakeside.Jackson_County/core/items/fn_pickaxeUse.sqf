@@ -28,7 +28,7 @@ _curWep = currentWeapon player;
 
 
 //Mine check
-if(_mine == "") exitWith {harvesting = false;};
+if(_mine isEqualTo "") exitWith {harvesting = false;};
 
 if ( (_curWep) != "CG_PICKAXE" ) exitwith { ["Potrzebujesz kilofa w reku aby tutaj kopac!", false] spawn domsg; harvesting = false; };
 
@@ -47,7 +47,7 @@ if(_chance > 1) exitwith { ["Nie udalo Ci sie czegos wykopac!", false] spawn doq
 if(vehicle player != player) exitWith {[localize "STR_ISTR_Pick_MineVeh", false] spawn doquickmsg; harvesting = false;};
 
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_diff == 0) exitWith {[localize "STR_NOTF_InvFull", false] spawn doquickmsg; harvesting = false;};
+if(_diff isEqualTo 0) exitWith {[localize "STR_NOTF_InvFull", false] spawn doquickmsg; harvesting = false;};
 
 
 if(([true,_mine,_diff] call life_fnc_handleInv)) then

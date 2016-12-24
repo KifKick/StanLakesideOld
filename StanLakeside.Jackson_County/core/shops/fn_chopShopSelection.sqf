@@ -11,7 +11,7 @@ _control = param [0,controlNull,[controlNull]];
 _selection = param [1,-1,[0]];
 
 //Error checks
-if(isNull _control OR _selection == -1) exitWith {};
+if(isNull _control OR _selection isEqualTo -1) exitWith {};
 
 _price = _control lbValue _selection;
 

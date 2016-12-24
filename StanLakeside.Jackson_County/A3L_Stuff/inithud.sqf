@@ -34,10 +34,10 @@ _curmagazine = _hudinfo select 4;
 _className = _hudinfo select 3;
 _gunmodeold = _hudinfo select 2;
 _gunmode = "";
-if ((_gunmodeold == "single") or (_gunmodeold == "FullAuto")) then {
+if ((_gunmodeold isEqualTo "single") or (_gunmodeold isEqualTo "FullAuto")) then {
 _gunmode = _gunmodeold;
-if (_gunmodeold == "single") then {_gunmode = "Pojedynczy"};
-if (_gunmodeold == "FullAuto") then {_gunmode = "Automatyczny"};
+if (_gunmodeold isEqualTo "single") then {_gunmode = "Pojedynczy"};
+if (_gunmodeold isEqualTo "FullAuto") then {_gunmode = "Automatyczny"};
 };
  
 _magforpic = "";
@@ -49,7 +49,7 @@ _picture = getText (configFile >> "CfgMagazines" >> _magforpic >> "picture");
 _nameofPlayer = name player;
 _noweaponsarray = ["","","","",0];
 _nothing = _noweaponsarray select 0;
-if (_nothing == _curweapon) then {
+if (_nothing isEqualTo _curweapon) then {
 } else {
  
 _zeroing = currentZeroing player;
@@ -58,18 +58,18 @@ _magazineClass = currentMagazine player;
 _weaponname = getText (configFile >> "CfgWeapons" >> _curweapon >> "displayName");
 _maxammo = getNumber(configFile >> "CfgMagazines" >> _magazineClass >> "count") ;
 _prcentammo = 0;
-if (_curmagazine == 0) then {
+if (_curmagazine isEqualTo 0) then {
 _prcentammo = 0;
 } else {
 _prcentammo = (_curmagazine / _maxammo) * 100;
 };
  
-_amountmag = {_x == (currentmagazine player)} count magazines player;
-if (_amountmag == 0) then {
+_amountmag = {_x isEqualTo (currentmagazine player)} count magazines player;
+if (_amountmag isEqualTo 0) then {
         _amountmagtext = parseText format["Skonczyly mi sie magazynki"];
                 _magcolor = "#FFFFFF";
     } else {
-    if (_amountmag == 1) then {
+    if (_amountmag isEqualTo 1) then {
         _amountmagtext = parseText format["Zostal mi %1 magazynek", _amountmag];
                 _magcolor = "#FFFFFF";
     } else {
@@ -78,7 +78,7 @@ if (_amountmag == 0) then {
                 _magcolor = "#FFFFFF";
 };};};
        
-if (_prcentammo == 0) then {
+if (_prcentammo isEqualTo 0) then {
         _ammotext = parseText format["Chyba skonczyla mi sie amunicja."];
                 _ammocolor = "#FFFFFF";
     } else {
@@ -103,12 +103,12 @@ if (_prcentammo == 0) then {
         _ammotext = parseText format["Mam bardzo duzo amunicji."];
                 _ammocolor = "#FFFFFF";
     } else {
-    if (_prcentammo == 100) then {
+    if (_prcentammo isEqualTo 100) then {
         _ammotext = parseText format["Magazynek jest pelen."];
                 _ammocolor = "#FFFFFF";
 };};};};};};};
  
-if (_zeroing == 0) then {
+if (_zeroing isEqualTo 0) then {
                 _zeroingtext = parseText format[""];
         } else {
                 _zeroingtext = parseText format["Zerowanie: %1M", _zeroing];
@@ -153,7 +153,7 @@ if (_playerhealth < 0.10) then {
                 _healthcolor = "#FF0000";
                 _healthtext = parseText format["Krytycznie ranny"];
         } else {
-        if (_playerhealth == 1) then {
+        if (_playerhealth isEqualTo 1) then {
                 _healthcolor = "#590000";
                 _healthtext = parseText format["Martwy</t>"];
 };};};};};};};};};};
@@ -194,7 +194,7 @@ if (_playerhunger > 90) then {
                 _hungercolor = "#FF0000";
                 _hungertext = parseText format["Zaczynam glodowac"];
         } else {
-        if (_playerhunger == 0) then {
+        if (_playerhunger isEqualTo 0) then {
                 _hungercolor = "#590000";
                 _hungertext = parseText format["Martwy</t>"];
 };};};};};};};};};
@@ -231,7 +231,7 @@ if (_playerthirst > 80) then {
                 _thirstcolor = "#FF0000";
                 _thirsttext = parseText format["Czuje sie okropnie przez dehydracje"];
         } else {
-        if (_playerthirst == 0) then {
+        if (_playerthirst isEqualTo 0) then {
                 _thirstcolor = "#590000";
                 _thirsttext = parseText format["MARTWY</t>"];
 };};};};};};};};};
@@ -265,7 +265,7 @@ if (_playerstamina < 0.10) then {
                 _staminatext = parseText format["Jestem zmeczony"];
 };};};};};};};
 
- /*if (_playerscary == 0) then {
+ /*if (_playerscary isEqualTo 0) then {
                 _scarycolor = "#00FF4C";
                 _scarytext = parseText format["Nie boje sie"];
         } else {
@@ -289,13 +289,13 @@ if (_playerstamina < 0.10) then {
                 _scarycolor = "#FF0000";
                 _scarytext = parseText format["Serce mi wali bardzo mocno"];
         } else {
-        if (_playerscary == 1) then {
+        if (_playerscary isEqualTo 1) then {
                 _scarycolor = "#590000";
                 _scarytext = parseText format["Placze ze strachu"];
 };};};};};};};
 
 _candyconvtext = parsetext format [""];
-if (_amountcandy == 0) then {
+if (_amountcandy isEqualTo 0) then {
 _candyconvtext = parseText format ["Brak cukierkow!"];
 } else {
 _candyconvtext = parseText format ["%1 cukierkow!", _amountcandy];

@@ -7,7 +7,7 @@ import ntpath
 import sys
 import argparse
 
-if sys.version_info.major == 2:
+if sys.version_info.major isEqualTo 2:
     import codecs
     open = codecs.open
 
@@ -51,49 +51,49 @@ def check_config_style(filepath):
         for c in content:
             if (lastIsCurlyBrace):
                 lastIsCurlyBrace = False
-            if c == '\n': # Keeping track of our line numbers
+            if c isEqualTo '\n': # Keeping track of our line numbers
                 lineNumber += 1 # so we can print accurate line number information when we detect a possible error
             if (isInString): # while we are in a string, we can ignore everything else, except the end of the string
-                if (c == inStringType):
+                if (c isEqualTo inStringType):
                     isInString = False
             # if we are not in a comment block, we will check if we are at the start of one or count the () {} and []
-            elif (isInCommentBlock == False):
+            elif (isInCommentBlock isEqualTo False):
 
                 # This means we have encountered a /, so we are now checking if this is an inline comment or a comment block
                 if (checkIfInComment):
                     checkIfInComment = False
-                    if c == '*': # if the next character after / is a *, we are at the start of a comment block
+                    if c isEqualTo '*': # if the next character after / is a *, we are at the start of a comment block
                         isInCommentBlock = True
-                    elif (c == '/'): # Otherwise, will check if we are in an line comment
+                    elif (c isEqualTo '/'): # Otherwise, will check if we are in an line comment
                         ignoreTillEndOfLine = True # and an line comment is a / followed by another / (//) We won't care about anything that comes after it
 
-                if (isInCommentBlock == False):
+                if (isInCommentBlock isEqualTo False):
                     if (ignoreTillEndOfLine): # we are in a line comment, just continue going through the characters until we find an end of line
-                        if (c == '\n'):
+                        if (c isEqualTo '\n'):
                             ignoreTillEndOfLine = False
                     else: # validate brackets
-                        if (c == '"' or c == "'"):
+                        if (c isEqualTo '"' or c isEqualTo "'"):
                             isInString = True
                             inStringType = c
-                        elif (c == '/'):
+                        elif (c isEqualTo '/'):
                             checkIfInComment = True
-                        elif (c == '('):
+                        elif (c isEqualTo '('):
                             brackets_list.append('(')
-                        elif (c == ')'):
+                        elif (c isEqualTo ')'):
                             if (len(brackets_list) > 0 and brackets_list[-1] in ['{', '[']):
                                 print("ERROR: Possible missing round bracket ')' detected at {0} Line number: {1}".format(filepath,lineNumber))
                                 bad_count_file += 1
                             brackets_list.append(')')
-                        elif (c == '['):
+                        elif (c isEqualTo '['):
                             brackets_list.append('[')
-                        elif (c == ']'):
+                        elif (c isEqualTo ']'):
                             if (len(brackets_list) > 0 and brackets_list[-1] in ['{', '(']):
                                 print("ERROR: Possible missing square bracket ']' detected at {0} Line number: {1}".format(filepath,lineNumber))
                                 bad_count_file += 1
                             brackets_list.append(']')
-                        elif (c == '{'):
+                        elif (c isEqualTo '{'):
                             brackets_list.append('{')
-                        elif (c == '}'):
+                        elif (c isEqualTo '}'):
                             lastIsCurlyBrace = True
                             if (len(brackets_list) > 0 and brackets_list[-1] in ['(', '[']):
                                 print("ERROR: Possible missing curly brace '}}' detected at {0} Line number: {1}".format(filepath,lineNumber))
@@ -102,10 +102,10 @@ def check_config_style(filepath):
                         
 
             else: # Look for the end of our comment block
-                if (c == '*'):
+                if (c isEqualTo '*'):
                     checkIfNextIsClosingBlock = True;
                 elif (checkIfNextIsClosingBlock):
-                    if (c == '/'):
+                    if (c isEqualTo '/'):
                         isInCommentBlock = False
                     elif (c != '*'):
                         checkIfNextIsClosingBlock = False
@@ -148,12 +148,12 @@ def main():
         bad_count = bad_count + check_config_style(filename)
 
     print("------\nChecked {0} files\nErrors detected: {1}".format(len(sqf_list), bad_count))
-    if (bad_count == 0):
+    if (bad_count isEqualTo 0):
         print("Config validation PASSED")
     else:
         print("Config validation FAILED")
 
     return bad_count
 
-if __name__ == "__main__":
+if __name__ isEqualTo "__main__":
     sys.exit(main())

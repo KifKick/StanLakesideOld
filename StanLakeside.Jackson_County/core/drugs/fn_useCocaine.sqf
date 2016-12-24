@@ -9,6 +9,7 @@
 #include <macro.h>
 
 player setVariable["intoxicated",true,true];
+["Remove",30] call fnc_karma;
 [0,format["%1 czuje euforie po kokainie!.",name player]] remoteExecCall ["life_fnc_broadcast", -2];
 for "_i" from 0 to 400 do
 {

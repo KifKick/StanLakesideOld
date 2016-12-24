@@ -12,7 +12,7 @@ if (isNull objectParent player) then
 };
 
 	 _koildebiiii = player getVariable ["diseaseon", 1];
-	if(_koildebiiii == 2) then {
+	if(_koildebiiii isEqualTo 2) then {
 	player setVariable ["diseaseon",1,true]; 
 	} else {
 	[player,player] spawn life_fnc_onPlayerKilled;

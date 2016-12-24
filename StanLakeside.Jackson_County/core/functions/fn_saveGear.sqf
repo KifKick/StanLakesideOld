@@ -191,7 +191,7 @@ if(playerSide != civilian && playerSide != east) then {
 		["life_inv_RoadConeB", life_inv_RoadConeB],
 		["life_inv_RoadConeStripB", life_inv_RoadConeStripB]
 	];
-	if(playerSide == west) then {
+	if(playerSide isEqualTo west) then {
 		_saveGear pushBack ["life_inv_BarGate", life_inv_BarGate];
 	};
 };
@@ -258,5 +258,5 @@ _return pushBack secondaryWeapon player;
 _return pushBack _launchItems;
 
 life_gear = _return;
-if(str life_gear == _life_gear) exitWith {};
+if(str life_gear isEqualTo _life_gear) exitWith {};
 player setVariable["gear",life_gear,true];

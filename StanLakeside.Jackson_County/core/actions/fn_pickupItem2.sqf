@@ -24,12 +24,12 @@ else
 if(isNil "_obj" OR isNull _obj OR isPlayer _obj) exitWith {};
 _itemInfo = _obj getVariable "item";
 
-if((_itemInfo select 0) == "money") exitWith { 
+if((_itemInfo select 0) isEqualTo "money") exitWith { 
 	[_obj] call life_fnc_pickupMoney; 
 };
 
 _lockedGold = false;
-if((_itemInfo select 0) == "goldbar") then
+if((_itemInfo select 0) isEqualTo "goldbar") then
 {
 	_safe = nearestObject [_obj, "Land_Research_house_V1_F"];
 	if(isNull _safe) then { 
@@ -37,7 +37,7 @@ if((_itemInfo select 0) == "goldbar") then
 	};
 	if(!isNull _safe) then
 	{
-		if((_obj distance _safe) < 15 && (_safe getVariable["life_locked",1]) == 1) then { 
+		if((_obj distance _safe) < 15 && (_safe getVariable["life_locked",1]) isEqualTo 1) then { 
 			_lockedGold = true; 
 		};
 	};
@@ -49,7 +49,7 @@ if (_lockedGold) exitWith {
 _itemName = [([_itemInfo select 0,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 _illegal = [_itemInfo select 0,life_illegal_items] call life_fnc_index;
 
-if(playerSide == west && _illegal != -1) exitWith
+if(playerSide isEqualTo west && _illegal != -1) exitWith
 {
 	[format["%1 zostalo umieszczone jako dowod, i otrzymales $%2 w nagrode.",_itemName,[(life_illegal_items select _illegal) select 1] call life_fnc_numberText], false] spawn domsg;
 	["bank","take",((life_illegal_items select _illegal) select 1)] call life_fnc_handleCash;

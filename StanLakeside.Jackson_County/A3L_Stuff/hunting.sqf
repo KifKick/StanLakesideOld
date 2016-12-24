@@ -30,7 +30,7 @@ fnc_gutanimal = {
 	{
 		_selclassname = _x select 0;
 		_selanimal = _x select 1;
-		if (_selclassname == _animal) then {
+		if (_selclassname isEqualTo _animal) then {
 			_animalname = _selanimal;
 			_amountyouget = _x select 2;
 			_extraamount = _x select 3;

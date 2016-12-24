@@ -72,11 +72,11 @@ _Btn8 ctrlSetText localize "STR_pInAct_checkLicenses";
 _Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_licensesLook; closeDialog 0;";
 
 _Btn9 ctrlSetText localize "STR_pInAct_PatDown";
-_Btn9 buttonSetAction "[] remoteExecCall [""life_fnc_removeWeaponActionCiv"",life_pInact_curTarget]; closeDialog 0;";
+_Btn9 buttonSetAction "[player] remoteExecCall [""life_fnc_removeWeaponActionCiv"",life_pInact_curTarget]; closeDialog 0;";
 
 _Btn10 ctrlSetText "Zaloz Kaftan Bezp";
 _Btn10 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_tieingAction; closeDialog 0;";
-if( (animationState cursorTarget == "Incapacitated" || animationState cursorTarget == "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" ) ) then {
+if( (animationState cursorTarget isEqualTo "Incapacitated" || animationState cursorTarget isEqualTo "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" ) ) then {
 
 } else {
  _Btn10 ctrlEnable false;		

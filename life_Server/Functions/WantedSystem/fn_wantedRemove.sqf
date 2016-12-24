@@ -7,9 +7,9 @@
 */
 private["_uid","_index"];
 _uid = param [0,"",[""]];
-if(_uid == "") exitWith {}; 
+if(_uid isEqualTo "") exitWith {}; 
 
 _index = [_uid,life_wanted_list] call fnc_index;
-if(_index == -1) exitWith {};
+if(_index isEqualTo -1) exitWith {};
 life_wanted_list set[_index,-1];
 life_wanted_list = life_wanted_list - [-1];

@@ -39,7 +39,7 @@ player setVariable ["lockpicking",true,true];
 
 _towtrucks = nearestObjects [player, ["A3L_Towtruck"], 11];
 
-if(count _towtrucks == 0) then {
+if(count _towtrucks isEqualTo 0) then {
 	if(_isVehicle) then {
 			playSound3D ["cg_sndimg\sounds\caralarm.ogg", player, false, getPosASL player, 1, 1, 155];
 	};
@@ -97,9 +97,9 @@ if(!_isVehicle) then {
 		_type = 11;
 		_amount = typeOf _curTarget;
 		[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
-		if(count _towtrucks == 0) then {
+		if(count _towtrucks isEqualTo 0) then {
 		_reason = "487";
-		if(side player == civilian || side player == east) then {
+		if(side player isEqualTo civilian || side player isEqualTo east) then {
 			[player,player,_reason] spawn life_fnc_createEvidence;
 		};
 		};

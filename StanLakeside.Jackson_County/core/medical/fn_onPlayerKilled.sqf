@@ -6,7 +6,7 @@ disableSerialization;
 
 [] spawn {
 	_curWep = currentWeapon player;
-	if(_curWep != "" && vehicle player == player) then {
+	if(_curWep != "" && vehicle player isEqualTo player) then {
 		_chance = round (random 5);
 		while{_chance > 0} do {
 			player forceWeaponFire [_curWep, "Single"];
@@ -18,7 +18,7 @@ disableSerialization;
 if(deadplayer) exitwith {};
 deadPlayer = true;
 
-if(vehicle player == player) then {
+if(vehicle player isEqualTo player) then {
 	player playmove "deadstate";
 };
 
@@ -114,7 +114,7 @@ life_deathCamera camSetRelPos [0,22,22];
 life_deathCamera camSetFOV .5;
 life_deathCamera camSetFocus [50,0];
 life_deathCamera camCommit 0;
-(findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == (_this select 1)) then {true}"]; //Block the ESC menu
+(findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) isEqualTo (_this select 1)) then {true}"]; //Block the ESC menu
 //Create a thread for something?
 
 _unit spawn
@@ -159,7 +159,7 @@ player setdamage 0;
 [] spawn {
 	while{true} do {
 		sleep 1;
-		if( vehicle player == player && animationstate player != "deadstate" ) then {  [player,"DeadState"] remoteExecCall ["life_fnc_animsync"]; };
+		if( vehicle player isEqualTo player && animationstate player != "deadstate" ) then {  [player,"DeadState"] remoteExecCall ["life_fnc_animsync"]; };
 		player setOxygenRemaining 1;
 		if(!deadPlayer) exitwith {};
 	};

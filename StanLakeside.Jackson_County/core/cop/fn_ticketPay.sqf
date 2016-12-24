@@ -31,6 +31,7 @@ hint format[localize "STR_Cop_Ticket_Paid",[life_ticket_val] call life_fnc_numbe
 ["cash","take",life_ticket_val] call life_fnc_handleCash;
 [6] call SOCK_fnc_updatePartial;
 life_ticket_paid = true;
+["Add",10] call fnc_karma;
 [getPlayerUID player] remoteExec ["life_fnc_wantedRemove",2];
 closeDialog 0;
 [1,format[localize "STR_Cop_Ticket_PaidNOTF_2",profileName]] remoteExecCall ["life_fnc_broadcast", -2];

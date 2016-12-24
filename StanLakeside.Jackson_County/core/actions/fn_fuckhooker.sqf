@@ -19,7 +19,7 @@ if(life_karma < 0) then {
 
 _chance = round (random 100);
 
-if(life_std == 0) then {
+if(life_std isEqualTo 0) then {
 	if(_chance > 55) then {
 
 		["Gross, no protection!", false] spawn domsg;
@@ -28,6 +28,7 @@ if(life_std == 0) then {
 };
 
 ["Czujesz sie odprezony od seksu - latwiej Ci sie celuje przez 90 minut.", false] spawn domsg;
+["Remove",20] call fnc_karma;
 life_num = 0;
 uiSleep 1;
 life_num = 5400;

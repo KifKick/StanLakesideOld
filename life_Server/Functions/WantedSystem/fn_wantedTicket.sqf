@@ -8,9 +8,9 @@
 private["_price","_uid","_ind","_entry"];
 _uid = param [0,"",[""]];
 _price = param [1,0,[0]];
-if(_uid == "" OR _price == 0) exitWith {};
+if(_uid isEqualTo "" OR _price isEqualTo 0) exitWith {};
 
 _ind = [_uid,life_wanted_list] call fnc_index;
-if(_ind == -1) exitWith {};
+if(_ind isEqualTo -1) exitWith {};
 life_wanted_list set[_ind,-1];
 life_wanted_list = life_wanted_list - [-1];

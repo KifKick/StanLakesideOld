@@ -12,8 +12,8 @@ _tientallenpic = ctrltext 154268;
 _eentallen = _c4pic_array find _eentallenpic;
 _tientallen = _c4pic_array find _tientallenpic;
 
-if (_eentallen == 9) then {
-	if (_tientallen == 5) then {
+if (_eentallen isEqualTo 9) then {
+	if (_tientallen isEqualTo 5) then {
 		_eentallen = 0;
 		_tientallen = 0;
 	} else {
@@ -39,8 +39,8 @@ _tientallenpic = ctrltext 154268;
 _eentallen = _c4pic_array find _eentallenpic;
 _tientallen = _c4pic_array find _tientallenpic;
 
-	if (_eentallen == 0) then {
-		if (_tientallen == 0) then {
+	if (_eentallen isEqualTo 0) then {
+		if (_tientallen isEqualTo 0) then {
 			_eentallen = 9;
 			_tientallen = 5;
 		} else {

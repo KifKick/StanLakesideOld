@@ -3,7 +3,7 @@
 	Pennyworth	
 */
 
-if(life_requestingTestDrive) exitWith {["You already have a request for a test drive pending.", false] spawn domsg};
+/*if(life_requestingTestDrive) exitWith {["You already have a request for a test drive pending.", false] spawn domsg};
 if!(isNull objectParent player) exitWith {["You cannot test drive a vehicle while already inside a vehicle, exit the vehicle and send the request again.", false] spawn domsg};
 if(life_onTestDrive) exitWith {["You are already on a test drive.", false] spawn domsg};
 
@@ -40,4 +40,4 @@ if(_salesman isEqualTo "") then {
 		};
 		[false,_salesman] spawn life_fnc_testDrive;
 	};
-};
+};*/

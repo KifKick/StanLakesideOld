@@ -124,7 +124,7 @@ private[""_msg"",""_to""];
 	ctrlShow[3022,false];
 	_msg = ctrlText 3003;
 	_to = ""EMS Units"";
-	if(_msg == """") exitWith { [""You must enter a message to send!"", false] spawn domsg; ctrlShow[3022,true];};
+	if(_msg isEqualTo """") exitWith { [""You must enter a message to send!"", false] spawn domsg; ctrlShow[3022,true];};
 		
 	[_msg,name player,5] remoteExecCall [""clientMessage"",independent];
 	[] call life_fnc_cellphone;
@@ -137,11 +137,11 @@ compileFinal "
 	private[""_msg"",""_to""];
 	ctrlShow[3015,false];
 	_msg = ctrlText 3003;
-	if(lbCurSel 3004 == -1) exitWith {[""You must select a player you are sending the text to!"", false] spawn domsg; ctrlShow[3015,true];};
+	if(lbCurSel 3004 isEqualTo -1) exitWith {[""You must select a player you are sending the text to!"", false] spawn domsg; ctrlShow[3015,true];};
 	_to = call compile format[""%1"",(lbData[3004,(lbCurSel 3004)])];
 	if(isNull _to) exitWith {ctrlShow[3015,true];};
 	if(isNil ""_to"") exitWith {ctrlShow[3015,true];};
-	if(_msg == """") exitWith {[""You must enter a message to send!"", false] spawn domsg;ctrlShow[3015,true];};
+	if(_msg isEqualTo """") exitWith {[""You must enter a message to send!"", false] spawn domsg;ctrlShow[3015,true];};
 	
 	[_msg,name player,0] remoteExecCall [""clientMessage"",_to];
 	[] call life_fnc_cellphone;
@@ -155,7 +155,7 @@ compileFinal "
 	ctrlShow[3016,false];
 	_msg = ctrlText 3003;
 	_to = ""The Police"";
-	if(_msg == """") exitWith {[""You must enter a message to send!"", false] spawn domsg;ctrlShow[3016,true];};
+	if(_msg isEqualTo """") exitWith {[""You must enter a message to send!"", false] spawn domsg;ctrlShow[3016,true];};
 		
 	[_msg,name player,1] remoteExecCall [""clientMessage"",true];
 	[] call life_fnc_cellphone;
@@ -169,7 +169,7 @@ compileFinal "
 	ctrlShow[3017,false];
 	_msg = ctrlText 3003;
 	_to = ""The Admins"";
-	if(_msg == """") exitWith {[""You must enter a message to send!"", false] spawn domsg;ctrlShow[3017,true];};
+	if(_msg isEqualTo """") exitWith {[""You must enter a message to send!"", false] spawn domsg;ctrlShow[3017,true];};
 		
 	[_msg,name player,2] remoteExecCall [""clientMessage"",true];
 	[] call life_fnc_cellphone;
@@ -185,7 +185,7 @@ compileFinal "
 	_msg = ctrlText 3003;
 	_to = call compile format[""%1"",(lbData[3004,(lbCurSel 3004)])];
 	if(isNull _to) exitWith {};
-	if(_msg == """") exitWith {[""You must enter a message to send!"", false] spawn domsg;};
+	if(_msg isEqualTo """") exitWith {[""You must enter a message to send!"", false] spawn domsg;};
 	
 	[_msg,name player,3] remoteExecCall [""clientMessage"",_to];
 	[] call life_fnc_cellphone;
@@ -198,7 +198,7 @@ compileFinal "
 	if((call life_adminlevel) < 1) exitWith {[""You are not an admin!"", false] spawn domsg;};
 	private[""_msg"",""_from""];
 	_msg = ctrlText 3003;
-	if(_msg == """") exitWith {[""You must enter a message to send!"", false] spawn domsg;};
+	if(_msg isEqualTo """") exitWith {[""You must enter a message to send!"", false] spawn domsg;};
 	
 	[_msg,name player,4] remoteExecCall [""clientMessage"",true];
 	[] call life_fnc_cellphone;

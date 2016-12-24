@@ -56,7 +56,7 @@ while {true} do
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 if(_target getVariable ["EVIDO",ObjNull] != player) exitWith { ["Ktos juz zbiera te dowody..", false] spawn domsg; };
-if(_bad == 1) exitWith { ["Za bardzo sie oddaliles od dowodow", false] spawn domsg; };
+if(_bad isEqualTo 1) exitWith { ["Za bardzo sie oddaliles od dowodow", false] spawn domsg; };
 if(life_interrupted) exitWith {["Przerwales zbieranie dowodow.", false] spawn domsg};
 
 
@@ -64,20 +64,20 @@ if(life_interrupted) exitWith {["Przerwales zbieranie dowodow.", false] spawn do
 
 [format["Zebrales dowody i dostales premie w wysokosci $8000 za dodanie %1 do listy poszukiwanych za %2.", name _suspect, _crime], false] spawn domsg;
 
-if(_crime == "187") then {
+if(_crime isEqualTo "187") then {
 	[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"187"] remoteExec ["life_fnc_wantedAdd",2];
 };
-if(_crime == "211") then {
+if(_crime isEqualTo "211") then {
 	[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"211"] remoteExec ["life_fnc_wantedAdd",2];
 };
-if(_crime == "487") then {
+if(_crime isEqualTo "487") then {
 	[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"487"] remoteExec ["life_fnc_wantedAdd",2];
 };
-if(_crime == "334") then {
+if(_crime isEqualTo "334") then {
 	[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"334"] remoteExec ["life_fnc_wantedAdd",2];
 };
 
 
-
+["Add",10] call fnc_karma;
 ["cash","add",80] call life_fnc_handleCash;
 deleteVehicle _curTarget;

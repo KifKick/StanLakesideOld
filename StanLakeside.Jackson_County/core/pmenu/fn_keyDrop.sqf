@@ -11,7 +11,7 @@ disableSerialization;
 _dialog = findDisplay 2700;
 _list = _dialog displayCtrl 2701;
 _sel = lbCurSel _list;
-if(_sel == -1) exitWith {["Nic nie wybrano", false] spawn domsg;};
+if(_sel isEqualTo -1) exitWith {["Nic nie wybrano", false] spawn domsg;};
 _index = (parseNumber(_list lbData _sel));
 _vehicle = life_vehicles select _index;
 if(_vehicle isKindOf "House_F") exitWith {["Nie mozesz usunac klucza do wlasnego domu!", false] spawn domsg;};

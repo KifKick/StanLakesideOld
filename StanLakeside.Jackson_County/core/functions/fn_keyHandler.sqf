@@ -9,7 +9,7 @@ params ["_ctrl", "_code", "_shift", "_ctrlKey", "_alt", ["_handled", false, [fal
 _speed = speed cursorTarget;
 if(life_antispamactive) exitWith { _handled; };
 
-_interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0};
+_interactionKey = if(count (actionKeys "User10") isEqualTo 0) then {219} else {(actionKeys "User10") select 0};
 _mapKey = actionKeys "ShowMap" select 0;
 
 //Vault handling...
@@ -43,7 +43,7 @@ switch (_code) do
 	/*case 57:
 	{
 		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
-		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
+		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
 		if((player distance (getMarkerPos "police_mark") > 200) && (player distance (getMarkerPos "police_mark3") > 200) && (player distance (getMarkerPos "police_mark1") > 200)) then {
 			jumpActionTime = time; //Update the time.
 			[player,true] spawn life_fnc_jumpFnc; //Local execution
@@ -104,7 +104,7 @@ switch (_code) do
 	/*//EMP Konsole - O
     case 24:
     {
-        if (!_shift && !_alt && _ctrlKey && (playerSide == west) && (vehicle player != player && (typeOf vehicle player) in ["melb_h6m"])) then
+        if (!_shift && !_alt && _ctrlKey && (playerSide isEqualTo west) && (vehicle player != player && (typeOf vehicle player) in ["melb_h6m"])) then
         {
             [] call life_fnc_openEmpMenu; [_this] call life_fnc_isEmpOperator;
         };
@@ -113,7 +113,7 @@ switch (_code) do
 	//Siren - F9
     case 67:
     {
-        if (!_shift && !_alt && !_ctrlKey && playerSide == west) then
+        if (!_shift && !_alt && !_ctrlKey && playerSide isEqualTo west) then
         {
             [] call life_fnc_actAirSiren;
         };
@@ -122,7 +122,7 @@ switch (_code) do
 	//Siren - F9
     case 67:
     {
-        if (!_shift && !_alt && !_ctrlKey && playerSide == independent) then
+        if (!_shift && !_alt && !_ctrlKey && playerSide isEqualTo independent) then
         {
             [] call life_fnc_medactAirSiren;
         };
@@ -142,15 +142,15 @@ switch (_code) do
 	//code 1 key shift+1
 	case 2:
 	{
-		if((vehicle player) == player && !dialog) then {
+		if((vehicle player) isEqualTo player && !dialog) then {
 			_handled = true;
 		};
-		if(!_shift && !_ctrlkey && playerSide == west) then {
+		if(!_shift && !_ctrlkey && playerSide isEqualTo west) then {
 			createDialog "Life_Charge_Menu";
 		};
 		if(_shift) then
 		{
-			if (vehicle player != player && side player == west) then {
+			if (vehicle player != player && side player isEqualTo west) then {
 				["Kod 1", false] spawn doquickmsg;
 					vehicle player animate ["ani_lightbar", 0];
 					vehicle player animate ["ani_siren", 0];
@@ -193,7 +193,7 @@ switch (_code) do
 		};
 		if(_shift) then
 		{
-			if (vehicle player != player && side player == west) then {
+			if (vehicle player != player && side player isEqualTo west) then {
 				[] spawn life_fnc_AntiSpam2;
 				["Kod 2", false] spawn doquickmsg;
 				if( typeOf(vehicle player) IN ["ivory_isf_marked","ivory_isf_unmarked","ivory_isf_slicktop","ivory_m3_marked","ivory_m3_unmarked","ivory_m3_slicktop","ivory_wrx_marked","ivory_wrx_unmarked","ivory_wrx_slicktop"] ) then {
@@ -220,7 +220,7 @@ switch (_code) do
 	{
 		if(_shift) then
 		{
-			if (vehicle player != player && side player == west) then {
+			if (vehicle player != player && side player isEqualTo west) then {
 				[] spawn life_fnc_AntiSpam2;
 				["Kod 3", false] spawn doquickmsg;
 				if( typeOf(vehicle player) IN ["ivory_isf_marked","ivory_isf_unmarked","ivory_isf_slicktop","ivory_m3_marked","ivory_m3_unmarked","ivory_m3_slicktop","ivory_wrx_marked","ivory_wrx_unmarked","ivory_wrx_slicktop"] ) then {
@@ -265,7 +265,7 @@ switch (_code) do
 			if( vehicle player != player ) then
 			{
 				_locked = locked (vehicle player);
-				if(_locked == 2) then {
+				if(_locked isEqualTo 2) then {
 					_handled = true;
 					[] spawn fnc_doorkick;
 					["Wykopales drzwi pojazdu..", false] spawn domsg;
@@ -291,7 +291,7 @@ switch (_code) do
 			};
 		};
 
-        if( playerSide == west && vehicle player != player && ((driver vehicle player) == player) && _ctrlKey ) then
+        if( playerSide isEqualTo west && vehicle player != player && ((driver vehicle player) isEqualTo player) && _ctrlKey ) then
 		{
 			_veh = vehicle player;
 			if( _veh isKindOf "Car" || _veh isKindOf "Motorcycle" || _veh isKindOf "Motorbike" ) then {
@@ -305,7 +305,7 @@ switch (_code) do
 			};
 		};
 
-        if( playerSide == west && vehicle player != player && ((driver vehicle player) == player) && !_ctrlKey ) then
+        if( playerSide isEqualTo west && vehicle player != player && ((driver vehicle player) isEqualTo player) && !_ctrlKey ) then
 		{
 			_veh = vehicle player;
 			if( _veh isKindOf "Car" || _veh isKindOf "Motorcycle" || _veh isKindOf "Motorbike" ) then {
@@ -320,7 +320,7 @@ switch (_code) do
 			};
 		};
 
-        if( playerSide == independent && vehicle player != player && ((driver vehicle player) == player) && _ctrlKey ) then
+        if( playerSide isEqualTo independent && vehicle player != player && ((driver vehicle player) isEqualTo player) && _ctrlKey ) then
 		{
 			_veh = vehicle player;
 			if( _veh isKindOf "Car" || _veh isKindOf "Motorcycle" || _veh isKindOf "Motorbike" ) then {
@@ -334,7 +334,7 @@ switch (_code) do
 			};
 		};
 
-        if( playerSide == independent && vehicle player != player && ((driver vehicle player) == player) && !_ctrlKey ) then
+        if( playerSide isEqualTo independent && vehicle player != player && ((driver vehicle player) isEqualTo player) && !_ctrlKey ) then
 		{
 			_veh = vehicle player;
 			if( _veh isKindOf "Car" || _veh isKindOf "Motorcycle" || _veh isKindOf "Motorbike" ) then {
@@ -410,7 +410,7 @@ switch (_code) do
 			_handled = true;
 		};
 
-		if(_shift && (driver (vehicle player) == player) && (vehicle player) != player) then {
+		if(_shift && (driver (vehicle player) isEqualTo player) && (vehicle player) != player) then {
 			[] spawn life_fnc_Nos;
 			[] spawn life_fnc_AntiSpam2;
 		};
@@ -423,7 +423,7 @@ switch (_code) do
 			hint parsetext format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>Numer rejestracyjny:</t><br/> %1 ",_plate];
 		};
 
-		if(_shift && !isNull cursorTarget && (playerSide == west || playerSide == independent) && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 3 && !(cursorTarget getVariable ["Escorting", false]) && !(cursorTarget getVariable ["restrained", false]) && vehicle player == player) then
+		if(_shift && !isNull cursorTarget && (playerSide isEqualTo west || playerSide isEqualTo independent) && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 3 && !(cursorTarget getVariable ["Escorting", false]) && !(cursorTarget getVariable ["restrained", false]) && vehicle player isEqualTo player) then
 		{
 			if( "CG_ATF_Handcuffs_i" in magazines player ) then {
 				[] spawn life_fnc_AntiSpam2;
@@ -432,7 +432,7 @@ switch (_code) do
 
 			};
 		};
-		if(_ctrlKey && !isNull cursorTarget && (playerSide == west || playerSide == independent) && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 3 && !(cursorTarget getVariable ["Escorting", false]) && !(cursorTarget getVariable ["restrained", false]) && vehicle player == player) then
+		if(_ctrlKey && !isNull cursorTarget && (playerSide isEqualTo west || playerSide isEqualTo independent) && !life_paintball && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 3 && !(cursorTarget getVariable ["Escorting", false]) && !(cursorTarget getVariable ["restrained", false]) && vehicle player isEqualTo player) then
 		{
 			if( "CG_ATF_Handcuffs_i" in magazines player ) then {
 				[] spawn life_fnc_AntiSpam2;
@@ -449,11 +449,11 @@ switch (_code) do
 	case 34:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && !(cursorTarget getVariable["dead",FALSE]) && cursorTarget distance player < 3 && vehicle player == player) then
+		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && !(cursorTarget getVariable["dead",FALSE]) && cursorTarget distance player < 3 && vehicle player isEqualTo player) then
 		{
 			if((animationState cursorTarget) != "Incapacitated" && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed && !life_paintball && (stance player) != "PRONE") then
 			{
-				if(side player == west) then {
+				if(side player isEqualTo west) then {
 					_curWep = currentWeapon player;
 					if(_curWep != "CG_Torch") then {
 						[cursorTarget] spawn life_fnc_tackleAction;
@@ -471,7 +471,7 @@ switch (_code) do
 				};
 			};
 
-			if ((animationState cursorTarget) != "Incapacitated" && life_breakouton == 2 && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !life_paintball) then {
+			if ((animationState cursorTarget) != "Incapacitated" && life_breakouton isEqualTo 2 && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !life_paintball) then {
 				[cursorTarget] spawn life_fnc_knockoutAction;
 			};
 		};
@@ -481,7 +481,7 @@ switch (_code) do
 	case 20:
 	{
 		/*
-		if(vehicle player == player && _shift && !(player getVariable ["restrained", false]) && !(player getVariable ["tied", false])) then {
+		if(vehicle player isEqualTo player && _shift && !(player getVariable ["restrained", false]) && !(player getVariable ["tied", false])) then {
 			[] spawn life_fnc_punchsystem;
 			_handled = true;
 		};
@@ -541,7 +541,7 @@ switch (_code) do
 				};
 			};
 		};
-		if(count _radios == 0) then {
+		if(count _radios isEqualTo 0) then {
 			if( !_alt && !_ctrlKey ) then {
 				["Nie masz telefonu. CTRL+Y aby otworzyc menu ekwipunku | ALT+Y aby otworzyc menu z kluczykami | CTRL+8 aby zsynchronizowac", false] spawn doquickmsg;
 				_stop = true;
@@ -647,12 +647,12 @@ switch (_code) do
 				_veh = vehicle player;
 			};
 
-			if(_veh isKindOf "House_F" && playerSide == civilian) then {
+			if(_veh isKindOf "House_F" && playerSide isEqualTo civilian) then {
 				if(_veh in life_vehicles && player distance _veh < 8) then {
 					_door = [_veh] call life_fnc_nearestDoor;
-					if(_door == 0) exitWith {[localize "STR_House_Door_NotNear", false] spawn doquickmsg; };
+					if(_door isEqualTo 0) exitWith {[localize "STR_House_Door_NotNear", false] spawn doquickmsg; };
 					_locked = _veh getVariable [format["bis_disabled_Door_%1",_door],0];
-					if(_locked == 0) then {
+					if(_locked isEqualTo 0) then {
 						_veh setVariable[format["bis_disabled_Door_%1",_door],1,true];
 						_veh animate [format["door_%1_rot",_door],0];
 						[localize "STR_House_Door_Lock", false] spawn doquickmsg;
@@ -681,7 +681,7 @@ switch (_code) do
 						[2] call SOCK_fnc_updatePartial;
 					};
 
-					if(_locked == 2) then {
+					if(_locked isEqualTo 2) then {
 
 						if(local _veh) then {
 							_veh lock 0;

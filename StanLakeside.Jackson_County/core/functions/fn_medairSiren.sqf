@@ -9,7 +9,7 @@ if(isNil {_pole getVariable "medairAlarm"}) exitWith {};
 while {true} do {
 	if(!(_pole getVariable "medairAlarm")) exitWith {};
 	if(isNull _pole) exitWith {};
-	if(playerSide == independent) then
+	if(playerSide isEqualTo independent) then
 	{
 	[[5,"<t size='1.2'><t color='#FF0000'>Pozar!</t></t><br/><br/><t size='1'>Wszystkie jednoski, maja udac sie do remizy!</t>"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	};

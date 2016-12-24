@@ -9,7 +9,7 @@ params [["_target", ObjNull, [ObjNull]], ["_who", "", [""]], "_obj"];
 
 if(isNull _target) exitWith {};
 if(_target != player) exitWith {};
-if(_who == "") exitWith {};
+if(_who isEqualTo "") exitWith {};
 
 [format[localize "STR_Civ_KnockedOut",_who], false] spawn domsg;
 player playMoveNow "Incapacitated";

@@ -7,7 +7,7 @@
 */
 private["_type"];
 _type = param [0,"",[""]];
-if(_type == "") exitWith {-1};
+if(_type isEqualTo "") exitWith {-1};
 
 switch (_type) do
 {

@@ -39,7 +39,7 @@ _curTarget = param [0,ObjNull,[ObjNull]];
 if(isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
 
 if(_curTarget isKindOf "House_F") exitWith {
-	if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget) then {
+	if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) isEqualTo _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) isEqualTo _curTarget) then {
 		_display = findDisplay 37400;
 		_Btn1 = _display displayCtrl Btn1;
 		_Btn2 = _display displayCtrl Btn2;
@@ -84,7 +84,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 	};
 };
 		
-if(!isPlayer _curTarget && side _curTarget == civilian) exitWith {closeDialog 0;}; //Bad side check?
+if(!isPlayer _curTarget && side _curTarget isEqualTo civilian) exitWith {closeDialog 0;}; //Bad side check?
 	
 _display = findDisplay 37400;
 _Btn1 = _display displayCtrl Btn1;
@@ -147,7 +147,7 @@ _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
 _Btn8 ctrlSetText localize "STR_pInAct_PatDown";
-_Btn8 buttonSetAction "[] remoteExecCall [""life_fnc_removeWeaponActionCiv"",life_pInact_curTarget]; closeDialog 0;";
+_Btn8 buttonSetAction "[player] remoteExecCall [""life_fnc_removeWeaponActionCiv"",life_pInact_curTarget]; closeDialog 0;";
 
 _Btn9 ctrlSetText localize "STR_pInAct_TestIntox";
 _Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_testIntox;";
@@ -161,7 +161,7 @@ _Btn11 ctrlSetText "Spoleczne";
 _Btn11 buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_parole;";
 
 _Btn12 ctrlSetText localize "STR_pInAct_Strip";
-_Btn12 buttonSetAction "[] remoteExecCall [""life_fnc_removeWeaponAction"",life_pInact_curTarget]; closeDialog 0;";
+_Btn12 buttonSetAction "[player] remoteExecCall [""life_fnc_removeWeaponAction"",life_pInact_curTarget]; closeDialog 0;";
 
 
 

@@ -3,7 +3,7 @@ life_federal_funds = (count playableUnits) * 750;
 life_animals_spawned = false;
 life_animals_array = [];fnc_harvest = {
 _growprcnt = cursortarget getVariable "growprcnt";
-if (_growprcnt == 100) Then {
+if (_growprcnt isEqualTo 100) Then {
 _plants_array = [
 ["A3L_Wheat",1,"wheat",1,"A3L_Seed_wheat"],
 ["A3L_Corn",2,"corn",1,"A3L_Seed_corn"],
@@ -22,7 +22,7 @@ _arraypart = "0";
 {
 _selectedarray = _forEachIndex;
 _arrselplant = _x select 0;
-if(_plantclsname == _arrselplant) then {_arraypart = _selectedarray;};
+if(_plantclsname isEqualTo _arrselplant) then {_arraypart = _selectedarray;};
 } foreach _plants_array;
 _newarray = _plants_array select _arraypart;
 _extra = _newarray select 1;

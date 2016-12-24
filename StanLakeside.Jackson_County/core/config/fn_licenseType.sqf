@@ -8,7 +8,7 @@
 private["_type","_ret","_var","_mode"];
 _type = param [0,"",[""]];
 _mode = param [1,-1,[0]];
-if(_type == "" OR _mode == -1) exitWith {[]};
+if(_type isEqualTo "" OR _mode isEqualTo -1) exitWith {[]};
 
 switch (_mode) do
 {

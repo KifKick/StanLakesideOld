@@ -7,6 +7,7 @@ private["_force"];
 
 player setVariable["intoxicated",true,true];
 [0,format["%1 wstrzyknal sobie heroine!",name player]] remoteExecCall ["life_fnc_broadcast", -2];
+["Remove",30] call fnc_karma;
 
 for "_i" from 0 to 200 do
 {

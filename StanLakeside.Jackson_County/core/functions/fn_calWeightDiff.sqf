@@ -12,7 +12,7 @@ _value = param [1,-1,[0]];
 _cWeight = param [2,-1,[0]];
 _mWeight = param [3,-1,[0]];
 
-if(_item == "" OR _value == -1 OR _cWeight == -1 OR _mWeight == -1) exitWith {};
+if(_item isEqualTo "" OR _value isEqualTo -1 OR _cWeight isEqualTo -1 OR _mWeight isEqualTo -1) exitWith {};
 _weight = ([_item] call life_fnc_itemWeight) * _value;
 _sum = _value;
 

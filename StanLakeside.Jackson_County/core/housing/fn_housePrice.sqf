@@ -12,7 +12,7 @@ _uid = getPlayerUID player;
 if(isNull _house) exitWith {};
 if(!(_house isKindOf "House_F")) exitWith {};
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
-if(count _houseCfg == 0) exitWith {};
+if(count _houseCfg isEqualTo 0) exitWith {};
 
 
 

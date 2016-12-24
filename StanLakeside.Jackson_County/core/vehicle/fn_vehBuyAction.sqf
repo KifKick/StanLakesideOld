@@ -18,9 +18,9 @@ _price = _unit getVariable["vehprice",[]]; //dalsze informacje
 _owner = _unit getVariable["vehowner",[]]; //ostatnia informacja
 _vehOwner = (_vehData select 0) select 0; //wlasciciel pojazdu
 if(isNull _unit OR isPlayer _unit OR isNil {_unit}) exitWith {["Cos poszlo nie tak", false] spawn domsg;}; //sprawdzamy czy wszystko jest dobrze
-if(count _vehData == 0) exitWith {["Pojazd nie pochodzi od bazy danych.", false] spawn domsg;}; //sprawdzamy czy ma informacje
+if(count _vehData isEqualTo 0) exitWith {["Pojazd nie pochodzi od bazy danych.", false] spawn domsg;}; //sprawdzamy czy ma informacje
 if(!(_unit getVariable["vehselling",false])) exitWith { ["Ten pojazd nie jest na sprzedaz!", false] spawn domsg; }; //sprawdzamy czy jest na sprzedaz drugi raz
-if((getPlayerUID player) == _vehOwner) exitWith { ["Nie mozesz kupic wlasnego pojazdu!", false] spawn domsg; }; //nie kupuj swojego pojazdu, duh
+if((getPlayerUID player) isEqualTo _vehOwner) exitWith { ["Nie mozesz kupic wlasnego pojazdu!", false] spawn domsg; }; //nie kupuj swojego pojazdu, duh
 createDialog "life_vehicle_buy"; //otwieramy dialog
 disableSerialization;
 waitUntil {!isnull (findDisplay 4250)}; //czekamy az sie otworzy
@@ -39,7 +39,7 @@ _control ctrlSetStructuredText parseText format[
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
-if(_trunkSpace == -1) then {"Brak"} else {_trunkSpace},
+if(_trunkSpace isEqualTo -1) then {"Brak"} else {_trunkSpace},
 _vehicleInfo select 12
 ]; //ustawiamy informacje o pojezdzie
 

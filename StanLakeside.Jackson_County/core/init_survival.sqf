@@ -131,7 +131,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 	while{true} do
 	{
 		_vehicle = vehicle player;
-		if(vehicle player != player && driver (vehicle player) == player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike") || (_vehicle isKindOf "A3L_Tahoe_Base"))) then {
+		if(vehicle player != player && driver (vehicle player) isEqualTo player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike") || (_vehicle isKindOf "A3L_Tahoe_Base"))) then {
 
 			if((player distance (getMarkerPos "speed_cam_1")) < 20 || (player distance (getMarkerPos "speed_cam_2")) < 20 || (player distance (getMarkerPos "speed_cam_3")) < 20 || (player distance (getMarkerPos "speed_cam_4")) < 20 || (player distance (getMarkerPos "speed_cam_10")) < 20 ) then {
 				_vel = speed player;
@@ -327,12 +327,12 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		_load = round(_cfg / 8);
 		life_maxWeight = life_maxWeightT + _load;
 		waitUntil {uiSleep 1; (backpack player != _bp)};
-		if(backpack player == "") then
+		if(backpack player isEqualTo "") then
 		{
 			life_maxWeight = life_maxWeightT;
 		};
 		//Medycy i policjanci moga przenosic wiecej barierek
-		if(side player == west || side player == independent) then {
+		if(side player isEqualTo west || side player isEqualTo independent) then {
 			life_maxWeight = life_maxWeight + 20;
 		};
 	};
@@ -374,10 +374,10 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 	{
 		_adjust = param [0,"",[""]];
 		_amount = param [1,0,[0]];
-		if(_adjust == "Reset") then { life_battery = 0; };
-		if(_adjust == "Set") then { life_battery = _amount; };
-		if(_adjust == "Add") then { life_battery = life_battery + _amount; };
-		if(_adjust == "Remove") then { life_battery = life_battery - _amount; };
+		if(_adjust isEqualTo "Reset") then { life_battery = 0; };
+		if(_adjust isEqualTo "Set") then { life_battery = _amount; };
+		if(_adjust isEqualTo "Add") then { life_battery = life_battery + _amount; };
+		if(_adjust isEqualTo "Remove") then { life_battery = life_battery - _amount; };
 	};
 
 [] spawn //Rozladowywanie baterii overtime
@@ -395,7 +395,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		if(life_battery < 2) exitwith {["Bateria w telefonie rozladowana.", false] spawn domsg;};
 
 		_batloss = round (random 3);
-		if(vehicle player == player) then {
+		if(vehicle player isEqualTo player) then {
 			["Remove",_batloss] call fnc_battery;
 		} else {
 			if(life_battery < 100) then {
@@ -430,22 +430,22 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 			if (!deadPlayer && _pooplord < 1) then {
 				player setFatigue _pooplord + 0.01;
 				_chance = round (random 95);
-   			 	if(_chance == 19) then {
+   			 	if(_chance isEqualTo 19) then {
    				  	[player,"fart1"] spawn life_fnc_nearestSound;
    				};
-   				if(_chance == 20) then {
+   				if(_chance isEqualTo 20) then {
    				  	[player,"fart2"] spawn life_fnc_nearestSound;
    				};
-   				if(_chance == 21) then {
+   				if(_chance isEqualTo 21) then {
    				  	[player,"fart3"] spawn life_fnc_nearestSound;
    				};
-   				if(_chance == 22 || _chance == 23) then {
+   				if(_chance isEqualTo 22 || _chance isEqualTo 23) then {
    				  	[player,"fart4"] spawn life_fnc_nearestSound;
    				};
-   				if(_chance == 24) then {
+   				if(_chance isEqualTo 24) then {
    				  	[player,"fart5"] spawn life_fnc_nearestSound;
    				};
-   				if(_chance == 25) then {
+   				if(_chance isEqualTo 25) then {
    				  	[player,"fart6"] spawn life_fnc_nearestSound;
    				};
 			};
@@ -465,21 +465,21 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		if(deadPlayer) exitwith {};
 		params [["_adjust", "", [""]], ["_amount", 0, [0]], ["_source", objNull, [objNull]]];
 
-		if(_adjust == "Add") then {
+		if(_adjust isEqualTo "Add") then {
 			myHealth = myHealth - _amount;
 			if(_amount > 0.1) then {
 				[6] spawn life_fnc_HudElements;
 			};
 		};
 
-		if(_adjust == "Remove") then {
+		if(_adjust isEqualTo "Remove") then {
 			myHealth = myHealth + _amount;
 			if(_amount > 0.1) then {
 				[5] spawn life_fnc_HudElements;
 			};
 		};
 
-		if(_adjust == "Set") then {
+		if(_adjust isEqualTo "Set") then {
 			[6] spawn life_fnc_HudElements;
 			myHealth = _amount;
 		};
@@ -503,14 +503,14 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		_adjust = param [0,"",[""]];
 		_type = param [1,"",[""]];
 		_amount = param [2,0,[0]];
-		if(_type == "Food") then {
-			if(_adjust == "Add") then { life_hunger = life_hunger + _amount; };
-			if(_adjust == "Remove") then { life_hunger = life_hunger - _amount; };
+		if(_type isEqualTo "Food") then {
+			if(_adjust isEqualTo "Add") then { life_hunger = life_hunger + _amount; };
+			if(_adjust isEqualTo "Remove") then { life_hunger = life_hunger - _amount; };
 			if(life_hunger > 100) then {life_hunger = 100;};
 		};
-		if(_type == "Drink") then {
-			if(_adjust == "Add") then { life_thirst = life_thirst + _amount; };
-			if(_adjust == "Remove") then { life_thirst = life_thirst - _amount; };
+		if(_type isEqualTo "Drink") then {
+			if(_adjust isEqualTo "Add") then { life_thirst = life_thirst + _amount; };
+			if(_adjust isEqualTo "Remove") then { life_thirst = life_thirst - _amount; };
 			if(life_thirst > 100) then {life_thirst = 100;};
 		};
 	};
@@ -520,8 +520,8 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 	{
 		_adjust = param [0,"",[""]];
 		_amount = param [1,0,[0]];
-		if(_adjust == "Add") then { life_karma = life_karma + _amount; [format["Otrzymales %1 punktow reputacji! Lacznie: %2",_amount,life_karma], false] spawn domsg; };
-		if(_adjust == "Remove") then { life_karma = life_karma - _amount; [format["Utraciles %1 punktow reputacji! Lacznie: %2",_amount,life_karma], false] spawn domsg; };
+		if(_adjust isEqualTo "Add") then { life_karma = life_karma + _amount; [format["Otrzymales %1 punktow reputacji! Lacznie: %2",_amount,life_karma], false] spawn domsg; };
+		if(_adjust isEqualTo "Remove") then { life_karma = life_karma - _amount; [format["Utraciles %1 punktow reputacji! Lacznie: %2",_amount,life_karma], false] spawn domsg; };
 		_oldKarmaLevel = karma_level;
 
 		if(life_karma > 999) then {
@@ -549,7 +549,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		};
 		if (life_dirt > 70) then {
 				_koildebiiii = player getVariable ["diseaseon", 1];
-				if(_koildebiiii == 1) then {
+				if(_koildebiiii isEqualTo 1) then {
 				_diseasechance =  round (random 100);
 
 				if(_diseasechance > 99) then {
@@ -557,7 +557,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 				};
 			};
 		};
-		if (life_dirt == 100) then {
+		if (life_dirt isEqualTo 100) then {
 			_pooplord = getFatigue player;
 			player setFatigue _pooplord + 0.01;
 		};
@@ -657,13 +657,13 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		_myInjuries = _user getVariable "playerInjuries";
 
 		if(_arrayCount < 10) then {
-			if(_amount == 1) then { if("CG_ATF_Bandage_i" in magazines player) then { ["Zakladam bandaz",_user,_myInjuries,_arrayCount,"CG_ATF_Bandage_i",0.05] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu"; }; };
-			if(_amount == 2) then { if("CG_ATF_First_Aid_Kit_i" in magazines player) then { ["Uzywam apteczki",_user,_myInjuries,_arrayCount,"CG_ATF_First_Aid_Kit_i",0.1] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
-			if(_amount == 3) then { if("CG_ATF_First_Aid_Kit_i" in magazines player) then { ["Uzywam apteczki",_user,_myInjuries,_arrayCount,"CG_ATF_First_Aid_Kit_i",0.1] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
-			if(_amount == 4) then { if("CG_bloodbag_i" in magazines player) then { ["Przeprowadzam transfuzje",_user,_myInjuries,_arrayCount,"CG_bloodbag_i",0.15] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
+			if(_amount isEqualTo 1) then { if("CG_ATF_Bandage_i" in magazines player) then { ["Zakladam bandaz",_user,_myInjuries,_arrayCount,"CG_ATF_Bandage_i",0.05] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu"; }; };
+			if(_amount isEqualTo 2) then { if("CG_ATF_First_Aid_Kit_i" in magazines player) then { ["Uzywam apteczki",_user,_myInjuries,_arrayCount,"CG_ATF_First_Aid_Kit_i",0.1] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
+			if(_amount isEqualTo 3) then { if("CG_ATF_First_Aid_Kit_i" in magazines player) then { ["Uzywam apteczki",_user,_myInjuries,_arrayCount,"CG_ATF_First_Aid_Kit_i",0.1] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
+			if(_amount isEqualTo 4) then { if("CG_bloodbag_i" in magazines player) then { ["Przeprowadzam transfuzje",_user,_myInjuries,_arrayCount,"CG_bloodbag_i",0.15] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
 		};
 
-		if(_arrayCount == 10) then {
+		if(_arrayCount isEqualTo 10) then {
 			if(_amount > 0) then { if("CG_antibiotics_i" in magazines player) then { ["Przeprowadzam transfuzje",_user,_myInjuries,_arrayCount,"CG_antibiotics_i",0.2] spawn fnc_healTime; } else { hint "Nie masz wymaganego przedmiotu!"; }; };
 		};
 		//failsafe
@@ -807,7 +807,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		if( damageAmount11 != 0) then { _Btn11 ctrlEnable true; } else { _Btn11 ctrlEnable false; ctrlShow[115,false]; };
 
 		_Btn12 = _display displayCtrl 27;
-		if(playerSide == independent && !(user getVariable ["stwierdzamZgon690", FALSE]) && user getVariable["dead",FALSE]) then {_Btn12 ctrlEnable true;} else {_Btn12 ctrlEnable false;};
+		if(playerSide isEqualTo independent && !(user getVariable ["stwierdzamZgon690", FALSE]) && user getVariable["dead",FALSE]) then {_Btn12 ctrlEnable true;} else {_Btn12 ctrlEnable false;};
 		_Btn12 buttonSetAction "user setVariable [""stwierdzamZgon690"", true, true]; remoteExec [""life_fnc_revivewhendead"", unit]; [getPlayerUID player, profileName, getPlayerUID unit, name unit, 10, ''] remoteExecCall [""ton_fnc_actionlog"",(call life_fnc_hcc)];";
 
 	};
@@ -823,7 +823,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 			if(_injuryLevel > 4) then { _injuryLevel = 4; };
 			_myInjuries set [_currentHitNumber, _injuryLevel];
 
-			if(_currentHitLocation == "Body") then {
+			if(_currentHitLocation isEqualTo "Body") then {
 				_chance = round (random 40);
 				if(_chance < 7) then {
 					_organDamage = round (random 4);
@@ -954,8 +954,8 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 	posinext = param [1,[],[[]]];
 		while{marker_on} do {
 		   	if(player distance posinext < 10 && drawmessage != "Driving Test") exitwith { ["Dotarles do celu!",false] spawn domsg; };
-		   	if(player distance posinext < 110 && drawmessage == "Oil") exitwith { };
-		   	if(drawmessage == "Oil Maintenance" && !maintenance_on) exitwith { };
+		   	if(player distance posinext < 110 && drawmessage isEqualTo "Oil") exitwith { };
+		   	if(drawmessage isEqualTo "Oil Maintenance" && !maintenance_on) exitwith { };
 		   	sleep 0.05;
 	    };
 	    marker_on = false;
@@ -1001,7 +1001,7 @@ fnc_dispatch = {
 	fnc_phone_settings = {
 		_todo = param [0,"",[""]];
 
-		if(_todo == "tags") then {
+		if(_todo isEqualTo "tags") then {
 			if(phone_s_1) then {
 				phone_s_1 = false;
 			} else {
@@ -1009,7 +1009,7 @@ fnc_dispatch = {
 			};
 		};
 
-		if(_todo == "HUD") then {
+		if(_todo isEqualTo "HUD") then {
 			if(phone_s_2) then {
 				phone_s_2 = false;
 				_one = _ui2 displayCtrl 1000;
@@ -1026,7 +1026,7 @@ fnc_dispatch = {
 					_todo2 ctrlshow false;
 					_idc = _idc + 1;
 					_idc2 = _idc2 + 5;
-					if(_idc == 2233) exitwith {};
+					if(_idc isEqualTo 2233) exitwith {};
 				};
 				_one = _ui2 displayCtrl 1000;
 				_one ctrlshow false;
@@ -1043,11 +1043,35 @@ fnc_dispatch = {
 		};
 	};
 
+while{true} do
+{
+	waitUntil {vehicle player != player};
+	waitUntil {isNull objectParent player};
+
+	523423 cutRsc ["HUDGun","PLAIN"]; 
+
+	_time = if (!life_seatbelt) then {time + 2} else {time + 8};
+
+	[] spawn {
+		uiSleep 0.1;
+		if(handgunWeapon player isEqualTo "" && primaryWeapon player isEqualTo "") exitWith {};
+		[player,"AmovPercMstpSnonWnonDnon"] remoteExecCall ["client_fnc_animSync"];
+		player switchMove "AmovPercMstpSnonWnonDnon"; 
+	};
+	while {_time > time} do {
+		if (currentWeapon player != "") then {
+			if(animationstate player isEqualTo "amovpknlmstpsraswpstdnon") then { player switchmove ""; };
+			player action ["SwitchWeapon", player, player, 100];
+		};
+	};
+	523423 cutfadeout 1; 
+};
+
 [] spawn
 {
-	if(side player == civilian) then {
+	if(side player isEqualTo civilian) then {
 		while {true} do {
-			uiSleep 2;
+			uiSleep 20;
 			_radios = player call TFAR_fnc_radiosList;
 			if(count _radios < 2) then {
 
@@ -1063,7 +1087,7 @@ fnc_dispatch = {
 				if(_wtflol) then {
 				_channel = (call TFAR_fnc_ActiveLRRadio) call TFAR_fnc_getLRChannel;
 				_channel = _channel + 1;
-					if (driver (vehicle player) == player && (vehicle player) != player) then {
+					if (driver (vehicle player) isEqualTo player && (vehicle player) != player) then {
 						_curfreqlr = [(call TFAR_fnc_activeLrRadio), _channel] call TFAR_fnc_GetChannelFrequency;
 						_curfreqlr = parseNumber _curfreqlr;
 						if( _curfreqlr > 33 && _curfreqlr < 34 ) then {
@@ -1105,7 +1129,7 @@ fnc_dispatch = {
 							[(call TFAR_fnc_activeSwRadio), _channel, str (round(random 480)+30)] call TFAR_fnc_SetChannelFrequency;
 						};
 					};
-					if((count _radios - 1) == _forEachIndex) then
+					if((count _radios - 1) isEqualTo _forEachIndex) then
 					{
 						player unassignItem (_radios select (_forEachIndex));
 						player assignItem (_radios select 0);
@@ -1160,8 +1184,8 @@ fnc_airkit =
 			{
 				if(life_intox <= 0.02) then {life_intox = 0.00;} else {life_intox = life_intox - 0.02;};
 				switch(true) do {
-					case (life_intox == 0.00): {["Jestes trzezwy.", false] spawn domsg;};
-					case (life_intox == 0.08): {["Mozesz juz prowadzic pojazd.", false] spawn domsg;};
+					case (life_intox isEqualTo 0.00): {["Jestes trzezwy.", false] spawn domsg;};
+					case (life_intox isEqualTo 0.08): {["Mozesz juz prowadzic pojazd.", false] spawn domsg;};
 				};
 			};
 		};
@@ -1239,8 +1263,8 @@ fnc_testaids = {
 fnc_testdupe = {
 	draggingm = false;
 	waituntil {!(isnull (finddisplay 602)) || handle};
-	nodrag1 = (findDisplay 602) DisplayAddEventHandler ["MouseButtonDown", "if(_this select 1 == 0) then { draggingm = true; };"];
-	nodrag2 = (findDisplay 602) DisplayAddEventHandler ["MouseButtonUp", "if(_this select 1 == 0) then { draggingm = false; };"];
+	nodrag1 = (findDisplay 602) DisplayAddEventHandler ["MouseButtonDown", "if(_this select 1 isEqualTo 0) then { draggingm = true; };"];
+	nodrag2 = (findDisplay 602) DisplayAddEventHandler ["MouseButtonUp", "if(_this select 1 isEqualTo 0) then { draggingm = false; };"];
 	nodrag3 = (findDisplay 602) DisplayAddEventHandler ["MouseMoving", " hint format[""%1"",_this]; if(draggingm) then { [] spawn fnc_testaids; };"];
 	waituntil {(isnull (finddisplay 602)) || handle};
 	(findDisplay 602) displayRemoveEventHandler ["MouseButtonDown",nodrag1];
@@ -1270,7 +1294,7 @@ fnc_gut_animal = {
 			uisleep 1;
 			_doorkick = _doorkick - 1;
 			_locked = locked (vehicle player);
-			if(_doorkick == 44 || _doorkick == 25 || _doorkick == 10) then {
+			if(_doorkick isEqualTo 44 || _doorkick isEqualTo 25 || _doorkick isEqualTo 10) then {
 				[player,"glassbreak"] spawn life_fnc_nearestSound;
 			};
 
@@ -1304,7 +1328,7 @@ fnc_gopro = {
 fnc_deletefire = {
 	thefire1 call fnc_deleteFire2;
 	_status = _this select 0;
-	if(_status == "cleaned") then {
+	if(_status isEqualTo "cleaned") then {
 		fire_loc1 = [0,0,0.1];
 	};
 };
@@ -1312,7 +1336,7 @@ fnc_deletefire = {
 //fire
 fnc_deletefire2 = {
  	_unit = _this;
-	{ if (typeOf _x == "#particlesource") then { _x setdamage 1; deleteVehicle _x; } } forEach (_unit nearObjects 10);
+	{ if (typeOf _x isEqualTo "#particlesource") then { _x setdamage 1; deleteVehicle _x; } } forEach (_unit nearObjects 10);
 };
 
 fnc_startfire = {
@@ -1466,7 +1490,7 @@ fnc_CurrentCallMenu = {
 	lbClear _list;
 	{
 		_userID = _x getvariable "PhoneID";
-		if( _userID == _myID ) then {
+		if( _userID isEqualTo _myID ) then {
 			_side = switch(side _x) do {case west: {"Cop"}; case east : {"Mafia"}; case civilian : {"Civ"}; case independent : {"Medic"}; default {"Unknown"}; };
 			_list lbAdd format["%1 - %2", name _x,_side];
 			_list lbSetdata [(lbSize _list)-1,str(_x)];
@@ -1525,13 +1549,13 @@ fnc_checkCall = {
 	_endme = 0;
 	_total = myCallOwner getVariable "PhonecallNumber";
 	_newTotal = _total + 1;
-	if(_total == 0) then {
+	if(_total isEqualTo 0) then {
 		while{tryingCall} do {
 			playSound "cgphone_call";
 			sleep 5;
 			_endme = _endme + 5;
 			_total = myCallOwner getVariable "PhonecallNumber";
-			if(_total == 1) exitwith { [] call fnc_answered; player call fnc_answercall; playSound "cgphone_static"; };
+			if(_total isEqualTo 1) exitwith { [] call fnc_answered; player call fnc_answercall; playSound "cgphone_static"; };
 			if(_endme > 20) exitwith { [] call fnc_noanswer; };
 		};
 	} else {
@@ -1540,7 +1564,7 @@ fnc_checkCall = {
 			sleep 5;
 			_endme = _endme + 5;
 			_total = myCallOwner getVariable "PhonecallNumber";
-			if(_total == _newTotal) exitwith { [] call fnc_answered; };
+			if(_total isEqualTo _newTotal) exitwith { [] call fnc_answered; };
 			if(_endme > 20) exitwith { [] call fnc_noanswer; };
 		};
 	};
@@ -1657,15 +1681,15 @@ fnc_dVol = {
 };
 
 fnc_resetCall = {
-	if(side player == west) exitwith { [] call fnc_ChangePolice; };
-	if(side player == independent) exitwith { [] call fnc_ChangeEMS; };
+	if(side player isEqualTo west) exitwith { [] call fnc_ChangePolice; };
+	if(side player isEqualTo independent) exitwith { [] call fnc_ChangeEMS; };
 	playSound "cgphone_hangup";
 	player setvariable["PhoneCallNumber",0,true];
 	player setvariable["PhoneID",0,true];
 	callInProgress = false;
 	myCallOwner = player;
 	_mynumber = getPlayerUID player;
-	if(side player == civilian) then {
+	if(side player isEqualTo civilian) then {
 		player setVariable ["tf_unable_to_use_radio", true];
 	};
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
@@ -1678,7 +1702,7 @@ fnc_hangup = {
 	if(CallInProgress) then
 	{
 		playSound "cgphone_hangup";
-		if(player == myCallOwner) exitwith {
+		if(player isEqualTo myCallOwner) exitwith {
 			[] call fnc_resetcall;
 			callInProgress = false;
 		};
@@ -1732,7 +1756,7 @@ fnc_tryhangup = {
 		[] call fnc_resetcall;
 	};
 
-	if(myCallOwner == player) exitwith {
+	if(myCallOwner isEqualTo player) exitwith {
 		["Rozlaczam polaczenie.", false] spawn domsg;
 		[] call fnc_resetcall;
 	};
@@ -1753,13 +1777,13 @@ fnc_stereoRotation = {
 	_stereo = _stereo + 1;
 	if(_stereo > 2) then { _stereo = 0; };
 	[(call TFAR_fnc_ActiveSWRadio), _stereo] call TFAR_fnc_setSwStereo;
-	if(_stereo == 0) exitwith { ["Stereo wlaczone.", false] spawn doquickmsg; };
-	if(_stereo == 1) exitwith { ["Dzwiek tylko na lewe ucho.", false] spawn doquickmsg; };
-	if(_stereo == 2) exitwith { ["Dzwiek tylko na prawe ucho.", false] spawn doquickmsg; };
+	if(_stereo isEqualTo 0) exitwith { ["Stereo wlaczone.", false] spawn doquickmsg; };
+	if(_stereo isEqualTo 1) exitwith { ["Dzwiek tylko na lewe ucho.", false] spawn doquickmsg; };
+	if(_stereo isEqualTo 2) exitwith { ["Dzwiek tylko na prawe ucho.", false] spawn doquickmsg; };
 };
 
 fnc_ChangeEMS = {
-	if(side player == civilian || side player == east) exitwith {};
+	if(side player isEqualTo civilian || side player isEqualTo east) exitwith {};
 	player setvariable["PhoneCallNumber",33.1,true];
 	player setvariable["PhoneID",33.1,true];
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
@@ -1772,7 +1796,7 @@ fnc_ChangeEMS = {
 	["Jestes na czestotliwosci EMS!", false] spawn domsg;
 };
 fnc_ChangeDOC = {
-	if(side player == civilian || side player == east) exitwith {};
+	if(side player isEqualTo civilian || side player isEqualTo east) exitwith {};
 	player setvariable["PhoneCallNumber",33.2,true];
 	player setvariable["PhoneID",33.2,true];
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
@@ -1785,7 +1809,7 @@ fnc_ChangeDOC = {
 	["Jestes na czestotliwosci DOC!", false] spawn domsg;
 };
 fnc_ChangePolice = {
-	if(side player == civilian || side player == east) exitwith {};
+	if(side player isEqualTo civilian || side player isEqualTo east) exitwith {};
 	player setvariable["PhoneCallNumber",33.3,true];
 	player setvariable["PhoneID",33.3,true];
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
@@ -2042,7 +2066,7 @@ fnc_castScript = {
 		};
 		playSound3D ["CG_Jobs\sounds\jailbreak\hacking.ogg", player, false, (getposasl player), 3, 1, 55];
 
-		if(typeOf _fenceToOpen == "zac_prison_fence_gate") then {
+		if(typeOf _fenceToOpen isEqualTo "zac_prison_fence_gate") then {
 			hint parsetext format["<img size='1' image='CG_Jobs\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>DATA MODIFIED</t><br/> ACCESS POINT BREACHED.",_calcT];
 			_fenceToOpen animate ['Door_1',5];
 		} else {
@@ -2116,7 +2140,7 @@ fnc_castScript = {
 			if(vehicle _unit != _unit) exitwith {
 				_crew = crew (vehicle player);
 				{
-					if(_x == _unit) then
+					if(_x isEqualTo _unit) then
 					{
 						["cash","add",theirTotal] call life_fnc_handleCash;
 						[format["Osoba wzywajaca taksowke wsiadla do pojazdu. Otrzymujesz $%1 !",theirTotal], false] spawn domsg;
@@ -2144,7 +2168,7 @@ fnc_castScript = {
 		_licenses = "";
 
 		{
-			if(missionNamespace getVariable (_x select 0) && _x select 1 == "civ" && _x select 0 IN safe_licenses) then
+			if(missionNamespace getVariable (_x select 0) && _x select 1 isEqualTo "civ" && _x select 0 IN safe_licenses) then
 			{
 				_licenses = _licenses + ([_x select 0] call life_fnc_varToStr) + " | ";
 			};
@@ -2213,13 +2237,13 @@ fnc_item_CG = {
     _unit = player;
 	_item = lbData [_idc, _selectedIndex];
 
-	if (_item == "CG_Spikes_Collapsed") then { [true] spawn fnc_spikeStrip_cg; [_item] spawn fnc_removeitem; closeDialog 0; };
-	if (_item == "CG_battery_i") then { life_battery = 80; [_item] spawn fnc_removeitem; playSound3D ["cg_sndimg\sounds\phoneSMS.ogg", player, false, getPosASL player, 1, 1, 25]; closeDialog 0; };
-	if (_item == "CG_ATF_Pizza_Box_i") then { [true] spawn life_fnc_pizza; [_item] spawn fnc_removeitem; closeDialog 0; };
-	if (_item == "CG_ATF_Donut_Box_i") then { [true] spawn life_fnc_bronutsbrah; [_item] spawn fnc_removeitem; closeDialog 0; };
-	if (_item == "CG_ATF_Handcuffs_i") then { ["You can restrain with these...", false] spawn domsg; closeDialog 0; };
-	if (_item == "CG_Pro_Item_i") then { [] spawn fnc_GoPro; closeDialog 0; };
-	if (_item == "CG_ATF_Drug_Bottle_01_i") then { [_item] spawn fnc_removeitem; player forceWalk false; [player,"pillswallow"] spawn life_fnc_nearestSound; player setVariable["severeInjuries", nil, true]; closeDialog 0; };
+	if (_item isEqualTo "CG_Spikes_Collapsed") then { [true] spawn fnc_spikeStrip_cg; [_item] spawn fnc_removeitem; closeDialog 0; };
+	if (_item isEqualTo "CG_battery_i") then { life_battery = 80; [_item] spawn fnc_removeitem; playSound3D ["cg_sndimg\sounds\phoneSMS.ogg", player, false, getPosASL player, 1, 1, 25]; closeDialog 0; };
+	if (_item isEqualTo "CG_ATF_Pizza_Box_i") then { [true] spawn life_fnc_pizza; [_item] spawn fnc_removeitem; closeDialog 0; };
+	if (_item isEqualTo "CG_ATF_Donut_Box_i") then { [true] spawn life_fnc_bronutsbrah; [_item] spawn fnc_removeitem; closeDialog 0; };
+	if (_item isEqualTo "CG_ATF_Handcuffs_i") then { ["You can restrain with these...", false] spawn domsg; closeDialog 0; };
+	if (_item isEqualTo "CG_Pro_Item_i") then { [] spawn fnc_GoPro; closeDialog 0; };
+	if (_item isEqualTo "CG_ATF_Drug_Bottle_01_i") then { [_item] spawn fnc_removeitem; player forceWalk false; [player,"pillswallow"] spawn life_fnc_nearestSound; player setVariable["severeInjuries", nil, true]; closeDialog 0; };
 
 	false
 };
@@ -2238,19 +2262,19 @@ fnc_animSelect = {
 
 
 	//eating
-	if(_animSelect == "eat") then {
+	if(_animSelect isEqualTo "eat") then {
 		player switchmove "DSS_Acts_Eat_Erect";
 		uisleep 6;
 	};
 
 	//drinking
-	if(_animSelect == "drink") then {
+	if(_animSelect isEqualTo "drink") then {
 		player switchmove "DSS_Acts_DrinkSoda_Erect";
 		uisleep 6;
 	};
 
 	//fiddling
-	if(_animSelect == "hands") then {
+	if(_animSelect isEqualTo "hands") then {
 		player switchmove "DSS_Acts_Drink_Erect";
 		uisleep 2;
 	};

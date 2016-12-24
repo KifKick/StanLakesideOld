@@ -43,14 +43,14 @@ waitUntil {!isNull (findDisplay 1111)};
 
 _display = findDisplay 1111;
 
-if((_this select 0) == "REFRESH") exitwith {
+if((_this select 0) isEqualTo "REFRESH") exitwith {
 
 	if(isNil "_status") exitwith {};
 
 	if(_status IN _pistolClasses) then {
 		_mySelect = 0;
 		{
-			if(_status == _x) exitwith {};
+			if(_status isEqualTo _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _PistolClasses;
 		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
@@ -66,7 +66,7 @@ if((_this select 0) == "REFRESH") exitwith {
 	if(_status IN _ipistolClasses) then {
 		_mySelect = 0;
 		{
-			if(_status == _x) exitwith {};
+			if(_status isEqualTo _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _iPistolClasses;
 		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
@@ -82,7 +82,7 @@ if((_this select 0) == "REFRESH") exitwith {
 	if(_status IN _iSMGClasses) then {
 		_mySelect = 0;
 		{
-			if(_status == _x) exitwith {};
+			if(_status isEqualTo _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _iSMGClasses;
 		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
@@ -98,7 +98,7 @@ if((_this select 0) == "REFRESH") exitwith {
 	if(_status IN _iMafiaClasses) then {
 		_mySelect = 0;
 		{
-			if(_status == _x) exitwith {};
+			if(_status isEqualTo _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _iMafiaClasses;
 		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
@@ -131,7 +131,7 @@ _list = _display displayCtrl 1113;
 
 lbClear _list;
 
-if((_this select 0) == "FRESH") exitwith {
+if((_this select 0) isEqualTo "FRESH") exitwith {
 
 	_btn3 ctrlShow true;
 
@@ -149,7 +149,7 @@ if(isNil "_status") exitwith { hint "Error with Selection!"; };
 	_btn2 ctrlShow true;
 	_btn5 ctrlShow true;
 
-if(_status == "Pistols") exitwith {
+if(_status isEqualTo "Pistols") exitwith {
 
 	{
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
@@ -159,7 +159,7 @@ if(_status == "Pistols") exitwith {
 
 };
 
-if(_status == "Illegal Pistols") exitwith {
+if(_status isEqualTo "Illegal Pistols") exitwith {
 
 	{
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
@@ -169,7 +169,7 @@ if(_status == "Illegal Pistols") exitwith {
 
 };
 
-if(_status == "Illegal SMGs") exitwith {
+if(_status isEqualTo "Illegal SMGs") exitwith {
 
 	{
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
@@ -179,7 +179,7 @@ if(_status == "Illegal SMGs") exitwith {
 
 };
 
-if(_status == "Mafia") exitwith {
+if(_status isEqualTo "Mafia") exitwith {
 
 	{
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
@@ -190,13 +190,13 @@ if(_status == "Mafia") exitwith {
 };
 
 
-if((_this select 0) == "CRAFT") exitwith {
+if((_this select 0) isEqualTo "CRAFT") exitwith {
 	player addWeapon _status;
 	hint format["You have crafted a %1",_status];
 	closedialog 0;
 };
 
-if((_this select 0) == "CRAFTMAG") exitwith {
+if((_this select 0) isEqualTo "CRAFTMAG") exitwith {
 	_magazines = getArray (configFile / "CfgWeapons" / _status / "magazines");
 	_magazineClass = _magazines select 0; 
 	player addMagazine _magazineClass;

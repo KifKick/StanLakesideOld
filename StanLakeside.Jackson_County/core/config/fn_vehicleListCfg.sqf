@@ -8,7 +8,7 @@
 */
 private["_shop","_return"];
 _shop = param [0,"",[""]];
-if(_shop == "") exitWith {[]};
+if(_shop isEqualTo "") exitWith {[]};
 _return = [];
 switch (_shop) do
 {

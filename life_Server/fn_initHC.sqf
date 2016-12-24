@@ -1,4 +1,4 @@
-#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
+#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 isEqualTo "STRING") then {var2} else {str(var2)})
 /*
 	fn_initHC.sqf
 	Steven Campbell/Kevin

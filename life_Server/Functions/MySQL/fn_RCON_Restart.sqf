@@ -42,7 +42,7 @@ waitUntil{uiSleep 15; life_restartTime - serverTime < 60};
 	if(count (crew vehicle _x) isEqualTo 1) then {
 		deleteVehicle vehicle _x;
 	};
-	if(driver vehicle _x == _x && count (crew vehicle _x) > 1 && vehicle _x isKindOf "Air") then {
+	if(driver vehicle _x isEqualTo _x && count (crew vehicle _x) > 1 && vehicle _x isKindOf "Air") then {
 		{
 			[{
 				player allowDamage false;

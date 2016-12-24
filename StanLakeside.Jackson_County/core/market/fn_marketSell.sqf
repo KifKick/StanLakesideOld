@@ -38,7 +38,7 @@ if( _price > _max)then {_price = _max;};
 if(!_israw) then
 {
 	{
-		if((count _x) == 2) then
+		if((count _x) isEqualTo 2) then
 		{
 		    _relamount = ceil (_amount * (_x select 1));
 		

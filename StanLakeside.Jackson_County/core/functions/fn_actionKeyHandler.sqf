@@ -10,8 +10,8 @@
 private["_curTarget","_isWater", "_veh"];
 if(vehicle player != player) exitWith {
 	_units = [];
-	{if(vehicle _x != _x && player distance _x < 20 && !(_x in crew (vehicle player)) && _x == (driver (vehicle _x))) then {_units pushBack _x};} forEach playableUnits;
-	if(count _units > 0 && count life_racers == 0) then {
+	{if(vehicle _x != _x && player distance _x < 20 && !(_x in crew (vehicle player)) && _x isEqualTo (driver (vehicle _x))) then {_units pushBack _x};} forEach playableUnits;
+	if(count _units > 0 && count life_racers isEqualTo 0) then {
 		_units call KBW_fnc_openDuelUI;
 	};
 }; 
@@ -59,9 +59,9 @@ if(isNull _curTarget) exitWith {
 			[_fish] call life_fnc_catchFish;
 		};
 	} else {
-		if(playerSide == civilian) then {
+		if(playerSide isEqualTo civilian) then {
 			_curWep = currentWeapon player;
-			if ( (_curWep) == "CG_PICKAXE" ) then {
+			if ( (_curWep) isEqualTo "CG_PICKAXE" ) then {
 				[] spawn life_fnc_pickaxeUse;
 			};
 			[] spawn life_fnc_gather;
@@ -69,7 +69,11 @@ if(isNull _curTarget) exitWith {
 	};
 };
 
-
+if (typeOf _curTarget IN ["A3L_Wheat","A3L_Corn","A3L_Beans","A3L_Cannabis","A3L_Cotton","Ficus_Bush_1","A3L_Pumpkin","A3L_Sunflower","Oleander2"]) then {
+	// kwiatek
+	
+	[] call fnc_harvest;
+};
 
 
 
@@ -90,7 +94,7 @@ life_action_inUse = true;
 };
 
 _curTarget = cursorTarget;
-if(!dialog && playerSide == independent && _curTarget isKindOf "Man") exitwith {
+if(!dialog && playerSide isEqualTo independent && _curTarget isKindOf "Man") exitwith {
 	if((_curTarget getVariable["dead",FALSE])) then {
 		[_curTarget] call life_fnc_revivePlayer;
 	} else {
@@ -98,14 +102,10 @@ if(!dialog && playerSide == independent && _curTarget isKindOf "Man") exitwith {
 	};
 };
 
-if (typeOf _curTarget IN ["A3L_Wheat","A3L_Corn","A3L_Beans","A3L_Cannabis","A3L_Cotton","Ficus_Bush_1","A3L_Pumpkin","A3L_Sunflower","Oleander2"]) then {
-	// kwiatek
-	
-	[] call fnc_harvest;
-};
+
 
 if((_curTarget getVariable["dead",FALSE]) && playerSide != independent && !dialog && _curTarget isKindOf "Man") exitwith {
-	if(side _curTarget == independent || side _curTarget == west || side _curTarget == civilian || side _curTarget == east) then {
+	if(side _curTarget isEqualTo independent || side _curTarget isEqualTo west || side _curTarget isEqualTo civilian || side _curTarget isEqualTo east) then {
 		if(_curTarget getVariable["stwierdzamZgon690",FALSE]) then {
 			["Zgon zostal stwierdzony, biedny czlek tak mlodo umarl."]spawn domsg;
 		} else {
@@ -116,19 +116,19 @@ if((_curTarget getVariable["dead",FALSE]) && playerSide != independent && !dialo
 	};
 };
 
-if(!dialog && playerSide == civilian && _curTarget isKindOf "Man" && isPlayer _curtarget && !(_curTarget getVariable["dead",FALSE])) exitwith {
+if(!dialog && playerSide isEqualTo civilian && _curTarget isKindOf "Man" && isPlayer _curtarget && !(_curTarget getVariable["dead",FALSE])) exitwith {
 		[_curTarget] call life_fnc_civInteractionMenu;
 };
 
-if(!dialog && playerSide == east && _curTarget isKindOf "Man" && isPlayer _curtarget && !(_curTarget getVariable["dead",FALSE])) exitwith {
+if(!dialog && playerSide isEqualTo east && _curTarget isKindOf "Man" && isPlayer _curtarget && !(_curTarget getVariable["dead",FALSE])) exitwith {
 		[_curTarget] call life_fnc_civInteractionMenu;
 };
 
-if(playerSide != independent && !dialog && typeOf _curTarget == "Land_Suitcase_F") exitWith {
-	if(playerSide == west) then {
+if(playerSide != independent && !dialog && typeOf _curTarget isEqualTo "Land_Suitcase_F") exitWith {
+	if(playerSide isEqualTo west) then {
 		[] call life_fnc_gatherEvidence;
 	};
-	if(playerSide == civilian || playerSide == east) then {
+	if(playerSide isEqualTo civilian || playerSide isEqualTo east) then {
 		[] call life_fnc_destroyEvidence;
 	};	
 };
@@ -136,7 +136,7 @@ if(playerSide != independent && !dialog && typeOf _curTarget == "Land_Suitcase_F
 
 //If target is a player then check if we can use the cop menu.
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-	if(_curTarget distance player < 5 && !dialog && playerSide == west) then {
+	if(_curTarget distance player < 5 && !dialog && playerSide isEqualTo west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
 } else {
@@ -167,7 +167,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 			if((typeOf _curTarget) in _miscItems) then {
 				//OK, it was a misc item (food,water,etc).
 
-				if ((typeOf _curTarget) == "Land_Sleeping_bag_blue_folded_F") then {
+				if ((typeOf _curTarget) isEqualTo "Land_Sleeping_bag_blue_folded_F") then {
 					private ["_var"];
 					_var = _curTarget getVariable "pickup";
 					if (isNil "_var") exitwith {};
@@ -178,7 +178,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 							  detach _x;
 							} forEach attachedObjects player;
 
-						if (side player == west) then {
+						if (side player isEqualTo west) then {
 								_veh = _this select 0;
 
 								["Bring this suitcase to the PD for a reward!",30,"blue"] spawn domsg;
@@ -226,7 +226,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 								};						
 						};
 						
-						if (side player == civilian || side player == east) then {
+						if (side player isEqualTo civilian || side player isEqualTo east) then {
 								["Bring this suitcase to a trader to get the cash!",30,"blue"] spawn domsg;
 								_curTarget setVariable ["pickup",false,true];
 								_curTarget attachto [player, [0.1,-0.18,0], "rfemur"];
@@ -278,7 +278,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 				waitUntil {scriptDone _handle};
 			} else {
 				//It wasn't a misc item so is it money?
-				if((typeOf _curTarget) == _money && {!(_curTarget getVariable["inUse",false])}) then {
+				if((typeOf _curTarget) isEqualTo _money && {!(_curTarget getVariable["inUse",false])}) then {
 					private["_handle"];
 					_curTarget setVariable["inUse",TRUE,TRUE];
 					_handle = [_curTarget] spawn life_fnc_pickupMoney;

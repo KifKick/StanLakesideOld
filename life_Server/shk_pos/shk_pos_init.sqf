@@ -88,12 +88,12 @@ private ["_pos"];
 _pos = [];
 
 
-if (typename _this == "STRING") then {
+if (typename _this isEqualTo "STRING") then {
 _pos = [_this] call SHK_pos_getPosMarker;
 
 
 } else {
-if (typename (_this select 0) == "STRING") then {
+if (typename (_this select 0) isEqualTo "STRING") then {
 _pos = _this call SHK_pos_getPosMarker;
 } else {
 _pos = _this call SHK_pos_getPos;

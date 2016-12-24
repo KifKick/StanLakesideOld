@@ -8,10 +8,10 @@
 */
 
 private["_type","_index","_price","_var","_amount","_name","_marketprice"];
-if((lbCurSel 2402) == -1) exitWith {};
+if((lbCurSel 2402) isEqualTo -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
 _index = [_type,__GETC__(sell_array)] call fnc_index;
-if(_index == -1) exitWith {};
+if(_index isEqualTo -1) exitWith {};
 _price = (__GETC__(sell_array) select _index) select 1;
 _var = [_type,0] call life_fnc_varHandle;
 _marketprice = [_type] call life_fnc_marketGetSellPrice;
@@ -48,7 +48,7 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
     [] call life_fnc_virt_update;
 };
  
-if(life_shop_type == "heroin") then
+if(life_shop_type isEqualTo "heroin") then
 {
     private["_array","_ind","_val"];
     _array = life_shop_npc getVariable["sellers",[]];

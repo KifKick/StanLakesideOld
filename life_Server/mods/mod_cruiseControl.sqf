@@ -11,7 +11,7 @@ compileFinal "
 	_trigger2 setTriggerActivation [""NONE"", ""PRESENT"", true];
 	_trigger2 setTriggerStatements [""('Car' countType [(vehicle player)] > 0)"",
 	""uwg_cruise = vehicle player;
-	uwg_cruise_control = uwg_cruise addAction ['Tempomat','"""""""" call mod_cruiseControlMenu;',[], 0, false, false, '', 'driver uwg_cruise == player'];"",
+	uwg_cruise_control = uwg_cruise addAction ['Tempomat','"""""""" call mod_cruiseControlMenu;',[], 0, false, false, '', 'driver uwg_cruise isEqualTo player'];"",
 	""uwg_cruise removeAction uwg_cruise_control; uwg_cruise = nil;""];
 ";
 publicVariable "mod_cruiseControl";
@@ -102,9 +102,9 @@ compileFinal "
 		uwg_cruise removeAction uwg_cruise_control;
 		(findDisplay 46) displayAddEventHandler [""KeyDown"",""
 			_keyDown = _this select 1;
-			if (_keyDown == 0x1F) then {
+			if (_keyDown isEqualTo 0x1F) then {
 				if (cruiseControlSet) then {
-					uwg_cruise_control = uwg_cruise addAction ['Tempomat','"""""""" call mod_cruiseControlMenu;',[], 0, false, false, '', 'driver uwg_cruise == player'];
+					uwg_cruise_control = uwg_cruise addAction ['Tempomat','"""""""" call mod_cruiseControlMenu;',[], 0, false, false, '', 'driver uwg_cruise isEqualTo player'];
 					cruiseControlSet = false;
 					hint parseText format [""""
 								<t size='1.30' font='puristaMedium' align='center' color='#0D82DF'>Tempomat</t><br/><br/>

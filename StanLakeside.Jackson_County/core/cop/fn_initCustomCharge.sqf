@@ -10,7 +10,7 @@ _unit = lbData[1338,lbCurSel (1338)];
 _unit = call compile format["%1", _unit];
 if(isNil "_unit") exitwith {};
 if(isNull _unit) exitWith {};
-if(side _unit == west) exitWith {["Nie mozesz oskarzyc o cos policjanta", false] spawn domsg; };
+if(side _unit isEqualTo west) exitWith {["Nie mozesz oskarzyc o cos policjanta", false] spawn domsg; };
 createDialog "Life_customCharge_ui";
 waitUntil{!isNull (findDisplay 13371)};
 waitUntil{isNull (findDisplay 13371) || life_charged};

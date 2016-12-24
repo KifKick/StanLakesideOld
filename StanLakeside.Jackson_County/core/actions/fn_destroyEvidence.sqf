@@ -26,6 +26,7 @@ while {true} do {
 	life_action_inUse = false;
 		deleteVehicle _curTarget;
 		["Zniszczylem dowody..", false] spawn domsg;
+		["Remove",35] call fnc_karma;
 	};
 };
 life_action_inUse = false;

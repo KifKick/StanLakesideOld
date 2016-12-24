@@ -6,7 +6,7 @@
 */
 private["_house"];
 _house = param [0,"",[""]];
-if(_house == "") exitWith {[]};
+if(_house isEqualTo "") exitWith {[]};
 
 /*
 	Return Format:

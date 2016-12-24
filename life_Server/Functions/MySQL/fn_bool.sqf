@@ -14,7 +14,7 @@ switch (_mode) do
 {
 	case 0:
 	{
-		if(typeName _bool == "SCALAR") exitWith {0};
+		if(typeName _bool isEqualTo "SCALAR") exitWith {0};
 		if(_bool) then {1} else {0};
 	};
 

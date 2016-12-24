@@ -1,4 +1,4 @@
-if (side player == west) then {
+if (side player isEqualTo west) then {
 tabletapp_array = [
 ["Player Menu","Player<br />menu","\cg_Client\textures\i_items.paa","\cg_Client\textures\i_items.paa",[""],"playerSettings"],
 ["Keys","Keys","\cg_Client\textures\i_keys.paa","\cg_Client\textures\i_keys.paa",[""],"Life_key_management"],
@@ -110,7 +110,7 @@ if (_amountofapps >= (_appnumber + 1)) then {
 _currentapp = tabletapp_array select _appnumber;
 _curapploc = apploc_array select _appnumber;
 _piclocation = _curapploc select 1;
-if (_onmouse == 1) then {
+if (_onmouse isEqualTo 1) then {
 _selectedpic = _currentapp select 3;
 ((uiNamespace getVariable "tabletmenu") displayCtrl _piclocation) ctrlSetText _selectedpic;
 } else {

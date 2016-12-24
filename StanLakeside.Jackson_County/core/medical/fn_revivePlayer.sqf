@@ -11,14 +11,14 @@ if(isNull _target) exitWith {};
 
 if(player distance _target > 4) exitWith {};
 
-if(_target getVariable ["Reviving",ObjNull] == player) exitWith {[localize "STR_Medic_AlreadyReviving", false] spawn domsg;};
+if(_target getVariable ["Reviving",ObjNull] isEqualTo player) exitWith {[localize "STR_Medic_AlreadyReviving", false] spawn domsg;};
 
 
 //Fetch their name so we can shout it.
 _targetName = _target getVariable["name","Unknown"];
 _title = format[localize "STR_Medic_Progress",_targetName];
 
- if(koil_antispam == 1) exitWith {};
+ if(koil_antispam isEqualTo 1) exitWith {};
 
 [] spawn life_fnc_AntiSpam;
 

@@ -7,7 +7,7 @@
 */
 private["_item"];
 _item = param [0,"",[""]];
-if(_item == "") exitWith {};
+if(_item isEqualTo "") exitWith {};
 
 switch (_item) do
 {

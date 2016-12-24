@@ -8,7 +8,7 @@ private["_items", "_shortname", "_price", "_globalchange", "_lastchange", "_row"
 
 _items = _this select 0;
 
-if(count _items == 0) exitWith {};
+if(count _items isEqualTo 0) exitWith {};
 
 _text = "<t size='1.5' color='#00FF00'>Market Stan Lakeside</t><br/>";
 

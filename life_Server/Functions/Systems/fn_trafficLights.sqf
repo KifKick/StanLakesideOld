@@ -37,7 +37,7 @@ counter = 0;
 
 _lightLoop = {
 	
-	if(counter == 0) exitWith {
+	if(counter isEqualTo 0) exitWith {
 		{
 			_x animate ["switchgreen",0];
 		} foreach active;
@@ -50,7 +50,7 @@ _lightLoop = {
 	if(counter < 17 && {counter > 0}) exitWith {
 		counter = counter + 3;
 	};
-	if(counter == 18) exitWith {
+	if(counter isEqualTo 18) exitWith {
 		{
 			_x animate ["switchgreen",1];
 		} foreach active;
@@ -63,7 +63,7 @@ _lightLoop = {
 	if(counter < 23 && {counter > 17}) exitWith {
 		counter = counter + 3;
 	};
-	if(counter == 24) exitWith {
+	if(counter isEqualTo 24) exitWith {
 		{
 			_x animate ["switchyellow",1];
 		} foreach active;
@@ -82,7 +82,7 @@ _lightLoop = {
 		lightSwitch = true;
 	};
 	
-	if(counter == 27) then {
+	if(counter isEqualTo 27) then {
 		counter = 0;
 	};
 	

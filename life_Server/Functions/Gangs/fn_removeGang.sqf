@@ -10,7 +10,7 @@ params [["_group", grpNull, [grpNull]], "_groupID", "_result"];
 if(isNull _group) exitWith {};
 
 _groupID = _group getVariable["gang_id",-1];
-if(_groupID == -1) exitWith {};
+if(_groupID isEqualTo -1) exitWith {};
 
 
 [format["UPDATE gangs SET active='0' WHERE id='%1'",_groupID],1] call DB_fnc_asyncCall;

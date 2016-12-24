@@ -102,6 +102,7 @@ life_koil_race = 0;
 life_koil_race2 = 0;
 life_rip = 0;
 life_ApplyAir = false;
+client_firstCombatActive = false;
 prevent_loot = false;
 life_nos_active = 2;
 life_dontsell = 0;

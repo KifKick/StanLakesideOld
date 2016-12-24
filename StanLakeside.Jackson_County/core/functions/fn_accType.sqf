@@ -20,7 +20,7 @@
 private["_item","_type","_tmp","_ret","_weaponArray"];
 _item = param [0,"",[""]];
 _type = param [1,0,[0]];
-if(_item == "" || _type == 0) exitWith {0};
+if(_item isEqualTo "" || _type isEqualTo 0) exitWith {0};
 _ret = 0;
 
 _weaponArray = [primaryWeapon player, secondaryWeapon player, handgunWeapon player];
@@ -52,7 +52,7 @@ _weaponArray = [primaryWeapon player, secondaryWeapon player, handgunWeapon play
 				if(_ret != 0) exitWith {};
 				_cfg = getNumber(configFile >> "CfgWeapons" >> _weapon >> "WeaponSlotsInfo" >> _x >> "compatibleItems" >> _item);
 				if(isNil "_cfg") then {_cfg = 0;};
-				if(_cfg == 1) exitWith
+				if(_cfg isEqualTo 1) exitWith
 				{
 					_ret = switch(_weapon) do {case (primaryWeapon player): {1};case (secondaryWeapon player) : {2};case (handgunWeapon player): {3};default {0};};
 				};

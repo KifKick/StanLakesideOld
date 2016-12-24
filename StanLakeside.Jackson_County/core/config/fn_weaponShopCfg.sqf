@@ -17,7 +17,7 @@
 
 params [["_shop", "", [""]]];
 
-if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
+if(_shop isEqualTo "") exitWith {closeDialog 0}; //Bad shop type passed.
 _ret = [];
  
 switch(_shop) do

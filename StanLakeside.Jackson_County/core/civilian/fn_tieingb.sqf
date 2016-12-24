@@ -58,7 +58,7 @@ player addheadgear "mgsr_headbag";
 
 		if(vehicle player != player) then
 		{
-			if(driver (vehicle player) == player) then {
+			if(driver (vehicle player) isEqualTo player) then {
 				player action["eject",vehicle player]
 			};
 		};

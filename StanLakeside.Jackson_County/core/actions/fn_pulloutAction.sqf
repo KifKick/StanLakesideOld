@@ -9,7 +9,7 @@ private["_crew"];
 _crew = crew cursorTarget;
 _veh = cursortarget;
 
-if(side player == civilian && !(_veh in life_vehicles)) exitwith {};
+if(side player isEqualTo civilian && !(_veh in life_vehicles)) exitwith {};
 
 {
 	_x setVariable ["transporting", nil, true]; 

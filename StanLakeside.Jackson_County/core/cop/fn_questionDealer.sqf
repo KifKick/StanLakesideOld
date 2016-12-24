@@ -7,7 +7,7 @@
 */
 private["_sellers","_names"];
 _sellers = (_this select 0) getVariable["sellers",[]];
-if(count _sellers == 0) exitWith {[localize "STR_Cop_DealerQuestion", false] spawn domsg;}; //No data.
+if(count _sellers isEqualTo 0) exitWith {[localize "STR_Cop_DealerQuestion", false] spawn domsg;}; //No data.
 life_action_inUse = true;
 _names = "";
 {
@@ -17,6 +17,7 @@ _names = "";
 	};
 	[_x select 0,_x select 1,"483",_val] remoteExec ["life_fnc_wantedAdd",2];
 	_names = _names + format["%1<br/>",_x select 1];
+	["Add",5] call fnc_karma;
 } foreach _sellers;
 
 hint parseText format[(localize "STR_Cop_DealerMSG")+ "<br/><br/>%1",_names];

@@ -1,6 +1,6 @@
 _isRally2 = param [3,false,[false]];
 
-if( life_koil_rally == 1 ) exitWith { ["You were recently in a rally, please wait.", false] spawn domsg; };
+if( life_koil_rally isEqualTo 1 ) exitWith { ["You were recently in a rally, please wait.", false] spawn domsg; };
 
 
 if(life_action_inUse) exitWith {

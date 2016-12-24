@@ -22,7 +22,7 @@ fnc_stopsound = {
 
 A3L_fnc_AlarmHint = {
 if (isDedicated) exitwith {};
-	if (side player == west) then {
+	if (side player isEqualTo west) then {
 		["911 Automatic Dispatch: The bank in Lakeside is being robbed!",false] spawn domsg;
 	};
 };

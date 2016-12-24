@@ -8,7 +8,7 @@
 private["_itemList","_index","_config","_priceTag"];
 _index = param [1,-1,[0]];
 _shop = uiNamespace getVariable ["Weapon_Shop",""];
-if(_index == -1 OR _shop == "") exitWith {systemChat "Bad Data Filter"; closeDialog 0;}; //Bad data passing.
+if(_index isEqualTo -1 OR _shop isEqualTo "") exitWith {systemChat "Bad Data Filter"; closeDialog 0;}; //Bad data passing.
 
 uiNamespace setVariable["Weapon_Shop_Filter",_index];
 //Setup List Control & Purge it.
@@ -58,7 +58,7 @@ switch (_index) do
 				_itemInfo = [_x] call life_fnc_fetchCfgDetails;
 				_listedItems pushBack _x;
 				
-				_itemCount = {_x == (_itemInfo select 0)} count _config;
+				_itemCount = {_x isEqualTo (_itemInfo select 0)} count _config;
 				if(_itemCount > 1) then
 				{
 					_itemList lbAdd format["[%2] %1",_itemInfo select 1,_itemCount];

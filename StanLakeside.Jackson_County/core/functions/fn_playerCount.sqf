@@ -8,4 +8,4 @@
 private["_faction"];
 _faction = param [0,civilian,[independent]];
 
-{side _x == _faction} count playableUnits;
+{side _x isEqualTo _faction} count playableUnits;

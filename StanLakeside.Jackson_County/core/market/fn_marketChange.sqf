@@ -139,7 +139,7 @@ switch(true) do
 			_globalchange = _x select 2;
 		
 			{
-				if((_x select 0) == _shortname) exitWith
+				if((_x select 0) isEqualTo _shortname) exitWith
 				{
 					_defaultprice = _x select 1;
 				};

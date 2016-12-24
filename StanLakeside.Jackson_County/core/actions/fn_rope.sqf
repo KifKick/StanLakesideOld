@@ -5,7 +5,7 @@ koils a dick head
 private["_sum","_breakaction"];
 
 
-if(life_rope == 2) exitWith { 
+if(life_rope isEqualTo 2) exitWith { 
 ["Nie mozesz tego zrobic.", false] spawn domsg;
 titleFadeOut 5;
 }; 
@@ -41,7 +41,7 @@ _cme = _cme + 1;
 			_id = _this select 1;
 			_suitcaseDeleted = false;
 			life_rope = 2;
-			while {(_veh IN (attachedObjects player)) OR (_suitcaseDeleted) OR life_rope == 2} do {
+			while {(_veh IN (attachedObjects player)) OR (_suitcaseDeleted) OR life_rope isEqualTo 2} do {
 				if ((!(isNull objectParent player)) && (!(_suitcaseDeleted))) then 
 				{
 					player removeAction _id;

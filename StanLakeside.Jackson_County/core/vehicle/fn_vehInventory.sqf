@@ -24,11 +24,11 @@ if(_veh isKindOf "House_F") then {
 	_veh_data = [_veh] call life_fnc_vehicleWeight;
 };
 
-if(_veh_data select 0 == -1) exitWith {closeDialog 0};
+if(_veh_data select 0 isEqualTo -1) exitWith {closeDialog 0};
 
 ctrlSetText[3504,format["Weight: %1/%2",_veh_data select 1,_veh_data select 0]];
 _data = _veh getVariable ["Trunk",[]];
-if(count _data == 0) then {_veh setVariable["Trunk",[[],0],true]; _data = [];} else {_data = _data select 0;};
+if(count _data isEqualTo 0) then {_veh setVariable["Trunk",[[],0],true]; _data = [];} else {_data = _data select 0;};
 //Player Inventory Items
 {
 	//Money Handle

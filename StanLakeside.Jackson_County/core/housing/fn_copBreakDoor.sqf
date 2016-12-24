@@ -12,7 +12,7 @@ if(isNil {(_house getVariable "house_owner")}) exitWith {[localize "STR_House_Ra
 _uid = (_house getVariable "house_owner") select 0;
 
 _door = [_house] call life_fnc_nearestDoor;
-if(_door == 0) exitWith {[localize "STR_Cop_NotaDoor", false] spawn domsg;};
+if(_door isEqualTo 0) exitWith {[localize "STR_Cop_NotaDoor", false] spawn domsg;};
 
 life_action_inUse = true;
 

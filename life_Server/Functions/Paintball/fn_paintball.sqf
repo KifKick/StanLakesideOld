@@ -16,6 +16,6 @@ if (pb_spielstatus isEqualTo 1) then {
 	};
 };
 
-if ((pb_spielstatus==2&&count pb_spieler>=2)||(count pb_spieler==pb_maxspieler)) then {
+if ((pb_spielstatusisEqualTo2&&count pb_spieler>=2)||(count pb_spielerisEqualTopb_maxspieler)) then {
 	[1,"The game has already begun..!"] remoteExec ["life_fnc_pb_response",_uid];
 };

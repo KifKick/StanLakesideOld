@@ -31,7 +31,7 @@ if( _unit distance _myposy > 3 ) exitwith {
 
 
 
-if ( side _nearestPlayer == west ) then {
+if ( side _nearestPlayer isEqualTo west ) then {
 	["bank","take", life_bail_amount] call life_fnc_handleCash;
 	player setPos (getMarkerPos "jail_release");
 	life_bail_paid = true;

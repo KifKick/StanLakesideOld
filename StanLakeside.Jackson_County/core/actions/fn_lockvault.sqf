@@ -4,7 +4,7 @@ lockvault
 cgbankvault is the variable name
 */
 
-if (side player == west && cgbankvault animationPhase "d_l_Anim" == 1) then {
+if (side player isEqualTo west && cgbankvault animationPhase "d_l_Anim" isEqualTo 1) then {
 	["Zamykasz sejf.", false] spawn domsg;
 	uiSleep 5;
 	cgbankvault animate ["d_l_Anim",0];

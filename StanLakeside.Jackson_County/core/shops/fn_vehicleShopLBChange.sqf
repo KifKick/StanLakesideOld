@@ -27,7 +27,7 @@ ctrlShow [2330,true];
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
-if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
+if(_trunkSpace isEqualTo -1) then {"None"} else {_trunkSpace},
 _vehicleInfo select 12,
 _vehicleInfo select 9
 ];
@@ -37,7 +37,7 @@ lbClear _ctrl;
 _colorArray = [_className] call life_fnc_vehicleColorCfg;
 
 for "_i" from 0 to count(_colorArray)-1 do {
-	if((_colorArray select _i) select 1 == (life_veh_shop select 2)) then {
+	if((_colorArray select _i) select 1 isEqualTo (life_veh_shop select 2)) then {
 		_temp = [_className,_i] call life_fnc_vehicleColorStr;
 		_ctrl lbAdd format["%1",_temp];
 		_ctrl lbSetValue [(lbSize _ctrl)-1,_i];

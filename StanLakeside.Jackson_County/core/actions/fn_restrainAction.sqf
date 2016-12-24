@@ -17,7 +17,7 @@ life_antispamactive = true;
 _unit = cursorTarget;
 if(isNull _unit) exitWith {}; //Not valid
 if((_unit getVariable ["restrained", false])) exitWith {};
-if(player == _unit) exitWith {};
+if(player isEqualTo _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
 

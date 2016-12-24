@@ -15,7 +15,7 @@ if(isNull _display) exitWith {hint "Dialog not open!"; };
 _selectedindex = lbCurSel 1500;
 
 //If selected index is -1, set it to 0 (triggers refresh)
-if(_selectedindex == -1) then
+if(_selectedindex isEqualTo -1) then
 {
 	lbSetCurSel [1500, 0];
 	
@@ -36,7 +36,7 @@ else
 	ctrlSetText [1000, lbText [1500, _selectedindex] ]; //Set name
 	
 	{
-		if((_x select 0) == _shortname) exitWith
+		if((_x select 0) isEqualTo _shortname) exitWith
 		{
 			ctrlSetText [1001, format["$%1", [_x select 1] call life_fnc_numberText ] ];
 			

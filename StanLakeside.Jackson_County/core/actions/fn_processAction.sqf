@@ -10,7 +10,7 @@ _vendor = param [0,ObjNull,[ObjNull]];
 _type = param [3,"",[""]];
 _cops = west countSide playableUnits;
 //Error check
-if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
+if(isNull _vendor OR _type isEqualTo "" OR (player distance _vendor > 10)) exitWith {};
 
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
@@ -33,7 +33,7 @@ _itemInfo = switch (_type) do
 };
 
 //Error checking
-if(count _itemInfo == 0) exitWith {};
+if(count _itemInfo isEqualTo 0) exitWith {};
 
 //Setup vars.
 _oldItem = _itemInfo select 0;
@@ -48,7 +48,7 @@ _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 _weight = ([_oldItem] call life_fnc_itemWeight) * _oldVal;
 _cost = round(_cost * _oldVal);
 //Some more checks
-if(_oldVal == 0) exitWith {};
+if(_oldVal isEqualTo 0) exitWith {};
 
 if (_cops < 2 && _type in ["heroin","marijuana","meth","MDMA","coke","uran","uranp"]) exitWith {
 	["Mozesz przetwarzac dopiero od 2 policjantow na serwerze!", false] spawn domsg;

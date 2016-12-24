@@ -9,9 +9,9 @@ private["_uid","_type","_index","_data","_crimes","_val","_customBounty","_name"
 _uid = param [0,"",[""]];
 _name = param [1,"",[""]];
 _type = _this select 2;
-if(_uid == "" OR _name == "") exitWith {}; 
+if(_uid isEqualTo "" OR _name isEqualTo "") exitWith {}; 
 
-if(typeName _type == "STRING") then {
+if(typeName _type isEqualTo "STRING") then {
 	switch(_type) do
 	{
 		case "187": {_type = ["Manslaughter",8500]};
@@ -31,7 +31,7 @@ if(typeName _type == "STRING") then {
 		default {_type = [];};
 	};
 };
-if(count _type == 0) exitWith {}; 
+if(count _type isEqualTo 0) exitWith {}; 
 
 
 _index = [_uid,life_wanted_list] call fnc_index;

@@ -9,7 +9,7 @@ _price = _this select 1;
 _send = [_this,2,true] call BIS_fnc_param;
 
 {
-	if((_x select 0) == _shortname) exitWith
+	if((_x select 0) isEqualTo _shortname) exitWith
 	{
 		life_market_prices set [_forEachIndex, _price];
 	};

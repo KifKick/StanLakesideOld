@@ -12,7 +12,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 
 	_query = format["SELECT houses.id, houses.pid, houses.pos, players.name FROM houses INNER JOIN players ON houses.pid=players.playerid WHERE houses.owned='1' LIMIT %1,10",_x];
 	_queryResult = [_query,2,true] call DB_fnc_asyncCall;
-	if(count _queryResult == 0) exitWith {};
+	if(count _queryResult isEqualTo 0) exitWith {};
 
 	{
 		_pos = call compile format["%1",_x select 2];

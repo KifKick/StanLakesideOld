@@ -8,7 +8,7 @@ life_is_arrested = false;
 [5] call SOCK_fnc_updatePartial;
 player setVariable["life_is_arrested", nil, true];
 [player] remoteExecCall ["life_fnc_svr_releasePrison",2];
-if ( _release == 1 || life_bail_paid ) then {
+if ( _release isEqualTo 1 || life_bail_paid ) then {
 	
 	if (isNil "A3L_Fnc_OldUniform") then 
 	{

@@ -9,12 +9,12 @@
 
 private["_item"];
 disableSerialization;
-if((lbCurSel 2005) == -1) exitWith {[localize "STR_ISTR_SelectItemFirst", false] spawn domsg;};
+if((lbCurSel 2005) isEqualTo -1) exitWith {[localize "STR_ISTR_SelectItemFirst", false] spawn domsg;};
 _item = lbData[2005,(lbCurSel 2005)];
 
 switch (true) do
 {
-	case (_item == "water"):
+	case (_item isEqualTo "water"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -29,7 +29,7 @@ switch (true) do
 			player setFatigue 0;
 		};
 	};
-	case (_item == "nos"):
+	case (_item isEqualTo "nos"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -38,30 +38,30 @@ switch (true) do
 	};
 	
 
-	case (_item == "panicbutton"):
+	case (_item isEqualTo "panicbutton"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			if( side player == west && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
+			if( side player isEqualTo west && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
 				[1,format["911: %1 JEST W NIEBEZPIECZENSTWIE!",name player]] remoteExecCall ["life_fnc_broadcast", west];
 				[player,"panicbutton"] spawn life_fnc_nearestSound;
 				["dpanic", false] remoteExec ["fnc_dispatch",west];
 			};
-			if( side player == independent && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
+			if( side player isEqualTo independent && !life_knockout && !(player getVariable["restrained",false]) && !(player getVariable["tied",false]) && !life_istazed ) then {
 				[1,format["911: %1 JEST W NIEBEZPIECZENSTWIE!",name player]] remoteExecCall ["life_fnc_broadcast", west];
 				["dpanic", false] remoteExec ["fnc_dispatch",west];
 			};
 		};
 	};
 
-	case (_item == "weddingring"):
+	case (_item isEqualTo "weddingring"):
 	{
 		if( life_married != "-2" ) then 
 		{
 			if(([false,_item,1] call life_fnc_handleInv)) then
 			{
 				["Wspaniale! Ktos chce sie zawrzec z Toba zwiazek malzenski!", false] spawn domsg;
-				if(life_married == "-1") then {
+				if(life_married isEqualTo "-1") then {
 					life_married = "someone";
 				};
 				if(life_married != "") then {
@@ -76,7 +76,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "condom"):
+	case (_item isEqualTo "condom"):
 	{
 			if(([false,_item,1] call life_fnc_handleInv)) then
 			{
@@ -86,7 +86,7 @@ switch (true) do
 
 
 
-	case (_item == "coffee"):
+	case (_item isEqualTo "coffee"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -111,7 +111,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "cigarette"):
+	case (_item isEqualTo "cigarette"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -121,7 +121,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "zoobeer"):
+	case (_item isEqualTo "zoobeer"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -135,7 +135,7 @@ switch (true) do
 	
 
 
-	case (_item == "zoobeer2"):
+	case (_item isEqualTo "zoobeer2"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -149,7 +149,7 @@ switch (true) do
 
 
 
-	case (_item == "vodka"):
+	case (_item isEqualTo "vodka"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -165,7 +165,7 @@ switch (true) do
 
 
 
-	case (_item == "jackdaniels"):
+	case (_item isEqualTo "jackdaniels"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -178,7 +178,7 @@ switch (true) do
 	};
 
 
-	case (_item == "jagerbomb"):
+	case (_item isEqualTo "jagerbomb"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -192,7 +192,7 @@ switch (true) do
 
 
 
-	case (_item == "absinthe"):
+	case (_item isEqualTo "absinthe"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -204,7 +204,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "redwine"):
+	case (_item isEqualTo "redwine"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -217,7 +217,7 @@ switch (true) do
 	};
 
 
-	case (_item == "whitewine"):
+	case (_item isEqualTo "whitewine"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -230,7 +230,7 @@ switch (true) do
 	};
 
 
-	case (_item == "whiterussian"):
+	case (_item isEqualTo "whiterussian"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -243,7 +243,7 @@ switch (true) do
 	};
 
 
-	case (_item == "sexonthebeach"):
+	case (_item isEqualTo "sexonthebeach"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -256,7 +256,7 @@ switch (true) do
 	};
 
 
-	case (_item == "tequila"):
+	case (_item isEqualTo "tequila"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -268,7 +268,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "jackdanielsandcoke"):
+	case (_item isEqualTo "jackdanielsandcoke"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -282,7 +282,7 @@ switch (true) do
 
 
 
-	case (_item == "Rax's Rum"):
+	case (_item isEqualTo "Rax's Rum"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -293,16 +293,16 @@ switch (true) do
 			[] spawn fnc_intox;
 		};
 	};
-	case (_item == "boltcutter"): {
+	case (_item isEqualTo "boltcutter"): {
 		[cursorTarget] spawn life_fnc_boltcutter;
 		closeDialog 0;
 	};
 	
-	case (_item == "blastingcharge"): {
+	case (_item isEqualTo "blastingcharge"): {
 		[localize "STR_ISTR_Blast_VaultOnly", false] spawn domsg;
 	};
 
-	case (_item == "marijuana"):
+	case (_item isEqualTo "marijuana"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -312,7 +312,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "methp"):
+	case (_item isEqualTo "methp"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -322,7 +322,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "MDMAp"):
+	case (_item isEqualTo "MDMAp"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -333,7 +333,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "cokep"):
+	case (_item isEqualTo "cokep"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -344,7 +344,7 @@ switch (true) do
 	};
 
 
-	case (_item == "bec"):
+	case (_item isEqualTo "bec"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -355,7 +355,7 @@ switch (true) do
 	};
 
 
-	case (_item == "cokep"):
+	case (_item isEqualTo "cokep"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -373,7 +373,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "heroinp"):
+	case (_item isEqualTo "heroinp"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -386,14 +386,14 @@ switch (true) do
 		};
 	};
 	
-	case (_item == "defusekit"): {
+	case (_item isEqualTo "defusekit"): {
 		[cursorTarget] spawn life_fnc_defuseKit;
 	};
 
-	case (_item == "BarGate"):
+	case (_item isEqualTo "BarGate"):
 	{
 		if(!isNull life_bargate) exitWith {["You already have a BarGate active in deployment", false] spawn domsg;};
-		if(playerSide == west || playerSide == independent) then 
+		if(playerSide isEqualTo west || playerSide isEqualTo independent) then 
 		{
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
@@ -402,11 +402,11 @@ switch (true) do
 		};
 	};
 
-	case (_item == "RoadCone"):
+	case (_item isEqualTo "RoadCone"):
 	{
 		if(!isNull life_roadcone) exitWith {["You already have a Roadcone active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide isEqualTo west || playerSide isEqualTo independent) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[] spawn life_fnc_RoadCone;
@@ -414,33 +414,33 @@ switch (true) do
 		};
 	};
 
-	case (_item == "RoadConeB"):
+	case (_item isEqualTo "RoadConeB"):
 	{
 		if(!isNull life_roadcone) exitWith {["You already have a Blinking Roadcone active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide isEqualTo west || playerSide isEqualTo independent) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[true] spawn life_fnc_RoadCone;
 			};
 		};
 	};
-	case (_item == "RoadConeStrip"):
+	case (_item isEqualTo "RoadConeStrip"):
 	{
 		if(!isNull life_roadcone) exitWith {["You already have a Roadcone Strip active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide isEqualTo west || playerSide isEqualTo independent) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[] spawn life_fnc_RoadConeStrip;
 			};
 		};
 	};
-	case (_item == "RoadConeStripB"):
+	case (_item isEqualTo "RoadConeStripB"):
 	{
 		if(!isNull life_roadcone) exitWith {["You already have a Blinking Roadcone Strip active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide isEqualTo west || playerSide isEqualTo independent) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[true] spawn life_fnc_RoadConeStrip;
@@ -448,7 +448,7 @@ switch (true) do
 		};
 	};
 
-	case (_item == "RoadBlockConc"):
+	case (_item isEqualTo "RoadBlockConc"):
 	{
 		if(!isNull life_roadblock) exitWith {["You already have a Road Block active in deployment", false] spawn domsg;};
 			if(([false,_item,1] call life_fnc_handleInv)) then 
@@ -457,11 +457,11 @@ switch (true) do
 			};
 	};
 
-	case (_item == "RoadBlockWood"):
+	case (_item isEqualTo "RoadBlockWood"):
 	{
 		if(!isNull life_roadblock) exitWith {["You already have a Road Block active in deployment", false] spawn domsg;};
 		//if cop override and allow use of item
-		if(playerSide == west || playerSide == independent) then {
+		if(playerSide isEqualTo west || playerSide isEqualTo independent) then {
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{
 				[] spawn life_fnc_RoadBlockWood;
@@ -473,7 +473,7 @@ switch (true) do
 		[_item] call life_fnc_storageBox;
 	};
 	
-	case (_item == "redgull"):
+	case (_item isEqualTo "redgull"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
@@ -496,13 +496,13 @@ switch (true) do
 		};
 	};
 	
-	case (_item == "fuelF"):
+	case (_item isEqualTo "fuelF"):
 	{
 		if(vehicle player != player) exitWith {[localize "STR_ISTR_RefuelInVehicle", false] spawn domsg;};
 		[] spawn life_fnc_jerryRefuel;
 	};
 	
-	case (_item == "lockpick"):
+	case (_item isEqualTo "lockpick"):
 	{
 		[] spawn life_fnc_lockpick;
 	};

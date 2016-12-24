@@ -34,7 +34,7 @@ if(_ammo isEqualTo "SmokeShellYellow") exitwith {
 
 
 
-if(currentWeapon _unit == "A3L_Extinguisher") exitwith {
+if(currentWeapon _unit isEqualTo "A3L_Extinguisher") exitwith {
 	if(player distance fire_loc1 < 20 && !isNull theFire1) then { 
 		_chance = round (random 1001);
   		 if(_chance > 999) then {
@@ -46,7 +46,7 @@ if(currentWeapon _unit == "A3L_Extinguisher") exitwith {
 	};			
 };
 
-if(currentWeapon _unit == "vvv_fishing_rod") exitwith {
+if(currentWeapon _unit isEqualTo "vvv_fishing_rod") exitwith {
 	[] spawn fnc_castScript;
 };
 

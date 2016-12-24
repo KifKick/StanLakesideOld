@@ -24,7 +24,7 @@ if(count _vInfo > 0) then
 
 if(_impound) then
 {
-	if(count _vInfo == 0) then 
+	if(count _vInfo isEqualTo 0) then 
 	{
 		["life_impound_inuse",false] remoteExecCall ["life_fnc_netSetVar", _unit];				
 		if(!isNil "_vehicle" && {!isNull _vehicle}) then {
@@ -57,7 +57,7 @@ if(_impound) then
 }
 else
 {
-	if(count _vInfo == 0) exitWith
+	if(count _vInfo isEqualTo 0) exitWith
 	{
 		[1,(localize "STR_Garage_Store_NotPersistent")] remoteExecCall ["life_fnc_broadcast", _unit];
 		["life_garage_store",false] remoteExecCall ["life_fnc_netSetVar", _unit];				

@@ -11,7 +11,7 @@ _control = _this select 0;
 _selection = _this select 1;
 life_clothing_filter = _selection;
 
-if(_selection == 4) then
+if(_selection isEqualTo 4) then
 {
 	life_shop_cam camSetTarget (player modelToWorld [0,-.15,1.3]);
 	life_shop_cam camSetPos (player modelToWorld [1,-4,2]);
@@ -48,7 +48,7 @@ _clothes = switch (life_clothing_store) do
 	case "sniper": {[_selection] call life_fnc_clothing_specialforces_sniper;};
 };
 
-if(count _clothes == 0) exitWith {};
+if(count _clothes isEqualTo 0) exitWith {};
 {
 	_details = [_x select 0] call life_fnc_fetchCfgDetails;
 	if(isNil {_x select 1}) then

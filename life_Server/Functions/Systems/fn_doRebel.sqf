@@ -1,7 +1,7 @@
 _mode = param [0,"",[""]];
 _unit = param [1,objNull,[objNull]];
 
-if(_mode == "dochecks") exitwith {
+if(_mode isEqualTo "dochecks") exitwith {
 	_checkTime = 0;
 	deletemarker "rebelShipment";
 	_rebelshipment = createMarker ["rebelShipment", rebelshipment];

@@ -20,7 +20,7 @@ if(!license_civ_truck) exitwith { ["You have no Truck License.", false] spawn do
 
 _towtrucks = nearestObjects [player, ["A3L_Towtruck"], 20];
 
-if(count _towtrucks == 0) exitWith { ["No Tow Truck is close enough to perform an impound action.", false] spawn domsg; };
+if(count _towtrucks isEqualTo 0) exitWith { ["No Tow Truck is close enough to perform an impound action.", false] spawn domsg; };
 
 if((player distance (getMarkerPos "tow_truck")) > 12) exitwith { ["You are too far from the impound lot", false] spawn domsg; };
 
@@ -30,10 +30,10 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 {	
 	_vehData = _vehicle getVariable["vehicle_info_owners",[]];
 
-	if(count _vehData == 0) exitWith {}; //Bad vehicle.
+	if(count _vehData isEqualTo 0) exitWith {}; //Bad vehicle.
 
 	_vehOwner = (_vehData select 0) select 0;
-	if((getPlayerUID player) == _vehOwner) exitWith { ["You can not impound your own vehicle.", false] spawn domsg; };
+	if((getPlayerUID player) isEqualTo _vehOwner) exitWith { ["You can not impound your own vehicle.", false] spawn domsg; };
 	if(_vehicle getVariable["beingImpounded",false]) exitWith { ["Someone else is already impounding that vehicle.", false] spawn domsg; };
 	_vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 

@@ -1,11 +1,13 @@
 /*
 	Repurposed for strip search
 */
+params["_returnkeys"];
+
 private["_hgItems","_holder","_items","_pwItems","_safeItems","_swItems","_weps"];
 
 [player,"patdown1"] spawn life_fnc_nearestSound;	
 
-0 cutText["Your weapons being removed.","PLAIN"];
+0 cutText["Twoje bronie sa Ci odbierane.","PLAIN"];
 
 _safeItems = ["FirstAidKit","cg_atf_bandage_i"];
 _weps = [];
@@ -111,4 +113,6 @@ _back = backpack player;
 	uiSleep 0.5;
 	player addBackpackglobal _back;
 	call life_fnc_saveGear;
-}
+};
+
+[life_vehicles] remoteexec ["life_fnc_getKeys",_returnkeys];

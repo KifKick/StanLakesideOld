@@ -39,7 +39,7 @@ hud_fnc_loop =
 	_battery ctrlSetText format["Bateria: %1", life_battery];
 
 	_ammo = _ui displayCtrl 23525;
-	_amountmag = {_x == (currentmagazine player)} count magazines player;
+	_amountmag = {_x isEqualTo (currentmagazine player)} count magazines player;
 	_ammo ctrlSetText format["%1 Magazynki/ow", format["%1",_amountmag]];
 	_bamountmag = _amountmag / 100;
 	_bamountmag = _bamountmag * 3;
@@ -60,7 +60,7 @@ hud_fnc_loop =
 
 	_select = _ui displayCtrl 23535;
 	_gunmode = currentWeaponMode player;
-	if(vehicle player != player || currentweapon player == "") then { _gunmode = "Brak"; };
+	if(vehicle player != player || currentweapon player isEqualTo "") then { _gunmode = "Brak"; };
 	_select ctrlSetText format["%1 Tryb broni", format["%1",_gunmode]];
 
 
@@ -517,19 +517,19 @@ hud_fnc_loop =
 					player setFatigue 0;
 					[1] spawn life_fnc_HudElements;
 					_coughtype = round (random 4);
-					if(_coughtype == 1) then
+					if(_coughtype isEqualTo 1) then
 					{
 						playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
-					if(_coughtype == 2) then
+					if(_coughtype isEqualTo 2) then
 					{
 						playSound3D ["cg_sndimg\sounds\cough2.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
-					if(_coughtype == 3) then
+					if(_coughtype isEqualTo 3) then
 					{
 						playSound3D ["cg_sndimg\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
-					if(_coughtype == 4) then
+					if(_coughtype isEqualTo 4) then
 					{
 						playSound3D ["cg_sndimg\sounds\cough4.ogg", player, false, getPosASL player, 3, 1, 45];
 					};

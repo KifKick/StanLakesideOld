@@ -8,7 +8,7 @@
 */
 private["_food","_val","_sum"];
 _food = param [0,"",[""]];
-if(_food == "") exitWith {};
+if(_food isEqualTo "") exitWith {};
 
 if([false,_food,1] call life_fnc_handleInv) then {
 	switch (_food) do

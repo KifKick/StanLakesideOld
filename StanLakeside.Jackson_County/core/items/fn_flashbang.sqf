@@ -6,7 +6,7 @@
 if(!hasInterface) exitWith {};
 private["_pos","_eyeDir","_pPos","_impactPos","_norm","_angle","_blurEffect","_ppEffect"];
 _pos = param [0,[],[[]]];
-if(count _pos == 0) exitWith {}; //Badddd
+if(count _pos isEqualTo 0) exitWith {}; //Badddd
 if(player distance _pos > 25) exitWith {}; //Bad again.
 
 _pos set[2,(_pos select 2)+0.2];

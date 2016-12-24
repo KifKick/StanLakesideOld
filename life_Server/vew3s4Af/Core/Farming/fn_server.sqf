@@ -19,7 +19,7 @@ _arraypart = "";
 {
 _selectedarray = _forEachIndex;
 _arrselplant = _x select 0;
-if(_selectedplant == _arrselplant) then {_arraypart = _selectedarray;};
+if(_selectedplant isEqualTo _arrselplant) then {_arraypart = _selectedarray;};
 } foreach _plants_array;
 
 _plantinfo = _plants_array select _arraypart;
@@ -58,7 +58,7 @@ _plant setposATL [ getpos _plant select 0, getpos _plant select 1, (getpos _plan
 _plant setVariable ["growtime",_growtime,false];
 _plant setVariable ["growup",_growup,false];
 _plant setVariable ["growprcnt",_growprcnt,true];
-if (_growprcnt == 100) Then {
+if (_growprcnt isEqualTo 100) Then {
 } else {
 [_plant] spawn svr_growing;};
 };

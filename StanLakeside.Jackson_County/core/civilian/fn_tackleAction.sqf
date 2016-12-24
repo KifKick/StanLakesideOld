@@ -38,6 +38,7 @@ if(_totald >= -90 && _totald < 1 || _totald <= 90 && _totald > -1 || _totald >= 
 	detach player;
 	[player,"knockhit"] spawn life_fnc_nearestSound;	
 	[_target,profileName] remoteExecCall ["life_fnc_crashTackled",_target];
+	["Remove",20] call fnc_karma;
 	uiSleep 3;
 	life_knockout = false;
 	deleteVehicle _obj;

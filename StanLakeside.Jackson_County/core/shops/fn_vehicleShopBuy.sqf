@@ -29,14 +29,14 @@ _spawnPoints = life_veh_shop select 1;
 _spawnPoint = "";
 
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
-	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],20]) == 0) exitWith {_spawnPoint = _spawnPoints};
+	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],20]) isEqualTo 0) exitWith {_spawnPoint = _spawnPoints};
 } else {
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
 	if(typeName _spawnPoints isEqualTo typeName []) then {
 		//Find an available spawn point.
-		{if(count(nearestObjects[(getMarkerPos _x),["Car","Motorcycle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
+		{if(count(nearestObjects[(getMarkerPos _x),["Car","Motorcycle","Ship","Air"],5]) isEqualTo 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
 	} else {
-		if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Motorcycle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
+		if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Motorcycle","Ship","Air"],5]) isEqualTo 0) exitWith {_spawnPoint = _spawnPoints};
 	};
 };
 

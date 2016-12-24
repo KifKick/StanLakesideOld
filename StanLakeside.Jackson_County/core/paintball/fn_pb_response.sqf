@@ -4,7 +4,7 @@ if (_respondmode isEqualTo 1) then {
     hint format ["%1",_message];
 };
 
-if (_respondmode==2 && !deadPlayer) then {
+if (_respondmodeisEqualTo2 && !deadPlayer) then {
 
     player addEventHandler ["handleDamage", {false}];
     hint "Welcome to the Paintball Arena! The upcoming game is 5 minutes.";
@@ -32,7 +32,7 @@ if (_respondmode==2 && !deadPlayer) then {
     } foreach (assignedItems player);
     player allowDamage false;
     _wohin = round(random (count pb_positionen));
-    if (_wohin==count pb_positionen) then {_wohin=_wohin-1;};
+    if (_wohinisEqualTocount pb_positionen) then {_wohin=_wohin-1;};
     _position = pb_positionen select _wohin;
 
     if (vehicle player != player) then {
@@ -50,7 +50,7 @@ if (_respondmode==2 && !deadPlayer) then {
     tode = 0;
     player addEventHandler ["Hit", {
         _wohin = round(random (count pb_positionen));
-        if (_wohin==count pb_positionen) then {_wohin=_wohin-1;};
+        if (_wohinisEqualTocount pb_positionen) then {_wohin=_wohin-1;};
         player switchmove "";
         detach player;
         _position = pb_positionen select _wohin;
@@ -64,7 +64,7 @@ if (_respondmode==2 && !deadPlayer) then {
     }];
 };
 
-if (_respondmode==3) then {
+if (_respondmodeisEqualTo3) then {
     life_gear = meingear;
     [] spawn life_fnc_Loadgear;
     player switchmove "";
@@ -88,9 +88,9 @@ if (_respondmode==3) then {
     };
 };
 
-if (_respondmode==4) then {playMusic "LeadTrack06_F";};
+if (_respondmodeisEqualTo4) then {playMusic "LeadTrack06_F";};
 
-if (_respondmode==5) then {
+if (_respondmodeisEqualTo5) then {
     _message = param [1,"",[""]];
     hint format ["%1",_message];
     ["cash","take",50] call life_fnc_handleCash; 

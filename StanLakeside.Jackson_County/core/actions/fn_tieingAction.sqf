@@ -20,7 +20,7 @@ if((life_action_inUse) || (player getVariable ["tied", false]) || (player getVar
 if(isNull _unit) exitWith {}; //Not valid
 if((_unit getVariable ["tied", false])) exitWith {};
 
-if(player == _unit) exitWith {};
+if(player isEqualTo _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
 
@@ -28,6 +28,7 @@ life_action_inUse = true;
 ["Wiaze!", false] spawn domsg;
 
 playSound3D ["cg_sndimg\sounds\tieup.ogg", player, false, getPosASL player, 1, 1, 125];
+["Remove",20] call fnc_karma;
 _randycunt = 3;
 _num = 1;
 _myposy = getPos player;

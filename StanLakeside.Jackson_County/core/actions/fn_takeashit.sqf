@@ -19,6 +19,7 @@ life_dirt = life_dirt + 10;
 life_poop = 0;
 if(_currentuniform != "") then {
 	["Zesrales sie w gacie Ty idioto.. zanim zrobisz gowno sciagnij spodnie!", false] spawn domsg;
+	["Remove",5] call fnc_karma;
 	life_dirt = 100;
 	life_poop = 50;
 	player setfatigue 1;

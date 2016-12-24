@@ -46,7 +46,7 @@ while {true} do {
 				sleep 1800;
 			_action = _shop addAction["Rob Store",life_fnc_robBank];
 			};
-			if (currentWeapon _robber == "" || currentWeapon player == "Binocular" || currentWeapon player == "Rangefinder") exitwith {
+			if (currentWeapon _robber isEqualTo "" || currentWeapon player isEqualTo "Binocular" || currentWeapon player isEqualTo "Rangefinder") exitwith {
 			[1,format["911 CENTRALA: JEDEN NAPADAJACY UCIEKA: BANK U ANNY GRODZKIEJ",_storename]] remoteExecCall ["life_fnc_broadcast",west];
 			hint "BANKEIR: NIE BOJE SIE CIEBIE GNOJU!";
 				sleep 1800;

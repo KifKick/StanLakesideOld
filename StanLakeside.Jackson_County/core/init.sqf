@@ -8,7 +8,7 @@
 //[] execVM "A3L_Stuff\halloween.sqf";
 
 uidGM = getPlayerUID player;
-if (playerSide == sideLogic) then {
+if (playerSide isEqualTo sideLogic) then {
 	if!(uidGM in ["76561198253273755","76561198201987250","76561198041834190","76561198150573190","76561198072741002","7656119798246901","76561198061433788","76561197998091289"]) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 };
@@ -30,7 +30,7 @@ private["_handle","_timeStamp"];
 
 _timeStamp = diag_tickTime;
 
-waitUntil {!isNull player && player == player}; //Wait till the player is ready
+waitUntil {!isNull player && player isEqualTo player}; //Wait till the player is ready
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
 
 
@@ -200,7 +200,7 @@ KK_fnc_forceRagdoll = compileFinal
 ";
 
 player addEventHandler ["AnimStateChanged", {
-	if (_this select 1 == "incapacitated") then {
+	if (_this select 1 isEqualTo "incapacitated") then {
 		player setPosWorld getPosWorld player;
 	};
 }];

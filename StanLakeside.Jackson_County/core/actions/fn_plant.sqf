@@ -15,7 +15,7 @@ _zone = "";
 	if(player distance (getMarkerPos _x) < 30) exitWith {_zone = _x;};
 } foreach _resourceZones;
 
-if(_zone == "") exitWith {
+if(_zone isEqualTo "") exitWith {
 	hint localize "STR_NOTF_notNearResource";
 	life_action_inUse = false;
 };
@@ -59,7 +59,7 @@ _plantclsnamearr = [
 
 {
 _objectarr = nearestObjects [player, [_x], 3];
- if (count _objectarr == 0) then {} else {_plantnearby = true;};
+ if (count _objectarr isEqualTo 0) then {} else {_plantnearby = true;};
 } foreach _plantclsnamearr;
 
 if (_plantnearby) then {
@@ -74,6 +74,7 @@ life_action_inUse = false;
 _plantedtext = format["Posiales troche %1",_gather];
 [_plantedtext,20,"red"] call A3L_Fnc_Msg;
 [player, _gather] remoteexeccall ["svr_plantseed", 2];
+["Add",2] call fnc_karma;
 life_action_inUse = false;
 player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};

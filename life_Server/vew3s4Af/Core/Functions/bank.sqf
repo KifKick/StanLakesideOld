@@ -38,20 +38,20 @@ fnc_cgbankresettimer = {
 
 A3L_Fnc_SellSuitcase = {
 	{
-		if (typeOf _x == "Land_Suitcase_F") then {
+		if (typeOf _x isEqualTo "Land_Suitcase_F") then {
 			detach _x;
 			deletevehicle _x;
 			_money = 100000;
 			cash_in_hand = cash_in_hand + _money;
-			if (side player == east) then {
+			if (side player isEqualTo east) then {
 				[format ["You sold your suitcase and received %1",_money],30,"green"] spawn domsg;
 			};
 
-			if (side player == civilian) then {
+			if (side player isEqualTo civilian) then {
 				[format ["You sold your suitcase and received %1",_money],30,"green"] spawn domsg;
 			};
 
-			if (side player == west) then {
+			if (side player isEqualTo west) then {
 				[format ["You recovered a suitcase and received %1",_money],30,"green"] spawn domsg;
 			};			
 		};		

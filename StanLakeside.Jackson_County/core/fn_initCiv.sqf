@@ -14,7 +14,7 @@ TF_terrain_interception_coefficient = 1;
 private["_spawnPos"];
 
 
-if(side player == east) then {
+if(side player isEqualTo east) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 	uiSleep 35;
 };
@@ -65,7 +65,7 @@ if(life_is_arrested) then
 };
 
 
-if(side player == civilian) then {
+if(side player isEqualTo civilian) then {
 	[] spawn fnc_resetCallSpawn;
 	[] call fnc_checkphone;
 	[] call life_fnc_zoneCreator;

@@ -81,7 +81,7 @@ if(isNull objectParent player) then {
 		
 		if(vehicle player != player) then
 		{
-			if(driver (vehicle player) == player) then {
+			if(driver (vehicle player) isEqualTo player) then {
 				player action["eject",vehicle player]
 			};
 		};

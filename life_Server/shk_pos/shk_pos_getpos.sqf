@@ -11,10 +11,10 @@ _road = if (count _this > 4) then {_this select 4} else {[0,200]};
 _empty = if (count _this > 5) then {_this select 5} else {[]};
 
 
-if (typename _org == "OBJECT") then {_org = getpos _org};
+if (typename _org isEqualTo "OBJECT") then {_org = getpos _org};
 
 
-if (typename _dst == "ARRAY") then {
+if (typename _dst isEqualTo "ARRAY") then {
 private ["_min","_max"];
 _min = _dst select 0;
 _max = _dst select 1;
@@ -22,7 +22,7 @@ _dst = (_min + random(_max - _min));
 };
 
 
-if (typename _dir == "ARRAY") then {
+if (typename _dir isEqualTo "ARRAY") then {
 private ["_min","_max","_ang"];
 _min = _dir select 0;
 _max = _dir select 1;
@@ -38,7 +38,7 @@ _dir = (_min + random _ang);
 _pos = [_org,_dst,_dir] call SHK_pos_fnc_getPos;
 
 
-if (typeName _water == "SCALAR") then {
+if (typeName _water isEqualTo "SCALAR") then {
 switch _water do {
 case 0: { 
 if (surfaceIsWater _pos) then {
@@ -152,7 +152,7 @@ case (typename []): {
 if (count _empty > 0) then {
 _dst = _empty select 0;
 _veh = _empty select 1;
-if (typename _veh == typename objNull) then { _veh = typeof _veh };
+if (typename _veh isEqualTo typename objNull) then { _veh = typeof _veh };
 };
 };
 };

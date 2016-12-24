@@ -2,7 +2,7 @@
 /*
 	std / hooker / prostitute
 */
-if(life_std == 1) exitWith { ["Juz jestes gotowy na seks.", false] spawn domsg; };
+if(life_std isEqualTo 1) exitWith { ["Juz jestes gotowy na seks.", false] spawn domsg; };
 life_std = 1;
 
 ["Mozesz sie ruchac bez stresu przez 10 minut!", false] spawn domsg;

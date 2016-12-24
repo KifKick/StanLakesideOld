@@ -27,13 +27,13 @@ _itemWeight = ([_ctrl] call life_fnc_itemWeight) * _num;
 _veh_data = life_trunk_vehicle getVariable ["Trunk",[[],0]];
 _inv = _veh_data select 0;
 
-if(_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle" OR life_trunk_vehicle isKindOf "House_F")}) exitWith {["You cannot store that in anything but a land vehicle!", false] spawn domsg;};
+if(_ctrl isEqualTo "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle" OR life_trunk_vehicle isKindOf "House_F")}) exitWith {["You cannot store that in anything but a land vehicle!", false] spawn domsg;};
 
-if(_ctrl == "money") then
+if(_ctrl isEqualTo "money") then
 {
 	_index = [_ctrl,_inv] call fnc_index;
 	if(cash_in_hand < _num) exitWith {["You don't have that much cash on you to store in the vehicle!", false] spawn domsg;};
-	if(_index == -1) then
+	if(_index isEqualTo -1) then
 	{
 		_inv pushBack [_ctrl,_num];
 	}
@@ -53,7 +53,7 @@ if(_ctrl == "money") then
 
 	if(!([false,_ctrl,_num] call life_fnc_handleInv)) exitWith {["Nie udalo sie przeniesc przedmiotow.", false] spawn domsg;};
 	_index = [_ctrl,_inv] call fnc_index;
-	if(_index == -1) then
+	if(_index isEqualTo -1) then
 	{
 		_inv pushBack [_ctrl,_num];
 	}

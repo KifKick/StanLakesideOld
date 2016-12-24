@@ -31,23 +31,23 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 
 switch (true) do
 {
-	case(((__GETC__(life_medicLevel)) == 1)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 1)):
 	{
 		life_paycheck = 750; //13 500 restart
 	};
-	case(((__GETC__(life_medicLevel)) == 2)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 2)):
 	{
 		life_paycheck = 1250; //22 500 restart
 	};
-	case(((__GETC__(life_medicLevel)) == 3)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 3)):
 	{
 		life_paycheck = 1750; //31 500 restart
 	};
-	case(((__GETC__(life_medicLevel)) == 4)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 4)):
 	{
 		life_paycheck = 2250; //40 500 restart
 	};
-	case(((__GETC__(life_medicLevel)) == 5)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 5)):
 	{
 		life_paycheck = 2750; //49 500 restart
 	};

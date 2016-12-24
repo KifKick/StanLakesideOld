@@ -25,9 +25,9 @@ lbSetCurSel [1500, 0];
 fnc_smsmenuopen = {
 uiSleep 1;
 amountofsms = _this select 0;
-if(smsmenuisopen == 1) then {
+if(smsmenuisopen isEqualTo 1) then {
 amountofnewsms = count tablet_inbox;
-if (amountofsms == amountofnewsms) then {
+if (amountofsms isEqualTo amountofnewsms) then {
 [amountofnewsms] spawn fnc_smsmenuopen;}
 else {
 [] spawn sms_getinbox;
@@ -117,27 +117,27 @@ if ((date select 4) < 10) then {
 _mins = format ["0%1",(date select 4)];
 } else { _mins = (date select 4)};
 _to = lbCurSel 1501;
-if(_msg == "") exitWith {hint "You must enter a message to send!";};
-if(_to == -1) exitWith {hint "You must select a player you are sending the text to!";};
-if(_to == 0) then {
+if(_msg isEqualTo "") exitWith {hint "You must enter a message to send!";};
+if(_to isEqualTo -1) exitWith {hint "You must select a player you are sending the text to!";};
+if(_to isEqualTo 0) then {
 _datecomp = format ["911 - (%6) %1-%2-%3 | %4:%5 %7",(date select 2),(date select 1),(date select 0),_hours,_mins,name player,_ampm];
 _compiled = [name player,_msg,date,5,_datecomp];
 _to = "The EMS";
 [_compiled,name player,5] remoteExecCall ["clientsmssys",independent];
 [] call life_fnc_cellphone;
-} else { if (_to == 1) then {
+} else { if (_to isEqualTo 1) then {
 _datecomp = format ["911 - (%6) %1-%2-%3 | %4:%5 %7",(date select 2),(date select 1),(date select 0),_hours,_mins,name player,_ampm];
 _compiled = [name player,_msg,date,1,_datecomp];
 _to = "The Police";
 [_compiled,name player,1] remoteExecCall ["clientsmssys",-2];
 [] call life_fnc_cellphone;
-} else { if (_to == 2) then {
+} else { if (_to isEqualTo 2) then {
 _datecomp = format ["((%1 send the admins a message))",name player];
 _compiled = [name player,_msg,date,2,_datecomp];
 _to = "The Admins";
 [_compiled,name player,2] remoteExecCall ["clientsmssys",-2];
 [] call life_fnc_cellphone;
-} else { if (_to == 3 && ((call life_adminlevel) > 0)) then {
+} else { if (_to isEqualTo 3 && ((call life_adminlevel) > 0)) then {
 _datecomp = format ["((GLOBAL admin message from; %1))",name player];
 _compiled = [name player,_msg,date,2,_datecomp];
 _to = "EVERYONE";

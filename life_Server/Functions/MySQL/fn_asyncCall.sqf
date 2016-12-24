@@ -43,14 +43,14 @@ while{_loop} do
 		};
 	};
 };
-if(typeName _queryResult == "STRING") then {_queryResult = call compile _queryResult};
+if(typeName _queryResult isEqualTo "STRING") then {_queryResult = call compile _queryResult};
 
 _return = (_queryResult select 1);
 
 if(!_multiarr) then {
 	_return = _return select 0;
 } else {
-	if((count (_return select 0)) == 0) then {_return = []};
+	if((count (_return select 0)) isEqualTo 0) then {_return = []};
 };
 
 _return;

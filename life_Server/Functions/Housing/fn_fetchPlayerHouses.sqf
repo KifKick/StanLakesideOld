@@ -5,7 +5,7 @@
 	Fetches all the players houses and sets them up.
 */
 private["_query","_houses"];
-if(_this == "") exitWith {};
+if(_this isEqualTo "") exitWith {};
 
 _query = format["SELECT pid, pos, inventory, containers, shared1, shared2, shared3, shared4, shared5 FROM houses WHERE pid='%1' OR shared1='%1' OR shared2='%1' OR shared3='%1' OR shared4='%1' OR shared5='%1' AND owned='1'",_this];
 
@@ -47,17 +47,17 @@ _return = [];
 	};
 
 	_trunk = [_x select 2] call DB_fnc_mresToArray;
-	if(typeName _trunk == "STRING") then {
+	if(typeName _trunk isEqualTo "STRING") then {
 		_trunk = call compile format["%1", _trunk];
 	};
 	_containerData = [_x select 3] call DB_fnc_mresToArray;
-	if(typeName _containerData == "STRING") then {
+	if(typeName _containerData isEqualTo "STRING") then {
 		_containerData = call compile format["%1", _containerData];
 	};
 	_house setVariable["Trunk",_trunk,true];
 
 		{
-			if(count _x == 0) exitWith {}; 
+			if(count _x isEqualTo 0) exitWith {}; 
 			_className = _x select 0;
 			_weapons = (_x select 1) select 0;
 			_magazines = (_x select 1) select 1;

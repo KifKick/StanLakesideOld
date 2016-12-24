@@ -6,19 +6,19 @@
 	Spawns the player where he selected.
 */
 private["_spCfg","_sp","_spawnPos"];
-if(count life_spawn_point == 0) then
+if(count life_spawn_point isEqualTo 0) then
 {
 	private["_sp","_spCfg"];
 	_spCfg = [playerSide] call life_fnc_spawnPointCfg;
 	_sp = _spCfg select 0;
 	
-	if(playerSide == civilian || playerSide == east) then
+	if(playerSide isEqualTo civilian || playerSide isEqualTo east) then
 	{
 		if(isNil {(call compile format["%1", _sp select 0])}) then {
 			player setPos (getMarkerPos (_sp select 0));
 			
 			// Run our code for hospital spawn
-			if ((!life_firstSpawn) && (_sp select 0 == "civ_spawn_1")) then 
+			if ((!life_firstSpawn) && (_sp select 0 isEqualTo "civ_spawn_1")) then 
 			{
 				[] call A3L_Fnc_HospitalSpawn;
 			};			
@@ -34,7 +34,7 @@ if(count life_spawn_point == 0) then
 		player setPos (getMarkerPos (_sp select 0));
 		
 		// Run our code for hospital spawn
-		if ((!life_firstSpawn) && (_sp select 0 == "civ_spawn_1")) then 
+		if ((!life_firstSpawn) && (_sp select 0 isEqualTo "civ_spawn_1")) then 
 		{
 			[] call A3L_Fnc_HospitalSpawn;
 		};					
@@ -42,7 +42,7 @@ if(count life_spawn_point == 0) then
 }
 else
 {
-	if(playerSide == civilian || playerSide == east) then
+	if(playerSide isEqualTo civilian || playerSide isEqualTo east) then
 	{
 		if(isNil {(call compile format["%1",life_spawn_point select 0])}) then {
 			if((["house",life_spawn_point select 0] call BIS_fnc_inString)) then {
@@ -50,7 +50,7 @@ else
 				_house = nearestObjects [getMarkerPos (life_spawn_point select 0),["House_F"],10] select 0;
 				_bPos = [_house] call life_fnc_getBuildingPositions;
 
-				if(count _bPos == 0) exitWith {
+				if(count _bPos isEqualTo 0) exitWith {
 					player setPos (getMarkerPos (life_spawn_point select 0));
 				};
 				

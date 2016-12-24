@@ -1,4 +1,4 @@
-#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
+#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 isEqualTo "STRING") then {var2} else {str(var2)})
 
 life_loopExit = false;
 life_server_isReady = false;
@@ -24,59 +24,59 @@ publicVariable "life_server_isReady";
 		_meds = (independent countSide playableUnits);
  		if(_cops > 5 || _meds > 3) then { 
  			_chance = round (random 85);
-			if(_chance == 1) then {
+			if(_chance isEqualTo 1) then {
 				remoteExec ["fnc_police_fire", -2];
 			};
-			if(_chance == 2) then {
-				if (cgbankvault animationPhase "d_o_Anim" == 0 && cgbankvault animationPhase "d_l_Anim" == 1) then {
+			if(_chance isEqualTo 2) then {
+				if (cgbankvault animationPhase "d_o_Anim" isEqualTo 0 && cgbankvault animationPhase "d_l_Anim" isEqualTo 1) then {
 					remoteExec ["fnc_bank_fire", -2];	
 				} else {
 					remoteExec ["fnc_donuts_fire", -2];
 				};
 			};
-			if(_chance == 3) then {
+			if(_chance isEqualTo 3) then {
 				remoteExec ["fnc_wheat_fire", -2];
 			};
-			if(_chance == 4) then {
+			if(_chance isEqualTo 4) then {
 				remoteExec ["fnc_tiki_fire", -2];
 			};
-			if(_chance == 5) then {
+			if(_chance isEqualTo 5) then {
 				remoteExec ["fnc_donuts_fire", -2];
 			};
-			if(_chance == 6) then {
+			if(_chance isEqualTo 6) then {
 				remoteExec ["fnc_pizza_fire", -2];
 			};
-			if(_chance == 7) then {
+			if(_chance isEqualTo 7) then {
 				remoteExec ["fnc_morrison_fire", -2];
 			};
-			if(_chance == 8) then {
+			if(_chance isEqualTo 8) then {
 				remoteExec ["fnc_prison_fire", -2];
 			};
-			if(_chance == 9) then {
+			if(_chance isEqualTo 9) then {
 				remoteExec ["fnc_townhall_fire", -2];
 			};
-			if(_chance == 10) then {
+			if(_chance isEqualTo 10) then {
 				remoteExec ["fnc_hotel_fire", -2];
 			};
-			if(_chance == 11) then {
+			if(_chance isEqualTo 11) then {
 				remoteExec ["fnc_waterems_fire", -2];
 			};
-			if(_chance == 12) then {
+			if(_chance isEqualTo 12) then {
 				remoteExec ["fnc_house_fire", -2];
 			};
-			if(_chance == 13) then {
+			if(_chance isEqualTo 13) then {
 				remoteExec ["fnc_marketplace_fire", -2];
 			};
-			if(_chance == 14) then {
+			if(_chance isEqualTo 14) then {
 				remoteExec ["fnc_housetwo_fire", -2];
 			};
-			if(_chance == 15) then {
+			if(_chance isEqualTo 15) then {
 				remoteExec ["fnc_trees_fire", -2];
 			};
-			if(_chance == 16) then {
+			if(_chance isEqualTo 16) then {
 				remoteExec ["fnc_springfieldcentrum_fire", -2];
 			};
-			if(_chance == 17) then {
+			if(_chance isEqualTo 17) then {
 				remoteExec ["fnc_jeffersonhill_fire", -2];
 			};
 			

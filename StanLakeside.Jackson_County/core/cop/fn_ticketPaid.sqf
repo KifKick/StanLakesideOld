@@ -12,5 +12,6 @@ if(isNull _cop OR {_cop != player}) exitWith {}; //Double NO
 
 _value = round(_value * .25);
 hint format["Otrzymales $%1 za Twoja ciezka prace.",_value];
+["Add",20] call fnc_karma;
 ["bank","add", _value] call life_fnc_handleCash;
 [6] call SOCK_fnc_updatePartial;

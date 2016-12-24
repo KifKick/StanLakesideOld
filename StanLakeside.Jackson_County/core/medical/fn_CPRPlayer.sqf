@@ -10,7 +10,7 @@ _target = param [0,ObjNull,[ObjNull]];
 if(isNull _target) exitWith {};
 if(player distance _target > 4) exitWith {};
 if(!(_target isKindOf "man")) exitWith {};
- if(koil_antispam == 1) exitWith {};
+ if(koil_antispam isEqualTo 1) exitWith {};
 
 [] spawn life_fnc_AntiSpam;
 
@@ -20,7 +20,7 @@ if(_revivable) exitWith {
 	hideBody _target;
 };
 
-if(_target getVariable ["CPR",ObjNull] == player) exitWith {["Ktos juz wykonuje pierwsza pomoc..", false] spawn domsg;};
+if(_target getVariable ["CPR",ObjNull] isEqualTo player) exitWith {["Ktos juz wykonuje pierwsza pomoc..", false] spawn domsg;};
 if(player distance _target > 5) exitWith {}; //Not close enough.
 
 //Fetch their name so we can shout it.
@@ -97,7 +97,7 @@ if(_chance < 200) then {
 	_toPlayerName = name _target;
 	_type = 3;
 	[_playerID,_playerName,_toPlayerID,_toPlayerName,_type,""] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
-	if(_targetName == "Unknown" || _targetName == "" || _pid == "") then {
+	if(_targetName isEqualTo "Unknown" || _targetName isEqualTo "" || _pid isEqualTo "") then {
 		hideBody _target;
 		deleteVehicle _target;
 		_target hideObject true;

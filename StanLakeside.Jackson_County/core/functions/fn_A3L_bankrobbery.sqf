@@ -5,7 +5,7 @@ if ( cgbankvault animationPhase "d_o_Anim" != 1 ) exitWith {
 	["Sejf jest zamkniety.. nie mozesz wziac pieniedzy",30,"red"] spawn domsg;
 };
 
-if (animationState player == "AinvPknlMstpSnonWnonDnon_medic_1") exitwith {["Juz nosisz worek z pieniedzmi!",30,"red"] spawn domsg;};
+if (animationState player isEqualTo "AinvPknlMstpSnonWnonDnon_medic_1") exitwith {["Juz nosisz worek z pieniedzmi!",30,"red"] spawn domsg;};
 if (count (attachedobjects player) > 1) exitwith {["Nosisz za duzo!",30,"red"] spawn domsg;}; 
 if (_pile getVariable ["robbed", false]) exitwith {["Ten stos zostal niedawno zrabowany!",30,"red"] spawn domsg;};
 _timer = 5 + (floor(random 5));

@@ -8,7 +8,7 @@
 */
 private["_className","_vehicles"];
 _className = param [0,"",[""]];
-if(_className == "") exitWith {nil};
+if(_className isEqualTo "") exitWith {nil};
 _return = nil;
 
 _vehicles =
@@ -190,7 +190,7 @@ _vehicles =
 	["O_Heli_Light_02_unarmed_F","PO-30-ORCA-SERT"]
 ];
 {
-	if(_x select 0 == _className) exitWith {_return = _x select 1};
+	if(_x select 0 isEqualTo _className) exitWith {_return = _x select 1};
 } forEach _vehicles;
 _return;
 

@@ -8,7 +8,7 @@
 private["_value"];
 _param = param [0,0,[0]];
 
-if(_param == 1) then {
+if(_param isEqualTo 1) then {
 	_value = round(cash_in_hand);
 } else {
 	_value = round(parseNumber(ctrlText 2702)); 

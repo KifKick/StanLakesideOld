@@ -51,7 +51,7 @@ class Life_KBW_Duel
 		{
 			idc = 100;
 			text = "Add Racer";
-			onButtonClick = "if(lbCurSel 15101 == -1) exitWith {[localize 'STR_Global_NoSelection'}, false] spawn domsg; _unit = lbData[15101,(lbCurSel 15101)]; _unit = call compile format['%1',_unit]; if(_unit in life_racers || vehicle _unit == _unit) exitWith {}; life_racers pushBack _unit; ctrlShow[101,true]; _out = ''; {_toAdd = name _x + ' '; _out = _out + _toAdd} forEach life_racers; [format['Current Racers: %1',_out], false] spawn domsg;";
+			onButtonClick = "if(lbCurSel 15101 isEqualTo -1) exitWith {[localize 'STR_Global_NoSelection'}, false] spawn domsg; _unit = lbData[15101,(lbCurSel 15101)]; _unit = call compile format['%1',_unit]; if(_unit in life_racers || vehicle _unit isEqualTo _unit) exitWith {}; life_racers pushBack _unit; ctrlShow[101,true]; _out = ''; {_toAdd = name _x + ' '; _out = _out + _toAdd} forEach life_racers; [format['Current Racers: %1',_out], false] spawn domsg;";
 			x = 0.399211 * safezoneW + safezoneX;
 			y = 0.731039 * safezoneH + safezoneY;
 			w = 0.128719 * safezoneW;

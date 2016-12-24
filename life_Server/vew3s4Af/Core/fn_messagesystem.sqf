@@ -8,7 +8,7 @@ A3L_Fnc_stripLineBreaks = {
 _a = toArray _this;
 for "_i" from 0 to ((count _a)-2) do 
 {
-if ((_a select _i == 92) && (_a select (_i+1) in [78, 110])) then
+if ((_a select _i isEqualTo 92) && (_a select (_i+1) in [78, 110])) then
 {
 _a set [_i, 32]; 
 _a set [_i+1, 990]; 
@@ -41,7 +41,7 @@ for "_i" from 0 to ((count _a)-1) do
 {
 _c = _a select _i;
 _r set [_j, _c];
-if (_c == 38) then
+if (_c isEqualTo 38) then
 {
 _r set [_j+0, 38];
 _r set [_j+1, 97];
@@ -71,13 +71,13 @@ if (isNil "A3L_lastUsedLayer3") then {A3L_lastUsedLayer3 = 29607};
 _id = 2;
 if (!isNil "_this") then
 {
-if (typeName _this == typeName []) then
+if (typeName _this isEqualTo typeName []) then
 {
 _id = (_this select 0);
 }
 else
 {
-if (typeName _this == typeName 88) then
+if (typeName _this isEqualTo typeName 88) then
 {
 _id = _this;
 };
@@ -147,7 +147,7 @@ disableSerialization;
 _message = _this;
 _duration = 15 ;
 _hasDurationParam = false;
-if (typeName _this == typeName []) then
+if (typeName _this isEqualTo typeName []) then
 {
 _message = _this select 0;
 
@@ -155,7 +155,7 @@ if (count _this > 1) then
 {
 private "_dur";
 _dur = _this select 1;
-if (typeName _dur == typeName 99) then
+if (typeName _dur isEqualTo typeName 99) then
 {
 _hasDurationParam = true;
 if (_dur > 0 and _dur <= 30) then
@@ -175,32 +175,32 @@ c_colorST_red = "#FFD30000";
 c_colorST_blue = "#00AEFF"; 
 c_colorST_gray = "#FF808080"; 
 
-if (typeName _this == typeName []) then
+if (typeName _this isEqualTo typeName []) then
 {
-if (count _this == 3) then { 
+if (count _this isEqualTo 3) then { 
 msgcolour = _this select 2;
 
-if (msgcolour == "green") then {
+if (msgcolour isEqualTo "green") then {
 _message = format ["<t color='%1'>%2", c_colorST_A2_text,_message];
 };
 
-if (msgcolour == "yellow") then {
+if (msgcolour isEqualTo "yellow") then {
 _message = format ["<t color='%1'>%2", c_colorST_OA_text,_message];
 };
 
-if (msgcolour == "orange") then {
+if (msgcolour isEqualTo "orange") then {
 _message = format ["<t color='%1'>%2", c_colorST_orange,_message];
 };
 
-if (msgcolour == "red") then {
+if (msgcolour isEqualTo "red") then {
 _message = format ["<t color='%1'>%2", c_colorST_red,_message];
 };
 
-if (msgcolour == "blue") then {
+if (msgcolour isEqualTo "blue") then {
 _message = format ["<t color='%1'>%2", c_colorST_blue,_message];
 };
 
-if (msgcolour == "gray") then {
+if (msgcolour isEqualTo "gray") then {
 _message = format ["<t color='%1'>%2", c_colorST_gray,_message];
 };
 
@@ -254,7 +254,7 @@ uiSleep _duration;
 
 
 {
-if (_x select 1 == _id) exitWith
+if (_x select 1 isEqualTo _id) exitWith
 {
 A3L_Messages_array set [_forEachIndex, ["", -1]];
 call A3L_fnc_messages_display;

@@ -13,7 +13,7 @@ if(!(createDialog "life_weapon_shop")) exitwith {};
 
 _config = [_this select 3] call life_fnc_weaponShopCfg;
 
-if(typeName _config == "STRING") exitWith {[_config, false] spawn domsg; closeDialog 0;};
+if(typeName _config isEqualTo "STRING") exitWith {[_config, false] spawn domsg; closeDialog 0;};
 
 ctrlSetText[38401,_config select 0];
 

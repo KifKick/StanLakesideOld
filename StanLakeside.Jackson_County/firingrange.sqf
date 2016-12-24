@@ -43,11 +43,11 @@ while {_count > 0} do {
 	uiSleep 0.5;
 	_lmfaolol = round (random 2);
 
-	if(_lmfaolol == 0) then {
+	if(_lmfaolol isEqualTo 0) then {
 		_lmfaolol = 1;
 	};
 
-	if(_lmfaolol == 1) then {
+	if(_lmfaolol isEqualTo 1) then {
 		_spawnedunit = "C_man_polo_2_F" createVehicleLocal (player modelToWorld [0 - round (random 3), 15 + round (random 10), 0]);
 
 		_spawnedunit setDamage 0.98;
@@ -94,7 +94,7 @@ while {_count > 0} do {
 
 	};
 
-	if(_lmfaolol == 2) then {
+	if(_lmfaolol isEqualTo 2) then {
 		_spawnedunit = "C_man_polo_2_F" createVehicleLocal (player modelToWorld [0 + round (random 3), 15 + round (random 10), 0]);
 
 		_spawnedunit setDamage 0.98;

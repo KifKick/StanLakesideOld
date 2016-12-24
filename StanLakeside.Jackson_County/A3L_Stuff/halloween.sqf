@@ -23,7 +23,7 @@ fnc_pickpumpkin = {
         test = _this select 0;
         deletevehicle test;
         if ((_hour <= 5) OR (_hour >= 19)) then {
-                if (scarylevel == 0) then {
+                if (scarylevel isEqualTo 0) then {
                         [] spawn startangel;
                 } else {
                         _extracandy = round (random 20);
@@ -88,10 +88,10 @@ _moveseconds = 0;
 _walkseconds = 0;
 _invehicle = 0;
  
-while {_delete == 0} do {
+while {_delete isEqualTo 0} do {
 sleep 0.01;
  
-if (_walkseconds == 70) then {
+if (_walkseconds isEqualTo 70) then {
         scarylevel = 1;
         _walkseconds = 0;
 };
@@ -103,7 +103,7 @@ _walkseconds = _walkseconds + 1;
 };
  
 _somelogic setpos (getpos player);
-if ((_alarm <= time) OR (scarylevel >= 1) OR (_invehicle == 1)) then {
+if ((_alarm <= time) OR (scarylevel >= 1) OR (_invehicle isEqualTo 1)) then {
 _delete = 1;
 deleteVehicle _angel1;
 deleteVehicle _somelogic;
@@ -132,9 +132,9 @@ _invehicle = 1;
 _angel1 setVectorDirAndUp [[-1,0,0],[0,0,1]];
 _angel1 setVectorDirAndUp [vectorDir player,vectorUp player];
 [_angel1] call fnc_eyecheck;
-        if (isLookingAt == 1) then {
+        if (isLookingAt isEqualTo 1) then {
         sleep 0.25;
-        if (_moveseconds == 24) then {
+        if (_moveseconds isEqualTo 24) then {
         deleteVehicle _angel1;
         _angel1 = createVehicle ["A3L_Angel_Attack",(player modelToWorld [0,1,0]), [], 0, "CAN_COLLIDE"];  
         _angel1 say3D "halloweenhorn";
@@ -144,7 +144,7 @@ _angel1 setVectorDirAndUp [vectorDir player,vectorUp player];
         _moveseconds = _moveseconds + 1;
         };
        
-                if (player distance _angel1 <= 2 and isLookingAt == 1) then {
+                if (player distance _angel1 <= 2 and isLookingAt isEqualTo 1) then {
                         "filmGrain" ppEffectAdjust [0.2, -2, 0.2, 0.1, 3, false];
                         "filmGrain" ppEffectCommit 1;
                         [_angel1] call fnc_turnObject;
@@ -301,7 +301,7 @@ _itemname = _x select 1;
 _itemclsnme = _x select 2;
 _itemprice = _x select 3;
  
-if (_itemtype == _selectedtype) then {
+if (_itemtype isEqualTo _selectedtype) then {
 _listboxtxt = format["%1 (%2)", _itemname,_itemprice];
 ((uiNamespace getVariable "halloweenshop") displayCtrl 55126) lbadd _listboxtxt;
 hallselitemlst = hallselitemlst + [[_itemclsnme,_itemprice,_itemname,_itemtype]];
@@ -323,13 +323,13 @@ candy = candy - _price;
  
 _msgtext1 = format ["Pomyslnie kupiles %1 za %2",_itemname,_price];
 [_msgtext1,20,"green"] call A3L_Fnc_Msg;
-if (_itemtype == "Hat") then {
+if (_itemtype isEqualTo "Hat") then {
 player addheadgear _classname;
 } else {
-if (_itemtype == "Vest") then {
+if (_itemtype isEqualTo "Vest") then {
 player addvest _classname;
 } else {
-if (_itemtype == "Uniform") then {
+if (_itemtype isEqualTo "Uniform") then {
 player adduniform _classname;
 };};};
 } else {

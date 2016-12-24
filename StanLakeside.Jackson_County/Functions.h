@@ -348,6 +348,8 @@ class Life_Client_Core
 		class loggedOut {};
 		class radArea {};
 		class zoneCreator {};
+		class getKeys {};
+		class forceFPS {};
 
 		// Market System
 		class randomRound {};

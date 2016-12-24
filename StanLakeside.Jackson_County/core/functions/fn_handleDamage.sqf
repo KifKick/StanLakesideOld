@@ -7,7 +7,7 @@ if(!isNull _source) then {
 
 	if(_source != _unit) then {
 
-		if (vehicle _unit == _unit) then
+		if (vehicle _unit isEqualTo _unit) then
 		{
 			_vehicle = vehicle _source;
 		    if ( _vehicle isKindOf "Air" || _vehicle isKindOf "Car" || _vehicle isKindOf "Boat" ) then
@@ -32,7 +32,7 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["prpl_benelli_14_pgs_rail"]) exitwith {
-			if(!life_isdowned && vehicle player == player && side _source == west) then {
+			if(!life_isdowned && vehicle player isEqualTo player && side _source isEqualTo west) then {
 				_dist = _source distance player;
 				[_unit,_source,_dist] call life_fnc_downed;
 			};
@@ -40,7 +40,7 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["cl3_taserM26_Yellow"]) exitwith {
-			if(side _source == west) then {
+			if(side _source isEqualTo west) then {
 				[_unit,_source] call life_fnc_tazed;
 			};
 			_damage = 0;
@@ -52,7 +52,7 @@ if(!isNull _source) then {
 	};
 };
 
-if(_selectionName == "") then {
+if(_selectionName isEqualTo "") then {
 	_damage = _damage * 1.5;
 	["Remove",_damage,_source] spawn fnc_doHealth;
 } else {

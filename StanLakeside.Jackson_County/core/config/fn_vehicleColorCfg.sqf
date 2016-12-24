@@ -7,7 +7,7 @@
 */
 private["_vehicle","_ret","_path"];
 _vehicle = param [0,"",[""]];
-if(_vehicle == "") exitWith {[]};
+if(_vehicle isEqualTo "") exitWith {[]};
 _ret = [];
 
 switch (_vehicle) do
