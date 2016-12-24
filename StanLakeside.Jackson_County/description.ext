@@ -2,7 +2,7 @@ disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled 
 overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
 
 #include "config\Config_SpyGlass.hpp"
-#include "CfgRemoteExec.hpp"
+#include "config\CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
 
@@ -23,7 +23,7 @@ class RscTitles {
 };
 
 class CfgFunctions {
-    #include "Functions.hpp"
+    #include "config\Functions.hpp"
 };
 
 class CfgSounds {
