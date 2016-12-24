@@ -1050,7 +1050,7 @@ while{true} do
 
 	523423 cutRsc ["HUDGun","PLAIN"]; 
 
-	_time = if (!life_seatbelt) then {time + 2} else {time + 8};
+	_time = if (!life_seatbelt) then {time + 2} else {time + 4};
 
 	[] spawn {
 		uiSleep 0.1;
