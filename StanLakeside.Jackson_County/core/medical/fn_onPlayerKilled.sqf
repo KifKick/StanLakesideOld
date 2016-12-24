@@ -38,7 +38,7 @@ player setVariable["gear",life_gear,true];
 _length = 15 - _length;
 _length = round(_length);
 if(_length > 15) then { _length = 20; };
-if(_length < 8) then { _length = 5; };
+if(_length < 8) then { _length = 10; };
 life_respawn_timer = _length;
 player setVariable["severity", _length, true];
 
