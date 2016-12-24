@@ -1,13 +1,13 @@
 # StanLakeside
-Podglad misji serwera stanlakeside.pl
+Podglad misji serwera stanlakeside.pl (w trakcie pisania [LUL])
 
-Misja stworzona przez **Tonic**, edytowana przez **A3L** oraz **CG**
+Misja stworzona przez **Tonic** (AL4.4)
 
-Dalsza edycja: **KifKick** oraz **Katekarin**, a także społeczeństwo [StanLakeside.pl](http://stanlakeside.pl)
+Dalsza edycja: **KifKick** 
 
-Serdeczne podziękowana za dopisanie swojej "cegiełki" (kodu) dla:  **Kruk**
+
 
 
 <p align="center">
     <a href="https://travis-ci.org/KifKick/StanLakeside">
-        <img src="https://travis-ci.org/KifKick/StanLakeside.svg?branch=master" alt="Build Status">
+        <img src="https://travis-ci.org/KifKick/StanLakeside.svg?branch=kifkick" alt="Build Status">
