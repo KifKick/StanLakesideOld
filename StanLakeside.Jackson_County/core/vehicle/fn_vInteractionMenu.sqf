@@ -203,7 +203,7 @@ if(playerSide isEqualTo west) then {
 		if(count crew _curTarget isEqualTo 0) then {_Btn3 ctrlEnable false;};
 
 
-		_Btn4 ctrlSetText localize "STR_vInAct_EMSPullOut";
+		_Btn4 ctrlSetText "Odholuj";
 		_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
 
 
@@ -221,7 +221,10 @@ if(playerSide isEqualTo west) then {
 			_Btn6 ctrlEnable false;
 			_Btn7 ctrlEnable false;
 		};
-	_Btn8 ctrlShow false;
+		
+	_Btn8 ctrlsettext "Zniszcz";
+	_Btn8 buttonSetAction "[life_vInact_curTarget, profileName, getPlayerUID player] spawn life_fnc_checkdefect;"
+
 	_Btn9 ctrlShow false;
 	_Btn10 ctrlShow false;
 	_Btn11 ctrlShow false;

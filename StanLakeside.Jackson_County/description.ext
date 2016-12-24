@@ -16,12 +16,12 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 144;
+	maxPlayers = 90;
 };
 
-wreckLimit = 3;
-wreckRemovalMinTime = 30;
-wreckRemovalMaxTime = 120;
+wreckLimit = 10;
+wreckRemovalMinTime = 300;
+wreckRemovalMaxTime = 600;
 corpseLimit = 10;
 corpseRemovalMinTime = 600;
 corpseRemovalMaxTime = 800;
@@ -52,14 +52,14 @@ class introLife
             h = 0.75;
             w = 0.75;
             font = "EtelkaNarrowMediumPro";
-            sizeEx = 0.05; 
+            sizeEx = 0.05;
             colorBackground[] = {1,1,1,0};
             colorText[] = {1,1,1,1};
             text = "icons\logo.paa";
             lineSpacing = 1;
-         }; 
-      }; 
-   }; 
+         };
+      };
+   };
 };
 
 showHUD[] = {
@@ -264,7 +264,7 @@ class CfgSounds
 		sound[] = {"\sounds\satdisable.ogg", 1, 1};
 		titles[] = {};
 	};
-	
+
 	class shot1
 	{
 		name = "shot1";
@@ -323,7 +323,7 @@ class CfgSounds
 		sound[] = {"\sounds\handcuff.ogg", 1, 1};
 		titles[] = {};
 	};
-	
+
 	class racebeep1
 	{
 		name = "racebeep1";
@@ -336,7 +336,7 @@ class CfgSounds
 		sound[] = {"\sounds\racebeep2.ogg", 1.0, 1};
 		titles[] = {};
     };
-	
+
 	class cellclose
 	{
 		name = "cellclose";
@@ -373,13 +373,13 @@ class CfgSounds
 		name = "slideout";
 		sound[] = {"\sounds\slideout.ogg", 1, 1};
 		titles[] = {};
-	};		
+	};
 	class endbeep
 	{
 		name = "endbeep";
 		sound[] = {"\sounds\endbeep.ogg", 1, 1};
 		titles[] = {};
-	};	
+	};
 	class SirenLong
 	{
 		name = "SirenLong";
@@ -427,7 +427,7 @@ class CfgSounds
 		name = "hungry";
 		sound[] = {"\sounds\hungry.ogg", 1, 1};
 		titles[] = {};
-	};	
+	};
 	class nos
 	{
 		name = "nos";
@@ -439,7 +439,7 @@ class CfgSounds
 		name = "gagged";
 		sound[] = {"\sounds\gagged.ogg", 1, 1};
 		titles[] = {};
-	};	
+	};
 	class glassbreak
 	{
 		name = "glassbreak";
@@ -549,7 +549,7 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
-	
+
 	class Blacklisted
 	{
 		title = "Mission Failed";
@@ -571,7 +571,7 @@ class CfgNotifications
 		duration = 5;
 		priority = 7;
 	};
-	
+
 	class DeliveryAssigned
 	{
 		title = "Delivery Job Accepted";
@@ -580,7 +580,7 @@ class CfgNotifications
 		duration = 10;
 		priority = 7;
 	};
-	
+
 	class DeliveryFailed
 	{
 		title = "Delivery Job Failed";
@@ -589,7 +589,7 @@ class CfgNotifications
 		duration = 7;
 		priority = 7;
 	};
-	
+
 	class DeliverySucceeded
 	{
 		title = "Delivery Job Completed";
@@ -598,7 +598,7 @@ class CfgNotifications
 		duration = 6;
 		priority = 6;
 	};
-	
+
 	class TextMessage
 	{
 		title = "Received A Text Message";
@@ -607,7 +607,7 @@ class CfgNotifications
 		duration = 10;
 		priority = 6;
 	};
-	
+
 	class PoliceDispatch
 	{
 		title = "911 Dispatch Center";
@@ -616,7 +616,7 @@ class CfgNotifications
 		duration = 10;
 		priority = 6;
 	};
-	
+
 	class AdminDispatch
 	{
 		title = "Admin Dispatch Center";
@@ -625,7 +625,7 @@ class CfgNotifications
 		duration = 10;
 		priority = 6;
 	};
-	
+
 	class AdminMessage
 	{
 		title = "Admin Message";
