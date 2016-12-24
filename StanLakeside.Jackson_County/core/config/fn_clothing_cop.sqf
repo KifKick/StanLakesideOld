@@ -284,7 +284,7 @@ switch (_filter) do
 			["kif_dtu_vest_richard","DTU Richard Hess",15],
 			["kif_dtu_vest_rudolf","DTU Rudolf Hess",15],
 			["kev_dtu_vest_knox","DTU Alex Knox",15],
-			//["dryg_dtu_vest_easy","DTU Easy Smith",15],
+			["dryg_dtu_vest_easy","DTU Easy Smith",15],
 			//["dryg_dtu_vest_pola","DTU Pola Śnieżka",15],
 			//["dryg_dtu_vest_pola_hess","DTU Pola Hess",15],
 			["TRYK_V_Bulletproof","Plate Carrier",15],
