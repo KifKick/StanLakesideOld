@@ -297,7 +297,7 @@
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
 			shadow=0;
-			text = "gun.paa";
+			text = "icons\gun.paa";
 		};
 	};
 };
@@ -332,7 +332,7 @@
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
 			shadow=0;
-			text = "krwawienie.paa";
+			text = "icons\krwawienie.paa";
 		};
 	};
 };
