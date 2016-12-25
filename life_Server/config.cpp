@@ -101,6 +101,8 @@ class CfgFunctions
 			class buysellLog {};
 			class vehicleLog {};
 			class vehicleAuction {};
+			class statuses {};
+			class statusupdate {};
 		};
 		class Paintball
 		{

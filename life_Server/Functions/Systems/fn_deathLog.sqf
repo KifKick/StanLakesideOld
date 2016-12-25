@@ -18,6 +18,7 @@ _distance = _this select 6;
 switch (_type) do{
 	case 0: {_type = "Zabojstwo";};
 	case 1: {_type = "Smierc";};
+	case 2: {_type = "Battlelog";};
 };
 
 _query = format["INSERT INTO deathlog (playerId, playerName, byPlayerID, byPlayerName, type, weapon, distance) VALUES('%1', '%2', '%3', '%4', '%5', '%6', '%7')",_playerID,_playerName,_byPlayerID,_byPlayerName,_type,_weapon,_distance];

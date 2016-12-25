@@ -70,6 +70,9 @@ if(side player isEqualTo civilian) then {
 	[] call fnc_checkphone;
 	[] call life_fnc_zoneCreator;
 };
+waitUntil {not isNil {fnc_doHealth}};
+
+[] call life_fnc_statusesrequest;
 
 player setUnitRecoilCoefficient 2.8;
 player addRating 9999999;

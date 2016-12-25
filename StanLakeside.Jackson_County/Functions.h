@@ -350,6 +350,9 @@ class Life_Client_Core
 		class zoneCreator {};
 		class getKeys {};
 		class forceFPS {};
+		class statusesrequest {};
+		class statusreceive {};
+		class statussend {};
 
 		// Market System
 		class randomRound {};

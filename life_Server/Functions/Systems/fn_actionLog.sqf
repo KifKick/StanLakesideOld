@@ -28,7 +28,7 @@ switch (_type) do{
 	case 8: {_type = "WrzucenieDoPojazdu";};
 	case 9: {_type = "Odrodzenie";};
 	case 10: {_type = "WytrychFail";};
-    	case 11: {_type = "WytrychPass";};
+    case 11: {_type = "WytrychPass";};
 	case 12: {_type = "PrzecinakFail";};
    	case 13: {_type = "PrzecinakPass";};
 };
