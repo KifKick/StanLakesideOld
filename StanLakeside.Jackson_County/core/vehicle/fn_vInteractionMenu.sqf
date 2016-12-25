@@ -223,7 +223,7 @@ if(playerSide isEqualTo west) then {
 		};
 		
 	_Btn8 ctrlsettext "Zniszcz";
-	_Btn8 buttonSetAction "[life_vInact_curTarget, profileName, getPlayerUID player] spawn life_fnc_checkdefect;"
+	_Btn8 buttonSetAction "[life_vInact_curTarget, profileName, getPlayerUID player] spawn life_fnc_checkdefect;";
 
 	_Btn9 ctrlShow false;
 	_Btn10 ctrlShow false;

@@ -496,6 +496,7 @@ player addEventHandler ["Take", {[3] call SOCK_fnc_updatePartial}];
 		if((damage player) != myhealth && myHealth < 0.95) then {
 			player setdamage myHealth;
 		};
+		[] call life_fnc_statussend
 	};
 
 	fnc_sustain =
