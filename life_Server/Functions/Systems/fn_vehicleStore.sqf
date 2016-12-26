@@ -5,15 +5,19 @@
 	Description:
 	Stores the vehicle in the 'Garage'
 */
-private["_vehicle","_impound","_vInfo","_vInfo","_plate","_uid","_query","_sql","_unit"];
+private["_vehicle","_impound","_vInfo","_vInfo","_plate","_uid","_query","_sql","_unit","_fuel","_damage"];
 _vehicle = param [0,ObjNull,[ObjNull]];
 _impound = param [1,false,[true]];
 _unit = param [2,ObjNull,[ObjNull]];
+
 
 if(isNull _vehicle OR isNull _unit) exitWith {
 	["life_impound_inuse",false] remoteExecCall ["life_fnc_netSetVar", _unit];				
 	["life_garage_store",false] remoteExecCall ["life_fnc_netSetVar", _unit];				
 };
+
+_fuel = fuel _vehicle;
+_damage = damage _vehicle;
 
 _vInfo = _vehicle getVariable["dbInfo",[]];
 if(count _vInfo > 0) then
@@ -39,7 +43,7 @@ if(_impound) then
 	} 
 	else
 	{
-		_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+		_query = format["UPDATE vehicles SET active='0', fuel='%3', damage='%4' WHERE pid='%1' AND plate='%2'",_uid,_plate,_fuel,_damage];
 
 		_thread = [_query,1] call DB_fnc_asyncCall;
 
@@ -69,7 +73,7 @@ else
 		["life_garage_store",false] remoteExecCall ["life_fnc_netSetVar", _unit];				
 	};
 
-	_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+	_query = format["UPDATE vehicles SET active='0', fuel='%3', damage='%4' WHERE pid='%1' AND plate='%2'",_uid,_plate,_fuel,_damage];
 
 	_thread = [_query,1] call DB_fnc_asyncCall;
 

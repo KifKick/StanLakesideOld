@@ -93,7 +93,7 @@ if(karma_level > 80) then {
 };
 [format["Masz %1 poziom reputacji!",karma_level], false] spawn domsg;
 
-waitUntil {not isNil {fnc_doHealth}};
+waitUntil {not isNil {fnc_doHealth} AND not isNil {fnc_doInjuriesUpdate}};
 
 [] call life_fnc_statusesrequest;
 

@@ -11,9 +11,9 @@ _uid = _this select 0;
 
 if (isNull _player) exitWith {};
 
-_query = format ["SELECT hunger, thirst, health FROM players WHERE playerid='%1'", _uid];
+_query = format ["SELECT hunger, thirst, health, injuries, battery FROM players WHERE playerid='%1'", _uid];
 _queryResult = [_query,2] call DB_fnc_asyncCall;
-diag_log "------------- AKTUALIZACJA STATUSOW -------------";
+diag_log "------------- POBIERANIE STATUSOW -------------";
 diag_log format["QUERY: %1",_query];
 diag_log format["Result: %1",_queryResult];
 diag_log "------------------------------------------------";

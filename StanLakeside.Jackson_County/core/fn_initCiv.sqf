@@ -70,7 +70,7 @@ if(side player isEqualTo civilian) then {
 	[] call fnc_checkphone;
 	[] call life_fnc_zoneCreator;
 };
-waitUntil {not isNil {fnc_doHealth}};
+waitUntil {not isNil {fnc_doHealth} AND not isNil {fnc_doInjuriesUpdate}};
 
 [] call life_fnc_statusesrequest;
 

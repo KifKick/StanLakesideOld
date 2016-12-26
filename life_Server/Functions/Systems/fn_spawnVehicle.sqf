@@ -17,7 +17,7 @@ if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 publicVariable "serv_sv_use";
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, fuel, damage FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
@@ -136,7 +136,9 @@ if((_vInfo select 1) isEqualTo "cop" && (_vInfo select 2) isEqualTo "IVORY_REV")
 {
 	[_vehicle,"cop_rev",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
-
+//9 i 10
+_vehicle setFuel parseNumber (_vInfo select 9);
+_vehicle setDamage parseNumber (_vInfo select 10);
 [1,"Twoj pojazd jest gotowy!"] remoteExecCall ["life_fnc_broadcast", _unit];
 serv_sv_use = serv_sv_use - [_vid];
 publicVariable "serv_sv_use";
