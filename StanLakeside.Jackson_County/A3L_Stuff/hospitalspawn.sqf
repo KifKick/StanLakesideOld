@@ -10,14 +10,14 @@ _cargo = _cargo + [count (assignedCargo _x)];
 
 // Select the first bed in array which is empty
 {
-if (_x < 1 && _foundbed == player) then
+if (_x < 1 && _foundbed isEqualTo player) then
 {
 	_foundbed = _list select _x;
 };
 } foreach _cargo;
 
 // If all beds are empty move player to marker position, otherwise put into bed
-if (_foundbed == player) then 
+if (_foundbed isEqualTo player) then 
 {
 	player setpos (getMarkerPos "lakeside_hospital");
 } else

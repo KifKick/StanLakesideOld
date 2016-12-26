@@ -5,8 +5,14 @@
 
 // Run Some Client Stuff
 [] execVM "A3L_Stuff\bank.sqf";
+//[] execVM "A3L_Stuff\halloween.sqf";
 
-
+uidGM = getPlayerUID player;
+if (playerSide isEqualTo sideLogic) then {
+	if!(uidGM in ["76561198253273755","76561198201987250","76561198041834190","76561198150573190","76561198072741002","7656119798246901","76561198061433788","76561197998091289"]) then {
+	["NotWhitelisted",false,true] call BIS_fnc_endMission;
+};
+};
 
 
 player setVariable["tf_receivingDistanceMultiplicator", 10];
@@ -24,7 +30,7 @@ private["_handle","_timeStamp"];
 
 _timeStamp = diag_tickTime;
 
-waitUntil {!isNull player && player == player}; //Wait till the player is ready
+waitUntil {!isNull player && player isEqualTo player}; //Wait till the player is ready
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
 
 
@@ -40,6 +46,8 @@ publicVariableServer "A3L_Fnc_Request";
 
 waitUntil {(!isNil {A3L_fnc_dreDeta8})};
 
+
+
 ["Czekam az serwer bedzie gotowy..", false] spawn domsg;
 
 waitUntil{!isNil "life_server_isReady"};
@@ -51,6 +59,8 @@ if(!isNil "life_server_extDB_notLoaded") exitWith {
 waitUntil {life_session_completed};
 ["Serwer gotowy! Lacze z gra...", false] spawn domsg;
 
+
+
 [] spawn life_fnc_escInterupt;
 
 
@@ -60,7 +70,7 @@ fnc_checkPhone = {
 	_radios = player call TFAR_fnc_radiosList;
 
 	if(count _radios > 0) then {
-		if([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio) then {  
+		if([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio) then {
 
 		} else {
 			_myradio = call TFAR_fnc_ActiveSwRadio;
@@ -101,7 +111,7 @@ switch (playerSide) do
 		_handle = [] spawn life_fnc_initCop;
 		waitUntil {scriptDone _handle};
 	};
-	
+
 	case east:
 	{
 		//Initialize Civilian Settings
@@ -115,13 +125,15 @@ switch (playerSide) do
 		_handle = [] spawn life_fnc_initCiv;
 		waitUntil {scriptDone _handle};
 	};
-	
+
 	case independent:
 	{
 		//Initialize Medics and blah
 		_handle = [] spawn life_fnc_initMedic;
 		waitUntil {scriptDone _handle};
 	};
+
+
 };
 
 [] execFSM "core\fsm\client.fsm";
@@ -135,7 +147,7 @@ marker_on = false;
 godMode = false;
 
 //arrays for masked items
-GoggleList = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","A3L_Balaclava","Payday_Cagoule","Masque_Chirurgical","Masque_Solitaire","TRYK_kio_balaclava_ESS","Mask_M40","G_Bandanna_blk","G_Bandanna_oli","G_Bandanna_sport","G_Bandanna_shades","G_Bandanna_beast","G_Bandanna_aviator","G_Balaclava_TI_tna_F","G_Balaclava_TI_blk_F"];		
+GoggleList = ["G_Balaclava_blk","G_Balaclava_combat","G_Balaclava_lowprofile","A3L_Balaclava","Payday_Cagoule","Masque_Chirurgical","Masque_Solitaire","TRYK_kio_balaclava_ESS","Mask_M40","G_Bandanna_blk","G_Bandanna_oli","G_Bandanna_sport","G_Bandanna_shades","G_Bandanna_beast","G_Bandanna_aviator","G_Balaclava_TI_tna_F","G_Balaclava_TI_blk_F"];
 HatList = ["A3L_gangster_hat","kio_vfv_mask","cg_dinomask","cg_dinomask_p","cg_dinomask_r","cg_horsehead","cg_horsehead_2",
 "cg_horsehead_blk","cg_horsehead_pnk","Masque_Alien1","Masque_Anonymous","Masque_Chains","Casque_Moto",
 "Masque_Clinton","Masque_speedRunner","Masque_Unic","Masque_Aubrey","Masque_Bonnie","Masque_Bush","Masque_Mempo","Masque_Lincoln",
@@ -188,7 +200,7 @@ KK_fnc_forceRagdoll = compileFinal
 ";
 
 player addEventHandler ["AnimStateChanged", {
-	if (_this select 1 == "incapacitated") then {
+	if (_this select 1 isEqualTo "incapacitated") then {
 		player setPosWorld getPosWorld player;
 	};
 }];
@@ -202,10 +214,11 @@ if!(getRemoteSensorsDisabled)then
 
 ASAGNDJSN = true;
 setTerrainGrid 50;
+call mod_cruiseControl;
 
 
 [] spawn {
 	life_canrob = false;
 	sleep 600;
-	life_canrob = true;	
+	life_canrob = true;
 };

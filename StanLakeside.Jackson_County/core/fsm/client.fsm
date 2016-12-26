@@ -81,7 +81,7 @@ class FSM
        "}" \n
        "else" \n
        "{" \n
-       "	if(player distance (getMarkerPos ""fed_reserve"") < 120 && playerSide == west) then" \n
+       "	if(player distance (getMarkerPos ""fed_reserve"") < 120 && playerSide isEqualTo west) then" \n
        "	{" \n
        "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck) + 250] call life_fnc_numberText];" \n
        "		[""bank"",""add"",(call life_paycheck) + 250] call life_fnc_handleCash;" \n

@@ -24,16 +24,20 @@ _staminatext = parseText format[""];
 _ammotext = parseText format[""];
 _amountmagtext = parseText format[""];
 _weaponname = parseText format[""];
+//_scarytext = parseText format[""];
+//_amountcandy = candy;
+//_playerscary = scarylevel;
+//_scarycolor = "#00FF4C";
 _hudinfo = weaponState player; // ["arifle_MX_ACO_pointer_F","arifle_MX_ACO_pointer_F","Single","30Rnd_65x39_caseless_mag",30]
 _curweapon = _hudinfo select 0;
 _curmagazine = _hudinfo select 4;
 _className = _hudinfo select 3;
 _gunmodeold = _hudinfo select 2;
 _gunmode = "";
-if ((_gunmodeold == "single") or (_gunmodeold == "FullAuto")) then {
+if ((_gunmodeold isEqualTo "single") or (_gunmodeold isEqualTo "FullAuto")) then {
 _gunmode = _gunmodeold;
-if (_gunmodeold == "single") then {_gunmode = "Pojedynczy"};
-if (_gunmodeold == "FullAuto") then {_gunmode = "Automatyczny"};
+if (_gunmodeold isEqualTo "single") then {_gunmode = "Pojedynczy"};
+if (_gunmodeold isEqualTo "FullAuto") then {_gunmode = "Automatyczny"};
 };
  
 _magforpic = "";
@@ -45,7 +49,7 @@ _picture = getText (configFile >> "CfgMagazines" >> _magforpic >> "picture");
 _nameofPlayer = name player;
 _noweaponsarray = ["","","","",0];
 _nothing = _noweaponsarray select 0;
-if (_nothing == _curweapon) then {
+if (_nothing isEqualTo _curweapon) then {
 } else {
  
 _zeroing = currentZeroing player;
@@ -54,18 +58,18 @@ _magazineClass = currentMagazine player;
 _weaponname = getText (configFile >> "CfgWeapons" >> _curweapon >> "displayName");
 _maxammo = getNumber(configFile >> "CfgMagazines" >> _magazineClass >> "count") ;
 _prcentammo = 0;
-if (_curmagazine == 0) then {
+if (_curmagazine isEqualTo 0) then {
 _prcentammo = 0;
 } else {
 _prcentammo = (_curmagazine / _maxammo) * 100;
 };
  
-_amountmag = {_x == (currentmagazine player)} count magazines player;
-if (_amountmag == 0) then {
+_amountmag = {_x isEqualTo (currentmagazine player)} count magazines player;
+if (_amountmag isEqualTo 0) then {
         _amountmagtext = parseText format["Skonczyly mi sie magazynki"];
                 _magcolor = "#FFFFFF";
     } else {
-    if (_amountmag == 1) then {
+    if (_amountmag isEqualTo 1) then {
         _amountmagtext = parseText format["Zostal mi %1 magazynek", _amountmag];
                 _magcolor = "#FFFFFF";
     } else {
@@ -74,7 +78,7 @@ if (_amountmag == 0) then {
                 _magcolor = "#FFFFFF";
 };};};
        
-if (_prcentammo == 0) then {
+if (_prcentammo isEqualTo 0) then {
         _ammotext = parseText format["Chyba skonczyla mi sie amunicja."];
                 _ammocolor = "#FFFFFF";
     } else {
@@ -99,12 +103,12 @@ if (_prcentammo == 0) then {
         _ammotext = parseText format["Mam bardzo duzo amunicji."];
                 _ammocolor = "#FFFFFF";
     } else {
-    if (_prcentammo == 100) then {
+    if (_prcentammo isEqualTo 100) then {
         _ammotext = parseText format["Magazynek jest pelen."];
                 _ammocolor = "#FFFFFF";
 };};};};};};};
  
-if (_zeroing == 0) then {
+if (_zeroing isEqualTo 0) then {
                 _zeroingtext = parseText format[""];
         } else {
                 _zeroingtext = parseText format["Zerowanie: %1M", _zeroing];
@@ -149,7 +153,7 @@ if (_playerhealth < 0.10) then {
                 _healthcolor = "#FF0000";
                 _healthtext = parseText format["Krytycznie ranny"];
         } else {
-        if (_playerhealth == 1) then {
+        if (_playerhealth isEqualTo 1) then {
                 _healthcolor = "#590000";
                 _healthtext = parseText format["Martwy</t>"];
 };};};};};};};};};};
@@ -190,7 +194,7 @@ if (_playerhunger > 90) then {
                 _hungercolor = "#FF0000";
                 _hungertext = parseText format["Zaczynam glodowac"];
         } else {
-        if (_playerhunger == 0) then {
+        if (_playerhunger isEqualTo 0) then {
                 _hungercolor = "#590000";
                 _hungertext = parseText format["Martwy</t>"];
 };};};};};};};};};
@@ -227,7 +231,7 @@ if (_playerthirst > 80) then {
                 _thirstcolor = "#FF0000";
                 _thirsttext = parseText format["Czuje sie okropnie przez dehydracje"];
         } else {
-        if (_playerthirst == 0) then {
+        if (_playerthirst isEqualTo 0) then {
                 _thirstcolor = "#590000";
                 _thirsttext = parseText format["MARTWY</t>"];
 };};};};};};};};};
@@ -260,11 +264,47 @@ if (_playerstamina < 0.10) then {
                 _staminacolor = "#590000";
                 _staminatext = parseText format["Jestem zmeczony"];
 };};};};};};};
+
+ /*if (_playerscary isEqualTo 0) then {
+                _scarycolor = "#00FF4C";
+                _scarytext = parseText format["Nie boje sie"];
+        } else {
+        if (_playerscary < 0.2) then {
+                _scarycolor = "#7BFF00";
+                _scarytext = parseText format["Troche przestraszony"];
+        } else {
+        if (_playerscary < 0.4) then {
+                _scarycolor = "#EAFF00";
+                _scarytext = parseText format["Przestraszony"];
+        } else {
+        if (_playerscary < 0.6) then {
+                _scarycolor = "#FF8400";
+                _scarytext = parseText format["Przerazony"];
+        } else {
+        if (_playerscary < 0.8) then {
+                _scarycolor = "#FF4000";
+                _scarytext = parseText format["Serce mi wali"];
+        } else {
+        if (_playerscary < 1) then {
+                _scarycolor = "#FF0000";
+                _scarytext = parseText format["Serce mi wali bardzo mocno"];
+        } else {
+        if (_playerscary isEqualTo 1) then {
+                _scarycolor = "#590000";
+                _scarytext = parseText format["Placze ze strachu"];
+};};};};};};};
+
+_candyconvtext = parsetext format [""];
+if (_amountcandy isEqualTo 0) then {
+_candyconvtext = parseText format ["Brak cukierkow!"];
+} else {
+_candyconvtext = parseText format ["%1 cukierkow!", _amountcandy];
+}; */
  
  
-_playerstatustext = parseText format ["<t font='EtelkaNarrowMediumPro' size='0.8' align='right'><t color='%1'>%2</t> | <t color='%3'>%4</t> | <t color='%5'>%6</t> | <t color='%7'>%8</t></t>", _healthcolor, _healthtext, _staminacolor, _staminatext, _hungercolor, _hungertext, _thirstcolor, _thirsttext];
+_playerstatustext = parseText format ["<t font='EtelkaNarrowMediumPro' size='0.8' align='right'><t color='%1'>%2</t> | <t color='%3'>%4</t> | <t color='%5'>%6</t> | <t color='%7'>%8 </t>", _healthcolor, _healthtext, _staminacolor, _staminatext, _hungercolor, _hungertext, _thirstcolor, _thirsttext];
 _playernametext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFFFF' size='1' align='right'>%1 | </t> <t color='#FFFFFF' size='1' align='right'>LVL: %2 |</t> <t color='#FFFFFF' size='1' align='right'> TEL: %3 | <t color='#FFFFFF' size='1' align='right'>%4", _nameofplayer, _reputation, _battery, _servertime];
-// _zeroinghudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#949494' size='1' align='left'>%1</t>", _zeroingtext];
+_zeroinghudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#949494' size='1' align='left'>%1</t>", _zeroingtext];
 _ammohudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='%1' size='0.9' align='left'>%2</t>",_ammocolor, _ammotext];
 _maghudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='%1' size='0.8' align='left'>%2</t>", _magcolor, _amountmagtext];
 _gunmodetext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFFFF' size='0.8' align='center'>%1</t>", _gunmode];
@@ -273,7 +313,7 @@ _weapontexthud = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFF
 ((uiNamespace getVariable "a3lhud") displayCtrl 41652) ctrlSetStructuredText _playerstatustext;
 ((uiNamespace getVariable "a3lhud") displayCtrl 16418) ctrlSetText _picture;
 ((uiNamespace getVariable "a3lhud") displayCtrl 62362) ctrlSetStructuredText _playernametext;
-// ((uiNamespace getVariable "a3lhud") displayCtrl 16423) ctrlSetStructuredText _zeroinghudtext;
+((uiNamespace getVariable "a3lhud") displayCtrl 16423) ctrlSetStructuredText _zeroinghudtext;
 ((uiNamespace getVariable "a3lhud") displayCtrl 16422) ctrlSetStructuredText _ammohudtext;
 ((uiNamespace getVariable "a3lhud") displayCtrl 16419) ctrlSetStructuredText _gunmodetext;
 ((uiNamespace getVariable "a3lhud") displayCtrl 16421) ctrlSetStructuredText _maghudtext;

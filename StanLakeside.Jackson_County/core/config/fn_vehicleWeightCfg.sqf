@@ -28,6 +28,29 @@ switch (_className) do
 	case "A3L_BMW135Purple": {45};
 	case "A3L_BMW135Red": {45};
 	case "bv_monster_2tone1": {200};
+	
+	case "red_ram_06_black": {110};
+	case "red_ram_06_aqua": {110};
+	case "red_ram_06_darkblue": {110};
+	case "red_ram_06_green": {110};
+	case "red_ram_06_red": {110};
+	case "red_ram_06_pink": {110};	
+	case "red_ram_06_yellow": {110};
+	case "red_ram_06_orange": {110};
+	case "red_ram_06_white": {110};
+	case "red_ram_06_purple": {110};
+	case "red_ram_06_darkgreen": {110};
+	case "red_ram_06_darkred": {110};
+	
+	case "red_beetle_66_black": {55};
+	case "red_beetle_66_fontanagrey": {55};
+	case "red_beetle_66_pearlwhite": {55};
+	case "red_beetle_66_rubyred": {55};
+	case "red_beetle_66_seablue": {55};
+	case "red_beetle_66_vwblue": {55};	
+	case "red_beetle_66_yukonyellow": {55};
+	case "red_beetle_66_seasand": {55};
+	case "red_beetle_66_bahamablue": {55};
 
 	case "AM_Holden_RBlue": {45};
 	case "AM_Holden_RRed": {45};
@@ -123,7 +146,18 @@ switch (_className) do
 	case "shounka_ivceco_rouge": {450};
 	case "shounka_ivceco_violet": {450};
 	case "C_MSSprinter_01_F": {180};
+	case "C_MSSprinter_Rojo_F": {180};
+	case "C_MSSprinter_Azul_F": {180};
+	case "C_MSSprinter_Verde_F": {180};
+	case "C_MSSprinter_Blanco_F": {180};
+	case "C_MSSprinter_Negro_F": {180};
+
 	case "C_MSSprinter_02_F": {230};
+	case "C_MSSprinter2_Rojo_F": {230};
+	case "C_MSSprinter2_Azul_F": {230};
+	case "C_MSSprinter2_Verde_F": {230};
+	case "C_MSSprinter2_Blanco_F": {230};
+	case "C_MSSprinter2_Negro_F": {230};
 
 
 
@@ -518,6 +552,9 @@ switch (_className) do
 	case "kif_cvpi_sheriff_lb_19": {35};
 	case "kif_cvpi_sheriff_slick_20": {35};
 	case "kif_cvpi_sheriff_lb_21": {35};
+	case "kev_cvpi_correction_lb_91": {50};
+	case "kev_cvpi_correction_lb_92": {50};
+	case "kev_taurus_co_lb_90": {50};
 	case "kif_taurus_so_lb": {35};
 	case "kif_taurus_so_pb": {35};
 	case "kif_taurus_so_lb_23": {35};
@@ -528,6 +565,7 @@ switch (_className) do
 	case "ivory_m3_marked_gts": {35};
 	case "ivory_m3_unmarked_green": {35};
 	case "kif_vehicles_helicopter_mh9_police": {35};
+	case "O_Heli_Light_02_unarmed_F": {70};
 	
 	
 	case "vvv_camionbasura": {150};

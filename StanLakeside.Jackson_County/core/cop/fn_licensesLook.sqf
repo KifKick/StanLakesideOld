@@ -22,7 +22,7 @@ _id_faction = _ui displayCtrl 44447;
 
 skip_all = false;
 
-if(side player == west) then {
+if(side player isEqualTo west) then {
 	player remoteExec ["fnc_pull_ID",_civ];
 	life_gather_info = false;
 	["Zbieram informacje - Prosze czekac!", false] spawn domsg; 
@@ -67,6 +67,12 @@ if(!skip_all) then {
 	{
 		_civ addgoggles OldGoggles;
 	};
+	_playerID = getPlayerUID player;
+	_playerName = name player;
+	_byPlayerID = getPlayerUID _civ;
+	_byPlayerName = name _civ;
+	_type = 4;
+	[_playerID,_playerName,_byPlayerID,_byPlayerName,_type,""] remoteExecCall ["TON_fnc_copLog", (call life_fnc_HCC)];
 } else {
 
 	["Nie udalo mi sie sprawdzic dowodu!", false] spawn domsg;

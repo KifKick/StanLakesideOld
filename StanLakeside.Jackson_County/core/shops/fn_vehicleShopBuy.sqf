@@ -15,7 +15,6 @@ if(_className in ["Jonzie_Transit","Jonzie_Tow_Truck", "Jonzie_Flat_Bed", "Jonzi
 _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; 
 _basePrice = (_vehicleList select _vIndex) select 1;
-_baseprice = _baseprice / 10;
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
@@ -30,22 +29,30 @@ _spawnPoints = life_veh_shop select 1;
 _spawnPoint = "";
 
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
-	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],20]) == 0) exitWith {_spawnPoint = _spawnPoints};
+	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],20]) isEqualTo 0) exitWith {_spawnPoint = _spawnPoints};
 } else {
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
 	if(typeName _spawnPoints isEqualTo typeName []) then {
 		//Find an available spawn point.
-		{if(count(nearestObjects[(getMarkerPos _x),["Car","Motorcycle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
+		{if(count(nearestObjects[(getMarkerPos _x),["Car","Motorcycle","Ship","Air"],5]) isEqualTo 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
 	} else {
-		if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Motorcycle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
+		if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Motorcycle","Ship","Air"],5]) isEqualTo 0) exitWith {_spawnPoint = _spawnPoints};
 	};
 };
 
 
 if(_spawnPoint isEqualTo "") exitWith {[localize "STR_Shop_Veh_Block", false] spawn domsg;};
 ["cash","take",_basePrice] call life_fnc_handleCash; 
+[6] call SOCK_fnc_updatePartial;
 [format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText], false] spawn domsg;
 [player,"buycarniggah"] spawn life_fnc_nearestSound;
+_playerID = getPlayerUID player;
+_playerName = name player;
+_vehicleClass = _className;
+_vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
+_type = 0;
+_amount = _basePrice;
+[_playerID,_playerName,_vehicleClass,_vehicleName,_type,_amount] remoteExecCall ["TON_fnc_vehicleLog", (call life_fnc_HCC)];
 _obj = ObjNull;
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
@@ -115,4 +122,5 @@ if(_mode) then {
 	[(getPlayerUID player),playerSide,_vehicle,_colorIndex] remoteExecCall ["TON_fnc_vehicleCreate",(call life_fnc_HCC)];
 };
 closeDialog 0; //Exit the menu.
+[6] call SOCK_fnc_updatePartial;
 true;

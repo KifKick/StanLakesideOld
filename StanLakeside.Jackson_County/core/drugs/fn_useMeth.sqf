@@ -17,6 +17,7 @@ sleep 1;
 drugs_used = false;
 
 player setAnimSpeedCoef 1.3;
+["Remove",30] call fnc_karma;
 
 while {!drugs_used} do {
 	sleep 5;
@@ -29,8 +30,8 @@ while {!drugs_used} do {
 	};
 
 	if(getAnimSpeedCoef player < 1.2) then { player setAnimSpeedCoef 1.2; };
-	if(life_crazy == 30) then { ["Twoja meta konczy sie za 30 sekund!", false] spawn domsg; };
-	if(life_crazy == 0) exitwith { ["Twoja meta skonczyla sie!", false] spawn domsg; };
+	if(life_crazy isEqualTo 30) then { ["Twoja meta konczy sie za 30 sekund!", false] spawn domsg; };
+	if(life_crazy isEqualTo 0) exitwith { ["Twoja meta skonczyla sie!", false] spawn domsg; };
 };
 
 

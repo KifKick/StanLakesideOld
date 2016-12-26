@@ -26,11 +26,11 @@ while {true} do {
 	if(player distance _startpos > 15 || deadPlayer) exitwith { _success = false;};
 	_calcT = _calcT + 1;
 	if(_calcT > 1200) exitwith { _success = true; ["You finished capturing!", false] spawn domsg;  };
-	if(_calcT == 120 || _calcT == 180 || _calcT == 240 || _calcT == 300 || _calcT == 360 || _calcT == 420 || _calcT == 480 || _calcT == 540 ) then {
+	if(_calcT isEqualTo 120 || _calcT isEqualTo 180 || _calcT isEqualTo 240 || _calcT isEqualTo 300 || _calcT isEqualTo 360 || _calcT isEqualTo 420 || _calcT isEqualTo 480 || _calcT isEqualTo 540 ) then {
 		["The Police are raiding the Rebel Weapon Shipment!", false] remoteExec ["domsg",-2]; 
 
 	};
-	if(_calcT == 60) then {
+	if(_calcT isEqualTo 60) then {
 		["The Police are raiding the Rebel Weapon Shipment in 1 minute!", false] remoteExec ["domsg",-2]; 
 	};
 

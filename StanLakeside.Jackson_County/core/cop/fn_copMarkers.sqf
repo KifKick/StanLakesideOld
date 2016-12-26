@@ -10,13 +10,13 @@ _markers = [];
 _cops = [];
 
 uiSleep 0.25;
-if(visibleMap AND "ItemGPS" in assignedItems player) then {
-	{if(side _x == west || side _x == independent) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
+if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
+	{if(side _x isEqualTo west || side _x isEqualTo independent) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
 	//Create markers
 	{
 		if ("ItemGPS" in assignedItems _x) then {
 			_marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];
-			if(side _x == west) then {
+			if(side _x isEqualTo west) then {
 				_marker setMarkerColorLocal "ColorBlue";
 			} else {
 				_marker setMarkerColorLocal "ColorGreen";
@@ -27,7 +27,7 @@ if(visibleMap AND "ItemGPS" in assignedItems player) then {
 		};
 	} foreach _cops;
 		
-	while {visibleMap} do
+	while {visibleMap || visibleGPS} do
 	{
 		{
 			private["_marker","_unit"];

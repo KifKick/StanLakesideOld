@@ -3,7 +3,7 @@ private["_skiptotal","_markerstart","_startpos","_vehicle"];
 
 if(life_is_arrested || (player getVariable ["restrained", false]) || (player getVariable ["tied", false])) exitwith {};
 
-if( life_koil_race2 == 1 || life_koil_race == 1 || joinmode == 1 ) exitWith { ["Juz jestes w kolejce, prosze czekac.", false] spawn domsg; };
+if( life_koil_race2 isEqualTo 1 || life_koil_race isEqualTo 1 || joinmode isEqualTo 1 ) exitWith { ["Juz jestes w kolejce, prosze czekac.", false] spawn domsg; };
 
 if(cash_in_hand < 50) exitWith {
 ["Potrzebujesz $50 aby sie scigac", false] spawn domsg;	
@@ -31,11 +31,11 @@ if(!(racemachine2 getVariable "start")) then {
 
 uiSleep 1;
 koildeb2 = racemachine2 getvariable "total";
-if(koildeb2 == 5) exitWith {
+if(koildeb2 isEqualTo 5) exitWith {
 	["Wyscig jest pelen, sprobuj nastepnym razem!", false] spawn domsg;
 };
 
-if(_skiptotal == 0) then {
+if(_skiptotal isEqualTo 0) then {
     koildeb2 = koildeb2 + 1;
     racemachine2 setVariable["total",koildeb2,true];
 };
@@ -47,19 +47,19 @@ life_koil_race2 = 1;
 
 _className = "A3L_Karts";
 
-if(koildeb2 == 1) then {
+if(koildeb2 isEqualTo 1) then {
 	_markerstart = "start_race_1_1";
 };
-if(koildeb2 == 2) then {
+if(koildeb2 isEqualTo 2) then {
 	_markerstart = "start_race_2_1";
 };
-if(koildeb2 == 3) then {
+if(koildeb2 isEqualTo 3) then {
 	_markerstart = "start_race_3_1";
 };
-if(koildeb2 == 4) then {
+if(koildeb2 isEqualTo 4) then {
 	_markerstart = "start_race_4_1";
 };
-if(koildeb2 == 5) then {
+if(koildeb2 isEqualTo 5) then {
 	_markerstart = "start_race_5_1";
 	racemachine2 setVariable["racefull",true,true];
 };
@@ -78,19 +78,19 @@ if(isNull objectParent player && !deadPlayer) then {
 	player action ["getInDriver", _vehicle];	
 };
 
-if(koildeb2 == 1) then {
+if(koildeb2 isEqualTo 1) then {
 	rrvehicle1 = _vehicle;
 };
-if(koildeb2 == 2) then {
+if(koildeb2 isEqualTo 2) then {
 	rrvehicle2 = _vehicle;
 };
-if(koildeb2 == 3) then {
+if(koildeb2 isEqualTo 3) then {
 	rrvehicle3 = _vehicle;
 };
-if(koildeb2 == 4) then {
+if(koildeb2 isEqualTo 4) then {
 	rrvehicle4 = _vehicle;
 };
-if(koildeb2 == 5) then {
+if(koildeb2 isEqualTo 5) then {
 	rrvehicle5 = _vehicle;
 };
 
@@ -156,25 +156,25 @@ while { (racemachine2 getVariable "racing") } do {
 	uiSleep 0.05;
 	_laptimes = _laptimes + 0.05;
 
-	if((player distance (getmarkerpos "race_check_1_1")) < 5 && _racecheck == 1) then {
+	if((player distance (getmarkerpos "race_check_1_1")) < 5 && _racecheck isEqualTo 1) then {
 		[format["Zaliczyles %1 punkt kontrolny",_racecheck], false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
 		_racecheck = 2;
 	};
 
-	if((player distance (getmarkerpos "race_check_2_1")) < 5 && _racecheck == 2) then {
+	if((player distance (getmarkerpos "race_check_2_1")) < 5 && _racecheck isEqualTo 2) then {
 		[format["Zaliczyles %1 punkt kontrolny",_racecheck], false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
 		_racecheck = 3;
 	};
 
-	if((player distance (getmarkerpos "race_check_3_1")) < 5 && _racecheck == 3) then {
+	if((player distance (getmarkerpos "race_check_3_1")) < 5 && _racecheck isEqualTo 3) then {
 		[format["Zaliczyles %1 punkt kontrolny",_racecheck], false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
 		_racecheck = 4;
 	};
 
-	if((player distance (getmarkerpos "race_check_4_1")) < 5 && _racecheck == 4) then {
+	if((player distance (getmarkerpos "race_check_4_1")) < 5 && _racecheck isEqualTo 4) then {
 		_racecheck = 1;
 		["Okrazenie zakonczone!", false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
@@ -187,7 +187,7 @@ while { (racemachine2 getVariable "racing") } do {
 	};
 
 
-	if(_laps == 7) exitWith {
+	if(_laps isEqualTo 7) exitWith {
 		if((racemachine2 getVariable "start")) then {
 			[player] remoteExec ["TON_fnc_racefinish2",2];
 			["cash","add",1000] call life_fnc_handleCash;

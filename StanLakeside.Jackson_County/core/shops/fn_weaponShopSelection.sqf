@@ -9,14 +9,14 @@
 private["_control","_index","_priceTag","_price","_item"];
 _control = param [0,controlNull,[controlNull]];
 _index = param [1,-1,[0]];
-if(isNull _control OR _index == -1) exitWith {closeDialog 0;}; //Bad data
+if(isNull _control OR _index isEqualTo -1) exitWith {closeDialog 0;}; //Bad data
 
 _priceTag = ((findDisplay 38400) displayCtrl 38404);
 _item = _control lbData _index;
-if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
+if((uiNamespace getVariable["Weapon_Shop_Filter",0]) isEqualTo 1) then
 {
 	_iS = [_item,__GETC__(life_weapon_shop_array)] call fnc_index;
-	if(_iS == -1) then 
+	if(_iS isEqualTo -1) then 
 	{
 		_price = 0;
 	}

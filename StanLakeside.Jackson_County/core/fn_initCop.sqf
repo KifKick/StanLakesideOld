@@ -22,7 +22,7 @@ if(life_blacklisted) exitWith
 	uiSleep 30;
 };
 
-if((__GETC__(life_coplevel) == 0) && (__GETC__(life_adminlevel) == 0)) then {
+if((__GETC__(life_coplevel) isEqualTo 0) && (__GETC__(life_adminlevel) isEqualTo 0)) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 	uiSleep 35;
 };
@@ -39,9 +39,47 @@ if(life_is_arrested) then
 } else {
 	jail_money_init = true;
 	[] call life_fnc_spawnMenu;
+	[] execVM "core\welcomecop.sqf";
 	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 };
+
+switch (true) do
+{
+	case(((__GETC__(life_coplevel)) isEqualTo 1)):
+	{
+		life_paycheck = 100;
+	};
+	case(((__GETC__(life_coplevel)) isEqualTo 2)):
+	{
+		life_paycheck = 100;
+	};
+	case(((__GETC__(life_coplevel)) isEqualTo 3)):
+	{
+		life_paycheck = 100;
+	};
+	case(((__GETC__(life_coplevel)) isEqualTo 4)):
+	{
+		life_paycheck = 100;
+	};
+	case(((__GETC__(life_coplevel)) isEqualTo 5)):
+	{
+		life_paycheck = 100;
+	};
+	case(((__GETC__(life_coplevel)) isEqualTo 6)):
+	{
+		life_paycheck = 100;
+	};
+	case(((__GETC__(life_coplevel)) isEqualTo 7)):
+	{
+		life_paycheck = 100;
+	};
+	case(((__GETC__(life_coplevel)) isEqualTo 8)):
+	{
+		life_paycheck = 100;
+	};
+};
+
 
 if(life_karma > 999) then {
 	karma_level = life_karma / 400;
@@ -55,6 +93,9 @@ if(karma_level > 80) then {
 };
 [format["Masz %1 poziom reputacji!",karma_level], false] spawn domsg;
 
+waitUntil {not isNil {fnc_doHealth}};
+
+[] call life_fnc_statusesrequest;
 
 player setUnitRecoilCoefficient 2.8;
 uiSleep 2;

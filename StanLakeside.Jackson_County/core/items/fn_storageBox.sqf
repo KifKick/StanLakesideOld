@@ -11,7 +11,7 @@ _house = nearestBuilding (getPosATL player);
 if(!(_house in life_vehicles)) exitWith {[localize "STR_ISTR_Box_NotinHouse", false] spawn domsg;};
 _containers = _house getVariable["containers",[]];
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
-if(count _houseCfg == 0) exitWith {}; //What the fuck happened?
+if(count _houseCfg isEqualTo 0) exitWith {}; //What the fuck happened?
 if(count _containers >= (_houseCfg select 1)) exitWith {[localize "STR_ISTR_Box_HouseFull", false] spawn domsg;};
 
 _slots = _house getVariable ["slots",[]];

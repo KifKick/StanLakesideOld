@@ -27,7 +27,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 	_curWep = currentWeapon player;
 	if(isNull objectParent player) then {
 
-		if(vest player == "v_press_f" && (getpos player) distance newsspot > 100) then
+		if(vest player isEqualTo "v_press_f" && (getpos player) distance newsspot > 100) then
 		{
 			["bank","add", 1000] call life_fnc_handleCash;
 			[6] call SOCK_fnc_updatePartial;
@@ -36,7 +36,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 			["Add",10] call fnc_karma;
 		};
 
-		if(vest player == "v_press_f" && _curWep == "Tv_Camera" && (getpos player) distance newsspot > 100) then
+		if(vest player isEqualTo "v_press_f" && _curWep isEqualTo "Tv_Camera" && (getpos player) distance newsspot > 100) then
 		{
 			["bank","add", 1000] call life_fnc_handleCash;
 			[6] call SOCK_fnc_updatePartial;
@@ -44,7 +44,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 			NewsSpot = getpos player;
 			["Add",15] call fnc_karma;
 		};
-		if(vest player == "v_press_f" && _curWep == "Tv_Camera" && (getpos player) distance newsspot < 100) then
+		if(vest player isEqualTo "v_press_f" && _curWep isEqualTo "Tv_Camera" && (getpos player) distance newsspot < 100) then
 		{
 			["bank","add", 250] call life_fnc_handleCash;
 			[6] call SOCK_fnc_updatePartial;
@@ -52,7 +52,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 			NewsSpot = getpos player;
 			["Add",5] call fnc_karma;
 		};
-		if(vest player == "v_press_f" && (getpos player) distance newsspot < 100) then
+		if(vest player isEqualTo "v_press_f" && (getpos player) distance newsspot < 100) then
 		{
 			["bank","add", 250] call life_fnc_handleCash;
 			[6] call SOCK_fnc_updatePartial;
@@ -61,7 +61,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 			["Add",2] call fnc_karma;
 		};					
 	} else {
-		if(vest player == "v_press_f" && (getpos player) distance newsspot > 100) then
+		if(vest player isEqualTo "v_press_f" && (getpos player) distance newsspot > 100) then
 		{
 			["bank","add", 150] call life_fnc_handleCash;
 			[6] call SOCK_fnc_updatePartial;
@@ -72,7 +72,7 @@ while{_fkit > 0 && life_NewsJobs } do {
 
 	};
 	_fkit = _fkit - 1;
-	if(_fkit == 5) then {
+	if(_fkit isEqualTo 5) then {
 		["Your News payments stop in 5 minutes..", false] spawn domsg; 
 	};
 };

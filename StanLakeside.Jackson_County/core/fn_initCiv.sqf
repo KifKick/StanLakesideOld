@@ -1,20 +1,20 @@
 /*
 	File: fn_initCiv.sqf
-	
-	
+
+
 	Description:
 	Initializes the civilian.
 */
 
 // TFR Variables API
-tf_no_auto_long_range_radio = true; 
+tf_no_auto_long_range_radio = true;
 
 TF_terrain_interception_coefficient = 1;
 
 private["_spawnPos"];
 
 
-if(side player == east) then {
+if(side player isEqualTo east) then {
 	["NotWhitelisted",false,true] call BIS_fnc_endMission;
 	uiSleep 35;
 };
@@ -59,15 +59,20 @@ if(life_is_arrested) then
 
 
 	[] call life_fnc_spawnMenu;
+	[] execVM "core\welcomeciv.sqf";
 	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 };
 
 
-if(side player == civilian) then {
+if(side player isEqualTo civilian) then {
 	[] spawn fnc_resetCallSpawn;
 	[] call fnc_checkphone;
+	[] call life_fnc_zoneCreator;
 };
+waitUntil {not isNil {fnc_doHealth}};
+
+[] call life_fnc_statusesrequest;
 
 player setUnitRecoilCoefficient 2.8;
 player addRating 9999999;

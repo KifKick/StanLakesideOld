@@ -49,7 +49,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Bicycle") 
 		if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_ActionCancel", false] spawn domsg; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {[localize "STR_NOTF_RepairingInVehicle", false] spawn domsg;};
 		_veh setDamage 0;
-		if (!license_civ_oskp || !(side player == independent)) then {
+		if (!license_civ_oskp || !(side player isEqualTo independent)) then {
 		player removeItem "ToolKit";
 		};
 		[localize "STR_NOTF_RepairedVehicle", false] spawn domsg;

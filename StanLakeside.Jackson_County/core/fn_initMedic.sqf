@@ -25,29 +25,29 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 };
 
 [] call life_fnc_spawnMenu;
-//[] execVM "core\welcomemedic.sqf";
+[] execVM "core\welcomemedic.sqf";
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 
 switch (true) do
 {
-	case(((__GETC__(life_medicLevel)) == 1)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 1)):
 	{
 		life_paycheck = 750; //13 500 restart
 	};
-	case(((__GETC__(life_medicLevel)) == 2)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 2)):
 	{
 		life_paycheck = 1250; //22 500 restart
 	};
-	case(((__GETC__(life_medicLevel)) == 3)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 3)):
 	{
 		life_paycheck = 1750; //31 500 restart
 	};
-	case(((__GETC__(life_medicLevel)) == 4)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 4)):
 	{
 		life_paycheck = 2250; //40 500 restart
 	};
-	case(((__GETC__(life_medicLevel)) == 5)):
+	case(((__GETC__(life_medicLevel)) isEqualTo 5)):
 	{
 		life_paycheck = 2750; //49 500 restart
 	};
@@ -64,6 +64,8 @@ if(karma_level > 80) then {
 	karma_level = 80;
 };
 [format["Masz %1 poziom reputacji!",karma_level], false] spawn domsg;
+waitUntil {not isNil {fnc_doHealth}};
 
+[] call life_fnc_statusesrequest;
 uiSleep 2;
 ["EMS FREQ: 33.1 / CO FREQ: 33.2 / POLICE FREQ: 33.3 / EMS D: 33.5", false] spawn domsg;

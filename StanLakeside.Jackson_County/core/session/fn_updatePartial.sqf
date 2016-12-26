@@ -37,6 +37,7 @@ switch(_mode) do {
 	
 	case 3: {
 		call life_fnc_saveGear;
+		[] call life_fnc_statussend;
 		_packet set[2,life_gear];
 	};
 	
@@ -54,6 +55,7 @@ switch(_mode) do {
 	};
 	
 	case 8: {
+		[] call life_fnc_statussend;
 		_packet set[2,cash_in_hand];
 		_packet set[4,cash_in_bank];
 		_packet set[5,life_karma];

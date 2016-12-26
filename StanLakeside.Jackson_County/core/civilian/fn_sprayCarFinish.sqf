@@ -4,7 +4,7 @@ SprayCarFinish.sqf
 */
 _price = 1000;
 if(side player != civilian && side player != east && side player != west) exitwith {["MURZYN: NIE BEDE MALOWAL AUT PSOW! JP!", false] spawn domsg;};
-if(vehicle player == player) exitwith { ["MURZYN: Musisz byc kierowca pojazdu abym Ci go sprejnal, ziom!", false] spawn domsg; };
+if(vehicle player isEqualTo player) exitwith { ["MURZYN: Musisz byc kierowca pojazdu abym Ci go sprejnal, ziom!", false] spawn domsg; };
 if(driver (vehicle player) != player) exitwith { ["MURZYN: Musisz byc kierowca pojazdu abym Ci go sprejnal, ziom!", false] spawn domsg; };
 if(cash_in_hand < _price) exitWith { ["MURZYN: Masz za malo hajsu, $1000 albo Ci nie sprejne furki!", false] spawn domsg; };	
 _vehicle = vehicle player;
@@ -20,10 +20,10 @@ while{true} do {
 	hint parsetext format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>JOB:</t><br/> Stoj w miejscu! Maluje, zostalo %1 sekund.",_remaining];
 	uisleep 1;
 	_remaining = _remaining - 1;
-	if(_remaining == 0) exitwith { _complete = true; };
+	if(_remaining isEqualTo 0) exitwith { _complete = true; };
 	if(getpos player distance _startpos > 5) exitwith {};
-	if( _remaining == 7 || _remaining == 18 ) then { [player,"spraypaint"] spawn life_fnc_nearestSound; };
-	if(vehicle player == player) exitwith {};
+	if( _remaining isEqualTo 7 || _remaining isEqualTo 18 ) then { [player,"spraypaint"] spawn life_fnc_nearestSound; };
+	if(vehicle player isEqualTo player) exitwith {};
 };
 
 hint "";

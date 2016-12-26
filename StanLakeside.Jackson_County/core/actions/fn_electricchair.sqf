@@ -18,7 +18,7 @@ player setDir 278.47;
 
 player playMoveNow "BasicDriver";
 
-while {animationState player == "BasicDriver"} do
+while {animationState player isEqualTo "BasicDriver"} do
     {
 	    uiSleep 1;
 		player setPos [8779.13,6719.67,0];

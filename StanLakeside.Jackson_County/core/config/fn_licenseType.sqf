@@ -8,7 +8,7 @@
 private["_type","_ret","_var","_mode"];
 _type = param [0,"",[""]];
 _mode = param [1,-1,[0]];
-if(_type == "" OR _mode == -1) exitWith {[]};
+if(_type isEqualTo "" OR _mode isEqualTo -1) exitWith {[]};
 
 switch (_mode) do
 {
@@ -18,7 +18,7 @@ switch (_mode) do
 		{
 			case "MDMA": {_var = "license_civ_MDMA"};  // in the upper field
 			case "meth": {_var = "license_civ_meth"};  // in the upper field
-			case "oskp": {_var = "license_civ_oskp"};
+			case "hess": {_var = "license_civ_hess"};
 			case "prokurator": {_var = "license_cop_prokurator"};
 			case "driver": {_var = "license_civ_driver"}; //Drivers License cost
 			case "boat": {_var = "license_civ_boat"}; //Boating license cost
@@ -30,6 +30,7 @@ switch (_mode) do
 			case "swat": {_var = "license_cop_swat"}; //swat License cost
 			case "sert": {_var = "license_cop_sert"}; //sert License cost
 			case "dtu": {_var = "license_cop_dtu"}; //dtu License cost
+			case "sniper": {_var = "license_cop_sniper"}; //sniper License cost			
 			case "aiad": {_var = "license_cop_aiad"}; //aiad License cost
 			case "cg": {_var = "license_cop_cg"}; //Coast guard license cost
 			case "heroin": {_var = "license_civ_heroin"}; //Heroin processing license cost
@@ -47,6 +48,12 @@ switch (_mode) do
 			case "cement": {_var = "license_civ_cement"};
 			case "mair": {_var = "license_med_air"};
 			case "home": {_var = "license_civ_home"};
+			case "uran": {_var = "license_civ_uran"};
+			case "uranp": {_var = "license_civ_uranp"};
+			case "gang": {_var = "license_civ_gang"};
+			case "gang2": {_var = "license_civ_gang2"};
+			case "gangTGC": {_var = "license_civ_gangTGC"};
+			case "gangANON": {_var = "license_civ_gangANON"};
 			//case "donator1": {_var = "license_civ_donator1"};
 			//case "donator2": {_var = "license_civ_donator2"};
 			//case "donator3": {_var = "license_civ_donator3"};
@@ -62,7 +69,7 @@ switch (_mode) do
 		{
 			case "license_civ_MDMA": {_var = "MDMA"};  // in the lower field
 			case "license_civ_meth": {_var = "meth"};  // in the lower field
-			case "license_civ_oskp": {_var = "oskp"};
+			case "license_civ_hess": {_var = "hess"};
 			case "license_cop_prokurator": {_var = "prokurator"};
 			case "license_civ_driver": {_var = "driver"}; //Drivers License cost
 			case "license_civ_boat": {_var = "boat"}; //Boating license cost
@@ -91,6 +98,12 @@ switch (_mode) do
 			case "license_civ_cement": {_var = "cement"};
 			case "license_med_air": {_var = "mair"};
 			case "license_civ_home": {_var = "home"};
+			case "license_civ_uran": {_var = "uran"};
+			case "license_civ_uranp": {_var = "uranp"};
+			case "license_civ_gang": {_var = "gang"};
+			case "license_civ_gang2": {_var = "gang2"};
+			case "license_civ_gangTGC": {_var = "gangTGC"};
+			case "license_civ_gangANON": {_var = "gangANON"};
 			//case "license_civ_donator1": {_var = "donator1"};
 			//case "license_civ_donator2": {_var = "donator2"};
 			//case "license_civ_donator3": {_var = "donator3"};

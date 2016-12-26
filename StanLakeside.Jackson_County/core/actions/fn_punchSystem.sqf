@@ -4,7 +4,7 @@
 if(currentWeapon player != "") exitwith {};
 if(life_action_inuse) exitWith {};
 if(life_istazed) exitWith {};
-if((animationState player) == "Incapacitated") exitWith {};
+if((animationState player) isEqualTo "Incapacitated") exitWith {};
 
 life_action_inUse = true;
 _koilsucks = round (random 2);
@@ -12,7 +12,7 @@ _curHit = cursortarget;
 
 switch (true) do
 {
-	case (_koilsucks == 0): { 
+	case (_koilsucks isEqualTo 0): { 
 		player playaction "MOCAP_Man_Act_Non_CivPace_Non_Punch_Hand_Right_Direct";
 		if(!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 2 ) then
 		{
@@ -20,7 +20,7 @@ switch (true) do
 			[player,"punch1"] spawn life_fnc_nearestSound;
 		};
 	};
-	case (_koilsucks == 1): { 
+	case (_koilsucks isEqualTo 1): { 
 		player playaction "MOCAP_Man_Act_Non_CivPace_Non_Punch_Hand_Left_Direct";
 		if(!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 2 ) then
 		{
@@ -35,7 +35,7 @@ switch (true) do
 
 		};
 	};
-	case (_koilsucks == 2): { 
+	case (_koilsucks isEqualTo 2): { 
 		player playaction "MOCAP_Man_Act_Idle_Stay_CivPace_Non_Push_Kick_LeftLeg";
 		if(!isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && cursorTarget distance player < 2 ) then
 		{

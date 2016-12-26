@@ -26,7 +26,7 @@ for "_i" from 0 to (count life_vehicles)-1 do
 	{
 		_color = [(typeOf _veh),(_veh getVariable "Life_VEH_color")] call life_fnc_vehicleColorStr;
 		_text = format["(%1)",_color];
-		if(_text == "()") then
+		if(_text isEqualTo "()") then
 		{
 			_text = "";
 		};
@@ -52,7 +52,7 @@ for "_i" from 0 to (count life_vehicles)-1 do
 	};
 } foreach _near_units;
 
-if(((lbSize _vehicles)-1) == -1) then
+if(((lbSize _vehicles)-1) isEqualTo -1) then
 {
 	_vehicles lbAdd "You don't own any vehicles";
 	_vehicles lbSetData [(lbSize _vehicles)-1,str(ObjNull)];

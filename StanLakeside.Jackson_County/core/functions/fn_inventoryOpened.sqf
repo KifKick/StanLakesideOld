@@ -2,7 +2,7 @@
 Inventory Opened Event Handler
 */
 private["_container","_unit","_handle"];
-if(count _this == 1) exitWith {false};
+if(count _this isEqualTo 1) exitWith {false};
 _unit = _this select 0;
 _container = _this select 1;
 handle = false;
@@ -16,7 +16,7 @@ if(vehicle player != player || _container isKindOf "Car" || _container isKindOf 
 
 
 _isPack = getNumber(configFile >> "CfgVehicles" >> (typeOf _container) >> "isBackpack");
-if(_isPack == 1) exitWith {
+if(_isPack isEqualTo 1) exitWith {
 	handle = true;
 	handle;
 };
@@ -38,7 +38,7 @@ if(_container isKindOf "Man" && !alive _container) exitWith {
 	handle;
 };
 
-if(_container isKindOf "Car" && {(locked _container) == 2}) exitWith {
+if(_container isKindOf "Car" && {(locked _container) isEqualTo 2}) exitWith {
 	if(!(_container in life_vehicles)) then {
 	["Nie mozesz otworzyc bagaznika gdy pojazd jest zamkniety", false] spawn domsg;
 	handle = true;
@@ -46,7 +46,7 @@ if(_container isKindOf "Car" && {(locked _container) == 2}) exitWith {
 	};
 };
 
-if(_container isKindOf "Ship" && {(locked _container) == 2}) exitWith {
+if(_container isKindOf "Ship" && {(locked _container) isEqualTo 2}) exitWith {
 	if(!(_container in life_vehicles)) then {
 	["Nie mozesz otworzyc bagaznika gdy pojazd jest zamkniety", false] spawn domsg;
 	handle = true;
@@ -54,7 +54,7 @@ if(_container isKindOf "Ship" && {(locked _container) == 2}) exitWith {
 	};
 };
 
-if(_container isKindOf "Air" && {(locked _container) == 2}) exitWith {
+if(_container isKindOf "Air" && {(locked _container) isEqualTo 2}) exitWith {
 	if(!(_container in life_vehicles)) then {
 	["Nie mozesz otworzyc bagaznika gdy pojazd jest zamkniety", false] spawn domsg;
 	handle = true;
@@ -62,7 +62,7 @@ if(_container isKindOf "Air" && {(locked _container) == 2}) exitWith {
 	};
 };
 
-if(_container isKindOf "LandVehicle" && {(locked _container) == 2}) exitWith {
+if(_container isKindOf "LandVehicle" && {(locked _container) isEqualTo 2}) exitWith {
 	if(!(_container in life_vehicles)) then {
 	["Nie mozesz otworzyc bagaznika gdy pojazd jest zamkniety", false] spawn domsg;
 	handle = true;
@@ -70,7 +70,7 @@ if(_container isKindOf "LandVehicle" && {(locked _container) == 2}) exitWith {
 	};
 };
 
-if(_container isKindOf "MotorCycle" && {(locked _container) == 2}) exitWith {
+if(_container isKindOf "MotorCycle" && {(locked _container) isEqualTo 2}) exitWith {
 	if(!(_container in life_vehicles)) then {
 	["Nie mozesz otworzyc bagaznika gdy pojazd jest zamkniety", false] spawn domsg;
 	handle = true;

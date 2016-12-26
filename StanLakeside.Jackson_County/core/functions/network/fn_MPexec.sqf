@@ -27,14 +27,14 @@ _callerName = [_varValue,6,"",[""]] call bis_fnc_param;
 _callerUID = [_varValue,7,"",[""]] call bis_fnc_param;
 
 
-if(_callerName == "" OR _callerUID == "") exitWith {}; //NO.
+if(_callerName isEqualTo "" OR _callerUID isEqualTo "") exitWith {}; //NO.
 	
-if(toLower(_functionName) == "bis_fnc_endmission") exitWith {false}; //Don't allow BIS_fnc_endMission to be passed.
+if(toLower(_functionName) isEqualTo "bis_fnc_endmission") exitWith {false}; //Don't allow BIS_fnc_endMission to be passed.
 
 //if(_exitScope) exitWith {false}; //Blah.
-if (ismultiplayer && _mode == 0) then {
+if (ismultiplayer && _mode isEqualTo 0) then {
 	if (isserver) then {
-		if (typename _target == typename []) then {
+		if (typename _target isEqualTo typename []) then {
 
 			//--- Multi execution
 			{
@@ -79,7 +79,7 @@ if (ismultiplayer && _mode == 0) then {
 			};
 
 			//--- Server execution (for all or server only)
-			if (_ownerID < 0 || _ownerID == _serverID) then {
+			if (_ownerID < 0 || _ownerID isEqualTo _serverID) then {
 				["life_fnc_MP_packet",life_fnc_MP_packet] spawn life_fnc_MPexec;
 			};
 
@@ -106,8 +106,8 @@ if (ismultiplayer && _mode == 0) then {
 	private ["_canExecute"];
 	_canExecute = switch (typename _target) do {
 		case (typename grpnull): {player in units _target};
-		case (typename sideUnknown): {playerside == _target;};
-		case (typeName ""): {if(!isNull player) then {getPlayerUID player == _target;} else {false}};
+		case (typename sideUnknown): {playerside isEqualTo _target;};
+		case (typeName ""): {if(!isNull player) then {getPlayerUID player isEqualTo _target;} else {false}};
 		default {true};
 	};
 

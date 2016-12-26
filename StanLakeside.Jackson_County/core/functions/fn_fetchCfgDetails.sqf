@@ -36,7 +36,7 @@ _scope = 0;
 _itemInfo = -1;
 _muzzles = [];
 _magazines = [];
-if(_entity == "") exitWith {[]};
+if(_entity isEqualTo "") exitWith {[]};
 _cfg = if(isNil {_this select 1}) then
 {
 	switch (true) do
@@ -57,7 +57,7 @@ _cfg = if(isNil {_this select 1}) then
 _ret = [];
 if(typeName _cfg != "STRING") exitWith {[]}; //Not a config
 if(!isClass (configFile >> _cfg >> _entity)) exitWith {[]};
-if(_cfg == "") exitWith {[]}; //Not a config, who is passing bad data?
+if(_cfg isEqualTo "") exitWith {[]}; //Not a config, who is passing bad data?
 
 _config = configFile >> _cfg >> _entity;
 _displayName = getText(_config >> "displayName");

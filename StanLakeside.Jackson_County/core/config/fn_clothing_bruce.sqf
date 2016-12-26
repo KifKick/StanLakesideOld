@@ -93,6 +93,7 @@ switch (_filter) do
 			["kif_clothing_CivShirtVolcom",nil,500],
 			["kif_clothing_CivShirtVolcomLogo",nil,500],
 			["kif_clothing_CivShirtVolcomMonster",nil,500],
+			["kev_clothing_CivShirtNvidia",nil,500],
 			
 
 			["OrangePlaid_uni","A3L Plaid (Orange)",35],
@@ -226,6 +227,9 @@ switch (_filter) do
 			["B_FEM_NATO",nil,500],
 			["B_FEM_NATO_long",nil,500],
 			["B_FEM_NATO_Collar",nil,500],
+			["EF_HM_grove",nil,200],
+			["EF_HM_grove2",nil,200],
+			["TRYK_shirts_DENIM_RED2","Koszula Zielona",200],
 			["B_FEM_NATO_Rolled",nil,500]
 		];
 		if(__GETC__(life_adminlevel) > 0) then {
@@ -436,11 +440,7 @@ switch (_filter) do
 			["TRYK_H_Bandana_wig",nil,150],
 			["TRYK_H_Bandana_H",nil,150],
 			["TRYK_Kio_Balaclava",nil,150],
-
-			["TRYK_H_wig",nil,150],
 			["H_Orel_Kepi",nil,112],
-			//koil added
-
 			["A3L_Legoman","Lego Helmet",500],
 			["A3L_soa_helmet","Biker Helmet",40],	
 			["A3L_gangster_hat","Gangster Mask",10],
@@ -448,6 +448,62 @@ switch (_filter) do
 			["A3L_longhairblack","Long Hair Black",12],
 			["A3L_longhairblond","Long Hair Blond",12],
 			["A3L_longhairbrown","Long Hair Brown",12],
+			["TRYK_H_wig",nil,150],
+			
+			["EF_Long_wig_B",nil,12],
+			["EF_Punk_wig_B",nil,12],
+			["EF_wig_SB",nil,12],
+			["EF_wig_VSB",nil,12],
+			["EF_Punk_wig_SB3",nil,12],
+			["EF_Punk_wig_SB",nil,12],
+			["EF_Long_wig_BLE",nil,12],
+			["EF_Punk_wig_BLE",nil,12],
+			["EF_wig_SBLE",nil,12],
+			["EF_wig_VSBLE",nil,12],
+			["EF_Punk_wig_SBLE3",nil,12],
+			["EF_Punk_wig_SBLE",nil,12],
+			["EF_Long_wig_BL",nil,12],
+			["EF_Punk_wig_BL",nil,12],
+			["EF_wig_SBL",nil,12],
+			["EF_wig_VSBL",nil,12],
+			["EF_Punk_wig_SBL3",nil,12],
+			["EF_Punk_wig_SBL",nil,12],
+			["EF_Long_wig_BW",nil,12],
+			["EF_Punk_wig_BW",nil,12],
+			["EF_wig_SBW",nil,12],
+			["EF_wig_VSBW",nil,12],
+			["EF_Punk_wig_SBW3",nil,12],
+			["EF_Punk_wig_SBW",nil,12],
+			["EF_Long_wig_GL",nil,12],
+			["EF_Punk_wig_GL",nil,12],
+			["EF_wig_SGL",nil,12],
+			["EF_wig_VSGL",nil,12],
+			["EF_Punk_wig_SGL3",nil,12],
+			["EF_Punk_wig_SGL",nil,12],
+			
+			["TRYK_UA_CAP",nil,12],
+			["TRYK_UA_CAP_GR",nil,12],
+			["TRYK_UA_CAP_tan",nil,12],
+			["TRYK_UA_CAP_U",nil,12],
+			["TRYK_UA_CAP2R",nil,12],
+			["TRYK_UA_CAP_tan2R",nil,12],
+			["TRYK_UA_CAP_U2R",nil,12],
+			["TRYK_UA_CAP2",nil,12],
+			["TRYK_UA_CAP_GR2",nil,12],
+			["TRYK_UA_CAP_U2",nil,12],
+			
+			["H_Bandanna_gry",nil,12],
+			["H_Bandanna_blu",nil,12],
+			["H_Bandanna_cbr",nil,12],
+			["H_Bandanna_khk",nil,12],
+			["H_Bandanna_mcamo",nil,12],
+			["H_Bandanna_sgg",nil,12],
+			["H_Bandanna_sand",nil,12],
+			["H_Bandanna_surfer",nil,12],
+			["H_Bandanna_surfer_blk",nil,12],
+			["H_Bandanna_surfer_grn",nil,12],
+			["H_Bandanna_camo",nil,12],
+
 			["A3L_Crown","Crown",12],
 			["cowboyhat","Cowboyhat",12],
 			["A3L_mexicanhat","Mexican Hat",12],
@@ -519,7 +575,14 @@ switch (_filter) do
 			["TRYK_Beard4",nil,15],
 			["TRYK_Beard_BW4",nil,15],
 			["TRYK_Beard_Gr4",nil,15],
-
+			
+			["EF_ACC1",nil,15],
+			["EF_ACC2",nil,15],
+			["EF_ACC3",nil,15],
+			["EF_AC1",nil,15],
+			["EF_AC2",nil,15],
+			["EF_AC3",nil,15],
+			
 			["G_Shades_Black",nil,2],
 			["G_Shades_Blue",nil,2],
 			["G_Sport_Blackred",nil,2],
@@ -536,6 +599,7 @@ switch (_filter) do
 			["TRYK_Shemagh_mesh",nil,5],
 			["TRYK_Shemagh_G",nil,5],
 			["TRYK_Shemagh",nil,5],
+			["G_Spectacles_Tinted",nil,5],
 			["TRYK_Shemagh_WH",nil,5]
 		];
 	};
@@ -558,7 +622,8 @@ switch (_filter) do
 			["k_cut_8",nil,200],
 			["k_cut_9",nil,200],
 			["k_cut_10",nil,200],
-			["k_cut_11",nil,200]
+			["k_cut_11",nil,200],
+			["V_Press_F",nil,200]
 
 		];
 	};
@@ -568,6 +633,7 @@ switch (_filter) do
 	{
 		[
 			["B_AssaultPack_cbr",nil,250],
+			["TAC_BP_KAR_B",nil,250],
 			["B_AssaultPack_rgr",nil,250],
 			["B_AssaultPack_khk",nil,250],
 			["B_AssaultPack_sgg",nil,250],
@@ -593,6 +659,7 @@ switch (_filter) do
 			["kaelmonty2",nil,550],
 			["kaelmario",nil,550],	
 			["kaelsuits",nil,550],	
+			["kevnvidiaa",nil,550],
 			["koiladc",nil,550],
 			["koilbatman_1",nil,550],	
 			["koilbender_1",nil,550],	

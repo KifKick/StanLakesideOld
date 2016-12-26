@@ -1,65 +1,131 @@
 #include <macro.h>
 /*
 	File:
-	
+	Author: Kajetan "Kruk" Mruk
 	VEHICLES ARE 10% of WHAT THEY ARE IN HERE.
 	Description:
 	Master configuration list / array for buyable vehicles & prices and their shop.
 */
 private["_className","_vehicles"];
 _className = param [0,"",[""]];
-if(_className == "") exitWith {nil};
+if(_className isEqualTo "") exitWith {nil};
 _return = nil;
 
 _vehicles =
 [
-	//PD
-		//Adam
-	["kif_cvpi_lspa_lb","[PD][A] LSPA-CVPI-LB"],
+		//PD
+	//Adam
+	
+	["kmc_sprinter","170-Mercedes Sprinter PD"],
+	["kmc_cvpi_lspd_1","001-CVPI Slicktop LSPA"],
+	["kmc_cvpi_lspd_2","002-CVPI Slicktop LSPA"],
+	["kmc_cvpi_lspd_lb_3","003-CVPI LB LSPA"],
+	["kmc_cvpi_lspd_lb_4","004-CVPI LB LSPA"],
+	["kmc_cvpi_lspd_lb_5","005-CVPI LB LSPA"],
+	["kmc_cvpi_lspd_6","006-CVPI Slicktop LSPD"],
+	["kmc_cvpi_lspd_7","007-CVPI Slicktop LSPD"],
+	["kmc_cvpi_lspd_8","008-CVPI Slicktop LSPD"],
+	["kmc_cvpi_lspd_lb_9","009-CVPI LB LSPD"],
+	["kmc_cvpi_lspd_lb_10","010-CVPI LB LSPD"],
+	["kmc_cvpi_lspd_lb_11","011-CVPI LB LSPD"],
+	["kmc_cvpi_lspd_lb_12","012-CVPI LB LSPD"],
+	["kmc_cvpi_lspd_lb_13","013-CVPI LB LSPD"],
+	["kmc_cvpi_lspd_lb_14","014-CVPI LB LSPD"],
+	["kmc_cvpi_lspd_lb_15","015-CVPI LB LSPD"],
+	["kmc_cvpi_lspd_lb_16","016-CVPI LB LSPD"],
+	["charger_lspd_022","022-Dodge Charger LB LSPD"],
+	["charger_lspd_024","024-Dodge Charger LB LSPD"],
+	["charger_lspd_026","026-Dodge Charger LB LSPD"],
+	["charger_lspd_027","027-Dodge Charger LB LSPD"],
+	["ivory_m3_pd_60","060-BMW M3 LB LSPD"],
+	["ivory_m3_pd_61","061-BMW M3 LB LSPD"],
 	["kif_cvpi_lspa_slick","[PD][A] LSPA-CVPI-PB"],
-	["kif_cvpi_lspa_lb_1","[PD][A] 1-LSPA-CVPI-LB"],
-	["kif_cvpi_lspa_lb_2","[PD][A] 2-LSPA-CVPI-LB"],
-	["kif_cvpi_lspa_slick_3","[PD][A] 3-LSPA-CVPI-PB"],
-	["kif_cvpi_lspa_slick_4","[PD][A] 4-LSPA-CVPI-PB"],
-	["kif_cvpi_lspa_lb_5","[PD][A] 5-LSPA-CVPI-LB"],
-	["kif_cvpi_pd_lb","[PD][A] PD-CVPI-LB"],
-	["kif_cvpi_pd_slick","[PD][A] PD-CVPI-PB"],
-	["kif_cvpi_pd_lb_6","[PD][A] 6-PD-CVPI-LB"],
-	["kif_cvpi_pd_lb_7","[PD][A] 7-PD-CVPI-LB"],
-	["kif_cvpi_pd_lb_8","[PD][A] 8-PD-CVPI-LB"],
-	["kif_cvpi_pd_lb_9","[PD][A] 9-PD-CVPI-LB"],
-	["kif_cvpi_pd_lb_10","[PD][A] 10-PD-CVPI-LB"],
-	["kif_cvpi_pd_lb_11","[PD][A] 11-PD-CVPI-LB"],
-	["kif_cvpi_pd_lb_12","[PD][A] 12-PD-CVPI-LB"],
-	["kif_cvpi_pd_slick_13","[PD][A] 13-PD-CVPI-pb"],
-	["kif_cvpi_pd_slick_14","[PD][A] 14-PD-CVPI-PB"],
-	["kif_cvpi_pd_slick_15","[PD][A] 15-PD-CVPI-PB"],
-	["kif_cvpi_pd_lb_16","[PD][A] 16-PD-CVPI-LB"],
-	["kif_cvpi_traffic_slick","[PD][A] TRAFFIC-CVPI-PB"],
-	["kif_cvpi_traffic_lb","[PD][A] TRAFFIC-CVPI-LB"],
-	["kif_cvpi_traffic_lb_17","[PD][A] 17-TRAFFIC-CVPI-LB"],
-	["kif_cvpi_traffic_slick_18","[PD][A] 18-TRAFFIC-CVPI-PB"],
+	["BMWX5Sert_077","077-BMW X5 SERT"],
+	["BMWX5Sert_078","078-BMW X5 SERT"],	
+	["MustangSert_801","801-Ford Mustang SERT"],	
+	["kmc_MustangSO_200","200-Ford Mustang SO"],	
+	["TahoePD_03","800-Chevrolet Tahoe SERT"],
+	["TahoeCB_01","111-Chevrolet Tahoe CB"],
+	["TahoeSV_115","115-Chevrolet Tahoe Supervisor"],
+	["TahoeSO_205","205-Chevrolet Tahoe SO"],
+	["TahoeSO_250","250-Chevrolet Tahoe SO D.Lych"],
+	["TahoeSO_275","275-Chevrolet Tahoe SO M.Williams"],
+	["kif_cvpi_lspa_lb_1","1-LSPA-CVPI-LB"],
+	["kif_cvpi_lspa_lb_2","2-LSPA-CVPI-LB"],
+	["kif_cvpi_lspa_slick_3","3-LSPA-CVPI-PB"],
+	["kif_cvpi_lspa_slick_4","4-LSPA-CVPI-PB"],
+	["kif_cvpi_lspa_lb_5","5-LSPA-CVPI-LB"],
+	["kif_cvpi_pd_lb","PD-CVPI-LB"],
+	["kif_cvpi_pd_slick","PD-CVPI-PB"],
+	["kif_cvpi_pd_lb_6","6-PD-CVPI-LB"],
+	["kif_cvpi_pd_lb_7","7-PD-CVPI-LB"],
+	["kif_cvpi_pd_lb_8","8-PD-CVPI-LB"],
+	["kif_cvpi_pd_lb_9","9-PD-CVPI-LB"],
+	["kif_cvpi_pd_lb_10","10-PD-CVPI-LB"],
+	["kif_cvpi_pd_lb_11","11-PD-CVPI-LB"],
+	["kif_cvpi_pd_lb_12","12-PD-CVPI-LB"],
+	["kif_cvpi_pd_slick_13","13-PD-CVPI-pb"],
+	["kif_cvpi_pd_slick_14","14-PD-CVPI-PB"],
+	["kif_cvpi_pd_slick_15","15-PD-CVPI-PB"],
+	["kif_cvpi_pd_lb_16","16-PD-CVPI-LB"],
+	["kif_cvpi_traffic_slick","TRAFFIC-CVPI-PB"],
+	["kif_cvpi_traffic_lb","TRAFFIC-CVPI-LB"],
+	["kif_cvpi_traffic_lb_17","17-TRAFFIC-CVPI-LB"],
+	["kif_cvpi_traffic_slick_18","18-TRAFFIC-CVPI-PB"],
 	["cg_TaurusPD1","[PD][A] Ford Taurus"],
 	["cg_TaurusPD2","[PD][A] Ford Taurus Slicktop"],
 	["bv_the_crowner_cop_patrol","[PD][A] Ford CV Slicktop"],
 	["DAR_TahoePoliceSlick","[PD][A] Chevrolet Tahoe Slicktop"],
 	["DAR_ExplorerPolice","[PD][A] Ford Explorer"],
 	["cg_mercedes_sprinter_pol_base_reg","[PD][A] Mercedes Sprinter"],
-		//Edward
+	["kev_cvpi_correction_lb_91","91-CVPI-CO-LB"],
+	["kev_cvpi_correction_lb_92","92-CVPI-CO-LB"],
+	["kev_taurus_co_lb_90","90-FPI-LB"],
+	["Taurus_501","501-Ford Taurus LB"],
+	["Taurus_502","502-Ford Taurus LB"],
+	["Taurus_503","503-Ford Taurus LB"],
+	["Taurus_504","504-Ford Taurus LB"],
+	["Taurus_400","400-Ford Taurus LB AIAD"],
+	["kmc_mustang_510","510-Ford Mustang LB"],
+	["kmc_mustang_511","511-Ford Mustang LB"],
+	["TahoeAIAD","410-Chevrolet Tahoe AIAD"],
+	["LandRoverSO_215","215-Rang Rover SO"],
+	
+	
+	//Edward
+	
 	["cg_evopol1","[PD][E] Mitsubishi Evo"],
 	["charger_pd_skinned","[PD][E] Charger"],
 	["bv_caressa_gt_cop_patrol","[PD][E] Porsche Caressa"],
 	["bv_458_cop_patrol","[PD][E] Ferrari 485"],
-		//David
+	["ivory_wrx_sert_66","66-Subaru WRX Sert"],
+	["kif_evo_pd_28","28-Mitshubishi EVO X"],
+	["ivory_evox_slicktop","181-Mitshubishi EVO X"],
+	["kmc_wrx_pd_17","017-Subaru WRX"],
+	["kmc_wrx_pd_18","018-Subaru WRX"],
+	["ivory_evox_Aiad","411-Mitshubishi Evo X AIAD"],
+	["ivory_m3_So_213","213-BMW M3 GTS LB SO"],
+	
+	//David
+	
 	["A3L_GMC_Van_Swat","[PD][D] GMC"],
 	["cg_h2_sert","[PD][D] Hummer H2"],
 	["cg_suburban_sert_pol","[PD][D] Suburban (podnosnik)"],
-	["DAR_SWATPolice","[PD][D] Lenco Razorback"],
+	["DAR_SWATPolice","40-Bearcat SERT"],
 	["burnes_foxhound_w","[PD][D] Foxhound"],
-	["cg_evoSERT1","[PD][D/E] Mitsubishi Evo"],
-	["charger_sert","[PD][D/E] Charger"],
-		//Pozostale
-	["cg_ducati_pol_reg","[PD] Ducati"],
+	["cg_evoSERT1","39-Evo SERT"],
+	["charger_sert","37-Charger SERT"],
+	["HummerSERT_810","810-Hummer H1 SERT"],
+	["HummerSERT_850","850-Hummer H1 SERT Winter Edition"],
+	["LandRoverSERT_811","811-Range Rover SERT"],
+	["suburban_829_sert","829-Chevrolet Suburban SERT"],
+	["suburban_830_sert","830-Chevrolet Suburban SERT"],
+	["suburban_831_sert","831-Chevrolet Suburban SERT Bialy"],
+	["taurus_899_sert","899-Ford Taurus SERT"],
+	
+	//Pozostale
+	
+	["cg_ducati_pol_reg","Ducati 959"],
 	["cg_peugeot_508_pol_d","[PD] Peugot 508"],	
 	["charger_st","[ST][A] Charger"],
 	["charger_trp_skinned","[ST][A] Charger"],
@@ -71,23 +137,28 @@ _vehicles =
 	["A3L_SuburbanDOC","[CO][S] Suburban"],
 	["cg_evocor1","[CO][E] Mitsubishi Evo"],
 	["charger_cor_skinned","[CO][E] Charger"],
-	["A3L_jailBus","[CO] Wiezniarka"],
+	["A3L_jailBus","93-Jailbus-CO"],
 	//SO
+	["TahoeSO_205","205-Chevrolet Tahoe SO"],
+	["TahoeSO_250","250-Chevrolet Tahoe D.Lych"],
+	["TahoeSO_275","275-Chevrolet Tahoe M.Williams"],
+	["kmc_MustangSO_200","200-Ford Mustang SO"],
 	["kif_cvpi_sheriff_lb","[SO][A] SHERIFF-CVPI-LB"],
 	["kif_cvpi_sheriff_slick","[SO][A] SHERIFF-CVPI-PB"],
-	["kif_cvpi_sheriff_lb_19","[SO][A] 19-SHERIFF-CVPI-LB"],
-	["kif_cvpi_sheriff_slick_20","[SO][A] 20-SHERIFF-CVPI-PB"],
-	["kif_cvpi_sheriff_lb_21","[SO][A] 21-SHERIFF-CVPI-LB"],
+	["kif_cvpi_sheriff_lb_19","19-SHERIFF-CVPI-LB"],
+	["kif_cvpi_sheriff_slick_20","20-SHERIFF-CVPI-PB"],
+	["kif_cvpi_sheriff_lb_21","21-SHERIFF-CVPI-LB"],
 	["A3L_CVPI_Sheriff_LB","[SO][A] Ford CV (czarny)"],
 	["A3L_CVPI_Sheriff_Slick","[SO][A] Ford CV Slicktop"],
 	["cg_TaurusSS1","[SO][A] Ford Taurus"],
 	["cg_TaurusSS2","[SO][A] Ford Taurus Slicktop"],
 	["A3L_TaurusFPBLBCSO","[SO][A] Ford Taurus"],
 	["A3L_SuburbanCSO","[SO][A] Suburban"],
-	["DAR_ExplorerSheriff","[SO][A] Ford SUV"],
+	["DAR_ExplorerSheriff","56-SHERIFF-Ford Explorer"],
 	["cg_CVPISH","[SO][A] Ford CV Slicktop"],
 	["cg_evoss1","[SO][E] Mitsubishi Evo"],
 	["charger_sh","[SO][E] Charger"],
+	["kif_evo_so_29","29-SHERIFF-EVO"],
 	//UC
 	["A3L_CVPIUC_Black","FORD CV BLACK (UC)"],
 	["A3L_CVPIUC_Blue","FORD CV BLUE (UC)"],
@@ -100,7 +171,7 @@ _vehicles =
 	["cg_hummer_h1_noir","Hummer H1 (uc)"],
 	["critgamin_vangmcc_civ_noir","GMC (uc)"],
 	["AM_Escalade_SERT","Cadillac Escalade (uc)"],
-	["A3L_TaurusUC","Ford Taurus Czarny (uc)"],
+	["A3L_TaurusUC","42-Taurus Czarny SERT "],
 	["A3L_TaurusUCBlue","Ford Taurus Niebieski (uc)"],
 	["A3L_TaurusUCGrey","Ford Taurus Szary (uc)"],
 	["A3L_TaurusUCRed","Ford Taurus Czerwony (uc)"],
@@ -109,14 +180,17 @@ _vehicles =
 	["A3L_GrandCaravanUCBlack","Caravan Czarny (uc)"],
 	["DAR_TahoePoliceDet","Chevrolet Tahoe Czarny (uc)"],
 	["DAR_ExplorerPoliceStealth","Ford Explorer Czarny (uc)"],
-	["A3L_Suburban_UM_Black","Suburban Opancerzony (uc)"],
+	["A3L_Suburban_UM_Black","Suburban Opancerzony UC"],
 	["A3L_ChargerUC","Charger Czarny (uc)"],
 	["A3L_ChargerUCWhite","Charger Bialy (uc)"],
 	["cg_audi_rs4_pol_noir","Audi RS4"],
-	["cg_brinks_bank_noir","Brinks"]
+	["cg_brinks_bank_noir","Brinks"],
+	["cnp_Iveco_GOIT","47-Mobile Command Unit"],
+	["Navara_Policia","38-Navara SERT"],
+	["O_Heli_Light_02_unarmed_F","PO-30-ORCA-SERT"]
 ];
 {
-	if(_x select 0 == _className) exitWith {_return = _x select 1};
+	if(_x select 0 isEqualTo _className) exitWith {_return = _x select 1};
 } forEach _vehicles;
 _return;
 
@@ -146,3 +220,4 @@ _return;
 	["Navara_Policia",200000],
 
 */
+

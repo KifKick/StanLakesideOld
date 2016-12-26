@@ -17,7 +17,7 @@
 
 params [["_shop", "", [""]]];
 
-if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
+if(_shop isEqualTo "") exitWith {closeDialog 0}; //Bad shop type passed.
 _ret = [];
  
 switch(_shop) do
@@ -26,11 +26,11 @@ switch(_shop) do
         {
 			switch (true) do
 			{
-				case (playerSide != independent): {"You are not an EMS"};
+				case (playerSide != independent): {"Nie jestes medykiem!"};
 				default {
 					["Sklep BezSensu EMS",
 						[
-							["ToolKit",nil,2500],
+							["ToolKit",nil,400],
 							["ItemCompass",nil,50],
 							["tf_anprc152",nil,10],
 							["ItemWatch",nil,10]
@@ -39,25 +39,34 @@ switch(_shop) do
 				};
 			};
         };
-		case "oskp":
+		case "hess":
         {
 			switch(true) do
 			{
-				case (!license_civ_oskp): {"Sprzet wydaje tylko i wylacznie pracownikom firmy O.S.K.P"};
+				case (!license_civ_hess): {"Co ty tutaj robisz, Jak sie tu dostales? ALARM!"};
 				default
 				{
-					["Narzedzia O.S.K.P",
+					["Uzbrojenie Hess Seciurities",
 						[
+							["RH_g17",nil,4500],
+							["RH_17Rnd_9x19_g17",nil,25],
+							["RH_p226s",nil,4125],
+							["RH_15Rnd_9x19_SIG",nil,25],
+							["RH_g19",nil,4500],
+							["RH_17Rnd_9x19_g17",nil,25],
+							["RH_m9",nil,4000],
+							["RH_15Rnd_9x19_M9",nil,25],
+							["RH_fn57",nil,19000],
+							["RH_20Rnd_57x28_FN",nil,25],
+							["KPFS_P1",nil,1900],
+							["KPFS_8Rnd_9x19_PARA",nil,25],
+							["A3L_Glock17",nil,4500],
+							["A3L_Glock17mag",nil,25],
 							["A3L_Shovel",nil,50],
-			                ["A3L_ChainSaw",nil,100],
-							["cl_bigredkey",nil,100],
-							["A3L_JackHammer",nil,100],
-							["A3L_Spanner",nil,50],
-							["A3L_Hammer",nil,50],
-							["cl_pepperspray",nil,50],
-							["ToolKit",nil,5000],
-							["nonlethal_swing", "Slepa amunicja", 10],
-							["sharp_swing","Ostra amunicja",10]
+							["RH_X300",nil,15],
+							["ToolKit",nil,2000],
+							["nonlethal_swing", "Slepa amunicja",1],
+							["sharp_swing","Ostra amunicja",1]
 						]
 					];
 				};
@@ -67,7 +76,7 @@ switch(_shop) do
         {
 			switch (true) do
 			{
-				case (playerSide != independent): {"You are not an EMS"};
+				case (playerSide != independent): {"Nie jestes medykiem!"};
 				default {
 					["Podstawe wyposazenie EMS",
 						[
@@ -95,7 +104,7 @@ switch(_shop) do
 							["CG_ATF_Donut_Box_i","Donuty Na Wynos",1000],
 							["cg_hatchet","Siekiera",500],
 							["sharp_swing","Ammunicja do siekiery",10],
-							["ToolKit",nil,2500],
+							["ToolKit",nil,400],
 							["ItemCompass",nil,50],
 							["ItemWatch",nil,10],
 							["Chemlight_red",nil,20],
@@ -117,39 +126,33 @@ switch(_shop) do
 				{
 					["Podstawowe wyposazenie Policji",								
 						[
-							["cg_atf_bandage_i","Bandaz",10],
-							["CG_battery_i","Bateria",30],
-							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",2500],
-							["CG_ATF_Donut_Box_i","Donuty Na Wynos",2500],
-							["nonlethal_swing", "Slepa amunicja",1],
-							["sharp_swing","Ostra amunicja",1],
-							["CG_Pro_Item_i","GoPro",550],
-							["CG_ATF_Handcuffs_i","Kajdanki",50],
-							["cg_torch","Latarka",250], 
-							["CG_Spikes_Collapsed","Kolczatka",250], 
-							["cg_torchbattery",nil,250], 
-							["gign_shield","Tarcza",2500],
-							["CG_BATON","Tonfa",100],
-							["CG_TELBAT","Palka teleskopowa",100],
-							["Mattaust_Keys","Klucze do Komendy",1],
-							["acc_flashlight","ACC Flashlight",10],
-							["RH_M6X","RH Flashlight",10],
-							["A3L_M4Flashlight","M4A3 Flashlight",10],
-							["cl3_fingerprintscanner","Skaner odciskow palcow",1000],
-							["cl_plastic_shield","Tarcza plastikowa",750],
-							["cl3_taserM26_Yellow","Paralizator",500],
-							["cl3_taserm26mag_mpx","Kartridz do Paralizatora",50],
-							["Radar_Gun","Suszarka",250],								
-							["ToolKit",nil,2500], 
 							["ItemCompass",nil,50],  
 							["ItemWatch",nil,10],                                          
-							["Chemlight_red",nil,20],
-							["Chemlight_yellow",nil,20],
-							["Chemlight_green",nil,20],
-							["Chemlight_blue",nil,20],
-							["Binocular",nil,100],
+							["Mattaust_Keys","Klucze do Komendy",1],
 							["ItemGPS",nil,100],  
-							["tf_anprc152",nil,100]
+							["tf_anprc152",nil,100],
+							["ToolKit",nil,200], 
+							["CG_ATF_Handcuffs_i","Kajdanki",50],
+							["CG_Pro_Item_i","GoPro",550],
+							["CG_Spikes_Collapsed","Kolczatka",100], 
+							["cl3_taserM26_Yellow","Paralizator",100],
+							["cl3_taserm26mag_mpx","Kartridz do Paralizatora",50],
+							["CG_BATON","Tonfa",100],
+							["CG_TELBAT","Palka teleskopowa",100],
+							["cg_atf_bandage_i","Bandaz",10],
+							["CG_battery_i","Bateria",30],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",200],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",200],
+							["cg_torch","Latarka",250], 
+							["cg_torchbattery",nil,250], 
+							["gign_shield","Tarcza",2500],
+							["cl_plastic_shield","Tarcza plastikowa",750],
+							["cl3_fingerprintscanner","Skaner odciskow palcow",1000],
+							["Radar_Gun","Suszarka",250],								
+							["nonlethal_swing", "Slepa amunicja",1],
+							["sharp_swing","Ostra amunicja",1],
+							["Binocular",nil,100]
+														
 						]
 					];
 				};
@@ -178,8 +181,6 @@ switch(_shop) do
 							["hlc_30Rnd_9x19_B_MP5",nil,25],
 							["A3L_TaurusGold",nil,850],
 							["A3L_TaurusMag",nil,25],
-							["RH_Deagles",nil,1550],
-							["RH_7Rnd_50_AE",nil,100],
 							["KPFS_P38",nil,250],
 							["KPFS_8Rnd_9x19_PARA",nil,10]
 						]
@@ -192,24 +193,121 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (!license_cop_sert): {"Zbrojownia SERT"};
+				case (!license_cop_sert): {"Zbrojownia tylko dla SERT"};
 				default
 				{
 					["Zbrojownia SERT",								
 						[
-							["KPFS_G36A4",nil,3500],
-							["KPFS_30Rnd_556x45_G36",nil,50],
-							["AG_MP9_sidearm",nil,1000],
-							["30Rnd_45ACP_Mag_SMG_01",nil,50],
-							["hlc_smg_mp5k",nil,1000],
-							["hlc_30Rnd_9x19_B_MP5",nil,50],
-							["RH_M4_ris_m",nil,5000],
-							["RH_30Rnd_556x45_Mk262",nil,500],
-							["optic_ACO_grn",nil,250],
+						
+							["RH_X2",nil,10],
+							["RH_X300",nil,10],
+							["optic_MRD",nil,10],
+							["optic_Yorris",nil,10],
+							["RH_docter",nil,10],
+							["muzzle_snds_acp",nil,10],
+							["RH_gemtech9",nil,10],
+							["RH_cz75",nil,250],
+							["RH_16Rnd_9x19_CZ",nil,10],
+							["hgun_Pistol_heavy_01_F",nil,250],
+							["11Rnd_45ACP_Mag",nil,10],
+							["hgun_ACPC2_F",nil,250],
+							["9Rnd_45ACP_Mag",nil,10],
+							["RH_g17",nil,250],
+							["RH_g18",nil,250],
+							["RH_g19",nil,250],
+                            				["RH_g19t",nil,250],
+							["RH_33Rnd_9x19_g18",nil,10],
+							["RH_17Rnd_9x19_g17",nil,10],
+							["RH_fnp45t",nil,250],
+							["RH_15Rnd_45cal_fnp",nil,10],
+							["RH_osprey",nil,10],
+							["RH_Deaglem",nil,10],
+							["RH_demz",nil,10],
+							["optic_Yorris",nil,10],
+							["RH_7Rnd_50_AE",nil,10],
+							["arifle_SDAR_F","SDAR",500],
+							["20Rnd_556x45_UW_mag","Underwater magazine",10],
+							["RH_PDW",nil,500],
+							["RH_pdwsd",nil,500],
+							["RH_30Rnd_6x35_mag",nil,500],
+							["RH_Hk416c",nil,500],
+							["RH_Hk416s",nil,500],
+							["RH_Hk416",nil,500],
+							["RH_30Rnd_556x45_Mk318","Mk318 30Rnd",50],
+							["RH_60Rnd_556x45_Mk318","Mk318 60Rnd",50],
+							["RH_M27IAR",nil,500],
+							["RH_60Rnd_556x45_Mk318",nil,50],
+							["RH_M4_ris_m",nil,500],
+							["RH_m4_win",nil,500],
+							["RH_SFM952V",nil,10],
+							["RH_qdss_nt4",nil,500],
+							["hlc_smg_mp5sd5",nil,500],
+							["hlc_smg_mp5sd6",nil,500],
+							["hlc_30Rnd_9x19_GD_MP5",nil,500],
+							["hlc_30Rnd_9x19_SD_MP5",nil,500],
+							["RH_gemtech9","Tlumik Glock",500],
+							["AG_MP9_sidearm",nil,500],
+							["MP9_suppressor",nil,500],
+							["30Rnd_45ACP_Mag_SMG_01",nil,500],
+							["hlc_smg_mp5k",nil,500],
+							["hlc_muzzle_Tundra",nil,500],
+							["hlc_30Rnd_9x19_B_MP5",nil,500],
+							["optic_ACO_grn",nil,500],
 							["optic_Hamr",nil,500],
-							["RH_ta31rmr",nil,50],
+							["RH_ta31rmr",nil,500],
 							["RH_compm4s",nil,500],
-							["Rangefinder","Dalmierz SERT",500]
+							["Rangefinder","Dalmierz SERT",500],
+							["acc_flashlight","ACC Flashlight",10],
+							["RH_M6X","RH Flashlight",10]
+							
+						]
+					];
+				};
+			};
+        };
+		
+		case "cop_special_sniper":
+        {
+			switch(true) do
+			{
+				case (!license_cop_sniper): {"Zbrojownia tylko dla SERT"};
+				default
+				{
+					["Zbrojownia Snipera",								
+						[
+						
+							["KPFS_G22",nil,10],
+							["kpfs_5Rnd_86x70_G22",nil,10],
+							
+							["RH_Mk11",nil,10],
+							["RH_m110sd",nil,10],
+							["RH_20Rnd_762x51_M80A1",nil,10],
+							
+							["kio_sr25_ec",nil,10],
+							["kio_sr25",nil,10],
+							["kio_muzzle_sr25S",nil,10],
+							["20rnd_762_magazine",nil,10],
+							
+							["RH_Mk12mod1",nil,10],
+							["RH_spr_mbs",nil,10],
+							["RH_30Rnd_556x45_Mk318","Mk318 30Rnd",10],
+							["RH_60Rnd_556x45_Mk318","Mk318 60Rnd",10],
+							
+							["R3F_FRF2",nil,10],
+							["R3F_ZEISS",nil,10],
+							["R3F_SILENCIEUX_FRF2",nil,10],
+							["R3F_FRF2_DES",nil,10],
+							["R3F_ZEISS_DES",nil,10],
+							["R3F_SILENCIEUX_FRF2_DES",nil,10],
+							["R3F_10Rnd_762x51_FRF2",nil,10],
+							
+							
+							["optic_NVS",nil,10],
+							["optic_DMS",nil,10],
+							["optic_LRPS",nil,10],
+							["RH_leu_mk4",nil,10],
+							["optic_AMS",nil,10],
+							["optic_KHS_blk",nil,10]
 						]
 					];
 				};
@@ -235,8 +333,8 @@ switch(_shop) do
 							["optic_Yorris",nil,10],
 							["RH_fn57",nil,10],
 							["RH_20Rnd_57x28_FN",nil,10],
-					        ["RH_vp70",nil,10],
-				           	["RH_18Rnd_9x19_VP",nil,10],
+							["RH_vp70",nil,10],
+							["RH_18Rnd_9x19_VP",nil,10],
 							["RH_usp",nil,10],
 							["RH_12Rnd_45cal_usp",nil,10],
 							["RH_aacusp",nil,10],
@@ -253,7 +351,6 @@ switch(_shop) do
 							["RH_15Rnd_45cal_fnp",nil,10],
 							["RH_fn57_t",nil,10],
 							["RH_fn57_g",nil,10],
-							["RH_20Rnd_57x28_FN",nil,10],
 							["RH_sfn57",nil,10],
 							["muzzle_snds_L",nil,10],
 							["RH_gemtech9",nil,10],
@@ -264,46 +361,33 @@ switch(_shop) do
 							["RH_suppr9",nil,10],
 							["RH_pmsd",nil,10],
 							["RH_vp70stock",nil,10],
-					        ["RH_gsh18",nil,10],
-				           	["RH_18Rnd_9x19_gsh",nil,10],
-							["SMG_01_F",nil,10],
+							["RH_gsh18",nil,10],
+							["RH_18Rnd_9x19_gsh",nil,10],
+					 		["SMG_01_F",nil,10],
 							["30Rnd_45ACP_Mag_SMG_01",nil,10],
 							["SMG_02_F",nil,10],
+							["A3L_AK47",nil,10],
+							["A3L_AK47Mag",nil,10],
 							["RH_sbr9_wdl",nil,10],
 							["RH_sbr9_tg",nil,10],
 							["RH_sbr9_des",nil,10],
 							["RH_32Rnd_9mm_M822",nil,10],
 							["AG_MP9_sand_peq",nil,10],
-							
-							
 							["AG_MP9_wcam",nil,10],
 							["AG_MP9_digi",nil,10],
 							["AG_MP9_sand",nil,10],
 							["AG_MP9_folded_wcam",nil,10],
 							["AG_MP9_folded_digi",nil,10],
 							["AG_MP9_folded_sand",nil,10],
-							["30Rnd_45ACP_Mag_SMG_01",nil,10],
 							["30Rnd_9x21_Mag",nil,10],
 							["optic_Aco",nil,10],
 							["optic_ACO_grn_smg",nil,10],
-							
-							
-							
-							
-							
-							
-							
-							
 							["hgun_PDW2000_F",nil,10],
+							//["hlc_30Rnd_545x39_B_AK",nil,10],
+							["hgun_P07_F",nil,10],
+							["muzzle_snds_L",nil,10],
+							["16Rnd_9x21_Mag",nil,10],
 							["30Rnd_9x21_Mag",nil,10],
-							["RH_sbr9_des",nil,10],
-							["RH_32Rnd_9mm_M822",nil,10],
-							
-							
-							
-							
-							
-							["hlc_30Rnd_545x39_B_AK",nil,10],
 							["RH_g18",nil,10],
 							["RH_33Rnd_9x19_g18",nil,10],
 							["RH_vz61",nil,10],
@@ -319,7 +403,33 @@ switch(_shop) do
 							["RH_eotexps3_tan",nil,10],
 							["RH_t1_tan",nil,10],
 							["RH_reflex",nil,10],
-			                ["RH_M6X",nil,10]
+							["RH_18Rnd_9x19_VP",nil,10],
+							["RH_gsh18",nil,10],
+							["RH_18Rnd_9x19_gsh",nil,10],
+							["30Rnd_45ACP_Mag_SMG_01",nil,10],
+							["RH_m9",nil,10],
+							["RH_15Rnd_9x19_M9",nil,10],
+							["RH_gsh18",nil,10],
+							["RH_cz75",nil,10],
+							["RH_16Rnd_9x19_CZ",nil,10],
+							["RH_p226",nil,10],
+							["RH_15Rnd_9x19_SIG",nil,10],
+							["RH_g17",nil,10],
+							["RH_g19",nil,10],
+							["RH_17Rnd_9x19_g17",nil,10],
+							["RH_sw659",nil,10],
+							["RH_14Rnd_9x19_sw",nil,10],
+							["RH_18Rnd_9x19_VP",nil,10],
+							["RH_mak",nil,10],
+							["RH_8Rnd_9x18_Mak",nil,10],
+							["KPFS_Mauser_Hsc",nil,10],
+							["kpfs_8Rnd_765x17_PP",nil,10],
+							["KPFS_P1",nil,10],
+							["KPFS_P38",nil,10],
+							["KPFS_P38k",nil,10],
+							["KPFS_P5",nil,10],
+							["KPFS_8Rnd_9x19_PARA",nil,10]
+							
 						]
 					];
 				};
@@ -439,8 +549,8 @@ switch(_shop) do
 			};
 			if(__GETC__(life_coplevel) > 6) then {
 				_temp =  [
-                    ["HandGrenade_Stone","Flashbang",300],
-					["SmokeShellYellow","Gaz lzawiacy",300]					
+                    ["HandGrenade_Stone","Flashbang",100],
+					["SmokeShellYellow","Gaz lzawiacy",100]					
 				];
 				{
 					(_ret select 0) pushBack _x;
@@ -450,25 +560,23 @@ switch(_shop) do
 				_temp =  [
 					["RH_kimber",nil,100],
 					["RH_7Rnd_45cal_m1911",nil,5],
-					["RH_Deaglem",nil,240],
-					["RH_demz",nil,240],
-					["RH_Deflash",nil,240],
-					["RH_7Rnd_50_AE",nil,240],
-					["RH_M4A6",nil,5000],
-					["RH_M16A2",nil,5000],
-					["RH_M16A3",nil,5000],
-					["RH_M16A4",nil,5000],
-					["RH_M16A6",nil,5000],
-					["RH_mk12mod1",nil,5000],
+					["RH_Deaglem",nil,200],
+					["RH_demz",nil,200],
+					["RH_Deflash",nil,200],
+					["RH_7Rnd_50_AE",nil,50],
+					["RH_M4A6",nil,1000],
+					["RH_M16A2",nil,1000],
+					["RH_M16A3",nil,1000],
+					["RH_M16A4",nil,1000],
+					["RH_M16A6",nil,1000],
+					["RH_m4_win",nil,500],
+					["RH_mk12mod1",nil,1000],
 					["RH_30Rnd_68x43_FMJ",nil,500],
-
 					["hlc_30rnd_556x45_EPR",nil,520],
 					["muzzle_snds_M",nil,4],
-
 					["RH_compM2",nil,25],
 					["RH_compM2l",nil,25],
-					["RH_demz",nil,1500],
-				    ["RH_M6X",nil,1500],
+					["RH_M6X",nil,1500],
 					["RH_leu_mk4",nil,500]
 				];
 				{
@@ -501,8 +609,8 @@ switch(_shop) do
 							["optic_Yorris",nil,2500],
 							["RH_fn57",nil,25500],
 							["RH_20Rnd_57x28_FN",nil,600],
-					        ["RH_vp70",nil,10500],
-				            ["RH_18Rnd_9x19_VP",nil,600],
+					        	["RH_vp70",nil,10500],
+				            		["RH_18Rnd_9x19_VP",nil,600],
 							["RH_usp",nil,25500],
 							["RH_12Rnd_45cal_usp",nil,600],
 							["RH_aacusp",nil,20500],
@@ -530,7 +638,7 @@ switch(_shop) do
 							["RH_suppr9",nil,20500],
 							["RH_pmsd",nil,20500],
 							["RH_vp70stock",nil,2500],
-					     	["RH_gsh18",nil,10500],
+					     		["RH_gsh18",nil,10500],
 							["RH_18Rnd_9x19_gsh",nil,600]
 						]
 					];
@@ -549,48 +657,39 @@ switch(_shop) do
 				{
 					["Bronie Dlugie Rebelii",
 						[
-							["SMG_01_F",nil,127500],
-			                ["30Rnd_45ACP_Mag_SMG_01",nil,750],
-							["SMG_02_F",nil,127500],
-							["RH_sbr9_wdl",nil,127500],
-							["RH_sbr9_tg",nil,127500],
-							["RH_sbr9_des",nil,127500],
+							["SMG_01_F",nil,86000],
+			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
+							["SMG_02_F",nil,86000],
+							["RH_sbr9_wdl",nil,91000],
+							["RH_sbr9_tg",nil,91000],
+							["RH_sbr9_des",nil,91000],
 							["RH_32Rnd_9mm_M822",nil,750],
-							["AG_MP9_sand_peq",nil,127500],
-							["AG_MP9_wcam_peq",nil,127500],
-							["AG_MP9_digi_peq",nil,127500],
-							["AG_MP9_wcam",nil,127500],
-							["AG_MP9_digi",nil,127500],
-							["AG_MP9_sand",nil,127500],
-							["AG_MP9_folded_wcam",nil,127500],
-							["AG_MP9_folded_digi",nil,127500],
-							["AG_MP9_folded_sand",nil,127500],
+							["AG_MP9_wcam",nil,75500],
+							["AG_MP9_digi",nil,75500],
+							["AG_MP9_sand",nil,75500],
+							["AG_MP9_folded_wcam",nil,68000],
+							["AG_MP9_folded_digi",nil,68000],
+							["AG_MP9_folded_sand",nil,68000],
 							["30Rnd_45ACP_Mag_SMG_01",nil,750],
 							["30Rnd_9x21_Mag",nil,750],
 							["optic_Aco",nil,2500],
 							["optic_ACO_grn_smg",nil,2500],
-							["chakFNP90_50rnd_skin1",nil,160500],
-							["chakFNP90_57x28_B_skin1",nil,2250],
-							["hgun_PDW2000_F",nil,117500],
+							["hgun_PDW2000_F",nil,86000],
 							["30Rnd_9x21_Mag",nil,750],
-							["RH_sbr9_des",nil,225000],
-							["RH_32Rnd_9mm_M822",nil,750],
-							["RH_g18",nil,48000],
+							["RH_g18",nil,30000],
 							["RH_33Rnd_9x19_g18",nil,750],
-							["RH_vz61",nil,58000],
+							["RH_vz61",nil,30000],
 							["RH_20Rnd_32cal_vz61",nil,750],
-							["RH_tec9",nil,58000],
+							["RH_tec9",nil,34000],
 							["RH_32Rnd_9x19_tec",nil,750],
-							["RH_muzi",nil,58000],
+							["RH_muzi",nil,38500],
 							["RH_30Rnd_9x19_UZI",nil,750],
-							["RH_deagle",nil,97500],
-							["RH_7Rnd_50_AE",nil,750],
 							["RH_compm4s",nil,5000],
 							["RH_compM2_tan",nil,5000],
 							["RH_eotexps3_tan",nil,5000],
 							["RH_t1_tan",nil,5000],
 							["RH_reflex",nil,5000],
-			               	["RH_M6X",nil,4500]
+			               			["RH_M6X",nil,4500]
 						]
 					];
 				};
@@ -922,49 +1021,46 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (life_karma < 0): {"You need positive reputation to use this store!"};
-				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
-				case (!license_civ_gun): {"You don't have a Firearms license!"};
+				case (life_karma < 0): {"Potrzebujesz pozytywnej reputacji aby tu coś kupic!"};
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
+				case (!license_civ_gun): {"Nie masz licencji na bron!"};
 				default
 				{
 					["Bronie Palne Goodmana",
 						[
-							["KPFS_HKP7",nil,1250],
-							["KPFS_8Rnd_9x19_PARA",nil,120],
+							["RH_m9",nil,5435],
+							["RH_15Rnd_9x19_M9",nil,100],
 
-							["KPFS_Mauser_Hsc",nil,1450],
-							["kpfs_8Rnd_765x17_PP",nil,120],
+							["RH_gsh18",nil,6620],
+							["RH_18Rnd_9x19_gsh",nil,100],
 
-							["KPFS_Walther_M9",nil,1550],
-							["kpfs_6Rnd_635x15",nil,120],
+							["RH_cz75",nil,4260],
+							["RH_16Rnd_9x19_CZ",nil,100],
 
-							["KPFS_P99",nil,1600],
-							["KPFS_15rnd_9x19_P99",nil,125],
+							["RH_p226",nil,4125],
+							["RH_15Rnd_9x19_SIG",nil,100],
 
-							["RH_g17",nil,1750],
-							["RH_g19",nil,1850],
-							["RH_g19t",nil,1850],
-							["RH_17Rnd_9x19_g17",nil,120],
+							["RH_g17",nil,4500],
+							["RH_g19",nil,4500],
+							["RH_17Rnd_9x19_g17",nil,100],
 
-							["RH_m9",nil,1800],
-							["RH_15Rnd_9x19_M9",nil,120],
+							["RH_sw659",nil,3500],
+							["RH_14Rnd_9x19_sw",nil,100],
 
-							["RH_sw659",nil,1950],
-							["RH_14Rnd_9x19_sw",nil,150],
-							["RH_mp412",nil,19950],
-							["RH_6Rnd_357_Mag",nil,550],
+							["RH_vp70",nil,5000],
+							["RH_18Rnd_9x19_VP",nil,100],
 
-							["hgun_Rook40_F",nil,3350],
-							["16Rnd_9x21_Mag",nil,125],
-							["RH_mk2",nil,4350],
-							["RH_10Rnd_22LR_mk2",nil,225],
-							
-							["hgun_P07_F",nil,3350],
-							["16Rnd_9x21_Mag",nil,125],
-							["RH_gsh18",nil,5150],
-							["RH_18Rnd_9x19_gsh",nil,195],
-							["RH_kimber",nil,30500],
-							["RH_7Rnd_45cal_m1911",nil,275]                                            
+							["RH_mak",nil,1100],
+							["RH_8Rnd_9x18_Mak",nil,100],
+
+							["KPFS_Mauser_Hsc",nil,1100],
+							["kpfs_8Rnd_765x17_PP",nil,100],
+
+							["KPFS_P1",nil,1100],
+							["KPFS_P38",nil,1100],
+							["KPFS_P38k",nil,1100],
+							["KPFS_P5",nil,1100],
+							["KPFS_8Rnd_9x19_PARA",nil,100]                                            
 						]
 					];
 				};
@@ -982,7 +1078,6 @@ switch(_shop) do
 						[
 							["A3L_CZ550",nil,175500],
 							["A3L_CZ550mag",nil,750],
-							["A3L_CZ550Scope",nil,15500],
 							["arifle_SDAR_F","Turtle ONLY-SDAR",5000],
 							["20Rnd_556x45_UW_mag","Underwater magazine",50]
 						]
@@ -995,31 +1090,378 @@ switch(_shop) do
         {
 			switch(true) do
 			{
-				case (playerSide != civilian && playerSide != east): {"You are not a civilian!"};
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
+				case (!license_civ_gang): {"Nie jestes w gangu!"};
+				case (!license_civ_rebel): {"Musisz być w gangu oraz posiadać szkolenie z broni długiej!"};
 				default
 				{
-					["Hideout Armament",
+					["Sklep gangu",
 						[
-							["A3L_Glock17",nil,1260],
-							["A3L_Glock17mag",nil,50]                                          
+							["RH_m9",nil,3435],
+							["RH_15Rnd_9x19_M9",nil,100],
+
+							["RH_gsh18",nil,4220],
+							["RH_18Rnd_9x19_gsh",nil,100],
+
+							["RH_p226",nil,3125],
+							["RH_15Rnd_9x19_SIG",nil,100],
+
+							["RH_g17",nil,2500],
+							["RH_g19",nil,2500],
+							["RH_17Rnd_9x19_g17",nil,100],
+
+							["RH_vp70",nil,3000],
+							["RH_18Rnd_9x19_VP",nil,100],
+
+							["SMG_01_F",nil,66000],
+			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
+							
+							["SMG_02_F",nil,66000],
+							["hgun_PDW2000_F",nil,66000],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_sbr9_wdl",nil,71000],
+							["RH_sbr9_tg",nil,71000],
+							["RH_sbr9_des",nil,71000],
+							["RH_32Rnd_9mm_M822",nil,750],
+
+							["AG_MP9_wcam",nil,55500],
+							["AG_MP9_digi",nil,55500],
+							["AG_MP9_sand",nil,55500],
+							["AG_MP9_folded_wcam",nil,48000],
+							["AG_MP9_folded_digi",nil,48000],
+							["AG_MP9_folded_sand",nil,48000],
+							["30Rnd_45ACP_Mag_SMG_01",nil,750],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_g18",nil,19000],
+							["RH_33Rnd_9x19_g18",nil,750],
+
+							["RH_vz61",nil,19000],
+							["RH_20Rnd_32cal_vz61",nil,750],
+
+							["RH_tec9",nil,21000],
+							["RH_32Rnd_9x19_tec",nil,750],
+
+							["cg_atf_bandage_i","Bandaz",15],
+							["ToolKit",nil,1800],
+							["CG_Pro_Item_i","GoPro",250],
+							["CG_tabletd","Tablet",50],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",500],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
+							["Binocular",nil,110],
+							["ItemCompass",nil,50],
+							["ItemWatch",nil,10],
+
+							["RH_fn57",nil,20500],
+							["RH_20Rnd_57x28_FN",nil,400],
+							["RH_usp",nil,21500],
+							["RH_12Rnd_45cal_usp",nil,400],
+							["RH_aacusp",nil,17500],
+							["RH_fhusp",nil,2100],
+							["RH_uspm",nil,17500],
+							["RH_16Rnd_40cal_usp",nil,400],
+							["RH_matchsd",nil,17500],
+							["RH_m1911",nil,12500],
+							["RH_kimber",nil,12500],
+							["RH_7Rnd_45cal_m1911",nil,400],
+							["hgun_ACPC2_F",nil,12500],
+							["9Rnd_45ACP_Mag",nil,400],
+							["RH_fnp45t",nil,20500],
+							["RH_15Rnd_45cal_fnp",nil,400]
 						]
 					];
 				};
 			};
         };
-       
+		
+        case "gang2":
+        {
+			switch(true) do
+			{
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
+				case (!license_civ_gang2): {"Nie masz tutaj wstepu!"};
+				case (!license_civ_rebel): {"Musisz być w gangu oraz posiadać szkolenie z broni długiej!"};
+				default
+				{
+					["Sklep gangu +",
+						[
+							["RH_m9",nil,2435],
+							["RH_15Rnd_9x19_M9",nil,100],
+
+							["RH_gsh18",nil,3320],
+							["RH_18Rnd_9x19_gsh",nil,100],
+
+							["RH_p226",nil,2325],
+							["RH_15Rnd_9x19_SIG",nil,100],
+
+							["RH_g17",nil,1900],
+							["RH_g19",nil,1900],
+							["RH_17Rnd_9x19_g17",nil,100],
+
+							["RH_vp70",nil,2300],
+							["RH_18Rnd_9x19_VP",nil,100],
+
+							["SMG_01_F",nil,58000],
+			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
+
+							["SMG_02_F",nil,58000],
+							["hgun_PDW2000_F",nil,58000],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_sbr9_wdl",nil,64000],
+							["RH_sbr9_tg",nil,64000],
+							["RH_sbr9_des",nil,64000],
+							["RH_32Rnd_9mm_M822",nil,750],
+
+							["AG_MP9_wcam",nil,46500],
+							["AG_MP9_digi",nil,46500],
+							["AG_MP9_sand",nil,46500],
+							["AG_MP9_folded_wcam",nil,37000],
+							["AG_MP9_folded_digi",nil,37000],
+							["AG_MP9_folded_sand",nil,37000],
+							["30Rnd_45ACP_Mag_SMG_01",nil,750],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_g18",nil,13500],
+							["RH_33Rnd_9x19_g18",nil,750],
+
+							["RH_vz61",nil,13500],
+							["RH_20Rnd_32cal_vz61",nil,750],
+
+							["RH_tec9",nil,15500],
+							["RH_32Rnd_9x19_tec",nil,750],
+
+							["cg_atf_bandage_i","Bandaz",15],
+							["ToolKit",nil,1800],
+							["CG_Pro_Item_i","GoPro",250],
+							["CG_tabletd","Tablet",50],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",500],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
+							["Binocular",nil,110],
+							["ItemCompass",nil,50],
+							["ItemWatch",nil,10],
+
+							["RH_fn57",nil,17500],
+							["RH_20Rnd_57x28_FN",nil,300],
+							["RH_usp",nil,18500],
+							["RH_12Rnd_45cal_usp",nil,300],
+							["RH_aacusp",nil,14500],
+							["RH_fhusp",nil,2100],
+							["RH_uspm",nil,14500],
+							["RH_16Rnd_40cal_usp",nil,300],
+							["RH_matchsd",nil,14500],
+							["RH_m1911",nil,9500],
+							["RH_kimber",nil,9500],
+							["RH_7Rnd_45cal_m1911",nil,300],
+							["hgun_ACPC2_F",nil,9500],
+							["9Rnd_45ACP_Mag",nil,300],
+							["RH_fnp45t",nil,17500],
+							["RH_15Rnd_45cal_fnp",nil,300]
+						]
+					];
+				};
+			};
+        };
+	
+        case "gangTGC":
+        {
+			switch(true) do
+			{
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
+				case (!license_civ_gangTGC): {"Nie masz tutaj wstepu!"};
+				case (!license_civ_rebel): {"Musisz być w gangu TGC oraz posiadać szkolenie z broni długiej!"};
+				default
+				{
+					["Sklep gangu TGC",
+						[
+							["RH_m9",nil,2435],
+							["RH_15Rnd_9x19_M9",nil,100],
+
+							["RH_gsh18",nil,3320],
+							["RH_18Rnd_9x19_gsh",nil,100],
+
+							["RH_p226",nil,2325],
+							["RH_15Rnd_9x19_SIG",nil,100],
+
+							["RH_g17",nil,1900],
+							["RH_g19",nil,1900],
+							["RH_17Rnd_9x19_g17",nil,100],
+
+							["RH_vp70",nil,2300],
+							["RH_18Rnd_9x19_VP",nil,100],
+
+							["A3L_AK47",nil,155000],
+			                		["A3L_AK47Mag",nil,550],
+
+							["SMG_01_F",nil,58000],
+			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
+
+							["SMG_02_F",nil,58000],
+							["hgun_PDW2000_F",nil,58000],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_sbr9_wdl",nil,64000],
+							["RH_sbr9_tg",nil,64000],
+							["RH_sbr9_des",nil,64000],
+							["RH_32Rnd_9mm_M822",nil,750],
+
+							["AG_MP9_wcam",nil,46500],
+							["AG_MP9_digi",nil,46500],
+							["AG_MP9_sand",nil,46500],
+							["AG_MP9_folded_wcam",nil,37000],
+							["AG_MP9_folded_digi",nil,37000],
+							["AG_MP9_folded_sand",nil,37000],
+							["30Rnd_45ACP_Mag_SMG_01",nil,750],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_g18",nil,13500],
+							["RH_33Rnd_9x19_g18",nil,750],
+
+							["RH_vz61",nil,13500],
+							["RH_20Rnd_32cal_vz61",nil,750],
+
+							["RH_tec9",nil,15500],
+							["RH_32Rnd_9x19_tec",nil,750],
+
+							["cg_atf_bandage_i","Bandaz",15],
+							["ToolKit",nil,1800],
+							["CG_Pro_Item_i","GoPro",250],
+							["CG_tabletd","Tablet",50],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",500],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
+							["Binocular",nil,110],
+							["ItemCompass",nil,50],
+							["ItemWatch",nil,10],
+
+							["RH_fn57",nil,17500],
+							["RH_20Rnd_57x28_FN",nil,300],
+							["RH_usp",nil,18500],
+							["RH_12Rnd_45cal_usp",nil,300],
+							["RH_aacusp",nil,14500],
+							["RH_fhusp",nil,2100],
+							["RH_uspm",nil,14500],
+							["RH_16Rnd_40cal_usp",nil,300],
+							["RH_matchsd",nil,14500],
+							["RH_m1911",nil,9500],
+							["RH_kimber",nil,9500],
+							["RH_7Rnd_45cal_m1911",nil,300],
+							["hgun_ACPC2_F",nil,9500],
+							["9Rnd_45ACP_Mag",nil,300],
+							["RH_fnp45t",nil,17500],
+							["RH_15Rnd_45cal_fnp",nil,300]
+						
+						]
+					];
+				};
+			};
+        };
+	
+	case "gangANON":
+        {
+			switch(true) do
+			{
+				case (playerSide != civilian && playerSide != east): {"Nie jestes cywilem!"};
+				case (!license_civ_gangANON): {"Nie masz tutaj wstepu!"};
+				case (!license_civ_rebel): {"Musisz być w gangu Anonymous oraz posiadać szkolenie z broni długiej!"};
+				default
+				{
+					["Sklep gangu Anonymous",
+						[
+							["RH_m9",nil,2435],
+							["RH_15Rnd_9x19_M9",nil,100],
+
+							["RH_gsh18",nil,3320],
+							["RH_18Rnd_9x19_gsh",nil,100],
+
+							["RH_p226",nil,2325],
+							["RH_15Rnd_9x19_SIG",nil,100],
+
+							["RH_g17",nil,1900],
+							["RH_g19",nil,1900],
+							["RH_17Rnd_9x19_g17",nil,100],
+
+							["RH_vp70",nil,2300],
+							["RH_18Rnd_9x19_VP",nil,100],
+
+							["RH_M16a1",nil,155000],
+			                		["RH_20Rnd_556x45_Mk318",nil,550],
+
+							["SMG_01_F",nil,58000],
+			                		["30Rnd_45ACP_Mag_SMG_01",nil,750],
+
+							["SMG_02_F",nil,58000],
+							["hgun_PDW2000_F",nil,58000],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_sbr9_wdl",nil,64000],
+							["RH_sbr9_tg",nil,64000],
+							["RH_sbr9_des",nil,64000],
+							["RH_32Rnd_9mm_M822",nil,750],
+
+							["AG_MP9_wcam",nil,46500],
+							["AG_MP9_digi",nil,46500],
+							["AG_MP9_sand",nil,46500],
+							["AG_MP9_folded_wcam",nil,37000],
+							["AG_MP9_folded_digi",nil,37000],
+							["AG_MP9_folded_sand",nil,37000],
+							["30Rnd_45ACP_Mag_SMG_01",nil,750],
+							["30Rnd_9x21_Mag",nil,750],
+
+							["RH_g18",nil,13500],
+							["RH_33Rnd_9x19_g18",nil,750],
+
+							["RH_vz61",nil,13500],
+							["RH_20Rnd_32cal_vz61",nil,750],
+
+							["RH_tec9",nil,15500],
+							["RH_32Rnd_9x19_tec",nil,750],
+
+							["cg_atf_bandage_i","Bandaz",15],
+							["ToolKit",nil,1800],
+							["CG_Pro_Item_i","GoPro",250],
+							["CG_tabletd","Tablet",50],
+							["CG_ATF_Pizza_Box_i","Pizza Na Wynos",500],
+							["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
+							["Binocular",nil,110],
+							["ItemCompass",nil,50],
+							["ItemWatch",nil,10],
+
+							["RH_fn57",nil,17500],
+							["RH_20Rnd_57x28_FN",nil,300],
+							["RH_usp",nil,18500],
+							["RH_12Rnd_45cal_usp",nil,300],
+							["RH_aacusp",nil,14500],
+							["RH_fhusp",nil,2100],
+							["RH_uspm",nil,14500],
+							["RH_16Rnd_40cal_usp",nil,300],
+							["RH_matchsd",nil,14500],
+							["RH_m1911",nil,9500],
+							["RH_kimber",nil,9500],
+							["RH_7Rnd_45cal_m1911",nil,300],
+							["hgun_ACPC2_F",nil,9500],
+							["9Rnd_45ACP_Mag",nil,300],
+							["RH_fnp45t",nil,17500],
+							["RH_15Rnd_45cal_fnp",nil,300]
+						
+						]
+					];
+				};
+			};
+        };
+	
         case "genstore":
         {
 			["Sklep Wielobranzowy",
 				[
 					["cg_atf_bandage_i","Bandaz",25],
-					["ItemGPS",nil,1000],  
+					["ItemGPS",nil,500],  
 					["CG_Pro_Item_i","GoPro",350],
 					["CG_tabletd","Tablet",50],
 					["CG_battery_i","Bateria",5],
-					["CG_ATF_Pizza_Box_i","Pizza Na Wynos",1000],
-					["CG_ATF_Donut_Box_i","Donuty Na Wynos",1000],
-					["ToolKit",nil,11250],
+					["CG_ATF_Pizza_Box_i","Pizza Na Wynos",500],
+					["CG_ATF_Donut_Box_i","Donuty Na Wynos",500],
+					["ToolKit",nil,2250],
 					["cg_torch","Latarka",550], 
 					["cl_axe","Topor",550], 
 					["cl_bin_shield","Tarcza Bin Lida",550], 

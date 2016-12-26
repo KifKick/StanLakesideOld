@@ -46,16 +46,24 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Classic";};
-			case 1: {_color = "Kit Black";};
-			case 2: {_color = "Forest Green";};
-			case 3: {_color = "Candy Red";};
-			case 4: {_color = "Crispy Blue";};
-			case 5: {_color = "Deluxe Blue";};
-			case 6: {_color = "Icy White";};
-			case 7: {_color = "Special";};
-			case 8: {_color = "C9";};
-			case 9: {_color = "Nandoz";};
+			case 0:  {_color = "Alpine White";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite Black";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+			case 12: {_color = "Candy Red";};
+			case 13: {_color = "Crispy Blue";};
+			case 14: {_color = "Deluxe Blue";};
+			case 15: {_color = "Icy White";};
+			case 16: {_color = "Special";};
+			case 17: {_color = "C9";};
 		};
 	};
 	case "ivory_m3" :
@@ -65,6 +73,199 @@ switch (_vehicle) do
 			case 0:  {_color = "Alpine White";};
 			case 1:  {_color = "Austin Yellow";};
 			case 2:  {_color = "Azurite Black";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+			case 12: {_color = "Candy Red";};
+			case 13: {_color = "Crispy Blue";};
+			case 14: {_color = "Deluxe Blue";};
+			case 15: {_color = "Icy White";};
+			case 16: {_color = "Special";};
+			case 17: {_color = "C9";};
+		};
+	};
+	case "ivory_veyron" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_suburban" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_mp4" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_gti" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_f1" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_evox" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_evox" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Anonymous";};
+		};
+	};
+	case "ivory_elise" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_e36" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_190e" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
+			case 3:  {_color = "Black Sapphire";};
+			case 4:  {_color = "Mineral Gray";};
+			case 5:  {_color = "Mineral White";};
+			case 6:  {_color = "Moonstone";};
+			case 7:  {_color = "Pyrite Brown";};
+			case 8:  {_color = "Sakhir Orange";};
+			case 9:  {_color = "Silverstone";};
+			case 10: {_color = "Tanzanite Blue";};
+			case 11: {_color = "Yas Marina Blue";};
+		};
+	};
+	case "ivory_rs4" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Azurite Black";};
+			case 1:  {_color = "Austin Yellow";};
+			case 2:  {_color = "Azurite White";};
 			case 3:  {_color = "Black Sapphire";};
 			case 4:  {_color = "Mineral Gray";};
 			case 5:  {_color = "Mineral White";};
@@ -205,6 +406,16 @@ switch (_vehicle) do
 			case 2:  {_color = "White";};
 		};
 	};
+	
+	case "ivory_evox_unmarked" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Black";};
+			case 1:  {_color = "Gray";};
+			case 2:  {_color = "White";};
+		};
+	};
 
 
 	case "ivory_isf_unmarked" :
@@ -218,6 +429,15 @@ switch (_vehicle) do
 	};
 
 	case "ivory_wrx_unmarked" :
+	{
+		switch (_index) do
+		{
+			case 0:  {_color = "Black";};
+			case 1:  {_color = "Gray";};
+			case 2:  {_color = "White";};
+		};
+	};
+	case "ivory_rs4_unmarked" :
 	{
 		switch (_index) do
 		{
@@ -261,7 +481,7 @@ switch (_vehicle) do
 			case 20: {_color = "Classic";};
 			case 21: {_color = "Candy";};
 			case 22: {_color = "Orange";};
-			case 23: {_color = "Russell";};
+			case 23: {_color = "Camel 9";};
 		};
 	};
 	case "ivory_gt500" :
@@ -310,160 +530,6 @@ switch (_vehicle) do
 			case 18: {_color = "Teal";};
 			case 19: {_color = "Wedding";};
 			case 20: {_color = "Orange";};
-		};
-	};
-	case "ivory_r34" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_rs4" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_190e" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_e36" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_elise" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_evox" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_f1" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_gti" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_mp4" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_suburban" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
-		};
-	};
-	case "ivory_veyron" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Black";};
-			case 1: {_color = "Gold";};
-			case 2: {_color = "Gray";};
-			case 3: {_color = "Green";};
-			case 4: {_color = "Pink";};
-			case 5: {_color = "Purple";};
-			case 6: {_color = "Red";};
-			case 7: {_color = "White";};
 		};
 	};
 	case "ivory_lfa" :
@@ -635,6 +701,13 @@ switch (_vehicle) do
 			case 12: {_color = "Waves Blue"};
 			case 13: {_color = "Rebel Digital"};
 			case 14: {_color = "EMS White"};
+		};
+	};
+	case "ARMSCor_A109_Med":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "EMS"};
 		};
 	};
 	case "C_Heli_Light_01_civil_F":

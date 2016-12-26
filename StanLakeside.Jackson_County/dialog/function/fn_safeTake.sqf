@@ -9,7 +9,7 @@
 private["_ctrl","_num","_safeInfo"];
 disableSerialization;
 
-if((lbCurSel 3502) == -1) exitWith {[localize "STR_Civ_SelectItem", false] spawn domsg;};
+if((lbCurSel 3502) isEqualTo -1) exitWith {[localize "STR_Civ_SelectItem", false] spawn domsg;};
 _ctrl = ctrlSelData(3502);
 _num = ctrlText 3505;
 _safeInfo = life_safeObj getVariable["safe",0];
@@ -23,7 +23,7 @@ if(_num > _safeInfo) exitWith {[format[localize "STR_Civ_IsntEnoughGold",_num], 
 
 //Secondary checks
 _num = [_ctrl,_num,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_num == 0) exitWith {[localize "STR_NOTF_InvFull", false] spawn domsg;};
+if(_num isEqualTo 0) exitWith {[localize "STR_NOTF_InvFull", false] spawn domsg;};
 
 
 //Take it

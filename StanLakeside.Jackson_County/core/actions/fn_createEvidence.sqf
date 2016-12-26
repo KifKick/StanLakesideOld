@@ -36,16 +36,16 @@ _victim = param [1,ObjNull,[ObjNull]];
 _crime = param [2];
 _vehicle = createVehicle ["Land_Suitcase_F", (player), [], 0, "NONE"];
 
-if(_crime == "187") then {
+if(_crime isEqualTo "187") then {
 	_vehicle setVariable ["evidence", [_suspect, _victim, "187"], true];
 };
-if(_crime == "211") then {
+if(_crime isEqualTo "211") then {
 	_vehicle setVariable ["evidence", [_suspect, _victim, "211"], true];
 };
-if(_crime == "487") then {
+if(_crime isEqualTo "487") then {
 	_vehicle setVariable ["evidence", [_suspect, _victim, "487"], true];
 };
-if(_crime == "334") then {
+if(_crime isEqualTo "334") then {
 	_vehicle setVariable ["evidence", [_suspect, _victim, "334"], true];
 };
 _vehicle enablesimulation false;

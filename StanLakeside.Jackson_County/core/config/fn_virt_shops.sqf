@@ -21,17 +21,18 @@ switch (_shop) do
 	case "gems": {["Handlarz klejnotow",["sapphire","ruby","emerald"]]};
 	case "oil": {["Handlarz ropy z USA",["oilp","pickaxe","fuelF"]]};
 	case "fishmarket": {["Market rybny",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
-	case "farmingmarket": {["Market",["wheat","sunflower","corn","bean","cotton","olive","opium","cannabis","pumpkin"]]};	
+	case "farmingmarket": {["Market rolniczy",["wheat seed", "sunflower seed","corn seed", "bean seed", "cotton seed", "olive seed", "opium seed", "cannabis seed", "pumpkin seed"]]};	
 	case "glass": {["Szklarz",["glass"]]};
 	case "iron": {["Hutnik",["iron_r","copper_r"]]};
 	case "diamond": {["Jubiler",["weddingring","diamond","diamondc"]]};
 	case "salt": {["Handlarz sola",["salt_r"]]};
-	case "cop": {["Przedmioty policyjne",["medkit","panicbutton","bandage","fuelF","defusekit","BarGate","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
+	case "cop": {["Przedmioty policyjne",["cigarette","bec","donuts","coffee","water","redgull","medkit","panicbutton","bandage","fuelF","defusekit","BarGate","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "donuts": {["Dunkin Donuts",["donuts","coffee","water","redgull"]]};
 	case "cement": {["Handalrz cementem",["cement"]]};
 	case "gold": {["Zlotnik",["goldbar"]]};
 	case "ems": {["Przedmioty EMS",["airkit","panicbutton","condom","bec","water","rabbit","apple","redgull","tbacon","peach","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "butcher": {["Rzeznik",["Raw Meat"]]};
+	case "uranium": {["Naukowiec", ["uraniump"]]};
 };
 
 

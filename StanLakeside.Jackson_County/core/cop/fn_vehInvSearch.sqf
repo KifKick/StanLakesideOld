@@ -10,13 +10,13 @@ private["_vehicle","_vehicleInfo","_value"];
 _vehicle = cursorTarget;
 _vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 _string = "";
-if(count _vehicleData == 0) exitWith {}; //Bad vehicle.
+if(count _vehicleData isEqualTo 0) exitWith {}; //Bad vehicle.
 
 if(isNull _vehicle) exitWith {};
 if(!((_vehicle isKindOf "Air") OR (_vehicle isKindOf "Ship") OR (_vehicle isKindOf "LandVehicle"))) exitWith {};
 
 _vehicleInfo = _vehicle getVariable ["Trunk",[]];
-if(count _vehicleInfo == 0) exitWith {[localize "STR_Cop_VehEmpty", false] spawn domsg;};
+if(count _vehicleInfo isEqualTo 0) exitWith {[localize "STR_Cop_VehEmpty", false] spawn domsg;};
 
 _value = 0;
 {

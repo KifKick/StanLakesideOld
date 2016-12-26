@@ -77,7 +77,7 @@ while{ has_job } do {
 		};
 	};
 	_fkit = _fkit - 1;
-	if(_fkit == 0) exitwith {};
+	if(_fkit isEqualTo 0) exitwith {};
 };
 vehspawned setVelocity [0, 0, 0];
 sleep 1;

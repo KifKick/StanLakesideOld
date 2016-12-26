@@ -6,6 +6,8 @@
 
 ["Ten pojazd zostanie zniszczony za 30 sekund..", false] spawn domsg;
 _vehicle = cursorTarget;
+_name = _this select 1;
+_playerid = _this select 2;
 
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike") || (_vehicle isKindOf "A3L_Tahoe_Base"))) exitWith {};
 
@@ -30,3 +32,7 @@ if(player distance _vehicle >= 10) exitWith {
 _vehicle setdamage 1;
 
 ["Auto zniszczone!", false] spawn domsg;
+_classname = typeOf _vehicle;
+_vehname = format[getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")];
+
+[_playerid,_name, _classname, _vehname, 8, ""] remoteExecCall ["ton_fnc_copLog",(call life_fnc_hcc)];

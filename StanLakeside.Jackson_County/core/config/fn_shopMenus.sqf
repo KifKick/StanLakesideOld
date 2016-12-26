@@ -7,7 +7,7 @@
 */
 private["_shop"];
 _shop = param [0,"",[""]];
-if(_shop == "") exitWith {closeDialog 0;};
+if(_shop isEqualTo "") exitWith {closeDialog 0;};
 
 if(!dialog) then
 {

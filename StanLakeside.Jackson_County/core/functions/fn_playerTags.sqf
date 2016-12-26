@@ -30,7 +30,7 @@ _units = nearestObjects [player, ["Man"], 6];
 	//_name = _x getVariable ["realname", name _x];
 	_name =  getplayeruid _x;
 	_text = "";
-	if(count _sPos > 1 && isPlayer _x && _distance < 14 && _x != player && vehicle player == player && currentweapon player == "") then {
+	if(count _sPos > 1 && isPlayer _x && _distance < 14 && _x != player && vehicle player isEqualTo player && currentweapon player isEqualTo "") then {
 		if(_x isKindOf "Man") then {
 			_text = format["<t color='#FFFFFF' font='puristaMedium'>%1</t>",_name, _distance];
 		} else {

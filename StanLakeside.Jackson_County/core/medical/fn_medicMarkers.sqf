@@ -17,7 +17,7 @@ if(visibleMap) then {
 		_name = _x getVariable "name";
 		_down = _x getVariable ["Revive",false];
 		_pid = _x getVariable["steam64ID",""];
-		if(side _x == independent) then {_medmark pushBack _x};
+		if(side _x isEqualTo independent) then {_medmark pushBack _x};
 		if(!isNil "_name" && !_down && _pid != "" && (_x getVariable["mapVisible",FALSE])) then {
 			_units pushBack _x;
 		};
@@ -25,7 +25,7 @@ if(visibleMap) then {
 
 	{
 			_marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];
-			if(side _x == west) then {
+			if(side _x isEqualTo west) then {
 				_marker setMarkerColorLocal "ColorBlue";
 			} else {
 				_marker setMarkerColorLocal "ColorGreen";
@@ -37,7 +37,7 @@ if(visibleMap) then {
 
 	{
 		_marker = createMarkerLocal [format["%1_dead_marker",_x],visiblePosition _x];
-		if(side _x == west) then {
+		if(side _x isEqualTo west) then {
 			_marker setMarkerColorLocal "ColorBlue";
 			_marker setMarkerTypeLocal "loc_Hospital";
 			_marker setMarkerTextLocal format["%1 | Injury Priority: %2",(_x getVariable["name","Unknown Player"]), (_x getvariable "severity")];

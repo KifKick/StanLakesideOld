@@ -46,7 +46,7 @@ if(_looting) then
 		_cP = _cP - 1;
 		hint format["Pozostalo %1 sekund",_cp];
 
-		if(_cP == 0) exitWith {};
+		if(_cP isEqualTo 0) exitWith {};
 		if(player distance _loothouse > 8) exitWith {["Musisz stac blisko budynku aby go rabowac!", false] spawn domsg;};
 		if!(!deadPlayer) exitWith {};
 	};

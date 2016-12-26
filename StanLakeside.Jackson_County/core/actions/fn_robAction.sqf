@@ -18,6 +18,7 @@ player switchMove "amovpknlmstpsnonwnondnon_amovpknlmstpsraswlnrdnon";
 if(_target getVariable["robbed",false]) exitWith {};
 [player] remoteExecCall ["life_fnc_robPerson",_target];
 _reason = "212";
+["Remove",30] call fnc_karma;
 
 _target setVariable["robbed",TRUE,TRUE];
 [player,player,_reason] spawn life_fnc_createEvidence;

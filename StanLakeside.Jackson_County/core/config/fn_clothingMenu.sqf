@@ -11,12 +11,13 @@ createDialog "Life_Clothing";
 disableSerialization;
 
 //Cop / Civ Pre Check
-if((_this select 3) == "reb" && !license_civ_rebel) exitWith {[localize "STR_Shop_NotaReb", false] spawn domsg; closeDialog 0;};
+if((_this select 3) isEqualTo "reb" && !license_civ_rebel) exitWith {[localize "STR_Shop_NotaReb", false] spawn domsg; closeDialog 0;};
 if((_this select 3) in ["cop","brucecop"] && playerSide != west) exitWith {[localize "STR_Shop_NotaCop", false] spawn domsg; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { [localize "STR_Shop_NotaDive", false] spawn domsg; closeDialog 0;};
-if((_this select 3) == "ems" && playerSide != independent) exitWith {["You are not a EMS!", false] spawn domsg; closeDialog 0;};
-if((_this select 3) == "oskp" && !license_civ_oskp) exitWith {["Wypierdalaj za brame, bo Cie odholuje chamie!", false] spawn domsg; closeDialog 0;};
-if((_this select 3) == "prokurator" && playerSide != west) exitWith {["Opusc ten teren, Na to jest paragraf.", false] spawn domsg; closeDialog 0;};
+if((_this select 3) isEqualTo "ems" && playerSide != independent) exitWith {["You are not a EMS!", false] spawn domsg; closeDialog 0;};
+if((_this select 3) isEqualTo "oskp" && !license_civ_oskp) exitWith {["Wypierdalaj za brame, bo Cie odholuje chamie!", false] spawn domsg; closeDialog 0;};
+if((_this select 3) isEqualTo "gang" && !license_civ_gang) exitWith {["Nie jestes gangsterem podrabiancu!", false] spawn domsg; closeDialog 0;};
+if((_this select 3) isEqualTo "prokurator" && playerSide != west) exitWith {["Opusc ten teren, Na to jest paragraf.", false] spawn domsg; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 
@@ -73,7 +74,7 @@ if(isNil "life_clothesPurchased") exitWith
 	if(life_oldGlasses != "") then {player addGoggles life_oldGlasses;} else {removeGoggles player};
 	if(backpack player != "") then
 	{
-		if(life_oldBackpack == "") then
+		if(life_oldBackpack isEqualTo "") then
 		{
 			removeBackpack player;
 		}
@@ -98,7 +99,7 @@ if(isNil "life_clothesPurchased") exitWith
 	
 	if(vest player != "") then
 	{
-		if(life_oldVest == "") then
+		if(life_oldVest isEqualTo "") then
 		{
 			removeVest player;
 		}
@@ -115,21 +116,21 @@ if(isNil "life_clothesPurchased") exitWith
 life_clothesPurchased = nil;
 
 //Check uniform purchase.
-if((life_clothing_purchase select 0) == -1) then
+if((life_clothing_purchase select 0) isEqualTo -1) then
 {
 	if(life_oldClothes != uniform player) then {player addUniform life_oldClothes;};
 };
 //Check hat
-if((life_clothing_purchase select 1) == -1) then
+if((life_clothing_purchase select 1) isEqualTo -1) then
 {
-	if(life_oldHat != headgear player) then {if(life_oldHat == "") then {removeHeadGear player;} else {player addHeadGear life_oldHat;};};
+	if(life_oldHat != headgear player) then {if(life_oldHat isEqualTo "") then {removeHeadGear player;} else {player addHeadGear life_oldHat;};};
 };
 //Check glasses
-if((life_clothing_purchase select 2) == -1) then
+if((life_clothing_purchase select 2) isEqualTo -1) then
 {
 	if(life_oldGlasses != goggles player) then
 	{
-		if(life_oldGlasses == "") then 
+		if(life_oldGlasses isEqualTo "") then 
 		{
 			removeGoggles player;
 		}
@@ -140,11 +141,11 @@ if((life_clothing_purchase select 2) == -1) then
 	};
 };
 //Check Vest
-if((life_clothing_purchase select 3) == -1) then
+if((life_clothing_purchase select 3) isEqualTo -1) then
 {
 	if(life_oldVest != vest player) then
 	{
-		if(life_oldVest == "") then {removeVest player;} else
+		if(life_oldVest isEqualTo "") then {removeVest player;} else
 		{
 			player addVest life_oldVest;
 			{[_x,true,false,false,true] call life_fnc_handleItem;} foreach life_oldVestItems;
@@ -153,11 +154,11 @@ if((life_clothing_purchase select 3) == -1) then
 };
 
 //Check Backpack
-if((life_clothing_purchase select 4) == -1) then
+if((life_clothing_purchase select 4) isEqualTo -1) then
 {
 	if(life_oldBackpack != backpack player) then
 	{
-		if(life_oldBackpack == "") then {removeBackpack player;} else
+		if(life_oldBackpack isEqualTo "") then {removeBackpack player;} else
 		{
 			removeBackpack player;
 			player addBackpack life_oldBackpack;

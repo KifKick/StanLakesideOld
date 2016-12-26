@@ -7,3 +7,6 @@ StanLakeside.iml
 .idea/misc.xml
 .idea/vcs.xml
 .idea/copyright/profiles_settings.xml
+*.json
+StanLakeside.Jackson_County/core/functions/fn_fixCarPart.sqf
+StanLakeside.Jackson_County/core/actions/fn_fixCarPartAction.sqf

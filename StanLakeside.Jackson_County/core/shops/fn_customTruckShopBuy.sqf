@@ -35,9 +35,9 @@ _spawnPoint = "";
 //Check if there is multiple spawn points and find a suitable spawnpoint.
 if(typeName _spawnPoints isEqualTo typeName []) then {
 	//Find an available spawn point.
-	{if(count(nearestObjects[(getMarkerPos _x),["Car","Motorcycle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
+	{if(count(nearestObjects[(getMarkerPos _x),["Car","Motorcycle","Ship","Air"],5]) isEqualTo 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
 } else {
-	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Motorcycle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
+	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Motorcycle","Ship","Air"],5]) isEqualTo 0) exitWith {_spawnPoint = _spawnPoints};
 };
 
 

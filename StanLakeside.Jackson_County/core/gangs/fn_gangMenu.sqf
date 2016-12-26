@@ -12,7 +12,7 @@ if(isNull (findDisplay 2620)) then {
 };
 
 _ownerID = grpPlayer getVariable["gang_owner",""];
-if(_ownerID == "") exitWith {closeDialog 0;}; //Bad juju
+if(_ownerID isEqualTo "") exitWith {closeDialog 0;}; //Bad juju
 _gangName = grpPlayer getVariable "gang_name";
 _gangBank = grpPlayer getVariable "gang_bank";
 _gangMax = grpPlayer getVariable "gang_maxMembers";
@@ -32,7 +32,7 @@ if(_ownerID != steamid) then {
 _members = getControl(2620,2621);
 lbClear _members;
 {
-	if((getPlayerUID _x) == _ownerID) then {
+	if((getPlayerUID _x) isEqualTo _ownerID) then {
 		_members lbAdd format["%1 " +(localize "STR_GNOTF_GangLeader"),(_x getVariable["realname",name _x])];
 		_members lbSetData [(lbSize _members)-1,str(_x)];
 	} else {

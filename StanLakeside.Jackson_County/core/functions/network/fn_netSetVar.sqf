@@ -8,5 +8,5 @@
 disableSerialization;
 params [["_varName", "", [""]], ["_value",-9999,[sideUnknown,"",[],{},false,0,ObjNull,GrpNull,displayNull]], ["_ns", missionNamespace, [missionNamespace]]];
 
-if(_varName == "") exitWith {}; //Error checking
+if(_varName isEqualTo "") exitWith {}; //Error checking
 _ns setVariable[_varName,_value];

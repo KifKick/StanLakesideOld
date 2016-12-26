@@ -9,7 +9,7 @@ disableSerialization;
 private["_search","_ui","_progress","_cP","_pgText","_title"];
 if(life_action_inUse) exitWith {hint localize "STR_NOTF_Action"};
 _search = nearestObjects[getPos air_sp, ["Air"],5];
-if(count _search == 0) exitWith {hint localize "STR_Service_Chopper_NoAir"};
+if(count _search isEqualTo 0) exitWith {hint localize "STR_Service_Chopper_NoAir"};
 if(cash_in_hand < 100) exitWith {hint localize "STR_Serive_Chopper_NotEnough"};
 ["cash","take",100] call life_fnc_handleCash;
 [2] call SOCK_fnc_updatePartial;

@@ -11,18 +11,18 @@ _fish = (nearestObjects[getPos vehicle player,["Fish_Base_F"],20]);
 life_net_dropped = true;
 titleText[localize "STR_NOTF_NetDrop","PLAIN"];
 uiSleep 5;
-if(count _fish == 0) exitWith {[localize "STR_NOTF_NetDropFail", false] spawn domsg; life_net_dropped = false;};
+if(count _fish isEqualTo 0) exitWith {[localize "STR_NOTF_NetDropFail", false] spawn domsg; life_net_dropped = false;};
 {
 	if(_x isKindOf "Fish_Base_F") then
 	{
 		switch(true) do
 		{
-			case ((typeOf _x) == "Salema_F"): {_typeName = localize "STR_ANIM_Salema"; _type = "salema";};
-			case ((typeOf _x) == "Ornate_random_F") : {_typeName = localize "STR_ANIM_Ornate"; _type = "ornate";};
-			case ((typeOf _x) == "Mackerel_F") : {_typeName = localize "STR_ANIM_Mackerel"; _type = "mackerel";};
-			case ((typeOf _x) == "Tuna_F") : {_typeName = localize "STR_ANIM_Tuna"; _type = "tuna";};
-			case ((typeOf _x) == "Mullet_F") : {_typeName = localize "STR_ANIM_Mullet"; _type = "mullet";};
-			case ((typeOf _x) == "CatShark_F") : {_typeName = localize "STR_ANIM_Catshark"; _type = "catshark";};
+			case ((typeOf _x) isEqualTo "Salema_F"): {_typeName = localize "STR_ANIM_Salema"; _type = "salema";};
+			case ((typeOf _x) isEqualTo "Ornate_random_F") : {_typeName = localize "STR_ANIM_Ornate"; _type = "ornate";};
+			case ((typeOf _x) isEqualTo "Mackerel_F") : {_typeName = localize "STR_ANIM_Mackerel"; _type = "mackerel";};
+			case ((typeOf _x) isEqualTo "Tuna_F") : {_typeName = localize "STR_ANIM_Tuna"; _type = "tuna";};
+			case ((typeOf _x) isEqualTo "Mullet_F") : {_typeName = localize "STR_ANIM_Mullet"; _type = "mullet";};
+			case ((typeOf _x) isEqualTo "CatShark_F") : {_typeName = localize "STR_ANIM_Catshark"; _type = "catshark";};
 			default {_type = "";};
 		};
 		

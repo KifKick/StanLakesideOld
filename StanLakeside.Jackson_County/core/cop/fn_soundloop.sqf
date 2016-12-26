@@ -8,9 +8,6 @@ _checkMask = player getVariable "GasMaskEnable";
 if(_checkMask != 2) then {
 		while {true} do {
 		uiSleep _breathingloop;
-        if(!) then {
-        	cutText["","BLACK"];
-        } else {
-        exitwith {};
+        cutText["","BLACK"];
         };
-};
+	};

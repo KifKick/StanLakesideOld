@@ -76,9 +76,9 @@ _Btn12 ctrlEnable true;
 life_pInact_curTarget = _curTarget;
 
 _Btn1 ctrlSetText localize "STR_pInAct_PatDown";
-_Btn1 buttonSetAction "[] remoteExecCall [""life_fnc_removeWeaponAction"",life_pInact_curTarget]; closeDialog 0;";
+_Btn1 buttonSetAction "[player] remoteExecCall [""life_fnc_removeWeaponAction"",life_pInact_curTarget]; closeDialog 0;";
 
-if (( _curTarget getVariable ["tied", false] || animationState _curTarget == "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" )) then {
+if (( _curTarget getVariable ["tied", false] || animationState _curTarget isEqualTo "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" )) then {
 } else {
 _Btn1 ctrlEnable false;		
 };
@@ -92,7 +92,7 @@ _Btn2 ctrlEnable false;
 
 _Btn3 ctrlSetText "Zwiaz osobe";
 _Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_tieingAction; closeDialog 0;";
-if( (animationState cursorTarget == "Incapacitated" || animationState cursorTarget == "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" ) ) then {
+if( (animationState cursorTarget isEqualTo "Incapacitated" || animationState cursorTarget isEqualTo "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon" ) ) then {
 
 } else {
  _Btn3 ctrlEnable false;		

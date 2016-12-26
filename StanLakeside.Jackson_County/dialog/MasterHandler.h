@@ -16,6 +16,7 @@
 #include "cell_phone.hpp"
 #include "wanted_list.hpp"
 #include "ticket.hpp"
+#include "halloweenshop.hpp"
 #include "clothing.hpp"
 #include "trunk.hpp"
 #include "spawnSelection.hpp"
@@ -42,10 +43,12 @@
 #include "selectTestDrive.hpp"
 #include "truckColorSelectorUI.hpp"
 #include "emp_menu.hpp"
-
+#include "common_EditorWrapper.hpp"
+#include "market.hpp"
 #include "slot_machine.hpp"
 #include "blackjack.hpp"
 #include "openboard.hpp"
 #include "pickup.hpp"
+#include "veh_auction.hpp"
 
 #include "infiSTAR_AdminMenu.hpp"

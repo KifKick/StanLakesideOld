@@ -13,7 +13,7 @@ ctrlShow[2002,false];
 
 if(vehicle player != player) exitwith { ["Nie mozesz zrobic tego w pojezdzie..", false] spawn domsg; };
 
-if((lbCurSel 2005) == -1) exitWith {["Nie wybrales przedmiotu ktory chcialbys upuscic.", false] spawn domsg;ctrlShow[2002,true];};
+if((lbCurSel 2005) isEqualTo -1) exitWith {["Nie wybrales przedmiotu ktory chcialbys upuscic.", false] spawn domsg;ctrlShow[2002,true];};
 _item = lbData [2005,(lbCurSel 2005)];
 
 //A series of checks *ugh*

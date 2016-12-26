@@ -59,7 +59,7 @@ ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
 	};
 } foreach life_inv_items;
 {
-	if((_x select 1) == _side) then
+	if((_x select 1) isEqualTo _side) then
 	{
 		_str = [_x select 0] call life_fnc_varToStr;
 		_val = missionNamespace getVariable (_x select 0);
@@ -70,7 +70,7 @@ ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
 	};
 } foreach life_licenses;
 
-if(_struct == "") then
+if(_struct isEqualTo "") then
 {
 	_struct = "No Licenses";
 };

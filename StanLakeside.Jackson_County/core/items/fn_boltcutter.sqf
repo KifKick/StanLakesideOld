@@ -23,8 +23,8 @@ for "_i" from 1 to _doors do {
 	_worldSpace = _building modelToWorld _selPos;
 		if(player distance _worldSpace < 5) exitWith {_door = _i;};
 };
-if(_door == 0) exitWith {hint localize "STR_Cop_NotaDoor"}; //Not near a door to be broken into.
-if((_building getVariable[format["bis_disabled_Door_%1",_door],0]) == 0) exitWith {hint localize "STR_House_Raid_DoorUnlocked"};
+if(_door isEqualTo 0) exitWith {hint localize "STR_Cop_NotaDoor"}; //Not near a door to be broken into.
+if((_building getVariable[format["bis_disabled_Door_%1",_door],0]) isEqualTo 0) exitWith {hint localize "STR_House_Raid_DoorUnlocked"};
 life_action_inUse = true;
 
 //Setup the progress bar
@@ -64,6 +64,11 @@ while {true} do
 	if(_cP >= 1 OR deadPlayer) exitWith {};
 	if(life_istazed) exitWith {}; //Tazed
 	if(life_interrupted) exitWith {};
+		_playerID = getPlayerUID player;
+		_playerName = name player;
+		_type = 12;
+		_amount = typeOf _curTarget;
+		[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 };
 
 //Kill the UI display and check for various states
@@ -72,6 +77,11 @@ player playActionNow "stop";
 if(deadPlayer OR life_istazed) exitWith {life_action_inUse = false;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; [localize "STR_NOTF_ActionCancel", false] spawn domsg; life_action_inUse = false;};
+		_playerID = getPlayerUID player;
+		_playerName = name player;
+		_type = 12;
+		_amount = typeOf _curTarget;
+		[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 life_boltcutter_uses = life_boltcutter_uses + 1;
 life_action_inUse = false;
 if(life_boltcutter_uses >= 2) then {
@@ -79,7 +89,12 @@ if(life_boltcutter_uses >= 2) then {
 	life_boltcutter_uses = 0;
 };
 
-_building setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.
+		_building setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.
+		_playerID = getPlayerUID player;
+		_playerName = name player;
+		_type = 13;
+		_amount = typeOf _curTarget;
+		[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 if((_building getVariable["locked",false])) then {
 	_building setVariable["locked",false,true];
 };

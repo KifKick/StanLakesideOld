@@ -17,4 +17,10 @@ if(!((side _unit) in [civilian,east,independent])) exitWith {}; //Not a civ
 
 detach _unit;
 [_unit,false] remoteExec ["life_fnc_jail",_unit];
+_playerID = getPlayerUID player;
+_playerName = name player;
+_byPlayerID = getPlayerUID _unit;
+_byPlayerName = name _unit;
+_type = 3;
+[_playerID,_playerName,_byPlayerID,_byPlayerName,_type,""] remoteExecCall ["TON_fnc_copLog", (call life_fnc_HCC)];
 closeDialog 0;

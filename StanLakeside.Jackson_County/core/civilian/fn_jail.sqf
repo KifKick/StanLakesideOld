@@ -20,7 +20,7 @@ player setVariable["transporting", nil, true];
 [localize "STR_Jail_LicenseNOTF", false] spawn domsg;
 player setPos (getMarkerPos "jail_marker");
 
-if (uniform player == "A3L_Prisoner_Outfit") then 
+if (uniform player isEqualTo "A3L_Prisoner_Outfit") then 
 {
 	A3L_Fnc_OldUniform = "A3L_Shirt";
 } 
@@ -57,5 +57,6 @@ removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
 
 [player,_bad] remoteExecCall ["life_fnc_jailSys",2];
+[2] call SOCK_fnc_updatePartial;
 [5] call SOCK_fnc_updatePartial;
 call life_fnc_saveGear;

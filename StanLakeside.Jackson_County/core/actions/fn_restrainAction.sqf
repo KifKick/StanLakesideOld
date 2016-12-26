@@ -17,7 +17,7 @@ life_antispamactive = true;
 _unit = cursorTarget;
 if(isNull _unit) exitWith {}; //Not valid
 if((_unit getVariable ["restrained", false])) exitWith {};
-if(player == _unit) exitWith {};
+if(player isEqualTo _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
 
@@ -39,6 +39,12 @@ if(_totald >= -120 && _totald < 1 || _totald <= 120 && _totald > -1 || _totald >
 	_unit setVariable["restrained",true,true];
 	if(_sit) then {_unit setVariable["restrained2",true,true]};
 	[player] remoteExecCall ["life_fnc_restrain",_unit];
+	_playerID = getPlayerUID player;
+	_playerName = name player;
+	_byPlayerID = getPlayerUID _unit;
+	_byPlayerName = name _unit;
+	_type = 1;
+	[_playerID,_playerName,_byPlayerID,_byPlayerName,_type,""] remoteExecCall ["TON_fnc_copLog", (call life_fnc_HCC)];
 } else {
 	["Musisz byc za Twoim celem aby go skuc.", false] spawn domsg;	
 };

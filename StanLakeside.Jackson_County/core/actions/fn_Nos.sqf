@@ -8,7 +8,7 @@
 
 if(life_nos_count > 0 && _vehicle isKindOf "Car") then {
 
-	if(life_nos_active == 2) then {
+	if(life_nos_active isEqualTo 2) then {
 		[player,"nos"] spawn life_fnc_nearestSound;
 
 		life_nos_active = 1;

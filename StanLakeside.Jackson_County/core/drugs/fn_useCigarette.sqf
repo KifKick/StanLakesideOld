@@ -15,9 +15,9 @@ _unit = player;
 _int = 0.1; 
 _smokecount = 0;
 life_num = 5400;
-player setCustomAimCoef 0.35;
 player setAnimSpeedCoef 1.1;
 player enableFatigue false;
+["Remove",10] call fnc_karma;
 while{life_num > 0} do {
 	_source = "logic" createVehicleLocal (getpos _unit);   
 	_smoke = "#particlesource" createVehicle getpos _source;   

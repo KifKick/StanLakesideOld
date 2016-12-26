@@ -3,7 +3,7 @@
 	The Haunted House
 */
 
-if (life_koil_hh == 1) exitwith {};
+if (life_koil_hh isEqualTo 1) exitwith {};
 
 ["Czujesz sie bardzo dziwnie..", false] spawn domsg;
 
@@ -16,7 +16,7 @@ fnc_turnObject = {
 };
  
 _inc = 1;
-while { life_koil_hh == 1 } do {
+while { life_koil_hh isEqualTo 1 } do {
 	uiSleep 30;
 	_inc = _inc + 1;
 	_mychance = round(random 100); 
@@ -24,31 +24,31 @@ while { life_koil_hh == 1 } do {
 
 	_mysound = round(random 7);
 
-	if(_mysound == 1) then {
+	if(_mysound isEqualTo 1) then {
 		playSound3D ["cg_sndimg\sounds\hhthunder.ogg", player, false, getPosASL player, 5, 1, 45];
 	};
 
-	if(_mysound == 2) then {
+	if(_mysound isEqualTo 2) then {
 		playSound3D ["cg_sndimg\sounds\hhscreams.ogg", player, false, getPosASL player, 22, 1, 45];
 	};
 
-	if(_mysound == 3) then {
+	if(_mysound isEqualTo 3) then {
 		playSound3D ["cg_sndimg\sounds\hhicanseeyou.ogg", player, false, getPosASL player, 5, 1, 45];
 	};
 
-	if(_mysound == 4) then {
+	if(_mysound isEqualTo 4) then {
 		playSound3D ["cg_sndimg\sounds\hhgrowl.ogg", player, false, getPosASL player, 15, 1, 45];
 	};
 
-	if(_mysound == 5) then {
+	if(_mysound isEqualTo 5) then {
 		playSound3D ["cg_sndimg\sounds\hhecho.ogg", player, false, getPosASL player, 5, 1, 45];
 	};
 
-	if(_mysound == 6) then {
+	if(_mysound isEqualTo 6) then {
 		playSound3D ["cg_sndimg\sounds\hhdie.ogg", player, false, getPosASL player, 25, 1, 45];
 	};
 
-	if(_mysound == 7) then {
+	if(_mysound isEqualTo 7) then {
 		playSound3D ["cg_sndimg\sounds\hhclank.ogg", player, false, getPosASL player, 15, 1, 45];
 	};
 

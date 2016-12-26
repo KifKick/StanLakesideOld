@@ -71,14 +71,14 @@ switch ( _betamt ) do
 _number = ceil(random 11);
 _number = _number + 2;
 
-if ( _number == 11 OR _number == 12 ) then
+if ( _number isEqualTo 11 OR _number isEqualTo 12 ) then
 {
 	_number = 10;
 
 }
 else 
 {
-	if( _number == 13 ) then
+	if( _number isEqualTo 13 ) then
 	{
 		_number = "ACE";
 	};
@@ -92,14 +92,14 @@ uiSleep 0.5;
 _number = ceil(random 11);
 _number = _number + 2;
 
-if ( _number == 11 OR _number == 12 ) then
+if ( _number isEqualTo 11 OR _number isEqualTo 12 ) then
 {
 	_number = 10;
 
 }
 else 
 {
-	if( _number == 13 ) then
+	if( _number isEqualTo 13 ) then
 	{
 		_number = "ACE";
 	};
@@ -113,14 +113,14 @@ uiSleep 0.5;
 _number = ceil(random 11);
 _number = _number + 2;
 
-if ( _number == 11 OR _number == 12 ) then
+if ( _number isEqualTo 11 OR _number isEqualTo 12 ) then
 {
 	_number = 10;
 
 }
 else 
 {
-	if( _number == 13 ) then
+	if( _number isEqualTo 13 ) then
 	{
 		_number = "ACE";
 	};
@@ -136,14 +136,14 @@ _D1 = ctrlText _Dcard1;
 uiSleep 0.5;
 _winnings = _display displayCtrl 6001;
 _total = 0;
-if( _P1 == "ACE" ) then
+if( _P1 isEqualTo "ACE" ) then
 {
-	if( _P2 == "10" ) then
+	if( _P2 isEqualTo "10" ) then
 	{
 		_total = 21;
 	}else
 	{
-		if( _P2 == "ACE" ) then
+		if( _P2 isEqualTo "ACE" ) then
 		{
 			_total = 12;
 		}
@@ -155,15 +155,15 @@ if( _P1 == "ACE" ) then
 }
 else
 {
-	if( _P2 == "ACE" ) then
+	if( _P2 isEqualTo "ACE" ) then
 	{
-		if( _P1 == "10" ) then 
+		if( _P1 isEqualTo "10" ) then 
 		{
 			_total = 21;
 		}
 		else
 		{
-			if( _P1 == "ACE" ) then
+			if( _P1 isEqualTo "ACE" ) then
 			{
 				_total = 12;
 			}
@@ -184,7 +184,7 @@ else
 
 _TOTALTXT ctrlSetText format["%1",_total];
 
-if( _total == 21 ) then 
+if( _total isEqualTo 21 ) then 
 { 
 	_win = 4 * _betamt;
 	["cash","add",_win] call life_fnc_handleCash; 
@@ -204,10 +204,10 @@ else
 	//check if dealer got ace and then a 10.
 	//10 then ace?
 	
-	if( _number == 13 ) then
+	if( _number isEqualTo 13 ) then
 	{
 		_number = "ACE";
-		if( _D1 == "10" ) then
+		if( _D1 isEqualTo "10" ) then
 		{		
 			_Dcard2 ctrlSetText format["%1",_number];
 			_winnings = _display displayCtrl 6001;
@@ -224,9 +224,9 @@ else
 	}
 	else
 	{
-		if( _D1 == "ACE" ) then 
+		if( _D1 isEqualTo "ACE" ) then 
 		{
-			if( _number == 10 ) then 
+			if( _number isEqualTo 10 ) then 
 			{
 				_Dcard2 ctrlSetText format["%1",_number];
 				_winnings = _display displayCtrl 6001;

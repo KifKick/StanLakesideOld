@@ -7,7 +7,7 @@
 */
 private["_item"];
 _item = param [0,"",[""]];
-if(_item == "") exitWith {};
+if(_item isEqualTo "") exitWith {};
 
 switch (_item) do
 {
@@ -27,19 +27,22 @@ switch (_item) do
 	case "mobilephone": {1};
 	case "panicbutton": {1};
 	case "bec": {1};
-	case "methu": {6};
-	case "methp": {4};
-	case "cokeu": {6};
-	case "cokep": {4};
-	case "MDMAu": {6};
-	case "MDMAp": {4};
-	case "oilu": {7};
-	case "oilp": {6};
-	case "heroinu": {6};
+	case "methu": {5};
+	case "methp": {3};
+	case "cokeu": {5};
+	case "cokep": {3};
+	case "MDMAu": {5};
+	case "MDMAp": {3};
+	case "oilu": {6};
+	case "oilp": {5};
+	case "heroinu": {5};
 	case "heroinp": {4};
 	case "marijuana": {2};
 	case "apple": {0.5};
 	case "peach": {0.5};
+	case "uraniumu": {8};
+	case "uraniumo": {6};
+	case "uraniump": {5};
 	case "water": {0.5};
 	case "rabbit": {1};
 	case "salema": {2};
@@ -58,15 +61,15 @@ switch (_item) do
 	case "money": {0};
 	case "pickaxe": {2};
 	case "copperore": {5};
-	case "ironore": {5};
+	case "ironore": {6};
 	case "copper_r": {3};
-	case "iron_r": {3};
+	case "iron_r": {5};
 	case "sand": {4};
 	case "salt": {3};
 	case "salt_r": {1};
 	case "glass": {2};
-	case "diamond": {4};
-	case "diamondc": {2};
+	case "diamond": {5};
+	case "diamondc": {4};
 	case "spikeStrip": {5};
 	case "rock": {4};
 	case "cement": {3};

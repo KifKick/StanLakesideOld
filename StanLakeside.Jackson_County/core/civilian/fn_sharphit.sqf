@@ -8,7 +8,7 @@ if(deadPlayer) exitWith {};
 
 _koildebs = player getVariable ["EMSON", 2];
 
-if(_koildebs == 1) exitWith {};
+if(_koildebs isEqualTo 1) exitWith {};
 
 if(_shooter isKindOf "Man" && !deadPlayer) then
 {

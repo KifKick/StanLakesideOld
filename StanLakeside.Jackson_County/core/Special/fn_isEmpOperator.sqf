@@ -7,10 +7,10 @@ _slot = assignedVehicleRole player;
 _vehicle = vehicle player;
 _result = false;
 
-if((_vehicle != player) && (playerSide == west)) then {
-    if((typeof _vehicle == "melb_h6m") && (_vehicle getVariable ["nano_emp_enabled", false])) then {
-        if(_slot select 0 == "Turret") then {
-            if(_slot select 1 select 0 == 0) then {
+if((_vehicle != player) && (playerSide isEqualTo west)) then {
+    if((typeof _vehicle isEqualTo "melb_h6m") && (_vehicle getVariable ["nano_emp_enabled", false])) then {
+        if(_slot select 0 isEqualTo "Turret") then {
+            if(_slot select 1 select 0 isEqualTo 0) then {
                 _result = true;
             };
         }

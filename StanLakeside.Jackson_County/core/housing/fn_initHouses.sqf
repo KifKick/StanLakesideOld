@@ -4,7 +4,7 @@
 	Description:
 	Initializes the players houses, mainly throwing down markers.
 */
-if(count life_houses == 0) exitWith {}; //Nothing to do.
+if(count life_houses isEqualTo 0) exitWith {}; //Nothing to do.
 
 {
 	_position = call compile format["%1",_x select 0];

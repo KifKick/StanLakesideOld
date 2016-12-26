@@ -12,7 +12,7 @@ _time = param [1,1,[0]];
 _zoom = param [2,0.1,[0]];
 _position = param [3,[],[[]]];
 
-if(isNull _control OR count _position == 0) exitWith {};
+if(isNull _control OR count _position isEqualTo 0) exitWith {};
 
 _control ctrlMapAnimAdd[_time,_zoom,_position];
 ctrlMapAnimCommit _control;

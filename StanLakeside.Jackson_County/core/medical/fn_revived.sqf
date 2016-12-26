@@ -11,7 +11,7 @@ private["_medic","_dir"];
 _medic = param [0,"Unknown Medic",[""]];
 _status = param [1,"Normal",[""]];
 
-if(_status == "CPR" && shooting_death) then { hint "Ktos Cie ustabilizowal!."; maxTime = maxTime + 60; } else {
+if(_status isEqualTo "CPR" && shooting_death) then { hint "Ktos Cie ustabilizowal!."; maxTime = maxTime + 60; } else {
 
 
 	player setVariable["dead",nil,TRUE];

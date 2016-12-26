@@ -11,7 +11,7 @@ if((life_action_inUse) || (player getVariable ["tied", false]) || (player getVar
 ["Nie mozesz tego zrobic.", false] spawn domsg;
 }; 
 
-if(player == _unit) exitWith {};
+if(player isEqualTo _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
 
@@ -19,6 +19,7 @@ if(!isPlayer _unit) exitWith {};
 playSound3D ["cg_sndimg\sounds\blindfold.ogg", cursortarget, false, getPosASL player, 1, 1, 125];
 _cme = 1;
 _myposy = getPos player;
+["Remove",30] call fnc_karma;
 
 while {true} do {
 life_action_inUse = true;

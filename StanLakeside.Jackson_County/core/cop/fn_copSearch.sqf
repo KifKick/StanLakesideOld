@@ -8,7 +8,7 @@
 */
 
 life_action_inUse = false;
-if(side player == civilian || side player == east) then {
+if(side player isEqualTo civilian || side player isEqualTo east) then {
 private["_civ","_invs","_license","_robber","_guns","_gun","_cop"];
 _civ = param [0,Objnull,[Objnull]];
 _invs = param [1,[],[[]]];
@@ -38,10 +38,10 @@ if(life_inv_turtle > 0) then {[false,"turtle",life_inv_turtle] call life_fnc_han
 
 [0,format["%1 zostal przeszukany.",name player, _cop]] remoteExecCall ["life_fnc_broadcast", -2]; 
 
-if(turtle_fuck == 2) then {
+if(turtle_fuck isEqualTo 2) then {
 	[0,format["Znaleziono %2 zolwi przy %1",name player, totalturtles]] remoteExecCall ["life_fnc_broadcast", -2]; 
 };
-if(drug_fuck == 2) then {
+if(drug_fuck isEqualTo 2) then {
 	[0,format["Znaleziono %2 narkotykow w posiadaniu %1",name player, totaldrugs]] remoteExecCall ["life_fnc_broadcast", -2]; 
 } else {
 	[0,format["Nie znaleziono nielegalnych substancji przy %1",name player]] remoteExecCall ["life_fnc_broadcast", -2]; 

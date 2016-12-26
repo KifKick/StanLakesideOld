@@ -15,7 +15,7 @@ _mylist = [];
 _data = call compile format["%1", _data];
 if(isNil "_data") exitWith {_list lbAdd "Failed to fetch crimes";};
 if(typeName _data != "ARRAY") exitWith {_list lbAdd "Failed to fetch crimes";};
-if(count _data == 0) exitWith {_list lbAdd "Failed to fetch crimes";};
+if(count _data isEqualTo 0) exitWith {_list lbAdd "Failed to fetch crimes";};
 lbClear _list;
 
 _crimes = _data select 2;
@@ -26,7 +26,7 @@ _bounty = _data select 3;
 	if(!(_crime in _mylist)) then
 	{
 		_mylist pushBack _crime;
-		_list lbAdd format["%1 count(s) of %2",{_x == _crime} count _crimes,_crime];
+		_list lbAdd format["%1 count(s) of %2",{_x isEqualTo _crime} count _crimes,_crime];
 	};
 } foreach _crimes;
 

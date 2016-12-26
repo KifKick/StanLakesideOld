@@ -3,7 +3,7 @@ private["_skiptotal","_markerstart","_startpos","_vehicle"];
 
 if(life_is_arrested || (player getVariable ["restrained", false]) || (player getVariable ["tied", false])) exitwith {};
 
-if( life_koil_race2 == 1 || life_koil_race == 1 || joinmode == 1 ) exitWith { ["Juz jestes w kolejce, poczekaj chwile!", false] spawn domsg; };
+if( life_koil_race2 isEqualTo 1 || life_koil_race isEqualTo 1 || joinmode isEqualTo 1 ) exitWith { ["Juz jestes w kolejce, poczekaj chwile!", false] spawn domsg; };
 
 if(cash_in_hand < 50) exitWith {
 ["Potrzebujesz $50 aby wejsc do wyscigu!", false] spawn domsg;	
@@ -33,11 +33,11 @@ if(!(racemachine getVariable "start")) then {
 
 uiSleep 1;
 koildeb = racemachine getvariable "total";
-if(koildeb == 8) exitWith {
+if(koildeb isEqualTo 8) exitWith {
 	["Nie ma juz miejsc na wyscigu!", false] spawn domsg;
 };
 
-if(_skiptotal == 0) then {
+if(_skiptotal isEqualTo 0) then {
     koildeb = koildeb + 1;
     racemachine setVariable["total",koildeb,true];
 };
@@ -49,28 +49,28 @@ life_koil_race = 1;
 
 _className = "CG_Lamborghini_Aventador_White";
 
-if(koildeb == 1) then {
+if(koildeb isEqualTo 1) then {
 	_markerstart = "start_race_1";
 };
-if(koildeb == 2) then {
+if(koildeb isEqualTo 2) then {
 	_markerstart = "start_race_2";
 };
-if(koildeb == 3) then {
+if(koildeb isEqualTo 3) then {
 	_markerstart = "start_race_3";
 };
-if(koildeb == 4) then {
+if(koildeb isEqualTo 4) then {
 	_markerstart = "start_race_4";
 };
-if(koildeb == 5) then {
+if(koildeb isEqualTo 5) then {
 	_markerstart = "start_race_5";
 };
-if(koildeb == 6) then {
+if(koildeb isEqualTo 6) then {
 	_markerstart = "start_race_6";
 };
-if(koildeb == 7) then {
+if(koildeb isEqualTo 7) then {
 	_markerstart = "start_race_7";
 };
-if(koildeb == 8) then {
+if(koildeb isEqualTo 8) then {
 	_markerstart = "start_race_8";
 	racemachine setVariable["racefull",true,true];
 };
@@ -93,28 +93,28 @@ if(isNull objectParent player && !deadPlayer) then {
 	player action ["getInDriver", _vehicle];	
 };
 
-if(koildeb == 1) then {
+if(koildeb isEqualTo 1) then {
 	rvehicle1 = _vehicle;
 };
-if(koildeb == 2) then {
+if(koildeb isEqualTo 2) then {
 	rvehicle2 = _vehicle;
 };
-if(koildeb == 3) then {
+if(koildeb isEqualTo 3) then {
 	rvehicle3 = _vehicle;
 };
-if(koildeb == 4) then {
+if(koildeb isEqualTo 4) then {
 	rvehicle4 = _vehicle;
 };
-if(koildeb == 5) then {
+if(koildeb isEqualTo 5) then {
 	rvehicle5 = _vehicle;
 };
-if(koildeb == 6) then {
+if(koildeb isEqualTo 6) then {
 	rvehicle6 = _vehicle;
 };
-if(koildeb == 7) then {
+if(koildeb isEqualTo 7) then {
 	rvehicle7 = _vehicle;
 };
-if(koildeb == 8) then {
+if(koildeb isEqualTo 8) then {
 	rvehicle8 = _vehicle;
 };
 
@@ -215,37 +215,37 @@ while { (racemachine getVariable "racing") } do {
 	uiSleep 0.05;
 	_laptimes = _laptimes + 0.05;
 
-	if((player distance (getmarkerpos "race_check_1")) < 15 && _racecheck == 1) then {
+	if((player distance (getmarkerpos "race_check_1")) < 15 && _racecheck isEqualTo 1) then {
 		[format["Zaliczyles %1 punkt kontrolny",_racecheck], false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
 		_racecheck = 2;
 	};
 
-	if((player distance (getmarkerpos "race_check_2")) < 15 && _racecheck == 2) then {
+	if((player distance (getmarkerpos "race_check_2")) < 15 && _racecheck isEqualTo 2) then {
 		[format["Zaliczyles %1 punkt kontrolny",_racecheck], false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
 		_racecheck = 3;
 	};
 
-	if((player distance (getmarkerpos "race_check_3")) < 15 && _racecheck == 3) then {
+	if((player distance (getmarkerpos "race_check_3")) < 15 && _racecheck isEqualTo 3) then {
 		[format["Zaliczyles %1 punkt kontrolny",_racecheck], false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
 		_racecheck = 4;
 	};
 
-	if((player distance (getmarkerpos "race_check_4")) < 15 && _racecheck == 4) then {
+	if((player distance (getmarkerpos "race_check_4")) < 15 && _racecheck isEqualTo 4) then {
 		[format["Zaliczyles %1 punkt kontrolny",_racecheck], false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
 		_racecheck = 5;
 	};
 
-	if((player distance (getmarkerpos "race_check_5")) < 15 && _racecheck == 5) then {
+	if((player distance (getmarkerpos "race_check_5")) < 15 && _racecheck isEqualTo 5) then {
 		[format["Zaliczyles %1 punkt kontrolny",_racecheck], false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
 		_racecheck = 6;
 	};
 
-	if((player distance (getmarkerpos "race_check_6")) < 15 && _racecheck == 6) then {
+	if((player distance (getmarkerpos "race_check_6")) < 15 && _racecheck isEqualTo 6) then {
 		_racecheck = 1;
 		["Skonczyles okrazenie!", false] spawn domsg;
 		[player,"endbeep"] spawn life_fnc_nearestSound;
@@ -257,7 +257,7 @@ while { (racemachine getVariable "racing") } do {
 		_laptimes = 0;
 	};
 
-	if(_laps == 3) exitWith {
+	if(_laps isEqualTo 3) exitWith {
 		if((racemachine getVariable "start")) then {
 			[player] remoteExec ["TON_fnc_racefinish",2];
 			["cash","add",1000] call life_fnc_handleCash;

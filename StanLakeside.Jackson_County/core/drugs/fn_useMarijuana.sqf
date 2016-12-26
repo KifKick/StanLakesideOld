@@ -23,6 +23,7 @@ playSound3D ["cg_sndimg\sounds\bong.ogg", player, false, getPosASL player, 1, 1,
 closeDialog 0;
 
 ["Leczysz sie przez czas...", false] spawn domsg;
+["Remove",30] call fnc_karma;
 
 
 _unit = player;
@@ -43,10 +44,10 @@ while{_num > 0} do {
 	uiSleep 7;
 	["Add",0.05] call fnc_doHealth;
 	_num = _num - 1;
-	if(_num == 4) then {
+	if(_num isEqualTo 4) then {
 		["Twoje ziolo konczy sie za 30 sekund!", false] spawn domsg;
 	};
-	if(_num == 2) then {
+	if(_num isEqualTo 2) then {
 		["Twoje ziolo konczy sie za 15 sekund!", false] spawn domsg;
 	};
 };

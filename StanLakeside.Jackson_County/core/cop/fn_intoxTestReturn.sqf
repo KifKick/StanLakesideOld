@@ -11,7 +11,7 @@ if(isNull _civ) exitWith {};
 
 if(_intox > 0.08) then 
 {
-	[format["%1's Ilosc promili: %2\nTa osoba jest nietrzezwa!",name _civ,_intox], false] spawn domsg;
+	[format["%1's Ilosc promili: %2 Ta osoba jest nietrzezwa!",name _civ,_intox], false] spawn domsg;
 } 
 else 
 {

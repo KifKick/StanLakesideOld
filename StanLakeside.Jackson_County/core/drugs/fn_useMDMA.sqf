@@ -14,6 +14,7 @@ waitUntil{animationState player != "AmovPercMstpSnonWnonDnon_Scared2";};
 };
 
 [0,format["%1 polknal nie ta pigulke co trzeba!",name player]] remoteExecCall ["life_fnc_broadcast", -2];
+["Remove",30] call fnc_karma;
 closeDialog 0;
 
 "chromAberration" ppEffectAdjust [random 0.1,random 0.1,true];

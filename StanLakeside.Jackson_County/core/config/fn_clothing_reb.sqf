@@ -18,10 +18,11 @@ switch (_filter) do
 	case 0:
 	{
 		[
-/*
+
 			["I_FEM_AAF_long","Female Long",5000],
 			["B_FEM_AAF_Rolled","Female Rolled",5000],
 			["B_FEM_NATO_Rolled","Female Rolled 3",5000],
+			["U_C_DDE","Kombinezon HazMat / Uran",5000],
 
 
 			["U_I_pilotCoveralls",nil,5000],
@@ -37,20 +38,20 @@ switch (_filter) do
 			//TRYK
 
 
-			["TRYK_B_USMC_R_ROLL","Green Top, MARPAT Pants",25000],
-			["TRYK_U_B_NATO_OCP_BLK_R_CombatUniform","Black Top, ACU Pants",25000],
-			["TRYK_U_B_AOR2_GRY_CombatUniform","Grey Top, DigiGreen Pants",25000],	
-			["TRYK_U_B_ARO1_CBR_CombatUniform","Desert Camo",25000],
-			["TRYK_U_B_Snow_CombatUniform","Snow Camo",25000],
+			["TRYK_B_USMC_R_ROLL","Green Top, MARPAT Pants",2500],
+			["TRYK_U_B_NATO_OCP_BLK_R_CombatUniform","Black Top, ACU Pants",2500],
+			["TRYK_U_B_AOR2_GRY_CombatUniform","Grey Top, DigiGreen Pants",2500],	
+			["TRYK_U_B_ARO1_CBR_CombatUniform","Desert Camo",2500],
+			["TRYK_U_B_Snow_CombatUniform","Snow Camo",2500],
 
-			["TRYK_U_B_AOR2_OD_CombatUniform","Green Top, DigiGreen Pants",30000],
-			["TRYK_U_B_AOR2_BLK_CombatUniform","Black Top, DigiGreen Pants",30000],
-			["TRYK_DMARPAT_T","Brown Top, DigiTan Pants",25000],
-			["TRYK_U_B_ARO1_BLK_CombatUniform","Black Top, DigiTan Pants",25000],
-			["TRYK_U_B_ARO1_CombatUniform","DigiTan Full",40000],
-			["TRYK_U_B_NATO_OCP_R_CombatUniform","DigiGreen Full",40000],
-			["TRYK_U_B_MARPAT_Wood","MARPAT Full",40000],
-			["TRYK_U_B_NATO_OCP_R_CombatUniform","OCP Full",40000]
+			["TRYK_U_B_AOR2_OD_CombatUniform","Green Top, DigiGreen Pants",3000],
+			["TRYK_U_B_AOR2_BLK_CombatUniform","Black Top, DigiGreen Pants",3000],
+			["TRYK_DMARPAT_T","Brown Top, DigiTan Pants",2500],
+			["TRYK_U_B_ARO1_BLK_CombatUniform","Black Top, DigiTan Pants",2500],
+			["TRYK_U_B_ARO1_CombatUniform","DigiTan Full",4000],
+			["TRYK_U_B_NATO_OCP_R_CombatUniform","DigiGreen Full",4000],
+			["TRYK_U_B_MARPAT_Wood","MARPAT Full",4000],
+			["TRYK_U_B_NATO_OCP_R_CombatUniform","OCP Full",4000],
 
 			["TRYK_SUITS_BLK_F","TRYK Black Suit",1350],
 			["TRYK_SUITS_BR_F","TRYK Brown Suit",1350],
@@ -189,7 +190,7 @@ switch (_filter) do
 			["TRYK_U_B_BLKBLK_R_CombatUniform",nil,550],
 			["TRYK_U_B_PCUHsW3",nil,550],
 			["TRYK_U_B_PCUHsW3nh",nil,550]
-*/
+
 
 
 		];
@@ -246,10 +247,12 @@ switch (_filter) do
 			["G_Squares",nil,1],
 			["G_Lowprofile",nil,3],
 			["G_Combat",nil,5],
-			["G_Balaclava_blk",nil,137],
 			["G_Balaclava_combat",nil,137],
 			["G_Balaclava_lowprofile",nil,137],
-			["A3L_Balaclava",nil,137]
+			["Mask_M40","Maska przeciwgazowa, uran",500],
+			["A3L_Balaclava",nil,137],
+			["G_Bandanna_sport",nil,5],
+			["G_Bandanna_blk",nil,5]
 		];
 	};
 	
@@ -257,11 +260,11 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["k_rebel_1",nil,3000],
-			["k_rebel_2",nil,3000],
-			["k_rebel_3",nil,3000],
-			["k_rebel_4",nil,3000],
-			["k_rebel_5",nil,3000],
+			["k_rebel_1",nil,5000],
+			["k_rebel_2",nil,5000],
+			["k_rebel_3",nil,5000],
+			["k_rebel_4",nil,5000],
+			["k_rebel_5",nil,5000],
 			["k_hrebel_1",nil,5000],
 			["k_hrebel_2",nil,5000],
 			["k_hrebel_3",nil,5000],
@@ -279,21 +282,21 @@ switch (_filter) do
 			["k_nhrebel_8",nil,5000],
 			["k_nhrebel_9",nil,5000],
 			["k_nhrebel_10",nil,5000],
-			["hk_rebel_1",nil,9000],
-			["hk_rebel_2",nil,9000],
-			["hk_rebel_5",nil,9000],
-			["hk_rebel_7",nil,9000],
-			["hk_rebel_9",nil,9000],
-			["hk_rebel_11",nil,9000], 
-			["hk_rebel_12",nil,9000],
-			["hk_rebel_13",nil,9000], 
-			["hk_rebel_14",nil,9000],
-			["hk_rebel_15",nil,9000],
-			["hk_rebel_16",nil,9000],
-			["hk_rebel_17",nil,9000],
-			["hk_rebel_18",nil,9000],
-			["hk_rebel_19",nil,9000],
-			["hk_rebel_20",nil,9000]
+			["hk_rebel_1",nil,5000],
+			["hk_rebel_2",nil,5000],
+			["hk_rebel_5",nil,5000],
+			["hk_rebel_7",nil,5000],
+			["hk_rebel_9",nil,5000],
+			["hk_rebel_11",nil,5000], 
+			["hk_rebel_12",nil,5000],
+			["hk_rebel_13",nil,5000], 
+			["hk_rebel_14",nil,5000],
+			["hk_rebel_15",nil,5000],
+			["hk_rebel_16",nil,5000],
+			["hk_rebel_17",nil,5000],
+			["hk_rebel_18",nil,5000],
+			["hk_rebel_19",nil,5000],
+			["hk_rebel_20",nil,5000]
 		];
 	};
 	
@@ -319,8 +322,79 @@ switch (_filter) do
 			["TRYK_B_Belt_GR",nil,300],
 
 			["A3L_Jungleciv","Moro Plecak",2],
-			["A3L_Browngreyciv","Moro brown plecak",2]
+			["A3L_Browngreyciv","Moro brown plecak",2],
 
+			["B_AssaultPack_cbr",nil,250],
+			["B_AssaultPack_rgr",nil,250],
+			["B_AssaultPack_khk",nil,250],
+			["B_AssaultPack_sgg",nil,250],
+			["B_AssaultPack_blk",nil,250],
+			["B_TacticalPack_oli",nil,350],
+			["B_Bergen_sgg",nil,450],
+			["B_FieldPack_oli",nil,450],
+			["B_FieldPack_cbr",nil,450],
+			["B_FieldPack_khk",nil,450],
+
+			["TRYK_B_Alicepack",nil,450],
+			["TRYK_B_Coyotebackpack_BLK",nil,450],
+			["TRYK_B_Coyotebackpack",nil,450],
+			["TRYK_B_Coyotebackpack_OD",nil,450],
+			["TRYK_B_Coyotebackpack_WH",nil,450],
+			["TRYK_B_tube_blk",nil,450],
+			["TRYK_B_tube_cyt",nil,450],
+			["TRYK_B_tube_od",nil,450],
+
+			["kaelmonty",nil,550],
+			["kaelmonty2",nil,550],
+			["kaelmario",nil,550],
+			["kaelsuits",nil,550],
+			["kevnvidiaa",nil,550],
+			["koiladc",nil,550],
+			["koilbatman_1",nil,550],
+			["koilbender_1",nil,550],
+			["koilbender_2",nil,550],
+			["koilclint_1",nil,550],
+			["koileminem_1",nil,550],
+			["koilgraf_1",nil,550],
+			["koilgraf_2",nil,550],
+			["koilgraf_3",nil,550],
+			["koilhulk_1",nil,550],
+			["koiljoker_1",nil,550],
+			["koilpumpkin_1",nil,550],
+			["koilsparta_1",nil,550],
+			["koilsponge_1",nil,550],
+			["koilturtles_1",nil,550],
+			["koilkatie",nil,550],
+			["koilpanda",nil,550],
+			["koilaiden",nil,550],
+			["koileagle",nil,550],
+			["koilspecktators",nil,550],
+			["koildarth",nil,550],
+			["koilgucci",nil,550],
+			["koilsmashing",nil,550],
+			["koilgoonsquad",nil,550],
+			["koilcat",nil,550],
+			["koilbp_19",nil,550],
+			["koilbp_21",nil,550],
+			["koilbp_22",nil,550],
+			["koilbp_1",nil,550],
+			["koilbp_2",nil,550],
+			["koilbp_3",nil,550],
+			["koilbp_4",nil,550],
+			["koilbp_5",nil,550],
+			["koilbp_6",nil,550],
+			["koilbp_7",nil,550],
+			["koilbp_8",nil,550],
+			["koilbp_9",nil,550],
+			["koilbp_10",nil,550],
+			["koilbp_11",nil,550],
+			["koilbp_12",nil,550],
+			["koilbp_13",nil,550],
+			["koilbp_14",nil,550],
+			["koilbp_15",nil,550],
+			["koilbp_16",nil,550],
+			["koilbp_17",nil,550],
+			["koilbp_18",nil,550]
 		];
 	};
 };

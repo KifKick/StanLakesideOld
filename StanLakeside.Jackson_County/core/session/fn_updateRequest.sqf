@@ -3,11 +3,11 @@
 	Author: Tonic
 */
 private["_packet","_array","_flag"];
-_packet = [getPlayerUID player,(profileName),playerSide,life_cash,life_atmcash];
+_packet = [getPlayerUID player,(profileName),playerSide,cash_in_hand,cash_in_bank];
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
 {
-	if(_x select 1 == _flag) then
+	if(_x select 1 isEqualTo _flag) then
 	{
 		_array set[count _array,[_x select 0,(missionNamespace getVariable (_x select 0))]];
 	};

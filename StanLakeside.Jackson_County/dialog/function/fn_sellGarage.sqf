@@ -39,11 +39,15 @@ if(life_dontsell isEqualTo 0) then {
 		if(isNil "_vehicle") exitWith {[localize "STR_Garage_Selection_Error", false] spawn domsg;};
 
 		_price = [_vehicle,__GETC__(life_garage_sell)] call fnc_index;
-		if(_price isEqualTo -1 || side player == west) then {
+		if(_price isEqualTo -1 || side player isEqualTo west) then {
 			_price = 1000;
 		} else {
 			_price = (__GETC__(life_garage_sell) select _price) select 1;
 		};
+
+		_classname = typeOf _vid;
+		_vehname = format[getText(configFile >> "CfgVehicles" >> _clasname >> "displayName")];
+		[_pid,profileName,_clasname, _vehname, 1, _price] remoteExecCall ["TON_fnc_vehicleLog",(call life_fnc_HCC)];
 
 		[_vid,_pid,_price,player,life_garage_type] remoteExecCall ["TON_fnc_vehicleDelete",(call life_fnc_HCC)];
 

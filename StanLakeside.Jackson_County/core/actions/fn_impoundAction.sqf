@@ -22,10 +22,10 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 {	
 	_vehData = _vehicle getVariable["vehicle_info_owners",[]];
 
-	if(count _vehData == 0) exitWith {}; //Bad vehicle.
+	if(count _vehData isEqualTo 0) exitWith {hint "Ten pojazd zostal zrespiony, zniszcz go"}; //Bad vehicle.
 
 	_vehOwner = (_vehData select 0) select 0;
-	if((getPlayerUID player) == _vehOwner) exitWith { ["Nie mozesz odholowac wlasnego pojazdu!", false] spawn domsg; };
+	if((getPlayerUID player) isEqualTo _vehOwner) exitWith { ["Nie mozesz odholowac wlasnego pojazdu!", false] spawn domsg; };
 	if(_vehicle getVariable["beingImpounded",false]) exitWith { ["Ktos juz odholowuje ten pojazd!", false] spawn domsg; };
 	_vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 

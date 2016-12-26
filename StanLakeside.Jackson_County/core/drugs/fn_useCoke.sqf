@@ -10,11 +10,12 @@
 closeDialog 0;
 sleep 0.5;
 drugs_used = true;
-["You are feeling invincible!", false] spawn domsg;
+["Czujesz sie nie smiertelnie!", false] spawn domsg;
 life_crazy = life_crazy + 1000;
 life_rip = 1;
 sleep 1;
 drugs_used = false;
+["Remove",30] call fnc_karma;
 
 player setAnimSpeedCoef 1.3;
 
@@ -29,8 +30,8 @@ while {!drugs_used} do {
 
 	life_crazy = life_crazy - 5;
 	if(getAnimSpeedCoef player < 1.2) then { player setAnimSpeedCoef 1.2; };
-	if(life_crazy == 30) then { ["Your coke runs out in 30 seconds!", false] spawn domsg; };
-	if(life_crazy == 0) exitwith { ["Your coke has run out!", false] spawn domsg; };
+	if(life_crazy isEqualTo 30) then { ["Your coke runs out in 30 seconds!", false] spawn domsg; };
+	if(life_crazy isEqualTo 0) exitwith { ["Your coke has run out!", false] spawn domsg; };
 };
 
 player setAnimSpeedCoef 0.9;

@@ -78,7 +78,7 @@ if(!isNil "life_copRecieve") then {
 if(life_removeWanted) then {
 	[getPlayerUID player] remoteExecCall ["life_fnc_wantedRemove",2];
 };
-[] execVM "statusBar.sqf";
+//[] execVM "statusBar.sqf";
 
 [] spawn {
 	sleep 1;

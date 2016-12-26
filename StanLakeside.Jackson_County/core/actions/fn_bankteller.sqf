@@ -24,7 +24,7 @@ while{_fkit > 0 && life_bankteller } do {
 	uiSleep 60;
 
 	if(isNull objectParent player && (player distance (getMarkerPos "bank_signup")) < 21) then {
-		if(Uniform player == "KAEL_SUITS_BR_F12") then
+		if(Uniform player isEqualTo "KAEL_SUITS_BR_F12") then
 		{
 			["bank","add", 300] call life_fnc_handleCash;
 			[6] call SOCK_fnc_updatePartial;
@@ -35,7 +35,7 @@ while{_fkit > 0 && life_bankteller } do {
 
 	};
 	_fkit = _fkit - 1;
-	if(_fkit == 5) then {
+	if(_fkit isEqualTo 5) then {
 		["Twoja zmiana konczy sie za 5 minut..", false] spawn domsg; 
 	};
 };

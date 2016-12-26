@@ -85,7 +85,7 @@ class FSM
     class Set_up_JIP_Var
     {
       name = "Set_up_JIP_Var";
-      init = /*%FSM<STATEINIT""">*/"if(_fastNight && {sunOrMoon == 0}) then {" \n
+      init = /*%FSM<STATEINIT""">*/"if(_fastNight && {sunOrMoon isEqualTo 0}) then {" \n
        "	setTimeMultiplier _skipNight;" \n
        "} else {" \n
        "	setTimeMultiplier _skipDay;" \n
@@ -133,7 +133,7 @@ class FSM
     class Server_Skip_Time
     {
       name = "Server_Skip_Time";
-      init = /*%FSM<STATEINIT""">*/"if(_fastNight && {sunOrMoon == 0}) then {" \n
+      init = /*%FSM<STATEINIT""">*/"if(_fastNight && {sunOrMoon isEqualTo 0}) then {" \n
        "	setTimeMultiplier _skipNight;" \n
        "} else {" \n
        "	setTimeMultiplier _skipDay;" \n

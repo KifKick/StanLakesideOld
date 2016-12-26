@@ -54,6 +54,8 @@ class Life_Client_Core
 		class medicRequest {};
 		class deathScreen {};
 		class medicLoadout {};
+		class bleed {};
+		class revivewhendead {};
 	};
 	
 	class Actions
@@ -144,8 +146,27 @@ class Life_Client_Core
 		class robStore {}; 
 		class surrender {};
 		class carSalesman {};
+		class plant {};
 		//class robBank {};
 	};	
+	
+	class Market
+		{
+			file = "core\market";
+			class openMarketView {};
+			class refreshMarketView {};
+			class marketShortView {};
+			class marketBuy {};
+			class marketSell {};
+			class marketGetBuyPrice {};
+			class marketGetSellPrice {};
+			class marketConfiguration {};
+			class marketReset {};
+			class marketChange {};
+			class marketGetRow {};
+			class marketGetPriceRow {};
+			class marketSetPriceRow {};
+		};
 
 	class Housing
 	{
@@ -205,13 +226,17 @@ class Life_Client_Core
 		//Clothing Store Configs
 		class clothing_cop {};
 		class clothing_specialforces {};
+		class clothing_specialforces_sniper {};
 		class clothing_ems {};
 		class clothing_bruce {};
 		class clothing_reb {};
 		class clothing_dive {};
 		class clothing_kart {};
-		class clothing_oskp {};
+		class clothing_hess {};
 		class clothing_prokurator {};
+		class clothing_rebcop {};
+		class clothing_gang{};
+		class clothing_feud{};
 	};
 	
 	class Special
@@ -321,6 +346,16 @@ class Life_Client_Core
 		class medactAirSiren {};
 		class medairSiren {}; 
 		class loggedOut {};
+		class radArea {};
+		class zoneCreator {};
+		class getKeys {};
+		class forceFPS {};
+		class statusesrequest {};
+		class statusreceive {};
+		class statussend {};
+
+		// Market System
+		class randomRound {};
 	};
 	
 	class Network
@@ -376,7 +411,10 @@ class Life_Client_Core
 		class vInteractionMenu {};
 		class vehicleWeight {};
 		class addVehicle2Chain {};
-		class animateJonzies {};
+		class vehSetPriceAction {};
+		class vehSetPrice {};
+		class vehBuy {};
+		class vehBuyAction {};
 	};
 	
 	class Cop

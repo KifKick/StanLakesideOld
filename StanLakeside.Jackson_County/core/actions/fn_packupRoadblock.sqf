@@ -19,7 +19,7 @@ if(!isnil {_roadblock getVariable "roadblock"}) then
 {	
 	switch(true) do
 	{
-	case ((typeOf _roadblock) == "RoadCone_L_F"): {
+	case ((typeOf _roadblock) isEqualTo "RoadCone_L_F"): {
 	_roadblockobjects = _roadblock getVariable "roadblock";
 	if(([true,"RoadBlockConc",1] call life_fnc_handleInv)) then
 	{
@@ -27,7 +27,7 @@ if(!isnil {_roadblock getVariable "roadblock"}) then
 	{deleteVehicle _x} foreach _roadblockobjects;
 	};
 };
-	case ((typeOf _roadblock) == "RoadCone_F") : {
+	case ((typeOf _roadblock) isEqualTo "RoadCone_F") : {
 	_roadblockobjects = _roadblock getVariable "roadblock";
 	if(([true,"RoadBlockWood",1] call life_fnc_handleInv)) then
 	{
@@ -35,7 +35,7 @@ if(!isnil {_roadblock getVariable "roadblock"}) then
 	{deleteVehicle _x} foreach _roadblockobjects;
 	};
 };
-	case ((typeOf _roadblock) == "Land_MetalBarrel_empty_F") : {
+	case ((typeOf _roadblock) isEqualTo "Land_MetalBarrel_empty_F") : {
 	_roadblockobjects = _roadblock getVariable "roadblock";
 		if(([true,"RoadBlockRebel",1] call life_fnc_handleInv)) then
 	{

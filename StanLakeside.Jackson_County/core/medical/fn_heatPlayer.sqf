@@ -12,7 +12,7 @@ if (isNull objectParent player) then
 };
 if(isPlayer cursorTarget) then {
 	 _koildebiiii = cursorTarget getVariable ["diseaseon", 1];
-	if(_koildebiiii == 5) then {
+	if(_koildebiiii isEqualTo 5) then {
 	cursorTarget setVariable ["diseaseon",1,true]; 
 	} else {
 	

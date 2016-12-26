@@ -15,7 +15,7 @@ if(!isnil {_roadcones getVariable "roadcone"}) then
 {	
 	switch(true) do
 	{
-	case ((typeOf _roadcones) == "RoadCone_L_F"): {
+	case ((typeOf _roadcones) isEqualTo "RoadCone_L_F"): {
 	_roadconesobjects = _roadcones getVariable "roadcone";
 	if (count _roadconesobjects > 1) then {
 	if(([true,"RoadConeStripB",1] call life_fnc_handleInv)) then
@@ -32,7 +32,7 @@ if(!isnil {_roadcones getVariable "roadcone"}) then
 	};
 	};
 };
-	case ((typeOf _roadcones) == "RoadCone_F") : {
+	case ((typeOf _roadcones) isEqualTo "RoadCone_F") : {
 	_roadconesobjects = _roadcones getVariable "roadcone";
 	if (count _roadconesobjects > 1) then {
 	if(([true,"RoadConeStrip",1] call life_fnc_handleInv)) then

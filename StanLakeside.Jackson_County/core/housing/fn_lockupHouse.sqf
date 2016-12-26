@@ -9,7 +9,7 @@ _house = param [0,ObjNull,[ObjNull]];
 if(isNull _house OR !(_house isKindOf "House_F")) exitWith {};
 
 _numberOfDoors = getNumber(configFile >> "CfgVehicles" >> (typeOf _house) >> "numberOfDoors");
-if(_numberOfDoors == -1 OR _numberOfDoors == 0) exitWith {}; //MEH
+if(_numberOfDoors isEqualTo -1 OR _numberOfDoors isEqualTo 0) exitWith {}; //MEH
 
 [localize "STR_House_LockingUp", false] spawn domsg;
 uiSleep 3;

@@ -15,6 +15,11 @@ _nearVehicles = nearestObjects [getMarkerPos life_chopShop,["Car","Motorbike","M
 _vehicle = _nearVehicles select _vehicle;
 if(isNull _vehicle) exitWith {};
 
+_clasname = typeOf _vehicle;
+_vehname = format[getText(configFile >> "CfgVehicles" >> _clasname >> "displayName")];
+[getPlayerUID player,profileName ,_clasname, _vehname, 6, _price] remoteExecCall ["TON_fnc_vehicleLog",(call life_fnc_HCC)];
+
+
 [localize "STR_Shop_ChopShopSelling", false] spawn domsg;
 life_action_inUse = true;
 _price2 = cash_in_hand + _price;

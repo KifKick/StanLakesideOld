@@ -1,66 +1,66 @@
-// =========================================================================================================
+//  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo =
 //
 //  String Functions Library
 //  Version: 2.2.1
 //  Author: Kronzky
 //
-// =========================================================================================================
+//  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo =
 //
 //  Usage:
 //
-//    • KRON_StrToArray - Converts a string into an array of characters: 
+//    ï¿½ KRON_StrToArray - Converts a string into an array of characters: 
 //                        _array=[_str] call KRON_StrToArray
 //
-//    • KRON_StrLen     - Returns the length of the string
+//    ï¿½ KRON_StrLen     - Returns the length of the string
 //                        _len=[_str] call KRON_StrLen
 //
-//    • KRON_StrLeft    - Returns l characters from the left side of the string 
+//    ï¿½ KRON_StrLeft    - Returns l characters from the left side of the string 
 //                        _left=[_str,l] call KRON_StrLeft
 //
-//    • KRON_StrRight   - Returns l characters from the right side of the string 
+//    ï¿½ KRON_StrRight   - Returns l characters from the right side of the string 
 //                        _right=[_str,l] call KRON_StrRight
 //
-//    • KRON_StrMid     - Returns l characters from the string, starting at position p (zero-based)
+//    ï¿½ KRON_StrMid     - Returns l characters from the string, starting at position p (zero-based)
 //                        If l is not defined, the rest of the string is returned
 //                        _mid=[_str,p,(l)] call KRON_StrMid
 //
-//    • KRON_StrInStr   - Tests whether string b is present in string a
+//    ï¿½ KRON_StrInStr   - Tests whether string b is present in string a
 //                        _found=[a,b] call KRON_StrInStr
 //
-//    • KRON_StrIndex   - Returns the position of string b in string a
+//    ï¿½ KRON_StrIndex   - Returns the position of string b in string a
 //                        _index=[a,b] call KRON_StrIndex
 //
-//    • KRON_StrUpper   - Converts a string to uppercase characters
+//    ï¿½ KRON_StrUpper   - Converts a string to uppercase characters
 //                        _upper=[_str] call KRON_StrUpper
 //
-//    • KRON_StrLower   - Converts a string to lowercase characters
+//    ï¿½ KRON_StrLower   - Converts a string to lowercase characters
 //                        _lower=[_str] call KRON_StrLower
 //
-//    • KRON_Replace    - Replaces every occurrence of string _old in string _str with string _new
+//    ï¿½ KRON_Replace    - Replaces every occurrence of string _old in string _str with string _new
 //                        _index=[_str,_old,_new] call KRON_Replace
 //
-//    • KRON_FindFlag   - Checks a mixed array (_this) for the presence of a string (_str)
+//    ï¿½ KRON_FindFlag   - Checks a mixed array (_this) for the presence of a string (_str)
 //                        _flg=[_this,_str] call KRON_FindFlag
 //
-//    • KRON_getArg     - Searches a mixed array (_this) for a matching string beginning with (_t), and returns the part after a separator (s)
+//    ï¿½ KRON_getArg     - Searches a mixed array (_this) for a matching string beginning with (_t), and returns the part after a separator (s)
 //                        A default value can be defined as (_d).
 //                        _arg=[_this,_t,(_d)] call KRON_getArg
 //
-//    • KRON_getArgRev  - Works like getArg, but search for the part *after* the colon, and return the part in front of it
+//    ï¿½ KRON_getArgRev  - Works like getArg, but search for the part *after* the colon, and return the part in front of it
 //                        A default value can be defined as (_d).
 //                        _arg=[_this,_t,(_d)] call KRON_getArgRev
 //
-//    • KRON_Compare    - Compares two elements and returns -1 if first is smaller, 1 if second is smaller, and 0 if equal
+//    ï¿½ KRON_Compare    - Compares two elements and returns -1 if first is smaller, 1 if second is smaller, and 0 if equal
 //                        If optional parameter "case" is given, capitalization is considered (upper before lowercase)
 //                        _cmp=[_str1,_str2,("case")] call KRON_Compare
 //
-//    • KRON_ArraySort  - Sorts an array of strings in acsending order (Numbers before letters, uppercase before lowercase)
+//    ï¿½ KRON_ArraySort  - Sorts an array of strings in acsending order (Numbers before letters, uppercase before lowercase)
 //                        If array is multi-dimensional, optional parameter (_idx) specifies which column is used for sorting
 //                        If optional parameter "desc" is given, order is reversed 
 //                        If optional parameter "case" is given, capitalization is considered (upper before lowercase)
 //                        _srt=[_arr,(_idx),("desc"),("case")] call KRON_ArraySort
 //
-// =========================================================================================================
+//  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo  isEqualTo =
 
 KRON_StrToArray = {
 	private["_in","_i","_arr","_out"];
@@ -133,7 +133,7 @@ KRON_StrIndex = {
 	_ndl=_this select 1;
 	_out=-1;
 	_i=0;
-	if (_hay == _ndl) exitWith {0};
+	if (_hay  isEqualTo  _ndl) exitWith {0};
 	_lh=[_hay] call KRON_StrLen;
 	_ln=[_ndl] call KRON_StrLen;
 	if (_lh < _ln) exitWith {-1};
@@ -143,7 +143,7 @@ KRON_StrIndex = {
 		for "_j" from _i to (_i+_ln-1) do {
 			_tmp=_tmp + (_arr select _j);
 		};
-		if (_tmp==_ndl) exitWith {_out=_i};
+		if (_tmp isEqualTo _ndl) exitWith {_out=_i};
 	};
 	_out
 };
@@ -151,7 +151,7 @@ KRON_StrIndex = {
 KRON_StrInStr = {
 	private["_out"];
 	_in=_this select 0;
-	_out=if (([_this select 0,_this select 1] call KRON_StrIndex)==-1) then {false} else {true};
+	_out=if (([_this select 0,_this select 1] call KRON_StrIndex) isEqualTo -1) then {false} else {true};
  	_out
 };
 
@@ -173,7 +173,7 @@ KRON_Replace = {
 				_tmp=_tmp + toString([_arr select _j]);
 			};
 		};
-		if (_tmp==_old) then {
+		if (_tmp isEqualTo _old) then {
 			_out=_out+_new;
 			_i=_i+_lo-1;
 		} else {
@@ -204,7 +204,7 @@ KRON_ArrayToUpper = {
 	if ((count _in)>0) then {
 		for "_i" from 0 to (count _in)-1 do {
 			_e=_in select _i;
- 			if (typeName _e=="STRING") then {
+ 			if (typeName _e  isEqualTo  "STRING") then {
  				_e=toUpper(_e);
  			};
 			_out set [_i,_e];
@@ -231,7 +231,7 @@ KRON_Compare = {
 	_s1 = _this select 0;
 	_s2 = _this select 1;
 	if (_n!=0) exitWith {
-		if (_n==1) then {
+		if (_n isEqualTo 1) then {
 			if (_s1<_s2) then {_s=-1} else {if (_s1>_s2) then {_s=1}};
 		};
 		_s	
@@ -252,7 +252,7 @@ KRON_Compare = {
 			};
 		};
 	};
-	if (_s==0) then {
+	if (_s isEqualTo 0) then {
 		if (_l1<_l2) then {
 			_s=-1;
 		} else {
@@ -268,9 +268,9 @@ KRON_ArraySort = {
 	_d = if ([_this,"DESC"] call KRON_findFlag) then {-1} else {1};
 	_k = if ([_this,"CASE"] call KRON_findFlag) then {"CASE"} else {"nocase"};
 	_s = -1;
-	if (typeName (_a select 0)=="ARRAY") then {
+	if (typeName (_a select 0)  isEqualTo  "ARRAY") then {
 		_s=0;
-		if (((count _this)>1) && (typeName (_this select 1)=="SCALAR")) then {
+		if (((count _this)>1) && (typeName (_this select 1)  isEqualTo  "SCALAR")) then {
 			_s=_this select 1;
 		};
 	};
@@ -311,11 +311,11 @@ KRON_getArg = {
 	if ((count _arr)>0) then {
 		for "_i" from 0 to (count _in)-1 do {
 			_as = _arr select _i;
-			if (typeName _as=="STRING") then {
+			if (typeName _as isEqualTo "STRING") then {
 				_aa = [_as] call KRON_StrToArray;
 				_p = _aa find ":";
-				if (_p==_fl) then {
-					if (([_as,_fl] call KRON_StrLeft)==_flg) then {
+				if (_p isEqualTo _fl) then {
+					if (([_as,_fl] call KRON_StrLeft) isEqualTo _flg) then {
 						_org = _in select _i;
 						_out=[_org,_p+1] call KRON_StrMid;
 					};
@@ -338,11 +338,11 @@ KRON_getArgRev = {
 	if ((count _arr)>0) then {
 		for "_i" from 0 to (count _in)-1 do {
 			_as = _arr select _i;
-			if (typeName _as=="STRING") then {
+			if (typeName _as isEqualTo "STRING") then {
 				_aa = [_as] call KRON_StrToArray;
 				_p = _aa find ":";
-				if (_p+1==(count _aa)-_fl) then {
-					if (([_as,_p+1] call KRON_StrMid)==_flg) then {
+				if (_p+1 isEqualTo (count _aa)-_fl) then {
+					if (([_as,_p+1] call KRON_StrMid) isEqualTo _flg) then {
 						_org = _in select _i;
 						_out=[_org,_p] call KRON_StrLeft;
 					};

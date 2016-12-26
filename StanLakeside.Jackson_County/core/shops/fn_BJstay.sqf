@@ -89,14 +89,14 @@ _win = 0;
 _number = ceil(random 11);
 _number = _number + 2;
 
-if ( _number == 11 OR _number == 12 ) then
+if ( _number isEqualTo 11 OR _number isEqualTo 12 ) then
 {
 	_number = 10;
 
 }
 else 
 {
-	if( _number == 13 ) then
+	if( _number isEqualTo 13 ) then
 	{
 		_number = 10;
 	};
@@ -105,9 +105,9 @@ else
 
 _Dcard2 ctrlSetText format["%1",_number];
 
-if( _D1T == "ACE" ) then 
+if( _D1T isEqualTo "ACE" ) then 
 {
-	if( _number == 10 ) then 
+	if( _number isEqualTo 10 ) then 
 	{
 		_totalDealer = 21;
 	}
@@ -130,7 +130,7 @@ if( _totalDealer > _totalPlayer ) then
 }
 else
 {
-	if( _totalDealer == _totalPlayer ) then 
+	if( _totalDealer isEqualTo _totalPlayer ) then 
 	{
 		//tie, betamt won back
 		_win = 1;
@@ -149,7 +149,7 @@ if( !_gameover ) then
 	_number = ceil(random 11);
 	_number = _number + 2;
 
-	if ( _number == 11 OR _number == 12 ) then
+	if ( _number isEqualTo 11 OR _number isEqualTo 12 ) then
 	{
 		_number = 10;
 		_Dcard3 ctrlSetText  format["%1",_number];
@@ -157,7 +157,7 @@ if( !_gameover ) then
 	}
 	else 
 	{
-		if( _number == 13 ) then
+		if( _number isEqualTo 13 ) then
 		{
 			_Dcard3 ctrlSetText "ACE";
 		}
@@ -170,12 +170,12 @@ if( !_gameover ) then
 
 	
 	
-	if( _number == 13 ) then 
+	if( _number isEqualTo 13 ) then 
 	{
 		_totalTemp = _totalDealer + 11;
 		_totalTemp2 = _totalDealer + 1;
 		
-		if( _totalTemp == 21 OR _totalTemp2 == 21 ) then 
+		if( _totalTemp isEqualTo 21 OR _totalTemp2 isEqualTo 21 ) then 
 		{
 				_gameover = true;			
 		}
@@ -234,7 +234,7 @@ if( !_gameover ) then
 			}
 			else 
 			{
-				if( _totalDealer == _totalPlayer ) then 
+				if( _totalDealer isEqualTo _totalPlayer ) then 
 				{
 					_gameover = true;
 					_win = 1;

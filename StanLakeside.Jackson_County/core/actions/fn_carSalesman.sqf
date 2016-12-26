@@ -34,7 +34,7 @@ while{_fkit > 0 && life_carSalesman && !deadPlayer} do {
 		["You were too far from the dealership and have been fired.", false] spawn domsg;
 	};
 	_fkit = _fkit - 1;
-	if(_fkit == 5) then {
+	if(_fkit isEqualTo 5) then {
 		["Your car salesman payments stop in 5 minutes.", false] spawn domsg; 
 	};
 };

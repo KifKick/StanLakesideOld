@@ -101,14 +101,14 @@ else
 //deal next card
 _number = ceil(random 11);
 _number = _number + 2;
-if ( _number == 11 OR _number == 12 ) then
+if ( _number isEqualTo 11 OR _number isEqualTo 12 ) then
 {
 	_number = 10;
 
 }
 else 
 {
-	if( _number == 13 ) then
+	if( _number isEqualTo 13 ) then
 	{
 		_number = "ACE";
 	};
@@ -129,17 +129,17 @@ switch ( _NextCard ) do
 _totalAces = 0;
 //check if there are any aces
 //and where they are
-if( _P1T == "ACE" ) then
+if( _P1T isEqualTo "ACE" ) then
 {
 	_ACES = true;
 	_ACE1 = 1;
 	_totalAces = 1;
 };
 
-if( _P2T == "ACE" ) then
+if( _P2T isEqualTo "ACE" ) then
 {
 	_ACES = true;
-	if( _ACE1 == 0 ) then
+	if( _ACE1 isEqualTo 0 ) then
 	{
 		_ACE1 = 2;
 		_totalAces = 1;
@@ -152,17 +152,17 @@ if( _P2T == "ACE" ) then
 	
 };
 
-if( _P3T == "ACE" ) then
+if( _P3T isEqualTo "ACE" ) then
 {
 	_ACES = true;
-	if( _ACE1 == 0 ) then
+	if( _ACE1 isEqualTo 0 ) then
 	{
 		_ACE1 = 3;
 		_totalAces = 1;
 	}
 	else
 	{
-		if( _ACE2 == 0 ) then
+		if( _ACE2 isEqualTo 0 ) then
 		{
 			_ACE2 = 3;
 			_totalAces = 2;
@@ -177,24 +177,24 @@ if( _P3T == "ACE" ) then
 	
 };
 
-if( _P4T == "ACE" ) then
+if( _P4T isEqualTo "ACE" ) then
 {
 	_ACES = true;
-	if( _ACE1 == 0 ) then
+	if( _ACE1 isEqualTo 0 ) then
 	{
 		_ACE1 = 4;
 		_totalAces = 1;
 	}
 	else
 	{
-		if( _ACE2 == 0 ) then
+		if( _ACE2 isEqualTo 0 ) then
 		{
 			_ACE2 = 4;
 			_totalAces = 2;
 		}
 		else
 		{
-			if( _ACE3 == 0 ) then
+			if( _ACE3 isEqualTo 0 ) then
 			{
 				_ACE3 = 4;
 				_totalAces = 3;
@@ -210,24 +210,24 @@ if( _P4T == "ACE" ) then
 	
 };
 
-if( _P5T == "ACE" ) then 
+if( _P5T isEqualTo "ACE" ) then 
 {	
 	_ACES = true;
-	if( _ACE1 == 0 ) then
+	if( _ACE1 isEqualTo 0 ) then
 	{
 		_ACE1 = 5;
 		_totalAces = 1;
 	}
 	else
 	{
-		if( _ACE2 == 0 ) then
+		if( _ACE2 isEqualTo 0 ) then
 		{
 			_ACE2 = 5;
 			_totalAces = 2;
 		}
 		else
 		{
-			if( _ACE3 == 0 ) then
+			if( _ACE3 isEqualTo 0 ) then
 			{
 				_ACE3 = 5;
 				_totalAces = 3;
@@ -314,7 +314,7 @@ if( _ACES ) then
 	_total = _total + _temp1;
 	
 	//if player hit 21 then he wins 4X
-	if( _total == 21 ) then
+	if( _total isEqualTo 21 ) then
 	{
 		_TOTALTXT ctrlSetText format["%1",_total];
 		_win = 4;
@@ -338,7 +338,7 @@ if( _ACES ) then
 			{
 				//if using 1 in total and still under 21
 				//while using 5 cards, player wins 3X
-				if( _NextCard == 5 ) then 
+				if( _NextCard isEqualTo 5 ) then 
 				{
 					_win = 4;
 				}
@@ -360,7 +360,7 @@ else
 	_total = (parseNumber _P1T) + (parseNumber _P2T) + (parseNumber _P3T) + (parseNumber _P4T) + (parseNumber _P5T);
 	_TOTALTXT ctrlSetText format["%1",_total];
 	//if hit 21, win
-	if( _total == 21 ) then
+	if( _total isEqualTo 21 ) then
 	{
 		_win = 4;
 		_gameover = true;

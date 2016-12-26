@@ -18,20 +18,20 @@ while{true} do {
 	_minute = floor(((_totaltime - time) mod 3600) / 60);
 	_hour = floor((_totaltime - time) / 3600);
 
-	if (_hour == 0) then {
+	if (_hour isEqualTo 0) then {
 		_hrtext = "";
 	} else {
-		if (_hour == 1) then {
+		if (_hour isEqualTo 1) then {
 			_hourtext = "godzina"
 		} else {
 			_hourtext = "godzin"
 		};
 		_hrtext = parseText format["%1 %2, ",_hour,_hourtext];
 	};
-	if (_hour == 0 && _minute == 0) then { 
+	if (_hour isEqualTo 0 && _minute isEqualTo 0) then { 
 		_mntext = ""; 
 	} else {
-		if (_minute == 1) then {
+		if (_minute isEqualTo 1) then {
 			_minutetext = "minuta"
 		} else {
 			_minutetext = "minut"

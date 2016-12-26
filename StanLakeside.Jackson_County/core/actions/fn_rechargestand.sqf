@@ -7,11 +7,11 @@ _myposy = getPos player;
 
 ["Charging Phone...", false] spawn domsg;
 
-if(life_charging == 1) exitwith { 
+if(life_charging isEqualTo 1) exitwith { 
 ["Already Charging...", false] spawn domsg;
 };
 life_charging = 1;
-while {life_charging == 1} do {
+while {life_charging isEqualTo 1} do {
 	uiSleep 0.2;
 	if(life_battery > 99) exitwith { 
 	life_charging = 2;

@@ -12,7 +12,7 @@ waitUntil {!(isNull (findDisplay 46))};
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-if(count _itemArray == 0) exitWith
+if(count _itemArray isEqualTo 0) exitWith
 {
     switch(playerSide) do {
         case west: {

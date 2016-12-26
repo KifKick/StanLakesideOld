@@ -11,12 +11,13 @@ if((life_action_inUse) || (player getVariable ["tied", false]) || (player getVar
 	["Nie mozesz tego zrobic.", false] spawn domsg;
 }; 
 
-if(player == _unit) exitWith {};
+if(player isEqualTo _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
 
-["Blindfolding Target, please wait...", false] spawn domsg;
+["Zakladam opaske na oczy...", false] spawn domsg;
 playSound3D ["cg_sndimg\sounds\blindfold.ogg", cursortarget, false, getPosASL player, 1, 1, 125];
+["Remove",15] call fnc_karma;
 _cme = 1;
 _myposy = getPos player;
 

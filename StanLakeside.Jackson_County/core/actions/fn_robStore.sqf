@@ -6,11 +6,7 @@ params [["_shop", objNull, [objNull]], ["_robber", objNull, [objNull]], "_action
 
 
 
-if(!life_canrob) exitWith { hint "Nie mozesz rabowac sklepu przez 10 minut od spawnu."; }; 
 
-if(_cops < 4) exitWith { hint "Nie moge tego robic poki nie ma odpowiedniej ilosci policjantow! (4+)"; }; 
-
-if(vehicle player != _robber) exitWith { hint "Musisz wysiasc z pojazdu!"; }; 
 
 _factor = player distance (getmarkerpos "cop_spawn_1");
 
@@ -20,6 +16,12 @@ _timer = round (_timer);
 _funds = _factor * 0.8; 
 _dist = _robber distance _shop;
 _cops = (west countSide playableUnits);
+
+if(!life_canrob) exitWith { hint "Nie mozesz rabowac sklepu przez 10 minut od spawnu."; }; 
+
+if(_cops < 2) exitWith { hint "Nie moge tego robic poki nie ma odpowiedniej ilosci policjantow! (2+)"; }; 
+
+if(vehicle player != _robber) exitWith { hint "Musisz wysiasc z pojazdu!"; }; 
 
 if (!(_robber getVariable["dead",FALSE]) && {currentWeapon _robber != "" && currentWeapon player != "Binocular" && currentWeapon player != "Rangefinder"} && {_funds > 0}) then {
 
@@ -53,7 +55,7 @@ if (!(_robber getVariable["dead",FALSE]) && {currentWeapon _robber != "" && curr
 			uiSleep _factor;
 			_action = _shop addAction["Rob",life_fnc_robStore];
 		};
-		if (currentWeapon _robber == "" || currentWeapon player == "Binocular" || currentWeapon player == "Rangefinder") exitwith {
+		if (currentWeapon _robber isEqualTo "" || currentWeapon player isEqualTo "Binocular" || currentWeapon player isEqualTo "Rangefinder") exitwith {
 				life_canrob = true;
 			deleteMarker myStoreMarker;
 			hint "Juz sie Ciebie nie boje gnoju!";
@@ -69,6 +71,12 @@ if (!(_robber getVariable["dead",FALSE]) && {currentWeapon _robber != "" && curr
 	hint format["Ukradles $%1",_funds];
 	_reason = "211";
 	[_robber,_robber,_reason] spawn life_fnc_createEvidence;
+	_playerID = getPlayerUID player;
+	_playerName = name player;
+	_type = 5;
+	_amount = _funds;
+	["Remove",35] call fnc_karma;
+	[_playerID,_playerName,"","",_type,_amount] remoteExecCall ["TON_fnc_actionLog", (call life_fnc_HCC)];
 	[2] call SOCK_fnc_updatePartial;
 	[1,format["WIADOMOSCI LAKESIDE: Sklep zostal obrabowany na $%2!", _shop, [_funds] call life_fnc_numberText]] remoteExecCall ["life_fnc_broadcast", civilian];
 	_funds = 0;

@@ -17,7 +17,6 @@ previewing_on = true;
 _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; 
 _basePrice = (_vehicleList select _vIndex) select 1;
-_baseprice = _baseprice / 10;
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
@@ -26,14 +25,14 @@ _spawnPoints = life_veh_shop select 1;
 _spawnPoint = "";
 
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
-	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {_spawnPoint = _spawnPoints};
+	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) isEqualTo 0) exitWith {_spawnPoint = _spawnPoints};
 } else {
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
 	if(typeName _spawnPoints isEqualTo typeName []) then {
 		//Find an available spawn point.
-		{if(count(nearestObjects[(getMarkerPos _x),["Car","Motorcycle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
+		{if(count(nearestObjects[(getMarkerPos _x),["Car","Motorcycle","Ship","Air"],5]) isEqualTo 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
 	} else {
-		if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Motorcycle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
+		if(count(nearestObjects[(getMarkerPos _spawnPoints),["Car","Motorcycle","Ship","Air"],5]) isEqualTo 0) exitWith {_spawnPoint = _spawnPoints};
 	};
 };
 

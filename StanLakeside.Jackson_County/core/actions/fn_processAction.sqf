@@ -10,7 +10,7 @@ _vendor = param [0,ObjNull,[ObjNull]];
 _type = param [3,"",[""]];
 _cops = west countSide playableUnits;
 //Error check
-if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
+if(isNull _vendor OR _type isEqualTo "" OR (player distance _vendor > 10)) exitWith {};
 
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
@@ -18,20 +18,22 @@ _itemInfo = switch (_type) do
 	case "oil": {["oilu","oilp",12,(localize "STR_Process_Oil")];};
 	case "diamond": {["diamond","diamondc",13,(localize "STR_Process_Diamond")];};
 	case "heroin": {["heroinu","heroinp",17,(localize "STR_Process_Heroin")];};
-	case "copper": {["copperore","copper_r",7,(localize "STR_Process_Copper")];};
+	case "copper": {["copperore","copper_r",9,(localize "STR_Process_Copper")];};
 	case "iron": {["ironore","iron_r",11,(localize "STR_Process_Iron")];};
 	case "sand": {["sand","glass",6,(localize "STR_Process_Sand")];};
-	case "salt": {["salt","salt_r",4,(localize "STR_Process_Salt")];};
-	case "marijuana": {["cannabis","marijuana",5,(localize "STR_Process_Marijuana")];};
-	case "cement": {["rock","cement",3,(localize "STR_Process_Cement")];};
-	case "meth": {["methu","methp",50,"Packaging Meth"];};
-	case "MDMA": {["MDMAu","MDMAp",50,"Pill Pressing MDMA"];};
-	case "coke": {["cokeu","cokep",50,"Packaging Cocaine"];};
+	case "salt": {["salt","salt_r",6,(localize "STR_Process_Salt")];};
+	case "marijuana": {["cannabis","marijuana",50,(localize "STR_Process_Marijuana")];};
+	case "cement": {["rock","cement",5,(localize "STR_Process_Cement")];};
+	case "meth": {["methu","methp",65,"Packaging Meth"];};
+	case "MDMA": {["MDMAu","MDMAp",75,"Pill Pressing MDMA"];};
+	case "coke": {["cokeu","cokep",73,"Packaging Cocaine"];};
+	case "uran": {["uraniumu","uraniumo",115,"Oczyszczam Uran"];};
+	case "uranp": {["uraniumo","uraniump",115,"Uszlachetniam Uran"];};
 	default {[];};
 };
 
 //Error checking
-if(count _itemInfo == 0) exitWith {};
+if(count _itemInfo isEqualTo 0) exitWith {};
 
 //Setup vars.
 _oldItem = _itemInfo select 0;
@@ -46,9 +48,9 @@ _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 _weight = ([_oldItem] call life_fnc_itemWeight) * _oldVal;
 _cost = round(_cost * _oldVal);
 //Some more checks
-if(_oldVal == 0) exitWith {};
+if(_oldVal isEqualTo 0) exitWith {};
 
-if (_cops < 2 && _type in ["heroin","marijuana","meth","MDMA","coke"]) exitWith {
+if (_cops < 2 && _type in ["heroin","marijuana","meth","MDMA","coke","uran","uranp"]) exitWith {
 	["Mozesz przetwarzac dopiero od 2 policjantow na serwerze!", false] spawn domsg;
 };
 
@@ -72,7 +74,7 @@ life_is_processing = true;
 
 if(_hasLicense) then
 {
-	_delay = (1/275)*_weight;
+	_delay = (1/450)*_weight;
 	while{true} do
 	{
 		uiSleep _delay;
@@ -93,7 +95,7 @@ if(_hasLicense) then
 else
 {
 	if(cash_in_hand < _cost) exitWith {[format[localize "STR_Process_License",[_cost] call life_fnc_numberText], false] spawn domsg; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-	_delay = (1/275)*_weight;
+	_delay = (1/400)*_weight;
 	while{true} do
 	{
 		uiSleep _delay;
