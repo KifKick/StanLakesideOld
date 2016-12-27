@@ -1077,6 +1077,7 @@ switch(_shop) do
 					["Sklep mysliwski",
 						[
 							["A3L_CZ550",nil,175500],
+							["A3L_CZ550Scope",nil,15500],
 							["A3L_CZ550mag",nil,750],
 							["arifle_SDAR_F","Turtle ONLY-SDAR",5000],
 							["20Rnd_556x45_UW_mag","Underwater magazine",50]
