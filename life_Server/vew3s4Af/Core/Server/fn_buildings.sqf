@@ -1,83 +1,11 @@
 if (isServer) then {
-	
-	//Transmitter Pole at Lakeside PD
-	_obj = [8721,7239.64,0] nearestObject 1005587; 
-	hideObjectGlobal _obj;
 
-	//Lamp (Halogen) at Lakeside PD
-	_obj = [8717.26,7235.45,0] nearestObject 1005433; 
-	hideObjectGlobal _obj;
-	
-	//Fence intersecting with new Lakeside PD
-	_obj = [8719.13,7238.85,0] nearestObject 1015350; 
-	_obj setDamage 1;
 
-	//Fence intersecting with new Lakeside PD
-	_obj = [8717.74,7237.44,0] nearestObject 1015351; 
-	_obj setDamage 1;
-
-	//Fence intersecting with new Lakeside PD
-	_obj = [8716.51,7235.84,0] nearestObject 1015349; 
-	_obj setDamage 1;
-
-	//Fence intersecting with new Lakeside PD	
-	_obj = [8715.61,7233.75,0] nearestObject 1015371; 
-	_obj setDamage 1;
-
-	//Floating billboard at Lakeside PD	
-	_obj = [8751.29,7234.47,0] nearestObject 346196; 
-	_obj setDamage 1;
-
-	//Lamp (Halogen) at Los Diablos PD
-	_obj = [3388.49,7627.19,0] nearestObject 1003361; 
-	hideObjectGlobal _obj;
-
-	//Fence intersecting with new Los Diablos PD	
-	_obj = [3400,7610.11,0] nearestObject 1018598; 
-	_obj setDamage 1;
-
-	//Fence intersecting with new Los Diablos PD	
-	_obj = [3403.45,7613.89,0] nearestObject 1018599; 
-	_obj setDamage 1;
-
-	_obj = [8536.61,6737.22,-9.18438] nearestObject 1006169;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8600.51,6656.91,-23.7557] nearestObject 1006370;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8513.54,6533.82,-9.17581] nearestObject 1007006;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8552.66,6869.1,37.8495] nearestObject 1005776;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8630.85,6893.68,-16.5092] nearestObject 1005860;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8178.37,6414.38,0.0500259] nearestObject 1006686;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8610.33,6353.54,0.0501709] nearestObject 1008477;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8474.69,6531.61,0.0578384] nearestObject 1006982;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8591.67,6683.38,0.0499992] nearestObject 1006383;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8732.03,6660.5,0.0499992] nearestObject 1006600;
-	_obj enableSimulationGlobal false;
-
-	_obj = [8698.91,6858.63,0.0500069] nearestObject 1005906;
-	_obj enableSimulationGlobal false;
-	
 	removeHeadgear LakesidePDAir; removeVest LakesidePDAir; removeGoggles LakesidePDAir; LakesidePDAir addUniform "TRYK_U_B_BLK"; LakesidePDAir addHeadgear "TCG_pdav_helmet";
 
 	removeHeadgear LakesidePDGarage; removeVest LakesidePDGarage; removeGoggles LakesidePDGarage; LakesidePDGarage addUniform "CG_SO3"; LakesidePDGarage addVest "highthreatvesttan";
 
-	removeHeadgear LakesidePDShop; removeVest LakesidePDShop; removeGoggles LakesidePDShop; LakesidePDShop addUniform "CG_SO1"; LakesidePDShop addVest "k_black_so"; 
+	removeHeadgear LakesidePDShop; removeVest LakesidePDShop; removeGoggles LakesidePDShop; LakesidePDShop addUniform "CG_SO1"; LakesidePDShop addVest "k_black_so";
 
 	removeHeadgear AirfieldPD; removeVest AirfieldPD; removeGoggles AirfieldPD; AirfieldPD addUniform "TRYK_U_B_BLK"; AirfieldPD addHeadgear "TCG_pdav_helmet";
 
@@ -98,7 +26,7 @@ if (isServer) then {
 	removeHeadgear farmmarketNPC; farmmarketNPC addUniform "A3L_Farmer_Outfit";
 
 	removeHeadgear farmworkNPC;  farmworkNPC addUniform "A3L_Farmer_Outfit";
-	
+
 	prisondoor = createVehicle ["A3L_PrisonWall_Enterence", [9623.1729, 10052.688, -0.046915393], [], 0, "CAN_COLLIDE"];
 	publicvariable "prisondoor";
 	_vehicle_0 = prisondoor;

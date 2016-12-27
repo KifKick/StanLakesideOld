@@ -10,3 +10,4 @@ StanLakeside.iml
 *.json
 StanLakeside.Jackson_County/core/functions/fn_fixCarPart.sqf
 StanLakeside.Jackson_County/core/actions/fn_fixCarPartAction.sqf
+TODO.txt
