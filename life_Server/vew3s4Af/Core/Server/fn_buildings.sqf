@@ -36,7 +36,7 @@ if (isServer) then {
 	prisondoor enableSimulationGlobal false;
 
 
-	_vehicle_4 = objNull;
+	/*_vehicle_4 = objNull;
 
 	_this = createVehicle ["A3L_Prison", [9627.9658, 10093.347], [], 0, "CAN_COLLIDE"];
 	_vehicle_4 = _this;
@@ -423,5 +423,5 @@ if (isServer) then {
 	_vehicle_46 = _this;
 	_this setPos [9655.9434, 10056.976, -2.3841858e-005];
 	_this allowDamage false;
-	_this enableSimulationGlobal false;
+	_this enableSimulationGlobal false;*/
 };
