@@ -11,6 +11,14 @@ class Socket_Reciever {
     };
 };
 
+class UPM {
+    tag = "UPM";
+    class UPM_system {
+        file = "dialog\function";
+        class showNotification {};
+    };
+};
+
 class Life_Client_Core {
     tag = "life";
 

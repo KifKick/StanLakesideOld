@@ -28,3 +28,8 @@
 #include "compensate.hpp"
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
+
+/*
+CUSTOM DIALOGS
+*/
+
