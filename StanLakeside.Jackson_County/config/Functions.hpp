@@ -219,6 +219,7 @@ class Life_Client_Core {
         class whereAmI {};
 		
 		class introCam {};
+		class loggedOut{};
     };
 
     class Gangs {

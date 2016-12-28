@@ -7,6 +7,6 @@
 */
 StartProgress = false;
 
-[] execVM "KRON_Strings.sqf";
+[] execVM "config\KRON_Strings.sqf";
 
 StartProgress = true;
