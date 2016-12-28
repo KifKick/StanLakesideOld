@@ -58,5 +58,7 @@ if (life_firstSpawn) then {
     life_firstSpawn = false;
     [] call life_fnc_welcomeNotification;
 };
+[] spawn life_fnc_introCam;
+[] execVM "core\init_survival.sqf";
 [] call life_fnc_playerSkins;
 [] call life_fnc_hudSetup;
