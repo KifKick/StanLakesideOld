@@ -34,10 +34,12 @@ _curmagazine = _hudinfo select 4;
 _className = _hudinfo select 3;
 _gunmodeold = _hudinfo select 2;
 _gunmode = "";
-if ((_gunmodeold isEqualTo "single") or (_gunmodeold isEqualTo "FullAuto")) then {
+if ((_gunmodeold isEqualTo "single") or (_gunmodeold isEqualTo "FullAuto") or (_gunmodeold isEqualTo "Burst") or (_gunmodeold isEqualTo "manual")) then {
 _gunmode = _gunmodeold;
 if (_gunmodeold isEqualTo "single") then {_gunmode = "Pojedynczy"};
 if (_gunmodeold isEqualTo "FullAuto") then {_gunmode = "Automatyczny"};
+if (_gunmodeold isEqualTo "Burst") then {_gunmode = "Seria"};
+if (_gunmodeold isEqualTo "manual") then {_gunmode = "Manualny"};
 };
  
 _magforpic = "";
