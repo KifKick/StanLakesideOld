@@ -36,7 +36,7 @@ START CODE - SEATBELT
 				if(!life_seatwarn) then {
 					uiSleep 1;
 					if(!life_seatwarn) then {
-						["Info","Pamietaj o pasach!",nil,""] call UPM_fnc_showNotification;
+						["Warning","Pamietaj o pasach!",[255,255,0,1],""] call UPM_fnc_showNotification;
 					};
 					playSound "seatwarn";
 					life_seatwarn = true;
