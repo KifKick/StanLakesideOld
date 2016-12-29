@@ -18,17 +18,18 @@ switch (playerSide) do {
 		life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbelt",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']];
 		life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbeltOFF",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']];
     };
-};
 
-case west: {
-		//Pasy
-		life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbelt",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']];
-		life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbeltOFF",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']];
-};
+	case west: {
+			//Pasy
+			life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbelt",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']];
+			life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbeltOFF",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']];
+	};
 
-case independent: {
-		//Pasy
-		life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbelt",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']];
-		life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbeltOFF",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']];
+	case independent: {
+			//Pasy
+			life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbelt",life_fnc_seatbelt,"",7,false,false,"",' !life_seatbelt && vehicle player != player ']];
+			life_actions = life_actions + [player addAction[localize "STR_pAct_PutSeatbeltOFF",life_fnc_seatbelt,"",7,false,false,"",' life_seatbelt && vehicle player != player ']];
+	};
+
 };
 

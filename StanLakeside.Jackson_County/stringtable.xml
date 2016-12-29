@@ -8526,7 +8526,7 @@
             <Polish>Użyłeś niedawno opcji synchronizacji, możesz jej używać maksymalnie co 5 minut.</Polish>
         </Key>
         <Key ID="STR_Session_SyncData">
-            <Original>Syncing player information to the server.\n\nPlease wait up to 20 seconds before leaving.</Original>
+            <Original>Syncing player information to the server.Please wait up to 20 seconds before leaving.</Original>
             <Czech>Synchronizace informace o hráčích na serveru. \ O \ Prosím, vyčkejte až 20 sekund před odjezdem.</Czech>
             <Spanish>Se esta sinconizando tu información con el server.\n\nPor favor espera 20 segundos antes de salir del server.</Spanish>
             <Russian></Russian>

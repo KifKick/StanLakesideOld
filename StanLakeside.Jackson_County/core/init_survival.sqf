@@ -36,7 +36,7 @@ START CODE - SEATBELT
 				if(!life_seatwarn) then {
 					uiSleep 1;
 					if(!life_seatwarn) then {
-						["Pamietaj o pasach!", false] spawn domsg;
+						["Info","Pamietaj o pasach!",nil,""] call UPM_fnc_showNotification;
 					};
 					playSound "seatwarn";
 					life_seatwarn = true;
@@ -50,14 +50,14 @@ START CODE - SEATBELT
 if (hasInterface) then {
     player addEventHandler ["GetOutMan", {
         life_seatbelt = false;
-        [] call life_fnc_hudUpdate; //--Enable if you are putting a hud option to display when your seatbelt is on
+        [] call life_fnc_hudUpdate; 
     }];
 };
 
 if (hasInterface) then {
     player addEventHandler ["GetInMan", {
         life_seatbelt = false;
-        [] call life_fnc_hudUpdate; //--Enable if you are putting a hud option to display when your seatbelt is on
+        [] call life_fnc_hudUpdate; 
     }];
 };
 

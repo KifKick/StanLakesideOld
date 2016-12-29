@@ -3,7 +3,7 @@
 
 
 
-class LIFE_BAR_SeatBelt: Life_RscPicture
+class IDC_LIFE_BAR_SeatBelt: Life_RscPicture
 {
     idc = IDC_LIFE_BAR_SeatBelt;
     text = "";

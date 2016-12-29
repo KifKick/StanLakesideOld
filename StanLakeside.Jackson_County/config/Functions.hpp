@@ -202,7 +202,6 @@ class Life_Client_Core {
         class nearUnits {};
         class numberText {};
         class onFired {};
-        class onTakeItem {};
         class playerTags {};
         class postNewsBroadcast {};
         class pullOutVeh {};

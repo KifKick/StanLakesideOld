@@ -7,3 +7,4 @@ if(!life_seatbelt) then {
 } else {
 	life_seatbelt = false;
 };
+[] call life_fnc_hudUpdate; 

@@ -250,7 +250,7 @@ class playerSettings {
 					text = "";
 					x = 0;
 					y = 0;
-					w = 0.27; h = 0.65;
+					w = 0.27; h = 0.80;
 				};
 			};
 		};
@@ -316,17 +316,6 @@ class playerSettings {
 			h = (1 / 25);	
 		};
 		
-		class perso_idcard: Life_RscButtonMenu
-		{
-		onButtonClick = "private[""_rang_1""]; _rang_1 = switch(playerSide) do {case west: {str(call life_coplevel)};case independent: {str(call life_mediclevel)};case civilian: {""""};case east: {""""};}; [player,_rang_1] remoteExecCall [""fvs_fnc_zeigePerso"",player]; closeDialog 0;";
-		idc = -1;
-		text = "ID CARD";
-		x = 0.738657;
-		y = 0.849;
-		w = 0.15625;
-		= 0.04;
-		tooltip = "Meinen Personal-/Dienstausweis ansehen \/ Take a look on my ID card";
-		};
 		
 	};
 };

@@ -31,4 +31,3 @@ waitUntil {camCommitted _camera};
 
 _camera cameraEffect ["terminate","back"];
 camDestroy _camera;
-[] call life_fnc_welcomeNotification;
