@@ -12,15 +12,3 @@ if (isNull LIFEdisplay) then {[] call life_fnc_hudSetup;};
 LIFEctrl(2200) progressSetPosition (life_hunger / 100);
 LIFEctrl(2201) progressSetPosition (1 - (damage player));
 LIFEctrl(2202) progressSetPosition (life_thirst / 100);
-
-if(!isNil "life_seatbelt") then {
-    if ( vehicle player != player ) then {
-        if(life_seatbelt) then {
-            LIFEctrl(4203) ctrlSetText "icons\seatbelton.paa";
-        } else {
-            LIFEctrl(4203) ctrlSetText "icons\seatbeltoff.paa";
-        };
-    } else {
-        LIFEctrl(4203) ctrlSetText "";
-    };
-};

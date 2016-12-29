@@ -69,7 +69,7 @@ if (life_server_extDB_notLoaded isEqualType []) exitWith {};
 
 _timeStamp = diag_tickTime;
 diag_log "----------------------------------------------------------------------------------------------------";
-diag_log "---------------------------------- Starting Altis Life Server Init ---------------------------------";
+diag_log "-------------------------------------- Starting Server side Init -------------------------------------";
 diag_log "------------------------------------------ Version 5.0.0 -------------------------------------------";
 diag_log "----------------------------------------------------------------------------------------------------";
 
@@ -209,5 +209,5 @@ life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
 publicVariable "life_attachment_point";
 
 diag_log "----------------------------------------------------------------------------------------------------";
-diag_log format ["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
+diag_log format ["               End of Server side Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
