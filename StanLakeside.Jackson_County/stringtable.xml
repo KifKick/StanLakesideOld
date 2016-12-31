@@ -9281,6 +9281,12 @@
         </Key>
     </Package>
     <Package name="Player_Actions">
+		<Key ID="STR_pAct_PutSeatbelt">
+			<Original>&lt;t color='#dd1111'&gt;Zapnij Pasy&lt;/t&gt;&lt;/ br&gt;</Original>
+		</Key>
+		<Key ID="STR_pAct_PutSeatbeltOFF">
+			<Original>&lt;t color='#dd1111'&gt;Odepnij Pasy&lt;/t&gt;&lt;/ br&gt;</Original>
+		</Key>
         <Key ID="STR_pAct_DropFishingNet">
             <Original>Drop Fishing Net</Original>
             <Czech>Drop rybářská síť</Czech>

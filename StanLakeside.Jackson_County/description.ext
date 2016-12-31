@@ -20,6 +20,7 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
+	#include "dialog\RscNotification.hpp"
 };
 
 class CfgFunctions {
@@ -75,6 +76,16 @@ class CfgSounds {
         sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
         titles[] = {};
     };
+	class seatwarn {
+		name = "seatwarn";
+		sound[] = {"\sounds\seatwarn.ogg", 1, 1};
+		titles[] = {};
+	};
+	class seatbelt {
+		name = "seatbelt";
+		sound[] = {"\sounds\seatbelt.ogg", 1, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing {
@@ -141,7 +152,7 @@ class CfgNotifications {
 
     class TextMessage {
         title = "$STR_TextMessage_Title";
-        iconPicture = "icons\ico_messageNew.paa";
+        iconPicture = "icons\vItems\ico_messageNew.paa";
         description = "%1";
         duration = 10;
         priority = 6;
@@ -149,7 +160,7 @@ class CfgNotifications {
 
     class PoliceDispatch {
         title = "$STR_PoliceDispatch_Title";
-        iconPicture = "icons\ico_messagePolice.paa";
+        iconPicture = "icons\vItems\ico_messagePolice.paa";
         description = "%1";
         duration = 10;
         priority = 6;
@@ -157,7 +168,7 @@ class CfgNotifications {
 
     class AdminDispatch {
         title = "$STR_AdminDispatch_Title";
-        iconPicture = "icons\ico_messageAdmin.paa";
+        iconPicture = "icons\vItems\ico_messageAdmin.paa";
         description = "%1";
         duration = 10;
         priority = 6;
@@ -165,7 +176,7 @@ class CfgNotifications {
 
     class AdminMessage {
         title = "$STR_AdminMessage_Title";
-        iconPicture = "icons\ico_messageAdmin.paa";
+        iconPicture = "icons\vItems\ico_messageAdmin.paa";
         description = "%1";
         duration = 10;
         priority = 5;

@@ -17,5 +17,4 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 
-[] call life_fnc_playerSkins;
 [] call life_fnc_saveGear;

@@ -11,6 +11,14 @@ class Socket_Reciever {
     };
 };
 
+class UPM {
+    tag = "UPM";
+    class UPM_system {
+        file = "dialog\function";
+        class showNotification {};
+    };
+};
+
 class Life_Client_Core {
     tag = "life";
 
@@ -192,8 +200,6 @@ class Life_Client_Core {
         class nearUnits {};
         class numberText {};
         class onFired {};
-        class onTakeItem {};
-        class playerSkins {};
         class playerTags {};
         class postNewsBroadcast {};
         class pullOutVeh {};
@@ -208,6 +214,10 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+		
+		class introCam{};
+		class loggedOut{};
+		class seatbelt{};
     };
 
     class Gangs {
