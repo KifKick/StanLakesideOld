@@ -1,0 +1,18 @@
+/*
+FILES TO EDIT TO WORK ON ANOTHER MAP
+*/
+
+
+life_server\init.sqf
+Altis_Life.altis\config\Config_SpyGlass.hpp
+Altis_Life.altis\core\actions\fn_captureHideout.sqf
+Altis_Life.altis\core\civilian\fn_jailMe.sqf
+Altis_Life.altis\core\cop\fn_fedCamDisplay.sqf
+Altis_Life.altis\core\fn_initCiv.sqf
+Altis_Life.altis\core\fn_setupStationService.sqf
+Altis_Life.altis\core\functions\fn_actionKeyHandler.sqf
+Altis_Life.altis\core\housing\fn_houseMenu.sqf
+Altis_Life.altis\core\items\fn_blastingCharge.sqf
+Altis_Life.altis\core\items\fn_boltcutter.sqf
+Altis_Life.altis\core\shops\fn_virt_buy.sqf
+Altis_Life.altis\core\shops\fn_weaponShopBuySell.sqf
