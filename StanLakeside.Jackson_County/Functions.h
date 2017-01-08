@@ -12,18 +12,6 @@ class Socket_Reciever
 		class updatePartial {};
 	};
 };
-/*class KBWFiles
-{
-	tag = "KBW";
-	class KBW
-	{
-		file = "KBW";
-		class openDuelUI {};
-		class duelRequest {};
-		class duelRequested {};
-		class initRace {};
-	};
-};*/
 class Life_Client_Core
 {
 	tag = "life";
@@ -85,14 +73,11 @@ class Life_Client_Core
 		class lawyerSignup {};
 		class shank {};
 		class rope {};
-		/*class race {};
-		class race2 {};	*/	
 		class takeashit {};
 		class middlefinger {};
 		class punchSystem {};
 		class trydriver {};
 		class taxi {};
-		class rally1 {};
 		class skyDive {};
 		class packupRoadcones {};
 		class packupRoadblock {};
@@ -288,7 +273,6 @@ class Life_Client_Core
 		class untieb {};
 		class EmergencyEject {};
 		class ungag {};
-		class electric {};
 		class fetchCfgDetails {};
 		class hh {};
 		class handleInv {};
@@ -515,7 +499,6 @@ class Life_Client_Core
 		class pickaxeUse {};
 		class lockpick {};
 		class spikeStrip {};
-		class spikeStripInstant {};
 		class jerryRefuel {};
 		class flashbang {};
 		class boltcutter {};

@@ -43,9 +43,9 @@ _obj = ObjNull;
 if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
 	if(_spawnPoint in ["med_air_2", "med_air_2_1"]) then {
 		_obj = nearestObject [getMarkerPos _spawnPoint, "Land_pier_box_f"];
-		_vehicle = createVehicle [_className, _obj modelToWorld [0,0,25.8], [], 0, "NONE"];
+		_vehicle = createVehicleLocal [_className, _obj modelToWorld [0,0,25.8], [], 0, "NONE"];
 	} else {
-		_vehicle = createVehicle [_className, getMarkerPos _spawnPoint, [], 0, "NONE"];
+		_vehicle = createVehicleLocal [_className, getMarkerPos _spawnPoint, [], 0, "NONE"];
 	};
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false; //Temp disable damage handling..
@@ -63,7 +63,7 @@ if((life_veh_shop select 0) isEqualTo "med_air_hs") then {
 	_vehicle setVariable["vehicle_info_owners",[[getPlayerUID player,profileName]],true];
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 } else {
-	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
+	_vehicle = createVehicleLocal [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false; //Temp disable damage handling..
 	_vehicle lock 2;
@@ -105,7 +105,7 @@ _offset = _offset select 2; //Gets the Maxmimum Z height
 _offset = _offset + 0.8; //Just a few inches more...
 _sp = visiblePosition _vehicle;
 _sp = _sp vectorAdd [0,0,_offset]; 
-_vh = createVehicle ["Sign_Arrow_Large_F", _sp ,[],0,"NONE"];
+_vh = createVehicleLocal ["Sign_Arrow_Large_F", _sp ,[],0,"NONE"];
 _vh setPos _sp; 
 
 hint "Twoje auto ktore chcesz zobaczyc jest oznaczone czerwona strzalka.";
