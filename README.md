@@ -7,13 +7,14 @@ Dalsza edycja: **KifKick** oraz **Katekarin**, a także społeczeństwo [StanLak
 
 Serdeczne podziękowana za dopisanie swojej "cegiełki" (kodu) dla:  **Kruk**
 
-Repo jest tylko do podglądu. Nie możesz używać go na własnym serwerze bez mojej zgody.
+-------------------------------------------------------------------------------------------------------
+# Licencja
 
+<a rel="license" href="https://www.bistudio.com/community/licenses/arma-public-license-share-alike" target="_blank" ><img src="https://www.bistudio.com/assets/img/licenses/APL-SA.png" ><br>Ta praca udostępniana jest pod licencją Arma Public Share Alike</a>
 
 -------------------------------------------------------------------------------------------------------
-
-Repo is only for view. You can't use this on your server without my approval.
-
-<p align="center">
-    <a href="https://travis-ci.org/KifKick/StanLakeside">
-        <img src="https://travis-ci.org/KifKick/StanLakeside.svg?branch=master" alt="Build Status">
+# Instalacja
+    1. Pobierz i skonfiguruj extDB2
+    2. Folder life_server skonfiguruj jako modyfikacja PBO
+    3. Folder StanLakeside.Jackson_County wklej do folderu MPMissions
+    4. Uruchom serwer z misją StanLakeside.Jackson_County
